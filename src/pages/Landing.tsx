@@ -1,30 +1,23 @@
-import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Quote } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
-interface LandingProps {
-  onSignup: () => void;
-  onLogin: () => void;
-}
-const Landing = ({
-  onSignup,
-  onLogin
-}: LandingProps) => {
+
+const Landing = () => {
   // Enhanced SEO for the homepage
   useSEO({
     title: "Prodfolio — Build Your Product Portfolio in Minutes | Credibility Engine for PMs",
     description: "Build your product portfolio to showcase PM thinking and prove your impact. Trusted by product managers to stand out in job searches. Get started free - no credit card required.",
     ogTitle: "Prodfolio — Build Your Product Portfolio in Minutes",
     ogDescription: "Showcase your product thinking and prove your impact with a professional portfolio. No experience required.",
-    ogImage: "https://lovable.app/og-image-prodfolio.png",
+    ogImage: "https://prodfolio.io/og-image-prodfolio.png",
     ogType: "website",
-    canonical: "https://lovable.app/",
+    canonical: "https://prodfolio.io/",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Prodfolio",
       "description": "A credibility engine for product people to build portfolios and showcase their PM thinking.",
-      "url": "https://lovable.app",
+      "url": "https://prodfolio.io",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "offers": {
@@ -50,8 +43,8 @@ const Landing = ({
               Build your product portfolio. Show how you think. Prove your impact.
             </p>
             <div className="flex justify-center" aria-label="Primary call to action">
-              <Button onClick={onSignup} size="lg" className="px-8">
-                Get started free
+              <Button asChild size="lg" className="px-8">
+                <a href="https://app.prodfolio.io/signup">Get started free</a>
               </Button>
             </div>
             <p className="mt-4 text-sm opacity-90">No credit card required.</p>
@@ -170,8 +163,8 @@ const Landing = ({
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Join the waitlist and be among the first to create a portfolio that showcases your PM thinking and impact.
           </p>
-          <Button onClick={onSignup} size="lg" className="px-8">
-            Get started free
+          <Button asChild size="lg" className="px-8">
+            <a href="https://app.prodfolio.io/signup">Get started free</a>
           </Button>
           <p className="mt-4 text-sm text-muted-foreground">No credit card required.</p>
         </div>

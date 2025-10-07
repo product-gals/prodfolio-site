@@ -4,21 +4,10 @@
   
   <!-- Main pages -->
   <url>
-    <loc>https://lovable.app/</loc>
-    <lastmod>2024-12-19</lastmod>
+    <loc>https://prodfolio.io/</loc>
+    <lastmod>2025-01-15</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
-  
-  
-  <!-- Demo portfolios -->
-  <url>
-    <loc>https://lovable.app/p/demo</loc>
-    <lastmod>2024-12-19</lastmod>
-    <priority>0.9</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  <!-- Note: User-generated portfolio URLs will be dynamically added by the server -->
   
 </urlset>

@@ -2,18 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-interface NavbarProps {
-  isLoggedIn: boolean;
-  onLogin: () => void;
-  onSignup: () => void;
-  onLogout: () => void;
-}
-
-const Navbar = ({
-  isLoggedIn,
-  onLogin,
-  onSignup,
-}: NavbarProps) => {
+const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -27,12 +16,12 @@ const Navbar = ({
           </div>
 
           <div className="hidden md:flex items-center space-x-2">
-            {!isLoggedIn && (
-              <>
-                <Button onClick={onLogin} variant="outline">Log In</Button>
-                <Button onClick={onSignup}>Sign Up</Button>
-              </>
-            )}
+            <Button asChild variant="outline">
+              <a href="https://app.prodfolio.io/login">Log In</a>
+            </Button>
+            <Button asChild>
+              <a href="https://app.prodfolio.io/signup">Start your portfolio</a>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -59,29 +48,12 @@ const Navbar = ({
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200 py-2">
           <div className="prodfolio-container space-y-2">
-            {!isLoggedIn && (
-              <>
-                <Button
-                  onClick={() => {
-                    onLogin();
-                    setIsMobileMenuOpen(false);
-                  }}
-                  variant="outline"
-                  className="w-full"
-                >
-                  Log In
-                </Button>
-                <Button
-                  onClick={() => {
-                    onSignup();
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="w-full"
-                >
-                  Sign Up
-                </Button>
-              </>
-            )}
+            <Button asChild variant="outline" className="w-full">
+              <a href="https://app.prodfolio.io/login">Log In</a>
+            </Button>
+            <Button asChild className="w-full">
+              <a href="https://app.prodfolio.io/signup">Start your portfolio</a>
+            </Button>
           </div>
         </div>
       )}
