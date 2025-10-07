@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Block admin and app routes from indexing
+Disallow: /app/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /invite-only
+
+# Block certain file types
+Disallow: *.json
+Disallow: *.xml
+Disallow: *.txt
+
+# Allow specific bots for social media
+User-agent: Twitterbot
+Allow: /
+Allow: /p/
+
+User-agent: facebookexternalhit
+Allow: /
+Allow: /p/
+
+# Sitemap location
+Sitemap: https://lovable.app/sitemap.xml

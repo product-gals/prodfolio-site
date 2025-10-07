@@ -1,0 +1,165 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 257 100% 62%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 262 54% 41%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 31 92% 57%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 261 67% 54%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 261 67% 54%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 261 67% 54%;
+    
+    /* Beta banner handling */
+    --beta-banner-height: 48px;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 261 67% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 262 54% 41%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 31 92% 57%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 261 67% 54%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 261 67% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 261 67% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    /* Ensure body allows scrolling and remove any potential scroll locks */
+    overflow-y: auto !important;
+  }
+
+  /* Beta banner offset handling for portfolio pages */
+  body.has-beta-banner .portfolio-page {
+    padding-top: var(--beta-banner-height);
+  }
+
+  body.has-beta-banner .portfolio-page .hero-section {
+    /* Ensure hero section doesn't overlap with banner */
+    margin-top: 0;
+  }
+}
+
+@layer components {
+  .prodfolio-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors;
+  }
+  
+
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90;
+  }
+
+  .btn-outline-accent {
+    @apply border bg-white text-primary border-primary;
+  }
+  .btn-outline-accent:hover {
+    @apply bg-primary/5;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 12px 28px -12px hsl(var(--ring) / 0.18), 0 6px 16px -8px rgba(0,0,0,0.08);
+  }
+
+  /* Portfolio Builder scroll fixes */
+  .builder-page {
+    min-height: 100vh;
+    overflow-y: auto !important;
+    max-height: 100vh;
+  }
+
+  .builder-content {
+    padding-bottom: 128px; /* Extra space for bottom navigation */
+  }
+
+  /* Force scrolling on the main content container */
+  .portfolio-builder-main {
+    overflow-y: auto !important;
+    height: 100%;
+  }
+}
