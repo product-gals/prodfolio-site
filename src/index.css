@@ -146,6 +146,56 @@
     box-shadow: 0 12px 28px -12px hsl(var(--ring) / 0.18), 0 6px 16px -8px rgba(0,0,0,0.08);
   }
 
+  /* Premium section styling */
+  .section-light {
+    @apply bg-[#fafafa];
+  }
+
+  .section-accent-border {
+    @apply border-t border-primary/20;
+  }
+
+  /* Scroll animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger children animations */
+  .stagger-children > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+
+  .stagger-children.visible > *:nth-child(1) { transition-delay: 0.1s; }
+  .stagger-children.visible > *:nth-child(2) { transition-delay: 0.2s; }
+  .stagger-children.visible > *:nth-child(3) { transition-delay: 0.3s; }
+
+  .stagger-children.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Premium button gradient */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-primary via-primary to-secondary text-primary-foreground;
+    @apply hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200;
+    @apply shadow-[0_4px_14px_0_rgba(125,52,255,0.39)];
+  }
+
+  /* Secondary outline button */
+  .btn-outline-premium {
+    @apply border-2 border-primary/20 bg-white text-primary;
+    @apply hover:border-primary/40 hover:bg-primary/5 transition-all duration-200;
+  }
+
   /* Portfolio Builder scroll fixes */
   .builder-page {
     min-height: 100vh;

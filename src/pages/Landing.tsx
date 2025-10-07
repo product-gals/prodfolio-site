@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Quote } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Landing = () => {
+  const heroAnimation = useScrollAnimation();
+  const howItWorksAnimation = useScrollAnimation();
+  const insightsAnimation = useScrollAnimation();
+  const testimonialsAnimation = useScrollAnimation();
+  const ctaAnimation = useScrollAnimation();
+
   // Enhanced SEO for the homepage
   useSEO({
     title: "Prodfolio — Build Your Product Portfolio in Minutes | Credibility Engine for PMs",
@@ -33,18 +40,24 @@ const Landing = () => {
   });
   return <main>
       {/* Hero */}
-      <section className="relative overflow-hidden py-20 md:py-28 bg-gradient-to-br from-primary via-primary/80 to-secondary text-primary-foreground">
+      <section 
+        ref={heroAnimation.ref as React.RefObject<HTMLElement>}
+        className={`relative overflow-hidden py-24 md:py-32 bg-gradient-to-br from-primary via-primary/80 to-secondary text-primary-foreground ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+      >
         <div className="prodfolio-container relative">
           <header className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
               A credibility engine for product people
             </h1>
-            <p className="text-lg md:text-2xl mb-10 opacity-95">
+            <p className="text-lg md:text-2xl mb-10 opacity-95 leading-relaxed">
               Build your product portfolio. Show how you think. Prove your impact.
             </p>
-            <div className="flex justify-center" aria-label="Primary call to action">
-              <Button asChild size="lg" className="px-8">
+            <div className="flex justify-center gap-4" aria-label="Primary call to action">
+              <Button asChild size="lg" variant="gradient" className="px-8">
                 <a href="https://app.prodfolio.io/signup">Get started free</a>
+              </Button>
+              <Button asChild size="lg" variant="outlinePremium" className="px-8 bg-white/95 backdrop-blur-sm">
+                <a href="https://app.prodfolio.io/login">Log in</a>
               </Button>
             </div>
             <p className="mt-4 text-sm opacity-90">No credit card required.</p>
@@ -54,51 +67,57 @@ const Landing = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 md:py-20 bg-background">
+      <section 
+        ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>}
+        className="py-24 md:py-30 section-light section-accent-border"
+      >
         <div className="prodfolio-container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">How it works</h2>
-            <p className="text-lg text-muted-foreground">Three simple steps to showcase your PM impact</p>
+          <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">How it works</h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Three simple steps to showcase your PM impact</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
             <article className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
-                <span className="text-white text-2xl font-bold">1</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+                <span className="text-white text-3xl font-bold">1</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Share your experience</h3>
-              <p className="text-muted-foreground">Answer guided prompts about your projects, decisions, and outcomes. We help you identify the PM thinking you already have.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Share your experience</h3>
+              <p className="text-muted-foreground leading-relaxed">Answer guided prompts about your projects, decisions, and outcomes. We help you identify the PM thinking you already have.</p>
             </article>
             <article className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
-                <span className="text-white text-2xl font-bold">2</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+                <span className="text-white text-3xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Build your story</h3>
-              <p className="text-muted-foreground">Transform your experience into compelling case studies that highlight your problem-solving process and impact.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Build your story</h3>
+              <p className="text-muted-foreground leading-relaxed">Transform your experience into compelling case studies that highlight your problem-solving process and impact.</p>
             </article>
             <article className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
-                <span className="text-white text-2xl font-bold">3</span>
+              <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+                <span className="text-white text-3xl font-bold">3</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-foreground">Share and get noticed</h3>
-              <p className="text-muted-foreground">Get a beautiful, shareable portfolio that clearly communicates your PM capabilities to hiring managers.</p>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Share and get noticed</h3>
+              <p className="text-muted-foreground leading-relaxed">Get a beautiful, shareable portfolio that clearly communicates your PM capabilities to hiring managers.</p>
             </article>
           </div>
         </div>
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-16 md:py-20 bg-muted/20">
+      <section 
+        ref={insightsAnimation.ref as React.RefObject<HTMLElement>}
+        className="py-24 md:py-30 bg-white"
+      >
         <div className="prodfolio-container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="max-w-6xl mx-auto">
+            <div className={`text-center mb-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
                 Strong portfolios cut through the noise
               </h2>
-              <p className="text-lg text-muted-foreground">Hiring managers want to see how you think — not just what you shipped.</p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Hiring managers want to see how you think — not just what you shipped.</p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-primary/10 relative hover:shadow-xl transition-all duration-300">
+            <div className={`grid md:grid-cols-2 gap-10 max-w-6xl mx-auto stagger-children ${insightsAnimation.isVisible ? 'visible' : ''}`}>
+              <article className="bg-white rounded-2xl p-8 shadow-lg border border-primary/10 relative hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                 <div className="absolute -top-3 left-8">
                   <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center border border-primary/20">
                     <Quote className="w-3 h-3 text-primary" />
@@ -122,9 +141,9 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
               
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-secondary/10 relative hover:shadow-xl transition-all duration-300">
+              <article className="bg-white rounded-2xl p-8 shadow-lg border border-secondary/10 relative hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
                 <div className="absolute -top-3 left-8">
                   <div className="w-6 h-6 bg-secondary/10 rounded-full flex items-center justify-center border border-secondary/20">
                     <Quote className="w-3 h-3 text-secondary" />
@@ -148,26 +167,29 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 md:py-20 bg-muted/10">
+      <section 
+        ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>}
+        className="py-24 md:py-30 section-light section-accent-border"
+      >
         <div className="prodfolio-container">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <div className={`text-center mb-16 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
                 What product people are saying
               </h2>
-              <p className="text-lg text-muted-foreground">Real stories from PMs and aspiring product leaders using Prodfolio.</p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Real stories from PMs and aspiring product leaders using Prodfolio.</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className={`grid md:grid-cols-3 gap-8 stagger-children ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
               {/* Real Testimonial */}
-              <article className="bg-white rounded-2xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 flex flex-col">
+              <article className="bg-white rounded-2xl p-6 shadow-lg border border-primary/10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
                 <div className="flex-1">
                   <Quote className="w-8 h-8 text-primary/30 mb-4" />
                   <p className="text-sm text-foreground leading-relaxed mb-6">
@@ -180,7 +202,7 @@ const Landing = () => {
               </article>
 
               {/* Placeholder Testimonial 1 */}
-              <article className="bg-white rounded-2xl p-6 shadow-lg border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col opacity-50">
+              <article className="bg-white rounded-2xl p-6 shadow-lg border border-secondary/10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col opacity-50">
                 <div className="flex-1">
                   <Quote className="w-8 h-8 text-secondary/30 mb-4" />
                   <p className="text-sm text-foreground leading-relaxed mb-6">
@@ -193,7 +215,7 @@ const Landing = () => {
               </article>
 
               {/* Placeholder Testimonial 2 */}
-              <article className="bg-white rounded-2xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 flex flex-col opacity-50">
+              <article className="bg-white rounded-2xl p-6 shadow-lg border border-primary/10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col opacity-50">
                 <div className="flex-1">
                   <Quote className="w-8 h-8 text-primary/30 mb-4" />
                   <p className="text-sm text-foreground leading-relaxed mb-6">
@@ -210,26 +232,33 @@ const Landing = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section 
+        ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
+        className="py-24 md:py-32 bg-white"
+      >
         <div className="prodfolio-container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Ready to build your product portfolio?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the waitlist and be among the first to create a portfolio that showcases your PM thinking and impact.
-          </p>
-          <Button asChild size="lg" className="px-8">
-            <a href="https://app.prodfolio.io/signup">Get started free</a>
-          </Button>
-          <p className="mt-4 text-sm text-muted-foreground">No credit card required.</p>
+          <div className={`max-w-3xl mx-auto ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground leading-tight">
+              Ready to build your product portfolio?
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
+              Join product leaders already using Prodfolio to showcase their PM thinking and stand out in the job market.
+            </p>
+            <div className="flex justify-center gap-4">
+              <Button asChild size="lg" variant="gradient" className="px-8">
+                <a href="https://app.prodfolio.io/signup">Get started free</a>
+              </Button>
+            </div>
+            <p className="mt-6 text-sm text-muted-foreground">No credit card required.</p>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-6 bg-gradient-to-br from-primary via-primary/80 to-secondary text-primary-foreground">
+      <footer className="py-12 bg-gradient-to-br from-primary via-primary/80 to-secondary text-primary-foreground">
         <div className="prodfolio-container text-center">
-          <p className="text-sm mb-3">Made with 💙 by PMs, for PMs</p>
-          <div className="flex justify-center items-center space-x-4 text-xs text-primary-foreground/80">
+          <p className="text-base mb-5 font-medium">Made with 💙 by PMs, for PMs</p>
+          <div className="flex justify-center items-center space-x-4 text-sm text-primary-foreground/90">
             <a href="mailto:hello@prodfolio.io" className="hover:text-primary-foreground hover:underline transition-all">
               Contact us
             </a>
@@ -246,7 +275,7 @@ const Landing = () => {
               Podcast
             </a>
           </div>
-          <p className="text-xs text-primary-foreground/80 mt-3">
+          <p className="text-xs text-primary-foreground/70 mt-5">
             Prodfolio™ is a product of Just Fractional, LLC. All rights reserved.
           </p>
         </div>
