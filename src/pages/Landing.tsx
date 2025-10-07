@@ -154,6 +154,61 @@ const Landing = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-16 md:py-20 bg-muted/10">
+        <div className="prodfolio-container">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                What product people are saying
+              </h2>
+              <p className="text-lg text-muted-foreground">Real stories from PMs and aspiring product leaders using Prodfolio.</p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Real Testimonial */}
+              <article className="bg-white rounded-2xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 flex flex-col">
+                <div className="flex-1">
+                  <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                  <p className="text-sm text-foreground leading-relaxed mb-6">
+                    "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for. I'm most excited about how Prodfolio helps me craft narratives around my product work; the templates are easy to use and optimized for storytelling."
+                  </p>
+                </div>
+                <p className="text-sm text-muted-foreground font-medium pt-4 border-t border-border">
+                  Senior Product Manager
+                </p>
+              </article>
+
+              {/* Placeholder Testimonial 1 */}
+              <article className="bg-white rounded-2xl p-6 shadow-lg border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col opacity-50">
+                <div className="flex-1">
+                  <Quote className="w-8 h-8 text-secondary/30 mb-4" />
+                  <p className="text-sm text-foreground leading-relaxed mb-6">
+                    Your testimonial could be here. Share your Prodfolio success story with us.
+                  </p>
+                </div>
+                <p className="text-sm text-muted-foreground font-medium pt-4 border-t border-border">
+                  Future Testimonial
+                </p>
+              </article>
+
+              {/* Placeholder Testimonial 2 */}
+              <article className="bg-white rounded-2xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 flex flex-col opacity-50">
+                <div className="flex-1">
+                  <Quote className="w-8 h-8 text-primary/30 mb-4" />
+                  <p className="text-sm text-foreground leading-relaxed mb-6">
+                    Your testimonial could be here. Share your Prodfolio success story with us.
+                  </p>
+                </div>
+                <p className="text-sm text-muted-foreground font-medium pt-4 border-t border-border">
+                  Future Testimonial
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-16 md:py-20 bg-white">
         <div className="prodfolio-container text-center">
