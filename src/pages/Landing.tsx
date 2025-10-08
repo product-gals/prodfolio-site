@@ -256,28 +256,81 @@ const Landing = () => {
 
       {/* Footer */}
       <footer className="py-12 bg-gradient-to-br from-primary via-primary/80 to-secondary text-primary-foreground">
-        <div className="prodfolio-container text-center">
-          <p className="text-base mb-5 font-medium">Made with 💙 by PMs, for PMs</p>
-          <div className="flex justify-center items-center space-x-4 text-sm text-primary-foreground/90">
-            <a href="mailto:hello@prodfolio.io" className="hover:text-primary-foreground hover:underline transition-all">
-              Contact us
-            </a>
-            <span className="text-primary-foreground/60">|</span>
-            <a href="https://sugared-cactus-5d5.notion.site/Prodfolio-Privacy-Policy-241f710757778017aa6dc57283be68d7" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground hover:underline transition-all">
-              Privacy
-            </a>
-            <span className="text-primary-foreground/60">|</span>
-            <a href="https://www.linkedin.com/company/prodfoliohq" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground hover:underline transition-all">
+        <div className="prodfolio-container">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            {/* Product */}
+            <div>
+              <h4 className="font-semibold mb-4">Product</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/90">
+                <li>
+                  <a href="https://app.prodfolio.io/signup" className="hover:text-primary-foreground hover:underline transition-all">
+                    Get Started
+                  </a>
+                </li>
+                <li>
+                  <a href="/pricing" className="hover:text-primary-foreground hover:underline transition-all">
+                    Pricing
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Learn */}
+            <div>
+              <h4 className="font-semibold mb-4">Learn</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/90">
+                <li>
+                  <a href="/resources" className="hover:text-primary-foreground hover:underline transition-all">
+                    Resources
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/theproductpivot" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground hover:underline transition-all">
+                    Podcast
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Company */}
+            <div>
+              <h4 className="font-semibold mb-4">Company</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/90">
+                <li>
+                  <a href="/partnerships" className="hover:text-primary-foreground hover:underline transition-all">
+                    Partnerships
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:hello@prodfolio.io" className="hover:text-primary-foreground hover:underline transition-all">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Legal */}
+            <div>
+              <h4 className="font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-sm text-primary-foreground/90">
+                <li>
+                  <a href="https://sugared-cactus-5d5.notion.site/Prodfolio-Privacy-Policy-241f710757778017aa6dc57283be68d7" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground hover:underline transition-all">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-primary-foreground/20 pt-8 text-center">
+            <p className="text-base mb-4 font-medium">Made with 💙 by PMs, for PMs</p>
+            <a href="https://www.linkedin.com/company/prodfoliohq" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary-foreground hover:underline transition-all">
               Follow us on LinkedIn
             </a>
-            <span className="text-primary-foreground/60">|</span>
-            <a href="https://www.linkedin.com/company/theproductpivot" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground hover:underline transition-all">
-              Podcast
-            </a>
+            <p className="text-xs text-primary-foreground/70 mt-4">
+              Prodfolio™ is a product of Just Fractional, LLC. All rights reserved.
+            </p>
           </div>
-          <p className="text-xs text-primary-foreground/70 mt-5">
-            Prodfolio™ is a product of Just Fractional, LLC. All rights reserved.
-          </p>
         </div>
       </footer>
     </main>;

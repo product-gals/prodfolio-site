@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import PortfolioView from "./pages/PortfolioView";
 import CaseStudyView from "./pages/CaseStudyView";
+import Pricing from "./pages/Pricing";
+import Resources from "./pages/Resources";
+import Partnerships from "./pages/Partnerships";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +31,11 @@ const App = () => {
                 </div>
               }
             />
+            
+            {/* Marketing pages */}
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/partnerships" element={<Partnerships />} />
             
             {/* Public portfolio views */}
             <Route path="/p/:slug" element={<PortfolioView />} />

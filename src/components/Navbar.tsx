@@ -15,13 +15,21 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-2">
-            <Button asChild variant="outline">
-              <a href="https://app.prodfolio.io/login">Log In</a>
-            </Button>
-            <Button asChild>
-              <a href="https://app.prodfolio.io/signup">Start your portfolio</a>
-            </Button>
+          <div className="hidden md:flex items-center space-x-6">
+            <Link to="/pricing" className="text-sm font-medium hover:text-primary transition-colors">
+              Pricing
+            </Link>
+            <Link to="/resources" className="text-sm font-medium hover:text-primary transition-colors">
+              Resources
+            </Link>
+            <div className="flex items-center space-x-2 ml-4">
+              <Button asChild variant="outline">
+                <a href="https://app.prodfolio.io/login">Log In</a>
+              </Button>
+              <Button asChild>
+                <a href="https://app.prodfolio.io/signup">Start your portfolio</a>
+              </Button>
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -48,6 +56,20 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200 py-2">
           <div className="prodfolio-container space-y-2">
+            <Link 
+              to="/pricing" 
+              className="block py-2 text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link 
+              to="/resources" 
+              className="block py-2 text-sm font-medium hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Resources
+            </Link>
             <Button asChild variant="outline" className="w-full">
               <a href="https://app.prodfolio.io/login">Log In</a>
             </Button>
