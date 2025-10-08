@@ -12,6 +12,7 @@ import CaseStudyView from "./pages/CaseStudyView";
 import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import Partnerships from "./pages/Partnerships";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/partnerships" element={<Partnerships />} />
+            <Route path="/terms" element={<TermsOfService />} />
             
             {/* Public portfolio views */}
             <Route path="/p/:slug" element={<PortfolioView />} />

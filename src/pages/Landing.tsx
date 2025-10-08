@@ -318,6 +318,11 @@ const Landing = () => {
                     Privacy Policy
                   </a>
                 </li>
+                <li>
+                  <a href="/terms" className="hover:text-primary-foreground hover:underline transition-all">
+                    Terms of Service
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
