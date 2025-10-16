@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Quote } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Landing = () => {
@@ -41,9 +40,7 @@ const Landing = () => {
     }
   });
   return (
-    <div>
-      <Navbar />
-      <main>
+    <main>
       {/* Hero */}
       <section 
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
@@ -261,7 +258,6 @@ const Landing = () => {
 
       <Footer />
     </main>
-    </div>
   );
 };
 export default Landing;
