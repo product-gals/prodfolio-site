@@ -2,6 +2,7 @@ import { BookOpen, FileText, Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -153,12 +154,7 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-4 border-t">
-        <div className="prodfolio-container text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 Prodfolio. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 
 export default function TermsOfService() {
@@ -165,6 +166,8 @@ export default function TermsOfService() {
           </div>
         </article>
       </main>
+      
+      <Footer />
     </div>
   );
 }

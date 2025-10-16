@@ -1,5 +1,6 @@
 import { Mic } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
 
@@ -99,12 +100,7 @@ const Partnerships = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-4 border-t">
-        <div className="prodfolio-container text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 Prodfolio. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
