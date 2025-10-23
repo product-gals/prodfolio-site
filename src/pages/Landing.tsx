@@ -74,33 +74,36 @@ const Landing = () => {
         className="py-24 md:py-30 section-light section-accent-border"
       >
         <div className="prodfolio-container">
-          <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">How it works</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Three simple steps to showcase your PM impact</p>
-          </div>
-          <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
-            <article className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
-                <span className="text-white text-3xl font-bold">1</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Share your experience</h3>
-              <p className="text-muted-foreground leading-relaxed">Answer guided prompts about your projects, decisions, and outcomes. We help you identify the PM thinking you already have.</p>
-            </article>
-            <article className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
-                <span className="text-white text-3xl font-bold">2</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Build your story</h3>
-              <p className="text-muted-foreground leading-relaxed">Transform your experience into compelling case studies that highlight your problem-solving process and impact.</p>
-            </article>
-            <article className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
-                <span className="text-white text-3xl font-bold">3</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-foreground">Share and get noticed</h3>
-              <p className="text-muted-foreground leading-relaxed">Get a beautiful, shareable portfolio that clearly communicates your PM capabilities to hiring managers.</p>
-            </article>
-          </div>
+        <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">How it works</h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6">Showcase your expertise and land your next role with three simple steps.</p>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto bg-primary/5 border border-primary/10 rounded-lg px-6 py-3 inline-block">
+            Create your PM portfolio in under 5 minutes — saving hours of setup time compared to generic site builders.
+          </p>
+        </div>
+        <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
+          <article className="text-center group">
+            <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+              <span className="text-white text-3xl font-bold">1</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Share your experience</h3>
+            <p className="text-muted-foreground leading-relaxed">Answer quick guided prompts about your work — we'll help you uncover the PM thinking you already have.</p>
+          </article>
+          <article className="text-center group">
+            <div className="w-20 h-20 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+              <span className="text-white text-3xl font-bold">2</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Build your story</h3>
+            <p className="text-muted-foreground leading-relaxed">Turn your experience into compelling, proof-based case studies that highlight your real impact.</p>
+          </article>
+          <article className="text-center group">
+            <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+              <span className="text-white text-3xl font-bold">3</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-4 text-foreground">Share and stand out</h3>
+            <p className="text-muted-foreground leading-relaxed">Publish a professional portfolio you can share in minutes — and get noticed faster.</p>
+          </article>
+        </div>
         </div>
       </section>
 
