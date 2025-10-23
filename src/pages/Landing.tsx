@@ -76,9 +76,9 @@ const Landing = () => {
         <div className="prodfolio-container">
         <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">How it works</h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6">Showcase your expertise and land your next role with three simple steps.</p>
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto bg-primary/5 border border-primary/10 rounded-lg px-6 py-3 inline-block">
-            Create your PM portfolio in under 5 minutes — saving hours of setup time compared to generic site builders.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3">Showcase your expertise and land your next role with three simple steps.</p>
+          <p className="text-sm text-muted-foreground/70 max-w-2xl mx-auto">
+            Save hours of setup time with a guided process that makes portfolio building effortless.
           </p>
         </div>
         <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
