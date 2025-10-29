@@ -112,9 +112,9 @@ const Landing = () => {
           <div className="max-w-6xl mx-auto">
             <div className={`text-center mb-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-3xl md:text-5xl font-bold text-prodfolio-navy mb-4">
-                Great portfolios get noticed
+                Be Seen. Get Recognized.
               </h2>
-              <p className="text-lg md:text-xl text-prodfolio-slate max-w-2xl mx-auto">Show your thinking, not just what you built.</p>
+              <p className="text-lg md:text-xl text-prodfolio-slate max-w-2xl mx-auto">Prodfolio showcases your results and proves your value.</p>
             </div>
             
             <div className={`grid md:grid-cols-2 gap-10 max-w-6xl mx-auto stagger-children ${insightsAnimation.isVisible ? 'visible' : ''}`}>
@@ -162,13 +162,19 @@ const Landing = () => {
                           "A strong portfolio helps cut through the noise. Just like a UX designer's portfolio brings their process to life, <span className="font-semibold">a product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped.</span>"
                         </p>
                         <p className="text-sm text-prodfolio-slate font-medium">
-                          Heidi R., Practice Lead @ TheProductRecruiter.com
+                          Heidi R., Product Recruiter, Practice Lead
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </article>
+            </div>
+            
+            <div className={`text-center mt-12 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <Button asChild size="lg" className="px-8 btn-gradient">
+                <a href="https://app.prodfolio.io/signup">Build My Portfolio</a>
+              </Button>
             </div>
           </div>
         </div>
