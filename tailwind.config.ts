@@ -44,9 +44,15 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         navy: {
-          DEFAULT: "#122349",
+          DEFAULT: "#0A0A14",
           light: "#394867",
           dark: "#0F1219",
+        },
+        prodfolio: {
+          purple: "#9B7BFF",
+          "purple-light": "#B59CFF",
+          navy: "#0A0A14",
+          gray: "#F7F7F9",
         },
       },
       borderRadius: {

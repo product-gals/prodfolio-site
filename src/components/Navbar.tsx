@@ -10,8 +10,13 @@ const Navbar = () => {
       <div className="prodfolio-container">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link to="/" className="font-bold text-2xl text-navy">
-              Prodfolio
+            <Link to="/" className="flex items-center gap-2">
+              <span className="font-bold text-2xl text-navy hidden md:inline">
+                Prodfolio
+              </span>
+              <span className="font-bold text-2xl text-navy md:hidden">
+                P
+              </span>
             </Link>
           </div>
 

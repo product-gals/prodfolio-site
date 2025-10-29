@@ -72,14 +72,22 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-8 text-center">
-          <p className="text-base mb-4 font-medium">Made with 💙 by PMs, for PMs</p>
-          <a href="https://www.linkedin.com/company/prodfoliohq" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary-foreground hover:underline transition-all">
-            Follow us on LinkedIn
-          </a>
-          <p className="text-xs text-primary-foreground/70 mt-4">
-            Prodfolio™ is a product of Just Fractional, LLC. All rights reserved.
-          </p>
+        <div className="border-t border-primary-foreground/20 pt-8">
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="font-bold text-2xl text-primary-foreground">Prodfolio</span>
+            </div>
+            <p className="text-sm font-semibold tracking-wide mb-4">SHOW YOUR WORK. OWN YOUR IMPACT.</p>
+          </div>
+          <div className="text-center">
+            <p className="text-base mb-4 font-medium">Made with 💙 by PMs, for PMs</p>
+            <a href="https://www.linkedin.com/company/prodfoliohq" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary-foreground hover:underline transition-all">
+              Follow us on LinkedIn
+            </a>
+            <p className="text-xs text-primary-foreground/70 mt-4">
+              Prodfolio™ is a product of Just Fractional, LLC. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
