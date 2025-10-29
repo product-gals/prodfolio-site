@@ -8,43 +8,47 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 20% 4%;
+    --foreground: 240 85% 4%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 20% 4%;
+    --card-foreground: 240 85% 4%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 20% 4%;
+    --popover-foreground: 240 85% 4%;
 
-    --primary: 264 100% 74%;
+    /* Prodfolio Purple: #9B7BFF */
+    --primary: 261 100% 74%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 263 100% 81%;
-    --secondary-foreground: 0 0% 100%;
+    /* Soft Lavender: #D7C8FF */
+    --secondary: 258 100% 90%;
+    --secondary-foreground: 240 85% 4%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    /* Soft Gray: #F7F7F9 */
+    --muted: 240 20% 97%;
+    --muted-foreground: 240 5% 48%;
 
-    --accent: 264 100% 74%;
-    --accent-foreground: 0 0% 100%;
+    /* Soft Lavender for accents */
+    --accent: 258 100% 90%;
+    --accent-foreground: 240 85% 4%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 5.9% 90%;
+    --border: 258 100% 90%;
     --input: 240 5.9% 90%;
-    --ring: 264 100% 74%;
+    --ring: 261 100% 74%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 264 100% 74%;
+    --sidebar-foreground: 240 5% 48%;
+    --sidebar-primary: 261 100% 74%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 264 100% 74%;
+    --sidebar-accent: 240 20% 97%;
+    --sidebar-accent-foreground: 240 85% 4%;
+    --sidebar-border: 258 100% 90%;
+    --sidebar-ring: 261 100% 74%;
     
     /* Beta banner handling */
     --beta-banner-height: 48px;
@@ -185,15 +189,20 @@
 
   /* Premium button gradient */
   .btn-gradient {
-    @apply bg-gradient-to-r from-primary via-primary to-secondary text-primary-foreground;
-    @apply hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200;
-    @apply shadow-[0_4px_14px_0_rgba(125,52,255,0.39)];
+    background: linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%);
+    @apply text-white;
+    @apply hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300;
+    box-shadow: 0 4px 20px 0 rgba(155, 123, 255, 0.4);
+  }
+  
+  .btn-gradient:hover {
+    box-shadow: 0 8px 28px 0 rgba(155, 123, 255, 0.5);
   }
 
   /* Secondary outline button */
   .btn-outline-premium {
-    @apply border-2 border-primary/20 bg-white text-primary;
-    @apply hover:border-primary/40 hover:bg-primary/5 transition-all duration-200;
+    @apply border-2 border-prodfolio-lavender bg-white text-prodfolio-navy;
+    @apply hover:border-primary hover:bg-prodfolio-lavender/20 transition-all duration-200;
   }
 
   /* Portfolio Builder scroll fixes */

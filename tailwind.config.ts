@@ -51,8 +51,12 @@ export default {
         prodfolio: {
           purple: "#9B7BFF",
           "purple-light": "#B59CFF",
+          lavender: "#D7C8FF",
           navy: "#0A0A14",
           gray: "#F7F7F9",
+          slate: "#6F6F7B",
+          focus: "#3366FF",
+          orange: "#FFA400",
         },
       },
       borderRadius: {
