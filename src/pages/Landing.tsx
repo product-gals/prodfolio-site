@@ -3,6 +3,13 @@ import { Quote } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
@@ -186,52 +193,70 @@ const Landing = () => {
         className="py-24 md:py-30 bg-white border-t border-prodfolio-lavender/30"
       >
         <div className="prodfolio-container">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className={`text-center mb-16 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-3xl md:text-5xl font-bold text-prodfolio-navy mb-4">
                 Real stories from product managers and aspiring product leaders just like you.
               </h2>
             </div>
             
-            <div className={`grid md:grid-cols-3 gap-8 stagger-children ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
-              {/* Real Testimonial */}
-              <article className="bg-white rounded-2xl p-6 shadow-lg border border-prodfolio-lavender/30 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
-                <div className="flex-1">
-                  <Quote className="w-8 h-8 text-prodfolio-lavender mb-4" />
-                  <p className="text-sm text-prodfolio-navy leading-relaxed mb-6">
-                    "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for. I'm most excited about how Prodfolio helps me craft narratives around my product work; the templates are easy to use and optimized for storytelling."
-                  </p>
-                </div>
-                <p className="text-sm text-prodfolio-slate font-medium pt-4 border-t border-prodfolio-lavender/30">
-                  Senior Product Manager
-                </p>
-              </article>
+            <div className={`${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <Carousel className="w-full max-w-3xl mx-auto">
+                <CarouselContent>
+                  {/* Real Testimonial */}
+                  <CarouselItem>
+                    <article className="bg-prodfolio-lavender/10 rounded-2xl p-8 md:p-10 shadow-lg border border-prodfolio-lavender/30 flex flex-col">
+                      <div className="flex-1">
+                        <Quote className="w-10 h-10 text-prodfolio-purple mb-6" />
+                        <p className="text-base md:text-lg text-prodfolio-navy leading-relaxed mb-8">
+                          "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for. I'm most excited about how Prodfolio helps me craft narratives around my product work; the templates are easy to use and optimized for storytelling."
+                        </p>
+                      </div>
+                      <p className="text-sm text-prodfolio-slate font-semibold pt-6 border-t border-prodfolio-lavender/30">
+                        Senior Product Manager
+                      </p>
+                    </article>
+                  </CarouselItem>
 
-              {/* Placeholder Testimonial 1 */}
-              <article className="bg-white rounded-2xl p-6 shadow-lg border border-prodfolio-lavender/20 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col opacity-50">
-                <div className="flex-1">
-                  <Quote className="w-8 h-8 text-prodfolio-lavender mb-4" />
-                  <p className="text-sm text-prodfolio-navy leading-relaxed mb-6">
-                    Your testimonial could be here. Share your Prodfolio success story with us.
-                  </p>
-                </div>
-                <p className="text-sm text-prodfolio-slate font-medium pt-4 border-t border-prodfolio-lavender/30">
-                  Future Testimonial
-                </p>
-              </article>
+                  {/* Placeholder Testimonial 1 */}
+                  <CarouselItem>
+                    <article className="bg-prodfolio-lavender/10 rounded-2xl p-8 md:p-10 shadow-lg border border-prodfolio-lavender/20 flex flex-col opacity-50">
+                      <div className="flex-1">
+                        <Quote className="w-10 h-10 text-prodfolio-purple mb-6" />
+                        <p className="text-base md:text-lg text-prodfolio-navy leading-relaxed mb-8">
+                          Your testimonial could be here. Share your Prodfolio success story with us.
+                        </p>
+                      </div>
+                      <p className="text-sm text-prodfolio-slate font-semibold pt-6 border-t border-prodfolio-lavender/30">
+                        Future Testimonial
+                      </p>
+                    </article>
+                  </CarouselItem>
 
-              {/* Placeholder Testimonial 2 */}
-              <article className="bg-white rounded-2xl p-6 shadow-lg border border-prodfolio-lavender/20 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col opacity-50">
-                <div className="flex-1">
-                  <Quote className="w-8 h-8 text-prodfolio-lavender mb-4" />
-                  <p className="text-sm text-prodfolio-navy leading-relaxed mb-6">
-                    Your testimonial could be here. Share your Prodfolio success story with us.
-                  </p>
-                </div>
-                <p className="text-sm text-prodfolio-slate font-medium pt-4 border-t border-prodfolio-lavender/30">
-                  Future Testimonial
-                </p>
-              </article>
+                  {/* Placeholder Testimonial 2 */}
+                  <CarouselItem>
+                    <article className="bg-prodfolio-lavender/10 rounded-2xl p-8 md:p-10 shadow-lg border border-prodfolio-lavender/20 flex flex-col opacity-50">
+                      <div className="flex-1">
+                        <Quote className="w-10 h-10 text-prodfolio-purple mb-6" />
+                        <p className="text-base md:text-lg text-prodfolio-navy leading-relaxed mb-8">
+                          Your testimonial could be here. Share your Prodfolio success story with us.
+                        </p>
+                      </div>
+                      <p className="text-sm text-prodfolio-slate font-semibold pt-6 border-t border-prodfolio-lavender/30">
+                        Future Testimonial
+                      </p>
+                    </article>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex" />
+                <CarouselNext className="hidden md:flex" />
+              </Carousel>
+            </div>
+
+            <div className={`text-center mt-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <Button asChild variant="outline" size="lg" className="px-8">
+                <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer">Share Your Story</a>
+              </Button>
             </div>
           </div>
         </div>
