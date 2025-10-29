@@ -187,9 +187,8 @@ const Landing = () => {
           <div className="max-w-6xl mx-auto">
             <div className={`text-center mb-16 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                What product people are saying
+                Real stories from product managers and aspiring product leaders just like you.
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Real stories from PMs and aspiring product leaders using Prodfolio.</p>
             </div>
             
             <div className={`grid md:grid-cols-3 gap-8 stagger-children ${testimonialsAnimation.isVisible ? 'visible' : ''}`}>
