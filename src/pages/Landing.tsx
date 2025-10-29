@@ -243,10 +243,10 @@ const Landing = () => {
         <div className="prodfolio-container text-center">
           <div className={`max-w-3xl mx-auto ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground leading-tight">
-              Ready to build your product portfolio?
+              Ready to build your Prodfolio™?
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
-              Join product leaders already using Prodfolio to showcase their PM thinking and stand out in the job market.
+              Join product leaders using Prodfolio to stand out and get hired.
             </p>
             <div className="flex justify-center gap-4">
               <Button asChild size="lg" variant="gradient" className="px-8">
