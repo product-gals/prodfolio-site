@@ -28,12 +28,12 @@ const Navbar = () => {
               <img 
                 src={prodfolioLogoFull} 
                 alt="Prodfolio - Show Your Work. Own Your Impact." 
-                className="h-10 md:h-14 hidden md:block"
+                className="h-12 md:h-16 hidden md:block"
               />
               <img 
                 src={prodfolioIcon} 
                 alt="Prodfolio" 
-                className="h-10 md:hidden"
+                className="h-12 md:hidden"
               />
             </Link>
           </div>
