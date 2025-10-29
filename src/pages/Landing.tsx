@@ -49,20 +49,16 @@ const Landing = () => {
         <div className="prodfolio-container relative">
           <header className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
-              A credibility engine for product people
+              The credibility engine for product people.
             </h1>
             <p className="text-lg md:text-2xl mb-10 text-white/90 leading-relaxed">
               Build your product portfolio. Show how you think. Prove your impact.
             </p>
-            <div className="flex justify-center gap-4" aria-label="Primary call to action">
+            <div className="flex justify-center" aria-label="Primary call to action">
               <Button asChild size="lg" className="px-8 btn-gradient">
-                <a href="https://app.prodfolio.io/signup">Get started free</a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="px-8 bg-white text-prodfolio-navy border-white hover:bg-white/90">
-                <a href="https://app.prodfolio.io/login">Log in</a>
+                <a href="https://app.prodfolio.io/signup">Get Started Now</a>
               </Button>
             </div>
-            <p className="mt-4 text-sm text-white/80">No credit card required.</p>
           </header>
         </div>
         <div className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]"></div>
