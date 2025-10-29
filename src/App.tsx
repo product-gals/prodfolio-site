@@ -13,6 +13,7 @@ import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import Partnerships from "./pages/Partnerships";
 import TermsOfService from "./pages/TermsOfService";
+import Quiz from "./pages/Quiz";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/resources" element={<Resources />} />
             <Route path="/partnerships" element={<Partnerships />} />
             <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/quiz" element={<Quiz />} />
             
             {/* Public portfolio views */}
             <Route path="/p/:slug" element={<PortfolioView />} />
