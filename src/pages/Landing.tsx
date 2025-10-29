@@ -71,10 +71,10 @@ const Landing = () => {
       >
         <div className="prodfolio-container">
         <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="text-3xl md:text-5xl font-bold text-prodfolio-navy mb-4">How it works</h2>
-          <p className="text-lg md:text-xl text-prodfolio-slate max-w-2xl mx-auto mb-3">Showcase your expertise and land your next role with three simple steps.</p>
+          <h2 className="text-3xl md:text-5xl font-bold text-prodfolio-navy mb-4">Why Prodfolio</h2>
+          <p className="text-lg md:text-xl text-prodfolio-slate max-w-2xl mx-auto mb-3">Save hours building your portfolio — and prove your value faster.</p>
           <p className="text-sm text-prodfolio-slate/70 max-w-2xl mx-auto">
-            Save hours of setup time with a guided process that makes portfolio building effortless.
+            Showcase your expertise and land your next role.
           </p>
         </div>
         <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
@@ -97,7 +97,7 @@ const Landing = () => {
               <span className="text-white text-3xl font-bold">3</span>
             </div>
             <h3 className="text-xl font-semibold mb-4 text-prodfolio-navy">Share and stand out</h3>
-            <p className="text-prodfolio-slate leading-relaxed">Publish a professional portfolio you can share in minutes — and get noticed faster.</p>
+            <p className="text-prodfolio-slate leading-relaxed">Publish a professional portfolio you can share — and get noticed faster.</p>
           </article>
         </div>
         </div>
