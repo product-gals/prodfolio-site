@@ -116,9 +116,9 @@ const Landing = () => {
           <div className="max-w-6xl mx-auto">
             <div className={`text-center mb-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Strong portfolios cut through the noise
+                Great portfolios get noticed
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Hiring managers want to see how you think — not just what you shipped.</p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Show your thinking, not just what you built.</p>
             </div>
             
             <div className={`grid md:grid-cols-2 gap-10 max-w-6xl mx-auto stagger-children ${insightsAnimation.isVisible ? 'visible' : ''}`}>
