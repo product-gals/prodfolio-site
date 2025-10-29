@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import prodfolioLogoFull from "@/assets/prodfolio-logo-full.png";
+import prodfolioIcon from "@/assets/prodfolio-icon.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,13 +12,17 @@ const Navbar = () => {
       <div className="prodfolio-container">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center gap-2">
-              <span className="font-bold text-2xl text-navy hidden md:inline">
-                Prodfolio
-              </span>
-              <span className="font-bold text-2xl text-navy md:hidden">
-                P
-              </span>
+            <Link to="/" className="flex items-center">
+              <img 
+                src={prodfolioLogoFull} 
+                alt="Prodfolio - Show Your Work. Own Your Impact." 
+                className="h-8 md:h-10 hidden md:block"
+              />
+              <img 
+                src={prodfolioIcon} 
+                alt="Prodfolio" 
+                className="h-8 md:hidden"
+              />
             </Link>
           </div>
 

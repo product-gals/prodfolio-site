@@ -1,3 +1,5 @@
+import prodfolioIcon from "@/assets/prodfolio-icon.png";
+
 const Footer = () => {
   return (
     <footer className="py-12 bg-gradient-to-br from-primary via-primary/80 to-secondary text-primary-foreground">
@@ -74,10 +76,17 @@ const Footer = () => {
         
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="text-center mb-6">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="font-bold text-2xl text-primary-foreground">Prodfolio</span>
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <img 
+                src={prodfolioIcon} 
+                alt="Prodfolio Icon" 
+                className="h-10 w-10"
+              />
+              <div className="text-left">
+                <span className="font-bold text-xl text-primary-foreground block">Prodfolio</span>
+                <p className="text-xs font-semibold tracking-wide">SHOW YOUR WORK. OWN YOUR IMPACT.</p>
+              </div>
             </div>
-            <p className="text-sm font-semibold tracking-wide mb-4">SHOW YOUR WORK. OWN YOUR IMPACT.</p>
           </div>
           <div className="text-center">
             <p className="text-base mb-4 font-medium">Made with 💙 by PMs, for PMs</p>
