@@ -83,6 +83,8 @@ const Pricing = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Choose your plan
           </h1>
+          {/* Gradient divider */}
+          <div className="w-32 h-1 mx-auto mb-8 rounded-full bg-gradient-to-r from-primary via-primary-foreground/20 to-primary"></div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Start building your portfolio for free. Upgrade to unlock AI-powered storytelling tools and advanced features.
           </p>
@@ -92,22 +94,22 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-24 px-4 bg-muted/30 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container">
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {plans.map((plan, index) => (
               <Card 
                 key={index}
-                className={`relative flex flex-col ${
+                className={`relative flex flex-col transition-all duration-300 ${
                   plan.popular 
-                    ? 'border-2 border-primary shadow-lg md:scale-105' 
-                    : 'border border-border'
-                }`}
+                    ? 'border-2 border-primary shadow-soft md:scale-105 hover:shadow-xl hover:-translate-y-1' 
+                    : 'border-2 border-border/50 hover:border-accent hover:shadow-lg'
+                } bg-card`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 py-1 rounded-full text-sm font-medium shadow-md">
                       Most Popular
                     </span>
                   </div>
@@ -162,57 +164,71 @@ const Pricing = () => {
               </Card>
             ))}
           </div>
-          
-          {/* Quiz Section */}
-          <div className="text-center mt-16 max-w-2xl mx-auto">
-            <p className="text-muted-foreground mb-4">
-              Not sure which plan is right for you? Take the 3-Minute Portfolio Quiz to get a personalized recommendation.
-            </p>
-            <Button variant="outline" asChild>
-              <a href="/quiz">Take the Quiz</a>
-            </Button>
+        </div>
+      </section>
+
+      {/* Mid-Page CTAs - Quiz & Resources */}
+      <section className="py-20 px-4 bg-accent/30 border-y border-border">
+        <div className="prodfolio-container max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-semibold mb-2">Not sure where to start?</h2>
+            <p className="text-muted-foreground">Get personalized guidance to build your perfect portfolio.</p>
           </div>
           
-          {/* Resources Link */}
-          <div className="text-center mt-8">
-            <p className="text-muted-foreground mb-4">
-              Need help getting started?
-            </p>
-            <Button variant="outline" asChild>
-              <a href="/resources">Download Free Templates & Guides</a>
-            </Button>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Quiz CTA */}
+            <div className="bg-card border-2 border-accent rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold mb-3">Take the 3-Minute Portfolio Quiz</h3>
+              <p className="text-muted-foreground mb-6">
+                Discover what's holding your portfolio back — and how to fix it.
+              </p>
+              <Button variant="outline" asChild className="w-full">
+                <a href="/quiz">Start the Quiz</a>
+              </Button>
+            </div>
+            
+            {/* Resources CTA */}
+            <div className="bg-card border-2 border-accent rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold mb-3">Need Help Getting Started?</h3>
+              <p className="text-muted-foreground mb-6">
+                Access free templates, guides, and resources to jumpstart your portfolio.
+              </p>
+              <Button variant="outline" asChild className="w-full">
+                <a href="/resources">Download Free Templates & Guides</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 bg-muted/10">
+      <section className="py-28 px-4 bg-background border-t-2 border-accent/40">
         <div className="prodfolio-container max-w-3xl">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-16">
             Frequently asked questions
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-10">
             <div>
-              <h3 className="text-lg font-semibold mb-2">Can I switch plans later?</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-bold mb-3">Can I switch plans later?</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">What payment methods do you accept?</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-bold mb-3">What payment methods do you accept?</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 We accept all major credit cards and PayPal for your convenience.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Is there a free trial for Pro?</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-bold mb-3">Is there a free trial for Pro?</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Yes! Try Pro free for 14 days. No credit card required to start your trial.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Can I cancel anytime?</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-bold mb-3">Can I cancel anytime?</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 Absolutely. Cancel your subscription anytime from your account settings. No questions asked.
               </p>
             </div>
