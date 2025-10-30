@@ -18,8 +18,8 @@ const Resources = () => {
   const navigate = useNavigate();
 
   useSEO({
-    title: "Free Product Portfolio Resources | Guides & Templates - Prodfolio",
-    description: "Download free product portfolio templates, PM interview prep kits, and case study guides. Build a standout portfolio today.",
+    title: "Resources for Product Managers | Free Templates, Quiz & Stories – Prodfolio",
+    description: "Explore free product management templates, portfolio examples, and real stories from PMs. Build your portfolio and stand out with Prodfolio.",
     canonical: "https://prodfolio.io/resources",
   });
 
@@ -63,49 +63,42 @@ const Resources = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-[#FAF8FF] to-[#F4F2FF]">
         <div className="prodfolio-container text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Resources
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Free resources to help you grow your product career and showcase your impact.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Curated tools, templates, and stories to help you grow your product career and showcase your impact.
           </p>
         </div>
       </section>
 
       {/* Quiz Promo Section */}
-      <section className="py-12 px-4 bg-white">
-        <div className="prodfolio-container max-w-3xl mx-auto">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#F4F2FF] to-white">
+        <div className="prodfolio-container max-w-4xl mx-auto">
           <Card 
-            className="border-2 hover:shadow-xl transition-all cursor-pointer"
+            className="border-2 hover:shadow-2xl transition-all duration-300 cursor-pointer"
             style={{ 
               borderColor: '#D7C8FF',
               backgroundColor: 'white'
             }}
             onClick={() => navigate("/quiz")}
           >
-            <CardContent className="p-8 md:p-10">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-                <div className="text-center md:text-left flex-1">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-3">
-                    Take the 3-Minute Portfolio Quiz
-                  </h2>
-                  <p className="text-muted-foreground text-lg">
-                    Discover what's holding your portfolio back — and how to fix it.
-                  </p>
-                </div>
-                <Button 
-                  size="lg"
-                  className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90 transition-opacity shrink-0"
-                  asChild
-                >
-                  <span className="flex items-center gap-2">
-                    Start the Quiz
-                    <ArrowRight className="w-5 h-5" />
-                  </span>
-                </Button>
-              </div>
+            <CardContent className="p-12 md:p-16 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+                Take the 3-Minute Portfolio Quiz
+              </h2>
+              <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Discover what's holding your portfolio back — and how to fix it.
+              </p>
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90 transition-opacity text-white px-8 py-6 text-lg"
+              >
+                Start the Quiz
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -114,181 +107,172 @@ const Resources = () => {
       {/* Guides & Templates */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-28 px-4 bg-white ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container">
-          <div className="mb-12 text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <BookOpen className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl font-bold">Guides & Templates</h2>
-            </div>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Proven frameworks and templates to build a portfolio that stands out
+        <div className="prodfolio-container max-w-6xl mx-auto">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Guides & Templates</h2>
+            <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
+              Proven frameworks to help you build a standout portfolio.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             {guides.map((guide, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-xl">{guide.title}</CardTitle>
-                  <CardDescription>{guide.description}</CardDescription>
+              <Card 
+                key={index} 
+                className="hover:shadow-xl transition-all duration-300 border-2 flex flex-col"
+                style={{ borderColor: '#E2D9FF' }}
+              >
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl font-bold mb-2">{guide.title}</CardTitle>
+                  <CardDescription className="text-base">{guide.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4 italic">
-                    {guide.preview}
-                  </p>
+                <CardContent className="flex-1 flex flex-col justify-end">
                   <Button 
-                    className="w-full" 
+                    variant="outline"
+                    className="w-full border-[#9B7BFF] text-[#9B7BFF] hover:bg-[#9B7BFF] hover:text-white transition-colors" 
                     onClick={() => handleDownloadClick(guide.title)}
                   >
                     <Download className="w-4 h-4 mr-2" />
-                    Download PDF
+                    Download Free PDF
                   </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="text-center space-y-4">
-            <p className="text-muted-foreground mb-4">
-              Want to put these guides into action?
+          <div className="bg-muted/30 rounded-lg p-6 text-center border border-border">
+            <p className="text-muted-foreground text-lg mb-4">
+              Want to see how these templates come to life?
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button variant="outline" asChild>
-                <a href="/pricing">View Plans & Pricing</a>
-              </Button>
-              <Button variant="ghost" asChild>
-                <a href="/quiz">Take the Portfolio Quiz →</a>
-              </Button>
-            </div>
+            <Button variant="ghost" asChild className="text-primary hover:text-primary/90">
+              <a href="/quiz" className="flex items-center gap-2 mx-auto">
+                Take the Quiz
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Podcast & Examples */}
-      <section className="py-16 px-4" style={{ backgroundColor: "#F7F7F9" }}>
-        <div className="prodfolio-container">
-          <div className="mb-12 text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Mic className="w-8 h-8 text-primary" />
-              <h2 className="text-3xl font-bold">Podcast & Examples</h2>
-            </div>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Real stories from product professionals and curated portfolio examples
+      {/* Stories from Product People */}
+      <section className="py-28 px-4" style={{ backgroundColor: "#F8F7FC" }}>
+        <div className="prodfolio-container max-w-4xl mx-auto">
+          <div className="mb-16 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Stories from Product People</h2>
+            <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
+              Real conversations and examples from PMs using portfolios to get noticed.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Podcast Episodes */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">The Product Pivot Podcast</h3>
-              <div className="space-y-6">
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-lg">Episode 1: From Engineer to PM</CardTitle>
-                    <CardDescription>
-                      Sarah Chen shares how she transitioned into product management and built her first portfolio.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    {/* Spotify Embed Placeholder */}
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-4">
-                      <p className="text-muted-foreground">Coming Soon: Spotify Player</p>
-                    </div>
-                    <Button variant="ghost" className="w-full" disabled>
-                      Listen on Spotify
-                    </Button>
-                  </CardContent>
-                </Card>
-
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-lg">Episode 2: Breaking into Big Tech</CardTitle>
-                    <CardDescription>
-                      Alex Rodriguez on leveraging your portfolio to land interviews at top companies.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-4">
-                      <p className="text-muted-foreground">Coming Soon: YouTube Player</p>
-                    </div>
-                    <Button variant="ghost" className="w-full" disabled>
-                      Watch on YouTube
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-
-            {/* Portfolio Examples */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Portfolio Examples</h3>
-              <div className="space-y-6">
-                {[
-                  {
-                    title: "Senior PM at Fintech Startup",
-                    description: "See how Maria structured her portfolio to showcase B2B SaaS impact with clear metrics.",
-                  },
-                  {
-                    title: "Junior PM Breaking In",
-                    description: "David's portfolio that landed him his first PM role despite a non-traditional background.",
-                  },
-                  {
-                    title: "Product Leader Portfolio",
-                    description: "Executive-level portfolio example demonstrating strategic thinking and team leadership.",
-                  },
-                ].map((example, index) => (
-                  <Card key={index} className="hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <CardTitle className="text-lg">{example.title}</CardTitle>
-                      <CardDescription>{example.description}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <Button variant="outline" className="w-full" disabled>
-                        View Example (Coming Soon)
-                      </Button>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
+          {/* Featured Podcast Episode */}
+          <div className="mb-12">
+            <Card className="hover:shadow-xl transition-all duration-300 border-2" style={{ borderColor: '#E2D9FF' }}>
+              <CardHeader>
+                <div className="flex items-center gap-2 mb-2">
+                  <Mic className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wide">Featured Episode</span>
+                </div>
+                <CardTitle className="text-2xl mb-2">From Engineer to PM: Building Your First Portfolio</CardTitle>
+                <CardDescription className="text-base">
+                  Sarah Chen shares how she transitioned into product management and built a portfolio that landed her dream role.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+                  <p className="text-muted-foreground">Coming Soon: Spotify Player</p>
+                </div>
+                <div className="flex gap-3">
+                  <Button variant="outline" className="flex-1" disabled>
+                    <Mic className="w-4 h-4 mr-2" />
+                    Listen on Spotify
+                  </Button>
+                  <Button variant="outline" className="flex-1" disabled>
+                    Watch on YouTube
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
-          <div className="text-center space-y-4">
-            <p className="text-muted-foreground mb-4">
-              Ready to create your own standout portfolio?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild>
-                <a href="/pricing">Get Started with Prodfolio</a>
-              </Button>
-              <Button variant="outline" asChild>
-                <a href="/">Learn More About Prodfolio</a>
-              </Button>
-            </div>
+          {/* Portfolio Examples */}
+          <div className="mb-12 space-y-6">
+            <h3 className="text-2xl font-bold text-center mb-8">Featured Portfolio Examples</h3>
+            
+            <Card className="hover:shadow-xl transition-all duration-300 border-2" style={{ borderColor: '#E2D9FF' }}>
+              <CardHeader>
+                <CardTitle className="text-xl">Senior PM at Fintech Startup</CardTitle>
+                <CardDescription className="text-base">
+                  See how Maria structured her portfolio to showcase B2B SaaS impact with clear metrics.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full" disabled>
+                  View Example (Coming Soon)
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2" style={{ borderColor: '#E2D9FF' }}>
+              <CardHeader>
+                <CardTitle className="text-xl">Junior PM Breaking In</CardTitle>
+                <CardDescription className="text-base">
+                  David's portfolio that landed him his first PM role despite a non-traditional background.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button variant="outline" className="w-full" disabled>
+                  View Example (Coming Soon)
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Explore More CTA */}
+          <div className="text-center">
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-2 border-[#9B7BFF] text-[#9B7BFF] hover:bg-[#9B7BFF] hover:text-white transition-colors px-8"
+            >
+              Explore More Stories
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 px-4 bg-gradient-to-br from-primary via-primary to-secondary text-white">
-        <div className="prodfolio-container text-center">
+      {/* Final CTA Banner */}
+      <section className="py-28 px-4 bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] text-white">
+        <div className="prodfolio-container max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Ready to showcase your product work?
+            Ready to build your Prodfolio™?
           </h2>
-          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Start building your portfolio today and stand out in your next opportunity.
+          <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-2xl mx-auto">
+            Start your free portfolio and showcase your product impact.
           </p>
-          <Button 
-            asChild
-            size="lg"
-            className="bg-white text-primary hover:bg-white/90"
-          >
-            <a href="https://app.prodfolio.io/signup">
-              Start your portfolio
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-white text-[#9B7BFF] hover:bg-white/90 px-8 py-6 text-lg font-semibold"
+            >
+              <a href="https://app.prodfolio.io/signup">
+                Start Free
+              </a>
+            </Button>
+            <Button 
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold"
+            >
+              <a href="/pricing">
+                View Pricing
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
