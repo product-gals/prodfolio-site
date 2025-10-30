@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookOpen, Mic, Download, ArrowRight } from "lucide-react";
+import { BookOpen, Mic, Download, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
@@ -27,17 +27,17 @@ const Resources = () => {
     {
       title: "The Product Portfolio Blueprint",
       description: "A comprehensive guide to building a portfolio that showcases your impact and gets results.",
-      preview: "Learn the exact framework used by top PMs to land their dream roles.",
+      benefit: "Learn frameworks used by top PMs.",
     },
     {
       title: "20 Case Study Templates",
       description: "Ready-to-use templates for documenting your product wins with clear structure and storytelling.",
-      preview: "Save hours with proven formats that highlight metrics and outcomes.",
+      benefit: "Save hours with proven structures.",
     },
     {
       title: "PM Interview Prep Kit",
       description: "Portfolio-focused interview strategies and questions to confidently present your work.",
-      preview: "Turn your portfolio into your strongest interview asset.",
+      benefit: "Turn your wins into interview stories.",
     },
   ];
 
@@ -78,14 +78,18 @@ const Resources = () => {
       <section className="py-20 px-4 bg-gradient-to-b from-[#F4F2FF] to-white">
         <div className="prodfolio-container max-w-4xl mx-auto">
           <Card 
-            className="border-2 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+            className="border-2 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer relative overflow-hidden shadow-lg"
             style={{ 
               borderColor: '#D7C8FF',
-              backgroundColor: 'white'
+              backgroundColor: 'white',
+              boxShadow: '0 10px 40px -10px rgba(155, 123, 255, 0.2)'
             }}
             onClick={() => navigate("/quiz")}
           >
-            <CardContent className="p-12 md:p-16 text-center">
+            <div className="absolute top-6 right-6 text-[#9B7BFF] opacity-20">
+              <Sparkles className="w-12 h-12 md:w-16 md:h-16" />
+            </div>
+            <CardContent className="p-12 md:p-16 text-center relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
                 Take the 3-Minute Portfolio Quiz
               </h2>
@@ -94,7 +98,7 @@ const Resources = () => {
               </p>
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90 transition-opacity text-white px-8 py-6 text-lg"
+                className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90 transition-opacity text-white px-8 py-6 text-lg shadow-md"
               >
                 Start the Quiz
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -107,10 +111,14 @@ const Resources = () => {
       {/* Guides & Templates */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`py-28 px-4 bg-white ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-28 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        style={{ backgroundColor: '#FAF9FF' }}
       >
         <div className="prodfolio-container max-w-6xl mx-auto">
           <div className="mb-16 text-center">
+            <p className="text-sm font-semibold text-[#9B7BFF] uppercase tracking-wide mb-3">
+              Trusted by PMs leveling up their storytelling
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Guides & Templates</h2>
             <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
               Proven frameworks to help you build a standout portfolio.
@@ -121,17 +129,21 @@ const Resources = () => {
             {guides.map((guide, index) => (
               <Card 
                 key={index} 
-                className="hover:shadow-xl transition-all duration-300 border-2 flex flex-col"
-                style={{ borderColor: '#E2D9FF' }}
+                className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 flex flex-col shadow-md bg-white"
+                style={{ 
+                  borderColor: '#E2D9FF',
+                  boxShadow: '0 4px 20px -4px rgba(155, 123, 255, 0.15)'
+                }}
               >
                 <CardHeader className="pb-4">
                   <CardTitle className="text-xl font-bold mb-2">{guide.title}</CardTitle>
-                  <CardDescription className="text-base">{guide.description}</CardDescription>
+                  <CardDescription className="text-base mb-3">{guide.description}</CardDescription>
+                  <p className="text-sm text-[#9B7BFF] font-medium">{guide.benefit}</p>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-end">
                   <Button 
                     variant="outline"
-                    className="w-full border-[#9B7BFF] text-[#9B7BFF] hover:bg-[#9B7BFF] hover:text-white transition-colors" 
+                    className="w-full border-[#9B7BFF] text-[#9B7BFF] hover:bg-[#9B7BFF] hover:text-white transition-all duration-300" 
                     onClick={() => handleDownloadClick(guide.title)}
                   >
                     <Download className="w-4 h-4 mr-2" />
@@ -157,7 +169,7 @@ const Resources = () => {
       </section>
 
       {/* Stories from Product People */}
-      <section className="py-28 px-4" style={{ backgroundColor: "#F8F7FC" }}>
+      <section className="py-28 px-4" style={{ backgroundColor: "#F6F4FF" }}>
         <div className="prodfolio-container max-w-4xl mx-auto">
           <div className="mb-16 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Stories from Product People</h2>
@@ -167,8 +179,8 @@ const Resources = () => {
           </div>
           
           {/* Featured Podcast Episode */}
-          <div className="mb-12">
-            <Card className="hover:shadow-xl transition-all duration-300 border-2" style={{ borderColor: '#E2D9FF' }}>
+          <div className="mb-16">
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
               <CardHeader>
                 <div className="flex items-center gap-2 mb-2">
                   <Mic className="w-5 h-5 text-primary" />
@@ -184,11 +196,11 @@ const Resources = () => {
                   <p className="text-muted-foreground">Coming Soon: Spotify Player</p>
                 </div>
                 <div className="flex gap-3">
-                  <Button variant="outline" className="flex-1" disabled>
+                  <Button variant="outline" className="flex-1 hover:bg-muted transition-colors" disabled>
                     <Mic className="w-4 h-4 mr-2" />
                     Listen on Spotify
                   </Button>
-                  <Button variant="outline" className="flex-1" disabled>
+                  <Button variant="outline" className="flex-1 hover:bg-muted transition-colors" disabled>
                     Watch on YouTube
                   </Button>
                 </div>
@@ -198,9 +210,18 @@ const Resources = () => {
 
           {/* Portfolio Examples */}
           <div className="mb-12 space-y-6">
-            <h3 className="text-2xl font-bold text-center mb-8">Featured Portfolio Examples</h3>
+            <div className="relative mb-10">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-[#E2D9FF]"></div>
+              </div>
+              <div className="relative flex justify-center">
+                <span className="bg-[#F6F4FF] px-4 text-sm font-semibold text-[#9B7BFF] uppercase tracking-wide">
+                  Featured Portfolio Examples
+                </span>
+              </div>
+            </div>
             
-            <Card className="hover:shadow-xl transition-all duration-300 border-2" style={{ borderColor: '#E2D9FF' }}>
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
               <CardHeader>
                 <CardTitle className="text-xl">Senior PM at Fintech Startup</CardTitle>
                 <CardDescription className="text-base">
@@ -208,13 +229,13 @@ const Resources = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full" disabled>
+                <Button variant="outline" className="w-full hover:bg-muted transition-colors" disabled>
                   View Example (Coming Soon)
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 border-2" style={{ borderColor: '#E2D9FF' }}>
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
               <CardHeader>
                 <CardTitle className="text-xl">Junior PM Breaking In</CardTitle>
                 <CardDescription className="text-base">
@@ -222,7 +243,7 @@ const Resources = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full" disabled>
+                <Button variant="outline" className="w-full hover:bg-muted transition-colors" disabled>
                   View Example (Coming Soon)
                 </Button>
               </CardContent>
@@ -232,9 +253,8 @@ const Resources = () => {
           {/* Explore More CTA */}
           <div className="text-center">
             <Button 
-              variant="outline" 
               size="lg"
-              className="border-2 border-[#9B7BFF] text-[#9B7BFF] hover:bg-[#9B7BFF] hover:text-white transition-colors px-8"
+              className="bg-[#9B7BFF] text-white hover:bg-[#8A6AEE] transition-all duration-300 px-8 shadow-md hover:shadow-lg"
             >
               Explore More Stories
               <ArrowRight className="w-4 h-4 ml-2" />
@@ -242,6 +262,9 @@ const Resources = () => {
           </div>
         </div>
       </section>
+
+      {/* Transition Band */}
+      <div className="h-24 bg-gradient-to-b from-[#F6F4FF] to-white"></div>
 
       {/* Final CTA Banner */}
       <section className="py-28 px-4 bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] text-white">
@@ -252,11 +275,11 @@ const Resources = () => {
           <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-2xl mx-auto">
             Start your free portfolio and showcase your product impact.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
             <Button 
               asChild
               size="lg"
-              className="bg-white text-[#9B7BFF] hover:bg-white/90 px-8 py-6 text-lg font-semibold"
+              className="bg-white text-[#9B7BFF] hover:bg-white/90 hover:shadow-lg transition-all duration-300 px-8 py-6 text-lg font-semibold"
             >
               <a href="https://app.prodfolio.io/signup">
                 Start Free
@@ -266,13 +289,16 @@ const Resources = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold"
+              className="border-2 border-white text-white hover:bg-white/10 transition-all duration-300 px-8 py-6 text-lg font-semibold"
             >
               <a href="/pricing">
                 View Pricing
               </a>
             </Button>
           </div>
+          <p className="text-white/80 text-sm">
+            No credit card required. Get started in minutes.
+          </p>
         </div>
       </section>
 
