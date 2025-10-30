@@ -68,18 +68,44 @@ const Resources = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Resources
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Free resources to help you grow your product career and showcase your impact.
           </p>
-          
-          {/* Quiz Teaser */}
-          <Card className="max-w-2xl mx-auto bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20 hover:shadow-lg transition-shadow cursor-pointer" onClick={() => navigate("/quiz")}>
-            <CardContent className="flex items-center justify-between p-6">
-              <div className="text-left">
-                <h3 className="font-semibold text-lg mb-1">Take the 3-Minute Portfolio Quiz</h3>
-                <p className="text-muted-foreground text-sm">Discover how to make your portfolio stand out</p>
+        </div>
+      </section>
+
+      {/* Quiz Promo Section */}
+      <section className="py-12 px-4 bg-white">
+        <div className="prodfolio-container max-w-3xl mx-auto">
+          <Card 
+            className="border-2 hover:shadow-xl transition-all cursor-pointer"
+            style={{ 
+              borderColor: '#D7C8FF',
+              backgroundColor: 'white'
+            }}
+            onClick={() => navigate("/quiz")}
+          >
+            <CardContent className="p-8 md:p-10">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div className="text-center md:text-left flex-1">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3">
+                    Take the 3-Minute Portfolio Quiz
+                  </h2>
+                  <p className="text-muted-foreground text-lg">
+                    Discover what's holding your portfolio back — and how to fix it.
+                  </p>
+                </div>
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90 transition-opacity shrink-0"
+                  asChild
+                >
+                  <span className="flex items-center gap-2">
+                    Start the Quiz
+                    <ArrowRight className="w-5 h-5" />
+                  </span>
+                </Button>
               </div>
-              <ArrowRight className="w-6 h-6 text-primary shrink-0" />
             </CardContent>
           </Card>
         </div>
