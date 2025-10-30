@@ -11,42 +11,65 @@ const Pricing = () => {
 
   useSEO({
     title: "Product Portfolio Builder Pricing | Free & Pro Plans - Prodfolio",
-    description: "Build your product portfolio for free. Upgrade to Pro for AI-powered tools, custom domains, and unlimited portfolios. Start today.",
+    description: "Compare Prodfolio pricing plans — from Free to Premium. Build and showcase your product portfolio with AI-powered storytelling tools.",
     canonical: "https://prodfolio.io/pricing",
   });
 
   const plans = [
     {
       name: "Free",
-      tagline: "Get started building your first portfolio.",
+      tagline: "7-day editing window; becomes read-only after.",
       price: "$0",
       features: [
-        "1 portfolio",
-        "Basic templates",
-        "Public portfolio URL",
-        "Mobile responsive design",
-        "Case study templates",
-        "Contact form integration"
+        "One Prodfolio",
+        "Basic colors",
+        "Watermarked portfolio",
+        "Quick examples"
       ],
-      cta: "Get Started",
-      popular: false
+      note: "Prodfolio domain included.",
+      cta: "Start Free",
+      popular: false,
+      tier: "free"
     },
     {
       name: "Pro",
-      tagline: "Unlock advanced templates, AI and storytelling tools.",
-      price: "$12",
+      tagline: "Unlock unlimited portfolios and advanced storytelling tools.",
+      price: "$19",
       period: "/month",
+      annualDiscount: "20% off annual",
       features: [
-        "Unlimited portfolios",
-        "Premium templates",
-        "AI-powered writing assistant",
-        "Custom domain support",
-        "Advanced analytics",
-        "Priority support",
-        "Export to PDF"
+        "Unlimited Prodfolios",
+        "Custom themes",
+        "References",
+        "AI to Case Study",
+        "AI to Resume",
+        "Prodfolio domain"
       ],
+      note: "Includes 7-day free trial.",
       cta: "Start Free Trial",
-      popular: true
+      popular: true,
+      tier: "pro"
+    },
+    {
+      name: "Premium",
+      tagline: "Everything in Pro plus advanced control and continuous updates.",
+      price: "$39",
+      period: "/month",
+      annualDiscount: "20% off annual",
+      features: [
+        "Unlimited Prodfolios",
+        "References",
+        "AI to Case Study",
+        "AI to Resume",
+        "Password protection",
+        "Custom themes",
+        "Custom domain",
+        "Analytics",
+        "Access to all new features automatically"
+      ],
+      cta: "Upgrade to Premium",
+      popular: false,
+      tier: "premium"
     }
   ];
 
@@ -61,7 +84,7 @@ const Pricing = () => {
             Choose your plan
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Start building your portfolio for free. Upgrade when you need advanced features to stand out.
+            Start building your portfolio for free. Upgrade to unlock AI-powered storytelling tools and advanced features.
           </p>
         </div>
       </section>
@@ -72,13 +95,13 @@ const Pricing = () => {
         className={`py-16 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container">
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {plans.map((plan, index) => (
               <Card 
                 key={index}
                 className={`relative flex flex-col ${
                   plan.popular 
-                    ? 'border-2 border-primary shadow-lg scale-105' 
+                    ? 'border-2 border-primary shadow-lg md:scale-105' 
                     : 'border border-border'
                 }`}
               >
@@ -91,26 +114,43 @@ const Pricing = () => {
                 )}
                 <CardHeader className="text-center pb-8">
                   <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
-                  <CardDescription className="text-base">{plan.tagline}</CardDescription>
+                  <CardDescription className="text-base min-h-[3rem]">{plan.tagline}</CardDescription>
                   <div className="mt-4">
                     <span className="text-5xl font-bold">{plan.price}</span>
-                    {plan.period && <span className="text-muted-foreground">{plan.period}</span>}
+                    {plan.period && (
+                      <div className="mt-1">
+                        <span className="text-muted-foreground">{plan.period}</span>
+                        {plan.annualDiscount && (
+                          <div className="text-xs text-primary mt-1">{plan.annualDiscount}</div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <ul className="space-y-3">
                     {plan.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        {plan.tier !== "free" && <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />}
+                        {plan.tier === "free" && <span className="w-5 h-5 shrink-0" />}
                         <span className="text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
+                  {plan.note && (
+                    <p className="text-xs text-muted-foreground mt-4 italic">{plan.note}</p>
+                  )}
                 </CardContent>
                 <CardFooter>
                   <Button 
                     asChild
-                    variant={plan.popular ? "gradient" : "outlinePremium"}
+                    variant={
+                      plan.tier === "free" 
+                        ? "outline" 
+                        : plan.popular 
+                        ? "gradient" 
+                        : "outlinePremium"
+                    }
                     className="w-full"
                     size="lg"
                   >
@@ -123,7 +163,18 @@ const Pricing = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          {/* Quiz Section */}
+          <div className="text-center mt-16 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-4">
+              Not sure which plan is right for you? Take the 3-Minute Portfolio Quiz to get a personalized recommendation.
+            </p>
+            <Button variant="outline" asChild>
+              <a href="/quiz">Take the Quiz</a>
+            </Button>
+          </div>
+          
+          {/* Resources Link */}
+          <div className="text-center mt-8">
             <p className="text-muted-foreground mb-4">
               Need help getting started?
             </p>
