@@ -86,26 +86,34 @@ const Landing = () => {
         </div>
         <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
           <article className="text-center group">
-            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg" style={{background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)'}}>
+            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg" style={{background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)'}} role="img" aria-label="Step 1">
               <span className="text-white text-3xl font-bold">1</span>
             </div>
             <h3 className="text-xl font-semibold mb-4 text-prodfolio-navy">Share your experience</h3>
             <p className="text-prodfolio-slate leading-relaxed">Answer quick guided prompts about your work — we'll help you uncover the PM thinking you already have.</p>
           </article>
           <article className="text-center group">
-            <div className="w-20 h-20 bg-prodfolio-lavender rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg">
+            <div className="w-20 h-20 bg-prodfolio-lavender rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg" role="img" aria-label="Step 2">
               <span className="text-prodfolio-navy text-3xl font-bold">2</span>
             </div>
             <h3 className="text-xl font-semibold mb-4 text-prodfolio-navy">Build your story</h3>
             <p className="text-prodfolio-slate leading-relaxed">Turn your experience into compelling, proof-based case studies that highlight your real impact.</p>
           </article>
           <article className="text-center group">
-            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg" style={{background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)'}}>
+            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg" style={{background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)'}} role="img" aria-label="Step 3">
               <span className="text-white text-3xl font-bold">3</span>
             </div>
             <h3 className="text-xl font-semibold mb-4 text-prodfolio-navy">Share and stand out</h3>
             <p className="text-prodfolio-slate leading-relaxed">Publish a professional portfolio you can share — and get noticed faster.</p>
           </article>
+        </div>
+        <div className={`text-center mt-12 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          <p className="text-prodfolio-slate mb-4">
+            Want to see examples and templates?
+          </p>
+          <Button variant="outline" asChild>
+            <a href="/resources">Explore Resources</a>
+          </Button>
         </div>
         </div>
       </section>
@@ -253,10 +261,13 @@ const Landing = () => {
               </Carousel>
             </div>
 
-            <div className={`text-center mt-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className={`text-center mt-12 space-y-4 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <Button asChild variant="outline" size="lg" className="px-8">
                 <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer">Share Your Story</a>
               </Button>
+              <p className="text-prodfolio-slate text-sm">
+                Ready to start building? <a href="/pricing" className="text-prodfolio-purple hover:underline font-medium">View Plans & Pricing</a>
+              </p>
             </div>
           </div>
         </div>

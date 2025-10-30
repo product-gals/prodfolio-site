@@ -18,8 +18,8 @@ const Resources = () => {
   const navigate = useNavigate();
 
   useSEO({
-    title: "Resources - Prodfolio",
-    description: "Free resources to help you grow your product career and showcase your impact.",
+    title: "Free Product Portfolio Resources | Guides & Templates - Prodfolio",
+    description: "Download free product portfolio templates, PM interview prep kits, and case study guides. Build a standout portfolio today.",
     canonical: "https://prodfolio.io/resources",
   });
 
@@ -124,13 +124,18 @@ const Resources = () => {
             ))}
           </div>
 
-          <div className="text-center">
+          <div className="text-center space-y-4">
             <p className="text-muted-foreground mb-4">
               Want to put these guides into action?
             </p>
-            <Button variant="outline" asChild>
-              <a href="/pricing">View Plans & Pricing</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button variant="outline" asChild>
+                <a href="/pricing">View Plans & Pricing</a>
+              </Button>
+              <Button variant="ghost" asChild>
+                <a href="/quiz">Take the Portfolio Quiz →</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -224,13 +229,18 @@ const Resources = () => {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center space-y-4">
             <p className="text-muted-foreground mb-4">
               Ready to create your own standout portfolio?
             </p>
-            <Button asChild>
-              <a href="/pricing">Get Started with Prodfolio</a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button asChild>
+                <a href="/pricing">Get Started with Prodfolio</a>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href="/">Learn More About Prodfolio</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

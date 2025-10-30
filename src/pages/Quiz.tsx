@@ -15,8 +15,8 @@ const Quiz = () => {
   const navigate = useNavigate();
 
   useSEO({
-    title: "Portfolio Quiz - Prodfolio",
-    description: "Take our 3-minute quiz to discover how to improve your product portfolio.",
+    title: "Product Portfolio Quiz | Test Your Portfolio Strength - Prodfolio",
+    description: "Take the 3-minute portfolio quiz to discover how to make your product portfolio stand out. Get personalized tips for PMs.",
     canonical: "https://prodfolio.io/quiz",
   });
 
@@ -129,6 +129,9 @@ const Quiz = () => {
                 View Pricing
               </Button>
             </div>
+            <p className="text-muted-foreground text-sm mt-6">
+              Want more guidance? <a href="/resources" className="text-primary hover:underline">Download free templates and guides</a>
+            </p>
           </div>
         </section>
         <Footer />

@@ -1,4 +1,5 @@
 import { Mic } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -8,8 +9,8 @@ const Partnerships = () => {
   const scrollRef = useScrollAnimation();
 
   useSEO({
-    title: "Partnerships - Prodfolio",
-    description: "Collaborating with organizations and leaders who share our mission to elevate product professionals.",
+    title: "Product Management Partnerships | Collaborate with Prodfolio",
+    description: "Partner with Prodfolio to elevate product professionals. Join our network of educators, recruiters, and product organizations.",
     canonical: "https://prodfolio.io/partnerships",
   });
 
@@ -92,11 +93,19 @@ const Partnerships = () => {
           <h2 className="text-3xl font-bold mb-6">
             Our mission
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             We believe every product professional deserves the tools and platform to showcase their impact. 
             Through partnerships with educators, recruiters, and product-focused organizations, we're building 
             an ecosystem that helps product people advance their careers and share their stories.
           </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button asChild>
+              <a href="/pricing">Start Building Your Portfolio</a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a href="/resources">Explore Free Resources</a>
+            </Button>
+          </div>
         </div>
       </section>
 

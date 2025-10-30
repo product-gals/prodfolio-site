@@ -10,8 +10,8 @@ const Pricing = () => {
   const scrollRef = useScrollAnimation();
 
   useSEO({
-    title: "Pricing - Prodfolio",
-    description: "Choose the perfect plan to showcase your product management work and land your next role.",
+    title: "Product Portfolio Builder Pricing | Free & Pro Plans - Prodfolio",
+    description: "Build your product portfolio for free. Upgrade to Pro for AI-powered tools, custom domains, and unlimited portfolios. Start today.",
     canonical: "https://prodfolio.io/pricing",
   });
 
@@ -121,6 +121,15 @@ const Pricing = () => {
                 </CardFooter>
               </Card>
             ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-4">
+              Need help getting started?
+            </p>
+            <Button variant="outline" asChild>
+              <a href="/resources">Download Free Templates & Guides</a>
+            </Button>
           </div>
         </div>
       </section>
