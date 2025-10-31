@@ -267,39 +267,32 @@ const Resources = () => {
       <div className="h-24 bg-gradient-to-b from-[#F6F4FF] to-white"></div>
 
       {/* Final CTA Banner */}
-      <section className="py-28 px-4 bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] text-white">
-        <div className="prodfolio-container max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Ready to build your Prodfolio™?
-          </h2>
-          <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-2xl mx-auto">
-            Start your free portfolio and showcase your product impact.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-            <Button 
-              asChild
-              size="lg"
-              className="bg-white text-[#9B7BFF] hover:bg-white/90 hover:shadow-lg transition-all duration-300 px-8 py-6 text-lg font-semibold"
-            >
-              <a href="https://app.prodfolio.io/signup">
-                Start Free
-              </a>
-            </Button>
-            <Button 
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 transition-all duration-300 px-8 py-6 text-lg font-semibold"
-            >
-              <a href="/pricing">
-                View Pricing
-              </a>
-            </Button>
+      <section 
+        className="relative py-24 md:py-32 text-white overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+        }}
+      >
+        <div className="prodfolio-container text-center relative z-10">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+              Ready to build your Prodfolio™?
+            </h2>
+            <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
+              Start your free portfolio and showcase your product impact.
+            </p>
+            <div className="flex justify-center gap-4 flex-wrap">
+              <Button asChild size="lg" className="px-8 bg-white text-purple-900 hover:bg-white/90 font-semibold shadow-xl">
+                <a href="https://app.prodfolio.io/signup">Start Free</a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="px-8 border-2 border-white text-white hover:bg-white/10">
+                <a href="/pricing">View Pricing</a>
+              </Button>
+            </div>
+            <p className="mt-6 text-sm text-white/80">No credit card required. Get started in minutes.</p>
           </div>
-          <p className="text-white/80 text-sm">
-            No credit card required. Get started in minutes.
-          </p>
         </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
 
       <LeadCaptureModal 

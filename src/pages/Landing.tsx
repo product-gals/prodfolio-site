@@ -51,9 +51,12 @@ const Landing = () => {
       {/* Hero */}
       <section 
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`relative overflow-hidden py-24 md:py-32 bg-prodfolio-navy text-white ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`relative overflow-hidden py-24 md:py-32 text-white ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        style={{
+          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+        }}
       >
-        <div className="prodfolio-container relative">
+        <div className="prodfolio-container relative z-10">
           <header className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
               The credibility engine for product people.
@@ -61,14 +64,14 @@ const Landing = () => {
             <p className="text-lg md:text-2xl mb-10 text-white/90 leading-relaxed">
               Build your product portfolio. Show how you think. Prove your impact.
             </p>
-            <div className="flex justify-center" aria-label="Primary call to action">
-              <Button asChild size="lg" className="px-8 btn-gradient">
-                <a href="https://app.prodfolio.io/signup">Get Started Now</a>
+            <div className="flex justify-center gap-4" aria-label="Primary call to action">
+              <Button asChild size="lg" className="px-8 bg-white text-purple-900 hover:bg-white/90 font-semibold shadow-xl">
+                <a href="https://app.prodfolio.io/signup">Get Started Free</a>
               </Button>
             </div>
           </header>
         </div>
-        <div className="pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]"></div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
 
       {/* How It Works Section */}
@@ -276,24 +279,31 @@ const Landing = () => {
       {/* Final CTA Section */}
       <section 
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className="py-24 md:py-32 bg-prodfolio-gray"
+        className="relative py-24 md:py-32 text-white overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+        }}
       >
-        <div className="prodfolio-container text-center">
+        <div className="prodfolio-container text-center relative z-10">
           <div className={`max-w-3xl mx-auto ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-prodfolio-navy leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
               Ready to build your Prodfolio™?
             </h2>
-            <p className="text-lg md:text-xl text-prodfolio-slate mb-10 leading-relaxed">
-              Join product leaders using Prodfolio to stand out and get hired.
+            <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
+              Start your free portfolio and showcase your product impact.
             </p>
-            <div className="flex justify-center gap-4">
-              <Button asChild size="lg" className="px-8 btn-gradient">
-                <a href="https://app.prodfolio.io/signup">Get started free</a>
+            <div className="flex justify-center gap-4 flex-wrap">
+              <Button asChild size="lg" className="px-8 bg-white text-purple-900 hover:bg-white/90 font-semibold shadow-xl">
+                <a href="https://app.prodfolio.io/signup">Start Free</a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="px-8 border-2 border-white text-white hover:bg-white/10">
+                <a href="/pricing">View Pricing</a>
               </Button>
             </div>
-            <p className="mt-6 text-sm text-prodfolio-slate">No credit card required.</p>
+            <p className="mt-6 text-sm text-white/80">No credit card required. Get started in minutes.</p>
           </div>
         </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
 
       <Footer />

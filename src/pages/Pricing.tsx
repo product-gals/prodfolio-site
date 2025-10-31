@@ -78,17 +78,23 @@ const Pricing = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4">
-        <div className="prodfolio-container text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      <section 
+        className="pt-24 pb-16 px-4 relative overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+        }}
+      >
+        <div className="prodfolio-container text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Choose your plan
           </h1>
           {/* Gradient divider */}
-          <div className="w-32 h-1 mx-auto mb-8 rounded-full bg-gradient-to-r from-primary via-primary-foreground/20 to-primary"></div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="w-32 h-1 mx-auto mb-8 rounded-full bg-white/40"></div>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Start building your portfolio for free. Upgrade to unlock AI-powered storytelling tools and advanced features.
           </p>
         </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
 
       {/* Pricing Cards */}

@@ -190,13 +190,14 @@
   /* Premium button gradient */
   .btn-gradient {
     background: linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%);
-    @apply text-white;
+    @apply text-white font-semibold;
     @apply hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300;
-    box-shadow: 0 4px 20px 0 rgba(155, 123, 255, 0.4);
+    box-shadow: 0 4px 20px 0 rgba(155, 123, 255, 0.45);
   }
   
   .btn-gradient:hover {
-    box-shadow: 0 8px 28px 0 rgba(155, 123, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(155, 123, 255, 0.6);
+    background: linear-gradient(135deg, #8A6AEE 0%, #A58BEE 100%);
   }
 
   /* Secondary outline button */
