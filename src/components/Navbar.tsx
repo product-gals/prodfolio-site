@@ -52,10 +52,10 @@ const Navbar = () => {
               Resources
             </Link>
             <div className="flex items-center space-x-2 ml-4">
-              <Button asChild variant={isScrolled ? "outline" : "outline"} className={isScrolled ? "" : "border-white text-white hover:bg-white/10"}>
+              <Button asChild variant="outline" className={isScrolled ? "" : "border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white hover:border-white/60"}>
                 <a href="https://app.prodfolio.io/login">Log In</a>
               </Button>
-              <Button asChild className={isScrolled ? "btn-gradient" : "bg-white text-purple-900 hover:bg-white/90"}>
+              <Button asChild className={isScrolled ? "btn-gradient" : "bg-white text-primary hover:bg-white/95 hover:shadow-lg"}>
                 <a href="https://app.prodfolio.io/signup">Start your portfolio</a>
               </Button>
             </div>
