@@ -2,8 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { Progress } from "@/components/ui/progress";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,145 +13,183 @@ import { useSEO } from "@/hooks/useSEO";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 
-type PersonaType = "strategist" | "builder" | "storyteller";
+type JourneyStage = "aspiring" | "early" | "mid" | "senior";
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [multiAnswers, setMultiAnswers] = useState<Record<number, string[]>>({});
+  const [textAnswers, setTextAnswers] = useState<Record<number, string>>({});
   const [showEmailCapture, setShowEmailCapture] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [persona, setPersona] = useState<PersonaType>("builder");
+  const [journeyStage, setJourneyStage] = useState<JourneyStage>("early");
   const navigate = useNavigate();
   const { toast } = useToast();
 
   useSEO({
-    title: "Product Manager Portfolio Quiz | Prodfolio",
-    description: "Discover your product portfolio strengths in 3 minutes with Prodfolio's free quiz. Learn what's holding you back — and how to stand out.",
+    title: "PM Journey Survey | Prodfolio",
+    description: "Take a quick survey to see where you are on your PM Journey. Discover your strengths and get personalized recommendations.",
     canonical: "https://prodfolio.io/quiz",
   });
 
   const questions = [
     {
-      question: "What best describes your PM experience?",
+      question: "What best describes your current role?",
       options: [
-        "I'm aspiring to break into PM",
-        "0-2 years as a PM",
-        "3-5 years as a PM",
-        "5+ years or PM leadership",
+        "Product Manager (any level)",
+        "Aspiring PM (actively pursuing PM roles)",
+        "Adjacent role (Designer, Engineer, Analyst, etc.)",
+        "Student/Recent grad interested in PM",
+        "Other",
       ],
-      category: "qualifying",
+      type: "single",
     },
     {
-      question: "How do you currently showcase your product work?",
+      question: "How much hands-on PM experience do you have?",
       options: [
-        "I don't have a portfolio yet",
-        "Resume only",
-        "LinkedIn profile",
-        "Personal website or PDF portfolio",
+        "None yet, but I'm learning",
+        "Less than 1 year",
+        "1-3 years",
+        "3-5 years",
+        "5+ years",
       ],
-      category: "current-state",
+      type: "single",
     },
     {
-      question: "What type of products do you primarily work on?",
+      question: "Do you currently have a way to showcase your PM work?",
       options: [
-        "B2B SaaS",
-        "Consumer apps",
-        "Enterprise software",
-        "E-commerce or marketplace",
+        "Yes, I have a portfolio or case studies",
+        "I have some materials, but nothing polished",
+        "No, and I'm not sure where to start",
+        "No, but I'm working on it",
       ],
-      category: "qualifying",
+      type: "single",
     },
     {
-      question: "What's your biggest challenge with your current portfolio?",
-      options: [
-        "Don't know where to start",
-        "Hard to quantify my impact",
-        "Takes too much time to maintain",
-        "Doesn't stand out from others",
-      ],
-      category: "pain-point",
+      question: "Think about your ideal PM role. What does success look like for you in that position?",
+      type: "text",
     },
     {
-      question: "How comfortable are you quantifying your impact with metrics?",
+      question: "Which PM skills do you feel strongest in? (Select all that apply)",
       options: [
-        "Very comfortable — I have clear data",
-        "Somewhat comfortable — I have some metrics",
-        "Not very comfortable — I struggle with this",
-        "Not at all — I don't track metrics well",
+        "Product strategy & vision",
+        "User research & empathy",
+        "Data analysis & metrics",
+        "Stakeholder management",
+        "Roadmapping & prioritization",
+        "I'm still building these skills",
       ],
-      category: "skill-level",
+      type: "multiple",
     },
     {
-      question: "How confident are you in telling the story behind your product decisions?",
+      question: "What's your biggest challenge right now in your PM career? (Select all that apply)",
       options: [
-        "Very confident — I can explain my thinking clearly",
-        "Somewhat confident — I know what I did but struggle to articulate it",
-        "Not very confident — I'm not sure how to structure it",
-        "Not at all — This is really hard for me",
+        "Getting noticed by recruiters/hiring managers",
+        "Breaking into PM from another field",
+        "Showcasing my impact clearly",
+        "Moving to the next PM level",
+        "Building credibility without formal PM title",
       ],
-      category: "skill-level",
+      type: "multiple",
     },
     {
-      question: "What's your main goal for your portfolio?",
+      question: "How confident are you in talking about your PM work in interviews? (Select all that apply)",
+      options: [
+        "Very confident - I have clear examples ready",
+        "Somewhat confident - I know what I've done but struggle to articulate it",
+        "Not confident - I'm not sure how to frame my experience",
+        "N/A - Haven't had PM interviews yet",
+      ],
+      type: "multiple",
+    },
+    {
+      question: "Where do you see yourself in your PM career 1-2 years from now? What would need to happen to get there?",
+      type: "text",
+    },
+    {
+      question: "What's stopping you from reaching your PM goals right now? (Select all that apply)",
+      options: [
+        "Lack of visibility/portfolio",
+        "No formal PM experience",
+        "Don't know how to stand out",
+        "Limited network or connections",
+        "Unclear on what employers want to see",
+      ],
+      type: "multiple",
+    },
+    {
+      question: "If you could solve ONE thing about your PM career journey today, what would it be?",
       options: [
         "Land my first PM role",
-        "Get promoted internally",
-        "Switch to a new company",
-        "Showcase my work for clients/freelancing",
+        "Get more interview opportunities",
+        "Showcase my work professionally",
+        "Advance to senior PM level",
+        "Transition from my current role to PM",
       ],
-      category: "goal",
+      type: "single",
     },
     {
-      question: "How much time can you dedicate to building your portfolio?",
+      question: "How actively are you pursuing PM opportunities right now?",
       options: [
-        "A few hours this week",
-        "A few hours over the next month",
-        "I need something quick — under an hour",
-        "I can invest significant time to get it right",
+        "Very active (applying/interviewing regularly)",
+        "Moderately active (exploring options)",
+        "Preparing to start soon",
+        "Passively looking",
+        "Not currently looking but want to be ready",
       ],
-      category: "commitment",
+      type: "single",
     },
     {
-      question: "What would make the biggest difference in your portfolio?",
+      question: "How can Prodfolio best support your PM goals? (Select all that apply)",
       options: [
-        "Better visual design and presentation",
-        "Clearer articulation of my impact",
-        "More compelling storytelling",
-        "Proof of results and outcomes",
+        "Help me break into PM",
+        "Showcase my PM projects professionally",
+        "Get noticed by recruiters and hiring managers",
+        "Advance to senior PM roles",
+        "Build credibility without a formal PM title",
+        "Learn how to tell my PM story better",
       ],
-      category: "priority",
-    },
-    {
-      question: "Have you received feedback on your portfolio before?",
-      options: [
-        "Yes, and it was mostly positive",
-        "Yes, but I got mixed or unclear feedback",
-        "No, I haven't shared it with anyone yet",
-        "I don't have a portfolio to get feedback on",
-      ],
-      category: "validation",
+      type: "multiple",
+      hasAdditionalText: true,
+      additionalTextPrompt: "Please tell us anything else that may help us serve you better:",
     },
   ];
 
-  const calculatePersona = (): PersonaType => {
-    // Simple logic based on answers
-    const metricsAnswer = answers[4] || "";
-    const storytellingAnswer = answers[5] || "";
-    const priorityAnswer = answers[8] || "";
+  const calculateJourneyStage = (): JourneyStage => {
+    const roleAnswer = answers[0] || "";
+    const experienceAnswer = answers[1] || "";
 
-    if (storytellingAnswer.includes("Very confident") || priorityAnswer.includes("storytelling")) {
-      return "storyteller";
-    } else if (metricsAnswer.includes("Very comfortable") || priorityAnswer.includes("impact")) {
-      return "strategist";
+    if (roleAnswer.includes("Aspiring") || roleAnswer.includes("Student") || experienceAnswer.includes("None yet")) {
+      return "aspiring";
+    } else if (experienceAnswer.includes("Less than 1 year") || experienceAnswer.includes("1-3 years")) {
+      return "early";
+    } else if (experienceAnswer.includes("3-5 years")) {
+      return "mid";
     } else {
-      return "builder";
+      return "senior";
     }
   };
 
   const handleAnswerChange = (value: string) => {
     setAnswers({ ...answers, [currentQuestion]: value });
+  };
+
+  const handleMultiAnswerChange = (option: string, checked: boolean) => {
+    const currentAnswers = multiAnswers[currentQuestion] || [];
+    if (checked) {
+      setMultiAnswers({ ...multiAnswers, [currentQuestion]: [...currentAnswers, option] });
+    } else {
+      setMultiAnswers({ 
+        ...multiAnswers, 
+        [currentQuestion]: currentAnswers.filter(a => a !== option) 
+      });
+    }
+  };
+
+  const handleTextChange = (value: string) => {
+    setTextAnswers({ ...textAnswers, [currentQuestion]: value });
   };
 
   const handleNext = () => {
@@ -189,71 +229,95 @@ const Quiz = () => {
       return;
     }
 
-    // Calculate persona based on answers
-    const calculatedPersona = calculatePersona();
-    setPersona(calculatedPersona);
+    // Calculate journey stage based on answers
+    const calculatedStage = calculateJourneyStage();
+    setJourneyStage(calculatedStage);
 
     // Here you would send lead data to backend
-    console.log("Quiz lead captured:", { name, email, answers, persona: calculatedPersona });
+    console.log("Survey lead captured:", { name, email, answers, multiAnswers, textAnswers, journeyStage: calculatedStage });
 
     setShowResults(true);
   };
 
-  const personaResults = {
-    strategist: {
-      title: "The Strategist",
-      score: "85/100",
-      description: "You're data-driven and excel at quantifying impact. Your strength is in metrics and outcomes.",
-      strengths: [
-        "You understand the importance of metrics and can demonstrate clear ROI",
-        "You think strategically about product decisions",
-        "You're comfortable with data-driven storytelling",
+  const journeyResults = {
+    aspiring: {
+      title: "Aspiring PM Ready to Break In",
+      description: "You have real potential to break into product management with the right portfolio strategy.",
+      insights: [
+        "You're taking the right first steps by thinking about how to showcase your work",
+        "Your enthusiasm and learning mindset are valuable assets",
+        "Now it's time to document your journey and demonstrate your PM thinking",
       ],
-      improvements: [
-        "Focus on making your visual presentation more compelling",
-        "Add more context around the 'why' behind your decisions",
-        "Consider including user quotes or qualitative feedback to complement your metrics",
+      nextSteps: [
+        "Start building case studies from class projects, side projects, or adjacent work",
+        "Focus on demonstrating your PM thinking process and frameworks",
+        "Create a polished portfolio that tells your story and shows your potential",
       ],
-      cta: "Your analytical mindset is perfect for Prodfolio's metric-focused templates.",
+      cta: "Prodfolio helps aspiring PMs create compelling portfolios that get noticed by recruiters.",
     },
-    builder: {
-      title: "The Builder",
-      score: "72/100",
-      description: "You're hands-on and focused on execution. You get things done but may need help showcasing your impact.",
-      strengths: [
-        "You have real product experience and tangible work to showcase",
-        "You're practical and execution-focused",
-        "You understand the product development process",
+    early: {
+      title: "Early-Stage PM Building Momentum",
+      description: "You have real PM experience to showcase. Now it's time to tell that story effectively.",
+      insights: [
+        "You've built foundational PM skills and have tangible work to highlight",
+        "Your challenge is articulating impact clearly and standing out in a competitive field",
+        "A strong portfolio can accelerate your growth and open new opportunities",
       ],
-      improvements: [
-        "Focus on articulating the impact of your work with clear metrics",
-        "Develop a structured framework for telling your product stories",
-        "Practice quantifying your contributions in measurable terms",
+      nextSteps: [
+        "Document your best 2-3 projects with clear metrics and outcomes",
+        "Practice telling the story behind your decisions and trade-offs",
+        "Build a professional portfolio that demonstrates your strategic thinking",
       ],
-      cta: "Prodfolio's guided templates will help you structure your experience and highlight your impact.",
+      cta: "Prodfolio's guided templates help you structure your experience and highlight measurable impact.",
     },
-    storyteller: {
-      title: "The Storyteller",
-      score: "78/100",
-      description: "You excel at narrative and communication. Your challenge is backing up stories with hard metrics.",
-      strengths: [
-        "You can articulate your thinking and decisions clearly",
-        "You understand the power of narrative in product management",
-        "You're confident presenting your work",
+    mid: {
+      title: "Mid-Level PM Primed for Growth",
+      description: "You're at a critical inflection point. Your portfolio can unlock senior-level opportunities.",
+      insights: [
+        "You have strong PM experience and proven results to showcase",
+        "Your next career move requires demonstrating strategic thinking and leadership",
+        "A compelling portfolio sets you apart from other mid-level candidates",
       ],
-      improvements: [
-        "Add more quantitative metrics to support your narratives",
-        "Structure your stories with clear problem → solution → impact flow",
-        "Include specific KPIs and measurable outcomes",
+      nextSteps: [
+        "Showcase your most impactful work with compelling narratives and data",
+        "Highlight cross-functional leadership and strategic decision-making",
+        "Create a portfolio that positions you for senior PM roles",
       ],
-      cta: "Combine your storytelling skills with Prodfolio's metric frameworks for a powerful portfolio.",
+      cta: "Prodfolio helps mid-level PMs showcase the strategic depth needed for senior roles.",
+    },
+    senior: {
+      title: "Senior PM on the Leadership Track",
+      description: "Your experience speaks volumes. Now make it visible to the right opportunities.",
+      insights: [
+        "You have significant PM experience and a track record of impact",
+        "Your portfolio should reflect strategic leadership, not just execution",
+        "The right positioning can open doors to principal/director-level opportunities",
+      ],
+      nextSteps: [
+        "Showcase your most strategic initiatives and business impact",
+        "Demonstrate your leadership across teams and organizational influence",
+        "Create a portfolio that reflects your thought leadership in product",
+      ],
+      cta: "Prodfolio helps senior PMs showcase the strategic vision that defines leadership.",
     },
   };
 
-  const currentPersona = personaResults[persona];
+  const currentStage = journeyResults[journeyStage];
   const progressPercentage = showEmailCapture 
     ? 100 
     : Math.round(((currentQuestion + 1) / questions.length) * 100);
+
+  const canProceed = () => {
+    const q = questions[currentQuestion];
+    if (q.type === "single") {
+      return !!answers[currentQuestion];
+    } else if (q.type === "multiple") {
+      return (multiAnswers[currentQuestion]?.length || 0) > 0;
+    } else if (q.type === "text") {
+      return (textAnswers[currentQuestion]?.trim().length || 0) > 0;
+    }
+    return false;
+  };
 
   if (showResults) {
     return (
@@ -269,29 +333,29 @@ const Quiz = () => {
                   color: 'white'
                 }}
               >
-                <span className="font-bold text-xl">{currentPersona.score}</span>
+                <span className="font-bold text-xl">🎉 Your Results</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                You're {currentPersona.title}
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">
+                {currentStage.title}
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                {currentPersona.description}
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                {currentStage.description}
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card style={{ backgroundColor: '#D7C8FF10' }}>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Your Strengths</CardTitle>
+                  <CardTitle className="text-2xl">Key Insights</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {currentPersona.strengths.map((strength, index) => (
+                    {currentStage.insights.map((insight, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center shrink-0 mt-0.5">
                           ✓
                         </div>
-                        <span className="text-muted-foreground">{strength}</span>
+                        <span className="text-muted-foreground">{insight}</span>
                       </li>
                     ))}
                   </ul>
@@ -300,16 +364,16 @@ const Quiz = () => {
 
               <Card style={{ backgroundColor: '#D7C8FF10' }}>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Areas to Improve</CardTitle>
+                  <CardTitle className="text-2xl">Your Next Steps</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {currentPersona.improvements.map((improvement, index) => (
+                    {currentStage.nextSteps.map((step, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center shrink-0 mt-0.5">
                           {index + 1}
                         </div>
-                        <span className="text-muted-foreground">{improvement}</span>
+                        <span className="text-muted-foreground">{step}</span>
                       </li>
                     ))}
                   </ul>
@@ -319,9 +383,9 @@ const Quiz = () => {
 
             <Card className="mb-8 border-2" style={{ borderColor: '#9B7BFF' }}>
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-3">Ready to Level Up?</h3>
+                <h3 className="text-2xl font-bold mb-3">🎉 Great Job!</h3>
                 <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  {currentPersona.cta}
+                  {currentStage.cta}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
@@ -370,10 +434,10 @@ const Quiz = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-3xl text-center">
-                  Get Your Personalized Results
+                  Get Your PM Journey Roadmap
                 </CardTitle>
                 <p className="text-center text-muted-foreground mt-4">
-                  We'll send your personalized portfolio insights and tips straight to your inbox.
+                  We'll send your personalized PM portfolio roadmap and specific next steps for your career stage straight to your inbox.
                 </p>
               </CardHeader>
               <CardContent>
@@ -433,10 +497,10 @@ const Quiz = () => {
       <section className="pt-32 pb-16 px-4 text-center">
         <div className="prodfolio-container max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Find Your Portfolio Strength in 3 Minutes
+            Take a quick survey to see where you are on your PM Journey
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Answer a few quick questions to learn what's holding your product portfolio back — and how to fix it.
+            Select what best describes you for each question
           </p>
         </div>
       </section>
@@ -467,27 +531,78 @@ const Quiz = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <RadioGroup
-                value={answers[currentQuestion] || ""}
-                onValueChange={handleAnswerChange}
-                className="space-y-3"
-              >
-                {questions[currentQuestion].options.map((option, index) => (
-                  <div 
-                    key={index} 
-                    className="flex items-center space-x-3 border rounded-lg p-4 hover:bg-muted/50 transition-colors"
-                    style={{
-                      borderColor: answers[currentQuestion] === option ? '#9B7BFF' : undefined,
-                      backgroundColor: answers[currentQuestion] === option ? '#D7C8FF10' : undefined,
-                    }}
-                  >
-                    <RadioGroupItem value={option} id={`option-${index}`} />
-                    <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer">
-                      {option}
-                    </Label>
-                  </div>
-                ))}
-              </RadioGroup>
+              {questions[currentQuestion].type === "single" && (
+                <RadioGroup
+                  value={answers[currentQuestion] || ""}
+                  onValueChange={handleAnswerChange}
+                  className="space-y-3"
+                >
+                  {questions[currentQuestion].options?.map((option, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-center space-x-3 border rounded-lg p-4 hover:bg-muted/50 transition-colors"
+                      style={{
+                        borderColor: answers[currentQuestion] === option ? '#9B7BFF' : undefined,
+                        backgroundColor: answers[currentQuestion] === option ? '#D7C8FF10' : undefined,
+                      }}
+                    >
+                      <RadioGroupItem value={option} id={`option-${index}`} />
+                      <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer">
+                        {option}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              )}
+
+              {questions[currentQuestion].type === "multiple" && (
+                <div className="space-y-3">
+                  {questions[currentQuestion].options?.map((option, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-center space-x-3 border rounded-lg p-4 hover:bg-muted/50 transition-colors"
+                      style={{
+                        borderColor: multiAnswers[currentQuestion]?.includes(option) ? '#9B7BFF' : undefined,
+                        backgroundColor: multiAnswers[currentQuestion]?.includes(option) ? '#D7C8FF10' : undefined,
+                      }}
+                    >
+                      <Checkbox 
+                        id={`option-${index}`}
+                        checked={multiAnswers[currentQuestion]?.includes(option) || false}
+                        onCheckedChange={(checked) => handleMultiAnswerChange(option, checked as boolean)}
+                      />
+                      <Label htmlFor={`option-${index}`} className="flex-1 cursor-pointer">
+                        {option}
+                      </Label>
+                    </div>
+                  ))}
+                  {questions[currentQuestion].hasAdditionalText && (
+                    <div className="mt-6">
+                      <Label htmlFor="additional-text" className="text-sm text-muted-foreground mb-2 block">
+                        {questions[currentQuestion].additionalTextPrompt}
+                      </Label>
+                      <Textarea
+                        id="additional-text"
+                        placeholder="Your response..."
+                        value={textAnswers[currentQuestion] || ""}
+                        onChange={(e) => handleTextChange(e.target.value)}
+                        className="min-h-[100px]"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {questions[currentQuestion].type === "text" && (
+                <div>
+                  <Textarea
+                    placeholder="Your response..."
+                    value={textAnswers[currentQuestion] || ""}
+                    onChange={(e) => handleTextChange(e.target.value)}
+                    className="min-h-[150px]"
+                  />
+                </div>
+              )}
 
               <div className="flex justify-between mt-8">
                 <Button
@@ -499,7 +614,7 @@ const Quiz = () => {
                 </Button>
                 <Button
                   onClick={handleNext}
-                  disabled={!answers[currentQuestion]}
+                  disabled={!canProceed()}
                   className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90"
                 >
                   {currentQuestion === questions.length - 1 ? "Continue" : "Next"}
