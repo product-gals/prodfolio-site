@@ -81,7 +81,7 @@ const Pricing = () => {
       <section 
         className="pt-24 pb-16 px-4 relative overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+          background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)',
         }}
       >
         <div className="prodfolio-container text-center relative z-10">

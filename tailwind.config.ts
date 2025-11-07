@@ -49,8 +49,8 @@ export default {
           dark: "#0A0A14",
         },
         prodfolio: {
-          purple: "#9B7BFF",
-          "purple-light": "#B59CFF",
+          purple: "#7B5FE6",
+          "purple-light": "#9B7BFF",
           lavender: "#D7C8FF",
           navy: "#111324",
           "navy-dark": "#0A0A14",

@@ -53,7 +53,7 @@ const Landing = () => {
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
         className={`relative overflow-hidden py-24 md:py-32 text-white ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
         style={{
-          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+          background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)',
         }}
       >
         <div className="prodfolio-container relative z-10">
@@ -89,7 +89,7 @@ const Landing = () => {
         </div>
         <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
           <article className="text-center group">
-            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" style={{background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)'}} role="img" aria-label="Step 1">
+            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" style={{background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)'}} role="img" aria-label="Step 1">
               <span className="text-white text-3xl font-bold">1</span>
             </div>
             <h3 className="text-xl font-semibold mb-4 text-foreground">Share your experience</h3>
@@ -103,7 +103,7 @@ const Landing = () => {
             <p className="text-muted-foreground leading-relaxed">Turn your experience into compelling, proof-based case studies that highlight your real impact.</p>
           </article>
           <article className="text-center group">
-            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" style={{background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)'}} role="img" aria-label="Step 3">
+            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" style={{background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)'}} role="img" aria-label="Step 3">
               <span className="text-white text-3xl font-bold">3</span>
             </div>
             <h3 className="text-xl font-semibold mb-4 text-foreground">Share and stand out</h3>
@@ -281,7 +281,7 @@ const Landing = () => {
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
         className="relative py-24 md:py-32 text-white overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #9B7BFF 0%, #B59CFF 100%)',
+          background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)',
         }}
       >
         <div className="prodfolio-container text-center relative z-10">
