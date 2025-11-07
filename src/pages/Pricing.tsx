@@ -100,18 +100,18 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`py-24 px-4 bg-muted/30 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-24 px-4 gradient-mesh-bg ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {plans.map((plan, index) => (
               <Card 
                 key={index}
-                className={`relative flex flex-col transition-all duration-300 ${
+                className={`relative flex flex-col transition-all duration-200 ${
                   plan.popular 
-                    ? 'border-2 border-primary shadow-soft md:scale-105 hover:shadow-xl hover:-translate-y-1' 
-                    : 'border-2 border-border/50 hover:border-accent hover:shadow-lg'
-                } bg-card`}
+                    ? 'border-2 border-primary shadow-glass md:scale-105 hover:shadow-glass' 
+                    : 'glass-card'
+                }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -208,7 +208,7 @@ const Pricing = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-28 px-4 bg-background border-t-2 border-accent/40">
+      <section className="py-28 px-4 gradient-mesh-bg border-t border-glass">
         <div className="prodfolio-container max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-16">
             Frequently asked questions

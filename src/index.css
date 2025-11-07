@@ -100,9 +100,15 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     /* Ensure body allows scrolling and remove any potential scroll locks */
     overflow-y: auto !important;
+  }
+
+  /* Apply display font to headings and UI elements */
+  h1, h2, h3, h4, h5, h6, button, .font-display {
+    font-family: 'Poppins', 'Inter', sans-serif;
   }
 
   /* Beta banner offset handling for portfolio pages */
@@ -125,8 +131,6 @@
     @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors;
   }
   
-
-  
   .btn-primary {
     @apply bg-primary text-primary-foreground hover:bg-primary/90;
   }
@@ -146,8 +150,55 @@
     @apply bg-primary/5;
   }
 
+  /* Glass Morphism System */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(158, 133, 249, 0.1);
+    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(158, 133, 249, 0.12);
+    border-color: rgba(158, 133, 249, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .gradient-mesh-bg {
+    background: 
+      radial-gradient(at 20% 30%, rgba(158, 133, 249, 0.05) 0px, transparent 50%),
+      radial-gradient(at 80% 70%, rgba(255, 139, 123, 0.05) 0px, transparent 50%),
+      white;
+  }
+
+  .border-glass {
+    border: 1px solid rgba(158, 133, 249, 0.08);
+  }
+
+  .border-glass-light {
+    border: 1px solid rgba(158, 133, 249, 0.05);
+  }
+
+  .border-glass-strong {
+    border: 1px solid rgba(158, 133, 249, 0.15);
+  }
+
+  .shadow-glass {
+    box-shadow: 0 8px 32px 0 rgba(158, 133, 249, 0.08);
+  }
+
+  .shadow-float {
+    box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.08);
+  }
+
   .shadow-soft {
     box-shadow: 0 12px 28px -12px hsl(var(--ring) / 0.18), 0 6px 16px -8px rgba(0,0,0,0.08);
+  }
+
+  .backdrop-blur-glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 
   /* Premium section styling */
@@ -159,11 +210,11 @@
     @apply border-t border-primary/20;
   }
 
-  /* Scroll animations */
+  /* Scroll animations - Fast, purpose-driven (<300ms) */
   .animate-on-scroll {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .animate-on-scroll.visible {
@@ -175,16 +226,27 @@
   .stagger-children > * {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .stagger-children.visible > *:nth-child(1) { transition-delay: 0.1s; }
-  .stagger-children.visible > *:nth-child(2) { transition-delay: 0.2s; }
-  .stagger-children.visible > *:nth-child(3) { transition-delay: 0.3s; }
+  .stagger-children.visible > *:nth-child(1) { transition-delay: 0.05s; }
+  .stagger-children.visible > *:nth-child(2) { transition-delay: 0.1s; }
+  .stagger-children.visible > *:nth-child(3) { transition-delay: 0.15s; }
 
   .stagger-children.visible > * {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 
   /* Premium button gradient */

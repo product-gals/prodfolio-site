@@ -66,7 +66,8 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Poppins", "Inter", "sans-serif"],
+        sans: ["Roboto", "Helvetica Neue", "Arial", "sans-serif"], // Body text
+        display: ["Poppins", "Inter", "sans-serif"], // Headings/UI
       },
       keyframes: {
         "accordion-down": {
@@ -89,8 +90,11 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.5s ease-out",
-        "slide-up": "slide-up 0.5s ease-out",
+        "fade-in": "fade-in 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "slide-up": "slide-up 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+      backdropBlur: {
+        'glass': '12px',
       },
     },
   },
