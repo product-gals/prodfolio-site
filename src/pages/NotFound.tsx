@@ -1,6 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useSEO } from "@/hooks/useSEO";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const NotFound = () => {
   const location = useLocation();
@@ -20,30 +22,27 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center max-w-md mx-auto p-6">
-        <h1 className="text-6xl font-bold text-gray-800 mb-4">404</h1>
-        <h2 className="text-2xl font-semibold text-gray-700 mb-4">Page Not Found</h2>
-        <p className="text-lg text-gray-600 mb-8">
-          Oops! The page you're looking for doesn't exist. It may have been moved or deleted.
-        </p>
-        <div className="space-y-4">
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 px-6 py-20">
+        <div className="text-center max-w-2xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold text-navy mb-6">
+            Page could not be found
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+            Sorry, we couldn't find the page you're looking for.
+          </p>
           <a 
             href="/" 
-            className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+            className="inline-block text-primary hover:underline text-lg font-medium"
           >
-            Return to Home
+            Go back home
           </a>
-          <div>
-            <a 
-              href="/p/demo" 
-              className="text-primary hover:underline"
-            >
-              View Demo Portfolio
-            </a>
-          </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
