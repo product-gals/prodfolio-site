@@ -58,6 +58,7 @@ export default {
           slate: "#6F6F7B",
           focus: "#3366FF",
           orange: "#FFA400",
+          coral: "#ff8b7b",
         },
       },
       borderRadius: {

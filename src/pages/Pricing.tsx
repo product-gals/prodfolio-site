@@ -285,7 +285,7 @@ const Pricing = () => {
                     <Button 
                       asChild
                       size="lg"
-                      className="w-full mt-6 h-14 text-lg bg-coral hover:bg-coral/90 text-white border-0 font-semibold shadow-lg hover:shadow-xl transition-all"
+                      className="relative z-20 w-full mt-6 h-14 text-lg bg-coral hover:bg-coral/90 text-white border-0 font-semibold shadow-lg hover:shadow-xl transition-all"
                       style={{ borderRadius: '12px' }}
                     >
                       <a href="https://app.prodfolio.io/signup?plan=founding" className="text-white">
