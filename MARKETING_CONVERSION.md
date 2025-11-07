@@ -53,8 +53,12 @@ Converted Prodfolio from a full-stack app to a marketing-only website. All CTAs 
 
 ### 4. Public Routes (Kept)
 - `/` - Homepage/Landing
-- `/p/:slug` - Public portfolio view (read-only)
-- `/p/:slug/case-study/:caseStudySlug` - Public case study view (read-only)
+- `/about` - About page
+- `/pricing` - Pricing page
+- `/resources` - Resources page
+- `/partnerships` - Partnerships page
+- `/terms` - Terms of Service
+- `/quiz` - Quiz page
 - `*` - 404 page for all undefined routes
 
 ### 5. Updated SEO & Robots
@@ -71,13 +75,15 @@ Converted Prodfolio from a full-stack app to a marketing-only website. All CTAs 
 - Updated canonical URL to `https://prodfolio.io/`
 - Updated structured data URLs
 
-### 6. Remaining Supabase Usage
-**Kept for public data access only:**
-- `src/integrations/supabase/client.ts` - Used for reading published portfolios
-- `src/pages/PortfolioView.tsx` - Reads public portfolio data
-- `src/pages/CaseStudyView.tsx` - Reads public case study data
+### 6. Removed Portfolio Viewing
+**Completely removed portfolio viewing routes:**
+- Removed `/p/:slug` route (was for public portfolio view)
+- Removed `/p/:slug/case-study/:caseStudySlug` route (was for public case study view)
+- Portfolio viewing now happens exclusively on `app.prodfolio.io`
 
-These are **read-only** operations for publicly visible portfolios. No authentication required.
+**Supabase client kept but unused:**
+- `src/integrations/supabase/client.ts` remains in codebase but is no longer used
+- Can be removed in future cleanup if desired
 
 ## Verification Checklist
 
@@ -100,12 +106,8 @@ These are **read-only** operations for publicly visible portfolios. No authentic
 4. **App paths**: Visit `/app`, `/dashboard`, `/editor`, etc. - all return 404
 5. **DevTools**: Check Network tab - no auth API calls
 6. **Console**: No session/auth errors
-7. **Public portfolios**: `/p/:slug` still works for viewing published portfolios
+7. **Portfolio routes**: `/p/:slug` returns 404 (portfolios only on app.prodfolio.io)
 
 ## Architecture Notes
 
-This is now a **pure marketing site**. No backend functionality except:
-- Reading published portfolios from Supabase (public, no RLS)
-- Static content serving
-
-All user actions (signup, login, portfolio creation) happen in the separate app at `app.prodfolio.io`.
+This is now a **pure marketing site** with no backend functionality. All portfolio viewing and user actions happen on the separate app at `app.prodfolio.io`.

@@ -7,8 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
-import PortfolioView from "./pages/PortfolioView";
-import CaseStudyView from "./pages/CaseStudyView";
 import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import Partnerships from "./pages/Partnerships";
@@ -42,10 +40,6 @@ const App = () => {
             <Route path="/partnerships" element={<Partnerships />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/quiz" element={<Quiz />} />
-            
-            {/* Public portfolio views */}
-            <Route path="/p/:slug" element={<PortfolioView />} />
-            <Route path="/p/:slug/case-study/:caseStudySlug" element={<CaseStudyView />} />
             
             {/* 404 for all other routes */}
             <Route path="*" element={<NotFound />} />
