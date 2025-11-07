@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Coffee, Mic, Lightbulb, Users } from "lucide-react";
 import meaganPhoto from "@/assets/meagan-photo.png";
+import santianaPhoto from "@/assets/santiana-photo.png";
 
 const About = () => {
   const heroAnimation = useScrollAnimation();
@@ -160,7 +161,7 @@ const About = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2">Meagan</h3>
+              <h3 className="text-2xl font-bold mb-2">Meagan Glenn</h3>
               <p className="text-primary font-semibold mb-4">Co-founder</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Product manager, podcast host, and career coach who's been helping PMs break into product for years.
@@ -206,13 +207,13 @@ const About = () => {
               <div className="relative inline-block mb-6">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 mx-auto">
                   <img
-                    src="/path-to-santi-photo.jpg"
+                    src={santianaPhoto}
                     alt="Santiana, Co-founder of Prodfolio"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2">Santiana</h3>
+              <h3 className="text-2xl font-bold mb-2">Santiana Brace</h3>
               <p className="text-primary font-semibold mb-4">Co-founder</p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Product manager and podcast host who knows firsthand how hard it is to showcase PM work. On a mission to
