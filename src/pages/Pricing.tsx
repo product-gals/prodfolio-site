@@ -97,12 +97,112 @@ const Pricing = () => {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
 
+      {/* Founding Member Offer */}
+      <section className="py-16 px-4 bg-gradient-to-br from-primary via-primary/90 to-primary/80 border-y border-primary/20">
+        <div className="prodfolio-container max-w-4xl">
+          <div className="glass-card border-2 border-white/20 shadow-glass p-8 md:p-12">
+            {/* Header */}
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 bg-coral/20 text-coral border border-coral/30 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-coral"></span>
+                </span>
+                Limited to 50 Founding Members
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+                Founding Member Launch Offer
+              </h2>
+              <p className="text-xl text-white/90 mb-6">
+                Be part of the cohort that defines what a PM portfolio should be
+              </p>
+              <div className="text-5xl font-bold text-white mb-2">$399</div>
+              <div className="text-white/80">one-time · lifetime access</div>
+            </div>
+
+            {/* What You Get */}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-white mb-4">Everything in Pro, plus:</h3>
+              <ul className="space-y-3">
+                {[
+                  "Portfolio review within 30 days — Direct feedback to make your portfolio hiring-manager-ready",
+                  "Direct Slack access to founders — Skip the support queue, get answers when you need them",
+                  "Monthly founder office hours — Exclusive roadmap sessions and portfolio workshops",
+                  "Featured on our site (optional) — Get your work in front of hiring managers and the PM community"
+                ].map((benefit, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-coral shrink-0 mt-0.5" />
+                    <span className="text-white/90">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Value Prop */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 mb-8">
+              <h4 className="font-semibold text-white mb-3">What makes this different:</h4>
+              <p className="text-white/90 leading-relaxed mb-4">
+                This isn't early access with bugs and empty promises. The platform works. What you're getting is <strong className="text-white">proximity</strong> — direct line to the people building this, personalized support for your portfolio, and input on what we build next.
+              </p>
+              <p className="text-white/80 text-sm italic">
+                Your portfolio gets the founder treatment. We get the feedback and stories that help us reach more PMs.
+              </p>
+            </div>
+
+            {/* What We Ask */}
+            <div className="mb-8">
+              <h4 className="font-semibold text-white mb-3">In exchange, we ask you to:</h4>
+              <ul className="space-y-2 text-white/90">
+                <li className="flex items-start gap-2">
+                  <span className="text-coral mt-1">•</span>
+                  <span>Share your honest experience through testimonials (video or written)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-coral mt-1">•</span>
+                  <span>Give us a shoutout on LinkedIn when you launch your portfolio</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-coral mt-1">•</span>
+                  <span>Partner with us on a case study if your story can help other PMs</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center">
+              <Button 
+                asChild
+                size="lg"
+                className="bg-coral hover:bg-coral/90 text-white border-0 shadow-lg hover:shadow-xl transition-all mb-4 text-lg px-8 py-6 h-auto"
+              >
+                <a href="https://app.prodfolio.io/signup?plan=founding">
+                  Claim Your Founding Member Spot →
+                </a>
+              </Button>
+              <p className="text-white/70 text-sm">
+                Questions? Email us at{" "}
+                <a href="mailto:hello@prodfolio.io" className="text-coral hover:text-coral/80 underline">
+                  hello@prodfolio.io
+                </a>
+              </p>
+              <p className="text-white/60 text-xs mt-4">
+                Once we hit 50, this tier closes permanently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
         className={`py-24 px-4 gradient-mesh-bg ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-3">Standard Plans</h2>
+            <p className="text-muted-foreground">Choose the plan that fits your needs</p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {plans.map((plan, index) => (
               <Card 
