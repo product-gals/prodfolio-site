@@ -150,8 +150,8 @@ const Pricing = () => {
                   style={{ borderRadius: '24px' }}
                 >
                   {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium shadow-md">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
+                      <span className="bg-primary text-primary-foreground px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium shadow-md whitespace-nowrap">
                         Most Popular
                       </span>
                     </div>
