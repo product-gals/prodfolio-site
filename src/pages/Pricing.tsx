@@ -5,15 +5,25 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
+import { useState } from "react";
 
 const Pricing = () => {
   const scrollRef = useScrollAnimation();
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
 
   useSEO({
     title: "Product Portfolio Builder Pricing | Free & Pro Plans - Prodfolio",
     description: "Compare Prodfolio pricing plans — from Free to Premium. Build and showcase your product portfolio with AI-powered storytelling tools.",
     canonical: "https://prodfolio.io/pricing",
   });
+
+  const getPrice = (monthlyPrice: number, tier: string) => {
+    if (tier === "free" || tier === "founding") return null;
+    if (billingCycle === "annual") {
+      return Math.floor(monthlyPrice * 0.8); // 20% discount
+    }
+    return monthlyPrice;
+  };
 
   const plans = [
     {
@@ -94,116 +104,159 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #FAF8F5 0%, #F5F3F0 100%)' }}>
       <Navbar />
       
       {/* Hero Section */}
-      <section 
-        className="pt-24 pb-16 px-4 relative overflow-hidden"
-        style={{
-          background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)',
-        }}
-      >
-        <div className="prodfolio-container text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-            Choose your plan
+      <section className="pt-32 pb-20 px-4">
+        <div className="prodfolio-container text-center">
+          <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 text-foreground">
+            Pricing
           </h1>
-          {/* Gradient divider */}
-          <div className="w-32 h-1 mx-auto mb-8 rounded-full bg-white/40"></div>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Start building your portfolio for free. Upgrade to unlock AI-powered storytelling tools and advanced features.
+          <p className="text-lg text-muted-foreground mb-4">
+            Download the app to get started for free.
           </p>
+          <p className="text-base text-muted-foreground/70 mb-12">
+            No credit card required.
+          </p>
+          
+          {/* Billing Toggle */}
+          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-full p-1.5 border border-border/50 shadow-sm">
+            <button
+              onClick={() => setBillingCycle("monthly")}
+              className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
+                billingCycle === "monthly"
+                  ? "bg-foreground text-background font-medium"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setBillingCycle("annual")}
+              className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
+                billingCycle === "annual"
+                  ? "bg-foreground text-background font-medium"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              Annual
+              <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">
+                20% discount
+              </span>
+            </button>
+          </div>
         </div>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
 
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`py-24 px-4 gradient-mesh-bg ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pb-24 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-3">Choose your plan</h2>
-            <p className="text-muted-foreground">Start free or unlock advanced features</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {plans.map((plan, index) => (
-              <Card 
-                key={index}
-                className={`relative flex flex-col transition-all duration-200 ${
-                  plan.highlight
-                    ? 'border-2 border-coral shadow-glass bg-gradient-to-br from-primary/10 to-primary/5'
-                    : plan.popular 
-                    ? 'border-2 border-primary shadow-glass md:scale-105 hover:shadow-glass' 
-                    : 'glass-card'
-                }`}
-              >
-                {plan.badge && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-coral text-white px-4 py-1 rounded-full text-sm font-medium shadow-md">
-                      {plan.badge}
-                    </span>
-                  </div>
-                )}
-                {plan.popular && !plan.badge && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-4 py-1 rounded-full text-sm font-medium shadow-md">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                <CardHeader className="text-center pb-8">
-                  <CardTitle className="text-2xl mb-2">{plan.name}</CardTitle>
-                  <CardDescription className="text-base min-h-[3rem]">{plan.tagline}</CardDescription>
-                  <div className="mt-4">
-                    <span className="text-5xl font-bold">{plan.price}</span>
-                    {plan.period && (
-                      <div className="mt-1">
-                        <span className="text-muted-foreground">{plan.period}</span>
-                        {plan.annualDiscount && (
-                          <div className="text-xs text-primary mt-1">{plan.annualDiscount}</div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        {plan.tier !== "free" && <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />}
-                        {plan.tier === "free" && <span className="w-5 h-5 shrink-0" />}
-                        <span className="text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {plan.note && (
-                    <p className="text-xs text-muted-foreground mt-4 italic">{plan.note}</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {plans.map((plan, index) => {
+              const displayPrice = plan.tier === "free" || plan.tier === "founding" 
+                ? plan.price 
+                : `$${getPrice(parseInt(plan.price.replace('$', '')), plan.tier)}`;
+              
+              return (
+                <Card 
+                  key={index}
+                  className={`relative flex flex-col bg-white/80 backdrop-blur-sm transition-all duration-200 hover:shadow-lg ${
+                    plan.tier === "free"
+                      ? 'border border-border/50'
+                      : plan.highlight
+                      ? 'border-[3px] border-foreground shadow-md'
+                      : 'border-[3px] border-foreground'
+                  }`}
+                  style={{ borderRadius: '24px' }}
+                >
+                  {plan.badge && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                      <span className="bg-coral text-white px-4 py-1 rounded-full text-sm font-medium shadow-md">
+                        {plan.badge}
+                      </span>
+                    </div>
                   )}
-                </CardContent>
-                <CardFooter>
-                  <Button 
-                    asChild
-                    variant={
-                      plan.tier === "founding"
-                        ? "default"
-                        : plan.tier === "free" 
-                        ? "outline" 
-                        : plan.popular 
-                        ? "gradient" 
-                        : "outlinePremium"
-                    }
-                    className={`w-full ${plan.tier === "founding" ? "bg-coral hover:bg-coral/90 text-white" : ""}`}
-                    size="lg"
-                  >
-                    <a href={plan.tier === "founding" ? "https://app.prodfolio.io/signup?plan=founding" : "https://app.prodfolio.io/signup"}>
-                      {plan.cta}
-                    </a>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
+                  
+                  <CardHeader className="pb-6">
+                    <CardTitle className="text-xl mb-2">{plan.name}</CardTitle>
+                    <div className="mt-4 mb-4">
+                      <div className="text-5xl font-serif font-bold">{displayPrice}</div>
+                      {plan.period && (
+                        <div className="mt-2 text-sm text-muted-foreground">
+                          {plan.tier === "founding" ? plan.period : `/${billingCycle === "monthly" ? "mo" : "mo"}`}
+                          {billingCycle === "annual" && plan.tier !== "founding" && (
+                            <div className="text-xs text-muted-foreground mt-1">billed annually</div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                    <CardDescription className="text-sm leading-relaxed min-h-[3rem]">
+                      {plan.tagline}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent className="flex-1 pt-0">
+                    <ul className="space-y-3">
+                      {plan.features.map((feature, i) => (
+                        <li key={i} className="flex items-start gap-2.5">
+                          <Check className="w-4 h-4 text-foreground shrink-0 mt-0.5" />
+                          <span className="text-sm leading-snug">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    {plan.note && (
+                      <p className="text-xs text-muted-foreground mt-4 leading-relaxed">{plan.note}</p>
+                    )}
+                  </CardContent>
+                  
+                  <CardFooter className="pt-6">
+                    <Button 
+                      asChild
+                      variant={plan.tier === "free" ? "outline" : "default"}
+                      className={`w-full h-12 font-medium ${
+                        plan.tier !== "free" ? "bg-primary/10 text-primary hover:bg-primary/20 border-0" : ""
+                      } ${
+                        plan.highlight ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""
+                      }`}
+                      style={{ borderRadius: '12px' }}
+                    >
+                      <a href={plan.tier === "founding" ? "https://app.prodfolio.io/signup?plan=founding" : "https://app.prodfolio.io/signup"}>
+                        {plan.cta}
+                      </a>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Student Discount Section */}
+      <section className="pb-24 px-4">
+        <div className="prodfolio-container max-w-7xl">
+          <div className="bg-white/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+            <div>
+              <h3 className="text-2xl font-bold mb-2">Student Discount</h3>
+              <p className="text-muted-foreground">
+                Students get three months free and 50% off the Pro plan
+              </p>
+            </div>
+            <Button 
+              asChild
+              size="lg"
+              variant="outline"
+              className="shrink-0 h-12 px-8"
+              style={{ borderRadius: '12px' }}
+            >
+              <a href="https://app.prodfolio.io/signup?discount=student">
+                Get started
+              </a>
+            </Button>
           </div>
         </div>
       </section>

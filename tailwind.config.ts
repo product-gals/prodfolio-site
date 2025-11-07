@@ -68,6 +68,7 @@ export default {
       fontFamily: {
         sans: ["Roboto", "Helvetica Neue", "Arial", "sans-serif"], // Body text
         display: ["Poppins", "Inter", "sans-serif"], // Headings/UI
+        serif: ["Playfair Display", "Georgia", "serif"], // Elegant headlines
       },
       keyframes: {
         "accordion-down": {
