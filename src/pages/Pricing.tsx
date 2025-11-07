@@ -18,7 +18,7 @@ const Pricing = () => {
   });
 
   const getPrice = (monthlyPrice: number, tier: string) => {
-    if (tier === "free" || tier === "founding") return null;
+    if (tier === "free") return null;
     if (billingCycle === "annual") {
       return Math.floor(monthlyPrice * 0.8); // 20% discount
     }
@@ -28,78 +28,53 @@ const Pricing = () => {
   const plans = [
     {
       name: "Free",
-      tagline: "7-day editing window; becomes read-only after.",
+      tagline: "Start building your portfolio",
       price: "$0",
+      monthlyPrice: 0,
       features: [
         "One Prodfolio",
-        "Basic colors",
+        "7-day editing window",
+        "Basic themes",
         "Watermarked portfolio",
-        "Quick examples"
+        "Prodfolio domain"
       ],
-      note: "Prodfolio domain included.",
-      cta: "Start Free",
+      cta: "Get started",
       popular: false,
       tier: "free"
     },
     {
-      name: "Pro",
-      tagline: "Unlock unlimited portfolios and advanced storytelling tools.",
+      name: "Starter",
+      tagline: "For active job seekers",
       price: "$19",
-      period: "/month",
-      annualDiscount: "20% off annual",
+      monthlyPrice: 19,
       features: [
-        "Unlimited Prodfolios",
+        "3 Prodfolios",
         "Custom themes",
-        "References",
         "AI to Case Study",
         "AI to Resume",
+        "References",
         "Prodfolio domain"
       ],
-      note: "Includes 7-day free trial.",
-      cta: "Start Free Trial",
+      cta: "Start free trial",
       popular: true,
-      tier: "pro"
+      tier: "starter"
     },
     {
-      name: "Premium",
-      tagline: "Everything in Pro plus advanced control and continuous updates.",
+      name: "Pro",
+      tagline: "For serious product managers",
       price: "$39",
-      period: "/month",
-      annualDiscount: "20% off annual",
+      monthlyPrice: 39,
       features: [
         "Unlimited Prodfolios",
-        "References",
-        "AI to Case Study",
-        "AI to Resume",
+        "Everything in Starter",
         "Password protection",
-        "Custom themes",
         "Custom domain",
         "Analytics",
-        "Access to all new features automatically"
+        "Priority support"
       ],
-      cta: "Upgrade to Premium",
+      cta: "Start free trial",
       popular: false,
-      tier: "premium"
-    },
-    {
-      name: "Founding Member",
-      tagline: "Limited to 50 members · Lifetime access",
-      price: "$399",
-      period: "one-time",
-      badge: "Limited Offer",
-      features: [
-        "Everything in Pro",
-        "Portfolio review (30 days)",
-        "Direct Slack access to founders",
-        "Monthly office hours",
-        "Featured on site (optional)",
-        "Lifetime access to all features"
-      ],
-      note: "Closes permanently at 50 members.",
-      cta: "Claim Your Spot",
-      popular: false,
-      tier: "founding",
-      highlight: true
+      tier: "pro"
     }
   ];
 
@@ -152,14 +127,66 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`pb-24 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pb-20 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="prodfolio-container max-w-6xl relative">
+          {/* Founding Member Callout - Top Right Corner */}
+          <div className="absolute -top-8 right-4 md:right-0 z-10 w-full md:w-80">
+            <div 
+              className="bg-white/90 backdrop-blur-sm border-[3px] border-coral rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-200"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <div className="inline-flex items-center gap-2 bg-coral/10 text-coral border border-coral/30 px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                    <span className="relative flex h-1.5 w-1.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-coral"></span>
+                    </span>
+                    Limited to 50
+                  </div>
+                  <h3 className="text-xl font-bold">Founding Member</h3>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="text-4xl font-serif font-bold">$399</div>
+                <div className="text-sm text-muted-foreground">one-time · lifetime access</div>
+              </div>
+              <ul className="space-y-2 mb-4 text-sm">
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-coral shrink-0 mt-0.5" />
+                  <span>Everything in Pro</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-coral shrink-0 mt-0.5" />
+                  <span>Portfolio review (30 days)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-coral shrink-0 mt-0.5" />
+                  <span>Direct Slack access</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-coral shrink-0 mt-0.5" />
+                  <span>Monthly office hours</span>
+                </li>
+              </ul>
+              <Button 
+                asChild
+                className="w-full h-11 bg-coral hover:bg-coral/90 text-white"
+                style={{ borderRadius: '12px' }}
+              >
+                <a href="https://app.prodfolio.io/signup?plan=founding">
+                  Claim Your Spot →
+                </a>
+              </Button>
+            </div>
+          </div>
+
+          {/* Main Pricing Cards */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl">
             {plans.map((plan, index) => {
-              const displayPrice = plan.tier === "free" || plan.tier === "founding" 
+              const displayPrice = plan.tier === "free" 
                 ? plan.price 
-                : `$${getPrice(parseInt(plan.price.replace('$', '')), plan.tier)}`;
+                : `$${getPrice(plan.monthlyPrice, plan.tier)}`;
               
               return (
                 <Card 
@@ -167,16 +194,16 @@ const Pricing = () => {
                   className={`relative flex flex-col bg-white/80 backdrop-blur-sm transition-all duration-200 hover:shadow-lg ${
                     plan.tier === "free"
                       ? 'border border-border/50'
-                      : plan.highlight
-                      ? 'border-[3px] border-foreground shadow-md'
+                      : plan.popular
+                      ? 'border-[3px] border-primary shadow-md'
                       : 'border-[3px] border-foreground'
                   }`}
                   style={{ borderRadius: '24px' }}
                 >
-                  {plan.badge && (
+                  {plan.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <span className="bg-coral text-white px-4 py-1 rounded-full text-sm font-medium shadow-md">
-                        {plan.badge}
+                      <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium shadow-md">
+                        Most Popular
                       </span>
                     </div>
                   )}
@@ -185,16 +212,16 @@ const Pricing = () => {
                     <CardTitle className="text-xl mb-2">{plan.name}</CardTitle>
                     <div className="mt-4 mb-4">
                       <div className="text-5xl font-serif font-bold">{displayPrice}</div>
-                      {plan.period && (
+                      {plan.tier !== "free" && (
                         <div className="mt-2 text-sm text-muted-foreground">
-                          {plan.tier === "founding" ? plan.period : `/${billingCycle === "monthly" ? "mo" : "mo"}`}
-                          {billingCycle === "annual" && plan.tier !== "founding" && (
+                          per {billingCycle === "monthly" ? "month" : "month"}
+                          {billingCycle === "annual" && (
                             <div className="text-xs text-muted-foreground mt-1">billed annually</div>
                           )}
                         </div>
                       )}
                     </div>
-                    <CardDescription className="text-sm leading-relaxed min-h-[3rem]">
+                    <CardDescription className="text-sm leading-relaxed">
                       {plan.tagline}
                     </CardDescription>
                   </CardHeader>
@@ -208,9 +235,6 @@ const Pricing = () => {
                         </li>
                       ))}
                     </ul>
-                    {plan.note && (
-                      <p className="text-xs text-muted-foreground mt-4 leading-relaxed">{plan.note}</p>
-                    )}
                   </CardContent>
                   
                   <CardFooter className="pt-6">
@@ -220,11 +244,11 @@ const Pricing = () => {
                       className={`w-full h-12 font-medium ${
                         plan.tier !== "free" ? "bg-primary/10 text-primary hover:bg-primary/20 border-0" : ""
                       } ${
-                        plan.highlight ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""
+                        plan.popular ? "bg-primary text-primary-foreground hover:bg-primary/90" : ""
                       }`}
                       style={{ borderRadius: '12px' }}
                     >
-                      <a href={plan.tier === "founding" ? "https://app.prodfolio.io/signup?plan=founding" : "https://app.prodfolio.io/signup"}>
+                      <a href="https://app.prodfolio.io/signup">
                         {plan.cta}
                       </a>
                     </Button>
