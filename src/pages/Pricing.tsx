@@ -55,7 +55,7 @@ const Pricing = () => {
         "References",
         "Prodfolio domain"
       ],
-      cta: "Start free trial",
+      cta: "Get started",
       popular: true,
       tier: "starter"
     },
@@ -72,7 +72,7 @@ const Pricing = () => {
         "Analytics",
         "Priority support"
       ],
-      cta: "Start free trial",
+      cta: "Get started",
       popular: false,
       tier: "pro"
     }
@@ -358,9 +358,9 @@ const Pricing = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-3">Is there a free trial for Pro?</h3>
+              <h3 className="text-lg font-bold mb-3">Can I try before I buy?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Yes! Try Pro free for 14 days. No credit card required to start your trial.
+                Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features.
               </p>
             </div>
             <div>
