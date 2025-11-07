@@ -260,70 +260,89 @@ const Landing = () => {
       {/* Testimonials Section */}
       <section 
         ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>}
-        className="py-24 md:py-30 gradient-mesh-bg"
+        className="py-24 md:py-32 bg-muted/20"
       >
         <div className="prodfolio-container">
-          <div className="max-w-4xl mx-auto">
-            <div className={`text-center mb-16 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Real stories from product managers and aspiring product leaders just like you.
+          <div className="max-w-5xl mx-auto">
+            <div className={`text-center mb-20 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+                What product managers are saying
               </h2>
             </div>
             
             <div className={`${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <Carousel className="w-full max-w-3xl mx-auto">
+              <Carousel className="w-full">
                 <CarouselContent>
                   {/* Real Testimonial */}
                   <CarouselItem>
-                    <article className="glass-card rounded-2xl p-8 md:p-10 flex flex-col">
-                      <div className="flex-1">
-                        <Quote className="w-10 h-10 text-primary mb-6" />
-                        <p className="text-base md:text-lg text-foreground leading-relaxed mb-8">
+                    <div className="py-12 px-4">
+                      <blockquote className="text-center space-y-8">
+                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
                           "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for. I'm most excited about how Prodfolio helps me craft narratives around my product work; the templates are easy to use and optimized for storytelling."
                         </p>
-                      </div>
-                      <p className="text-sm text-muted-foreground font-semibold pt-6 border-t border-border">
-                        Senior Product Manager
-                      </p>
-                    </article>
+                        <footer className="flex items-center justify-center gap-6 text-base">
+                          <div className="text-right">
+                            <cite className="font-semibold text-foreground not-italic">Senior Product Manager</cite>
+                          </div>
+                          <div className="w-px h-12 bg-border"></div>
+                          <div className="text-left">
+                            <div className="text-muted-foreground">Tech Industry</div>
+                          </div>
+                        </footer>
+                      </blockquote>
+                    </div>
                   </CarouselItem>
 
                   {/* Placeholder Testimonial 1 */}
                   <CarouselItem>
-                    <article className="glass-card rounded-2xl p-8 md:p-10 flex flex-col opacity-50">
-                      <div className="flex-1">
-                        <Quote className="w-10 h-10 text-primary mb-6" />
-                        <p className="text-base md:text-lg text-foreground leading-relaxed mb-8">
-                          Your testimonial could be here. Share your Prodfolio success story with us.
+                    <div className="py-12 px-4">
+                      <blockquote className="text-center space-y-8 opacity-40">
+                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
+                          "Your testimonial could be here. Share your Prodfolio success story with us and help other PMs discover how to showcase their work effectively."
                         </p>
-                      </div>
-                      <p className="text-sm text-muted-foreground font-semibold pt-6 border-t border-border">
-                        Future Testimonial
-                      </p>
-                    </article>
+                        <footer className="flex items-center justify-center gap-6 text-base">
+                          <div className="text-right">
+                            <cite className="font-semibold text-foreground not-italic">Your Name</cite>
+                          </div>
+                          <div className="w-px h-12 bg-border"></div>
+                          <div className="text-left">
+                            <div className="text-muted-foreground">Your Title</div>
+                          </div>
+                        </footer>
+                      </blockquote>
+                    </div>
                   </CarouselItem>
 
                   {/* Placeholder Testimonial 2 */}
                   <CarouselItem>
-                    <article className="glass-card rounded-2xl p-8 md:p-10 flex flex-col opacity-50">
-                      <div className="flex-1">
-                        <Quote className="w-10 h-10 text-primary mb-6" />
-                        <p className="text-base md:text-lg text-foreground leading-relaxed mb-8">
-                          Your testimonial could be here. Share your Prodfolio success story with us.
+                    <div className="py-12 px-4">
+                      <blockquote className="text-center space-y-8 opacity-40">
+                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
+                          "Your testimonial could be here. Share your Prodfolio success story with us and help other PMs discover how to showcase their work effectively."
                         </p>
-                      </div>
-                      <p className="text-sm text-muted-foreground font-semibold pt-6 border-t border-border">
-                        Future Testimonial
-                      </p>
-                    </article>
+                        <footer className="flex items-center justify-center gap-6 text-base">
+                          <div className="text-right">
+                            <cite className="font-semibold text-foreground not-italic">Your Name</cite>
+                          </div>
+                          <div className="w-px h-12 bg-border"></div>
+                          <div className="text-left">
+                            <div className="text-muted-foreground">Your Title</div>
+                          </div>
+                        </footer>
+                      </blockquote>
+                    </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious className="hidden md:flex" />
-                <CarouselNext className="hidden md:flex" />
+                
+                {/* Custom Navigation */}
+                <div className="flex items-center justify-center gap-6 mt-12">
+                  <CarouselPrevious className="relative static translate-y-0" />
+                  <CarouselNext className="relative static translate-y-0" />
+                </div>
               </Carousel>
             </div>
 
-            <div className={`text-center mt-12 space-y-4 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className={`text-center mt-16 space-y-4 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <Button asChild variant="outline" size="lg" className="px-8">
                 <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer">Share Your Story</a>
               </Button>
