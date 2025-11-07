@@ -178,31 +178,28 @@ const Resources = () => {
             </p>
           </div>
           
-          {/* Featured Podcast Episode */}
-          <div className="mb-16">
+          {/* Featured Podcast Episodes */}
+          <div className="mb-16 space-y-8">
+            <div className="flex items-center gap-2 mb-6">
+              <Mic className="w-5 h-5 text-primary" />
+              <h3 className="text-2xl font-bold text-foreground">Featured Podcast Episodes</h3>
+            </div>
+            
+            {/* Podcast Episode 1 */}
             <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
-              <CardHeader>
-                <div className="flex items-center gap-2 mb-2">
-                  <Mic className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wide">Featured Episode</span>
-                </div>
-                <CardTitle className="text-2xl mb-2">From Engineer to PM: Building Your First Portfolio</CardTitle>
-                <CardDescription className="text-base">
-                  Sarah Chen shares how she transitioned into product management and built a portfolio that landed her dream role.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                  <p className="text-muted-foreground">Coming Soon: Spotify Player</p>
-                </div>
-                <div className="flex gap-3">
-                  <Button variant="outline" className="flex-1 hover:bg-muted transition-colors" disabled>
-                    <Mic className="w-4 h-4 mr-2" />
-                    Listen on Spotify
-                  </Button>
-                  <Button variant="outline" className="flex-1 hover:bg-muted transition-colors" disabled>
-                    Watch on YouTube
-                  </Button>
+              <CardContent className="p-6">
+                <div className="aspect-video w-full rounded-lg overflow-hidden">
+                  <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/Zg4SOZexDUE?si=MnYPuagGsubDQK2W" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                    className="rounded-lg"
+                  />
                 </div>
               </CardContent>
             </Card>
