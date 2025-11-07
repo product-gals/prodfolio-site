@@ -3,222 +3,313 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Quote, Target, Users, Lightbulb } from "lucide-react";
+import { Coffee, Mic, Lightbulb, Users } from "lucide-react";
 
 const About = () => {
   const heroAnimation = useScrollAnimation();
-  const founderAnimation = useScrollAnimation();
+  const storyAnimation = useScrollAnimation();
+  const foundersAnimation = useScrollAnimation();
   const missionAnimation = useScrollAnimation();
-  const valuesAnimation = useScrollAnimation();
 
   useSEO({
-    title: "About Prodfolio | Our Mission to Empower Product Managers",
-    description: "Learn about Prodfolio's mission to help product managers showcase their work, tell their stories, and prove their impact through beautiful portfolios.",
+    title: "About Prodfolio | Built by PMs Who've Been There",
+    description:
+      "The story of how a coffee chat turned into the portfolio platform product managers actually needed. Built by PMs, for PMs.",
     canonical: "https://prodfolio.io/about",
   });
 
   return (
-    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #FAF8F5 0%, #F5F3F0 100%)' }}>
+    <div className="min-h-screen" style={{ background: "linear-gradient(180deg, #FAF8F5 0%, #F5F3F0 100%)" }}>
       <Navbar />
-      
+
       {/* Hero Section */}
-      <section 
+      <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-32 pb-20 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-32 pb-20 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 text-foreground">
-            About Prodfolio
+            We built the thing we needed
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
-            Thousands of product managers use Prodfolio to showcase their work, tell their stories, and prove their impact.
+          <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+            Prodfolio started because two PMs got tired of watching talented product people undersell themselves —
+            ourselves included.
           </p>
-          <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            We built Prodfolio because we believe every PM has a story worth telling — but most don't have the time, tools, or template to tell it well.
-          </p>
+        </div>
+      </section>
+
+      {/* Origin Story */}
+      <section
+        ref={storyAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-20 px-4 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-2">Origin Story</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+              How a LinkedIn coffee chat became Prodfolio
+            </h2>
+          </div>
+
+          <div className="space-y-12">
+            {/* Coffee Chat */}
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Coffee className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">It started with a coffee chat</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
+                  They realized they'd been in the same PM circles but had never actually met. So they did what any
+                  curious PMs would do — grabbed coffee.
+                </p>
+              </div>
+            </div>
+
+            {/* Podcast */}
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Mic className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">Then came the podcast</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  During that chat, they bonded over a shared dream: starting a podcast. They also noticed a gap — there
+                  weren't enough real, practical resources for people trying to break into product management.{" "}
+                  <strong className="text-foreground">The Product Pivot</strong> was born. Three seasons later, they're
+                  still going strong.
+                </p>
+              </div>
+            </div>
+
+            {/* The Problem */}
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Lightbulb className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">The "aha" moment</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  In October 2024, Meagan was job searching after working in product at a startup — but without a
+                  product title on her resume. She tried building a portfolio in Notion and shared it with Santi for
+                  feedback. Santi was kind about it, but Meagan still never felt confident sharing it with hiring
+                  managers. <strong className="text-foreground">Something was missing.</strong>
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                  So they started asking other PMs: do you struggle with showcasing your work? The answer was always the
+                  same. <strong className="text-foreground">Yes.</strong>
+                </p>
+              </div>
+            </div>
+
+            {/* Building Prodfolio */}
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  <Users className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">We built it together — with you</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  In February 2025, Prodfolio was born. Meagan and Santi talked to PMs about what they struggled with.
+                  They talked to hiring managers about what they looked for. They shipped an MVP, ran a beta cohort,
+                  collected feedback, improved the product, and now — here we are.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                  Prodfolio isn't just a tool. It's proof that when you build something you actually need, other people
+                  need it too.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Founders */}
+      <section
+        ref={foundersAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-20 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-2">The Team</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Meet the PMs behind Prodfolio</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              We're not just building Prodfolio — we're using it, breaking it, and improving it every day.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {/* Meagan */}
+            <div className="text-center">
+              <div className="relative inline-block mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 mx-auto">
+                  <img
+                    src="/path-to-meagan-photo.jpg"
+                    alt="Meagan, Co-founder of Prodfolio"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Meagan</h3>
+              <p className="text-primary font-semibold mb-4">Co-founder</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Product manager, podcast host, and career coach who's been helping PMs break into product for years.
+                Believes every PM has a story worth telling — you just need the right format.
+              </p>
+
+              {/* Prodfolio Link - Featured */}
+              <div className="mb-4">
+                <Button asChild className="rounded-full bg-primary hover:bg-primary/90">
+                  <a href="https://prodfolio.io/meagan" target="_blank" rel="noopener noreferrer">
+                    See My Prodfolio →
+                  </a>
+                </Button>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex justify-center gap-3">
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-full text-muted-foreground hover:text-foreground"
+                >
+                  <a href="https://linkedin.com/in/meagan" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-full text-muted-foreground hover:text-foreground"
+                >
+                  <a href="https://twitter.com/meagan" target="_blank" rel="noopener noreferrer">
+                    Twitter
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Santiana */}
+            <div className="text-center">
+              <div className="relative inline-block mb-6">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 mx-auto">
+                  <img
+                    src="/path-to-santi-photo.jpg"
+                    alt="Santiana, Co-founder of Prodfolio"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Santiana</h3>
+              <p className="text-primary font-semibold mb-4">Co-founder</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Product manager and podcast host who knows firsthand how hard it is to showcase PM work. On a mission to
+                make portfolio-building less painful and more strategic for every PM.
+              </p>
+
+              {/* Prodfolio Link - Featured */}
+              <div className="mb-4">
+                <Button asChild className="rounded-full bg-primary hover:bg-primary/90">
+                  <a href="https://prodfolio.io/santiana" target="_blank" rel="noopener noreferrer">
+                    See My Prodfolio →
+                  </a>
+                </Button>
+              </div>
+
+              {/* Social Links */}
+              <div className="flex justify-center gap-3">
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-full text-muted-foreground hover:text-foreground"
+                >
+                  <a href="https://linkedin.com/in/santiana" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-full text-muted-foreground hover:text-foreground"
+                >
+                  <a href="https://twitter.com/santiana" target="_blank" rel="noopener noreferrer">
+                    Twitter
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional: Add a "Want to chat?" callout */}
+          <div className="mt-16 text-center">
+            <div className="bg-primary/5 border border-primary/20 rounded-3xl p-8 max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-4">
+                <strong className="text-foreground">Have questions? Want to share feedback?</strong> We're always happy
+                to chat with fellow PMs.
+              </p>
+              <Button asChild className="rounded-full">
+                <a href="mailto:hello@prodfolio.io">Get in Touch</a>
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section 
+      <section
         ref={missionAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 ${missionAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-20 px-4 bg-white/50 ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              Our Mission
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 text-center hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Target className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Show your work</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Give PMs a platform to showcase not just what they shipped, but how they think and the impact they made.
-              </p>
-            </div>
-
-            <div className="bg-white/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 text-center hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Lightbulb className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Tell your story</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Help product managers articulate their process, decisions, and learnings in a way that resonates with hiring managers.
-              </p>
-            </div>
-
-            <div className="bg-white/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 text-center hover:shadow-lg transition-all">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Own your impact</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Make it easy for PMs to prove their value and stand out in competitive job markets with clear, compelling evidence.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founder's Story Section */}
-      <section 
-        ref={founderAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 ${founderAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
-        <div className="prodfolio-container max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-2">Origin</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Why we built Prodfolio
-            </h2>
-          </div>
-
-          <div className="bg-white/90 backdrop-blur-sm border border-border/50 rounded-3xl p-10 md:p-16 shadow-sm">
-            <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-              <p>
-                <strong className="text-foreground">As a product manager, you've shipped features that moved metrics.</strong> You've made tough calls with incomplete data. You've influenced stakeholders, rallied teams, and turned ambiguous problems into clear solutions.
-              </p>
-              
-              <p>
-                But when it comes time to showcase that work — whether for a job search, promotion, or just personal reflection — you're stuck. Your resume is a list of bullet points. LinkedIn feels generic. Building a custom website takes weeks you don't have.
-              </p>
-
-              <p>
-                <strong className="text-foreground">Meanwhile, designers and engineers have Dribbble and GitHub.</strong> They have public, shareable proof of their craft. Product managers have... nothing standardized.
-              </p>
-
-              <p>
-                We built Prodfolio to fix that. A place where PMs can document their work, showcase their thinking, and build credibility — without needing to code, design from scratch, or spend weeks crafting the perfect narrative.
-              </p>
-
-              <p className="text-foreground font-semibold pt-4">
-                Your work deserves to be seen. Your story deserves to be told. Your impact deserves to be proven.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section 
-        ref={valuesAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 ${valuesAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
-        <div className="prodfolio-container max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              What we believe
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide how we build Prodfolio
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white/80 backdrop-blur-sm border-l-4 border-primary rounded-2xl p-8 hover:shadow-md transition-all">
-              <h3 className="text-xl font-bold mb-3">PMs should own their narrative</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Your career is more than a resume. You should have a platform to tell the full story — the context, the constraints, the decisions, and the outcomes.
-              </p>
-            </div>
-
-            <div className="bg-white/80 backdrop-blur-sm border-l-4 border-primary rounded-2xl p-8 hover:shadow-md transition-all">
-              <h3 className="text-xl font-bold mb-3">Process matters as much as outcomes</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Shipping is important, but how you got there — your thinking, trade-offs, and influence — is what makes you a great PM. Portfolios should reflect that.
-              </p>
-            </div>
-
-            <div className="bg-white/80 backdrop-blur-sm border-l-4 border-primary rounded-2xl p-8 hover:shadow-md transition-all">
-              <h3 className="text-xl font-bold mb-3">Building your portfolio shouldn't take weeks</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                You're busy shipping products. Creating a portfolio should be fast, guided, and painless — not a side project that never gets finished.
-              </p>
-            </div>
-
-            <div className="bg-white/80 backdrop-blur-sm border-l-4 border-primary rounded-2xl p-8 hover:shadow-md transition-all">
-              <h3 className="text-xl font-bold mb-3">Community over competition</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We're building for a community of product people who want to learn from each other, celebrate wins, and help the next generation of PMs grow.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial / Social Proof */}
-      <section className="py-20 px-4 border-t border-border/50">
-        <div className="prodfolio-container max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-10 md:p-16 border border-primary/20">
-            <Quote className="w-12 h-12 text-primary mb-6 mx-auto" />
-            <blockquote className="text-center">
-              <p className="text-xl md:text-2xl leading-relaxed text-foreground mb-6">
-                "Portfolios reveal how PMs navigate complexity — how they think, influence without authority, and drive outcomes from discovery to launch. It's one of the clearest signals of how someone operates as a product person."
-              </p>
-              <footer className="text-muted-foreground">
-                <cite className="not-italic font-semibold">Aaron K.</cite>
-                <div className="text-sm">VP of Product</div>
-              </footer>
-            </blockquote>
-          </div>
+        <div className="prodfolio-container max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">What we're building now</h2>
+          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+            Prodfolio is the portfolio platform product managers deserve. It's guided, fast, and built around how PMs
+            actually think — not how designers or engineers work.
+          </p>
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            We're here to help you show your work, tell your story, and own your impact. Because you've done the hard
+            work. Now let's make sure people see it.
+          </p>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4" style={{ background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)' }}>
+      <section className="py-24 px-4" style={{ background: "linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)" }}>
         <div className="prodfolio-container text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
-            Ready to build your Prodfolio?
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Ready to tell your story?</h2>
           <p className="text-xl text-white/90 mb-10 leading-relaxed">
-            Start showcasing your product thinking and prove your impact.
+            Join the PMs who are finally showcasing their work with confidence.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button 
+            <Button
               asChild
               size="lg"
               className="px-10 py-6 h-auto text-lg bg-white text-purple-900 hover:bg-white/90 shadow-xl"
-              style={{ borderRadius: '12px' }}
+              style={{ borderRadius: "12px" }}
             >
-              <a href="https://app.prodfolio.io/signup">
-                Get Started Free →
-              </a>
+              <a href="https://app.prodfolio.io/signup">Get Started Free →</a>
             </Button>
-            <Button 
+            <Button
               asChild
               size="lg"
               variant="outline"
               className="px-10 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10"
-              style={{ borderRadius: '12px' }}
+              style={{ borderRadius: "12px" }}
             >
-              <a href="/pricing">
-                View Pricing
-              </a>
+              <a href="/pricing">View Pricing</a>
             </Button>
           </div>
           <p className="mt-6 text-sm text-white/80">No credit card required. Get started in minutes.</p>
