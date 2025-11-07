@@ -98,9 +98,14 @@ const Pricing = () => {
       </section>
 
       {/* Founding Member Offer */}
-      <section className="py-16 px-4 bg-gradient-to-br from-primary via-primary/90 to-primary/80 border-y border-primary/20">
+      <section 
+        className="py-16 px-4 border-y border-primary/20"
+        style={{
+          background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)',
+        }}
+      >
         <div className="prodfolio-container max-w-4xl">
-          <div className="glass-card border-2 border-white/20 shadow-glass p-8 md:p-12">
+          <div className="bg-white/5 backdrop-blur-sm border-2 border-white/20 rounded-lg shadow-glass p-8 md:p-12">
             {/* Header */}
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 bg-coral/20 text-coral border border-coral/30 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
