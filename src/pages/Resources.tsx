@@ -222,6 +222,25 @@ const Resources = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Podcast Episode 3 */}
+            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
+              <CardContent className="p-6">
+                <div className="aspect-video w-full rounded-lg overflow-hidden">
+                  <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/4ZLUXW06jbg?si=iTOltfTykoUEZm8Y" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Portfolio Examples */}
