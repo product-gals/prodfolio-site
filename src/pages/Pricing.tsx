@@ -285,7 +285,7 @@ const Pricing = () => {
                     <Button 
                       asChild
                       size="lg"
-                      className="w-full mt-6 h-14 text-lg bg-coral hover:bg-coral/90 text-white shadow-lg hover:shadow-xl transition-all"
+                      className="w-full mt-6 h-14 text-lg bg-coral hover:bg-coral/90 text-white shadow-lg hover:shadow-xl transition-all border-0"
                       style={{ borderRadius: '12px' }}
                     >
                       <a href="https://app.prodfolio.io/signup?plan=founding">
@@ -300,31 +300,6 @@ const Pricing = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Student Discount Section */}
-      <section className="py-16 px-4">
-        <div className="prodfolio-container max-w-5xl">
-          <div className="bg-white/80 backdrop-blur-sm border border-border/50 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Student Discount</h3>
-              <p className="text-muted-foreground">
-                Students get three months free and 50% off the Pro plan
-              </p>
-            </div>
-            <Button 
-              asChild
-              size="lg"
-              variant="outline"
-              className="shrink-0 h-12 px-8"
-              style={{ borderRadius: '12px' }}
-            >
-              <a href="https://app.prodfolio.io/signup?discount=student">
-                Get started
-              </a>
-            </Button>
           </div>
         </div>
       </section>
