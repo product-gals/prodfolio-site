@@ -187,7 +187,13 @@ const Resources = () => {
             
             {/* Podcast Episode 1 */}
             <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
-              <CardContent className="p-6">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl">Episode Title 1</CardTitle>
+                <CardDescription className="text-base">
+                  Brief description of what this episode covers and key insights shared.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-0">
                 <div className="aspect-video w-full rounded-lg overflow-hidden">
                   <iframe 
                     width="100%" 
@@ -206,7 +212,13 @@ const Resources = () => {
 
             {/* Podcast Episode 2 */}
             <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
-              <CardContent className="p-6">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl">Episode Title 2</CardTitle>
+                <CardDescription className="text-base">
+                  Brief description of what this episode covers and key insights shared.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-0">
                 <div className="aspect-video w-full rounded-lg overflow-hidden">
                   <iframe 
                     width="100%" 
@@ -225,7 +237,13 @@ const Resources = () => {
 
             {/* Podcast Episode 3 */}
             <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
-              <CardContent className="p-6">
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl">Episode Title 3</CardTitle>
+                <CardDescription className="text-base">
+                  Brief description of what this episode covers and key insights shared.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-0">
                 <div className="aspect-video w-full rounded-lg overflow-hidden">
                   <iframe 
                     width="100%" 
