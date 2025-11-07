@@ -552,6 +552,7 @@ const Quiz = () => {
               return (
                 <button
                   key={index}
+                  type="button"
                   onClick={() => handleSingleAnswerChange(option)}
                   className={`w-full text-left p-5 border-2 rounded-xl transition-all duration-200 ${
                     isSelected 
@@ -580,6 +581,7 @@ const Quiz = () => {
               return (
                 <button
                   key={index}
+                  type="button"
                   onClick={() => handleMultiAnswerChange(option, !isChecked)}
                   className={`w-full text-left p-5 border-2 rounded-xl transition-all duration-200 ${
                     isChecked 
