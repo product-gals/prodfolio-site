@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Quote } from "lucide-react";
+import { Quote, FileText, Zap, Users, Sparkles } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
+import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -17,6 +18,39 @@ const Landing = () => {
   const insightsAnimation = useScrollAnimation();
   const testimonialsAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
+  
+  const [activeTab, setActiveTab] = useState(0);
+
+  const features = [
+    {
+      label: "Guided storytelling",
+      icon: FileText,
+      title: "Tell your story with confidence",
+      description: "Answer quick guided prompts about your work. We help you uncover the PM thinking you already have and turn it into compelling, proof-based case studies.",
+      visual: "📝"
+    },
+    {
+      label: "AI-powered tools",
+      icon: Sparkles,
+      title: "Build faster with AI assistance",
+      description: "Transform your experience into professional case studies and resumes in minutes. AI helps you articulate your impact while you stay in control of your narrative.",
+      visual: "✨"
+    },
+    {
+      label: "Built for PMs",
+      icon: Users,
+      title: "Designed for how hiring managers think",
+      description: "Every template is optimized for what recruiters and hiring managers look for in product portfolios. Showcase your process, decisions, and measurable impact.",
+      visual: "👥"
+    },
+    {
+      label: "Ship in minutes",
+      icon: Zap,
+      title: "From idea to published in one session",
+      description: "No weeks of design work. No technical skills needed. Create a professional portfolio you're proud to share—in the time it takes to watch a product demo.",
+      visual: "⚡"
+    }
+  ];
 
   // Enhanced SEO for the homepage
   useSEO({
@@ -136,47 +170,88 @@ const Landing = () => {
       {/* How It Works Section */}
       <section 
         ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>}
-        className="py-24 md:py-30 gradient-mesh-bg"
+        className="py-24 md:py-32"
+        style={{
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%)',
+        }}
       >
         <div className="prodfolio-container">
-        <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Why Prodfolio</h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-3">Save hours building your portfolio — and prove your value faster.</p>
-          <p className="text-sm text-muted-foreground/70 max-w-2xl mx-auto">
-            Showcase your expertise and land your next role.
-          </p>
-        </div>
-        <div className={`grid md:grid-cols-3 gap-12 max-w-6xl mx-auto stagger-children ${howItWorksAnimation.isVisible ? 'visible' : ''}`}>
-          <article className="text-center group">
-            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" style={{background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)'}} role="img" aria-label="Step 1">
-              <span className="text-white text-3xl font-bold">1</span>
+          <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Build your portfolio with complete confidence
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Everything you need to showcase your product work and stand out to hiring managers
+            </p>
+          </div>
+
+          {/* Tabs Navigation */}
+          <div className={`flex flex-wrap justify-center gap-2 mb-12 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <button
+                  key={index}
+                  onClick={() => setActiveTab(index)}
+                  className={`
+                    flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-200
+                    ${activeTab === index 
+                      ? 'bg-primary text-primary-foreground shadow-md' 
+                      : 'bg-muted/50 text-muted-foreground hover:bg-muted'
+                    }
+                  `}
+                >
+                  <Icon className="w-4 h-4" />
+                  <span className="font-medium">{feature.label}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Tab Content */}
+          <div className={`max-w-5xl mx-auto ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className="bg-card border border-border rounded-2xl p-12 shadow-sm">
+              {/* Visual Illustration */}
+              <div className="flex justify-center mb-12">
+                <div className="relative">
+                  {/* Center circle with emoji */}
+                  <div className="w-32 h-32 rounded-full bg-primary/10 border-2 border-primary/20 flex items-center justify-center text-6xl">
+                    {features[activeTab].visual}
+                  </div>
+                  
+                  {/* Decorative connecting elements */}
+                  <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-24 h-24 rounded-xl bg-muted/50 border border-border flex items-center justify-center">
+                    <Users className="w-10 h-10 text-muted-foreground/40" />
+                  </div>
+                  <div className="absolute -right-32 top-1/2 -translate-y-1/2 w-24 h-24 rounded-xl bg-muted/50 border border-border flex items-center justify-center">
+                    <FileText className="w-10 h-10 text-muted-foreground/40" />
+                  </div>
+                  
+                  {/* Connecting lines */}
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-0.5">
+                    <div className="absolute left-0 right-0 top-0 border-t-2 border-dashed border-primary/20"></div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                  {features[activeTab].title}
+                </h3>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                  {features[activeTab].description}
+                </p>
+              </div>
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-foreground">Share your experience</h3>
-            <p className="text-muted-foreground leading-relaxed">Answer quick guided prompts about your work — we'll help you uncover the PM thinking you already have.</p>
-          </article>
-          <article className="text-center group">
-            <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" role="img" aria-label="Step 2">
-              <span className="text-secondary-foreground text-3xl font-bold">2</span>
-            </div>
-            <h3 className="text-xl font-semibold mb-4 text-foreground">Build your story</h3>
-            <p className="text-muted-foreground leading-relaxed">Turn your experience into compelling, proof-based case studies that highlight your real impact.</p>
-          </article>
-          <article className="text-center group">
-            <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-all duration-200 shadow-glass" style={{background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)'}} role="img" aria-label="Step 3">
-              <span className="text-white text-3xl font-bold">3</span>
-            </div>
-            <h3 className="text-xl font-semibold mb-4 text-foreground">Share and stand out</h3>
-            <p className="text-muted-foreground leading-relaxed">Publish a professional portfolio you can share — and get noticed faster.</p>
-          </article>
-        </div>
-        <div className={`text-center mt-12 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <p className="text-muted-foreground mb-4">
-            Want to see examples and templates?
-          </p>
-          <Button variant="outline" asChild>
-            <a href="/resources">Explore Resources</a>
-          </Button>
-        </div>
+          </div>
+
+          {/* CTA */}
+          <div className={`text-center mt-12 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <Button asChild size="lg" className="px-8">
+              <a href="/resources">See Examples & Templates</a>
+            </Button>
+          </div>
         </div>
       </section>
 
