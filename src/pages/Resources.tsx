@@ -1,20 +1,12 @@
-import { useState } from "react";
-import { BookOpen, Mic, Download, ArrowRight, Sparkles } from "lucide-react";
+import { Mic, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
-import LeadCaptureModal from "@/components/LeadCaptureModal";
-import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
 
 const Resources = () => {
-  const scrollRef = useScrollAnimation();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedResource, setSelectedResource] = useState("");
-  const { toast } = useToast();
   const navigate = useNavigate();
 
   useSEO({
@@ -22,41 +14,6 @@ const Resources = () => {
     description: "Explore free product management templates, portfolio examples, and real stories from PMs. Build your portfolio and stand out with Prodfolio.",
     canonical: "https://prodfolio.io/resources",
   });
-
-  const guides = [
-    {
-      title: "The Product Portfolio Blueprint",
-      description: "A comprehensive guide to building a portfolio that showcases your impact and gets results.",
-      benefit: "Learn frameworks used by top PMs.",
-    },
-    {
-      title: "20 Case Study Templates",
-      description: "Ready-to-use templates for documenting your product wins with clear structure and storytelling.",
-      benefit: "Save hours with proven structures.",
-    },
-    {
-      title: "PM Interview Prep Kit",
-      description: "Portfolio-focused interview strategies and questions to confidently present your work.",
-      benefit: "Turn your wins into interview stories.",
-    },
-  ];
-
-  const handleDownloadClick = (resourceTitle: string) => {
-    setSelectedResource(resourceTitle);
-    setModalOpen(true);
-  };
-
-  const handleLeadSubmit = async (name: string, email: string) => {
-    // Here you would typically send this to your backend/database
-    console.log("Lead captured:", { name, email, resource: selectedResource });
-    
-    toast({
-      title: "Success!",
-      description: "Your download will start shortly. Check your email for the resource.",
-    });
-    
-    // In a real implementation, you would trigger the actual download here
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -105,66 +62,6 @@ const Resources = () => {
               </Button>
             </CardContent>
           </Card>
-        </div>
-      </section>
-
-      {/* Guides & Templates */}
-      <section 
-        ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`py-28 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-        style={{ backgroundColor: '#FAF9FF' }}
-      >
-        <div className="prodfolio-container max-w-6xl mx-auto">
-          <div className="mb-16 text-center">
-            <p className="text-sm font-semibold text-[#9B7BFF] uppercase tracking-wide mb-3">
-              Trusted by PMs leveling up their storytelling
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Guides & Templates</h2>
-            <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">
-              Proven frameworks to help you build a standout portfolio.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {guides.map((guide, index) => (
-              <Card 
-                key={index} 
-                className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 flex flex-col shadow-md bg-white"
-                style={{ 
-                  borderColor: '#E2D9FF',
-                  boxShadow: '0 4px 20px -4px rgba(155, 123, 255, 0.15)'
-                }}
-              >
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-bold mb-2">{guide.title}</CardTitle>
-                  <CardDescription className="text-base mb-3">{guide.description}</CardDescription>
-                  <p className="text-sm text-[#9B7BFF] font-medium">{guide.benefit}</p>
-                </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-end">
-                  <Button 
-                    variant="outline"
-                    className="w-full border-[#9B7BFF] text-[#9B7BFF] hover:bg-[#9B7BFF] hover:text-white transition-all duration-300" 
-                    onClick={() => handleDownloadClick(guide.title)}
-                  >
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Free PDF
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="bg-muted/30 rounded-lg p-6 text-center border border-border">
-            <p className="text-muted-foreground text-lg mb-4">
-              Want to see how these templates come to life?
-            </p>
-            <Button variant="ghost" asChild className="text-primary hover:text-primary/90">
-              <a href="/quiz" className="flex items-center gap-2 mx-auto">
-                Take the Quiz
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -347,13 +244,6 @@ const Resources = () => {
         </div>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
       </section>
-
-      <LeadCaptureModal 
-        open={modalOpen}
-        onOpenChange={setModalOpen}
-        resourceTitle={selectedResource}
-        onSubmit={handleLeadSubmit}
-      />
 
       <Footer />
     </div>
