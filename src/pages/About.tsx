@@ -4,6 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Coffee, Mic, Lightbulb, Users } from "lucide-react";
+import meaganPhoto from "@/assets/meagan-photo.png";
 
 const About = () => {
   const heroAnimation = useScrollAnimation();
@@ -153,7 +154,7 @@ const About = () => {
               <div className="relative inline-block mb-6">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 mx-auto">
                   <img
-                    src="/path-to-meagan-photo.jpg"
+                    src={meaganPhoto}
                     alt="Meagan, Co-founder of Prodfolio"
                     className="w-full h-full object-cover"
                   />
