@@ -14,6 +14,7 @@ import Resources from "./pages/Resources";
 import Partnerships from "./pages/Partnerships";
 import TermsOfService from "./pages/TermsOfService";
 import Quiz from "./pages/Quiz";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => {
             />
             
             {/* Marketing pages */}
+            <Route path="/about" element={<About />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/partnerships" element={<Partnerships />} />

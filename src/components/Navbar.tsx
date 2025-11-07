@@ -44,6 +44,12 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6">
             <Link 
+              to="/about" 
+              className="text-sm font-medium text-[#1A1A1A] hover:text-primary transition-colors"
+            >
+              About
+            </Link>
+            <Link 
               to="/pricing" 
               className="text-sm font-medium text-[#1A1A1A] hover:text-primary transition-colors"
             >
@@ -96,6 +102,13 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-[#E2D9FF] py-3 bg-white/95 backdrop-blur-[12px]">
           <div className="prodfolio-container space-y-2">
+            <Link 
+              to="/about" 
+              className="block py-2 text-sm font-medium text-[#1A1A1A] hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
             <Link 
               to="/pricing" 
               className="block py-2 text-sm font-medium text-[#1A1A1A] hover:text-primary transition-colors"
