@@ -51,27 +51,86 @@ const Landing = () => {
       {/* Hero */}
       <section 
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`relative overflow-hidden py-24 md:py-32 text-white ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`relative overflow-hidden pt-20 pb-32 md:pt-28 md:pb-40 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
         style={{
-          background: 'linear-gradient(135deg, #7B5FE6 0%, #9B7BFF 100%)',
+          background: 'linear-gradient(180deg, #FAFAFA 0%, #F5F3FF 100%)',
         }}
       >
         <div className="prodfolio-container relative z-10">
-          <header className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">
-              The credibility engine for product people.
+          <header className="max-w-4xl mx-auto text-center mb-16">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              Trusted by product managers at top companies
+            </div>
+            
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-foreground">
+              Show your work.
+              <br />
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Own your impact.</span>
             </h1>
-            <p className="text-lg md:text-2xl mb-10 text-white/90 leading-relaxed">
-              Build your product portfolio. Show how you think. Prove your impact.
+            
+            <p className="text-xl md:text-2xl mb-10 text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Build a portfolio that proves how you think, what you've shipped, and the impact you've made — in minutes, not weeks.
             </p>
-            <div className="flex justify-center gap-4" aria-label="Primary call to action">
-              <Button asChild size="lg" className="px-8 bg-white text-purple-900 hover:bg-white/90 font-semibold shadow-xl">
-                <a href="https://app.prodfolio.io/signup">Get Started Free</a>
+            
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8" aria-label="Primary call to action">
+              <Button asChild size="lg" className="px-10 py-6 h-auto text-lg btn-gradient shadow-xl hover:scale-105 transition-transform">
+                <a href="https://app.prodfolio.io/signup">
+                  Get Started Free →
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="px-10 py-6 h-auto text-lg border-2 hover:bg-accent/50">
+                <a href="#examples">See Examples</a>
               </Button>
             </div>
+            
+            <p className="text-sm text-muted-foreground">
+              No credit card required • Free to start • 2-minute setup
+            </p>
           </header>
+
+          {/* Product Screenshot Mockup */}
+          <div className="max-w-6xl mx-auto">
+            <div className="relative rounded-xl shadow-2xl overflow-hidden border border-border/50 bg-card transform hover:scale-[1.02] transition-transform duration-300">
+              {/* Browser Chrome */}
+              <div className="bg-muted/50 border-b border-border/50 px-4 py-3 flex items-center gap-2">
+                <div className="flex gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                </div>
+                <div className="flex-1 mx-4">
+                  <div className="bg-background/80 rounded px-3 py-1 text-xs text-muted-foreground border border-border/50">
+                    yourname.prodfolio.io
+                  </div>
+                </div>
+              </div>
+              
+              {/* Placeholder for product screenshot - using gradient for now */}
+              <div className="aspect-[16/10] bg-gradient-to-br from-background via-accent/20 to-primary/10 relative">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center space-y-4 p-8">
+                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/70 mx-auto flex items-center justify-center shadow-lg">
+                      <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">Your Portfolio Preview</h3>
+                    <p className="text-muted-foreground max-w-md">Showcase your case studies, metrics, and impact in a clean, professional portfolio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-white/10"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
       </section>
 
       {/* How It Works Section */}
