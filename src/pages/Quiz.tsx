@@ -9,18 +9,24 @@ import { useSEO } from "@/hooks/useSEO";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import prodfolioLogo from "@/assets/prodfolio-icon.png";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 type JourneyStage = "aspiring" | "early" | "mid" | "senior";
 
 const Quiz = () => {
+  const [showIntro, setShowIntro] = useState(true);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [multiAnswers, setMultiAnswers] = useState<Record<number, string[]>>({});
   const [textAnswers, setTextAnswers] = useState<Record<number, string>>({});
   const [showEmailCapture, setShowEmailCapture] = useState(false);
   const [showResults, setShowResults] = useState(false);
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [marketingOptIn, setMarketingOptIn] = useState(false);
   const [journeyStage, setJourneyStage] = useState<JourneyStage>("early");
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -193,10 +199,10 @@ const Quiz = () => {
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!name.trim() || !email.trim()) {
+    if (!firstName.trim() || !lastName.trim() || !email.trim()) {
       toast({
         title: "Missing information",
-        description: "Please fill in all fields.",
+        description: "Please fill in all required fields.",
         variant: "destructive",
       });
       return;
@@ -211,10 +217,19 @@ const Quiz = () => {
       return;
     }
 
+    if (!marketingOptIn) {
+      toast({
+        title: "Consent required",
+        description: "Please agree to receive marketing emails to continue.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     const calculatedStage = calculateJourneyStage();
     setJourneyStage(calculatedStage);
 
-    console.log("Quiz lead captured:", { name, email, answers, multiAnswers, textAnswers, journeyStage: calculatedStage });
+    console.log("Quiz lead captured:", { firstName, lastName, email, phone, marketingOptIn, answers, multiAnswers, textAnswers, journeyStage: calculatedStage });
 
     toast({
       title: "Success!",
@@ -239,6 +254,130 @@ const Quiz = () => {
     }
     return false;
   };
+
+  // Intro Landing Page
+  if (showIntro) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        
+        {/* Hero Section */}
+        <section className="py-20 px-4" style={{ background: 'linear-gradient(135deg, #484689 0%, #9E85F9 100%)' }}>
+          <div className="prodfolio-container max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Is Your PM Portfolio Ready to Land Your Dream Role?
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 opacity-95">
+              Find out in just 3 minutes with this free assessment.
+            </p>
+            <p className="text-lg opacity-90 mb-12 max-w-2xl mx-auto">
+              Identify your strengths, uncover gaps, and get expert guidance to improve—so you're fully prepared to showcase your PM impact.
+            </p>
+            
+            <div className="space-y-6 max-w-md mx-auto mb-12">
+              <div className="flex items-start gap-3 text-left">
+                <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5">
+                  ✓
+                </div>
+                <p className="text-lg">Discover what's holding your portfolio back</p>
+              </div>
+              <div className="flex items-start gap-3 text-left">
+                <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5">
+                  ✓
+                </div>
+                <p className="text-lg">Get personalized recommendations for your career stage</p>
+              </div>
+              <div className="flex items-start gap-3 text-left">
+                <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mt-0.5">
+                  ✓
+                </div>
+                <p className="text-lg">Learn how to stand out to recruiters and hiring managers</p>
+              </div>
+            </div>
+
+            <Button 
+              size="lg"
+              onClick={() => setShowIntro(false)}
+              className="bg-white text-primary hover:bg-white/90 px-8 h-14 text-lg font-semibold shadow-xl"
+            >
+              Start the Quiz
+            </Button>
+          </div>
+        </section>
+
+        {/* What You'll Learn Section */}
+        <section className="py-20 px-4 bg-background">
+          <div className="prodfolio-container max-w-5xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+              Assess Your Portfolio Across Key Areas
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Current State</h3>
+                <p className="text-muted-foreground">
+                  Your current portfolio readiness and what you've built so far
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Strengths & Gaps</h3>
+                <p className="text-muted-foreground">
+                  Your PM skills and what areas need more attention
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Next Steps</h3>
+                <p className="text-muted-foreground">
+                  Personalized recommendations to level up your portfolio
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 px-4" style={{ background: 'linear-gradient(135deg, #9E85F9 0%, #B59CFF 100%)' }}>
+          <div className="prodfolio-container max-w-3xl mx-auto text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Discover Your Portfolio Gaps?
+            </h2>
+            <p className="text-lg mb-8 opacity-95">
+              3 minutes is all it takes to get personalized insights for your PM career.
+            </p>
+            <Button 
+              size="lg"
+              onClick={() => setShowIntro(false)}
+              className="bg-white text-primary hover:bg-white/90 px-8 h-14 text-lg font-semibold shadow-xl"
+            >
+              Take the Quiz Now
+            </Button>
+            <p className="mt-6 text-sm opacity-80">
+              Completely free • No credit card required
+            </p>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    );
+  }
 
   if (showEmailCapture) {
     return (
@@ -281,16 +420,29 @@ const Quiz = () => {
           </div>
 
           <form onSubmit={handleEmailSubmit} className="space-y-6 max-w-md mx-auto">
-            <div className="space-y-2">
-              <Label htmlFor="name" className="text-base">Name</Label>
-              <Input
-                id="name"
-                placeholder="Your name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="h-12"
-              />
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="firstName" className="text-base">First Name</Label>
+                <Input
+                  id="firstName"
+                  placeholder="First name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  required
+                  className="h-12"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="lastName" className="text-base">Last Name</Label>
+                <Input
+                  id="lastName"
+                  placeholder="Last name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  required
+                  className="h-12"
+                />
+              </div>
             </div>
             <div className="space-y-2">
               <Label htmlFor="email" className="text-base">Email</Label>
@@ -303,6 +455,29 @@ const Quiz = () => {
                 required
                 className="h-12"
               />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="phone" className="text-base">Phone Number (Optional)</Label>
+              <Input
+                id="phone"
+                type="tel"
+                placeholder="(555) 555-5555"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="h-12"
+              />
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <Checkbox
+                id="marketing"
+                checked={marketingOptIn}
+                onCheckedChange={(checked) => setMarketingOptIn(checked as boolean)}
+                required
+              />
+              <Label htmlFor="marketing" className="text-sm leading-relaxed cursor-pointer">
+                I agree to receive personalized PM portfolio insights and marketing emails from Prodfolio
+              </Label>
             </div>
             
             <Button 
