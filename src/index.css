@@ -106,9 +106,64 @@
     overflow-y: auto !important;
   }
 
-  /* Apply display font to headings and UI elements */
-  h1, h2, h3, h4, h5, h6, button, .font-display {
+  /* Typography hierarchy - Apply display font to headings and UI elements */
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', 'Inter', sans-serif;
+  }
+
+  /* Buttons and UI elements use display font */
+  button, .btn {
+    font-family: 'Poppins', 'Inter', sans-serif;
+  }
+
+  /* Enhanced Typography Utility Classes */
+  
+  /* Heading classes with Poppins */
+  .heading-hero {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .heading-section {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .heading-subsection {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  /* Body text classes with Roboto */
+  .text-body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  .text-body-large {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .text-body-small {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  /* Content reading optimization */
+  .content-text {
+    max-width: 70ch;
   }
 
   /* Beta banner offset handling for portfolio pages */
