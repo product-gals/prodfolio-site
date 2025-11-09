@@ -11,21 +11,13 @@ const Footer = () => {
             Your resume lists what you did.<br />
             Your Prodfolio shows how you think.
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <div className="flex justify-center mb-6">
             <Button 
               size="lg"
               className="bg-white text-[#3B2966] hover:bg-white/90 font-semibold"
               onClick={() => window.location.href = 'https://app.prodfolio.io/signup'}
             >
               Start Your Portfolio Free
-            </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 font-semibold"
-              onClick={() => window.location.href = '/resources'}
-            >
-              See Examples
             </Button>
           </div>
           <p className="text-white/90 text-sm">
