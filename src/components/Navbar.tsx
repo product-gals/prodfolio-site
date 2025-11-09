@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import prodfolioLogoFull from "@/assets/prodfolio-logo-full.png";
+import prodfolioLogoNew from "@/assets/prodfolio-logo-new.png";
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
 
 const Navbar = () => {
@@ -30,9 +30,9 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src={prodfolioLogoFull} 
+                src={prodfolioLogoNew} 
                 alt="Prodfolio - Show Your Work. Own Your Impact." 
-                className="h-16 md:h-24 hidden md:block"
+                className="h-12 md:h-14 hidden md:block"
               />
               <img 
                 src={prodfolioIcon} 
