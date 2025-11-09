@@ -14,6 +14,7 @@ import TermsOfService from "./pages/TermsOfService";
 import Quiz from "./pages/Quiz";
 import About from "./pages/About";
 import Help from "./pages/Help";
+import HelpArticle from "./pages/HelpArticle";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/help/:slug" element={<HelpArticle />} />
             
             {/* 404 for all other routes */}
             <Route path="*" element={<NotFound />} />
