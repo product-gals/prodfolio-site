@@ -171,21 +171,17 @@ const Landing = () => {
       <section className="py-20 md:py-24 bg-white border-y border-border/50">
         <div className="prodfolio-container">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-6">
               The PM job market in 2025: More opportunities. More visibility needed.
             </h2>
             
-            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-lg md:text-xl text-muted-foreground mb-12">
-              <div className="font-semibold text-primary">24,320 PM roles</div>
-              <div className="hidden md:block text-border">|</div>
-              <div className="font-semibold text-primary">+39% growth in entry-level roles</div>
-              <div className="hidden md:block text-border">|</div>
-              <div className="font-semibold text-primary">+26% remote opportunities</div>
+            <div className="flex flex-wrap justify-center items-center gap-3 text-base md:text-lg text-foreground">
+              <span className="font-semibold">24,320 PM roles</span>
+              <span className="text-muted-foreground">|</span>
+              <span className="font-semibold">+39% growth in entry-level roles</span>
+              <span className="text-muted-foreground">|</span>
+              <span className="font-semibold">+26% remote opportunities</span>
             </div>
-            
-            <p className="text-center text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
-              More roles means more opportunity—<span className="font-semibold text-foreground">if you know how to stand out</span>.
-            </p>
           </div>
         </div>
       </section>
