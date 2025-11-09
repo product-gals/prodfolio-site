@@ -171,41 +171,20 @@ const Landing = () => {
       <section className="py-20 md:py-24 bg-white border-y border-border/50">
         <div className="prodfolio-container">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
-              The PM job market isn't getting easier. Your portfolio needs to work harder.
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-4">
+              The PM job market in 2025: More opportunities. More visibility needed.
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-              {/* Stat 1 */}
-              <div className="text-center space-y-3">
-                <div className="text-4xl md:text-5xl font-bold text-primary">24,320</div>
-                <div className="text-sm md:text-base text-muted-foreground leading-snug">
-                  <span className="font-semibold text-foreground">PMs competing</span><br />
-                  for roles right now
-                </div>
-              </div>
-              
-              {/* Stat 2 */}
-              <div className="text-center space-y-3">
-                <div className="text-4xl md:text-5xl font-bold text-primary">7.2%</div>
-                <div className="text-sm md:text-base text-muted-foreground leading-snug">
-                  <span className="font-semibold text-foreground">YoY growth</span><br />
-                  in PM job listings—and competition
-                </div>
-              </div>
-              
-              {/* Stat 3 */}
-              <div className="text-center space-y-3">
-                <div className="text-4xl md:text-5xl font-bold text-primary">20-50</div>
-                <div className="text-sm md:text-base text-muted-foreground leading-snug">
-                  <span className="font-semibold text-foreground">portfolios reviewed</span><br />
-                  per role. You have 30 seconds.
-                </div>
-              </div>
+            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 text-lg md:text-xl text-muted-foreground mb-12">
+              <div className="font-semibold text-primary">24,320 PM roles</div>
+              <div className="hidden md:block text-border">|</div>
+              <div className="font-semibold text-primary">+39% growth in entry-level roles</div>
+              <div className="hidden md:block text-border">|</div>
+              <div className="font-semibold text-primary">+26% remote opportunities</div>
             </div>
             
-            <p className="text-center text-base md:text-lg text-muted-foreground mt-12 max-w-3xl mx-auto">
-              Hiring managers don't have time to guess if you're qualified. Your portfolio needs to show them—<span className="font-semibold text-foreground">fast</span>.
+            <p className="text-center text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
+              More roles means more opportunity—<span className="font-semibold text-foreground">if you know how to stand out</span>.
             </p>
           </div>
         </div>
