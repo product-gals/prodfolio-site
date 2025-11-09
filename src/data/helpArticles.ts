@@ -8,7 +8,7 @@ export interface HelpArticle {
 export const helpArticles: HelpArticle[] = [
   {
     slug: "creating-account",
-    title: "Creating Your Prodfolio Account",
+    title: "Creating your Prodfolio account",
     category: "Getting Started",
     content: `
 Let's get you set up! Creating your Prodfolio account takes about two minutes, and then you're ready to start building your PM portfolio.
