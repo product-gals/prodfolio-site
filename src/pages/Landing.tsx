@@ -87,42 +87,42 @@ const Landing = () => {
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
         className={`relative overflow-hidden pt-20 pb-32 md:pt-28 md:pb-40 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
         style={{
-          background: 'linear-gradient(135deg, #9E85F9 0%, #484689 100%)',
+          background: 'linear-gradient(180deg, #FAFAFA 0%, #F5F3FF 100%)',
         }}
       >
         <div className="prodfolio-container relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-16">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/20 text-white border border-white/30 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
               Used by PMs at Google, Amazon, Stripe, and 70+ others
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-white">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-foreground">
               Show your work.
               <br />
-              <span className="text-white/90">Own your impact.</span>
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Own your impact.</span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-10 text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Build a portfolio that proves how you think, what you've shipped, and the impact you've made—in one focused session, not weeks of design work.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8" aria-label="Primary call to action">
-              <Button asChild size="lg" className="px-10 py-6 h-auto text-lg bg-white text-[#3B2966] hover:bg-white/90 font-semibold shadow-xl hover:scale-105 transition-transform">
+              <Button asChild size="lg" className="px-10 py-6 h-auto text-lg btn-gradient shadow-xl hover:scale-105 transition-transform">
                 <a href="https://app.prodfolio.io/signup">
                   Start Your Portfolio Free
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="px-10 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="px-10 py-6 h-auto text-lg border-2 hover:bg-accent/50">
                 <a href="#examples">See Example Portfolios</a>
               </Button>
             </div>
             
-            <p className="text-sm text-white/80">
+            <p className="text-sm text-muted-foreground">
               No credit card required • Free to start • 2-minute setup
             </p>
           </header>
