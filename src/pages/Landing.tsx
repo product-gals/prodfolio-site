@@ -25,39 +25,39 @@ const Landing = () => {
     {
       label: "Guided storytelling",
       icon: FileText,
-      title: "Tell your story with confidence",
-      description: "Answer quick guided prompts about your work. We help you uncover the PM thinking you already have and turn it into compelling, proof-based case studies.",
+      title: "Know exactly what to say",
+      description: "Guided prompts help you uncover the PM thinking you already have. No more staring at a blank page wondering if you sound qualified enough—answer questions, we'll help you structure the story.",
       visual: "📝"
     },
     {
       label: "AI-powered tools",
       icon: Sparkles,
-      title: "Build faster with AI assistance",
-      description: "Transform your experience into professional case studies and resumes in minutes. AI helps you articulate your impact while you stay in control of your narrative.",
+      title: "Finish in one focused session",
+      description: "Go from rough notes to polished case study without weeks of design work. AI helps you articulate your impact while you stay in control of your narrative. Professional results, your authentic voice.",
       visual: "✨"
     },
     {
       label: "Built for PMs",
       icon: Users,
-      title: "Designed for how hiring managers think",
-      description: "Every template is optimized for what recruiters and hiring managers look for in product portfolios. Showcase your process, decisions, and measurable impact.",
+      title: "Showcase strategic thinking, not just delivery",
+      description: "Templates designed for what hiring managers actually look for: how you define problems, navigate ambiguity, influence without authority, and drive measurable outcomes. Show you think like a PM.",
       visual: "👥"
     },
     {
       label: "Ship in minutes",
       icon: Zap,
       title: "From idea to published in one session",
-      description: "No weeks of design work. No technical skills needed. Create a professional portfolio you're proud to share—in the time it takes to watch a product demo.",
+      description: "No design skills needed. No technical setup. Create a professional portfolio you're proud to share—in the time it takes to watch a product demo. Start with a blank slate or use proven templates.",
       visual: "⚡"
     }
   ];
 
   // Enhanced SEO for the homepage
   useSEO({
-    title: "Prodfolio — Build Your Product Portfolio in Minutes | Credibility Engine for PMs",
-    description: "Build your product portfolio to showcase PM thinking and prove your impact. Trusted by product managers to stand out in job searches. Get started free - no credit card required.",
+    title: "Prodfolio — Build Your Product Portfolio in Minutes",
+    description: "Build your product portfolio to showcase how you think, what you've shipped, and the impact you've made. Trusted by PMs at top companies. Get started free - no credit card required.",
     ogTitle: "Prodfolio — Build Your Product Portfolio in Minutes",
-    ogDescription: "Showcase your product thinking and prove your impact with a professional portfolio. No experience required.",
+    ogDescription: "Showcase your product thinking and prove your impact with a professional portfolio. No design skills required.",
     ogImage: "https://prodfolio.io/og-image-prodfolio.png",
     ogType: "website",
     canonical: "https://prodfolio.io/",
@@ -65,7 +65,7 @@ const Landing = () => {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Prodfolio",
-      "description": "A credibility engine for product people to build portfolios and showcase their PM thinking.",
+      "description": "Portfolio platform for product managers to showcase their work, thinking, and impact.",
       "url": "https://prodfolio.io",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
@@ -98,7 +98,7 @@ const Landing = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              Trusted by product managers at top companies
+              Used by PMs at Google, Amazon, Stripe, and 70+ others
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-foreground">
@@ -108,17 +108,17 @@ const Landing = () => {
             </h1>
             
             <p className="text-xl md:text-2xl mb-10 text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Build a portfolio that proves how you think, what you've shipped, and the impact you've made — in minutes, not weeks.
+              Build a portfolio that proves how you think, what you've shipped, and the impact you've made—in one focused session, not weeks of design work.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8" aria-label="Primary call to action">
               <Button asChild size="lg" className="px-10 py-6 h-auto text-lg btn-gradient shadow-xl hover:scale-105 transition-transform">
                 <a href="https://app.prodfolio.io/signup">
-                  Get Started Free →
+                  Start Your Portfolio Free
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-10 py-6 h-auto text-lg border-2 hover:bg-accent/50">
-                <a href="#examples">See Examples</a>
+                <a href="#examples">See Example Portfolios</a>
               </Button>
             </div>
             
@@ -167,8 +167,52 @@ const Landing = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
       </section>
 
+      {/* Market Context Section */}
+      <section className="py-20 md:py-24 bg-white border-y border-border/50">
+        <div className="prodfolio-container">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-12">
+              The PM job market isn't getting easier. Your portfolio needs to work harder.
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+              {/* Stat 1 */}
+              <div className="text-center space-y-3">
+                <div className="text-4xl md:text-5xl font-bold text-primary">24,320</div>
+                <div className="text-sm md:text-base text-muted-foreground leading-snug">
+                  <span className="font-semibold text-foreground">PMs competing</span><br />
+                  for roles right now
+                </div>
+              </div>
+              
+              {/* Stat 2 */}
+              <div className="text-center space-y-3">
+                <div className="text-4xl md:text-5xl font-bold text-primary">7.2%</div>
+                <div className="text-sm md:text-base text-muted-foreground leading-snug">
+                  <span className="font-semibold text-foreground">YoY growth</span><br />
+                  in PM job listings—and competition
+                </div>
+              </div>
+              
+              {/* Stat 3 */}
+              <div className="text-center space-y-3">
+                <div className="text-4xl md:text-5xl font-bold text-primary">20-50</div>
+                <div className="text-sm md:text-base text-muted-foreground leading-snug">
+                  <span className="font-semibold text-foreground">portfolios reviewed</span><br />
+                  per role. You have 30 seconds.
+                </div>
+              </div>
+            </div>
+            
+            <p className="text-center text-base md:text-lg text-muted-foreground mt-12 max-w-3xl mx-auto">
+              Hiring managers don't have time to guess if you're qualified. Your portfolio needs to show them—<span className="font-semibold text-foreground">fast</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
-      <section 
+      <section
         ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>}
         className="py-24 md:py-32"
         style={{
@@ -178,10 +222,10 @@ const Landing = () => {
         <div className="prodfolio-container">
           <div className={`text-center mb-16 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Build your portfolio with complete confidence
+              Everything you need to showcase your work and stand out
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to showcase your product work and stand out to hiring managers
+              Built for how PMs work and how hiring managers hire
             </p>
           </div>
 
@@ -264,9 +308,9 @@ const Landing = () => {
           <div className="max-w-6xl mx-auto">
             <div className={`text-center mb-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Be Seen. Get Recognized.
+                Designed for how hiring managers actually evaluate PMs
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Prodfolio showcases your results and proves your value.</p>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">We asked VPs of Product and recruiters what they look for. Here's what they told us.</p>
             </div>
             
             <div className={`grid md:grid-cols-2 gap-10 max-w-6xl mx-auto stagger-children ${insightsAnimation.isVisible ? 'visible' : ''}`}>
@@ -325,7 +369,7 @@ const Landing = () => {
             
             <div className={`text-center mt-12 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <Button asChild size="lg" className="px-8 btn-gradient">
-                <a href="https://app.prodfolio.io/signup">Build My Portfolio</a>
+                <a href="https://app.prodfolio.io/signup">Build the portfolio hiring managers want to see</a>
               </Button>
             </div>
           </div>
@@ -440,17 +484,17 @@ const Landing = () => {
         <div className="prodfolio-container text-center relative z-10">
           <div className={`max-w-3xl mx-auto ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Ready to build your Prodfolio™?
+              Ready to stop doubting and start showing your work?
             </h2>
             <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
               Start your free portfolio and showcase your product impact.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <Button asChild size="lg" className="px-8 bg-white text-purple-900 hover:bg-white/90 font-semibold shadow-xl">
-                <a href="https://app.prodfolio.io/signup">Start Free</a>
+                <a href="https://app.prodfolio.io/signup">Start Your Portfolio Free</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-8 border-2 border-white text-white hover:bg-white/10">
-                <a href="/pricing">View Pricing</a>
+                <a href="/pricing">View Plans & Pricing</a>
               </Button>
             </div>
             <p className="mt-6 text-sm text-white/80">No credit card required. Get started in minutes.</p>
