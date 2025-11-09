@@ -13,6 +13,7 @@ import Partnerships from "./pages/Partnerships";
 import TermsOfService from "./pages/TermsOfService";
 import Quiz from "./pages/Quiz";
 import About from "./pages/About";
+import Help from "./pages/Help";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="/partnerships" element={<Partnerships />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/help" element={<Help />} />
             
             {/* 404 for all other routes */}
             <Route path="*" element={<NotFound />} />
