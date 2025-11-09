@@ -12,6 +12,7 @@ export default function Help() {
       icon: BookOpen,
       items: [
         { title: "Creating your Prodfolio account", slug: "creating-account" },
+        { title: "FAQ: Troubleshooting", slug: "troubleshooting" },
         { title: "How to create your first Prodfolio", slug: "create-first-prodfolio" },
         { title: "Understanding Prodfolio templates", slug: "understanding-templates" },
         { title: "Quick start guide for PMs", slug: "quick-start-guide" },
