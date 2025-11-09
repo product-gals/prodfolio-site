@@ -29,7 +29,7 @@ const Footer = () => {
             </Button>
           </div>
           <p className="text-white/90 text-sm">
-            No credit card • 2-minute setup • Free to start
+            No credit card required • Build your first portfolio in under 30 minutes
           </p>
         </div>
       </section>
