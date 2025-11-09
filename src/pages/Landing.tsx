@@ -175,12 +175,12 @@ const Landing = () => {
               The PM job market in 2025: More opportunities. More visibility needed.
             </h2>
             
-            <div className="flex flex-wrap justify-center items-center gap-3 text-base md:text-lg text-foreground">
-              <span className="font-semibold">24,320 PM roles</span>
-              <span className="text-muted-foreground">|</span>
-              <span className="font-semibold">+39% growth in entry-level roles</span>
-              <span className="text-muted-foreground">|</span>
-              <span className="font-semibold">+26% remote opportunities</span>
+            <div className="flex flex-wrap justify-center items-center gap-3 text-base md:text-lg text-primary font-semibold">
+              <span>24,320 PM roles</span>
+              <span className="text-muted-foreground font-normal">|</span>
+              <span>+39% growth in entry-level roles</span>
+              <span className="text-muted-foreground font-normal">|</span>
+              <span>+26% remote opportunities</span>
             </div>
           </div>
         </div>
