@@ -371,7 +371,7 @@ const Landing = () => {
                   <CarouselItem>
                     <div className="py-12 px-4">
                       <blockquote className="text-center space-y-8">
-                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
+                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto italic">
                           "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for. I'm most excited about how Prodfolio helps me craft narratives around my product work; the templates are easy to use and optimized for storytelling."
                         </p>
                         <footer className="flex items-center justify-center gap-6 text-base">
