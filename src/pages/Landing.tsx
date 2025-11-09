@@ -177,9 +177,9 @@ const Landing = () => {
             
             <div className="flex flex-wrap justify-center items-center gap-3 text-base md:text-lg text-primary font-semibold">
               <span>24,320 PM roles</span>
-              <span className="text-muted-foreground font-normal">|</span>
+              <span className="text-foreground font-normal">|</span>
               <span>+39% growth in entry-level roles</span>
-              <span className="text-muted-foreground font-normal">|</span>
+              <span className="text-foreground font-normal">|</span>
               <span>+26% remote opportunities</span>
             </div>
           </div>
