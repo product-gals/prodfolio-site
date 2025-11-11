@@ -378,20 +378,21 @@ const Landing = () => {
                     </div>
                   </CarouselItem>
 
-                  {/* Placeholder Testimonial 1 */}
+                  {/* Amy W. Testimonial */}
                   <CarouselItem>
                     <div className="py-12 px-4">
-                      <blockquote className="text-center space-y-8 opacity-40">
-                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
-                          "Your testimonial could be here. Share your Prodfolio success story with us and help other PMs discover how to showcase their work effectively."
+                      <blockquote className="text-center space-y-8">
+                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto italic">
+                          "I've used Wix, Squarespace, and Behance before. They were so time-consuming, and I had no idea how to structure a case study. I really like how Prodfolio's case study shows you exactly what to include—this is what you do, these are your metrics. As someone transitioning into tech, being able to add side projects is really important because I don't have examples from a PM job yet. This has been so much better."
                         </p>
                         <footer className="flex items-center justify-center gap-6 text-base">
                           <div className="text-right">
-                            <cite className="font-semibold text-foreground not-italic">Your Name</cite>
+                            <cite className="font-semibold text-foreground not-italic">Amy W.</cite>
                           </div>
                           <div className="w-px h-12 bg-border"></div>
                           <div className="text-left">
-                            <div className="text-muted-foreground">Your Title</div>
+                            <div className="text-muted-foreground">Product Manager</div>
+                            <div className="text-xs text-muted-foreground">Transitioning from fashion to tech</div>
                           </div>
                         </footer>
                       </blockquote>
