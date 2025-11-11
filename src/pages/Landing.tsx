@@ -139,7 +139,7 @@ const Landing = () => {
                 </div>
                 <div className="flex-1 mx-4">
                   <div className="bg-background/80 rounded px-3 py-1 text-xs text-muted-foreground border border-border/50">
-                    prodfolio.io/sarah-chen
+                    prodfolio.io/p/sarah-chen
                   </div>
                 </div>
               </div>
