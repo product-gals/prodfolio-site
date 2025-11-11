@@ -145,11 +145,11 @@ const Landing = () => {
               </div>
               
               {/* Portfolio screenshot example */}
-              <div className="aspect-[16/10] bg-background relative overflow-hidden">
+              <div className="bg-background relative overflow-hidden">
                 <img 
                   src="/src/assets/portfolio-preview.png" 
                   alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto"
                   loading="eager"
                 />
               </div>
