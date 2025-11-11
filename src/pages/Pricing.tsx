@@ -65,12 +65,12 @@ const Pricing = () => {
       price: "$29",
       monthlyPrice: 29,
       features: [
-        "Unlimited Prodfolios",
         "Everything in Starter",
-        "Password protection",
-        "Custom domain",
-        "Analytics",
-        "Priority support"
+        "Custom domain (yourname.com)",
+        "Custom portfolio themes",
+        "Analytics (Coming Soon)",
+        "Priority support",
+        "Early access to new features"
       ],
       cta: "Get started",
       popular: false,
