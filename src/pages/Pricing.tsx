@@ -48,12 +48,13 @@ const Pricing = () => {
       price: "$19",
       monthlyPrice: 19,
       features: [
-        "3 Prodfolios",
-        "Custom themes",
-        "AI to Case Study",
-        "AI to Resume",
-        "References",
-        "Prodfolio domain"
+        "Unlimited portfolios",
+        "Unlimited AI case study generation",
+        "Password-protected case studies",
+        "Additional portfolio themes",
+        "Headshot & personal video",
+        "Quarterly update reminders",
+        "No watermark"
       ],
       cta: "Get started",
       popular: true,
