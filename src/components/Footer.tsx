@@ -91,7 +91,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/terms" className="hover:text-[#3B2966] hover:underline transition-all">
+                  <a href="https://sugared-cactus-5d5.notion.site/Prodfolio-Terms-of-Service-295f710757778003974dec640810d4ec?pvs=74" target="_blank" rel="noopener noreferrer" className="hover:text-[#3B2966] hover:underline transition-all">
                     Terms
                   </a>
                 </li>
