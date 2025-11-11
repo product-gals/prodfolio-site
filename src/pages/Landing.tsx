@@ -144,19 +144,14 @@ const Landing = () => {
                 </div>
               </div>
               
-              {/* Placeholder for product screenshot - using gradient for now */}
-              <div className="aspect-[16/10] bg-gradient-to-br from-background via-accent/20 to-primary/10 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-4 p-8">
-                    <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-primary/70 mx-auto flex items-center justify-center shadow-lg">
-                      <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-foreground">Your Portfolio Preview</h3>
-                    <p className="text-muted-foreground max-w-md">Showcase your case studies, metrics, and impact in a clean, professional portfolio</p>
-                  </div>
-                </div>
+              {/* Portfolio screenshot example */}
+              <div className="aspect-[16/10] bg-background relative overflow-hidden">
+                <img 
+                  src="/src/assets/portfolio-preview.png" 
+                  alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" 
+                  className="w-full h-full object-cover object-top"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
