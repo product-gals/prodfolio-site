@@ -62,8 +62,8 @@ const Pricing = () => {
     {
       name: "Pro",
       tagline: "For serious product managers",
-      price: "$39",
-      monthlyPrice: 39,
+      price: "$29",
+      monthlyPrice: 29,
       features: [
         "Unlimited Prodfolios",
         "Everything in Starter",
