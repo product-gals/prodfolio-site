@@ -92,14 +92,6 @@ const Landing = () => {
       >
         <div className="prodfolio-container relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-16">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-              </span>
-              Used by PMs at Google, Amazon, Stripe, and 70+ others
-            </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-6 text-foreground">
               Show your work.
