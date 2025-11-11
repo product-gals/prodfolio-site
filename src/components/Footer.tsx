@@ -86,7 +86,7 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-[#3B2966]">Legal</h4>
               <ul className="space-y-2 text-sm text-[#6F6F7B]">
                 <li>
-                  <a href="https://sugared-cactus-5d5.notion.site/Prodfolio-Privacy-Policy-241f710757778017aa6dc57283be68d7" target="_blank" rel="noopener noreferrer" className="hover:text-[#3B2966] hover:underline transition-all">
+                  <a href="https://sugared-cactus-5d5.notion.site/Prodfolio-Privacy-Policy-241f710757778017aa6dc57283be68d7?pvs=74" target="_blank" rel="noopener noreferrer" className="hover:text-[#3B2966] hover:underline transition-all">
                     Privacy
                   </a>
                 </li>
