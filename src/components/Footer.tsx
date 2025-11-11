@@ -52,12 +52,12 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 text-[#3B2966]">Resources</h4>
               <ul className="space-y-2 text-sm text-[#6F6F7B]">
                 <li>
-                  <a href="https://www.linkedin.com/company/theproductpivot" target="_blank" rel="noopener noreferrer" className="hover:text-[#3B2966] hover:underline transition-all">
+                  <a href="https://www.youtube.com/@TheProductPivot/videos" target="_blank" rel="noopener noreferrer" className="hover:text-[#3B2966] hover:underline transition-all">
                     Podcast
                   </a>
                 </li>
                 <li>
-                  <a href="/resources#signal-framework" className="hover:text-[#3B2966] hover:underline transition-all">
+                  <a href="https://sugared-cactus-5d5.notion.site/The-SIGNAL-Framework-for-PM-Case-Studies-2a5f7107577780318be3e52f948684ed?pvs=74" target="_blank" rel="noopener noreferrer" className="hover:text-[#3B2966] hover:underline transition-all">
                     SIGNAL Framework
                   </a>
                 </li>
