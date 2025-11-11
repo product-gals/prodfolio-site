@@ -399,20 +399,20 @@ const Landing = () => {
                     </div>
                   </CarouselItem>
 
-                  {/* Placeholder Testimonial 2 */}
+                  {/* Product Lead Testimonial */}
                   <CarouselItem>
                     <div className="py-12 px-4">
-                      <blockquote className="text-center space-y-8 opacity-40">
-                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto">
-                          "Your testimonial could be here. Share your Prodfolio success story with us and help other PMs discover how to showcase their work effectively."
+                      <blockquote className="text-center space-y-8">
+                        <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto italic">
+                          "I spent 8-12 hours building a portfolio in Notion, and I still felt too nervous to share it with hiring managers. Generic tools just aren't built with PM storytelling in mind. Prodfolio gets what product managers actually need. I'm excited to finally have a tool that speaks my language."
                         </p>
                         <footer className="flex items-center justify-center gap-6 text-base">
                           <div className="text-right">
-                            <cite className="font-semibold text-foreground not-italic">Your Name</cite>
+                            <cite className="font-semibold text-foreground not-italic">Product Lead</cite>
                           </div>
                           <div className="w-px h-12 bg-border"></div>
                           <div className="text-left">
-                            <div className="text-muted-foreground">Your Title</div>
+                            <div className="text-muted-foreground">Tech Industry</div>
                           </div>
                         </footer>
                       </blockquote>
