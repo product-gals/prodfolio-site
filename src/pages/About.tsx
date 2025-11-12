@@ -33,7 +33,7 @@ const About = () => {
           "name": "Meagan Glenn",
           "jobTitle": "Co-founder",
           "sameAs": "https://www.linkedin.com/in/meagan-glenn/",
-          "url": "https://prodfolio.io/meagan"
+          "url": "https://app.prodfolio.io/p/meagan-glenn-1"
         },
         {
           "@type": "Person",
@@ -204,7 +204,7 @@ const About = () => {
 
               <div className="mb-4 text-center">
                 <Button asChild className="rounded-full bg-primary hover:bg-primary/90 text-white transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2">
-                  <a href="https://prodfolio.io/meagan" target="_blank" rel="noopener noreferrer">
+                  <a href="https://app.prodfolio.io/p/meagan-glenn-1" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio →
                   </a>
                 </Button>
