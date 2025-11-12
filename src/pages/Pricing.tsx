@@ -28,7 +28,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Free",
-      tagline: "Start building your portfolio",
+      tagline: "Get started risk-free",
       price: "$0",
       monthlyPrice: 0,
       features: [
@@ -45,7 +45,7 @@ const Pricing = () => {
     },
     {
       name: "Starter",
-      tagline: "For active job seekers",
+      tagline: "For PMs ready to stand out",
       price: "$19",
       monthlyPrice: 19,
       features: [
@@ -63,7 +63,7 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      tagline: "For serious product managers",
+      tagline: "For PMs serious about their craft",
       price: "$29",
       monthlyPrice: 29,
       features: [
@@ -85,29 +85,36 @@ const Pricing = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-10">
+      <section className="pt-14 pb-6">
         <div className="prodfolio-container text-center">
           <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 text-foreground">
             Join the Community
           </h1>
-          <p className="text-xl text-muted-foreground mb-4">
-            Start building your Prodfolio for free—no credit card, no pressure, just you and your story.
+          <p className="text-xl text-muted-foreground mb-6">
+            Build your first portfolio free—no credit card needed, just your story and our support.
           </p>
-          <p className="text-base text-muted-foreground/70 mb-12">
-            Join hundreds of PMs who are already showcasing their work in a way that actually reflects how they think.
-          </p>
+          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-4 h-4 fill-coral" viewBox="0 0 20 20">
+                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+              ))}
+            </div>
+            <span className="font-medium">Trusted by 500+ product managers</span>
+          </div>
         </div>
       </section>
 
       {/* Founding Member Offer - Highlighted Section */}
-      <section className="py-12 relative overflow-hidden">
+      <section className="pt-10 pb-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-primary opacity-10"></div>
         <div className="prodfolio-container max-w-5xl relative z-10">
-          <div className="relative glass-card border-2 border-primary rounded-3xl p-10 md:p-16 shadow-glass overflow-hidden">
+          <div className="relative glass-card border-2 border-primary rounded-3xl p-8 md:p-12 shadow-glass overflow-hidden">
             {/* Decorative Corner Badge */}
             <div className="absolute top-0 right-0">
               <div className="relative">
-                <div className="absolute top-6 right-6 bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-soft rotate-12 animate-glow">
+                <div className="absolute top-6 right-6 bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-soft rotate-12 animate-pulse">
                   LIMITED OFFER
                 </div>
               </div>
@@ -131,8 +138,19 @@ const Pricing = () => {
                   </h2>
                   
                   <p className="text-xl text-muted-foreground mb-6">
-                    Be part of the cohort that defines what a PM portfolio should be
+                    Join the founding cohort shaping the future of PM portfolios—together
                   </p>
+                  
+                  {/* Progress Bar */}
+                  <div className="mb-6">
+                    <div className="flex items-center justify-between text-xs text-muted-foreground mb-2">
+                      <span className="font-semibold">48 of 50 spots claimed</span>
+                      <span>96% full</span>
+                    </div>
+                    <div className="h-2 bg-muted rounded-full overflow-hidden">
+                      <div className="h-full bg-gradient-primary rounded-full transition-all duration-500" style={{ width: '96%' }}></div>
+                    </div>
+                  </div>
                   
                   <div className="flex items-baseline gap-3 mb-6">
                     <span className="text-6xl font-display font-bold text-foreground">$348</span>
@@ -198,14 +216,14 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`pb-12 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-12 pb-12 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-6xl">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-display font-bold mb-6">Standard Plans</h2>
+          <div className="text-center mb-6">
+            <h2 className="text-3xl font-display font-bold mb-4">Standard Plans</h2>
             
             {/* Billing Toggle */}
-            <div className="inline-flex items-center gap-3 glass-card rounded-full p-1.5 shadow-soft mb-8">
+            <div className="inline-flex items-center gap-3 glass-card rounded-full p-1.5 shadow-soft mb-6">
               <button
                 onClick={() => setBillingCycle("monthly")}
                 className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
@@ -225,8 +243,8 @@ const Pricing = () => {
                 }`}
               >
                 Annual
-                <span className="text-xs bg-coral/10 text-coral px-2 py-0.5 rounded-full font-semibold">
-                  20% off
+                <span className="text-xs bg-coral text-white px-2 py-0.5 rounded-full font-bold">
+                  Save 20%
                 </span>
               </button>
             </div>
@@ -251,15 +269,15 @@ const Pricing = () => {
                   }`}
                   style={{ borderRadius: '24px' }}
                 >
-                  {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
-                      <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-glow">
-                        Most Popular
-                      </span>
-                    </div>
-                  )}
-                  
-                  <CardHeader className="pb-6">
+                   {plan.popular && (
+                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
+                       <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-pulse">
+                         Most Popular
+                       </span>
+                     </div>
+                   )}
+                   
+                   <CardHeader className="pb-5">
                     <CardTitle className="text-xl mb-2 font-display">{plan.name}</CardTitle>
                     <div className="mt-4 mb-4">
                       <div className="text-5xl font-display font-bold text-foreground">{displayPrice}</div>
@@ -276,9 +294,9 @@ const Pricing = () => {
                       {plan.tagline}
                     </CardDescription>
                   </CardHeader>
-                  
-                  <CardContent className="flex-1 pt-0">
-                    <ul className="space-y-3">
+                   
+                   <CardContent className="flex-1 pt-0">
+                     <ul className="space-y-2.5">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -287,8 +305,8 @@ const Pricing = () => {
                       ))}
                     </ul>
                   </CardContent>
-                  
-                  <CardFooter className="pt-6">
+                   
+                   <CardFooter className="pt-5">
                     <Button 
                       asChild
                       className={`w-full h-12 font-semibold transition-all duration-200 ${
@@ -313,12 +331,12 @@ const Pricing = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16">
+      <section className="pt-12 pb-12">
         <div className="prodfolio-container max-w-3xl">
-          <h2 className="text-4xl font-display font-bold text-center mb-16">
+          <h2 className="text-4xl font-display font-bold text-center mb-10">
             Frequently asked questions
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div className="glass-card border-glass-light rounded-xl p-6 hover-lift">
               <h3 className="text-lg font-display font-bold mb-3">Can I switch plans later?</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -343,6 +361,36 @@ const Pricing = () => {
                 Absolutely. Cancel your subscription anytime from your account settings. We may reach out for feedback on how to improve :)
               </p>
             </div>
+            <div className="glass-card border-glass-light rounded-xl p-6 hover-lift">
+              <h3 className="text-lg font-display font-bold mb-3">What makes Prodfolio different from other portfolio tools?</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We're built by PMs, for PMs. Every feature is designed around how you actually work and what hiring managers actually want to see. Plus, you're joining a community of product people who get it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="pt-12 pb-20">
+        <div className="prodfolio-container max-w-4xl text-center">
+          <div className="glass-card border-2 border-primary rounded-3xl p-10 md:p-14 shadow-glass">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+              Resumes show your experience.<br />Prodfolios show your thinking.
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Join the community of product managers who are showcasing their work in a way that truly reflects how they think and the impact they make.
+            </p>
+            <Button 
+              asChild
+              size="lg"
+              className="btn-coral h-14 px-8 text-lg font-semibold hover:shadow-xl"
+              style={{ borderRadius: '12px' }}
+            >
+              <a href="https://app.prodfolio.io/signup">
+                Start Building Your Prodfolio →
+              </a>
+            </Button>
           </div>
         </div>
       </section>
