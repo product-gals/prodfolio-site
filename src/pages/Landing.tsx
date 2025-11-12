@@ -177,7 +177,7 @@ const Landing = () => {
       </section>
 
       {/* Testimonials Section - Single compact glass card */}
-      <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-4xl mx-auto">
             <div className={`text-center mb-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
@@ -259,7 +259,7 @@ const Landing = () => {
       </section>
 
       {/* Final CTA - Centered floating glass card */}
-      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 pb-24 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 pb-24 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className="glass-card p-12 text-center bg-[#100D22]/60">
