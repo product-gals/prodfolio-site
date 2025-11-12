@@ -247,10 +247,10 @@ const Landing = () => {
             </div>
 
             <div className={`text-center mt-8 space-y-3 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <Button asChild variant="outline" size="lg" className="px-6 bg-white/10 border-white/40 text-white hover:bg-white/20">
+              <Button asChild variant="outline" size="lg" className="px-6 bg-[#100D22]/60 border-white/40 text-white hover:bg-[#100D22]/80">
                 <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer">Share Your Story</a>
               </Button>
-              <p className="text-white/70 text-sm">
+              <p className="text-white/90 text-sm">
                 Ready to start building? <a href="/pricing" className="text-white hover:underline font-medium">View Plans & Pricing</a>
               </p>
             </div>
@@ -262,7 +262,7 @@ const Landing = () => {
       <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 pb-24 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
-            <div className="glass-card p-12 text-center">
+            <div className="glass-card p-12 text-center bg-[#100D22]/60">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
                 Your resume lists what you did.
                 <br />
