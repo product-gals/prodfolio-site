@@ -258,11 +258,11 @@ const Landing = () => {
       {/* Testimonials Section */}
       <section 
         ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>}
-        className="py-24 md:py-32 bg-muted/20"
+        className="py-12 md:py-16 bg-muted/20"
       >
         <div className="prodfolio-container">
           <div className="max-w-5xl mx-auto">
-            <div className={`text-center mb-20 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className={`text-center mb-10 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
                 What product managers are saying
               </h2>
@@ -273,8 +273,8 @@ const Landing = () => {
                 <CarouselContent>
                   {/* Real Testimonial */}
                   <CarouselItem>
-                    <div className="py-12 px-4">
-                      <blockquote className="text-center space-y-8">
+                    <div className="py-6 px-4">
+                      <blockquote className="text-center space-y-6">
                         <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto italic">
                           "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for. I'm most excited about how Prodfolio helps me craft narratives around my product work; the templates are easy to use and optimized for storytelling."
                         </p>
@@ -293,8 +293,8 @@ const Landing = () => {
 
                   {/* Amy W. Testimonial */}
                   <CarouselItem>
-                    <div className="py-12 px-4">
-                      <blockquote className="text-center space-y-8">
+                    <div className="py-6 px-4">
+                      <blockquote className="text-center space-y-6">
                         <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto italic">
                           "I've used Wix, Squarespace, and Behance before. They were so time-consuming, and I had no idea how to structure a case study. I really like how Prodfolio's case study shows you exactly what to include—this is what you do, these are your metrics. As someone transitioning into tech, being able to add side projects is really important because I don't have examples from a PM job yet. This has been so much better."
                         </p>
@@ -314,8 +314,8 @@ const Landing = () => {
 
                   {/* Product Lead Testimonial */}
                   <CarouselItem>
-                    <div className="py-12 px-4">
-                      <blockquote className="text-center space-y-8">
+                    <div className="py-6 px-4">
+                      <blockquote className="text-center space-y-6">
                         <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-4xl mx-auto italic">
                           "I spent 8-12 hours building a portfolio in Notion, and I still felt too nervous to share it with hiring managers. Generic tools just aren't built with PM storytelling in mind. Prodfolio gets what product managers actually need. I'm excited to finally have a tool that speaks my language."
                         </p>
@@ -334,14 +334,14 @@ const Landing = () => {
                 </CarouselContent>
                 
                 {/* Custom Navigation */}
-                <div className="flex items-center justify-center gap-6 mt-12">
+                <div className="flex items-center justify-center gap-6 mt-8">
                   <CarouselPrevious className="relative static translate-y-0" />
                   <CarouselNext className="relative static translate-y-0" />
                 </div>
               </Carousel>
             </div>
 
-            <div className={`text-center mt-16 space-y-4 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className={`text-center mt-10 space-y-4 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <Button asChild variant="outline" size="lg" className="px-8">
                 <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer">Share Your Story</a>
               </Button>
