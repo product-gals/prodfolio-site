@@ -162,7 +162,7 @@ const Pricing = () => {
                   
                   <div className="flex items-baseline gap-3 mb-6">
                     <span className="text-6xl font-display font-bold text-foreground">$348</span>
-                    <span className="text-xl text-muted-foreground">one-time · lifetime access</span>
+                    <span className="text-xl text-muted-foreground">one-time · 2-year access</span>
                   </div>
                   
                   <div className="bg-primary/10 border-l-4 border-primary rounded-xl p-5 mb-6 backdrop-blur-sm">
