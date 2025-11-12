@@ -299,17 +299,15 @@ const About = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
                 asChild
-                size="lg"
-                className="px-10 py-6 h-auto text-lg bg-white text-[#100D22] hover:bg-white/90 shadow-xl"
+                className="px-6 py-3 h-auto text-base bg-white text-[#100D22] hover:bg-white/90 shadow-xl"
                 style={{ borderRadius: "12px" }}
               >
                 <a href="https://app.prodfolio.io/signup">Get Started Free →</a>
               </Button>
               <Button
                 asChild
-                size="lg"
                 variant="outline"
-                className="px-10 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10"
+                className="px-6 py-3 h-auto text-base border-2 border-white text-white hover:bg-white/10"
                 style={{ borderRadius: "12px" }}
               >
                 <a href="/pricing">View Pricing</a>
