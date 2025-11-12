@@ -263,7 +263,7 @@ const Landing = () => {
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className="glass-card p-12 text-center bg-[#100D22]/60">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Your resume lists what you did.
                 <br />
                 Your Prodfolio shows how you think.
