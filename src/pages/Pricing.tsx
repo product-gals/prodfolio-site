@@ -130,7 +130,7 @@ const Pricing = () => {
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-coral"></span>
                     </span>
-                    46 slots left
+                    48 slots left
                   </div>
                   
                   <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
@@ -144,7 +144,7 @@ const Pricing = () => {
                   {/* Progress Bar */}
                   <div className="mb-6">
                     <div className="flex items-center justify-between text-xs text-muted-foreground mb-2">
-                      <span className="font-semibold">2 of 48 spots claimed</span>
+                      <span className="font-semibold">2 of 50 spots claimed</span>
                       <span>4% full</span>
                     </div>
                     <div className="h-2 bg-muted rounded-full overflow-hidden">
@@ -203,7 +203,7 @@ const Pricing = () => {
                     </Button>
                     
                     <p className="text-xs text-center text-muted-foreground mt-4">
-                      Once we hit 48, this tier closes permanently.
+                      Once we hit 50, this tier closes permanently.
                     </p>
                   </div>
                 </div>
