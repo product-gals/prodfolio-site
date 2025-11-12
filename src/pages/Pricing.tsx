@@ -187,7 +187,7 @@ const Pricing = () => {
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug"><strong>Monthly office hours</strong> with exclusive roadmap sessions</span>
+                        <span className="text-sm leading-snug"><strong>Monthly AMAs</strong> with exclusive roadmap sessions</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
