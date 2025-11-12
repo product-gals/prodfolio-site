@@ -2,7 +2,7 @@ import prodfolioIcon from "@/assets/prodfolio-icon.png";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-white/10 backdrop-blur-md border-t border-white/20 text-white">
+    <footer className="py-12 bg-[#100D22]/80 backdrop-blur-md border-t border-white/20 text-white">
       <div className="prodfolio-container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Product */}
@@ -34,11 +34,6 @@ const Footer = () => {
               <li>
                 <a href="https://sugared-cactus-5d5.notion.site/The-SIGNAL-Framework-for-PM-Case-Studies-2a5f7107577780318be3e52f948684ed?pvs=74" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-all">
                   PM Case Study Framework
-                </a>
-              </li>
-              <li>
-                <a href="/resources" className="hover:text-white hover:underline transition-all">
-                  Portfolio Examples
                 </a>
               </li>
             </ul>
