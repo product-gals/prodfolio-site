@@ -129,7 +129,7 @@ const Landing = () => {
           <div className="max-w-6xl mx-auto relative">
             <div className="grid md:grid-cols-2 gap-8 md:gap-6 md:items-stretch">
               {/* Card 1 */}
-              <article className="glass-card p-8 relative md:translate-y-4 hover:z-10 flex flex-col h-full">
+              <article className="glass-card p-8 relative hover:z-10 flex flex-col h-full">
                 <div className="absolute -top-3 left-6">
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center border border-white/40">
                     <Quote className="w-4 h-4 text-white" />
@@ -151,7 +151,7 @@ const Landing = () => {
               </article>
               
               {/* Card 2 */}
-              <article className="glass-card p-8 relative md:-translate-y-4 hover:z-10 flex flex-col h-full">
+              <article className="glass-card p-8 relative hover:z-10 flex flex-col h-full">
                 <div className="absolute -top-3 left-6">
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center border border-white/40">
                     <Quote className="w-4 h-4 text-white" />
