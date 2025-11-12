@@ -191,7 +191,7 @@ export default function TermsOfService() {
                 <li><strong>Free:</strong> Basic features with watermark</li>
                 <li><strong>Pro:</strong> $19/month - full features, no watermark</li>
                 <li><strong>Premium:</strong> $29/month - advanced features, priority support</li>
-                <li><strong>Founding Member:</strong> $399 one-time - lifetime access (limited availability)</li>
+                <li><strong>Founding Member:</strong> $348 one-time - two year access (limited availability)</li>
               </ul>
               <p className="text-navy/90 mb-4">
                 Prices may change, but we'll notify existing subscribers before any increases.
