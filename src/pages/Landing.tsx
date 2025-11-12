@@ -186,7 +186,7 @@ const Landing = () => {
               </h2>
             </div>
             
-            <div className={`glass-card p-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className={`glass-card p-8 bg-[#100D22]/60 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <Carousel className="w-full">
                 <CarouselContent>
                   {/* Testimonial 1 */}
