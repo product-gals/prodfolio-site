@@ -205,7 +205,7 @@ const Pricing = () => {
                       className="btn-coral w-full mt-6 h-14 text-base font-semibold hover:shadow-xl"
                       style={{ borderRadius: '12px' }}
                     >
-                      <a href="https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06">
+                      <a href="https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06" target="_blank" rel="noopener noreferrer">
                         Claim Your Founding Spot →
                       </a>
                     </Button>
