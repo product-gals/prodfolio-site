@@ -89,6 +89,39 @@ const Resources = () => {
                 />
               </div>
             </section>
+
+            {/* Call-to-Action Cards */}
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              {/* Watch More Episodes */}
+              <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40 hover:shadow-lg transition-all duration-300">
+                <h3 className="text-xl font-bold mb-3 text-navy">Watch More Episodes</h3>
+                <p className="text-navy/80 mb-6">
+                  Explore our full library of conversations with product leaders.
+                </p>
+                <a 
+                  href="https://www.youtube.com/@TheProductPivot/videos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  View All Episodes
+                </a>
+              </section>
+
+              {/* Guest Inquiry */}
+              <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40 hover:shadow-lg transition-all duration-300">
+                <h3 className="text-xl font-bold mb-3 text-navy">Share Your Insights</h3>
+                <p className="text-navy/80 mb-6">
+                  Interested in sharing your insights? We'd love to hear from you.
+                </p>
+                <a 
+                  href="mailto:theproductpivot@gmail.com"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#ff8b7b] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  Send Us a Message
+                </a>
+              </section>
+            </div>
           </div>
         </div>
       </main>
