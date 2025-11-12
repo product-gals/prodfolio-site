@@ -30,10 +30,10 @@ const About = () => {
         className={`pt-32 pb-20 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 text-white">
+          <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 text-navy">
             We built the thing we needed
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+          <p className="text-xl md:text-2xl text-navy/90 leading-relaxed">
             Prodfolio started because two PMs got tired of watching talented product people undersell themselves —
             ourselves included.
           </p>
@@ -48,7 +48,7 @@ const About = () => {
         <div className="prodfolio-container max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-2">Origin Story</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">
               How a LinkedIn coffee chat became Prodfolio
             </h2>
           </div>
@@ -62,8 +62,8 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-white">It started with a coffee chat</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
+                <h3 className="text-2xl font-bold mb-3 text-navy">It started with a coffee chat</h3>
+                <p className="text-lg text-navy/90 leading-relaxed">
                   Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
                   They realized they'd been in the same PM circles but had never actually met. So they did what any
                   curious PMs would do — grabbed coffee.
@@ -79,11 +79,11 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-white">Then came the podcast</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
+                <h3 className="text-2xl font-bold mb-3 text-navy">Then came the podcast</h3>
+                <p className="text-lg text-navy/90 leading-relaxed">
                   During that chat, they bonded over a shared dream: starting a podcast. They also noticed a gap — there
                   weren't enough real, practical resources for people trying to break into product management.{" "}
-                  <strong className="text-white">The Product Pivot</strong> was born. Three seasons later, they're
+                  <strong className="text-navy">The Product Pivot</strong> was born. Three seasons later, they're
                   still going strong.
                 </p>
               </div>
@@ -97,16 +97,16 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-white">The "aha" moment</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
+                <h3 className="text-2xl font-bold mb-3 text-navy">The "aha" moment</h3>
+                <p className="text-lg text-navy/90 leading-relaxed">
                   In October 2024, Meagan was job searching after working in product at a startup — but without a
                   product title on her resume. She tried building a portfolio in Notion and shared it with Santi for
                   feedback. Santi was kind about it, but Meagan still never felt confident sharing it with hiring
-                  managers. <strong className="text-white">Something was missing.</strong>
+                  managers. <strong className="text-navy">Something was missing.</strong>
                 </p>
-                <p className="text-lg text-white/90 leading-relaxed mt-4">
+                <p className="text-lg text-navy/90 leading-relaxed mt-4">
                   So they started asking other PMs: do you struggle with showcasing your work? The answer was always the
-                  same. <strong className="text-white">Yes.</strong>
+                  same. <strong className="text-navy">Yes.</strong>
                 </p>
               </div>
             </div>
@@ -119,13 +119,13 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3 text-white">We built it together — with you</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
+                <h3 className="text-2xl font-bold mb-3 text-navy">We built it together — with you</h3>
+                <p className="text-lg text-navy/90 leading-relaxed">
                   In February 2025, Prodfolio was born. Meagan and Santi talked to PMs about what they struggled with.
                   They talked to hiring managers about what they looked for. They shipped an MVP, ran a beta cohort,
                   collected feedback, improved the product, and now — here we are.
                 </p>
-                <p className="text-lg text-white/90 leading-relaxed mt-4">
+                <p className="text-lg text-navy/90 leading-relaxed mt-4">
                   Prodfolio isn't just a tool. It's proof that when you build something you actually need, other people
                   need it too.
                 </p>
@@ -143,8 +143,8 @@ const About = () => {
         <div className="prodfolio-container max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-2">The Team</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">Meet the PMs behind Prodfolio</h2>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-navy">Meet the PMs behind Prodfolio</h2>
+            <p className="text-lg text-navy/90 max-w-2xl mx-auto">
               We're not just building Prodfolio — we're using it, breaking it, and improving it every day.
             </p>
           </div>
@@ -161,9 +161,9 @@ const About = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-white">Meagan Glenn</h3>
+              <h3 className="text-2xl font-bold mb-2 text-navy">Meagan Glenn</h3>
               <p className="text-primary font-semibold mb-4">Co-founder</p>
-              <p className="text-white/90 leading-relaxed mb-6">
+              <p className="text-navy/90 leading-relaxed mb-6">
                 Product manager, podcast host, and career coach who's been helping PMs break into product for years.
                 Believes every PM has a story worth telling — you just need the right format.
               </p>
@@ -213,9 +213,9 @@ const About = () => {
                   />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-white">Santiana Brace</h3>
+              <h3 className="text-2xl font-bold mb-2 text-navy">Santiana Brace</h3>
               <p className="text-primary font-semibold mb-4">Co-founder</p>
-              <p className="text-white/90 leading-relaxed mb-6">
+              <p className="text-navy/90 leading-relaxed mb-6">
                 Product manager and podcast host who knows firsthand how hard it is to showcase PM work. On a mission to
                 make portfolio-building less painful and more strategic for every PM.
               </p>
@@ -258,8 +258,8 @@ const About = () => {
           {/* Optional: Add a "Want to chat?" callout */}
           <div className="mt-16 text-center">
             <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-8 max-w-2xl mx-auto shadow-xl">
-              <p className="text-lg text-white/90 mb-4">
-                <strong className="text-white">Have questions? Want to share feedback?</strong> We're always happy
+              <p className="text-lg text-navy/90 mb-4">
+                <strong className="text-navy">Have questions? Want to share feedback?</strong> We're always happy
                 to chat with fellow PMs.
               </p>
               <Button asChild className="rounded-full bg-primary hover:bg-primary/90">
@@ -276,12 +276,12 @@ const About = () => {
         className={`py-20 px-4 ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">What we're building now</h2>
-          <p className="text-xl text-white/90 leading-relaxed mb-8">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">What we're building now</h2>
+          <p className="text-xl text-navy/90 leading-relaxed mb-8">
             Prodfolio is the portfolio platform product managers deserve. It's guided, fast, and built around how PMs
             actually think — not how designers or engineers work.
           </p>
-          <p className="text-xl text-white/90 leading-relaxed">
+          <p className="text-xl text-navy/90 leading-relaxed">
             We're here to help you show your work, tell your story, and own your impact. Because you've done the hard
             work. Now let's make sure people see it.
           </p>
@@ -292,8 +292,8 @@ const About = () => {
       <section className="py-24 px-4">
         <div className="prodfolio-container text-center max-w-3xl mx-auto">
           <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-12 shadow-xl">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Ready to tell your story?</h2>
-            <p className="text-xl text-white/90 mb-10 leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">Ready to tell your story?</h2>
+            <p className="text-xl text-navy/90 mb-10 leading-relaxed">
               Join the PMs who are finally showcasing their work with confidence.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -315,7 +315,7 @@ const About = () => {
                 <a href="/pricing">View Pricing</a>
               </Button>
             </div>
-            <p className="mt-6 text-sm text-white/80">No credit card required. Get started in minutes.</p>
+            <p className="mt-6 text-sm text-navy/80">No credit card required. Get started in minutes.</p>
           </div>
         </div>
       </section>
