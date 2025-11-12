@@ -29,9 +29,9 @@ const Resources = () => {
           <div className="space-y-8">
             {/* Podcast Episode 1 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h3 className="text-2xl font-bold mb-3 text-navy">Episode Title 1</h3>
+              <h3 className="text-2xl font-bold mb-3 text-navy">The Power or Storytelling</h3>
               <p className="text-navy/80 mb-6">
-                Brief description of what this episode covers and key insights shared.
+                Insights from Heidi Ram, a Product Recruiter in the hiring space.
               </p>
               <div className="aspect-video w-full rounded-lg overflow-hidden">
                 <iframe 
