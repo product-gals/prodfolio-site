@@ -377,30 +377,6 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="pt-12 pb-20">
-        <div className="prodfolio-container max-w-4xl text-center">
-          <div className="glass-card border-2 border-primary rounded-3xl p-10 md:p-14 shadow-glass">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-              Resumes show your experience.<br />Prodfolios show your thinking.
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join the community of product managers who are showcasing their work in a way that truly reflects how they think and the impact they make.
-            </p>
-            <Button 
-              asChild
-              size="lg"
-              className="btn-coral h-14 px-8 text-lg font-semibold hover:shadow-xl"
-              style={{ borderRadius: '12px' }}
-            >
-              <a href="https://app.prodfolio.io/signup">
-                Start Building Your Prodfolio →
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
