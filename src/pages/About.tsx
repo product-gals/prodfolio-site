@@ -61,10 +61,10 @@ const About = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-[100px] px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-20 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-label="Hero introduction"
       >
-        <div className="prodfolio-container text-center max-w-4xl mx-auto">
+        <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 text-white">
             We built the thing we needed
           </h1>
@@ -78,15 +78,15 @@ const About = () => {
       {/* Origin Story - Flows on gradient */}
       <section
         ref={storyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-20 pb-20 px-4 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-labelledby="origin-story-heading"
       >
-        <div className="prodfolio-container max-w-[900px] mx-auto">
-          <h2 id="origin-story-heading" className="text-4xl md:text-5xl font-serif font-bold text-navy text-center mb-16">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <h2 id="origin-story-heading" className="text-[40px] md:text-5xl font-serif font-bold text-navy text-center mb-[60px] tracking-[0.5px]">
             How a LinkedIn coffee chat became Prodfolio
           </h2>
 
-          <div className="space-y-[60px]">
+          <div className="space-y-[60px] max-w-[900px] mx-auto">
             {/* Coffee Chat */}
             <article className="flex flex-col md:flex-row gap-6 items-start">
               <Coffee className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
@@ -152,15 +152,24 @@ const About = () => {
         </div>
       </section>
 
+      {/* Subtle Section Divider */}
+      <div className="px-4">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="my-10">
+            <div className="h-px bg-navy/10"></div>
+          </div>
+        </div>
+      </div>
+
       {/* Meet the Founders */}
       <section
         ref={foundersAnimation.ref as React.RefObject<HTMLElement>}
         className={`py-20 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-labelledby="team-heading"
       >
-        <div className="prodfolio-container max-w-5xl mx-auto">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 id="team-heading" className="text-4xl md:text-5xl font-serif font-bold mb-4 text-navy">
+            <h2 id="team-heading" className="text-[40px] md:text-5xl font-serif font-bold mb-5 text-navy tracking-[0.5px]">
               Meet the PMs behind Prodfolio
             </h2>
             <p className="text-lg text-navy/80 max-w-2xl mx-auto">
@@ -168,7 +177,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             {/* Meagan */}
             <article className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] max-w-[480px]">
               <div className="relative inline-block mb-6 w-full flex justify-center">
@@ -260,9 +269,9 @@ const About = () => {
 
       {/* Contact + Vision Combined Section */}
       <section className="py-20 px-4">
-        <div className="prodfolio-container max-w-[900px] mx-auto">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
           {/* Contact Callout Card */}
-          <div className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] text-center mb-[60px] max-w-[700px] mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-[0_4px_20px_rgba(16,13,34,0.08)] text-center mb-[60px] max-w-[700px] mx-auto">
             <p className="text-lg text-navy/80 mb-4">
               <strong className="text-navy">Have questions? Want to share feedback?</strong> We're always happy
               to chat with fellow PMs.
@@ -277,7 +286,7 @@ const About = () => {
             ref={missionAnimation.ref as React.RefObject<HTMLDivElement>}
             className={`text-center max-w-[800px] mx-auto ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">
+            <h2 className="text-[40px] md:text-5xl font-serif font-bold mb-5 text-navy tracking-[0.5px]">
               What we're building now
             </h2>
             <p className="text-xl text-navy/80 leading-relaxed mb-8">
@@ -292,9 +301,18 @@ const About = () => {
         </div>
       </section>
 
+      {/* Subtle Section Divider */}
+      <div className="px-4">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="my-10">
+            <div className="h-px bg-navy/10"></div>
+          </div>
+        </div>
+      </div>
+
       {/* CTA Section */}
-      <section className="py-[100px] px-4 bg-gradient-to-b from-[#B8A3FF] to-[#9E85F9]" aria-label="Call to action">
-        <div className="prodfolio-container text-center max-w-3xl mx-auto">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#B8A3FF] to-[#9E85F9] mb-10" aria-label="Call to action">
+        <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Ready to tell your story?</h2>
           <p className="text-xl text-white/90 mb-10 leading-relaxed">
             Join the PMs who are finally showcasing their work with confidence.
