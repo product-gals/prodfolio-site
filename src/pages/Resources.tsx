@@ -22,7 +22,7 @@ const Resources = () => {
               Stories from Product People
             </h1>
             <p className="text-lg text-navy/90 max-w-2xl mx-auto">
-              Real conversations and examples from PMs using portfolios to get noticed.
+              Real conversations with product people about hiring and the product landscape today.
             </p>
           </header>
 
