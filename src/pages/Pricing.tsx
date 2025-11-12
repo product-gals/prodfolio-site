@@ -93,13 +93,13 @@ const Pricing = () => {
       {/* Hero Section */}
       <section className="pt-14 pb-6">
         <div className="prodfolio-container text-center">
-          <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 text-white">
+          <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 text-navy">
             Join the Community
           </h1>
-          <p className="text-xl text-white/90 mb-6">
+          <p className="text-xl text-navy/80 mb-6">
             Start free, stand out faster. No credit card required.
           </p>
-          <div className="flex items-center justify-center gap-2 text-sm text-white/80">
+          <div className="flex items-center justify-center gap-2 text-sm text-navy/70">
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-4 h-4 fill-coral" viewBox="0 0 20 20">
@@ -107,7 +107,7 @@ const Pricing = () => {
                 </svg>
               ))}
             </div>
-            <span className="font-medium text-white">Trusted by 500+ product managers</span>
+            <span className="font-medium text-navy">Trusted by 500+ product managers</span>
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ const Pricing = () => {
       {/* Founding Member Offer - Highlighted Section */}
       <section className="pt-10 pb-12 relative overflow-hidden">
         <div className="prodfolio-container max-w-5xl relative z-10">
-          <div className="relative bg-white/15 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden">
+          <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden">
             {/* Decorative Corner Badge */}
             <div className="absolute top-0 right-0">
               <div className="relative">
@@ -138,61 +138,61 @@ const Pricing = () => {
                     48 slots left
                   </div>
                   
-                  <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-white">
+                  <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-navy">
                     Founding Member
                   </h2>
                   
-                  <p className="text-xl text-white/90 mb-6">
+                  <p className="text-xl text-navy/80 mb-6">
                     Join the founding cohort shaping the future of Prodfolio together.
                   </p>
                   
                   {/* Progress Bar */}
                   <div className="mb-6">
-                    <div className="flex items-center justify-between text-xs text-white/80 mb-2">
+                    <div className="flex items-center justify-between text-xs text-navy/70 mb-2">
                       <span className="font-semibold">2 of 50 spots claimed</span>
                       <span>4% full</span>
                     </div>
-                    <div className="h-2 bg-white/20 rounded-full overflow-hidden">
+                    <div className="h-2 bg-navy/20 rounded-full overflow-hidden">
                       <div className="h-full bg-primary rounded-full transition-all duration-500" style={{ width: '4%' }}></div>
                     </div>
                   </div>
                   
                   <div className="flex items-baseline gap-3 mb-6">
-                    <span className="text-6xl font-display font-bold text-white">$348</span>
-                    <span className="text-xl text-white/80">one-time · 2-year access</span>
+                    <span className="text-6xl font-display font-bold text-navy">$348</span>
+                    <span className="text-xl text-navy/70">one-time · 2-year access</span>
                   </div>
                   
-                  <div className="bg-white/10 border-l-4 border-primary rounded-xl p-5 mb-6 backdrop-blur-sm">
-                    <p className="text-sm leading-relaxed text-white/90">
-                      <strong className="text-white">What makes this different:</strong> This isn't early access with bugs. The platform works. You get proximity — direct line to the founders, personalized support, and input on what we build next.
+                  <div className="bg-primary/10 border-l-4 border-primary rounded-xl p-5 mb-6 backdrop-blur-sm">
+                    <p className="text-sm leading-relaxed text-navy/80">
+                      <strong className="text-navy">What makes this different:</strong> This isn't early access with bugs. The platform works. You get proximity — direct line to the founders, personalized support, and input on what we build next.
                     </p>
                   </div>
                 </div>
                 
                 {/* Right Side - Features */}
                 <div className="md:w-80 shrink-0">
-                  <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-2xl p-6 shadow-xl">
-                    <h3 className="font-bold text-lg mb-4 font-display text-white">Everything in Pro, plus:</h3>
+                  <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-6 shadow-xl">
+                    <h3 className="font-bold text-lg mb-4 font-display text-navy">Everything in Pro, plus:</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-white"><strong>Portfolio review</strong> within 30 days</span>
+                        <span className="text-sm leading-snug text-navy"><strong>Portfolio review</strong> within 30 days</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-white"><strong>Direct Slack access</strong> to founders</span>
+                        <span className="text-sm leading-snug text-navy"><strong>Direct Slack access</strong> to founders</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-white"><strong>Monthly AMAs</strong> with exclusive roadmap sessions</span>
+                        <span className="text-sm leading-snug text-navy"><strong>Monthly AMAs</strong> with exclusive roadmap sessions</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-white"><strong>Featured on our site</strong> (optional)</span>
+                        <span className="text-sm leading-snug text-navy"><strong>Featured on our site</strong> (optional)</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-white"><strong>2-year access</strong> to all features</span>
+                        <span className="text-sm leading-snug text-navy"><strong>2-year access</strong> to all features</span>
                       </li>
                     </ul>
                     
@@ -207,7 +207,7 @@ const Pricing = () => {
                       </a>
                     </Button>
                     
-                    <p className="text-xs text-center text-white/70 mt-4">
+                    <p className="text-xs text-center text-navy/60 mt-4">
                       Once we hit 50, this tier closes permanently.
                     </p>
                   </div>
@@ -225,16 +225,16 @@ const Pricing = () => {
       >
         <div className="prodfolio-container max-w-6xl">
           <div className="text-center mb-6">
-            <h2 className="text-3xl font-display font-bold mb-4 text-white">Standard Plans</h2>
+            <h2 className="text-3xl font-display font-bold mb-4 text-navy">Standard Plans</h2>
             
             {/* Billing Toggle */}
-            <div className="inline-flex items-center gap-3 bg-white/15 backdrop-blur-md border border-white/20 rounded-full p-1.5 shadow-xl mb-6">
+            <div className="inline-flex items-center gap-3 bg-white/95 backdrop-blur-md border border-primary/20 rounded-full p-1.5 shadow-xl mb-6">
               <button
                 onClick={() => setBillingCycle("monthly")}
                 className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
                   billingCycle === "monthly"
                     ? "bg-primary text-white font-medium shadow-sm"
-                    : "text-white/70 hover:text-white"
+                    : "text-navy/70 hover:text-navy"
                 }`}
               >
                 Monthly
@@ -244,7 +244,7 @@ const Pricing = () => {
                 className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
                   billingCycle === "annual"
                     ? "bg-primary text-white font-medium shadow-sm"
-                    : "text-white/70 hover:text-white"
+                    : "text-navy/70 hover:text-navy"
                 }`}
               >
                 Annual
@@ -254,7 +254,7 @@ const Pricing = () => {
               </button>
             </div>
             
-            <p className="text-lg text-white/90">Choose the plan that works best for you</p>
+            <p className="text-lg text-navy/80">Choose the plan that works best for you</p>
           </div>
           
           {/* Main Pricing Cards */}
@@ -267,7 +267,7 @@ const Pricing = () => {
               return (
                 <Card 
                   key={index}
-                  className={`relative flex flex-col bg-white/15 backdrop-blur-md border border-white/20 hover-lift transition-all duration-300 ${
+                  className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
                       ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
                       : ''
@@ -283,19 +283,19 @@ const Pricing = () => {
                    )}
                    
                    <CardHeader className="pb-5">
-                    <CardTitle className="text-xl mb-2 font-display text-white">{plan.name}</CardTitle>
+                    <CardTitle className="text-xl mb-2 font-display text-navy">{plan.name}</CardTitle>
                     <div className="mt-4 mb-4">
-                      <div className="text-5xl font-display font-bold text-white">{displayPrice}</div>
+                      <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
                       {plan.tier !== "free" && (
-                        <div className="mt-2 text-sm text-white/80">
+                        <div className="mt-2 text-sm text-navy/70">
                           per {billingCycle === "monthly" ? "month" : "month"}
                           {billingCycle === "annual" && (
-                            <div className="text-xs text-white/70 mt-1">billed annually</div>
+                            <div className="text-xs text-navy/60 mt-1">billed annually</div>
                           )}
                         </div>
                       )}
                     </div>
-                    <CardDescription className="text-sm leading-relaxed text-white/80">
+                    <CardDescription className="text-sm leading-relaxed text-navy/70">
                       {plan.tagline}
                     </CardDescription>
                   </CardHeader>
@@ -305,7 +305,7 @@ const Pricing = () => {
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                          <span className={`text-sm leading-snug text-white ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
+                          <span className={`text-sm leading-snug text-navy ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -338,37 +338,37 @@ const Pricing = () => {
       {/* FAQ Section */}
       <section className="pt-12 pb-12">
         <div className="prodfolio-container max-w-3xl">
-          <h2 className="text-4xl font-display font-bold text-center mb-10 text-white">
+          <h2 className="text-4xl font-display font-bold text-center mb-10 text-navy">
             Frequently asked questions
           </h2>
           <div className="space-y-6">
-            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-6 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-white">Can I switch plans later?</h3>
-              <p className="text-white/90 leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-6 hover-lift shadow-xl">
+              <h3 className="text-lg font-display font-bold mb-3 text-navy">Can I switch plans later?</h3>
+              <p className="text-navy/80 leading-relaxed">
                 Yes! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.
               </p>
             </div>
-            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-6 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-white">What payment methods do you accept?</h3>
-              <p className="text-white/90 leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-6 hover-lift shadow-xl">
+              <h3 className="text-lg font-display font-bold mb-3 text-navy">What payment methods do you accept?</h3>
+              <p className="text-navy/80 leading-relaxed">
                 We go through stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
               </p>
             </div>
-            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-6 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-white">Can I try before I buy?</h3>
-              <p className="text-white/90 leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-6 hover-lift shadow-xl">
+              <h3 className="text-lg font-display font-bold mb-3 text-navy">Can I try before I buy?</h3>
+              <p className="text-navy/80 leading-relaxed">
                 Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features.
               </p>
             </div>
-            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-6 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-white">Can I cancel anytime?</h3>
-              <p className="text-white/90 leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-6 hover-lift shadow-xl">
+              <h3 className="text-lg font-display font-bold mb-3 text-navy">Can I cancel anytime?</h3>
+              <p className="text-navy/80 leading-relaxed">
                 Absolutely. Cancel your subscription anytime from your account settings. We may reach out for feedback on how to improve :)
               </p>
             </div>
-            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-xl p-6 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-white">What makes Prodfolio different from other portfolio tools?</h3>
-              <p className="text-white/90 leading-relaxed">
+            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-6 hover-lift shadow-xl">
+              <h3 className="text-lg font-display font-bold mb-3 text-navy">What makes Prodfolio different from other portfolio tools?</h3>
+              <p className="text-navy/80 leading-relaxed">
                 We're built by PMs, for PMs. Every feature is designed around how you actually work and what hiring managers actually want to see. Plus, you're joining a community of product people who get it.
               </p>
             </div>
