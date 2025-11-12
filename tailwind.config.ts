@@ -43,22 +43,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Brand Colors
         navy: {
-          DEFAULT: "#111324",
-          light: "#394867",
-          dark: "#0A0A14",
+          DEFAULT: "#100D22",
+          light: "#1E1B35",
+          dark: "#0A0814",
         },
-        prodfolio: {
-          purple: "#7B5FE6",
-          "purple-light": "#9B7BFF",
-          lavender: "#D7C8FF",
-          navy: "#111324",
-          "navy-dark": "#0A0A14",
-          gray: "#F7F7F9",
-          slate: "#6F6F7B",
-          focus: "#3366FF",
-          orange: "#FFA400",
-          coral: "#ff8b7b",
+        purple: {
+          DEFAULT: "#9E85F9",
+          secondary: "#484689",
+          light: "#D6CEFF",
+          dark: "#3D3770",
+        },
+        coral: {
+          DEFAULT: "#FF8B7B",
+          light: "#FFB4A8",
+          dark: "#FF6B58",
         },
       },
       borderRadius: {
@@ -88,15 +88,35 @@ export default {
           from: { opacity: "0", transform: "translateY(30px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        "scale-in": {
+          from: { opacity: "0", transform: "scale(0.95)" },
+          to: { opacity: "1", transform: "scale(1)" },
+        },
+        "glow": {
+          "0%, 100%": { 
+            boxShadow: "0 0 20px rgba(158, 133, 249, 0.3)" 
+          },
+          "50%": { 
+            boxShadow: "0 0 40px rgba(158, 133, 249, 0.5)" 
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         "slide-up": "slide-up 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+        "scale-in": "scale-in 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+        "glow": "glow 3s ease-in-out infinite",
       },
       backdropBlur: {
-        'glass': '12px',
+        'glass': '20px',
+        'glass-sm': '12px',
+        'glass-lg': '32px',
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, hsl(254 91% 75%) 0%, hsl(248 31% 41%) 100%)',
+        'gradient-mesh': 'radial-gradient(at 20% 30%, hsla(254, 91%, 75%, 0.08) 0px, transparent 50%), radial-gradient(at 80% 70%, hsla(6, 100%, 74%, 0.06) 0px, transparent 50%)',
       },
     },
   },
