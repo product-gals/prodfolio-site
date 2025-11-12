@@ -50,9 +50,9 @@ const Resources = () => {
 
             {/* Podcast Episode 2 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h3 className="text-2xl font-bold mb-3 text-navy">Episode Title 2</h3>
+              <h3 className="text-2xl font-bold mb-3 text-navy">Why AI Should Be Boring</h3>
               <p className="text-navy/80 mb-6">
-                Brief description of what this episode covers and key insights shared.
+                Insights from Aaron Kesler, a VP of Product in the AI space who talks about breaking into product + giving yourself the title.
               </p>
               <div className="aspect-video w-full rounded-lg overflow-hidden">
                 <iframe 
