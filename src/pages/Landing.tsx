@@ -4,6 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import portfolioPreview from "@/assets/portfolio-preview.png";
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
   const statsAnimation = useScrollAnimation();
@@ -135,7 +136,7 @@ const Landing = () => {
               
               {/* Portfolio screenshot example */}
               <div className="bg-white/5 relative overflow-hidden">
-                <img src="/src/assets/portfolio-preview.png" alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" className="w-full h-auto" loading="eager" />
+                <img src={portfolioPreview} alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" className="w-full h-auto" loading="eager" />
               </div>
             </div>
           </div>
