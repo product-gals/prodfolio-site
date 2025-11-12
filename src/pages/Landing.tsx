@@ -105,7 +105,7 @@ const Landing = () => {
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
               <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
-                <a href="https://app.prodfolio.io/signup">
+                <a href="https://app.prodfolio.io/login">
                   Start Your Portfolio Free
                 </a>
               </Button>
@@ -312,7 +312,7 @@ const Landing = () => {
                 Build your first portfolio free—no card needed.
               </p>
               <Button asChild size="default" className="px-8 py-3 text-base bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all shadow-xl">
-                <a href="https://app.prodfolio.io/signup">
+                <a href="https://app.prodfolio.io/login">
                   Start Your Portfolio Free
                 </a>
               </Button>
