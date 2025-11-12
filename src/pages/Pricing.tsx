@@ -205,8 +205,8 @@ const Pricing = () => {
                       className="btn-coral w-full mt-6 h-14 text-base font-semibold hover:shadow-xl"
                       style={{ borderRadius: '12px' }}
                     >
-                      <a href="https://app.prodfolio.io/signup?plan=founding">
-                        Claim Your Founding Member Spot →
+                      <a href="https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06">
+                        Claim Your Founding Spot →
                       </a>
                     </Button>
                     
