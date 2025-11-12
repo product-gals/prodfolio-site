@@ -88,41 +88,14 @@ const Pricing = () => {
       <section className="pt-20 pb-10">
         <div className="prodfolio-container text-center">
           <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 text-foreground">
-            Pricing
+            Join the Community
           </h1>
           <p className="text-xl text-muted-foreground mb-4">
-            Download the app to get started for free.
+            Start building your Prodfolio for free—no credit card, no pressure, just you and your story.
           </p>
           <p className="text-base text-muted-foreground/70 mb-12">
-            No credit card required.
+            Join hundreds of PMs who are already showcasing their work in a way that actually reflects how they think.
           </p>
-          
-          {/* Billing Toggle */}
-          <div className="inline-flex items-center gap-3 glass-card rounded-full p-1.5 shadow-soft">
-            <button
-              onClick={() => setBillingCycle("monthly")}
-              className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
-                billingCycle === "monthly"
-                  ? "bg-primary text-primary-foreground font-medium shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setBillingCycle("annual")}
-              className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
-                billingCycle === "annual"
-                  ? "bg-primary text-primary-foreground font-medium shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Annual
-              <span className="text-xs bg-coral/10 text-coral px-2 py-0.5 rounded-full font-semibold">
-                20% off
-              </span>
-            </button>
-          </div>
         </div>
       </section>
 
@@ -228,8 +201,36 @@ const Pricing = () => {
         className={`pb-12 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold mb-3">Standard Plans</h2>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-display font-bold mb-6">Standard Plans</h2>
+            
+            {/* Billing Toggle */}
+            <div className="inline-flex items-center gap-3 glass-card rounded-full p-1.5 shadow-soft mb-8">
+              <button
+                onClick={() => setBillingCycle("monthly")}
+                className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
+                  billingCycle === "monthly"
+                    ? "bg-primary text-primary-foreground font-medium shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setBillingCycle("annual")}
+                className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
+                  billingCycle === "annual"
+                    ? "bg-primary text-primary-foreground font-medium shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Annual
+                <span className="text-xs bg-coral/10 text-coral px-2 py-0.5 rounded-full font-semibold">
+                  20% off
+                </span>
+              </button>
+            </div>
+            
             <p className="text-lg text-muted-foreground">Choose the plan that works best for you</p>
           </div>
           
