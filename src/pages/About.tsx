@@ -287,7 +287,7 @@ const About = () => {
               <Button
                 asChild
                 variant="outline"
-                className="px-6 py-3 h-auto text-base border-2 border-white text-white hover:bg-white/10"
+                className="px-6 py-3 h-auto text-base border-2 border-navy text-navy hover:bg-navy/10"
                 style={{ borderRadius: "12px" }}
               >
                 <a href="/pricing">View Pricing</a>
