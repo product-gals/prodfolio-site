@@ -97,7 +97,7 @@ const Pricing = () => {
             Join the Community
           </h1>
           <p className="text-xl text-muted-foreground mb-6">
-            Build your first portfolio free—no credit card needed, just your story and our support.
+            Start free, stand out faster. No credit card required.
           </p>
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <div className="flex gap-0.5">
