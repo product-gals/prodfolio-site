@@ -18,6 +18,40 @@ const About = () => {
     description:
       "The story of how a coffee chat turned into the portfolio platform product managers actually needed. Built by PMs, for PMs.",
     canonical: "https://prodfolio.io/about",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Prodfolio",
+      "alternateName": "Prodfolio Portfolio Platform",
+      "url": "https://prodfolio.io",
+      "logo": "https://prodfolio.io/favicon.svg",
+      "description": "Portfolio platform for product managers to showcase their work, thinking, and impact.",
+      "foundingDate": "2025-02",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Meagan Glenn",
+          "jobTitle": "Co-founder",
+          "sameAs": "https://www.linkedin.com/in/meagan-glenn/",
+          "url": "https://prodfolio.io/meagan"
+        },
+        {
+          "@type": "Person",
+          "name": "Santiana Brace",
+          "jobTitle": "Co-founder",
+          "sameAs": "https://www.linkedin.com/in/santiana-brace/",
+          "url": "https://prodfolio.io/santiana"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "hello@prodfolio.io"
+      },
+      "sameAs": [
+        "https://www.youtube.com/@TheProductPivot"
+      ]
+    }
   });
 
   return (

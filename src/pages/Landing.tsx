@@ -17,26 +17,74 @@ const Landing = () => {
     description: "Build your product portfolio to showcase how you think, what you've shipped, and the impact you've made. Trusted by PMs at top companies. Get started free - no credit card required.",
     ogTitle: "Prodfolio — Build Your Product Portfolio in Minutes",
     ogDescription: "Showcase your product thinking and prove your impact with a professional portfolio. No design skills required.",
-    ogImage: "https://prodfolio.io/og-image-prodfolio.png",
+    ogImage: "https://prodfolio.io/og-image.png",
     ogType: "website",
     canonical: "https://prodfolio.io/",
     structuredData: {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Prodfolio",
-      "description": "Portfolio platform for product managers to showcase their work, thinking, and impact.",
-      "url": "https://prodfolio.io",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "creator": {
-        "@type": "Organization",
-        "name": "Prodfolio"
-      }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Prodfolio",
+          "url": "https://prodfolio.io",
+          "logo": "https://prodfolio.io/favicon.svg",
+          "description": "Portfolio platform for product managers to showcase their work, thinking, and impact.",
+          "foundingDate": "2025-02",
+          "slogan": "Show your work. Own your impact.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "hello@prodfolio.io"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Prodfolio",
+          "description": "Build your product portfolio in minutes. Showcase your PM work, prove your impact, and land your next role with confidence.",
+          "url": "https://prodfolio.io",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Free Plan",
+              "price": "0",
+              "priceCurrency": "USD",
+              "description": "Basic features with watermark"
+            },
+            {
+              "@type": "Offer",
+              "name": "Starter Plan",
+              "price": "19",
+              "priceCurrency": "USD",
+              "description": "Full features, no watermark"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Plan",
+              "price": "29",
+              "priceCurrency": "USD",
+              "description": "Advanced features, priority support"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "50",
+            "reviewCount": "50"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "name": "Prodfolio",
+          "url": "https://prodfolio.io",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://prodfolio.io/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
     }
   });
   return <main className="gradient-mesh-bg overflow-hidden">
