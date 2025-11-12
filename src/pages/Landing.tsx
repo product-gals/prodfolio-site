@@ -3,14 +3,7 @@ import { Quote } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
   const statsAnimation = useScrollAnimation();
@@ -46,14 +39,9 @@ const Landing = () => {
       }
     }
   });
-
-  return (
-    <main className="gradient-mesh-bg overflow-hidden">
+  return <main className="gradient-mesh-bg overflow-hidden">
       {/* Hero Section - Reduced padding, larger text */}
-      <section 
-        ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`relative pt-16 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
+      <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-16 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px] relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-6 text-white">
@@ -73,13 +61,11 @@ const Landing = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10">
-                <a href="#examples">Browse Portfolios</a>
+                
               </Button>
             </div>
             
-            <p className="text-sm text-white/80">
-              No credit card required • Free to start • 2-minute setup
-            </p>
+            
           </header>
 
           {/* Product Screenshot Mockup - 1.3x larger with float animation */}
@@ -101,12 +87,7 @@ const Landing = () => {
               
               {/* Portfolio screenshot example */}
               <div className="bg-white/5 relative overflow-hidden">
-                <img 
-                  src="/src/assets/portfolio-preview.png" 
-                  alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" 
-                  className="w-full h-auto"
-                  loading="eager"
-                />
+                <img src="/src/assets/portfolio-preview.png" alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" className="w-full h-auto" loading="eager" />
               </div>
             </div>
           </div>
@@ -114,10 +95,7 @@ const Landing = () => {
       </section>
 
       {/* Market Stats Bar - Horizontal glass pills */}
-      <section 
-        ref={statsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-8 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
+      <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="glass-pill text-center">
@@ -138,10 +116,7 @@ const Landing = () => {
       </section>
 
       {/* Hiring Managers Section - Overlapping glass cards, reduced height */}
-      <section 
-        ref={insightsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
+      <section ref={insightsAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className={`text-center mb-10 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
@@ -202,10 +177,7 @@ const Landing = () => {
       </section>
 
       {/* Testimonials Section - Single compact glass card */}
-      <section 
-        ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
+      <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-4xl mx-auto">
             <div className={`text-center mb-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
@@ -287,10 +259,7 @@ const Landing = () => {
       </section>
 
       {/* Final CTA - Centered floating glass card */}
-      <section 
-        ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 pb-24 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-      >
+      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 pb-24 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className="glass-card p-12 text-center">
@@ -316,8 +285,6 @@ const Landing = () => {
       </section>
 
       <Footer />
-    </main>
-  );
+    </main>;
 };
-
 export default Landing;
