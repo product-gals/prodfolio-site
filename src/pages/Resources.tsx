@@ -158,58 +158,6 @@ const Resources = () => {
             </Card>
           </div>
 
-          {/* Portfolio Examples */}
-          <div className="mb-12 space-y-6">
-            <div className="relative mb-10">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-[#E2D9FF]"></div>
-              </div>
-              <div className="relative flex justify-center">
-                <span className="bg-[#F6F4FF] px-4 text-sm font-semibold text-[#9B7BFF] uppercase tracking-wide">
-                  Featured Portfolio Examples
-                </span>
-              </div>
-            </div>
-            
-            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
-              <CardHeader>
-                <CardTitle className="text-xl">Senior PM at Fintech Startup</CardTitle>
-                <CardDescription className="text-base">
-                  See how Maria structured her portfolio to showcase B2B SaaS impact with clear metrics.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button variant="outline" className="w-full hover:bg-muted transition-colors" disabled>
-                  View Example (Coming Soon)
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-2 shadow-md bg-white" style={{ borderColor: '#E2D9FF' }}>
-              <CardHeader>
-                <CardTitle className="text-xl">Junior PM Breaking In</CardTitle>
-                <CardDescription className="text-base">
-                  David's portfolio that landed him his first PM role despite a non-traditional background.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button variant="outline" className="w-full hover:bg-muted transition-colors" disabled>
-                  View Example (Coming Soon)
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Explore More CTA */}
-          <div className="text-center">
-            <Button 
-              size="lg"
-              className="bg-[#9B7BFF] text-white hover:bg-[#8A6AEE] transition-all duration-300 px-8 shadow-md hover:shadow-lg"
-            >
-              Explore More Stories
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          </div>
         </div>
       </section>
 
