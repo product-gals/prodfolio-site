@@ -321,13 +321,13 @@ const Pricing = () => {
             <div className="glass-card border-glass-light rounded-xl p-6 hover-lift">
               <h3 className="text-lg font-display font-bold mb-3">Can I switch plans later?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately.
+                Yes! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.
               </p>
             </div>
             <div className="glass-card border-glass-light rounded-xl p-6 hover-lift">
               <h3 className="text-lg font-display font-bold mb-3">What payment methods do you accept?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                We accept all major credit cards and PayPal for your convenience.
+                We go through stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
               </p>
             </div>
             <div className="glass-card border-glass-light rounded-xl p-6 hover-lift">
@@ -339,7 +339,7 @@ const Pricing = () => {
             <div className="glass-card border-glass-light rounded-xl p-6 hover-lift">
               <h3 className="text-lg font-display font-bold mb-3">Can I cancel anytime?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Absolutely. Cancel your subscription anytime from your account settings. No questions asked.
+                Absolutely. Cancel your subscription anytime from your account settings. We may reach out for feedback on how to improve :)
               </p>
             </div>
           </div>
