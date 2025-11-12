@@ -127,19 +127,19 @@ const Landing = () => {
           
           {/* Overlapping cards */}
           <div className="max-w-6xl mx-auto relative">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-6">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-6 md:items-center">
               {/* Card 1 */}
-              <article className="glass-card p-8 relative md:translate-y-4 hover:z-10">
+              <article className="glass-card p-8 relative md:translate-y-4 hover:z-10 flex flex-col min-h-[240px]">
                 <div className="absolute -top-3 left-6">
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center border border-white/40">
                     <Quote className="w-4 h-4 text-white" />
                   </div>
                 </div>
-                <div className="pt-4">
-                  <div className="flex items-start gap-4">
+                <div className="pt-4 flex-1 flex flex-col">
+                  <div className="flex items-start gap-4 flex-1">
                     <img src="/lovable-uploads/0cae8eea-dd71-4a45-aafc-571da7eca51f.png" alt="Aaron K., VP of Product" className="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
-                    <div className="flex-1">
-                      <p className="text-base text-white/95 mb-4 leading-relaxed italic">
+                    <div className="flex-1 flex flex-col">
+                      <p className="text-base text-white/95 mb-4 leading-relaxed italic flex-1">
                         "Portfolios reveal how PMs navigate complexity — <strong>how they think, influence without authority, and drive outcomes from discovery to launch.</strong>"
                       </p>
                       <p className="text-sm text-white/70 font-medium">
@@ -151,17 +151,17 @@ const Landing = () => {
               </article>
               
               {/* Card 2 */}
-              <article className="glass-card p-8 relative md:-translate-y-4 hover:z-10">
+              <article className="glass-card p-8 relative md:-translate-y-4 hover:z-10 flex flex-col min-h-[240px]">
                 <div className="absolute -top-3 left-6">
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center border border-white/40">
                     <Quote className="w-4 h-4 text-white" />
                   </div>
                 </div>
-                <div className="pt-4">
-                  <div className="flex items-start gap-4">
+                <div className="pt-4 flex-1 flex flex-col">
+                  <div className="flex items-start gap-4 flex-1">
                     <img src="/lovable-uploads/56866b99-b328-4d88-9257-54008e00de28.png" alt="Heidi R., Product Recruiter" className="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
-                    <div className="flex-1">
-                      <p className="text-base text-white/95 mb-4 leading-relaxed italic">
+                    <div className="flex-1 flex flex-col">
+                      <p className="text-base text-white/95 mb-4 leading-relaxed italic flex-1">
                         "A strong portfolio helps cut through the noise. <strong>A product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped.</strong>"
                       </p>
                       <p className="text-sm text-white/70 font-medium">
