@@ -55,7 +55,7 @@ const Landing = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
-              <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-primary hover:scale-105 transition-transform shadow-xl">
+              <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all shadow-xl">
                 <a href="https://app.prodfolio.io/signup">
                   Start Your Portfolio Free
                 </a>
@@ -271,7 +271,7 @@ const Landing = () => {
               <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
                 Join hundreds of product managers who've already built their portfolio—in the time it takes to watch a product demo.
               </p>
-              <Button asChild size="lg" className="px-10 py-6 h-auto text-lg bg-white text-primary hover:scale-105 transition-transform shadow-xl">
+              <Button asChild size="default" className="px-8 py-3 text-base bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all shadow-xl">
                 <a href="https://app.prodfolio.io/signup">
                   Start Your Portfolio Free
                 </a>
