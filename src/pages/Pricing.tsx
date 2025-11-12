@@ -33,7 +33,8 @@ const Pricing = () => {
       monthlyPrice: 0,
       features: [
         "One Prodfolio",
-        "7-day editing window",
+        "Unlimited edits",
+        "Publish one time",
         "Basic themes",
         "Watermarked portfolio",
         "Prodfolio domain"
