@@ -19,10 +19,10 @@ const Navbar = () => {
 
   return (
     <nav 
-      className={`sticky top-0 z-50 transition-all duration-500 ${
+      className={`sticky top-0 z-50 transition-all duration-500 bg-[#100D22]/80 backdrop-blur-md border-b border-white/20 ${
         isScrolled 
-          ? "glass-card shadow-lg" 
-          : "bg-white/30 backdrop-blur-lg border-b border-white/30 shadow-sm"
+          ? "shadow-lg" 
+          : "shadow-sm"
       }`}
     >
       <div className="prodfolio-container">
