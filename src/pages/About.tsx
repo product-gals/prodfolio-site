@@ -271,7 +271,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-[60px] px-4 bg-gradient-to-b from-[#D6CEFF] via-[#B8A3FF] to-[#9E85F9] mb-[30px]" aria-label="Call to action">
+      <section className="py-[60px] px-4 bg-gradient-to-b from-[#D6CEFF] via-[#B8A3FF] to-[#9E85F9]" aria-label="Call to action">
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Ready to tell your story?</h2>
           <p className="text-xl text-white/90 mb-10 leading-relaxed font-body">
