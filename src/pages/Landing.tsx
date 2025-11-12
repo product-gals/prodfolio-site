@@ -61,7 +61,9 @@ const Landing = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10">
-                
+                <a href="#testimonials">
+                  See Examples
+                </a>
               </Button>
             </div>
             
