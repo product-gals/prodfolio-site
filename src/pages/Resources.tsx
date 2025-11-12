@@ -27,17 +27,6 @@ const Resources = () => {
           </header>
 
           <div className="space-y-8">
-            {/* Section Header */}
-            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <div className="flex items-center gap-2 mb-6">
-                <Mic className="w-5 h-5 text-primary" />
-                <h2 className="text-3xl font-bold text-navy">Featured Podcast Episodes</h2>
-              </div>
-              <p className="text-navy/80">
-                Learn from real PMs sharing their stories and insights.
-              </p>
-            </section>
-
             {/* Podcast Episode 1 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h3 className="text-2xl font-bold mb-3 text-navy">Episode Title 1</h3>
