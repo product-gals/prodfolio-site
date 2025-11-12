@@ -311,41 +311,6 @@ const Pricing = () => {
         </div>
       </section>
 
-
-      {/* Mid-Page CTAs - Quiz & Resources */}
-      <section className="py-16 px-4 bg-accent/20 border-y border-glass">
-        <div className="prodfolio-container max-w-4xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold mb-3">Not sure where to start?</h2>
-            <p className="text-lg text-muted-foreground">Get personalized guidance to build your perfect portfolio.</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Quiz CTA */}
-            <div className="glass-card border-glass-strong rounded-2xl p-8 text-center hover-lift">
-              <h3 className="text-xl font-display font-semibold mb-3">Take the 3-Minute Portfolio Quiz</h3>
-              <p className="text-muted-foreground mb-6">
-                Discover what's holding your portfolio back — and how to fix it.
-              </p>
-              <Button variant="outline" asChild className="w-full h-11 btn-outline-premium">
-                <a href="/quiz">Start the Quiz</a>
-              </Button>
-            </div>
-            
-            {/* Resources CTA */}
-            <div className="glass-card border-glass-strong rounded-2xl p-8 text-center hover-lift">
-              <h3 className="text-xl font-display font-semibold mb-3">Need Help Getting Started?</h3>
-              <p className="text-muted-foreground mb-6">
-                Access free templates, guides, and resources to jumpstart your portfolio.
-              </p>
-              <Button variant="outline" asChild className="w-full h-11 btn-outline-premium">
-                <a href="/resources">Download Free Templates & Guides</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-16 px-4">
         <div className="prodfolio-container max-w-3xl">
