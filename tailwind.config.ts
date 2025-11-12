@@ -70,6 +70,8 @@ export default {
         sans: ["Roboto", "Helvetica Neue", "Arial", "sans-serif"], // Body text
         display: ["Poppins", "Inter", "sans-serif"], // Headings/UI
         serif: ["Playfair Display", "Georgia", "serif"], // Elegant headlines
+        heading: ["Poppins", "Inter", "sans-serif"], // Alias for headings
+        body: ["Roboto", "Helvetica Neue", "Arial", "sans-serif"], // Alias for body text
       },
       keyframes: {
         "accordion-down": {
