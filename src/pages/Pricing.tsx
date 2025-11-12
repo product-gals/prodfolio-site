@@ -195,17 +195,17 @@ const Pricing = () => {
                       </li>
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug"><strong>Lifetime access</strong> to all features</span>
+                        <span className="text-sm leading-snug"><strong>2-year access</strong> to all features</span>
                       </li>
                     </ul>
                     
                     <Button 
                       asChild
                       size="lg"
-                      className="btn-coral relative z-20 w-full mt-6 h-14 text-lg font-semibold hover:shadow-xl"
+                      className="btn-coral w-full mt-6 h-14 text-base font-semibold hover:shadow-xl"
                       style={{ borderRadius: '12px' }}
                     >
-                      <a href="https://app.prodfolio.io/signup?plan=founding" className="text-white">
+                      <a href="https://app.prodfolio.io/signup?plan=founding">
                         Claim Your Founding Member Spot →
                       </a>
                     </Button>
