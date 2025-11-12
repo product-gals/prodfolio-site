@@ -55,7 +55,7 @@ const About = () => {
   });
 
   return (
-    <div className="min-h-screen gradient-mesh-bg">
+    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] via-[#D6CEFF] to-[#B8A3FF]">
       <Navbar />
 
       {/* Hero Section */}
@@ -75,10 +75,10 @@ const About = () => {
         </div>
       </section>
 
-      {/* Origin Story - Single Flowing Gradient */}
+      {/* Origin Story - Flows on gradient */}
       <section
         ref={storyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-gradient-to-b from-[#D6CEFF] via-[#C4B5FF] to-[#B8A3FF] ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-20 px-4 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-labelledby="origin-story-heading"
       >
         <div className="prodfolio-container max-w-[900px] mx-auto">
@@ -155,7 +155,7 @@ const About = () => {
       {/* Meet the Founders */}
       <section
         ref={foundersAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-[#D6CEFF] ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-20 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-labelledby="team-heading"
       >
         <div className="prodfolio-container max-w-5xl mx-auto">
@@ -259,7 +259,7 @@ const About = () => {
       </section>
 
       {/* Contact + Vision Combined Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#C4B5FF] to-[#D6CEFF]">
+      <section className="py-20 px-4">
         <div className="prodfolio-container max-w-[900px] mx-auto">
           {/* Contact Callout Card */}
           <div className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] text-center mb-[60px] max-w-[700px] mx-auto">
@@ -293,7 +293,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-[100px] px-4 gradient-mesh-bg" aria-label="Call to action">
+      <section className="py-[100px] px-4 bg-gradient-to-b from-[#B8A3FF] to-[#9E85F9]" aria-label="Call to action">
         <div className="prodfolio-container text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Ready to tell your story?</h2>
           <p className="text-xl text-white/90 mb-10 leading-relaxed">
