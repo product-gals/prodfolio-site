@@ -144,7 +144,7 @@ const Pricing = () => {
                   </h2>
                   
                   <p className="text-xl text-muted-foreground mb-6">
-                    Join the founding cohort shaping the future of PM portfolios—together
+                    Join the founding cohort shaping the future of Prodfolio together.
                   </p>
                   
                   {/* Progress Bar */}
