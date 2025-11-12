@@ -19,52 +19,6 @@ const Resources = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-[#FAF8FF] to-[#F4F2FF]">
-        <div className="prodfolio-container text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-            Resources
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Curated tools, templates, and stories to help you grow your product career and showcase your impact.
-          </p>
-        </div>
-      </section>
-
-      {/* Quiz Promo Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#F4F2FF] to-white">
-        <div className="prodfolio-container max-w-4xl mx-auto">
-          <Card 
-            className="border-2 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer relative overflow-hidden shadow-lg"
-            style={{ 
-              borderColor: '#D7C8FF',
-              backgroundColor: 'white',
-              boxShadow: '0 10px 40px -10px rgba(155, 123, 255, 0.2)'
-            }}
-            onClick={() => navigate("/quiz")}
-          >
-            <div className="absolute top-6 right-6 text-[#9B7BFF] opacity-20">
-              <Sparkles className="w-12 h-12 md:w-16 md:h-16" />
-            </div>
-            <CardContent className="p-12 md:p-16 text-center relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-                Take the 3-Minute Portfolio Quiz
-              </h2>
-              <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Discover what's holding your portfolio back — and how to fix it.
-              </p>
-              <Button 
-                size="lg"
-                className="bg-gradient-to-r from-[#9B7BFF] to-[#B59CFF] hover:opacity-90 transition-opacity text-white px-8 py-6 text-lg shadow-md"
-              >
-                Start the Quiz
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
       {/* Stories from Product People */}
       <section className="py-28 px-4" style={{ backgroundColor: "#F6F4FF" }}>
         <div className="prodfolio-container max-w-4xl mx-auto">
