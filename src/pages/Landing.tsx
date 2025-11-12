@@ -193,13 +193,13 @@ const Landing = () => {
                   <CarouselItem>
                     <div className="py-4 px-2">
                       <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl text-[#100D22] leading-relaxed max-w-3xl mx-auto">
                           "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for."
                         </p>
                         <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Senior Product Manager</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Tech Industry</div>
+                          <cite className="font-semibold text-[#100D22] not-italic">Senior Product Manager</cite>
+                          <div className="w-px h-8 bg-[#100D22]/30"></div>
+                          <div className="text-[#484689]">Tech Industry</div>
                         </footer>
                       </blockquote>
                     </div>
@@ -209,13 +209,13 @@ const Landing = () => {
                   <CarouselItem>
                     <div className="py-4 px-2">
                       <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl text-[#100D22] leading-relaxed max-w-3xl mx-auto">
                           "I've used Wix, Squarespace, and Behance before. They were so time-consuming, and I had no idea how to structure a case study. I really like how Prodfolio's case study shows you exactly what to include—this is what you do, these are your metrics."
                         </p>
                         <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Amy W.</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Product Manager</div>
+                          <cite className="font-semibold text-[#100D22] not-italic">Amy W.</cite>
+                          <div className="w-px h-8 bg-[#100D22]/30"></div>
+                          <div className="text-[#484689]">Product Manager</div>
                         </footer>
                       </blockquote>
                     </div>
@@ -225,13 +225,13 @@ const Landing = () => {
                   <CarouselItem>
                     <div className="py-4 px-2">
                       <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl text-[#100D22] leading-relaxed max-w-3xl mx-auto">
                           "I spent 8-12 hours building a portfolio in Notion, and I still felt too nervous to share it with hiring managers. Generic tools just aren't built with PM storytelling in mind. Prodfolio gets what product managers actually need."
                         </p>
                         <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Product Lead</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Tech Industry</div>
+                          <cite className="font-semibold text-[#100D22] not-italic">Product Lead</cite>
+                          <div className="w-px h-8 bg-[#100D22]/30"></div>
+                          <div className="text-[#484689]">Tech Industry</div>
                         </footer>
                       </blockquote>
                     </div>
@@ -244,12 +244,6 @@ const Landing = () => {
                   <CarouselNext className="relative static translate-y-0 bg-white/20 border-white/40 text-white hover:bg-white/30" />
                 </div>
               </Carousel>
-            </div>
-
-            <div className={`text-center mt-6 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <p className="text-white/90 text-sm">
-                Ready to start building? <a href="/pricing" className="text-white hover:underline font-medium">View Plans & Pricing</a>
-              </p>
             </div>
           </div>
         </div>
