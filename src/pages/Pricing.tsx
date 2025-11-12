@@ -85,7 +85,7 @@ const Pricing = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-20 pb-10 px-4">
         <div className="prodfolio-container text-center">
           <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 text-foreground">
             Pricing
@@ -127,7 +127,7 @@ const Pricing = () => {
       </section>
 
       {/* Founding Member Offer - Highlighted Section */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-12 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-primary opacity-10"></div>
         <div className="prodfolio-container max-w-5xl relative z-10">
           <div className="relative glass-card border-2 border-primary rounded-3xl p-10 md:p-16 shadow-glass overflow-hidden">
@@ -225,7 +225,7 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`pb-20 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pb-12 px-4 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-6xl">
           <div className="text-center mb-12">
@@ -313,7 +313,7 @@ const Pricing = () => {
 
 
       {/* Mid-Page CTAs - Quiz & Resources */}
-      <section className="py-20 px-4 bg-accent/20 border-y border-glass">
+      <section className="py-16 px-4 bg-accent/20 border-y border-glass">
         <div className="prodfolio-container max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-display font-bold mb-3">Not sure where to start?</h2>
@@ -347,7 +347,7 @@ const Pricing = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-28 px-4">
+      <section className="py-16 px-4">
         <div className="prodfolio-container max-w-3xl">
           <h2 className="text-4xl font-display font-bold text-center mb-16">
             Frequently asked questions
