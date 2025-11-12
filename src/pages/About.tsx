@@ -185,18 +185,8 @@ const About = () => {
                   size="sm"
                   className="rounded-full text-white/70 hover:text-white"
                 >
-                  <a href="https://linkedin.com/in/meagan" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="sm"
-                  className="rounded-full text-white/70 hover:text-white"
-                >
-                  <a href="https://twitter.com/meagan" target="_blank" rel="noopener noreferrer">
-                    Twitter
                   </a>
                 </Button>
               </div>
@@ -237,18 +227,8 @@ const About = () => {
                   size="sm"
                   className="rounded-full text-white/70 hover:text-white"
                 >
-                  <a href="https://linkedin.com/in/santiana" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="sm"
-                  className="rounded-full text-white/70 hover:text-white"
-                >
-                  <a href="https://twitter.com/santiana" target="_blank" rel="noopener noreferrer">
-                    Twitter
                   </a>
                 </Button>
               </div>
