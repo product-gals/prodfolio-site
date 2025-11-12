@@ -179,21 +179,21 @@ const Landing = () => {
       {/* Testimonials Section - Single compact glass card */}
       <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-[900px] mx-auto">
             <div className={`text-center mb-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                 What product managers are saying
               </h2>
             </div>
             
-            <div className={`glass-card p-8 bg-[#100D22]/60 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            <div className={`bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-xl ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <Carousel className="w-full">
                 <CarouselContent>
                   {/* Testimonial 1 */}
                   <CarouselItem>
                     <div className="py-4 px-2">
                       <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto italic">
+                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
                           "Building a portfolio or personal website from scratch would have taken me weeks or even months that I simply don't have as a busy PM. More importantly, Prodfolio understands what hiring managers and recruiters in product management are looking for."
                         </p>
                         <footer className="flex items-center justify-center gap-4 text-sm">
@@ -209,7 +209,7 @@ const Landing = () => {
                   <CarouselItem>
                     <div className="py-4 px-2">
                       <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto italic">
+                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
                           "I've used Wix, Squarespace, and Behance before. They were so time-consuming, and I had no idea how to structure a case study. I really like how Prodfolio's case study shows you exactly what to include—this is what you do, these are your metrics."
                         </p>
                         <footer className="flex items-center justify-center gap-4 text-sm">
@@ -225,7 +225,7 @@ const Landing = () => {
                   <CarouselItem>
                     <div className="py-4 px-2">
                       <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto italic">
+                        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
                           "I spent 8-12 hours building a portfolio in Notion, and I still felt too nervous to share it with hiring managers. Generic tools just aren't built with PM storytelling in mind. Prodfolio gets what product managers actually need."
                         </p>
                         <footer className="flex items-center justify-center gap-4 text-sm">
@@ -246,10 +246,7 @@ const Landing = () => {
               </Carousel>
             </div>
 
-            <div className={`text-center mt-8 space-y-3 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <Button asChild variant="outline" size="lg" className="px-6 bg-[#100D22]/60 border-white/40 text-white hover:bg-[#100D22]/80">
-                <a href="https://forms.gle/your-form-link" target="_blank" rel="noopener noreferrer">Share Your Story</a>
-              </Button>
+            <div className={`text-center mt-6 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
               <p className="text-white/90 text-sm">
                 Ready to start building? <a href="/pricing" className="text-white hover:underline font-medium">View Plans & Pricing</a>
               </p>
@@ -262,23 +259,20 @@ const Landing = () => {
       <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 pb-24 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
-            <div className="glass-card p-12 text-center bg-[#100D22]/60">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-8 text-center shadow-xl">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
                 Your resume lists what you did.
                 <br />
                 Your Prodfolio shows how you think.
               </h2>
-              <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-                Join hundreds of product managers who've already built their portfolio—in the time it takes to watch a product demo.
+              <p className="text-base text-white/90 mb-6">
+                Build your first portfolio free—no card needed.
               </p>
-              <Button asChild size="default" className="px-8 py-3 text-base bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all shadow-xl">
+              <Button asChild size="default" className="px-8 py-3 text-base bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all shadow-xl">
                 <a href="https://app.prodfolio.io/signup">
                   Start Your Portfolio Free
                 </a>
               </Button>
-              <p className="text-sm text-white/70 mt-4">
-                No credit card required • Build your first portfolio in under 30 minutes
-              </p>
             </div>
           </div>
         </div>
