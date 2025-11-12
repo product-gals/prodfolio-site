@@ -59,7 +59,7 @@ const Pricing = () => {
         "Quarterly update reminders",
         "No watermark"
       ],
-      cta: "Get Starter",
+      cta: "Get Started Free",
       popular: true,
       tier: "starter",
       monthlyLink: "https://buy.stripe.com/8x2eVf2B21xH41V2W3bfO03",
@@ -78,7 +78,7 @@ const Pricing = () => {
         "Priority support",
         "Early access to new features"
       ],
-      cta: "Get Pro",
+      cta: "Get Started Free",
       popular: false,
       tier: "pro",
       monthlyLink: "https://buy.stripe.com/00w00l5NefoxeGzgMTbfO01",
