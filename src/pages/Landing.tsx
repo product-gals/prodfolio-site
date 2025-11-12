@@ -55,7 +55,7 @@ const Landing = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
-              <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all shadow-xl">
+              <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
                 <a href="https://app.prodfolio.io/signup">
                   Start Your Portfolio Free
                 </a>
