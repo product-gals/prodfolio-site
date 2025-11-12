@@ -170,7 +170,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             {/* Meagan */}
-            <article className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] max-w-[480px]">
+            <article className="bg-white/30 backdrop-blur-sm rounded-2xl p-10 border border-white/40 max-w-[480px]">
               <div className="relative inline-block mb-6 w-full flex justify-center">
                 <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-primary/20">
                   <img
@@ -213,7 +213,7 @@ const About = () => {
             </article>
 
             {/* Santiana */}
-            <article className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] max-w-[480px]">
+            <article className="bg-white/30 backdrop-blur-sm rounded-2xl p-10 border border-white/40 max-w-[480px]">
               <div className="relative inline-block mb-6 w-full flex justify-center">
                 <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-primary/20">
                   <img
