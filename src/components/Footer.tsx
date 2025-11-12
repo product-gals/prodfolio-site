@@ -84,7 +84,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-6">
             <a 
-              href="https://www.linkedin.com/company/prodfolio-io" 
+              href="https://www.linkedin.com/company/prodfoliohq/"
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:text-white transition-colors"
