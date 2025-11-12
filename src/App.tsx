@@ -11,6 +11,7 @@ import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import Partnerships from "./pages/Partnerships";
 import TermsOfService from "./pages/TermsOfService";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Quiz from "./pages/Quiz";
 import About from "./pages/About";
 
@@ -39,6 +40,7 @@ const App = () => {
             <Route path="/resources" element={<Resources />} />
             <Route path="/partnerships" element={<Partnerships />} />
             <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/quiz" element={<Quiz />} />
             
             {/* 404 for all other routes */}
