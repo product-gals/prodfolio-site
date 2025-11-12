@@ -1,4 +1,5 @@
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,9 +16,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/pricing" className="hover:text-white hover:underline transition-all">
+                <Link to="/pricing" className="hover:text-white hover:underline transition-all">
                   Pricing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -44,9 +45,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="/about" className="hover:text-white hover:underline transition-all">
+                <Link to="/about" className="hover:text-white hover:underline transition-all">
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="mailto:hello@prodfolio.io" className="hover:text-white hover:underline transition-all">
@@ -61,14 +62,14 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-white">Legal</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="/terms" className="hover:text-white hover:underline transition-all">
+                <Link to="/terms" className="hover:text-white hover:underline transition-all">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy" className="hover:text-white hover:underline transition-all">
+                <Link to="/privacy" className="hover:text-white hover:underline transition-all">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
