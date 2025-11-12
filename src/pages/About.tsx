@@ -253,7 +253,7 @@ const About = () => {
       {/* Mission Section */}
       <section
         ref={missionAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-8 px-4 ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">What we're building now</h2>
@@ -269,9 +269,9 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4">
+      <section className="py-8 pb-12 px-4">
         <div className="prodfolio-container text-center max-w-3xl mx-auto">
-          <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-12 shadow-xl">
+          <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-xl">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">Ready to tell your story?</h2>
             <p className="text-xl text-navy/90 mb-10 leading-relaxed">
               Join the PMs who are finally showcasing their work with confidence.
