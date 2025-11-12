@@ -161,7 +161,7 @@ const Pricing = () => {
                   </p>
                   
                   <div className="flex items-baseline gap-3 mb-6">
-                    <span className="text-6xl font-display font-bold text-foreground">$399</span>
+                    <span className="text-6xl font-display font-bold text-foreground">$348</span>
                     <span className="text-xl text-muted-foreground">one-time · lifetime access</span>
                   </div>
                   
