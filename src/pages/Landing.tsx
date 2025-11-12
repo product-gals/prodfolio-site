@@ -18,7 +18,7 @@ const Landing = () => {
     description: "Build your product portfolio to showcase how you think, what you've shipped, and the impact you've made. Trusted by PMs at top companies. Get started free - no credit card required.",
     ogTitle: "Prodfolio — Build Your Product Portfolio in Minutes",
     ogDescription: "Showcase your product thinking and prove your impact with a professional portfolio. No design skills required.",
-    ogImage: "https://prodfolio.io/og-image.png",
+    ogImage: "https://prodfolio.io/social-share.svg",
     ogType: "website",
     canonical: "https://prodfolio.io/",
     structuredData: {
