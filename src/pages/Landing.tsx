@@ -110,7 +110,7 @@ const Landing = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-10 py-6 h-auto text-lg border-2 hover:bg-accent/50">
-                <a href="#examples">See Example Portfolios</a>
+                <a href="#examples">Browse Portfolios</a>
               </Button>
             </div>
             
