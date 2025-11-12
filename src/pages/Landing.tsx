@@ -181,7 +181,7 @@ const Landing = () => {
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className={`text-center mb-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
                 What product managers are saying
               </h2>
             </div>
@@ -253,7 +253,7 @@ const Landing = () => {
       <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 pb-16 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
-            <div className="bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-6 text-center shadow-xl">
+            <div className="text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">
                 Your resume lists what you did.
                 <br />
