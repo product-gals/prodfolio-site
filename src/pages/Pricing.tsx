@@ -39,9 +39,11 @@ const Pricing = () => {
         "Watermarked portfolio",
         "Prodfolio domain"
       ],
-      cta: "Get started",
+      cta: "Get Started Free",
       popular: false,
-      tier: "free"
+      tier: "free",
+      monthlyLink: "https://app.prodfolio.io/signup",
+      annualLink: "https://app.prodfolio.io/signup"
     },
     {
       name: "Starter",
@@ -57,9 +59,11 @@ const Pricing = () => {
         "Quarterly update reminders",
         "No watermark"
       ],
-      cta: "Get started",
+      cta: "Get Starter",
       popular: true,
-      tier: "starter"
+      tier: "starter",
+      monthlyLink: "https://buy.stripe.com/8x2eVf2B21xH41V2W3bfO03",
+      annualLink: "https://buy.stripe.com/9B6eVf1wYa4d6a3407bfO04"
     },
     {
       name: "Pro",
@@ -74,9 +78,11 @@ const Pricing = () => {
         "Priority support",
         "Early access to new features"
       ],
-      cta: "Get started",
+      cta: "Get Pro",
       popular: false,
-      tier: "pro"
+      tier: "pro",
+      monthlyLink: "https://buy.stripe.com/00w00l5NefoxeGzgMTbfO01",
+      annualLink: "https://buy.stripe.com/aFa28tcbC6S18ib2W3bfO02"
     }
   ];
 
@@ -307,22 +313,22 @@ const Pricing = () => {
                   </CardContent>
                    
                    <CardFooter className="pt-5">
-                    <Button 
-                      asChild
-                      className={`w-full h-12 font-semibold transition-all duration-200 ${
-                        plan.popular 
-                          ? "btn-coral hover:-translate-y-1" 
-                          : plan.tier === "free"
-                          ? "btn-outline-premium"
-                          : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
-                      }`}
-                      style={{ borderRadius: '12px' }}
-                    >
-                      <a href="https://app.prodfolio.io/signup">
-                        {plan.cta}
-                      </a>
-                    </Button>
-                  </CardFooter>
+                     <Button 
+                       asChild
+                       className={`w-full h-12 font-semibold transition-all duration-200 ${
+                         plan.popular 
+                           ? "btn-coral hover:-translate-y-1" 
+                           : plan.tier === "free"
+                           ? "btn-outline-premium"
+                           : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
+                       }`}
+                       style={{ borderRadius: '12px' }}
+                     >
+                       <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
+                         {plan.cta}
+                       </a>
+                     </Button>
+                   </CardFooter>
                 </Card>
               );
             })}
