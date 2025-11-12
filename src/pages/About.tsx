@@ -27,7 +27,7 @@ const About = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-24 pb-12 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-20 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 text-navy">
@@ -47,7 +47,7 @@ const About = () => {
       >
         <div className="prodfolio-container max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-2">Origin Story</p>
+            <p className="text-sm uppercase tracking-wider text-white font-semibold mb-2">Origin Story</p>
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">
               How a LinkedIn coffee chat became Prodfolio
             </h2>
