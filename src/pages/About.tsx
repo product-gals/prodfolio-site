@@ -75,87 +75,81 @@ const About = () => {
         </div>
       </section>
 
-      {/* Origin Story */}
+      {/* Origin Story - Single Flowing Gradient */}
       <section
         ref={storyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-20 px-4 bg-gradient-to-b from-[#D6CEFF] via-[#C4B5FF] to-[#B8A3FF] ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-labelledby="origin-story-heading"
       >
-        <div className="text-center py-12 px-4 bg-[#D6CEFF]">
-          <h2 id="origin-story-heading" className="text-4xl md:text-5xl font-serif font-bold text-navy max-w-4xl mx-auto">
+        <div className="prodfolio-container max-w-[900px] mx-auto">
+          <h2 id="origin-story-heading" className="text-4xl md:text-5xl font-serif font-bold text-navy text-center mb-16">
             How a LinkedIn coffee chat became Prodfolio
           </h2>
+
+          <div className="space-y-[60px]">
+            {/* Coffee Chat */}
+            <article className="flex flex-col md:flex-row gap-6 items-start">
+              <Coffee className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
+              <div>
+                <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">It started with a coffee chat</h3>
+                <p className="text-lg text-navy leading-[1.7]">
+                  Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
+                  They realized they'd been in the same PM circles but had never actually met. So they did what any
+                  curious PMs would do — grabbed coffee.
+                </p>
+              </div>
+            </article>
+
+            {/* Podcast */}
+            <article className="flex flex-col md:flex-row gap-6 items-start">
+              <Mic className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
+              <div>
+                <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">Then came the podcast</h3>
+                <p className="text-lg text-navy leading-[1.7]">
+                  During that chat, they bonded over a shared dream: starting a podcast. They also noticed a gap — there
+                  weren't enough real, practical resources for people trying to break into product management.{" "}
+                  <strong className="text-navy">The Product Pivot</strong> was born. Three seasons later, they're
+                  still going strong.
+                </p>
+              </div>
+            </article>
+
+            {/* The Aha Moment */}
+            <article className="flex flex-col md:flex-row gap-6 items-start">
+              <Lightbulb className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
+              <div className="border-l-4 border-l-[#FF8B7B] pl-6">
+                <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">The "aha" moment</h3>
+                <p className="text-lg text-navy leading-[1.7] mb-4">
+                  In October 2024, Meagan was job searching after working in product at a startup — but without a
+                  product title on her resume. She tried building a portfolio in Notion and shared it with Santi for
+                  feedback. Santi was kind about it, but Meagan still never felt confident sharing it with hiring
+                  managers. <strong className="text-navy">Something was missing.</strong>
+                </p>
+                <p className="text-lg text-navy leading-[1.7]">
+                  So they started asking other PMs: do you struggle with showcasing your work? The answer was always the
+                  same. <strong className="text-navy">Yes.</strong>
+                </p>
+              </div>
+            </article>
+
+            {/* Building Prodfolio */}
+            <article className="flex flex-col md:flex-row gap-6 items-start">
+              <Users className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
+              <div>
+                <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">We built it together — with you</h3>
+                <p className="text-lg text-navy leading-[1.7] mb-4">
+                  In February 2025, Prodfolio was born. Meagan and Santi talked to PMs about what they struggled with.
+                  They talked to hiring managers about what they looked for. They shipped an MVP, ran a beta cohort,
+                  collected feedback, improved the product, and now — here we are.
+                </p>
+                <p className="text-lg text-navy leading-[1.7]">
+                  Prodfolio isn't just a tool. It's proof that when you build something you actually need, other people
+                  need it too.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-
-        {/* Coffee Chat */}
-        <article className="py-20 px-4 bg-[#D6CEFF]">
-          <div className="prodfolio-container max-w-[900px] mx-auto flex flex-col md:flex-row gap-8 items-start">
-            <Coffee className="w-12 h-12 text-[#F6932B] flex-shrink-0" aria-hidden="true" />
-            <div>
-              <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">It started with a coffee chat</h3>
-              <p className="text-lg text-navy leading-[1.7]">
-                Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
-                They realized they'd been in the same PM circles but had never actually met. So they did what any
-                curious PMs would do — grabbed coffee.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        {/* Podcast */}
-        <article className="py-20 px-4 bg-[#C4B5FF]">
-          <div className="prodfolio-container max-w-[900px] mx-auto flex flex-col md:flex-row gap-8 items-start">
-            <Mic className="w-12 h-12 text-[#F6932B] flex-shrink-0" aria-hidden="true" />
-            <div>
-              <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">Then came the podcast</h3>
-              <p className="text-lg text-navy leading-[1.7]">
-                During that chat, they bonded over a shared dream: starting a podcast. They also noticed a gap — there
-                weren't enough real, practical resources for people trying to break into product management.{" "}
-                <strong className="text-navy">The Product Pivot</strong> was born. Three seasons later, they're
-                still going strong.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        {/* The Aha Moment */}
-        <article className="py-20 px-4 bg-[#D6CEFF] border-l-[6px] border-l-[#F6932B]">
-          <div className="prodfolio-container max-w-[900px] mx-auto flex flex-col md:flex-row gap-8 items-start">
-            <Lightbulb className="w-12 h-12 text-[#F6932B] flex-shrink-0" aria-hidden="true" />
-            <div>
-              <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">The "aha" moment</h3>
-              <p className="text-lg text-navy leading-[1.7] mb-4">
-                In October 2024, Meagan was job searching after working in product at a startup — but without a
-                product title on her resume. She tried building a portfolio in Notion and shared it with Santi for
-                feedback. Santi was kind about it, but Meagan still never felt confident sharing it with hiring
-                managers. <strong className="text-navy">Something was missing.</strong>
-              </p>
-              <p className="text-lg text-navy leading-[1.7]">
-                So they started asking other PMs: do you struggle with showcasing your work? The answer was always the
-                same. <strong className="text-navy">Yes.</strong>
-              </p>
-            </div>
-          </div>
-        </article>
-
-        {/* Building Prodfolio */}
-        <article className="py-20 px-4 bg-[#B8A3FF]">
-          <div className="prodfolio-container max-w-[900px] mx-auto flex flex-col md:flex-row gap-8 items-start">
-            <Users className="w-12 h-12 text-[#F6932B] flex-shrink-0" aria-hidden="true" />
-            <div>
-              <h3 className="text-[32px] md:text-[36px] font-bold mb-4 text-navy">We built it together — with you</h3>
-              <p className="text-lg text-navy leading-[1.7] mb-4">
-                In February 2025, Prodfolio was born. Meagan and Santi talked to PMs about what they struggled with.
-                They talked to hiring managers about what they looked for. They shipped an MVP, ran a beta cohort,
-                collected feedback, improved the product, and now — here we are.
-              </p>
-              <p className="text-lg text-navy leading-[1.7]">
-                Prodfolio isn't just a tool. It's proof that when you build something you actually need, other people
-                need it too.
-              </p>
-            </div>
-          </div>
-        </article>
       </section>
 
       {/* Meet the Founders */}
@@ -264,10 +258,11 @@ const About = () => {
         </div>
       </section>
 
-      {/* Contact Callout */}
-      <section className="py-16 px-4 bg-gradient-to-b from-[#D6CEFF] to-[#E5DEFF]">
-        <div className="prodfolio-container max-w-[700px] mx-auto">
-          <div className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] text-center mb-[60px]">
+      {/* Contact + Vision Combined Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-[#C4B5FF] to-[#D6CEFF]">
+        <div className="prodfolio-container max-w-[900px] mx-auto">
+          {/* Contact Callout Card */}
+          <div className="bg-white rounded-2xl p-10 shadow-[0_4px_20px_rgba(16,13,34,0.08)] text-center mb-[60px] max-w-[700px] mx-auto">
             <p className="text-lg text-navy/80 mb-4">
               <strong className="text-navy">Have questions? Want to share feedback?</strong> We're always happy
               to chat with fellow PMs.
@@ -276,27 +271,24 @@ const About = () => {
               <a href="mailto:hello@prodfolio.io">Get in Touch</a>
             </Button>
           </div>
-        </div>
-      </section>
 
-      {/* What We're Building Now */}
-      <section
-        ref={missionAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-gradient-to-b from-[#D6CEFF] to-[#E5DEFF] ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-        aria-labelledby="mission-heading"
-      >
-        <div className="prodfolio-container max-w-[800px] mx-auto text-center">
-          <h2 id="mission-heading" className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">
-            What we're building now
-          </h2>
-          <p className="text-xl text-navy/80 leading-relaxed mb-8">
-            Prodfolio is the portfolio platform product managers deserve. It's guided, fast, and built around how PMs
-            actually think — not how designers or engineers work.
-          </p>
-          <p className="text-xl text-navy/80 leading-relaxed">
-            We're here to help you show your work, tell your story, and own your impact. Because you've done the hard
-            work. Now let's make sure people see it.
-          </p>
+          {/* Vision Text on Gradient */}
+          <div
+            ref={missionAnimation.ref as React.RefObject<HTMLDivElement>}
+            className={`text-center max-w-[800px] mx-auto ${missionAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+          >
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-navy">
+              What we're building now
+            </h2>
+            <p className="text-xl text-navy/80 leading-relaxed mb-8">
+              Prodfolio is the portfolio platform product managers deserve. It's guided, fast, and built around how PMs
+              actually think — not how designers or engineers work.
+            </p>
+            <p className="text-xl text-navy/80 leading-relaxed">
+              We're here to help you show your work, tell your story, and own your impact. Because you've done the hard
+              work. Now let's make sure people see it.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -316,7 +308,7 @@ const About = () => {
             </Button>
             <Button
               asChild
-              className="px-8 py-6 h-auto text-lg bg-[#F6932B] text-white hover:bg-[#F6932B]/90 shadow-xl font-semibold rounded-xl transition-colors focus:ring-2 focus:ring-[#F6932B] focus:ring-offset-2"
+              className="px-8 py-6 h-auto text-lg bg-[#FF8B7B] text-white hover:bg-[#FF8B7B]/90 shadow-xl font-semibold rounded-xl transition-colors focus:ring-2 focus:ring-[#FF8B7B] focus:ring-offset-2"
             >
               <a href="https://app.prodfolio.io/login">Log In</a>
             </Button>
