@@ -312,13 +312,13 @@ const About = () => {
               asChild
               className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2"
             >
-              <a href="https://app.prodfolio.io/signup">Get Started Free →</a>
+              <a href="https://app.prodfolio.io/login">Start Your Portfolio Free</a>
             </Button>
             <Button
               asChild
               className="px-8 py-6 h-auto text-lg bg-[#F6932B] text-white hover:bg-[#F6932B]/90 shadow-xl font-semibold rounded-xl transition-colors focus:ring-2 focus:ring-[#F6932B] focus:ring-offset-2"
             >
-              <a href="/pricing">View Pricing</a>
+              <a href="https://app.prodfolio.io/login">Log In</a>
             </Button>
           </div>
           <p className="mt-6 text-sm text-white/80">No credit card required. Get started in minutes.</p>
