@@ -280,7 +280,7 @@ const Pricing = () => {
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                          <span className="text-sm leading-snug">{feature}</span>
+                          <span className={`text-sm leading-snug ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
                         </li>
                       ))}
                     </ul>
