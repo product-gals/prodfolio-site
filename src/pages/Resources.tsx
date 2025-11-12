@@ -28,7 +28,7 @@ const Resources = () => {
 
           <div className="space-y-8 max-w-4xl mx-auto">
             {/* Podcast Episode 1 */}
-            <section className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-[0_4px_20px_rgba(16,13,34,0.08)]">
+            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h3 className="text-2xl font-heading font-bold mb-3 text-navy">The Power or Storytelling</h3>
               <p className="text-navy/80 mb-6 font-body">
                 Insights from Heidi Ram, a Product Recruiter in the hiring space.
@@ -49,7 +49,7 @@ const Resources = () => {
             </section>
 
             {/* Podcast Episode 2 */}
-            <section className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-[0_4px_20px_rgba(16,13,34,0.08)]">
+            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h3 className="text-2xl font-heading font-bold mb-3 text-navy">Why AI Should Be Boring</h3>
               <p className="text-navy/80 mb-6 font-body">
                 Insights from Aaron Kesler, a VP of Product in the AI space who talks about breaking into product + giving yourself the title.
@@ -70,7 +70,7 @@ const Resources = () => {
             </section>
 
             {/* Podcast Episode 3 */}
-            <section className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-[0_4px_20px_rgba(16,13,34,0.08)]">
+            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h3 className="text-2xl font-heading font-bold mb-3 text-navy">Is Product Management Evolving or Disappearing?</h3>
               <p className="text-navy/80 mb-6 font-body">
                 Insights from Brody Clemmer, a Product Lead in the startup space. He talks about the evolution of product management and what the role may look like in the next few years.
@@ -93,7 +93,7 @@ const Resources = () => {
             {/* Call-to-Action Cards */}
             <div className="grid md:grid-cols-2 gap-6 mt-12">
               {/* Watch More Episodes */}
-              <section className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-[0_4px_20px_rgba(16,13,34,0.08)] hover:shadow-xl transition-all duration-300">
+              <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40 hover:bg-white/40 transition-all duration-300">
                 <h3 className="text-xl font-heading font-bold mb-3 text-navy">Watch More Episodes</h3>
                 <p className="text-navy/80 mb-6 font-body">
                   Explore our full library of conversations with product leaders.
@@ -109,7 +109,7 @@ const Resources = () => {
               </section>
 
               {/* Guest Inquiry */}
-              <section className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-[0_4px_20px_rgba(16,13,34,0.08)] hover:shadow-xl transition-all duration-300">
+              <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40 hover:bg-white/40 transition-all duration-300">
                 <h3 className="text-xl font-heading font-bold mb-3 text-navy">Share Your Insights</h3>
                 <p className="text-navy/80 mb-6 font-body">
                   Interested in sharing your insights? We'd love to hear from you.
