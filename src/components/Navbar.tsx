@@ -22,7 +22,7 @@ const Navbar = () => {
       className={`sticky top-0 z-50 transition-all duration-500 ${
         isScrolled 
           ? "glass-card shadow-lg" 
-          : "bg-white/10 backdrop-blur-md border-b border-white/20"
+          : "bg-white/30 backdrop-blur-lg border-b border-white/30 shadow-sm"
       }`}
     >
       <div className="prodfolio-container">
