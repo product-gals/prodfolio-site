@@ -146,16 +146,6 @@ const Pricing = () => {
                     Join the founding cohort shaping the future of Prodfolio together.
                   </p>
                   
-                  {/* Progress Bar */}
-                  <div className="mb-6">
-                    <div className="flex items-center justify-end text-xs text-navy/70 mb-2">
-                      <span>4% full</span>
-                    </div>
-                    <div className="h-2 bg-navy/20 rounded-full overflow-hidden">
-                      <div className="h-full bg-primary rounded-full transition-all duration-500" style={{ width: '4%' }}></div>
-                    </div>
-                  </div>
-                  
                   <div className="flex items-baseline gap-3 mb-6">
                     <span className="text-6xl font-display font-bold text-navy">$348</span>
                     <span className="text-xl text-navy/70">one-time · 2-year access</span>
