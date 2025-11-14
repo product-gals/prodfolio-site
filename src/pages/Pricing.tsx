@@ -148,8 +148,7 @@ const Pricing = () => {
                   
                   {/* Progress Bar */}
                   <div className="mb-6">
-                    <div className="flex items-center justify-between text-xs text-navy/70 mb-2">
-                      <span className="font-semibold">2 of 50 spots claimed</span>
+                    <div className="flex items-center justify-end text-xs text-navy/70 mb-2">
                       <span>4% full</span>
                     </div>
                     <div className="h-2 bg-navy/20 rounded-full overflow-hidden">
