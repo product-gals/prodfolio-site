@@ -115,13 +115,11 @@ const Pricing = () => {
       {/* Founding Member Offer - Highlighted Section */}
       <section className="pt-10 pb-12 relative overflow-hidden">
         <div className="prodfolio-container max-w-5xl relative z-10">
-          <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden">
+          <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl">
             {/* Decorative Corner Badge */}
-            <div className="absolute top-0 right-0">
-              <div className="relative">
-                <div className="absolute top-6 right-6 bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-soft rotate-12 animate-pulse">
-                  LIMITED OFFER
-                </div>
+            <div className="absolute -top-3 -right-3 z-20">
+              <div className="bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl rotate-12 animate-pulse">
+                LIMITED OFFER
               </div>
             </div>
             
