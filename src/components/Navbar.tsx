@@ -32,12 +32,12 @@ const Navbar = () => {
               <img 
                 src={prodfolioLogoProd} 
                 alt="Prodfolio - Show Your Work. Own Your Impact." 
-                className="h-12 md:h-14 hidden md:block"
+                className="h-16 md:h-20 hidden md:block drop-shadow-[0_0_20px_rgba(158,133,249,0.4)] transition-all hover:drop-shadow-[0_0_25px_rgba(158,133,249,0.6)]"
               />
               <img 
                 src={prodfolioIcon} 
                 alt="Prodfolio" 
-                className="h-14 md:hidden"
+                className="h-16 md:hidden drop-shadow-[0_0_20px_rgba(158,133,249,0.4)]"
               />
             </Link>
           </div>
