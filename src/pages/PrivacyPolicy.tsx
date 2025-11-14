@@ -37,6 +37,7 @@ const PrivacyPolicy = () => {
                 <li>Portfolio content you create (case studies, projects, descriptions)</li>
                 <li>Basic usage information (what features you use, when you log in)</li>
                 <li>Device information (browser type, operating system)</li>
+                <li>Support messages and inquiries you send us</li>
               </ul>
             </section>
 
@@ -80,6 +81,7 @@ const PrivacyPolicy = () => {
                 <li><strong>Supabase</strong> – database and authentication</li>
                 <li><strong>Vercel</strong> – hosting and content delivery network (CDN)</li>
                 <li><strong>Customer.io</strong> – email communications</li>
+                <li><strong>Featurebase</strong> – customer support and messaging</li>
                 <li><strong>Stripe</strong> – payment processing (for paid plans)</li>
                 <li><strong>Slack</strong> – internal alerts for new sign-ups (name, email, plan, and ID only)</li>
                 <li><strong>Zapier</strong> – workflow automation</li>
