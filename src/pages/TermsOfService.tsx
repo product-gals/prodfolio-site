@@ -175,6 +175,7 @@ export default function TermsOfService() {
                 <li>We never sell your data</li>
                 <li>We use industry-standard security</li>
                 <li>We only share data with trusted service providers (Supabase, Customer.io, Stripe, Zapier, Notion, Simple Analytics)</li>
+                <li>We use privacy-first analytics (Simple Analytics) that doesn't track individuals or use tracking cookies</li>
                 <li>We respond to privacy requests within 30 days</li>
               </ul>
               <p className="text-navy/90 font-semibold">
