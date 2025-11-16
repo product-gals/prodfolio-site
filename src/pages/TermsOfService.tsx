@@ -146,7 +146,7 @@ export default function TermsOfService() {
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h2 className="text-3xl font-bold mb-4 text-navy">7. Privacy & Data Collection</h2>
               <p className="text-navy/90 mb-4">
-                Your privacy matters. Our <a href="/privacy" className="text-[#ff8b7b] hover:underline font-semibold">Privacy Policy</a> explains how we handle your data.
+                Your privacy matters. Our <a href="/privacy" className="text-[#484689] hover:underline font-semibold">Privacy Policy</a> explains how we handle your data.
               </p>
 
               <h3 className="text-2xl font-bold mb-3 text-navy">What We Collect</h3>
