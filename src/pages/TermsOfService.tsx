@@ -153,7 +153,7 @@ export default function TermsOfService() {
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
                 <li>Account information (name, email, password)</li>
                 <li>Portfolio content</li>
-                <li>Usage data (logged-in users only)</li>
+                <li>Anonymous usage analytics (page views, referrals - no personal tracking)</li>
                 <li>Technical data (browser, device type, error logs)</li>
                 <li>Marketing emails (only if you opt in)</li>
               </ul>
