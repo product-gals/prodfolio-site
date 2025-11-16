@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
                 <li><strong>Supabase</strong> – database and authentication</li>
                 <li><strong>Vercel</strong> – hosting and content delivery network (CDN)</li>
                 <li><strong>Customer.io</strong> – email communications</li>
-                <li><strong>Featurebase</strong> – customer support and messaging</li>
+                <li><strong>Featurebase</strong> – customer support and messaging & roadmapping/feedback collection</li>
                 <li><strong>Stripe</strong> – payment processing (for paid plans)</li>
                 <li><strong>Slack</strong> – internal alerts for new sign-ups (name, email, plan, and ID only)</li>
                 <li><strong>Zapier</strong> – workflow automation</li>
@@ -95,7 +95,7 @@ const PrivacyPolicy = () => {
                 <strong>Internal notifications:</strong> When you sign up, we receive a notification in our internal Slack workspace. This helps us provide timely support and onboard new users. Only our team sees these notifications, and this data is not used for marketing or shared with third parties.
               </p>
               <p className="text-navy/90 mt-4">
-                Data is stored in the United States and European Union. For EU users, we ensure appropriate safeguards are in place for international data transfers (Standard Contractual Clauses).
+                Data is stored in the United States. For EU users, we ensure appropriate safeguards are in place for international data transfers (Standard Contractual Clauses).
               </p>
             </section>
 
