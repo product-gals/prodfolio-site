@@ -25,7 +25,7 @@ export default function TermsOfService() {
               Terms of Service
             </h1>
             <p className="text-lg text-navy/80">
-              <strong>Last updated: November 11, 2025</strong>
+              <strong>Last updated: November 16, 2025</strong>
             </p>
             <p className="text-lg text-navy/90 mt-4 max-w-2xl mx-auto">
               Welcome to Prodfolio. By using our service, you agree to these terms.
