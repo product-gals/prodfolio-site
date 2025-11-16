@@ -190,8 +190,8 @@ export default function TermsOfService() {
               <h3 className="text-2xl font-bold mb-3 text-navy">Pricing Plans</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
                 <li><strong>Free:</strong> Basic features with watermark</li>
-                <li><strong>Pro:</strong> $19/month - full features, no watermark</li>
-                <li><strong>Premium:</strong> $29/month - advanced features, priority support</li>
+                <li><strong>Starter:</strong> $19/month - full features, no watermark</li>
+                <li><strong>Pro:</strong> $29/month - advanced features, priority support</li>
                 <li><strong>Founding Member:</strong> $348 one-time - two year access (limited availability)</li>
               </ul>
               <p className="text-navy/90 mb-4">
