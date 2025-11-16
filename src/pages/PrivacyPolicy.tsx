@@ -254,10 +254,9 @@ const PrivacyPolicy = () => {
               </p>
               <ul className="space-y-2 text-navy/90">
                 <li>Email (if we have your address)</li>
-                <li>A notice on our site</li>
               </ul>
               <p className="text-navy/90 mt-4">
-                Continued use of Prodfolio after changes means you accept the updated policy. If you don't agree, you can delete your account anytime.
+                Continued use of Prodfolio after changes means you accept the updated policy. If you don't agree, you can delete your account anytime by emailing us at hello@prodfolio.io
               </p>
               <p className="text-navy/90 mt-4">
                 You can always find the current version at prodfolio.io/privacy.
