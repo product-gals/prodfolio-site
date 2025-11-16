@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-lg text-navy/80">
-              <strong>Last updated: November 11, 2025</strong>
+              <strong>Last updated: November 16, 2025</strong>
             </p>
             <p className="text-lg text-navy/90 mt-4 max-w-2xl mx-auto">
               At Prodfolio, your privacy matters. We collect only the information we need to support your experience — and we handle it with care.
@@ -86,6 +86,7 @@ const PrivacyPolicy = () => {
                 <li><strong>Slack</strong> – internal alerts for new sign-ups (name, email, plan, and ID only)</li>
                 <li><strong>Zapier</strong> – workflow automation</li>
                 <li><strong>Notion</strong> – internal operations and user organization tracking</li>
+                <li><strong>Simple Analytics</strong> – privacy-friendly website analytics (see below)</li>
               </ul>
               <p className="text-navy/90 mt-4">
                 These companies are required to protect your data and only use it to provide services to us.
@@ -94,7 +95,41 @@ const PrivacyPolicy = () => {
                 <strong>Internal notifications:</strong> When you sign up, we receive a notification in our internal Slack workspace. This helps us provide timely support and onboard new users. Only our team sees these notifications, and this data is not used for marketing or shared with third parties.
               </p>
               <p className="text-navy/90 mt-4">
-                Data is stored in the United States. For EU users, we ensure appropriate safeguards are in place for international data transfers (Standard Contractual Clauses).
+                Data is stored in the United States and European Union. For EU users, we ensure appropriate safeguards are in place for international data transfers (Standard Contractual Clauses).
+              </p>
+            </section>
+
+            {/* Website Analytics */}
+            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+              <h2 className="text-3xl font-bold mb-4 text-navy">Website Analytics</h2>
+              <p className="text-navy/90 mb-4">
+                We use Simple Analytics to understand how visitors use our website and improve your experience.
+              </p>
+              <p className="text-navy/90 mb-2"><strong>What Simple Analytics collects:</strong></p>
+              <ul className="space-y-2 text-navy/90 mb-4">
+                <li>Pages you visit on Prodfolio</li>
+                <li>How you found us (referral sources)</li>
+                <li>General location (country-level only)</li>
+                <li>Device type (mobile, desktop, tablet)</li>
+                <li>Browser type</li>
+              </ul>
+              <p className="text-navy/90 mb-2"><strong>What Simple Analytics does NOT collect:</strong></p>
+              <ul className="space-y-2 text-navy/90 mb-4">
+                <li>No cookies</li>
+                <li>No personal data</li>
+                <li>No IP addresses</li>
+                <li>No individual tracking</li>
+                <li>No cross-site tracking</li>
+                <li>No fingerprinting</li>
+              </ul>
+              <p className="text-navy/90 mb-4">
+                Simple Analytics only provides us with aggregated, anonymous data. We can see that "50 people visited the pricing page today," but we can't see who you are or track your individual journey.
+              </p>
+              <p className="text-navy/90 mb-4">
+                Because Simple Analytics respects your privacy by design, no cookie consent banner is required for analytics.
+              </p>
+              <p className="text-navy/90">
+                Learn more at <a href="https://simpleanalytics.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">simpleanalytics.com/privacy-policy</a>
               </p>
             </section>
 
