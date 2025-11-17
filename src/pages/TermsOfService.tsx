@@ -68,7 +68,30 @@ export default function TermsOfService() {
 
             {/* Section 4 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">4. Acceptable Use</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">4. Email Communications</h2>
+              <p className="text-navy/90 mb-4">
+                By creating a Prodfolio account, you agree to receive transactional emails necessary for account security, service delivery, and critical product updates. These include:
+              </p>
+              <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
+                <li>Account notifications (password changes, security alerts)</li>
+                <li>Billing and payment confirmations</li>
+                <li>Critical service announcements that affect your portfolio or account functionality</li>
+                <li>Bug fixes and security updates</li>
+              </ul>
+              <p className="text-navy/90 mb-4">
+                We will also occasionally send emails about product updates, new features, and improvements that may enhance your Prodfolio experience. You can adjust your email preferences at any time in your account settings.
+              </p>
+              <p className="text-navy/90 mb-4">
+                You may separately opt in to receive our newsletter containing PM career tips, portfolio examples, and Prodfolio community content. This is optional and can be managed independently from service-related emails.
+              </p>
+              <p className="text-navy/90">
+                All marketing and promotional emails will include an unsubscribe link. Unsubscribing from these emails will not affect your ability to use Prodfolio or receive critical service-related communications.
+              </p>
+            </section>
+
+            {/* Section 5 */}
+            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+              <h2 className="text-3xl font-bold mb-4 text-navy">5. Acceptable Use</h2>
               <p className="text-navy/90 mb-4">Please use Prodfolio responsibly. Don't:</p>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4">
                 <li>Post illegal, harmful, or abusive content</li>
@@ -85,9 +108,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 5 */}
+            {/* Section 6 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">5. Your Content</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">6. Your Content</h2>
               
               <h3 className="text-2xl font-bold mb-3 text-navy">You Own Your Work</h3>
               <p className="text-navy/90 mb-4">
@@ -123,9 +146,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 6 */}
+            {/* Section 7 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">6. Our Intellectual Property</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">7. Our Intellectual Property</h2>
               <p className="text-navy/90 mb-4">
                 Our platform, design, code, templates, and frameworks (like SIGNAL) belong to us. You can use them on Prodfolio, but you can't:
               </p>
@@ -142,9 +165,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 7 */}
+            {/* Section 8 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">7. Privacy & Data Collection</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">8. Privacy & Data Collection</h2>
               <p className="text-navy/90 mb-4">
                 Your privacy matters. Our <a href="/privacy" className="text-[#484689] hover:underline font-semibold">Privacy Policy</a> explains how we handle your data.
               </p>
@@ -183,9 +206,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 8 */}
+            {/* Section 9 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">8. Payments & Subscriptions</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">9. Payments & Subscriptions</h2>
               
               <h3 className="text-2xl font-bold mb-3 text-navy">Pricing Plans</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
@@ -223,9 +246,9 @@ export default function TermsOfService() {
               </ul>
             </section>
 
-            {/* Section 9 */}
+            {/* Section 10 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">9. No Warranties</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">10. No Warranties</h2>
               <p className="text-navy/90 mb-4">
                 Prodfolio is provided <strong>"as is"</strong> and <strong>"as available."</strong>
               </p>
@@ -242,9 +265,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 10 */}
+            {/* Section 11 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">10. Limitation of Liability</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">11. Limitation of Liability</h2>
               <p className="text-navy/90 mb-4">
                 To the fullest extent permitted by law, Prodfolio and Just Fractional LLC are <strong>not liable</strong> for:
               </p>
@@ -267,9 +290,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 11 */}
+            {/* Section 12 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">11. Termination</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">12. Termination</h2>
               
               <h3 className="text-2xl font-bold mb-3 text-navy">You Can Leave Anytime</h3>
               <p className="text-navy/90 mb-2">To delete your account:</p>
@@ -302,9 +325,9 @@ export default function TermsOfService() {
               </ul>
             </section>
 
-            {/* Section 12 */}
+            {/* Section 13 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">12. Third-Party Services</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">13. Third-Party Services</h2>
               <p className="text-navy/90 mb-4">
                 We use third-party services (Supabase, Customer.io, Stripe) as data processors. They're contractually required to:
               </p>
@@ -321,9 +344,9 @@ export default function TermsOfService() {
               </ul>
             </section>
 
-            {/* Section 13 */}
+            {/* Section 14 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">13. Governing Law & Disputes</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">14. Governing Law & Disputes</h2>
               <p className="text-navy/90 mb-4">
                 These Terms are governed by <strong>Washington State, USA</strong> law.
               </p>
@@ -352,9 +375,9 @@ export default function TermsOfService() {
               </p>
             </section>
 
-            {/* Section 14 */}
+            {/* Section 15 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">14. General Terms</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">15. General Terms</h2>
               <ul className="space-y-3 text-navy/90">
                 <li><strong>Entire Agreement:</strong> These Terms and our Privacy Policy are the complete agreement between you and Prodfolio.</li>
                 <li><strong>Severability:</strong> If any part is found invalid, the rest still applies.</li>
@@ -366,9 +389,9 @@ export default function TermsOfService() {
               </ul>
             </section>
 
-            {/* Section 15 */}
+            {/* Section 16 */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
-              <h2 className="text-3xl font-bold mb-4 text-navy">15. Contact Us</h2>
+              <h2 className="text-3xl font-bold mb-4 text-navy">16. Contact Us</h2>
               <p className="text-navy/90 mb-4">
                 Questions about these Terms? Email us: <a href="mailto:hello@prodfolio.io" className="text-primary hover:underline font-semibold">hello@prodfolio.io</a>
               </p>
