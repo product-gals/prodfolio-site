@@ -112,99 +112,6 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Founding Member Offer - Highlighted Section */}
-      <section className="pt-10 pb-12 relative overflow-hidden">
-        <div className="prodfolio-container max-w-5xl relative z-10">
-          <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl">
-            {/* Decorative Corner Badge */}
-            <div className="absolute -top-3 -right-3 z-20">
-              <div className="bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl rotate-12 animate-pulse">
-                LIMITED OFFER
-              </div>
-            </div>
-            
-            {/* Content */}
-            <div className="relative z-10">
-              <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start md:items-center">
-                {/* Left Side - Info */}
-                <div className="flex-1">
-                  <div className="inline-flex items-center gap-2 bg-coral/10 text-coral border-2 border-coral/30 px-4 py-2 rounded-full text-sm font-semibold mb-4 backdrop-blur-sm">
-                    <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-coral"></span>
-                    </span>
-                    48 slots left
-                  </div>
-                  
-                  <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-navy">
-                    Founding Member
-                  </h2>
-                  
-                  <p className="text-xl text-navy/80 mb-6">
-                    Join the founding cohort shaping the future of Prodfolio together.
-                  </p>
-                  
-                  <div className="flex items-baseline gap-3 mb-6">
-                    <span className="text-6xl font-display font-bold text-navy">$348</span>
-                    <span className="text-xl text-navy/70">one-time · 2-year access</span>
-                  </div>
-                  
-                  <div className="bg-primary/10 border-l-4 border-primary rounded-xl p-5 mb-6 backdrop-blur-sm">
-                    <p className="text-sm leading-relaxed text-navy/80">
-                      <strong className="text-navy">What makes this different:</strong> This isn't early access with bugs. The platform works. You get proximity — direct line to the founders, personalized support, and input on what we build next.
-                    </p>
-                  </div>
-                </div>
-                
-                {/* Right Side - Features */}
-                <div className="md:w-80 shrink-0">
-                  <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-6 shadow-xl">
-                    <h3 className="font-bold text-lg mb-4 font-display text-navy">Everything in Pro, plus:</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Portfolio review</strong> within 30 days</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Direct Slack access</strong> to founders</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Monthly AMAs</strong> with exclusive roadmap sessions</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Featured on our site</strong> (optional)</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>2-year access</strong> to all features</span>
-                      </li>
-                    </ul>
-                    
-                    <Button 
-                      asChild
-                      size="lg"
-                      className="btn-coral w-full mt-6 h-14 text-base font-semibold hover:shadow-xl"
-                      style={{ borderRadius: '12px' }}
-                    >
-                      <a href="https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06" target="_blank" rel="noopener noreferrer">
-                        Claim Your Founding Spot →
-                      </a>
-                    </Button>
-                    
-                    <p className="text-xs text-center text-navy/60 mt-4">
-                      Once we hit 50, this tier closes permanently.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
@@ -318,6 +225,86 @@ const Pricing = () => {
                 </Card>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-10 pb-12 relative overflow-hidden">
+        <div className="prodfolio-container max-w-5xl relative z-10">
+          <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl">
+            {/* Decorative Corner Badge */}
+            <div className="absolute -top-3 -right-3 z-20">
+              <div className="bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl rotate-12 animate-pulse">
+                LIMITED OFFER
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start md:items-center">
+                {/* Left Side - Info */}
+                <div className="flex-1">
+                  <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-navy">
+                    Founding Member
+                  </h2>
+                  
+                  <p className="text-xl text-navy/80 mb-6">
+                    Join the founding cohort shaping the future of Prodfolio together.
+                  </p>
+                  
+                  <div className="flex items-baseline gap-3 mb-6">
+                    <span className="text-6xl font-display font-bold text-navy">$348</span>
+                    <span className="text-xl text-navy/70">one-time · 2-year access</span>
+                  </div>
+                  
+                  <div className="bg-primary/10 border-l-4 border-primary rounded-xl p-5 mb-6 backdrop-blur-sm">
+                    <p className="text-sm leading-relaxed text-navy/80">
+                      <strong className="text-navy">What makes this different:</strong> This isn't early access with bugs. The platform works. You get proximity — direct line to the founders, personalized support, and input on what we build next.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Right Side - Features */}
+                <div className="md:w-80 shrink-0">
+                  <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-6 shadow-xl">
+                    <h3 className="font-bold text-lg mb-4 font-display text-navy">Everything in Pro, plus:</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy"><strong>Portfolio review</strong> within 30 days</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy"><strong>Direct Slack access</strong> to founders</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy"><strong>Monthly AMAs</strong> with exclusive roadmap sessions</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy"><strong>Featured on our site</strong> (optional)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy"><strong>Shape the roadmap</strong> with your feedback</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy"><strong>Founding Member badge</strong> on your portfolio</span>
+                      </li>
+                    </ul>
+                    
+                    <Button 
+                      className="w-full mt-6 bg-primary hover:bg-primary/90 text-white font-display font-semibold text-base py-6 rounded-xl shadow-soft transition-all duration-200 hover:shadow-xl"
+                      onClick={() => window.open('https://buy.stripe.com/00w00l5NefoxeGzgMTbfO01', '_blank')}
+                    >
+                      Become a Founding Member
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
