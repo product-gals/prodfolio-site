@@ -237,11 +237,14 @@ export default function TermsOfService() {
                 <li>After cancellation, your portfolio remains on Free plan (with watermark)</li>
               </ul>
 
-              <h3 className="text-2xl font-bold mb-3 text-navy">Refunds</h3>
+              <h3 className="text-2xl font-bold mb-3 text-navy">Refunds & Money-Back Guarantee</h3>
+              <p className="text-navy/90 mb-4">
+                <strong>Try Prodfolio risk-free.</strong> If you're not satisfied within 30 days of your first purchase, we'll refund you, no questions asked.
+              </p>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li><strong>Monthly plans:</strong> No refunds for partial months, but you can cancel anytime</li>
-                <li><strong>Annual plans:</strong> Refunds considered case-by-case within 14 days</li>
-                <li><strong>Founding Member:</strong> Refunds within 30 days of purchase</li>
+                <li><strong>All paid plans:</strong> Full refund within 30 days of initial purchase</li>
+                <li><strong>After 30 days:</strong> No refunds for partial months, but you can cancel anytime</li>
+                <li><strong>Cancellations:</strong> You retain access until the end of your billing period</li>
                 <li>Email hello@prodfolio.io for refund requests</li>
               </ul>
             </section>
