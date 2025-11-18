@@ -34,7 +34,6 @@ const Pricing = () => {
       features: [
         "One Prodfolio",
         "Unlimited edits",
-        "Publish one time",
         "Basic themes",
         "Watermarked portfolio",
         "Prodfolio domain"
@@ -229,6 +228,23 @@ const Pricing = () => {
         </div>
       </section>
 
+      {/* Money-Back Guarantee Section */}
+      <section className="pt-6 pb-4">
+        <div className="prodfolio-container max-w-4xl">
+          <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-6 shadow-lg text-center">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <h3 className="text-2xl font-display font-bold text-navy">30-Day Money-Back Guarantee</h3>
+            </div>
+            <p className="text-lg text-navy/80 leading-relaxed">
+              Try Prodfolio risk-free. If you're not satisfied within 30 days, we'll refund you, no questions asked.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="pt-10 pb-12 relative overflow-hidden">
         <div className="prodfolio-container max-w-5xl relative z-10">
           <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-8 md:p-12 shadow-xl">
@@ -297,7 +313,7 @@ const Pricing = () => {
                     
                     <Button 
                       className="w-full mt-6 bg-primary hover:bg-primary/90 text-white font-display font-semibold text-base py-6 rounded-xl shadow-soft transition-all duration-200 hover:shadow-xl"
-                      onClick={() => window.open('https://buy.stripe.com/00w00l5NefoxeGzgMTbfO01', '_blank')}
+                      onClick={() => window.open('https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06', '_blank')}
                     >
                       Become a Founding Member
                     </Button>
