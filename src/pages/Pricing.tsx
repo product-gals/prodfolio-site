@@ -114,9 +114,9 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section 
         ref={scrollRef.ref as React.RefObject<HTMLElement>}
-        className={`pt-12 pb-12 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-6 pb-12 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-6xl">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6">
           <div className="text-center mb-6">
             <h2 className="text-3xl font-display font-bold mb-4 text-navy">Standard Plans</h2>
             
