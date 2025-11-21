@@ -27,16 +27,18 @@ const Pricing = () => {
 
   const plans = [
     {
-      name: "Free",
-      tagline: "Get started risk-free",
-      price: "$0",
+      name: "FREE",
+      tagline: "Build your first portfolio",
+      price: "$0 forever",
       monthlyPrice: 0,
       features: [
-        "One Prodfolio",
-        "Unlimited edits",
-        "Basic themes",
-        "Watermarked portfolio",
-        "Prodfolio domain"
+        "1 portfolio with unlimited edits",
+        "Professional themes (5 options)",
+        "3 AI-generated case studies",
+        "3 AI resume uploads",
+        "SIGNAL framework with guided prompts",
+        "Public portfolio link (app.prodfolio.io/p/your-name)",
+        '"Built with Prodfolio" footer'
       ],
       cta: "Get Started Free",
       popular: false,
@@ -205,21 +207,34 @@ const Pricing = () => {
                   </CardContent>
                    
                    <CardFooter className="pt-5">
-                     <Button 
-                       asChild
-                       className={`w-full h-12 font-semibold transition-all duration-200 ${
-                         plan.popular 
-                           ? "btn-coral hover:-translate-y-1" 
-                           : plan.tier === "free"
-                           ? "btn-outline-premium"
-                           : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
-                       }`}
-                       style={{ borderRadius: '12px' }}
-                     >
-                       <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
-                         {plan.cta}
-                       </a>
-                     </Button>
+                     <div className="w-full space-y-3">
+                       <Button 
+                         asChild
+                         className={`w-full h-12 font-semibold transition-all duration-200 ${
+                           plan.popular 
+                             ? "btn-coral hover:-translate-y-1" 
+                             : plan.tier === "free"
+                             ? "btn-outline-premium"
+                             : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
+                         }`}
+                         style={{ borderRadius: '12px' }}
+                       >
+                         <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
+                           {plan.cta}
+                         </a>
+                       </Button>
+                       {plan.tier === "free" && (
+                         <>
+                           <p className="text-xs text-center text-navy/60">No credit card required</p>
+                           <p className="text-sm text-center text-navy/80">
+                             Want unlimited portfolios?{" "}
+                             <a href="#starter" className="text-primary font-semibold hover:underline">
+                               Upgrade to Starter →
+                             </a>
+                           </p>
+                         </>
+                       )}
+                     </div>
                    </CardFooter>
                 </Card>
               );
