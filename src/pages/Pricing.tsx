@@ -223,7 +223,7 @@ const Pricing = () => {
                       <CardFooter className="pt-5">
                         <Button 
                           asChild
-                          className={`w-full h-12 font-semibold transition-all duration-200 ${
+                          className={`w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 ${
                             plan.popular 
                               ? "btn-coral hover:-translate-y-1" 
                               : plan.tier === "free"
