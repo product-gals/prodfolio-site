@@ -52,13 +52,13 @@ const Pricing = () => {
       price: "$19",
       monthlyPrice: 19,
       features: [
-        "Unlimited portfolios — Create versions for different roles & industries",
-        "Unlimited AI case study generation — Never run out of AI assistance",
-        "Unlimited AI resume uploads — Update your experience anytime",
-        "Password-protected portfolios — Showcase confidential work safely under NDA",
-        "Quarterly update reminders — Keep your portfolio fresh and current",
-        "Headshot & personal video — Add personality and authenticity",
-        "Remove Prodfolio branding — Fully own your portfolio presentation"
+        "Unlimited portfolios",
+        "Unlimited AI case study generation",
+        "Unlimited AI resume uploads",
+        "Password-protected portfolios",
+        "Quarterly update reminders",
+        "Headshot & personal video",
+        "Remove Prodfolio branding"
       ],
       cta: "Get Starter",
       popular: true,
