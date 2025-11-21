@@ -163,9 +163,9 @@ const Pricing = () => {
               return (
                 <Card 
                   key={index}
-                  className={`relative h-full flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
+                  className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
-                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
+                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20'
                       : ''
                   }`}
                   style={{ borderRadius: '24px' }}
@@ -202,7 +202,7 @@ const Pricing = () => {
                   </CardHeader>
                    
                    <CardContent className="flex-1 pt-0 pb-4">
-                     <ul className="space-y-2.5 min-h-[280px]">
+                     <ul className="space-y-2.5">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -212,7 +212,7 @@ const Pricing = () => {
                     </ul>
                   </CardContent>
                    
-                   <CardFooter className="pt-5">
+                   <CardFooter className="pt-5 mt-auto">
                      <div className="w-full space-y-3">
                        <Button 
                          asChild
