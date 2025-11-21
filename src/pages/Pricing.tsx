@@ -196,9 +196,11 @@ const Pricing = () => {
                         </div>
                       )}
                     </div>
-                    <CardDescription className="text-sm leading-relaxed text-navy/70 h-6">
-                      {plan.tagline}
-                    </CardDescription>
+                    {plan.tagline && (
+                      <CardDescription className="text-sm leading-relaxed text-navy/70">
+                        {plan.tagline}
+                      </CardDescription>
+                    )}
                   </CardHeader>
                    
                    <CardContent className="flex-1 pt-0 pb-4">
