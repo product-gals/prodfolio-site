@@ -185,7 +185,7 @@ const Pricing = () => {
                         <div className="flex items-center gap-2 mb-2">
                           <CardTitle className="text-xl font-display text-navy">{plan.name}</CardTitle>
                           {plan.tier === "free" && (
-                            <span className="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-1 rounded-full">
+                            <span className="bg-coral/10 text-coral text-xs font-semibold px-2.5 py-1 rounded-full">
                               No credit card required
                             </span>
                           )}
