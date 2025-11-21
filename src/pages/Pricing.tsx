@@ -182,7 +182,14 @@ const Pricing = () => {
                       )}
                       
                       <CardHeader className="pb-5">
-                        <CardTitle className="text-xl mb-2 font-display text-navy">{plan.name}</CardTitle>
+                        <div className="flex items-center gap-2 mb-2">
+                          <CardTitle className="text-xl font-display text-navy">{plan.name}</CardTitle>
+                          {plan.tier === "free" && (
+                            <span className="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-1 rounded-full">
+                              No credit card
+                            </span>
+                          )}
+                        </div>
                         <div className="mt-4 mb-4">
                           <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
                           {plan.tier !== "free" && (
@@ -214,26 +221,21 @@ const Pricing = () => {
                     {/* Bottom Section: CTA */}
                     <div className="mt-auto">
                       <CardFooter className="pt-5">
-                        <div className="w-full space-y-3">
-                          <Button 
-                            asChild
-                            className={`w-full h-12 font-semibold transition-all duration-200 ${
-                              plan.popular 
-                                ? "btn-coral hover:-translate-y-1" 
-                                : plan.tier === "free"
-                                ? "btn-outline-premium"
-                                : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
-                            }`}
-                            style={{ borderRadius: '12px' }}
-                          >
-                            <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
-                              {plan.cta}
-                            </a>
-                          </Button>
-                          {plan.tier === "free" && (
-                            <p className="text-xs text-center text-navy/60">No credit card required</p>
-                          )}
-                        </div>
+                        <Button 
+                          asChild
+                          className={`w-full h-12 font-semibold transition-all duration-200 ${
+                            plan.popular 
+                              ? "btn-coral hover:-translate-y-1" 
+                              : plan.tier === "free"
+                              ? "btn-outline-premium"
+                              : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
+                          }`}
+                          style={{ borderRadius: '12px' }}
+                        >
+                          <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
+                            {plan.cta}
+                          </a>
+                        </Button>
                       </CardFooter>
                     </div>
                   </div>
