@@ -154,7 +154,7 @@ const Pricing = () => {
           </div>
           
           {/* Main Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
             {plans.map((plan, index) => {
               const displayPrice = plan.tier === "free" 
                 ? plan.price 
@@ -201,8 +201,8 @@ const Pricing = () => {
                     </CardDescription>
                   </CardHeader>
                    
-                   <CardContent className="flex-1 pt-0">
-                     <ul className="space-y-2.5">
+                   <CardContent className="flex-1 pt-0 pb-4">
+                     <ul className="space-y-2.5 min-h-[280px]">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
