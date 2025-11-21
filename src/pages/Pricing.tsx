@@ -163,7 +163,7 @@ const Pricing = () => {
               return (
                 <Card 
                   key={index}
-                  className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
+                  className={`relative h-full flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
                       ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
                       : ''
