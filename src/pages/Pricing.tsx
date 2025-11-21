@@ -180,18 +180,23 @@ const Pricing = () => {
                    
                    <CardHeader className="pb-5">
                     <CardTitle className="text-xl mb-2 font-display text-navy">{plan.name}</CardTitle>
-                    <div className="mt-4 mb-4">
+                    <div className="mt-4 mb-4 h-32">
                       <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
-                      {plan.tier !== "free" && (
+                      {plan.tier !== "free" ? (
                         <div className="mt-2 text-sm text-navy/70">
                           per {billingCycle === "monthly" ? "month" : "month"}
                           {billingCycle === "annual" && (
                             <div className="text-xs text-navy/60 mt-1">billed annually</div>
                           )}
                         </div>
+                      ) : (
+                        <div className="mt-2 text-sm text-navy/70 opacity-0">
+                          per month
+                          <div className="text-xs text-navy/60 mt-1">placeholder</div>
+                        </div>
                       )}
                     </div>
-                    <CardDescription className="text-sm leading-relaxed text-navy/70">
+                    <CardDescription className="text-sm leading-relaxed text-navy/70 h-6">
                       {plan.tagline}
                     </CardDescription>
                   </CardHeader>
