@@ -48,7 +48,7 @@ const Pricing = () => {
     },
     {
       name: "Starter",
-      tagline: "For PMs ready to stand out",
+      tagline: "",
       price: "$19",
       monthlyPrice: 19,
       features: [
@@ -68,7 +68,7 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      tagline: "For PMs serious about their craft",
+      tagline: "",
       price: "$29",
       monthlyPrice: 29,
       features: [
