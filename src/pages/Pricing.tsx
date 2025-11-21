@@ -154,7 +154,7 @@ const Pricing = () => {
           </div>
           
           {/* Main Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto md:items-stretch">
             {plans.map((plan, index) => {
               const displayPrice = plan.tier === "free" 
                 ? plan.price 
@@ -163,7 +163,7 @@ const Pricing = () => {
               return (
                 <Card 
                   key={index}
-                  className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
+                  className={`relative flex flex-col h-full bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
                       ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
                       : ''
@@ -196,7 +196,7 @@ const Pricing = () => {
                     </CardDescription>
                   </CardHeader>
                    
-                   <CardContent className="flex-1 pt-0">
+                   <CardContent className="flex-grow pt-0">
                      <ul className="space-y-2.5">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
@@ -207,7 +207,7 @@ const Pricing = () => {
                     </ul>
                   </CardContent>
                    
-                   <CardFooter className="pt-5">
+                   <CardFooter className="pt-5 mt-auto">
                      <div className="w-full space-y-3">
                        <Button 
                          asChild
