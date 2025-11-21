@@ -154,7 +154,7 @@ const Pricing = () => {
           </div>
           
           {/* Main Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto md:items-stretch">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {plans.map((plan, index) => {
               const displayPrice = plan.tier === "free" 
                 ? plan.price 
@@ -163,72 +163,80 @@ const Pricing = () => {
               return (
                 <Card 
                   key={index}
-                  className={`relative flex flex-col h-full bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
+                  className={`relative min-h-[600px] bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
                       ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
                       : ''
                   }`}
                   style={{ borderRadius: '24px' }}
                 >
-                   {plan.popular && (
-                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
-                       <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-pulse">
-                         Most Popular
-                       </span>
-                     </div>
-                   )}
-                   
-                   <CardHeader className="pb-5">
-                    <CardTitle className="text-xl mb-2 font-display text-navy">{plan.name}</CardTitle>
-                    <div className="mt-4 mb-4">
-                      <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
-                      {plan.tier !== "free" && (
-                        <div className="mt-2 text-sm text-navy/70">
-                          per {billingCycle === "monthly" ? "month" : "month"}
-                          {billingCycle === "annual" && (
-                            <div className="text-xs text-navy/60 mt-1">billed annually</div>
-                          )}
+                  <div className="flex flex-col justify-between h-full">
+                    {/* Top Section: Title, Price, Features */}
+                    <div>
+                      {plan.popular && (
+                        <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
+                          <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-pulse">
+                            Most Popular
+                          </span>
                         </div>
                       )}
+                      
+                      <CardHeader className="pb-5">
+                        <CardTitle className="text-xl mb-2 font-display text-navy">{plan.name}</CardTitle>
+                        <div className="mt-4 mb-4">
+                          <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
+                          {plan.tier !== "free" && (
+                            <div className="mt-2 text-sm text-navy/70">
+                              per {billingCycle === "monthly" ? "month" : "month"}
+                              {billingCycle === "annual" && (
+                                <div className="text-xs text-navy/60 mt-1">billed annually</div>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                        <CardDescription className="text-sm leading-relaxed text-navy/70">
+                          {plan.tagline}
+                        </CardDescription>
+                      </CardHeader>
+                      
+                      <CardContent className="pt-0">
+                        <ul className="space-y-2.5">
+                          {plan.features.map((feature, i) => (
+                            <li key={i} className="flex items-start gap-2.5">
+                              <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                              <span className={`text-sm leading-snug text-navy ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
                     </div>
-                    <CardDescription className="text-sm leading-relaxed text-navy/70">
-                      {plan.tagline}
-                    </CardDescription>
-                  </CardHeader>
-                   
-                   <CardContent className="flex-grow pt-0">
-                     <ul className="space-y-2.5">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2.5">
-                          <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                          <span className={`text-sm leading-snug text-navy ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                   
-                   <CardFooter className="pt-5 mt-auto">
-                     <div className="w-full space-y-3">
-                       <Button 
-                         asChild
-                         className={`w-full h-12 font-semibold transition-all duration-200 ${
-                           plan.popular 
-                             ? "btn-coral hover:-translate-y-1" 
-                             : plan.tier === "free"
-                             ? "btn-outline-premium"
-                             : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
-                         }`}
-                         style={{ borderRadius: '12px' }}
-                       >
-                         <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
-                           {plan.cta}
-                         </a>
-                       </Button>
-                       {plan.tier === "free" && (
-                         <p className="text-xs text-center text-navy/60">No credit card required</p>
-                       )}
-                     </div>
-                   </CardFooter>
+                    
+                    {/* Bottom Section: CTA */}
+                    <div className="mt-auto">
+                      <CardFooter className="pt-5">
+                        <div className="w-full space-y-3">
+                          <Button 
+                            asChild
+                            className={`w-full h-12 font-semibold transition-all duration-200 ${
+                              plan.popular 
+                                ? "btn-coral hover:-translate-y-1" 
+                                : plan.tier === "free"
+                                ? "btn-outline-premium"
+                                : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
+                            }`}
+                            style={{ borderRadius: '12px' }}
+                          >
+                            <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
+                              {plan.cta}
+                            </a>
+                          </Button>
+                          {plan.tier === "free" && (
+                            <p className="text-xs text-center text-navy/60">No credit card required</p>
+                          )}
+                        </div>
+                      </CardFooter>
+                    </div>
+                  </div>
                 </Card>
               );
             })}
