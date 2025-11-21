@@ -154,7 +154,7 @@ const Pricing = () => {
           </div>
           
           {/* Main Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {plans.map((plan, index) => {
               const displayPrice = plan.tier === "free" 
                 ? plan.price 
@@ -165,7 +165,7 @@ const Pricing = () => {
                   key={index}
                   className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
-                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20'
+                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
                       : ''
                   }`}
                   style={{ borderRadius: '24px' }}
@@ -180,30 +180,23 @@ const Pricing = () => {
                    
                    <CardHeader className="pb-5">
                     <CardTitle className="text-xl mb-2 font-display text-navy">{plan.name}</CardTitle>
-                    <div className="mt-4 mb-4 h-32">
+                    <div className="mt-4 mb-4">
                       <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
-                      {plan.tier !== "free" ? (
+                      {plan.tier !== "free" && (
                         <div className="mt-2 text-sm text-navy/70">
                           per {billingCycle === "monthly" ? "month" : "month"}
                           {billingCycle === "annual" && (
                             <div className="text-xs text-navy/60 mt-1">billed annually</div>
                           )}
                         </div>
-                      ) : (
-                        <div className="mt-2 text-sm text-navy/70 opacity-0">
-                          per month
-                          <div className="text-xs text-navy/60 mt-1">placeholder</div>
-                        </div>
                       )}
                     </div>
-                    {plan.tagline && (
-                      <CardDescription className="text-sm leading-relaxed text-navy/70">
-                        {plan.tagline}
-                      </CardDescription>
-                    )}
+                    <CardDescription className="text-sm leading-relaxed text-navy/70">
+                      {plan.tagline}
+                    </CardDescription>
                   </CardHeader>
                    
-                   <CardContent className="flex-1 pt-0 pb-4">
+                   <CardContent className="flex-1 pt-0">
                      <ul className="space-y-2.5">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
@@ -214,7 +207,7 @@ const Pricing = () => {
                     </ul>
                   </CardContent>
                    
-                   <CardFooter className="pt-5 mt-auto">
+                   <CardFooter className="pt-5">
                      <div className="w-full space-y-3">
                        <Button 
                          asChild
