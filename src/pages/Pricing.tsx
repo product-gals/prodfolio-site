@@ -75,8 +75,9 @@ const Pricing = () => {
         "Everything in Starter",
         "Custom domain (yourname.com)",
         "Custom portfolio themes",
+        "Case study templates",
         "Analytics (Coming Soon)",
-        "Priority support",
+        "Priority support (email, chat or video)",
         "Early access to new features"
       ],
       cta: "Get Pro",
