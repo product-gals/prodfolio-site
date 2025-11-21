@@ -29,7 +29,7 @@ const Pricing = () => {
     {
       name: "FREE",
       tagline: "Build your first portfolio",
-      price: "$0 forever",
+      price: "$0",
       monthlyPrice: 0,
       features: [
         "1 portfolio with unlimited edits",
@@ -224,15 +224,7 @@ const Pricing = () => {
                          </a>
                        </Button>
                        {plan.tier === "free" && (
-                         <>
-                           <p className="text-xs text-center text-navy/60">No credit card required</p>
-                           <p className="text-sm text-center text-navy/80">
-                             Want unlimited portfolios?{" "}
-                             <a href="#starter" className="text-primary font-semibold hover:underline">
-                               Upgrade to Starter →
-                             </a>
-                           </p>
-                         </>
+                         <p className="text-xs text-center text-navy/60">No credit card required</p>
                        )}
                      </div>
                    </CardFooter>
