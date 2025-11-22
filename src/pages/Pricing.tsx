@@ -43,8 +43,8 @@ const Pricing = () => {
       cta: "Get Started Free",
       popular: false,
       tier: "free",
-      monthlyLink: "https://app.prodfolio.io/login",
-      annualLink: "https://app.prodfolio.io/login"
+      monthlyLink: "https://app.prodfolio.io/sign-up",
+      annualLink: "https://app.prodfolio.io/sign-up"
     },
     {
       name: "Starter",
