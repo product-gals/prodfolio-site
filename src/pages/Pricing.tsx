@@ -154,7 +154,7 @@ const Pricing = () => {
           </div>
           
           {/* Main Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
             {plans.map((plan, index) => {
               const displayPrice = plan.tier === "free" 
                 ? plan.price 
@@ -163,82 +163,76 @@ const Pricing = () => {
               return (
                 <Card 
                   key={index}
-                  className={`relative min-h-[600px] bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
+                  className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
                     plan.popular
-                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20 scale-105'
+                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20'
                       : ''
                   }`}
                   style={{ borderRadius: '24px' }}
                 >
-                  <div className="flex flex-col justify-between h-full">
-                    {/* Top Section: Title, Price, Features */}
-                    <div>
-                      {plan.popular && (
-                        <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
-                          <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-pulse">
-                            Most Popular
-                          </span>
-                        </div>
+                  {plan.popular && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
+                      <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-pulse">
+                        Most Popular
+                      </span>
+                    </div>
+                  )}
+                  
+                  <CardHeader className="pb-4">
+                    <div className="flex items-start justify-between gap-2 mb-2 min-h-[32px]">
+                      <CardTitle className="text-xl font-display text-navy">{plan.name}</CardTitle>
+                      {plan.tier === "free" && (
+                        <span className="bg-coral/10 text-coral text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap">
+                          No credit card required
+                        </span>
                       )}
-                      
-                      <CardHeader className="pb-5">
-                        <div className="flex items-center gap-2 mb-2">
-                          <CardTitle className="text-xl font-display text-navy">{plan.name}</CardTitle>
-                          {plan.tier === "free" && (
-                            <span className="bg-coral/10 text-coral text-xs font-semibold px-2.5 py-1 rounded-full">
-                              No credit card required
-                            </span>
-                          )}
-                        </div>
-                        <div className="mt-4 mb-4">
-                          <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
-                          {plan.tier !== "free" && (
-                            <div className="mt-2 text-sm text-navy/70">
-                              per {billingCycle === "monthly" ? "month" : "month"}
-                              {billingCycle === "annual" && (
-                                <div className="text-xs text-navy/60 mt-1">billed annually</div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                        <CardDescription className="text-sm leading-relaxed text-navy/70">
-                          {plan.tagline}
-                        </CardDescription>
-                      </CardHeader>
-                      
-                      <CardContent className="pt-0">
-                        <ul className="space-y-2.5">
-                          {plan.features.map((feature, i) => (
-                            <li key={i} className="flex items-start gap-2.5">
-                              <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                              <span className={`text-sm leading-snug text-navy ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </CardContent>
                     </div>
-                    
-                    {/* Bottom Section: CTA */}
-                    <div className="mt-auto">
-                      <CardFooter className="pt-5">
-                        <Button 
-                          asChild
-                          className={`w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 ${
-                            plan.popular 
-                              ? "btn-coral hover:-translate-y-1" 
-                              : plan.tier === "free"
-                              ? "btn-outline-premium"
-                              : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
-                          }`}
-                          style={{ borderRadius: '12px' }}
-                        >
-                          <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
-                            {plan.cta}
-                          </a>
-                        </Button>
-                      </CardFooter>
+                    <div className="mt-3 mb-2">
+                      <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
+                      <div className="mt-2 min-h-[44px]">
+                        {plan.tier !== "free" && (
+                          <div className="text-sm text-navy/70">
+                            per {billingCycle === "monthly" ? "month" : "month"}
+                            {billingCycle === "annual" && (
+                              <div className="text-xs text-navy/60 mt-1">billed annually</div>
+                            )}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
+                    <CardDescription className="text-sm leading-relaxed text-navy/70 min-h-[20px]">
+                      {plan.tagline}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent className="pt-0 pb-4 flex-grow">
+                    <ul className="space-y-3">
+                      {plan.features.map((feature, i) => (
+                        <li key={i} className="flex items-start gap-2.5">
+                          <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                          <span className={`text-sm leading-snug text-navy ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  
+                  <CardFooter className="pt-0 pb-6 mt-auto">
+                    <Button 
+                      asChild
+                      className={`w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 ${
+                        plan.popular 
+                          ? "btn-coral hover:-translate-y-1" 
+                          : plan.tier === "free"
+                          ? "btn-outline-premium"
+                          : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
+                      }`}
+                      style={{ borderRadius: '12px' }}
+                    >
+                      <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
+                        {plan.cta}
+                      </a>
+                    </Button>
+                  </CardFooter>
                 </Card>
               );
             })}
