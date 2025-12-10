@@ -37,7 +37,7 @@ const App = () => {
             {/* Marketing pages */}
             <Route path="/about" element={<About />} />
             <Route path="/pricing" element={<Pricing />} />
-            <Route path="/resources" element={<Resources />} />
+            <Route path="/podcast" element={<Resources />} />
             <Route path="/partnerships" element={<Partnerships />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
