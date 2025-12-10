@@ -28,9 +28,9 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="https://www.youtube.com/@TheProductPivot/videos" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-all">
+                <Link to="/podcast" className="hover:text-white hover:underline transition-all">
                   Podcast
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="https://sugared-cactus-5d5.notion.site/The-SIGNAL-Framework-for-PM-Case-Studies-2a5f7107577780318be3e52f948684ed?pvs=74" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-all">

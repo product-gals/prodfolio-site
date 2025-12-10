@@ -6,9 +6,9 @@ import { useSEO } from "@/hooks/useSEO";
 
 const Resources = () => {
   useSEO({
-    title: "Resources for Product Managers | Free Templates, Quiz & Stories – Prodfolio",
-    description: "Explore free product management templates, portfolio examples, and real stories from PMs. Build your portfolio and stand out with Prodfolio.",
-    canonical: "https://prodfolio.io/resources",
+    title: "Podcast | Stories from Product People – Prodfolio",
+    description: "Real conversations with product leaders about hiring, career growth, and the evolving product landscape. Listen to The Product Pivot podcast.",
+    canonical: "https://prodfolio.io/podcast",
   });
 
   return (
