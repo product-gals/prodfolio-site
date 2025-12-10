@@ -99,7 +99,7 @@ const Resources = () => {
                   Explore our full library of conversations with product leaders.
                 </p>
                 <a 
-                  href="https://www.youtube.com/@TheProductPivot/videos"
+                  href="https://www.youtube.com/channel/UCJlvjzdWcReBTeywgkVlbwQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold font-body rounded-lg hover:bg-primary/90 transition-colors"
