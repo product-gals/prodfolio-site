@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Phone } from "lucide-react";
 import prodfolioLogoProd from "@/assets/prodfolio-logo-prod.png";
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
 
@@ -67,7 +68,10 @@ const Navbar = () => {
                 variant="outline" 
                 className="border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all"
               >
-                <a href="https://app.prodfolio.io/login">Log In</a>
+                <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  Book a 15 min call
+                </a>
               </Button>
               <Button 
                 asChild 
@@ -124,7 +128,10 @@ const Navbar = () => {
               Podcast
             </Link>
             <Button asChild variant="outline" className="w-full border-white/40 bg-white/10 text-white hover:bg-white/20">
-              <a href="https://app.prodfolio.io/login">Log In</a>
+              <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
+                <Phone className="h-4 w-4" />
+                Book a 15 min call
+              </a>
             </Button>
             <Button asChild className="w-full bg-white text-primary hover:bg-white/90">
               <a href="https://app.prodfolio.io/sign-up">Start your portfolio</a>
