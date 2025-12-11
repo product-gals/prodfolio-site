@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import prodfolioLogoProd from "@/assets/prodfolio-logo-prod.png";
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
+import BookCallModal from "@/components/BookCallModal";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -63,16 +64,17 @@ const Navbar = () => {
               Podcast
             </Link>
             <div className="flex items-center space-x-2 ml-4">
-              <Button 
-                asChild 
-                variant="outline" 
-                className="border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all"
-              >
-                <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  Book a 15 min call
-                </a>
-              </Button>
+              <BookCallModal 
+                trigger={
+                  <Button 
+                    variant="outline" 
+                    className="border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all inline-flex items-center gap-2"
+                  >
+                    <Phone className="h-4 w-4" />
+                    Book a 15 min call
+                  </Button>
+                }
+              />
               <Button 
                 asChild 
                 variant="ghost" 
@@ -134,12 +136,14 @@ const Navbar = () => {
             >
               Podcast
             </Link>
-            <Button asChild variant="outline" className="w-full border-white/40 bg-white/10 text-white hover:bg-white/20">
-              <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
-                <Phone className="h-4 w-4" />
-                Book a 15 min call
-              </a>
-            </Button>
+            <BookCallModal 
+              trigger={
+                <Button variant="outline" className="w-full border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center justify-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  Book a 15 min call
+                </Button>
+              }
+            />
             <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
               <a href="https://app.prodfolio.io/login">Log In</a>
             </Button>
