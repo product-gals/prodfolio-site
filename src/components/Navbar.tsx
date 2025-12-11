@@ -75,6 +75,13 @@ const Navbar = () => {
               </Button>
               <Button 
                 asChild 
+                variant="ghost" 
+                className="text-white hover:bg-white/10 transition-all"
+              >
+                <a href="https://app.prodfolio.io/login">Log In</a>
+              </Button>
+              <Button 
+                asChild 
                 className="bg-white text-primary hover:bg-white/90 transition-all"
               >
                 <a href="https://app.prodfolio.io/sign-up">Start your portfolio</a>
@@ -132,6 +139,9 @@ const Navbar = () => {
                 <Phone className="h-4 w-4" />
                 Book a 15 min call
               </a>
+            </Button>
+            <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
+              <a href="https://app.prodfolio.io/login">Log In</a>
             </Button>
             <Button asChild className="w-full bg-white text-primary hover:bg-white/90">
               <a href="https://app.prodfolio.io/sign-up">Start your portfolio</a>
