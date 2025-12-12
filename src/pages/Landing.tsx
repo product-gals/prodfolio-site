@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Quote } from "lucide-react";
+import { Quote, Phone } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import portfolioPreview from "@/assets/portfolio-preview.png";
+import BookCallModal from "@/components/BookCallModal";
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
   const statsAnimation = useScrollAnimation();
@@ -109,9 +110,14 @@ const Landing = () => {
                   Start Your Portfolio Free
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10">
-                
-              </Button>
+              <BookCallModal 
+                trigger={
+                  <Button size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-2 border-white text-white hover:bg-white/10 font-medium inline-flex items-center gap-2">
+                    <Phone className="h-5 w-5" />
+                    Book a 15 min call
+                  </Button>
+                }
+              />
             </div>
             
             
