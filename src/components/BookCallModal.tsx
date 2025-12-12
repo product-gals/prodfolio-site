@@ -32,7 +32,7 @@ const BookCallModal = ({ trigger }: BookCallModalProps) => {
             </p>
             <Button
               asChild
-              className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-6 rounded-lg transition-all"
+              className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-6 rounded-lg transition-all shadow-lg shadow-primary/30 border-2 border-primary"
             >
               <a 
                 href="https://cal.com/meag.glenn/15min" 
@@ -55,9 +55,9 @@ const BookCallModal = ({ trigger }: BookCallModalProps) => {
             </p>
           </div>
           
-          {/* Right side - Visual */}
+          {/* Right side - Static Calendar Image */}
           <div className="hidden md:flex bg-gradient-to-br from-primary/10 via-primary/5 to-coral/10 items-center justify-center p-6">
-            <div className="bg-white rounded-xl shadow-lg p-4 w-full max-w-[220px]">
+            <div className="bg-white rounded-xl shadow-lg p-4 w-full max-w-[220px] select-none pointer-events-none">
               <div className="text-center mb-3">
                 <p className="text-sm font-semibold text-navy font-heading">Select a Date & Time</p>
               </div>
@@ -68,7 +68,7 @@ const BookCallModal = ({ trigger }: BookCallModalProps) => {
                 {Array.from({ length: 31 }, (_, i) => (
                   <div 
                     key={i} 
-                    className={`py-1 rounded ${i === 14 ? 'bg-primary text-white' : 'text-navy/70 hover:bg-primary/10'}`}
+                    className={`py-1 rounded ${i === 14 ? 'bg-primary text-white' : 'text-navy/70'}`}
                   >
                     {i + 1}
                   </div>
