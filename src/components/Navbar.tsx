@@ -66,8 +66,8 @@ const Navbar = () => {
             <div className="flex items-center space-x-2 ml-4">
               <Button 
                 asChild 
-                variant="ghost" 
-                className="text-white hover:bg-white/10 transition-all"
+                variant="outline" 
+                className="border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all"
               >
                 <a href="https://app.prodfolio.io/login">Log In</a>
               </Button>
