@@ -112,7 +112,7 @@ const Landing = () => {
               </Button>
               <BookCallModal 
                 trigger={
-                  <Button size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-2 border-primary/60 text-primary bg-primary/10 hover:bg-primary/20 font-medium inline-flex items-center gap-2">
+                  <Button size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-2 border-navy text-navy bg-transparent hover:bg-navy/10 font-medium inline-flex items-center gap-2">
                     <Phone className="h-5 w-5" />
                     Book a 15 min call
                   </Button>
