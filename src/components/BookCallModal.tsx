@@ -48,6 +48,8 @@ const BookCallModal = ({ trigger }: BookCallModalProps) => {
               OR...{" "}
               <a 
                 href="https://app.prodfolio.io/sign-up" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 font-medium transition-colors"
               >
                 Start your portfolio free →
