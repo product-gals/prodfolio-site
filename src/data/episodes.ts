@@ -6,6 +6,7 @@ import brodyPhoto from "@/assets/brody-clemmer.jpeg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
 import gaborPhoto from "@/assets/gabor-cselle.jpeg";
+import grahamPhoto from "@/assets/graham-reed.jpeg";
 
 export interface Episode {
   id: string;
@@ -494,6 +495,7 @@ export const episodes: Episode[] = [
       website: "https://www.heliosx.com",
       industry: "Healthcare & Telehealth",
       bio: "Graham Reed is the Head of Product Operations at HeliosX Group (known as Zip Health in the US and MedExpress in the UK). He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
+      photo: grahamPhoto,
       linkedin: "https://www.linkedin.com/in/grahamreed/"
     },
     description: "Graham dives deep into product operations—when to bring it in, the skills needed, and why it's the most welcoming community in product.",
