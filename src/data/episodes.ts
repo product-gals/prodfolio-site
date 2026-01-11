@@ -8,6 +8,7 @@ import trevorPhoto from "@/assets/trevor-acy.jpeg";
 import gaborPhoto from "@/assets/gabor-cselle.jpeg";
 import grahamPhoto from "@/assets/graham-reed.jpeg";
 import heidiPhoto from "@/assets/heidi-ram.jpeg";
+import nickPhoto from "@/assets/nick-photo.jpeg";
 
 export interface Episode {
   id: string;
@@ -586,6 +587,7 @@ export const episodes: Episode[] = [
       website: "https://dashsocial.com",
       industry: "Social Media & AI",
       bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business—even a lemonade stand—is one of the best ways to learn product fundamentals.",
+      photo: nickPhoto,
       linkedin: "https://www.linkedin.com/in/nikhil-punjabi/"
     },
     description: "Nick shares his journey from supporting startups at an incubator to becoming an AI PM, and why starting a side hustle teaches you PM fundamentals.",
