@@ -540,6 +540,50 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["product recruiter", "hiring", "storytelling", "LinkedIn optimization", "resume", "job search", "interview process", "career transition", "before and after narrative", "business outcomes", "PM tenure", "The Product Recruiter"]
+  },
+  {
+    id: "13",
+    slug: "from-incubator-to-product-management",
+    title: "From Incubator to Product Management: Nikhil's Journey",
+    episodeNumber: "S2E5",
+    guest: {
+      name: "Nikhil (Nick) Punjabi",
+      role: "AI Product Manager",
+      company: "Dash Social",
+      location: "Halifax, Nova Scotia",
+      website: "https://dashsocial.com",
+      industry: "Social Media & AI",
+      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business—even a lemonade stand—is one of the best ways to learn product fundamentals.",
+      linkedin: "https://www.linkedin.com/in/nikhil-punjabi/"
+    },
+    description: "Nick shares his journey from supporting startups at an incubator to becoming an AI PM, and why starting a side hustle teaches you PM fundamentals.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at InnovaCorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business—even a lemonade stand—teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
+    youtubeId: "UisomxfRnpk",
+    spotifyUrl: "https://open.spotify.com/episode/61FxN7RF1pUs5wKaflOlYF",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-from-incubator-to-product/id1784108281?i=1000729358273",
+    topic: "career",
+    topics: ["Career Transition", "Startup Ecosystem", "AI in PM", "Entrepreneurship", "Portfolio Building", "Customer Discovery"],
+    duration: "50 min",
+    publishedAt: "2025-05-07",
+    takeaways: [
+      "Starting a business or side hustle is one of the best ways to learn PM fundamentals",
+      "Product managers are at the center of solutions that can genuinely change people's lives",
+      "You must evangelize your product internally and externally—be the herald of your product",
+      "Detach your ego from the product—failure can affect your psyche if you over-identify",
+      "Don't over-solution: don't build a plane when someone just wants a bicycle",
+      "If you haven't adopted AI in your day-to-day as a PM, you are behind",
+      "Done is better than perfect—perfectionism actually hurts PM work",
+      "Build a portfolio mapping your transferable skills to PM competencies",
+      "Document your journey to PM publicly—it differentiates you from the competition",
+      "Vanity metrics look good but don't mean anything fundamental—avoid them"
+    ],
+    resourcesMentioned: [
+      { title: "InnovaCorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
+      { title: "Udemy PM Courses", url: "https://www.udemy.com" },
+      { title: "Udacity Product Management Nanodegree", url: "https://www.udacity.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["incubator to PM", "startup ecosystem", "AI product manager", "side hustle", "customer discovery", "transferable skills", "portfolio", "storytelling", "done is better than perfect", "vanity metrics", "over-solutioning", "Dash Social", "Halifax"]
   }
 ];
 
