@@ -277,6 +277,50 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["future of product management", "PM career path", "startup PM", "generalist", "problem space", "no degree PM", "entrepreneurial PM", "product thinking", "adaptive communication", "Little Otter"]
+  },
+  {
+    id: "7",
+    slug: "from-newsrooms-to-roadmaps",
+    title: "From Newsrooms to Roadmaps: Olympia's Journey",
+    episodeNumber: "S1E7",
+    guest: {
+      name: "Olympia Bardis",
+      role: "Senior Product Manager",
+      company: "CNBC",
+      location: "New York, NY",
+      website: "https://www.cnbc.com",
+      industry: "Media & Finance",
+      bio: "Olympia Bardis is a Senior Product Manager at CNBC, where she builds products for retail investors. With a journalism degree and dreams of being an on-air reporter, Olympia spent five and a half years in legacy media at Fox News before pivoting to product management. She credits Mel Robbins' 5 Second Rule for giving her the courage to advocate for herself and make the leap. A native New Yorker with a passion for storytelling, she believes the 'gift of yap' is one of the most underrated PM skills.",
+      linkedin: "https://www.linkedin.com/in/olympiabardis/"
+    },
+    description: "Olympia shares her journey from journalism school to building products for investors at CNBC, and why storytelling is a PM superpower.",
+    longDescription: "In this episode, hosts Santi and Meagan chat with Olympia Bardis, Senior Product Manager at CNBC, about her unconventional pivot from journalism to product management.\n\nOlympia shares how she graduated from journalism school wanting to be an on-air reporter, quickly realized it wasn't for her, and spent five and a half years figuring out her next move. With encouragement from an IT friend and inspiration from Mel Robbins' 5 Second Rule, she hustled her way into a hybrid content/product role at Fox before transitioning to CNBC.\n\nThe conversation covers the power of self-advocacy, treating yourself as a product, embracing rejection as redirection, and why the 'gift of yap' (storytelling) is crucial for product managers. Olympia also shares her hot take on whether the PM industry's trend toward hyper-specialization helps or hinders the profession.",
+    youtubeId: "pUYPr4m22g4",
+    spotifyUrl: "https://open.spotify.com/episode/6VNFMBEiE1IvAYv2tErSE7",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/from-newsrooms-to-roadmaps-olympias-journey/id1784108281?i=1000700798306",
+    topic: "career",
+    topics: ["Journalism to PM", "Self-Advocacy", "Storytelling", "Career Pivot", "Media Industry", "Rejection & Resilience"],
+    duration: "44 min",
+    publishedAt: "2025-02-12",
+    takeaways: [
+      "You are your own best advocate—keep ringing the bell about your career goals",
+      "It's okay to fall out of love with things and pivot—that's how you grow",
+      "Treat yourself as a product and iterate on your skills and approach",
+      "You know more than you think—trust yourself and have conviction in your ideas",
+      "Every rejection is a redirection and a great learning moment",
+      "Take breaks when needed to sharpen skills, network, and reflect",
+      "Storytelling is a crucial PM skill—the 'gift of yap' transfers directly from journalism",
+      "Be flexible, open-minded, and adaptable—PMs are essentially contortionists",
+      "Honor the bliss of the learning curve—all novices start somewhere",
+      "If you help one person with your content, you did your job"
+    ],
+    resourcesMentioned: [
+      { title: "Contagious: Why Things Catch On by Jonah Berger", url: "https://jonahberger.com/books/contagious/" },
+      { title: "Measure What Matters by John Doerr", url: "https://www.whatmatters.com/the-book" },
+      { title: "The 5 Second Rule by Mel Robbins", url: "https://melrobbins.com/the-5-second-rule/" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["journalism to PM", "CNBC product manager", "career pivot", "self-advocacy", "storytelling", "media industry PM", "rejection", "Mel Robbins", "transferable skills", "retail investors"]
   }
 ];
 
