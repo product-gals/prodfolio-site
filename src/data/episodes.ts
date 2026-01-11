@@ -20,6 +20,7 @@ export interface Episode {
   longDescription: string;
   youtubeId: string;
   spotifyUrl?: string;
+  appleUrl?: string;
   buzzsproutId?: string; // For audio embed
   topic: "hiring" | "career" | "ai" | "leadership";
   topics: string[]; // Multiple topic tags
@@ -89,6 +90,8 @@ export const episodes: Episode[] = [
     description: "Brandon's unconventional journey from music school to Staff PM at Buffer, and how creativity shapes his approach to product.",
     longDescription: "In this episode, hosts Santi and Meagan sit down with Brandon Lucas Green, a Staff Product Manager at Buffer, to explore his unconventional journey from music school to tech and how he navigated the world of product management.\n\nBrandon shares pivotal moments in his career, the challenges he faced, and how adaptability has shaped his success in different work environments. He also discusses the role of creativity in product management, offers insights into today's job market for PMs, and emphasizes the importance of self-reflection for career growth.\n\nFrom the evolving nature of product management to practical advice for aspiring PMs, this episode is packed with valuable takeaways.",
     youtubeId: "5zn1aQwMo8E",
+    spotifyUrl: "https://open.spotify.com/episode/5JREScrUH29f8unFQlHFVG",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-creativity-in-product-management/id1784108281?i=1000691160955",
     topic: "career",
     topics: ["Career Transition", "Creativity in PM", "Job Market Insights", "Self-Reflection", "Remote Work"],
     duration: "45 min",
