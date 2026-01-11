@@ -46,10 +46,10 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              to="/how-it-works"
+              to="/features"
               className="text-sm font-medium text-white hover:text-white/80 transition-colors"
             >
-              How It Works
+              Features
             </Link>
             <Link
               to="/examples"
@@ -117,11 +117,11 @@ const Navbar = () => {
         <div className="md:hidden border-t border-white/20 py-3 bg-white/10 backdrop-blur-md">
           <div className="prodfolio-container space-y-2">
             <Link
-              to="/how-it-works"
+              to="/features"
               className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              How It Works
+              Features
             </Link>
             <Link
               to="/examples"

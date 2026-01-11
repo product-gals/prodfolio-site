@@ -18,6 +18,7 @@ import ForCareerChangers from "./pages/ForCareerChangers";
 import Examples from "./pages/Examples";
 import HowItWorks from "./pages/HowItWorks";
 import ForHiringManagers from "./pages/ForHiringManagers";
+import Features from "./pages/Features";
 
 const queryClient = new QueryClient();
 
@@ -50,7 +51,8 @@ const App = () => {
             <Route path="/examples" element={<Examples />} />
             <Route path="/how-it-works" element={<HowItWorks />} />
             <Route path="/for-hiring-managers" element={<ForHiringManagers />} />
-            
+            <Route path="/features" element={<Features />} />
+
             {/* 404 for all other routes */}
             <Route path="*" element={<NotFound />} />
           </Routes>
