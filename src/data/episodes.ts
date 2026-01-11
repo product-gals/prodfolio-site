@@ -3,6 +3,7 @@ import brandonPhoto from "@/assets/brandon-green.jpeg";
 import tylerPhoto from "@/assets/tyler-johnson.jpeg";
 import varshinePhoto from "@/assets/varshine-sridharan.png";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
+import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 
 export interface Episode {
   id: string;
@@ -303,10 +304,11 @@ export const episodes: Episode[] = [
       name: "Olympia Bardis",
       role: "Senior Product Manager",
       company: "CNBC",
-      location: "New York, NY",
+      location: "Arizona",
       website: "https://www.cnbc.com",
       industry: "Media & Finance",
       bio: "Olympia Bardis is a Senior Product Manager at CNBC, where she builds products for retail investors. With a journalism degree and dreams of being an on-air reporter, Olympia spent five and a half years in legacy media at Fox News before pivoting to product management. She credits Mel Robbins' 5 Second Rule for giving her the courage to advocate for herself and make the leap. A native New Yorker with a passion for storytelling, she believes the 'gift of yap' is one of the most underrated PM skills.",
+      photo: olympiaPhoto,
       linkedin: "https://www.linkedin.com/in/olympiabardis/"
     },
     description: "Olympia shares her journey from journalism school to building products for investors at CNBC, and why storytelling is a PM superpower.",
