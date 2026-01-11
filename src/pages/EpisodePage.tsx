@@ -11,21 +11,25 @@ import {
   Calendar,
   ChevronLeft,
   Linkedin,
-  Share2,
-  FileText,
+  Twitter,
+  Instagram,
+  ExternalLink,
+  MapPin,
+  Building2,
+  Globe,
+  Briefcase,
+  Tag,
+  CheckCircle2,
   Youtube,
-  ChevronDown,
-  ChevronUp
+  BookOpen
 } from "lucide-react";
-import { useState } from "react";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
 
 const EpisodePage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [showFullTranscript, setShowFullTranscript] = useState(false);
   const heroAnimation = useScrollAnimation();
-  const transcriptAnimation = useScrollAnimation();
+  const contentAnimation = useScrollAnimation();
 
   const episode = slug ? getEpisodeBySlug(slug) : undefined;
   const relatedEpisodes = slug ? getRelatedEpisodes(slug, 2) : [];
@@ -96,7 +100,7 @@ const EpisodePage = () => {
       <Navbar />
 
       {/* Back Navigation */}
-      <div className="prodfolio-container max-w-[1000px] mx-auto pt-6 px-4">
+      <div className="prodfolio-container max-w-[1200px] mx-auto pt-6 px-4">
         <Link
           to="/podcast"
           className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
@@ -106,31 +110,36 @@ const EpisodePage = () => {
         </Link>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section with Episode Header */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-8 pb-12 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-8 pb-6 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-[1000px] mx-auto">
-          {/* Topic Badge */}
-          <div className="mb-4">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          {/* Episode Number & Topic */}
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            {episode.episodeNumber && (
+              <span className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-sm font-medium">
+                {episode.episodeNumber}
+              </span>
+            )}
             <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
               {topicLabels[episode.topic]}
             </span>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4">
             {episode.title}
           </h1>
 
           {/* Guest Info */}
-          <p className="text-xl text-primary mb-6">
+          <p className="text-lg md:text-xl text-primary mb-4">
             with {episode.guest.name}, {episode.guest.role} at {episode.guest.company}
           </p>
 
           {/* Meta Info */}
-          <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm mb-8">
+          <div className="flex flex-wrap items-center gap-4 text-white/60 text-sm">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               {formattedDate}
@@ -139,104 +148,299 @@ const EpisodePage = () => {
               <Clock className="w-4 h-4" />
               {episode.duration}
             </span>
-            {episode.guest.linkedin && (
-              <a
-                href={episode.guest.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-                Connect with {episode.guest.name.split(' ')[0]}
-              </a>
-            )}
           </div>
+        </div>
+      </section>
 
-          {/* Video Player */}
-          <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black/50 mb-8">
-            <iframe
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/${episode.youtubeId}`}
-              title={episode.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+      {/* Main Content Grid */}
+      <section
+        ref={contentAnimation.ref as React.RefObject<HTMLElement>}
+        className={`pb-12 px-4 ${contentAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+      >
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Left Column - Main Content */}
+            <div className="lg:col-span-2 space-y-8">
+              {/* Video Player */}
+              <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black/50">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube.com/embed/${episode.youtubeId}`}
+                  title={episode.title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
 
-          {/* Subscribe Buttons */}
-          <div className="flex flex-wrap gap-3 mb-8">
-            <a
-              href="https://www.youtube.com/@TheProductPivot"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-[#FF0000] text-white rounded-lg text-sm font-medium hover:bg-[#FF0000]/90 transition-all"
-            >
-              <Youtube className="w-4 h-4" />
-              Subscribe on YouTube
-            </a>
-            <a
-              href="https://open.spotify.com/show/theproductpivot"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-[#1DB954] text-white rounded-lg text-sm font-medium hover:bg-[#1DB954]/90 transition-all"
-            >
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-              </svg>
-              Spotify
-            </a>
-            <button
-              onClick={() => navigator.clipboard.writeText(window.location.href)}
-              className="flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-lg text-sm font-medium hover:bg-white/20 transition-all"
-            >
-              <Share2 className="w-4 h-4" />
-              Share Episode
-            </button>
-          </div>
+              {/* Subscribe Buttons */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.youtube.com/@TheProductPivot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-[#FF0000] text-white rounded-lg text-sm font-medium hover:bg-[#FF0000]/90 transition-all"
+                >
+                  <Youtube className="w-4 h-4" />
+                  Subscribe on YouTube
+                </a>
+                <a
+                  href="https://open.spotify.com/show/theproductpivot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 bg-[#1DB954] text-white rounded-lg text-sm font-medium hover:bg-[#1DB954]/90 transition-all"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                  </svg>
+                  Spotify
+                </a>
+              </div>
 
-          {/* Description */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 mb-8">
-            <h2 className="text-lg font-bold text-white mb-3">About this episode</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              {episode.longDescription}
-            </p>
+              {/* Resources Mentioned */}
+              {episode.resourcesMentioned && episode.resourcesMentioned.length > 0 && (
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                    <BookOpen className="w-5 h-5 text-primary" />
+                    Resources Mentioned
+                  </h2>
+                  <ul className="space-y-3">
+                    {episode.resourcesMentioned.map((resource, index) => (
+                      <li key={index}>
+                        <a
+                          href={resource.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                        >
+                          <ExternalLink className="w-4 h-4 flex-shrink-0" />
+                          {resource.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-            {/* Highlights */}
-            <h3 className="text-sm font-bold text-white/60 uppercase tracking-wider mb-3">
-              In this episode
-            </h3>
-            <ul className="space-y-2">
-              {episode.highlights.map((highlight, index) => (
-                <li key={index} className="flex items-start gap-3 text-white/80">
-                  <Play className="w-4 h-4 text-primary flex-shrink-0 mt-1" fill="currentColor" />
-                  {highlight}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Hosts */}
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 mb-8">
-            <p className="text-white/60 text-sm mb-4">Hosted by</p>
-            <div className="flex flex-col sm:flex-row gap-6">
-              <div className="flex items-center gap-3">
-                <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full" />
-                <div>
-                  <p className="font-bold text-white">Meagan Glenn</p>
-                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
-                    LinkedIn →
-                  </a>
+              {/* About This Episode */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <h2 className="text-lg font-bold text-white mb-4">About This Episode</h2>
+                <div className="text-white/80 leading-relaxed whitespace-pre-line">
+                  {episode.longDescription}
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full" />
-                <div>
-                  <p className="font-bold text-white">Santiana Brace</p>
-                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
-                    LinkedIn →
-                  </a>
+
+              {/* Key Takeaways */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <h2 className="text-lg font-bold text-white mb-4">Key Takeaways</h2>
+                <ul className="space-y-3">
+                  {episode.takeaways.map((takeaway, index) => (
+                    <li key={index} className="flex items-start gap-3 text-white/80">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      {takeaway}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* About the Guest */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <h2 className="text-lg font-bold text-white mb-4">About {episode.guest.name}</h2>
+                <p className="text-white/80 leading-relaxed mb-6">
+                  {episode.guest.bio}
+                </p>
+
+                {/* Connect with Guest */}
+                <div className="flex flex-wrap gap-3">
+                  {episode.guest.linkedin && (
+                    <a
+                      href={episode.guest.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-[#0A66C2] text-white rounded-lg text-sm font-medium hover:bg-[#0A66C2]/90 transition-all"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      Connect on LinkedIn
+                    </a>
+                  )}
+                  {episode.guest.twitter && (
+                    <a
+                      href={episode.guest.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-[#1DA1F2] text-white rounded-lg text-sm font-medium hover:bg-[#1DA1F2]/90 transition-all"
+                    >
+                      <Twitter className="w-4 h-4" />
+                      Follow on Twitter
+                    </a>
+                  )}
+                  {episode.guest.instagram && (
+                    <a
+                      href={episode.guest.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-all"
+                    >
+                      <Instagram className="w-4 h-4" />
+                      Instagram
+                    </a>
+                  )}
+                  {episode.guest.website && (
+                    <a
+                      href={episode.guest.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-lg text-sm font-medium hover:bg-white/20 transition-all"
+                    >
+                      <Globe className="w-4 h-4" />
+                      Website
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              {/* About The Product Pivot */}
+              <div className="bg-gradient-to-r from-primary/20 to-coral/20 backdrop-blur-sm rounded-2xl p-6 border border-primary/20">
+                <h2 className="text-lg font-bold text-white mb-4">About The Product Pivot</h2>
+                <p className="text-white/80 leading-relaxed mb-6">
+                  The Product Pivot is a podcast for product managers who want to level up their careers.
+                  Hosted by Meagan Glenn and Santiana Brace, each episode features candid conversations
+                  with PMs, recruiters, and product leaders about what it really takes to succeed in product management.
+                </p>
+
+                {/* Hosts */}
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="flex items-center gap-3">
+                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full" />
+                    <div>
+                      <p className="font-bold text-white">Meagan Glenn</p>
+                      <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
+                        LinkedIn →
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full" />
+                    <div>
+                      <p className="font-bold text-white">Santiana Brace</p>
+                      <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
+                        LinkedIn →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Guest Sidebar */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24 space-y-6">
+                {/* Guest Card */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  {/* Guest Photo */}
+                  {episode.guest.photo ? (
+                    <img
+                      src={episode.guest.photo}
+                      alt={episode.guest.name}
+                      className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                    />
+                  ) : (
+                    <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-primary to-coral flex items-center justify-center">
+                      <span className="text-3xl font-bold text-white">
+                        {episode.guest.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Guest Name & Role */}
+                  <h3 className="text-xl font-bold text-white text-center mb-1">
+                    {episode.guest.name}
+                  </h3>
+                  <p className="text-primary text-center mb-6">
+                    {episode.guest.role}
+                  </p>
+
+                  {/* Guest Details */}
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <Building2 className="w-5 h-5 text-white/40 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white/40 text-xs uppercase tracking-wider">Company</p>
+                        <p className="text-white">{episode.guest.company}</p>
+                      </div>
+                    </div>
+
+                    {episode.guest.location && (
+                      <div className="flex items-start gap-3">
+                        <MapPin className="w-5 h-5 text-white/40 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-white/40 text-xs uppercase tracking-wider">Location</p>
+                          <p className="text-white">{episode.guest.location}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {episode.guest.website && (
+                      <div className="flex items-start gap-3">
+                        <Globe className="w-5 h-5 text-white/40 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-white/40 text-xs uppercase tracking-wider">Website</p>
+                          <a
+                            href={episode.guest.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline break-all"
+                          >
+                            {episode.guest.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+                          </a>
+                        </div>
+                      </div>
+                    )}
+
+                    {episode.guest.industry && (
+                      <div className="flex items-start gap-3">
+                        <Briefcase className="w-5 h-5 text-white/40 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-white/40 text-xs uppercase tracking-wider">Industry</p>
+                          <p className="text-white">{episode.guest.industry}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Topics Card */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Tag className="w-5 h-5 text-primary" />
+                    <h3 className="font-bold text-white">Topics Discussed</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {episode.topics.map((topic, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-sm"
+                      >
+                        {topic}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* CTA Card */}
+                <div className="bg-gradient-to-br from-primary to-coral rounded-2xl p-6 text-center">
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    Build Your PM Portfolio
+                  </h3>
+                  <p className="text-white/80 text-sm mb-4">
+                    Stand out in your next PM interview with a professional portfolio.
+                  </p>
+                  <Button asChild className="w-full bg-white text-navy hover:bg-white/90 font-semibold">
+                    <a href="https://app.prodfolio.io/sign-up">
+                      Get Started Free
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -244,71 +448,10 @@ const EpisodePage = () => {
         </div>
       </section>
 
-      {/* Transcript Section */}
-      {episode.transcript && (
-        <section
-          ref={transcriptAnimation.ref as React.RefObject<HTMLElement>}
-          className={`py-12 px-4 bg-white/5 ${transcriptAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
-        >
-          <div className="prodfolio-container max-w-[1000px] mx-auto">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-heading font-bold text-white flex items-center gap-2">
-                <FileText className="w-6 h-6" />
-                Episode Transcript
-              </h2>
-              <button
-                onClick={() => setShowFullTranscript(!showFullTranscript)}
-                className="flex items-center gap-2 text-primary text-sm font-medium hover:underline"
-              >
-                {showFullTranscript ? (
-                  <>
-                    Show less <ChevronUp className="w-4 h-4" />
-                  </>
-                ) : (
-                  <>
-                    Read full transcript <ChevronDown className="w-4 h-4" />
-                  </>
-                )}
-              </button>
-            </div>
-
-            <div className={`bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 ${!showFullTranscript ? 'max-h-96 overflow-hidden relative' : ''}`}>
-              <div className="prose prose-invert max-w-none">
-                {episode.transcript.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className="text-white/80 leading-relaxed mb-4">
-                    {paragraph.split(':').length > 1 ? (
-                      <>
-                        <strong className="text-primary">{paragraph.split(':')[0]}:</strong>
-                        {paragraph.split(':').slice(1).join(':')}
-                      </>
-                    ) : (
-                      paragraph
-                    )}
-                  </p>
-                ))}
-              </div>
-
-              {!showFullTranscript && (
-                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#16213e] to-transparent" />
-              )}
-            </div>
-
-            {!showFullTranscript && (
-              <button
-                onClick={() => setShowFullTranscript(true)}
-                className="mt-4 w-full py-3 bg-white/10 text-white rounded-xl font-medium hover:bg-white/20 transition-colors"
-              >
-                Read Full Transcript
-              </button>
-            )}
-          </div>
-        </section>
-      )}
-
       {/* Related Episodes */}
       {relatedEpisodes.length > 0 && (
-        <section className="py-12 px-4">
-          <div className="prodfolio-container max-w-[1000px] mx-auto">
+        <section className="py-12 px-4 bg-white/5">
+          <div className="prodfolio-container max-w-[1200px] mx-auto">
             <h2 className="text-2xl font-heading font-bold text-white mb-6">
               More Episodes
             </h2>
@@ -347,25 +490,6 @@ const EpisodePage = () => {
           </div>
         </section>
       )}
-
-      {/* CTA Section */}
-      <section className="py-12 px-4">
-        <div className="prodfolio-container max-w-[800px] mx-auto">
-          <div className="bg-gradient-to-r from-primary to-coral rounded-3xl p-8 md:p-12 text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
-              Ready to build your PM portfolio?
-            </h2>
-            <p className="text-white/80 mb-6">
-              Like what you heard? Put it into practice with Prodfolio.
-            </p>
-            <Button asChild size="lg" className="bg-white text-navy hover:bg-white/90 font-semibold">
-              <a href="https://app.prodfolio.io/sign-up">
-                Start Your Portfolio Free
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
