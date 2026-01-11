@@ -7,7 +7,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getEpisodeBySlug, getRelatedEpisodes } from "@/data/episodes";
 import {
-  Play,
   Clock,
   Calendar,
   ChevronLeft,
@@ -515,17 +514,12 @@ const EpisodePage = () => {
                   to={`/podcast/episodes/${ep.slug}`}
                   className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all group"
                 >
-                  <div className="aspect-video relative bg-black/50">
+                  <div className="aspect-video relative bg-black/50 overflow-hidden">
                     <img
                       src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
                       alt={ep.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
-                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                        <Play className="w-5 h-5 text-white ml-1" fill="white" />
-                      </div>
-                    </div>
                   </div>
                   <div className="p-5">
                     <h3 className="text-lg font-bold text-white mb-2">{ep.title}</h3>

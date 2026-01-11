@@ -223,28 +223,17 @@ const Resources = () => {
                 key={episode.id}
                 className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all group"
               >
-                {/* Video Thumbnail */}
+                {/* Episode Thumbnail */}
                 <Link to={`/podcast/episodes/${episode.slug}`} className="block">
-                  <div className="aspect-video relative bg-black/50">
+                  <div className="aspect-video relative bg-black/50 overflow-hidden">
                     <img
                       src={`https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
                       alt={episode.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/30 transition-colors">
-                      <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                        <Play className="w-7 h-7 text-white ml-1" fill="white" />
-                      </div>
-                    </div>
                     <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
                       {episode.duration}
                     </div>
-                    {episode.transcript && (
-                      <div className="absolute bottom-3 left-3 bg-primary/90 text-white text-xs px-2 py-1 rounded flex items-center gap-1">
-                        <FileText className="w-3 h-3" />
-                        Transcript
-                      </div>
-                    )}
                   </div>
                 </Link>
 
