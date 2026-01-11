@@ -497,6 +497,49 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["product operations", "product ops", "HeliosX", "ways of working", "change management", "team efficiency", "product leadership", "community-driven", "anti-gatekeeping", "velocity metric"]
+  },
+  {
+    id: "12",
+    slug: "power-of-storytelling-in-hiring",
+    title: "The Power of Storytelling in Hiring",
+    episodeNumber: "S2E4",
+    guest: {
+      name: "Heidi Ram",
+      role: "Product Recruiter, Practice Lead",
+      company: "The Product Recruiter",
+      location: "Toronto, Canada",
+      website: "https://theproductrecruiter.com",
+      industry: "Recruiting & Talent Acquisition",
+      bio: "Heidi Ram is a Practice Lead at The Product Recruiter, a Toronto-based firm that helps technology companies make tough hiring decisions in product, UX, and product marketing. With 26+ years in recruiting, she works with CEOs, founders, and chief product officers to find top PM talent across North America. Heidi is passionate about helping candidates tell their story effectively and advocates for being strategic and intentional about career moves.",
+      linkedin: "https://www.linkedin.com/in/heidiram/"
+    },
+    description: "Heidi shares recruiter insights on storytelling, standing out in hiring, and why your narrative matters more than your frameworks.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Heidi Ram, Practice Lead at The Product Recruiter, to get insider insights on what makes PM candidates stand out in today's competitive hiring market.\n\nHeidi shares why successful product managers are defined by their 'before and after' narrative—not by the frameworks they use or how many cross-functional teams they mention. She breaks down how to optimize LinkedIn as your marketing tech stack, craft resumes that convert to interviews, and why less experienced candidates often focus too much on the 'how' instead of business outcomes.\n\nThe conversation covers crucial career advice: move towards something rather than away from something, understand that it's hard everywhere, and ask two essential questions before accepting any role. Heidi also shares practical guidance for those pivoting into product—join a tech company in any role, excel there, then pivot internally.",
+    youtubeId: "Zg4SOZexDUE",
+    spotifyUrl: "https://open.spotify.com/episode/7ux2FTINmf6IHTY1jlCyfH",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-the-power-of-storytelling-in-hiring/id1784108281?i=1000728254048",
+    topic: "hiring",
+    topics: ["Hiring & Recruiting", "Storytelling", "Job Search Strategy", "Resume Optimization", "LinkedIn", "Career Transition", "Interview Process"],
+    duration: "51 min",
+    publishedAt: "2025-04-23",
+    takeaways: [
+      "Success in PM hiring means showing a 'before and after' narrative—quantifiable impact on the product and business",
+      "LinkedIn is your marketing tech stack—optimize for recruiters with searchable titles and clear product focus",
+      "Less experienced candidates focus too much on 'how' (frameworks, cross-functional) instead of business outcomes",
+      "Move towards something, not away from something—don't leave just because things get hard",
+      "It's hard everywhere—every company has challenges, so know your tolerance",
+      "Two essential questions before accepting: Do I want to do this job? Can I work with these people?",
+      "For pivoting into PM: join a tech company in any role, excel there, then pivot internally",
+      "Knowing why you say yes to a job is liberating—even accepting less-than-ideal roles strategically",
+      "The average PM tenure is about 2 years—it's okay to join knowing it's not forever",
+      "Most people don't start their career in product—it's a journey into product from other roles"
+    ],
+    resourcesMentioned: [
+      { title: "The Product Recruiter", url: "https://theproductrecruiter.com" },
+      { title: "LinkedIn Profile Optimization", url: "https://www.linkedin.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["product recruiter", "hiring", "storytelling", "LinkedIn optimization", "resume", "job search", "interview process", "career transition", "before and after narrative", "business outcomes", "PM tenure", "The Product Recruiter"]
   }
 ];
 
