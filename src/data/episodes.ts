@@ -627,6 +627,50 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
+  },
+  {
+    id: "15",
+    slug: "why-ai-should-be-boring",
+    title: "Why AI Should Be Boring — And That's a Good Thing",
+    episodeNumber: "S2E7",
+    guest: {
+      name: "Aaron Kesler",
+      role: "VP, Product Management (AI)",
+      company: "RozieAI",
+      location: "Raleigh, NC",
+      website: "https://rozie.ai",
+      industry: "AI & Conference Tech",
+      bio: "Aaron Kesler is VP of Product at Rozie AI after 12 years in product management. His journey started founding a company in college, then working at Starbucks after quitting tech—where his regulars became his mentors and connected him to his next role. He moved through technical support, then took over as PM when the previous one left. He went on to Blue Cross and SnapLogic, where he led AI product management with two of the company's most successful launches. Aaron is also writing a book on Lean Pub about pivoting into product management.",
+      linkedin: "https://www.linkedin.com/in/aaron-kesler/"
+    },
+    description: "Aaron explains why AI should become boring, how vibe coding changes everything, and why AI PM skills are just traditional PM skills focused on mundane problems.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Aaron Kesler, VP of Product at Rozie AI, to discuss why the best AI is ultimately boring AI—and why that's exactly what we should want.\n\nAaron shares his unconventional journey from founding a startup in college to working at Starbucks (where his regulars became mentors who landed him his next role), eventually becoming an AI product leader. He breaks down why AI PM skills are really just traditional PM skills focused on automating mundane tasks, why companies building 'AI for AI's sake' will fail fast, and how vibe coding is about to disrupt everyone.\n\nThe conversation covers practical AI adoption advice: start with ChatGPT and just talk to it, focus on tasks you hate doing, and embrace experimentation. Aaron also shares insights from his upcoming book on pivoting into PM, including controversial advice: if you're doing the role, give yourself the title.",
+    youtubeId: "Kw9ssA8sSsI",
+    spotifyUrl: "https://open.spotify.com/episode/2fDK57b1AvFTtpLJHEE2y3",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-why-ai-should-be-boring-and-thats/id1784108281?i=1000732007380",
+    topic: "ai",
+    topics: ["AI Product Management", "Vibe Coding", "Career Transition", "Experimentation Culture", "Automation"],
+    duration: "55 min",
+    publishedAt: "2025-06-04",
+    takeaways: [
+      "AI PM skills are traditional PM skills—focus on customer problems, not the technology",
+      "AI is perfect for automating mundane, repetitive tasks that people hate doing",
+      "Companies building 'AI for AI's sake' without solving real problems will fail fast",
+      "Vibe coding enables non-technical people to build products—be aware of this disruption",
+      "AI should become boring—let it do boring things so we can focus on interesting work",
+      "Start with ChatGPT if you haven't—just chat with it like you'd chat with a person",
+      "Focus on what you hate doing daily/weekly/monthly—that's where AI helps most",
+      "If you're doing the PM role, give yourself the title—your resume is a marketing document",
+      "Product management is one of the most political roles—build relationships with everyone",
+      "NPS scores provide zero value—instead ask 'If this product went away, how upset would you be?'"
+    ],
+    resourcesMentioned: [
+      { title: "ChatGPT", url: "https://chat.openai.com" },
+      { title: "Lean Pub (Book Publishing)", url: "https://leanpub.com" },
+      { title: "Shopify CEO's AI Memo", url: "https://www.shopify.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
   }
 ];
 
