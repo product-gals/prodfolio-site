@@ -454,6 +454,49 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["Google PM", "FAANG interview", "PM interview prep", "8 rejections", "Big Tech", "AI product management", "Notebook LM", "interview skills", "career persistence", "LogMeIn"]
+  },
+  {
+    id: "11",
+    slug: "evolution-of-product-ops",
+    title: "The Evolution of Product Ops: A Deep Dive with Graham Reed",
+    episodeNumber: "S2E3",
+    guest: {
+      name: "Graham Reed",
+      role: "Head of Product Operations",
+      company: "HeliosX Group",
+      location: "United Kingdom",
+      website: "https://www.heliosx.com",
+      industry: "Healthcare & Telehealth",
+      bio: "Graham Reed is the Head of Product Operations at HeliosX Group (known as Zip Health in the US and MedExpress in the UK). He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
+      linkedin: "https://www.linkedin.com/in/grahamreed/"
+    },
+    description: "Graham dives deep into product operations—when to bring it in, the skills needed, and why it's the most welcoming community in product.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Graham Reed, Head of Product Operations at HeliosX Group, for a comprehensive exploration of the product ops discipline.\n\nGraham shares how he 'fell into' product ops after a decade in product management, and has since built product ops functions from scratch at multiple companies. He discusses when businesses should consider product ops (typically around 150+ employees), the key skills needed (soft skills over experience), and the difference between being a team of one versus building specialized teams.\n\nThe conversation covers how product ops helps teams focus on their 'primary function,' supports product leadership, and why the discipline is proudly community-driven and anti-gatekeeping—the opposite of the sometimes gate-kept product management world. Graham also shares his spicy take on a metric we should all stop pretending to care about.",
+    youtubeId: "FHoWewjQ8uc",
+    spotifyUrl: "https://open.spotify.com/episode/7lIt1DOoFL3k8w7RQo1f9k",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-evolution-of-product-ops-a-deep-dive-with-graham-reed/id1784108281?i=1000727079788",
+    topic: "career",
+    topics: ["Product Operations", "Career Transition", "Team Building", "Ways of Working", "Community", "Change Management"],
+    duration: "55 min",
+    publishedAt: "2025-04-09",
+    takeaways: [
+      "Every business has product ops as a function, even without a dedicated role",
+      "Product ops typically becomes needed around 150+ employees (startup to scale-up transition)",
+      "Soft skills matter more than experience—communication, empathy, problem-solving are key",
+      "Product ops helps teams focus on their 'primary function' by removing friction",
+      "You don't have to be a PM first, but it helps understand touch points between teams",
+      "The role is community-driven, not book-driven—very welcoming to newcomers",
+      "Look at what's not being addressed in your team—that's your product ops opportunity",
+      "Product ops supports both the teams on the ground AND leadership",
+      "No two days are the same—you need to switch between strategic and tactical thinking",
+      "Velocity is a metric we should stop pretending to care about"
+    ],
+    resourcesMentioned: [
+      { title: "Product Operations by Melissa Perri & Denise Tilles", url: "https://www.productoperations.com" },
+      { title: "HeliosX Group", url: "https://www.heliosx.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["product operations", "product ops", "HeliosX", "ways of working", "change management", "team efficiency", "product leadership", "community-driven", "anti-gatekeeping", "velocity metric"]
   }
 ];
 
