@@ -298,9 +298,6 @@ const Resources = () => {
 
             {/* Be a Guest */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 text-center">
-              <div className="w-12 h-12 bg-coral/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎤</span>
-              </div>
               <h3 className="text-xl font-heading font-bold text-white mb-3">Share Your Story</h3>
               <p className="text-white/70 mb-6">
                 Have insights to share with the PM community? We'd love to hear from you.
