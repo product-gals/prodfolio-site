@@ -54,7 +54,7 @@ const EpisodePage = () => {
     // Create and load the Buzzsprout script
     const script = document.createElement("script");
     script.id = scriptId;
-    script.src = `https://www.buzzsprout.com/${BUZZSPROUT_PODCAST_ID}/episodes/${episode.buzzsproutId}.js?container_id=${containerId}&player=small`;
+    script.src = `https://www.buzzsprout.com/${BUZZSPROUT_PODCAST_ID}/episodes/${episode.buzzsproutId}.js?container_id=${containerId}&player=large`;
     script.type = "text/javascript";
     script.charset = "utf-8";
     script.async = true;
@@ -195,51 +195,59 @@ const EpisodePage = () => {
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Left Column - Main Content */}
             <div className="lg:col-span-2 space-y-8">
-              {/* Video Player */}
-              <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black/50">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${episode.youtubeId}`}
-                  title={episode.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-
-              {/* Audio Player (Buzzsprout) */}
-              {episode.buzzsproutId && (
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Headphones className="w-5 h-5 text-primary" />
-                    <span className="text-white font-medium">Listen to Audio</span>
-                  </div>
+              {/* Main Media Player */}
+              {episode.buzzsproutId ? (
+                /* Audio Player (Buzzsprout) - Primary when available */
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                   <div id={`buzzsprout-player-${episode.buzzsproutId}`}></div>
+                </div>
+              ) : (
+                /* Video Player - Fallback when no audio */
+                <div className="aspect-video w-full rounded-2xl overflow-hidden bg-black/50">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${episode.youtubeId}`}
+                    title={episode.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               )}
 
-              {/* Subscribe Buttons */}
+              {/* Listen On Buttons */}
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://www.youtube.com/@TheProductPivot"
+                  href="https://podcasts.apple.com/podcast/the-product-pivot/id1777627935"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 bg-[#FF0000] text-white rounded-lg text-sm font-medium hover:bg-[#FF0000]/90 transition-all"
+                  className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-b from-[#F452FF] to-[#832BC1] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-all"
                 >
-                  <Youtube className="w-4 h-4" />
-                  Subscribe on YouTube
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0zm6.525 2.568c2.336 0 4.448.902 6.056 2.587 1.224 1.272 1.912 2.619 2.264 4.392l.12.672-.672.12c-.576.096-.96.168-.96.168l-.096-.576c-.312-1.512-.888-2.688-1.896-3.696-1.32-1.392-3.024-2.16-4.8-2.16-3.696 0-6.696 3-6.696 6.696 0 .432.048.864.12 1.272.144.792.408 1.536.768 2.208.528 1.008 1.272 1.872 2.16 2.544l.144.12-.024.168c-.048.216-.168.768-.216 1.008l-.048.24-.216-.144c-1.08-.768-1.944-1.776-2.544-2.928a8.238 8.238 0 01-.888-2.544 8.238 8.238 0 01-.144-1.464 8.192 8.192 0 012.399-5.809A8.254 8.254 0 0111.865 2.568zm.048 3.792c1.464 0 2.832.576 3.864 1.608a5.478 5.478 0 011.536 3.24l.048.576-.576.072c-.432.048-.768.096-.768.096l-.072-.432c-.144-1.008-.576-1.92-1.272-2.64-.816-.816-1.896-1.272-3.048-1.272-2.376 0-4.32 1.944-4.32 4.32 0 .288.024.576.072.864.12.672.36 1.296.72 1.872.456.744 1.08 1.368 1.824 1.824l.144.096-.048.168c-.072.264-.192.72-.264.984l-.048.168-.168-.096c-.888-.552-1.608-1.296-2.136-2.16a6.332 6.332 0 01-.816-2.136 6.332 6.332 0 01-.096-1.08c0-1.68.648-3.264 1.848-4.464a6.309 6.309 0 014.572-1.908zm-.024 3.72a2.61 2.61 0 012.28 1.344 2.61 2.61 0 01-.96 3.552c-.144.096-.312.168-.48.24v2.208l-.024.456c-.024.6-.048 1.2-.096 1.8-.048.456-.096.912-.168 1.368-.072.504-.36.912-.816 1.104a1.6 1.6 0 01-1.392-.048c-.408-.24-.672-.648-.744-1.128-.072-.432-.12-.864-.168-1.296-.048-.6-.072-1.2-.096-1.8l-.024-.456v-2.208a2.61 2.61 0 01-.48-.24 2.61 2.61 0 01-.96-3.552 2.61 2.61 0 012.28-1.344h.848z"/>
+                  </svg>
+                  Apple Podcasts
                 </a>
                 <a
-                  href="https://open.spotify.com/show/theproductpivot"
+                  href="https://open.spotify.com/show/4PFhvLXBioLSYnEPsyE3b3"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 bg-[#1DB954] text-white rounded-lg text-sm font-medium hover:bg-[#1DB954]/90 transition-all"
+                  className="flex items-center gap-2 px-4 py-2.5 bg-[#1DB954] text-white rounded-lg text-sm font-medium hover:bg-[#1DB954]/90 transition-all"
                 >
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
                   </svg>
                   Spotify
+                </a>
+                <a
+                  href={`https://www.youtube.com/watch?v=${episode.youtubeId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2.5 bg-[#FF0000] text-white rounded-lg text-sm font-medium hover:bg-[#FF0000]/90 transition-all"
+                >
+                  <Youtube className="w-4 h-4" />
+                  YouTube
                 </a>
               </div>
 
