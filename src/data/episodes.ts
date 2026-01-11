@@ -189,6 +189,51 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["product marketing to PM", "career transition", "customer obsession", "Nectar", "employee recognition", "first PM role", "transferable skills", "engineering relationships", "dogfooding"]
+  },
+  {
+    id: "5",
+    slug: "big-tech-myths",
+    title: "Big Tech Myths - A PM's Journey to Microsoft",
+    episodeNumber: "S1E5",
+    guest: {
+      name: "Varshine Sridharan",
+      role: "AI Product Lead",
+      company: "Microsoft Copilot & Agents",
+      location: "Boulder, CO",
+      website: "https://www.microsoft.com/copilot",
+      industry: "Big Tech & AI",
+      bio: "Varshine (Varsh) Sridharan is an AI Product Lead at Microsoft, building Gen AI products including Copilot. With nearly seven years of overall experience and four years in product management, she started her career as a solutions engineer at Microsoft in India before pivoting to PM at Twilio—then returning to Microsoft as a Senior PM. Varsh is passionate about mentoring aspiring PMs and breaking myths about what it takes to get into big tech.",
+      linkedin: "https://www.linkedin.com/in/varshine/"
+    },
+    description: "Varsh breaks myths about breaking into big tech and shares how she pivoted from solutions engineering to PM at Microsoft.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Varshine (Varsh) Sridharan, an AI Product Lead at Microsoft working on Copilot, to debunk common myths about breaking into big tech and discuss the evolving landscape of AI product management.\n\nVarsh shares her unconventional journey from solutions engineering at Microsoft India to TPM at Twilio, then pivoting internally to PM before returning to Microsoft. She emphasizes that you don't need big tech experience to get into big tech—what matters is your product building skills and customer empathy.\n\nThe conversation covers practical advice for job seekers: pivot internally rather than externally, create a niche with AI side projects, leverage LinkedIn strategically, and practice relentlessly for PM interviews. Varsh also discusses how AI is transforming product management, enabling PMs to bridge gaps between design and engineering like never before.",
+    youtubeId: "RLgCLZ-9ICU",
+    spotifyUrl: "https://open.spotify.com/episode/4RIcXJmJCKrMO17n7WJ4Jg",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-big-tech-myths-a-pms-journey-to-microsoft/id1784108281?i=1000698748381",
+    topic: "career",
+    topics: ["Big Tech", "AI Product Management", "Career Transition", "Interview Prep", "Networking", "Internal Transfers"],
+    duration: "49 min",
+    publishedAt: "2025-01-15",
+    takeaways: [
+      "You don't need big tech experience to get into big tech—product building skills matter more than company names",
+      "Pivot to PM internally within your company—it's much easier than external hiring",
+      "Get any job first, then move into PM internally rather than holding out for the perfect PM role",
+      "Create a competitive edge with AI projects and side hustles to stand out in today's market",
+      "Leverage your industry background when applying—your niche knowledge is a strength",
+      "Practice, practice, practice for PM interviews—write out answers and do mock interviews",
+      "Use LinkedIn strategically—engage with content, write posts about products, build connections",
+      "AI is the pivotal moment for PMs—learn to bridge design and engineering gaps with AI tools",
+      "Focus on the product you want to build, not just the company name",
+      "Rejection means 'not right now'—use the time to polish your skills and try again"
+    ],
+    resourcesMentioned: [
+      { title: "Cracking the PM Interview by Gayle Laakmann McDowell", url: "https://www.crackingthepminterview.com" },
+      { title: "Exponent PM Interview Prep", url: "https://www.tryexponent.com" },
+      { title: "Lenny's Newsletter", url: "https://www.lennysnewsletter.com" },
+      { title: "Lewis Lin PM Community", url: "https://www.lewis-lin.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["big tech PM", "Microsoft product manager", "AI product management", "Copilot", "breaking into big tech", "internal transfer", "PM interview prep", "career transition", "TPM to PM", "solutions engineering"]
   }
 ];
 
