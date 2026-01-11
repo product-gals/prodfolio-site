@@ -117,6 +117,13 @@
   </url>
 
   <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-8-rejections-to-google</loc>
+    <lastmod>2025-03-26</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://prodfolio.io/for-career-changers</loc>
     <lastmod>2026-01-11</lastmod>
     <priority>0.8</priority>

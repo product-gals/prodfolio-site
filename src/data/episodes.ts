@@ -409,6 +409,51 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["season recap", "hosts episode", "Prodfolio", "PM portfolio", "product operations", "fractional PM", "season two", "community tips", "career update", "behind the scenes"]
+  },
+  {
+    id: "10",
+    slug: "from-8-rejections-to-google",
+    title: "From 8 Rejections to Google",
+    episodeNumber: "S2E2",
+    guest: {
+      name: "Gabor Mayer",
+      role: "Product Manager, Commerce",
+      company: "Google",
+      location: "London, UK",
+      website: "https://www.google.com",
+      industry: "Big Tech & E-commerce",
+      bio: "Gabor Mayer is a Product Manager at Google Commerce. His PM journey started in 2007 as a programmer who kept ending up on the couch talking to customers. He worked at LogMeIn where he helped create Rescue Lens, a remote support tool used by companies like Microsoft and HP. After being rejected by Google 8 times between 2016 and 2021, he finally landed his dream role through intensive preparation and coaching. He now coaches other PMs and is writing a book on PM interviews.",
+      linkedin: "https://www.linkedin.com/in/mayergabor/"
+    },
+    description: "Gabor shares his journey of 8 Google rejections, what changed between interview one and his final offer, and why being a good PM interviewee is a separate skill.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Gabor Mayer, Product Manager at Google Commerce, to discuss his inspiring journey from 8 rejections to finally landing his dream role at Google.\n\nGabor shares how his PM journey started in 2007 when he realized he loved talking to customers more than computers. He opens up about the personal motivation behind his persistence—wanting to prove to himself that he was a 'prime talent' after years of feeling like a secondary one.\n\nThe conversation covers the critical difference between being a good product manager and being a good PM interviewee, how AI will become standard for all PMs (like mobile did), his PM interview readiness quiz, and the three ways to break into product: APM programs, internal transfers, and building something. Gabor also teases his upcoming book on PM interviews.",
+    youtubeId: "AEXiTi2yFkA",
+    spotifyUrl: "https://open.spotify.com/episode/6NahFn6O6RLFKOU8O3oxeL",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-from-8-rejections-to-google/id1784108281?i=1000725743756",
+    topic: "career",
+    topics: ["Big Tech", "Google PM", "Interview Prep", "Rejection & Persistence", "AI in PM", "FAANG"],
+    duration: "42 min",
+    publishedAt: "2025-03-26",
+    takeaways: [
+      "Being a good PM and being a good PM interviewee are two completely different skill sets",
+      "Rejection is redirection—Gabor was rejected 8 times before landing Google",
+      "AI will become part of regular PM work like mobile did before—learn it now",
+      "Don't push AI into products just because it exists—ask what problem it solves 10x better",
+      "Use AI in your daily work to understand its capabilities and spark creative ideas",
+      "Three ways to break into PM: APM programs, internal transfers, or build something",
+      "Job hunting takes 6-9 months on average in this competitive market",
+      "Treat interview prep like a video game—unlock each level one at a time",
+      "Stop caring about lagging metrics and absolute numbers—focus on user success speed",
+      "If you make your users successful, your product will be successful"
+    ],
+    resourcesMentioned: [
+      { title: "Notebook LM by Google", url: "https://notebooklm.google.com" },
+      { title: "Cracking the PM Interview", url: "https://www.crackingthepminterview.com" },
+      { title: "Decode and Conquer by Lewis Lin", url: "https://www.lewis-lin.com/decode-and-conquer" },
+      { title: "Gabor's PM Interview Readiness Quiz", url: "https://www.linkedin.com/in/mayergabor/" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["Google PM", "FAANG interview", "PM interview prep", "8 rejections", "Big Tech", "AI product management", "Notebook LM", "interview skills", "career persistence", "LogMeIn"]
   }
 ];
 
