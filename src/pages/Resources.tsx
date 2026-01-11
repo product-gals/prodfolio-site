@@ -81,7 +81,7 @@ const Resources = () => {
                   YouTube
                 </a>
                 <a
-                  href="https://open.spotify.com/show/theproductpivot"
+                  href="https://open.spotify.com/show/6V84WaWyUxMA4FGoLLZYJI"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-5 py-3 bg-[#1DB954] text-white rounded-lg font-medium hover:bg-[#1DB954]/90 transition-all hover:scale-105"

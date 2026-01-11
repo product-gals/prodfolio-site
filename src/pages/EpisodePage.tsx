@@ -230,7 +230,7 @@ const EpisodePage = () => {
                   Apple Podcasts
                 </a>
                 <a
-                  href="https://open.spotify.com/show/4PFhvLXBioLSYnEPsyE3b3"
+                  href="https://open.spotify.com/show/6V84WaWyUxMA4FGoLLZYJI"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2.5 bg-[#1DB954] text-white rounded-lg text-sm font-medium hover:bg-[#1DB954]/90 transition-all"
