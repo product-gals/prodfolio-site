@@ -1,6 +1,7 @@
 import rachelPhoto from "@/assets/rachel-kronenfeld.jpeg";
 import brandonPhoto from "@/assets/brandon-green.jpeg";
 import tylerPhoto from "@/assets/tyler-johnson.jpeg";
+import varshinePhoto from "@/assets/varshine-sridharan.png";
 
 export interface Episode {
   id: string;
@@ -213,6 +214,7 @@ export const episodes: Episode[] = [
       website: "https://www.microsoft.com/copilot",
       industry: "Big Tech & AI",
       bio: "Varshine (Varsh) Sridharan is an AI Product Lead at Microsoft, building Gen AI products including Copilot. With nearly seven years of overall experience and four years in product management, she started her career as a solutions engineer at Microsoft in India before pivoting to PM at Twilio—then returning to Microsoft as a Senior PM. Varsh is passionate about mentoring aspiring PMs and breaking myths about what it takes to get into big tech.",
+      photo: varshinePhoto,
       linkedin: "https://www.linkedin.com/in/varshine/"
     },
     description: "Varsh breaks myths about breaking into big tech and shares how she pivoted from solutions engineering to PM at Microsoft.",
