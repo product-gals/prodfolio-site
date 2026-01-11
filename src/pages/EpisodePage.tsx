@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -21,10 +22,13 @@ import {
   Tag,
   CheckCircle2,
   Youtube,
-  BookOpen
+  BookOpen,
+  Headphones
 } from "lucide-react";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
+
+const BUZZSPROUT_PODCAST_ID = "2410339";
 
 const EpisodePage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -33,6 +37,36 @@ const EpisodePage = () => {
 
   const episode = slug ? getEpisodeBySlug(slug) : undefined;
   const relatedEpisodes = slug ? getRelatedEpisodes(slug, 2) : [];
+
+  // Load Buzzsprout player script
+  useEffect(() => {
+    if (!episode?.buzzsproutId) return;
+
+    const containerId = `buzzsprout-player-${episode.buzzsproutId}`;
+    const scriptId = `buzzsprout-script-${episode.buzzsproutId}`;
+
+    // Remove any existing script for this episode
+    const existingScript = document.getElementById(scriptId);
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Create and load the Buzzsprout script
+    const script = document.createElement("script");
+    script.id = scriptId;
+    script.src = `https://www.buzzsprout.com/${BUZZSPROUT_PODCAST_ID}/episodes/${episode.buzzsproutId}.js?container_id=${containerId}&player=small`;
+    script.type = "text/javascript";
+    script.charset = "utf-8";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      const scriptToRemove = document.getElementById(scriptId);
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, [episode?.buzzsproutId]);
 
   // SEO with episode-specific metadata
   useSEO({
@@ -173,6 +207,17 @@ const EpisodePage = () => {
                   allowFullScreen
                 />
               </div>
+
+              {/* Audio Player (Buzzsprout) */}
+              {episode.buzzsproutId && (
+                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Headphones className="w-5 h-5 text-primary" />
+                    <span className="text-white font-medium">Listen to Audio</span>
+                  </div>
+                  <div id={`buzzsprout-player-${episode.buzzsproutId}`}></div>
+                </div>
+              )}
 
               {/* Subscribe Buttons */}
               <div className="flex flex-wrap gap-3">
