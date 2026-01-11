@@ -4,6 +4,7 @@ import tylerPhoto from "@/assets/tyler-johnson.jpeg";
 import varshinePhoto from "@/assets/varshine-sridharan.png";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
+import trevorPhoto from "@/assets/trevor-acy.jpeg";
 
 export interface Episode {
   id: string;
@@ -354,6 +355,7 @@ export const episodes: Episode[] = [
       website: "https://www.linkedin.com/in/trevoracy/",
       industry: "Consulting & Fractional PM",
       bio: "Trevor Acy is a fractional product leader offering part-time product management, coaching, and training for business leaders. Previously a director of marketing in Nashville, Trevor pivoted to product after reading 'Inspired' and attending an SVPG workshop—even taking a demotion to make the switch. He moved home to Mississippi to help build the tech and startup ecosystem, working with nonprofits like The Bean Path and the Mississippi Coding Academy to spread product thinking across the state.",
+      photo: trevorPhoto,
       linkedin: "https://www.linkedin.com/in/trevoracy/"
     },
     description: "Trevor unpacks fractional product management, how he pivoted from marketing, and his mission to build Mississippi's tech ecosystem.",
