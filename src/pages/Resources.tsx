@@ -1,58 +1,16 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Play, Youtube, Headphones, Users, Briefcase, Cpu, TrendingUp } from "lucide-react";
+import { Play, Youtube, Headphones, Users, Briefcase, Cpu, TrendingUp, FileText } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { episodes } from "@/data/episodes";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
 
 type TopicFilter = "all" | "hiring" | "career" | "ai" | "leadership";
-
-interface Episode {
-  id: string;
-  title: string;
-  guest: string;
-  guestRole: string;
-  description: string;
-  youtubeId: string;
-  topic: TopicFilter;
-  duration: string;
-}
-
-const episodes: Episode[] = [
-  {
-    id: "1",
-    title: "The Power of Storytelling",
-    guest: "Heidi Ram",
-    guestRole: "Product Recruiter",
-    description: "How to tell your PM story in a way that resonates with hiring managers and recruiters.",
-    youtubeId: "Zg4SOZexDUE",
-    topic: "hiring",
-    duration: "32 min"
-  },
-  {
-    id: "2",
-    title: "Why AI Should Be Boring",
-    guest: "Aaron Kesler",
-    guestRole: "VP of Product, AI",
-    description: "Breaking into product management and the mindset shift of giving yourself the title.",
-    youtubeId: "Kw9ssA8sSsI",
-    topic: "ai",
-    duration: "45 min"
-  },
-  {
-    id: "3",
-    title: "Is Product Management Evolving or Disappearing?",
-    guest: "Brody Clemmer",
-    guestRole: "Product Lead, Startup",
-    description: "The evolution of product management and what the role may look like in the next few years.",
-    youtubeId: "4ZLUXW06jbg",
-    topic: "leadership",
-    duration: "38 min"
-  }
-];
 
 const topicFilters: { value: TopicFilter; label: string; icon: React.ReactNode }[] = [
   { value: "all", label: "All Episodes", icon: <Play className="w-4 h-4" /> },
@@ -64,7 +22,6 @@ const topicFilters: { value: TopicFilter; label: string; icon: React.ReactNode }
 
 const Resources = () => {
   const [activeFilter, setActiveFilter] = useState<TopicFilter>("all");
-  const [playingEpisode, setPlayingEpisode] = useState<string | null>(null);
   const heroAnimation = useScrollAnimation();
   const episodesAnimation = useScrollAnimation();
   const hostsAnimation = useScrollAnimation();
@@ -266,54 +223,53 @@ const Resources = () => {
                 key={episode.id}
                 className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all group"
               >
-                {/* Video Thumbnail / Player */}
-                <div className="aspect-video relative bg-black/50">
-                  {playingEpisode === episode.id ? (
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      src={`https://www.youtube.com/embed/${episode.youtubeId}?autoplay=1`}
-                      title={episode.title}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
+                {/* Video Thumbnail */}
+                <Link to={`/podcast/episodes/${episode.slug}`} className="block">
+                  <div className="aspect-video relative bg-black/50">
+                    <img
+                      src={`https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
+                      alt={episode.title}
+                      className="w-full h-full object-cover"
                     />
-                  ) : (
-                    <>
-                      <img
-                        src={`https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
-                        alt={episode.title}
-                        className="w-full h-full object-cover"
-                      />
-                      <button
-                        onClick={() => setPlayingEpisode(episode.id)}
-                        className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/30 transition-colors"
-                      >
-                        <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                          <Play className="w-7 h-7 text-white ml-1" fill="white" />
-                        </div>
-                      </button>
-                      <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                        {episode.duration}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/30 transition-colors">
+                      <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                        <Play className="w-7 h-7 text-white ml-1" fill="white" />
                       </div>
-                    </>
-                  )}
-                </div>
+                    </div>
+                    <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                      {episode.duration}
+                    </div>
+                    {episode.transcript && (
+                      <div className="absolute bottom-3 left-3 bg-primary/90 text-white text-xs px-2 py-1 rounded flex items-center gap-1">
+                        <FileText className="w-3 h-3" />
+                        Transcript
+                      </div>
+                    )}
+                  </div>
+                </Link>
 
                 {/* Episode Info */}
                 <div className="p-5">
-                  <h3 className="text-lg font-heading font-bold text-white mb-2 line-clamp-2">
-                    {episode.title}
-                  </h3>
+                  <Link to={`/podcast/episodes/${episode.slug}`}>
+                    <h3 className="text-lg font-heading font-bold text-white mb-2 line-clamp-2 hover:text-primary transition-colors">
+                      {episode.title}
+                    </h3>
+                  </Link>
                   <p className="text-primary text-sm font-medium mb-2">
-                    with {episode.guest}
+                    with {episode.guest.name}
                   </p>
                   <p className="text-white/50 text-xs mb-3">
-                    {episode.guestRole}
+                    {episode.guest.role}, {episode.guest.company}
                   </p>
-                  <p className="text-white/70 text-sm line-clamp-2">
+                  <p className="text-white/70 text-sm line-clamp-2 mb-4">
                     {episode.description}
                   </p>
+                  <Link
+                    to={`/podcast/episodes/${episode.slug}`}
+                    className="text-primary text-sm font-medium hover:underline"
+                  >
+                    Listen & Read Transcript →
+                  </Link>
                 </div>
               </article>
             ))}
