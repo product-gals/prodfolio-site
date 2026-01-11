@@ -128,6 +128,8 @@ export const episodes: Episode[] = [
     description: "Get to know your hosts Santi and Meagan, their journeys into product, and how The Product Pivot podcast came to be.",
     longDescription: "In this special episode, hosts Santi and Meagan share their own pivots into product management and the story behind The Product Pivot podcast.\n\nSanti's journey took her from retail management to customer support coordinator, then QA analyst, before finally landing in product. Meagan transitioned from customer success roles into founding PM positions at early-stage startups. Both share how mentorship shaped their careers, the importance of feedback, and why customer experience backgrounds create uniquely empathetic PMs.\n\nThey also reveal how a LinkedIn connection turned into a podcast partnership, and their mission to help even just one person through sharing these conversations.",
     youtubeId: "YUNFlHuEQyg",
+    spotifyUrl: "https://open.spotify.com/episode/12qg8mul8WEQnVmVKfaHcv",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-meet-your-hosts/id1784108281?i=1000694415392",
     topic: "career",
     topics: ["Meet the Hosts", "Career Transition", "Mentorship", "Customer Experience", "Podcast Origin Story"],
     duration: "53 min",
