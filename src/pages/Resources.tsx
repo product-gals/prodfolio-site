@@ -100,6 +100,20 @@ const Resources = () => {
                   Apple Podcasts
                 </a>
               </div>
+
+              {/* Hosts - Inline */}
+              <div className="flex flex-wrap items-center gap-4 text-sm justify-center lg:justify-start">
+                <span className="text-white/50">Hosted by</span>
+                <div className="flex items-center gap-2">
+                  <img src={meaganPhoto} alt="Meagan Glenn" className="w-8 h-8 rounded-full border border-primary/40" />
+                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary">Meagan Glenn</a>
+                </div>
+                <span className="text-white/30">&</span>
+                <div className="flex items-center gap-2">
+                  <img src={santianaPhoto} alt="Santiana Brace" className="w-8 h-8 rounded-full border border-primary/40" />
+                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary">Santiana Brace</a>
+                </div>
+              </div>
             </div>
 
             {/* Right - Podcast Logo/Branding */}
@@ -117,30 +131,6 @@ const Resources = () => {
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -right-4 w-8 h-8 bg-coral rounded-full animate-pulse" />
                 <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-primary rounded-full animate-pulse delay-300" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hosts Section - Compact */}
-      <section className="py-6 px-4">
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-            <span className="text-white/60">Hosted by</span>
-            <div className="flex items-center gap-3">
-              <img src={meaganPhoto} alt="Meagan Glenn" className="w-10 h-10 rounded-full border border-primary/40" />
-              <div>
-                <span className="text-white font-medium">Meagan Glenn</span>
-                <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary ml-2 hover:underline">LinkedIn</a>
-              </div>
-            </div>
-            <span className="text-white/30">&</span>
-            <div className="flex items-center gap-3">
-              <img src={santianaPhoto} alt="Santiana Brace" className="w-10 h-10 rounded-full border border-primary/40" />
-              <div>
-                <span className="text-white font-medium">Santiana Brace</span>
-                <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary ml-2 hover:underline">LinkedIn</a>
               </div>
             </div>
           </div>
