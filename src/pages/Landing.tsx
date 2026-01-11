@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Quote, Phone } from "lucide-react";
+import { Quote, Phone, Upload, Sparkles, Share2, TrendingUp, Repeat, Users, Shield, Lock, FileCheck } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
@@ -10,13 +10,16 @@ const Landing = () => {
   const heroAnimation = useScrollAnimation();
   const statsAnimation = useScrollAnimation();
   const insightsAnimation = useScrollAnimation();
+  const audienceAnimation = useScrollAnimation();
+  const howItWorksAnimation = useScrollAnimation();
+  const confidentialityAnimation = useScrollAnimation();
   const testimonialsAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
   // Enhanced SEO for the homepage
   useSEO({
-    title: "Prodfolio — Build Your Product Portfolio in Minutes",
-    description: "Build your product portfolio to showcase how you think, what you've shipped, and the impact you've made. Trusted by PMs at top companies. Get started free - no credit card required.",
+    title: "PM Portfolio Builder | Create Your Product Manager Portfolio Free | Prodfolio",
+    description: "Build your product manager portfolio in under an hour. Showcase your PM thinking, prove your impact, and stand out to hiring managers. Free to start, no design skills needed.",
     ogTitle: "Prodfolio — Build Your Product Portfolio in Minutes",
     ogDescription: "Showcase your product thinking and prove your impact with a professional portfolio. No design skills required.",
     ogImage: "https://prodfolio.io/social-share.png",
@@ -94,14 +97,17 @@ const Landing = () => {
       <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-16 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px] relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-12">
+            <p className="text-lg md:text-xl text-white/80 mb-4 font-medium tracking-wide uppercase">
+              The portfolio platform built for product managers
+            </p>
             <h1 className="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-6 text-white">
               Show your work.
               <br />
               <span className="gradient-text">Own your impact.</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Build a portfolio that proves how you think, what you've shipped, and the impact you've made—in one focused session.
+              Build a hiring-ready portfolio that proves how you think—in under an hour, not weeks. Join the PMs who stand out.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
@@ -149,24 +155,34 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* Market Stats Bar - Horizontal glass pills */}
-      <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      {/* Market Stats Bar - Opportunity-focused messaging */}
+      <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+              Your work speaks louder than another application
+            </h2>
+            <p className="text-white/80 max-w-2xl mx-auto">
+              The PMs who stand out are the ones who show their thinking—not just list their titles.
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">24,320</div>
-              <div className="text-sm text-white/80">PM roles available</div>
+              <div className="text-3xl font-bold text-white mb-1">90%</div>
+              <div className="text-sm text-white/80">of PMs don't have portfolios</div>
+              <div className="text-xs text-white/60 mt-1">Be the memorable one</div>
             </div>
             <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">+39%</div>
-              <div className="text-sm text-white/80">Growth in entry-level roles</div>
+              <div className="text-3xl font-bold text-white mb-1">&lt;1 hour</div>
+              <div className="text-sm text-white/80">to build what sets you apart</div>
+              <div className="text-xs text-white/60 mt-1">Not weeks of tweaking</div>
             </div>
             <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">+26%</div>
-              <div className="text-sm text-white/80">Remote opportunities</div>
+              <div className="text-3xl font-bold text-white mb-1">24,000+</div>
+              <div className="text-sm text-white/80">PM roles open right now</div>
+              <div className="text-xs text-white/60 mt-1">Your next opportunity awaits</div>
             </div>
           </div>
-          <p className="text-center text-xs text-white/60 mt-4 italic">*based on data from LinkedIn</p>
         </div>
       </section>
 
@@ -226,6 +242,178 @@ const Landing = () => {
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who Prodfolio is For - Audience Segmentation */}
+      <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className="prodfolio-container max-w-[1400px]">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Who Prodfolio is for
+            </h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+              Whether you're leveling up, making a move, or breaking in—we've got you.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Active PMs */}
+            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
+                <TrendingUp className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">PMs ready to level up</h3>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                You've shipped products, led teams, driven results. Document your journey and own your narrative for that next promotion or role.
+              </p>
+              <a href="https://app.prodfolio.io/sign-up" className="text-coral font-medium text-sm hover:underline">
+                Start building →
+              </a>
+            </article>
+
+            {/* Career Changers */}
+            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
+                <Repeat className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Career changers breaking in</h3>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                You think like a PM—even without the title. Show hiring managers the product mindset they're looking for.
+              </p>
+              <a href="/for-career-changers" className="text-coral font-medium text-sm hover:underline">
+                Learn how →
+              </a>
+            </article>
+
+            {/* Hiring Managers */}
+            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
+                <Users className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Hiring managers seeking signal</h3>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                Resumes tell you what. Portfolios show you how. Encourage your candidates to share their thinking.
+              </p>
+              <a href="/for-hiring-managers" className="text-coral font-medium text-sm hover:underline">
+                See how it helps →
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works - 3 Steps */}
+      <section ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 bg-white/5 backdrop-blur-sm ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className="prodfolio-container max-w-[1400px]">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+              From blank page to portfolio in under an hour
+            </h2>
+            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
+              No design skills needed. No weeks of tweaking. Just your experience and our guided framework.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Step 1 */}
+            <div className="text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border-2 border-primary/30">
+                  <Upload className="w-10 h-10 text-primary" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  1
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-3">Import your experience</h3>
+              <p className="text-navy/70 text-sm leading-relaxed">
+                Upload your resume or connect LinkedIn. Our AI extracts your roles, achievements, and the foundation of your story.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border-2 border-primary/30">
+                  <Sparkles className="w-10 h-10 text-primary" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  2
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-3">Build with SIGNAL</h3>
+              <p className="text-navy/70 text-sm leading-relaxed">
+                Our guided framework walks you through each case study—Situation, Impact, Growth, Narrative, Artifacts, Learnings.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="text-center">
+              <div className="relative mb-6">
+                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border-2 border-primary/30">
+                  <Share2 className="w-10 h-10 text-primary" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  3
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-3">Share and stand out</h3>
+              <p className="text-navy/70 text-sm leading-relaxed">
+                Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, own your narrative.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all shadow-xl font-semibold">
+              <a href="https://app.prodfolio.io/sign-up">
+                Try it free—see how fast it is
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* NDA/Confidentiality Section */}
+      <section ref={confidentialityAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${confidentialityAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className="prodfolio-container max-w-[1400px]">
+          <div className="max-w-4xl mx-auto">
+            <div className="glass-card p-10 md:p-12">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30">
+                    <Shield className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Yes, you can showcase PM work—even under NDA
+                  </h2>
+                  <p className="text-white/80 text-lg mb-6 leading-relaxed">
+                    Most PM work is confidential. We get it. Prodfolio helps you tell compelling stories without revealing proprietary details.
+                  </p>
+                  <div className="grid sm:grid-cols-3 gap-4">
+                    <div className="flex items-start gap-3">
+                      <FileCheck className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                      <span className="text-white/90 text-sm">Focus on process and thinking, not specific metrics</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Lock className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                      <span className="text-white/90 text-sm">NDA-safe case study frameworks built in</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Shield className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                      <span className="text-white/90 text-sm">Describe scale and methodology, not client names</span>
+                    </div>
+                  </div>
+                  <p className="text-white/60 text-sm mt-6 italic">
+                    Your portfolio shows how you work—not what's under NDA.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

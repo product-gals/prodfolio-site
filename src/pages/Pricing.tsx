@@ -96,10 +96,10 @@ const Pricing = () => {
       <section className="pt-14 pb-6">
         <div className="prodfolio-container text-center">
           <h1 className="text-6xl md:text-7xl font-display font-bold mb-6 text-navy">
-            Join the Community
+            Invest in your PM career
           </h1>
           <p className="text-xl text-navy/80 mb-6">
-            Start free, stand out faster. No credit card required.
+            For less than the cost of a coffee per week, stand out in every application. Start free, no credit card required.
           </p>
           <div className="flex items-center justify-center gap-2 text-sm text-navy/70">
             <div className="flex gap-0.5">

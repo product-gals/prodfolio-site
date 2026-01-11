@@ -14,6 +14,10 @@ import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Quiz from "./pages/Quiz";
 import About from "./pages/About";
+import ForCareerChangers from "./pages/ForCareerChangers";
+import Examples from "./pages/Examples";
+import HowItWorks from "./pages/HowItWorks";
+import ForHiringManagers from "./pages/ForHiringManagers";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +46,10 @@ const App = () => {
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/for-career-changers" element={<ForCareerChangers />} />
+            <Route path="/examples" element={<Examples />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/for-hiring-managers" element={<ForHiringManagers />} />
             
             {/* 404 for all other routes */}
             <Route path="*" element={<NotFound />} />

@@ -45,20 +45,32 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <Link 
-              to="/about" 
+            <Link
+              to="/how-it-works"
               className="text-sm font-medium text-white hover:text-white/80 transition-colors"
             >
-              About
+              How It Works
             </Link>
-            <Link 
-              to="/pricing" 
+            <Link
+              to="/examples"
+              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+            >
+              Examples
+            </Link>
+            <Link
+              to="/pricing"
               className="text-sm font-medium text-white hover:text-white/80 transition-colors"
             >
               Pricing
             </Link>
-            <Link 
-              to="/podcast" 
+            <Link
+              to="/about"
+              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              to="/podcast"
               className="text-sm font-medium text-white hover:text-white/80 transition-colors"
             >
               Podcast
@@ -104,22 +116,36 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-white/20 py-3 bg-white/10 backdrop-blur-md">
           <div className="prodfolio-container space-y-2">
-            <Link 
-              to="/about" 
+            <Link
+              to="/how-it-works"
               className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
+              How It Works
             </Link>
-            <Link 
-              to="/pricing" 
+            <Link
+              to="/examples"
+              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Examples
+            </Link>
+            <Link
+              to="/pricing"
               className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Pricing
             </Link>
-            <Link 
-              to="/podcast" 
+            <Link
+              to="/about"
+              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="/podcast"
               className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
