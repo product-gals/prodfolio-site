@@ -110,6 +110,13 @@
   </url>
 
   <url>
+    <loc>https://prodfolio.io/podcast/episodes/season-two-kickoff</loc>
+    <lastmod>2025-03-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://prodfolio.io/for-career-changers</loc>
     <lastmod>2026-01-11</lastmod>
     <priority>0.8</priority>

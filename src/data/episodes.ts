@@ -366,6 +366,49 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["fractional product manager", "marketing to PM", "SVPG", "Inspired", "Mississippi tech", "product coaching", "startup ecosystem", "Delta Product Group", "career transition", "community building"]
+  },
+  {
+    id: "9",
+    slug: "season-two-kickoff",
+    title: "Season Two Kickoff and More!",
+    episodeNumber: "S2E1",
+    guest: {
+      name: "Meagan Glenn & Santiana Brace",
+      role: "Your Hosts",
+      company: "The Product Pivot",
+      location: "Remote",
+      website: "https://www.youtube.com/@TheProductPivot",
+      industry: "Product Management",
+      bio: "In this special hosts-only episode, Meagan and Santi recap Season 1, share personal updates (Meagan went fractional, Santi moved to ProdOps), tease Season 2 guests, and announce Prodfolio—their new portfolio platform for PMs. They also share community-submitted product tips and call for Season 3 guest suggestions.",
+      linkedin: "https://www.linkedin.com/company/the-product-pivot/"
+    },
+    description: "Hosts Meagan and Santi recap Season 1, share updates, tease Season 2 guests, and announce their new project: Prodfolio.",
+    longDescription: "In this special hosts-only episode, Meagan and Santi kick off Season 2 by reflecting on the incredible journey of Season 1—over 1,000 views and even being recognized in public!\n\nThey share personal career updates: Meagan pivoted to fractional product management after a layoff, while Santi transitioned into a Product Operations role. The hosts also announce Prodfolio, their passion project to help aspiring PMs build credibility through portfolio documentation.\n\nThe episode features community-submitted product tips, teasers for Season 2 guests (including a product recruiter, AI PM expert, and Big Tech PM), and a call for Season 3 suggestions. A behind-the-scenes look at the humans behind The Product Pivot.",
+    youtubeId: "MqNuW8qXzmU",
+    spotifyUrl: "https://open.spotify.com/episode/0s8UN6C159QMczcJcarJfi",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-season-2-kickoff-more/id1784108281?i=1000724599598",
+    topic: "career",
+    topics: ["Season Recap", "Hosts Update", "Prodfolio Announcement", "Community Tips", "Season 2 Preview"],
+    duration: "50 min",
+    publishedAt: "2025-03-12",
+    takeaways: [
+      "Product people don't come from product backgrounds—that's a universal truth from Season 1",
+      "Transferable skills are the heart of the PM pivot journey",
+      "Build like a dreamer, think like a CFO, test like a skeptic",
+      "If you always argue from the customer's perspective, you'll never lose an argument",
+      "Build something—anything—and iterate with user feedback",
+      "What separates senior PMs isn't just experience, it's mindset",
+      "Understand not just your users, but your team and organizational dynamics",
+      "The PM role is whatever it takes to get the product launch over the line",
+      "If your content helps one person, you did your job",
+      "Treat yourself as a product and iterate"
+    ],
+    resourcesMentioned: [
+      { title: "Prodfolio - PM Portfolio Platform", url: "https://prodfolio.io" },
+      { title: "The Product Pivot Season 1", url: "https://www.youtube.com/@TheProductPivot" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["season recap", "hosts episode", "Prodfolio", "PM portfolio", "product operations", "fractional PM", "season two", "community tips", "career update", "behind the scenes"]
   }
 ];
 
