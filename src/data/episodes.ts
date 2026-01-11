@@ -2,6 +2,7 @@ import rachelPhoto from "@/assets/rachel-kronenfeld.jpeg";
 import brandonPhoto from "@/assets/brandon-green.jpeg";
 import tylerPhoto from "@/assets/tyler-johnson.jpeg";
 import varshinePhoto from "@/assets/varshine-sridharan.png";
+import brodyPhoto from "@/assets/brody-clemmer.jpeg";
 
 export interface Episode {
   id: string;
@@ -261,6 +262,7 @@ export const episodes: Episode[] = [
       website: "https://www.littleotterhealth.com",
       industry: "Healthcare & Mental Health",
       bio: "Brody Clemmer is the Lead Product Manager at Little Otter, a pediatric mental health startup. With nearly 12 years in the product world, Brody came from an entrepreneurial background—running his own web development firm before discovering product management. He never went to college, going straight into the workforce after high school, and believes that a 'figure it out' mindset is what sets great PMs apart. Brody is passionate about coaching product managers and even helps PMs transition out of product when it's no longer the right fit.",
+      photo: brodyPhoto,
       linkedin: "https://www.linkedin.com/in/brodyclemmer/"
     },
     description: "Brody shares his provocative take on the future of product management and why the role may not exist in 10 years as we know it today.",
