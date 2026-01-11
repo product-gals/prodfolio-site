@@ -20,6 +20,7 @@ import HowItWorks from "./pages/HowItWorks";
 import ForHiringManagers from "./pages/ForHiringManagers";
 import Features from "./pages/Features";
 import EpisodePage from "./pages/EpisodePage";
+import Partners from "./pages/Partners";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => {
             <Route path="/podcast" element={<Resources />} />
             <Route path="/podcast/episodes/:slug" element={<EpisodePage />} />
             <Route path="/partnerships" element={<Partnerships />} />
+            <Route path="/partners" element={<Partners />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/quiz" element={<Quiz />} />
