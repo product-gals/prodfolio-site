@@ -50,6 +50,7 @@ export const episodes: Episode[] = [
     longDescription: "Rachel Kronenfeld's path to product management is unlike any other. After 8 years as a private investigator and Director of Services at an intelligence firm, she made the leap to PM at LifeRaft—the very software she used as a customer.\n\nIn this episode, Rachel shares how she positioned herself for a PM role without traditional product experience, the challenges of learning on the job, and why being a subject matter expert gave her unique advantages. She also discusses working closely with engineering and design teams, letting go of perfectionism in favor of iteration, and why the 'PM is dead' narrative shouldn't discourage aspiring product managers.",
     youtubeId: "qS4IxwD9dCo",
     buzzsproutId: "16604831",
+    spotifyUrl: "https://open.spotify.com/episode/3nQHBEp1IqG0PqWtQB0l0n",
     topic: "career",
     topics: ["Career Transition", "Subject Matter Expert", "Pivoting to Product", "Transferable Skills", "Cross-functional Collaboration"],
     duration: "43 min",
