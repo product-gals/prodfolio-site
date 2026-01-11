@@ -234,6 +234,49 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["big tech PM", "Microsoft product manager", "AI product management", "Copilot", "breaking into big tech", "internal transfer", "PM interview prep", "career transition", "TPM to PM", "solutions engineering"]
+  },
+  {
+    id: "6",
+    slug: "is-product-management-evolving-or-disappearing",
+    title: "Is Product Management Evolving or Disappearing",
+    episodeNumber: "S1E6",
+    guest: {
+      name: "Brody Clemmer",
+      role: "Lead Product Manager",
+      company: "Little Otter",
+      location: "Remote",
+      website: "https://www.littleotterhealth.com",
+      industry: "Healthcare & Mental Health",
+      bio: "Brody Clemmer is the Lead Product Manager at Little Otter, a pediatric mental health startup. With nearly 12 years in the product world, Brody came from an entrepreneurial background—running his own web development firm before discovering product management. He never went to college, going straight into the workforce after high school, and believes that a 'figure it out' mindset is what sets great PMs apart. Brody is passionate about coaching product managers and even helps PMs transition out of product when it's no longer the right fit.",
+      linkedin: "https://www.linkedin.com/in/brodyclemmer/"
+    },
+    description: "Brody shares his provocative take on the future of product management and why the role may not exist in 10 years as we know it today.",
+    longDescription: "In this thought-provoking episode, hosts Santi and Meagan sit down with Brody Clemmer, Lead Product Manager at Little Otter, to discuss the evolving—and potentially disappearing—nature of product management.\n\nBrody shares his unconventional path from running a bootstrapped web development firm at 22 to becoming a lead PM, all without a college degree. He challenges common assumptions about the PM career path, arguing that product management is a role, not a career, and that the title may not exist in 10 years—though product thinking will always be needed.\n\nThe conversation dives deep into the differences between startups and big tech, the importance of staying in the problem space, adaptive communication, and why Brody sometimes coaches PMs out of product management entirely. His hot take: go after another career path first, use product thinking foundations, and you'll find your way into product if it's meant to be.",
+    youtubeId: "4ZLUXW06jbg",
+    spotifyUrl: "https://open.spotify.com/episode/7jKcv6eBAXTtN5z7hLAawe",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-is-product-management-evolving-or/id1784108281?i=1000699663079",
+    topic: "career",
+    topics: ["Future of PM", "Career Philosophy", "Startup Culture", "Problem Space", "Generalist Skills", "No Degree Path"],
+    duration: "60 min",
+    publishedAt: "2025-01-29",
+    takeaways: [
+      "Intense curiosity is the most important trait for product managers—lean into it",
+      "Product management looks drastically different before Series D vs after—know the difference",
+      "Your job is to add value to the business—figure out how to do that, whatever it takes",
+      "Master adaptive communication—it's not what you say, it's what they hear",
+      "Stay in the problem space far longer than you're comfortable with before jumping to solutions",
+      "Product management may not exist as a title in 10 years, but product thinking always will",
+      "Consider going after another career path first—use product thinking foundations in any role",
+      "Product management is a role, not a career path—there's a ceiling, and that's okay",
+      "The 'figure it out' mindset separates great PMs from good ones",
+      "When evaluating startups, ask: would they still have a business without the technology?"
+    ],
+    resourcesMentioned: [
+      { title: "Generalist World Community", url: "https://www.generalist.world" },
+      { title: "Little Otter Health", url: "https://www.littleotterhealth.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["future of product management", "PM career path", "startup PM", "generalist", "problem space", "no degree PM", "entrepreneurial PM", "product thinking", "adaptive communication", "Little Otter"]
   }
 ];
 
