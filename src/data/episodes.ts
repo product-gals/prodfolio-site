@@ -5,6 +5,7 @@ import varshinePhoto from "@/assets/varshine-sridharan.png";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
+import gaborPhoto from "@/assets/gabor-cselle.jpeg";
 
 export interface Episode {
   id: string;
@@ -446,6 +447,7 @@ export const episodes: Episode[] = [
       website: "https://www.google.com",
       industry: "Big Tech & E-commerce",
       bio: "Gabor Mayer is a Product Manager at Google Commerce. His PM journey started in 2007 as a programmer who kept ending up on the couch talking to customers. He worked at LogMeIn where he helped create Rescue Lens, a remote support tool used by companies like Microsoft and HP. After being rejected by Google 8 times between 2016 and 2021, he finally landed his dream role through intensive preparation and coaching. He now coaches other PMs and is writing a book on PM interviews.",
+      photo: gaborPhoto,
       linkedin: "https://www.linkedin.com/in/mayergabor/"
     },
     description: "Gabor shares his journey of 8 Google rejections, what changed between interview one and his final offer, and why being a good PM interviewee is a separate skill.",
