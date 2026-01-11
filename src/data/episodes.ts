@@ -33,38 +33,41 @@ export interface Episode {
 export const episodes: Episode[] = [
   {
     id: "1",
-    slug: "power-of-storytelling",
-    title: "The Power of Storytelling",
+    slug: "from-pi-to-pm",
+    title: "From PI to PM",
     episodeNumber: "S1E1",
     guest: {
-      name: "Heidi Ram",
-      role: "Product Recruiter",
-      company: "Tech Recruiting Partners",
-      location: "San Francisco, CA",
-      website: "https://www.linkedin.com/in/heidiram/",
-      industry: "Recruiting & Talent Acquisition",
-      bio: "Heidi Ram is an experienced product recruiter who has helped hundreds of PMs land their dream roles at top tech companies. With over 8 years in talent acquisition, she specializes in product management and has placed candidates at companies ranging from early-stage startups to Fortune 500s. Heidi is passionate about helping PMs tell their stories in ways that resonate with hiring managers.",
-      linkedin: "https://www.linkedin.com/in/heidiram/"
+      name: "Rachel Kronenfeld",
+      role: "Product Manager",
+      company: "LifeRaft",
+      location: "Canada",
+      website: "https://www.liferaftinc.com",
+      industry: "Open Source Intelligence & Software",
+      bio: "Rachel Kronenfeld is a Product Manager at LifeRaft, a software company specializing in open source online intelligence and investigation. Before pivoting to product, Rachel spent 8 years as a licensed private investigator and served as Director of Services at a managed service firm—where she actually used LifeRaft's product as a customer. Her unique journey from subject matter expert to PM showcases how deep industry knowledge can be a powerful path into product management.",
+      linkedin: "https://www.linkedin.com/in/rachel-kronenfeld-6911426b/"
     },
-    description: "How to tell your PM story in a way that resonates with hiring managers and recruiters.",
-    longDescription: "In this episode, we sit down with Heidi Ram, an experienced product recruiter who has helped hundreds of PMs land their dream roles. Heidi shares her insider perspective on what makes candidates stand out, why storytelling is the most underrated skill in interviewing, and how to frame your experience in a way that resonates with hiring managers.\n\nWhether you're actively job searching or just want to be prepared for your next opportunity, this episode is packed with actionable advice from someone who reviews thousands of PM applications every year.",
-    youtubeId: "Zg4SOZexDUE",
-    topic: "hiring",
-    topics: ["Interviewing", "Storytelling", "Career Advice", "Job Search"],
-    duration: "32 min",
+    description: "How Rachel pivoted from private investigator to product manager by leveraging her subject matter expertise.",
+    longDescription: "Rachel Kronenfeld's path to product management is unlike any other. After 8 years as a private investigator and Director of Services at an intelligence firm, she made the leap to PM at LifeRaft—the very software she used as a customer.\n\nIn this episode, Rachel shares how she positioned herself for a PM role without traditional product experience, the challenges of learning on the job, and why being a subject matter expert gave her unique advantages. She also discusses working closely with engineering and design teams, letting go of perfectionism in favor of iteration, and why the 'PM is dead' narrative shouldn't discourage aspiring product managers.",
+    youtubeId: "qS4IxwD9dCo",
+    topic: "career",
+    topics: ["Career Transition", "Subject Matter Expert", "Pivoting to Product", "Transferable Skills", "Cross-functional Collaboration"],
+    duration: "43 min",
     publishedAt: "2024-11-15",
     takeaways: [
-      "Recruiters scan resumes for stories, not just skills—lead with narrative",
-      "The STAR method feels mechanical; use the 'dinner party test' instead",
-      "The 'present-past-future' framework for 'tell me about yourself'",
-      "Build your brand before you need it with a 'brag doc'",
-      "Candidates with portfolios jump to the top of the recruiter's list"
+      "You can pivot to PM from any background—subject matter expertise is incredibly valuable",
+      "Transferable skills from sales, CX, and marketing apply directly to product management",
+      "Product management looks different at every company—be ready to learn on the job",
+      "Building strong relationships with engineering, design, and other departments is critical",
+      "Let go of perfectionism—focus on MVPs and iterate based on customer feedback",
+      "Don't let 'PM is dead' narratives discourage you—fix your algorithm and stay positive",
+      "PMs are the glue between departments—it's hard to imagine a product company without them"
     ],
     resourcesMentioned: [
-      { title: "Prodfolio - Build Your PM Portfolio", url: "https://prodfolio.io" },
+      { title: "Cracking the PM Career by Jackie Bavaro & Gayle Laakmann McDowell", url: "https://www.crackingthepmcareer.com" },
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
-    keywords: ["product manager interview", "PM storytelling", "recruiter tips", "job search", "career advice"]
+    keywords: ["pivot to product management", "subject matter expert PM", "career transition", "private investigator to PM", "breaking into product", "transferable skills", "LifeRaft"]
   },
   {
     id: "2",
