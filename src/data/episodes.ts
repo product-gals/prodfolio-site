@@ -107,38 +107,41 @@ export const episodes: Episode[] = [
   },
   {
     id: "3",
-    slug: "product-management-evolving-or-disappearing",
-    title: "Is Product Management Evolving or Disappearing?",
+    slug: "meet-the-hosts",
+    title: "Meet the Hosts",
     episodeNumber: "S1E3",
     guest: {
-      name: "Brody Clemmer",
-      role: "Product Lead",
-      company: "Growth Startup",
-      location: "Remote / Digital Nomad",
-      website: "https://www.linkedin.com/in/brodyclemmer/",
-      industry: "SaaS / B2B Tech",
-      bio: "Brody Clemmer is a Product Lead at a fast-growing startup where he focuses on product strategy and team development. With experience spanning startups and scale-ups, Brody has a unique perspective on how the PM role is evolving in the age of AI. He's passionate about helping PMs develop systems thinking and strategic skills that will remain valuable as execution becomes commoditized.",
-      linkedin: "https://www.linkedin.com/in/brodyclemmer/"
+      name: "Santi & Meagan",
+      role: "Your Hosts",
+      company: "The Product Pivot",
+      location: "Remote",
+      website: "https://www.youtube.com/@TheProductPivot",
+      industry: "Product Management",
+      bio: "Santiana Brace is a Product Leader at LifeRaft who pivoted from retail management through customer support and QA into product. Meagan Glenn is a Fractional Product Lead who transitioned from customer success into founding PM roles. Together, they share a passion for mentoring job seekers and helping others break into product management.",
+      linkedin: "https://www.linkedin.com/in/santiana-brace/"
     },
-    description: "The evolution of product management and what the role may look like in the next few years.",
-    longDescription: "With AI automating more tasks and companies questioning the PM role, is product management evolving or facing extinction?\n\nBrody Clemmer, a Product Lead at a fast-growing startup, shares his perspective on where PM is headed. We discuss the skills that will matter in 5 years, how AI will reshape the role, and why the best PMs will become 'systems thinkers' rather than feature shippers. If you're thinking about your long-term PM career, this episode is a must-listen.",
-    youtubeId: "4ZLUXW06jbg",
-    topic: "leadership",
-    topics: ["Future of PM", "AI & Automation", "Product Leadership", "Career Development"],
-    duration: "38 min",
+    description: "Get to know your hosts Santi and Meagan, their journeys into product, and how The Product Pivot podcast came to be.",
+    longDescription: "In this special episode, hosts Santi and Meagan share their own pivots into product management and the story behind The Product Pivot podcast.\n\nSanti's journey took her from retail management to customer support coordinator, then QA analyst, before finally landing in product. Meagan transitioned from customer success roles into founding PM positions at early-stage startups. Both share how mentorship shaped their careers, the importance of feedback, and why customer experience backgrounds create uniquely empathetic PMs.\n\nThey also reveal how a LinkedIn connection turned into a podcast partnership, and their mission to help even just one person through sharing these conversations.",
+    youtubeId: "YUNFlHuEQyg",
+    topic: "career",
+    topics: ["Meet the Hosts", "Career Transition", "Mentorship", "Customer Experience", "Podcast Origin Story"],
+    duration: "53 min",
     publishedAt: "2024-12-15",
     takeaways: [
-      "The traditional PM role (PRDs, backlog management) is disappearing—but strategic PM work is growing",
-      "AI commoditizes execution; 'what to build' becomes more important than 'how to build'",
-      "Systems thinking will replace feature-focused PM work",
-      "Key future skills: customer empathy, strategic communication, technical literacy, business acumen",
-      "Focus on substance over title—the best moves are learning opportunities, not promotions"
+      "You can pivot to PM from any background—retail, customer support, music school, anything",
+      "CX and customer support experience builds crucial empathy for product management",
+      "Mentorship is essential—seek it out and pay it forward when you can",
+      "Feedback isn't a personal attack—it's someone investing time to help you improve",
+      "Data is king, but context is queen—you need both to make great product decisions",
+      "PMs are the organizational glue—they build relationships across every department",
+      "Every day is a school day—continuous learning never stops in product"
     ],
     resourcesMentioned: [
-      { title: "Prodfolio - Build Your PM Portfolio", url: "https://prodfolio.io" },
-      { title: "The Product Pivot on LinkedIn", url: "https://www.linkedin.com/company/prodfoliohq/" }
+      { title: "The Product Pivot on YouTube", url: "https://www.youtube.com/@TheProductPivot" },
+      { title: "Santi on LinkedIn", url: "https://www.linkedin.com/in/santiana-brace/" },
+      { title: "Meagan on LinkedIn", url: "https://www.linkedin.com/in/meagan-glenn/" }
     ],
-    keywords: ["future of product management", "PM career", "AI and product management", "product leadership", "PM skills"]
+    keywords: ["product pivot hosts", "Santi Brace", "Meagan Glenn", "pivot to product management", "CX to PM", "mentorship", "product management podcast", "career transition"]
   }
 ];
 
