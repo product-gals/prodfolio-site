@@ -321,6 +321,51 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["journalism to PM", "CNBC product manager", "career pivot", "self-advocacy", "storytelling", "media industry PM", "rejection", "Mel Robbins", "transferable skills", "retail investors"]
+  },
+  {
+    id: "8",
+    slug: "fractional-pm-unpacked",
+    title: "Fractional PM Unpacked",
+    episodeNumber: "S1E8",
+    guest: {
+      name: "Trevor Acy",
+      role: "Fractional Product Leader",
+      company: "Delta Product Group",
+      location: "Mississippi",
+      website: "https://www.linkedin.com/in/trevoracy/",
+      industry: "Consulting & Fractional PM",
+      bio: "Trevor Acy is a fractional product leader offering part-time product management, coaching, and training for business leaders. Previously a director of marketing in Nashville, Trevor pivoted to product after reading 'Inspired' and attending an SVPG workshop—even taking a demotion to make the switch. He moved home to Mississippi to help build the tech and startup ecosystem, working with nonprofits like The Bean Path and the Mississippi Coding Academy to spread product thinking across the state.",
+      linkedin: "https://www.linkedin.com/in/trevoracy/"
+    },
+    description: "Trevor unpacks fractional product management, how he pivoted from marketing, and his mission to build Mississippi's tech ecosystem.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Trevor Acy, a fractional product leader at Delta Product Group, to explore the world of fractional product management and his journey from marketing director to PM.\n\nTrevor shares how reading 'Inspired' and attending an SVPG workshop transformed his thinking—he told his CTO, 'I'm tired of telling people our product is good. I want to make our product better.' He spent a year applying product principles in his marketing role before taking a demotion to become an IC product manager.\n\nThe conversation covers practical advice for aspiring PMs (just get the reps in), the benefits of fractional work for companies, why you should do unscalable things for as long as possible, and Trevor's passion project: building Mississippi's tech and startup ecosystem through education and mentorship.",
+    youtubeId: "EBVblJFDbUQ",
+    spotifyUrl: "https://open.spotify.com/episode/1XVDKaegavbjGnB4ZzUQFB",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-fractional-pm-unpacked/id1784108281?i=1000701729849",
+    topic: "career",
+    topics: ["Fractional PM", "Marketing to PM", "Startup Ecosystem", "Coaching & Training", "Career Transition", "Community Building"],
+    duration: "60 min",
+    publishedAt: "2025-02-26",
+    takeaways: [
+      "Apply product principles in your current role before transitioning—treat your projects as products",
+      "Getting the reps in practicing the discipline is what makes you a better PM",
+      "You can still think product-first even if your company is a feature factory",
+      "Be okay not knowing and being an amateur again—asking dumb questions is a PM superpower",
+      "Sneak in customer-centered work alongside feature requests, then show the results",
+      "Do unscalable things for as long as possible—you'll learn where the real problems are",
+      "Great PMs hold strong opinions while being totally open to counter information",
+      "Fractional work opportunities come from people you know, not cold outreach",
+      "Get comfortable promoting yourself—it doesn't come naturally but it's essential",
+      "Find existing bright spots in your community and offer to help—opportunities follow"
+    ],
+    resourcesMentioned: [
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
+      { title: "Silicon Valley Product Group (SVPG)", url: "https://www.svpg.com" },
+      { title: "The Bean Path (Jackson, MS)", url: "https://thebeanpath.org" },
+      { title: "Mississippi Coding Academy", url: "https://mscoding.org" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["fractional product manager", "marketing to PM", "SVPG", "Inspired", "Mississippi tech", "product coaching", "startup ecosystem", "Delta Product Group", "career transition", "community building"]
   }
 ];
 
