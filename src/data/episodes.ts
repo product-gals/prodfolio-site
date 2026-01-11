@@ -7,6 +7,7 @@ import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
 import gaborPhoto from "@/assets/gabor-cselle.jpeg";
 import grahamPhoto from "@/assets/graham-reed.jpeg";
+import heidiPhoto from "@/assets/heidi-ram.jpeg";
 
 export interface Episode {
   id: string;
@@ -540,6 +541,7 @@ export const episodes: Episode[] = [
       website: "https://theproductrecruiter.com",
       industry: "Recruiting & Talent Acquisition",
       bio: "Heidi Ram is a Practice Lead at The Product Recruiter, a Toronto-based firm that helps technology companies make tough hiring decisions in product, UX, and product marketing. With 26+ years in recruiting, she works with CEOs, founders, and chief product officers to find top PM talent across North America. Heidi is passionate about helping candidates tell their story effectively and advocates for being strategic and intentional about career moves.",
+      photo: heidiPhoto,
       linkedin: "https://www.linkedin.com/in/heidiram/"
     },
     description: "Heidi shares recruiter insights on storytelling, standing out in hiring, and why your narrative matters more than your frameworks.",
