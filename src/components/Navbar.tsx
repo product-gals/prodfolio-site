@@ -75,6 +75,12 @@ const Navbar = () => {
             >
               Podcast
             </Link>
+            <Link
+              to="/partners"
+              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+            >
+              Partners
+            </Link>
             <div className="flex items-center space-x-2 ml-4">
               <Button 
                 asChild 
@@ -150,6 +156,13 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Podcast
+            </Link>
+            <Link
+              to="/partners"
+              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Partners
             </Link>
             <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
               <a href="https://app.prodfolio.io/login">Log In</a>
