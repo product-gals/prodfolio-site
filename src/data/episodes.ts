@@ -168,6 +168,8 @@ export const episodes: Episode[] = [
     description: "How TJ leveraged his product marketing background and customer obsession to land his first PM role at Nectar.",
     longDescription: "In this episode, hosts Santi and Meagan talk with Tyler (TJ) Johnson about his recent pivot from product marketing to product management at Nectar, an employee recognition and rewards platform.\n\nTJ shares how his customer-facing background in marketing gave him invaluable skills for PM work, why building strong relationships with engineers is critical, and the importance of 'wearing the hat before you have the position.' He also discusses the value of dogfooding your own product, how good leaders create more leaders (not followers), and why Marty Cagan's 'Inspired' shaped his understanding of product management.\n\nWith a unique backstory—the founders are his childhood best friends—TJ offers honest insights into navigating a PM role at a company where relationships run deep.",
     youtubeId: "LDeP5TyASDc",
+    spotifyUrl: "https://open.spotify.com/episode/0RR7hCiFRtdFxkrYUH72yn",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-from-marketing-to-product-management/id1784108281?i=1000697647289",
     topic: "career",
     topics: ["Career Transition", "Product Marketing to PM", "Customer Obsession", "Engineering Relationships", "Startup Culture"],
     duration: "48 min",
