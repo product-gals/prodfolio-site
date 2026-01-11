@@ -219,7 +219,7 @@ const EpisodePage = () => {
               {/* Listen On Buttons */}
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://podcasts.apple.com/podcast/the-product-pivot/id1777627935"
+                  href="https://podcasts.apple.com/sk/podcast/the-product-pivot-stories-of-career-shifts/id1784108281"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-b from-[#F452FF] to-[#832BC1] text-white rounded-lg text-sm font-medium hover:opacity-90 transition-all"

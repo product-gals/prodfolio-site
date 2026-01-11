@@ -92,7 +92,7 @@ const Resources = () => {
                   Spotify
                 </a>
                 <a
-                  href="https://podcasts.apple.com/podcast/the-product-pivot"
+                  href="https://podcasts.apple.com/sk/podcast/the-product-pivot-stories-of-career-shifts/id1784108281"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-5 py-3 bg-gradient-to-b from-[#F452FF] to-[#832BC1] text-white rounded-lg font-medium hover:opacity-90 transition-all hover:scale-105"
