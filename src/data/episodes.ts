@@ -142,6 +142,44 @@ export const episodes: Episode[] = [
       { title: "Meagan on LinkedIn", url: "https://www.linkedin.com/in/meagan-glenn/" }
     ],
     keywords: ["product pivot hosts", "Santi Brace", "Meagan Glenn", "pivot to product management", "CX to PM", "mentorship", "product management podcast", "career transition"]
+  },
+  {
+    id: "4",
+    slug: "from-product-marketing-to-pm",
+    title: "From Product Marketing to PM",
+    episodeNumber: "S1E4",
+    guest: {
+      name: "Tyler (TJ) Johnson",
+      role: "Product Manager",
+      company: "Nectar",
+      location: "Remote",
+      website: "https://nectarhr.com",
+      industry: "Employee Recognition & Rewards",
+      bio: "Tyler (TJ) Johnson is a Product Manager at Nectar, an employee recognition and rewards platform. He pivoted from customer marketing and product marketing into his first PM role in April 2024. TJ's journey is unique—Nectar's founders have been his best friends since age 3, and he joined the company after experiencing firsthand how customer obsession and relationship-building translate directly into product management success.",
+      linkedin: "https://www.linkedin.com/in/tylerbjohnson24/"
+    },
+    description: "How TJ leveraged his product marketing background and customer obsession to land his first PM role at Nectar.",
+    longDescription: "In this episode, hosts Santi and Meagan talk with Tyler (TJ) Johnson about his recent pivot from product marketing to product management at Nectar, an employee recognition and rewards platform.\n\nTJ shares how his customer-facing background in marketing gave him invaluable skills for PM work, why building strong relationships with engineers is critical, and the importance of 'wearing the hat before you have the position.' He also discusses the value of dogfooding your own product, how good leaders create more leaders (not followers), and why Marty Cagan's 'Inspired' shaped his understanding of product management.\n\nWith a unique backstory—the founders are his childhood best friends—TJ offers honest insights into navigating a PM role at a company where relationships run deep.",
+    youtubeId: "LDeP5TyASDc",
+    topic: "career",
+    topics: ["Career Transition", "Product Marketing to PM", "Customer Obsession", "Engineering Relationships", "Startup Culture"],
+    duration: "48 min",
+    publishedAt: "2025-01-01",
+    takeaways: [
+      "Customer obsession from marketing roles translates directly to PM success",
+      "Wear the hat before you have the position—start doing PM work before the title",
+      "Good leaders create more leaders, not followers",
+      "Building strong relationships with engineers turns them from mercenaries into missionaries",
+      "Dogfooding your own product gives you invaluable customer empathy",
+      "Your customer-facing background is a superpower, not a limitation",
+      "Transferable skills matter more than traditional PM experience"
+    ],
+    resourcesMentioned: [
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
+      { title: "Nectar HR", url: "https://nectarhr.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["product marketing to PM", "career transition", "customer obsession", "Nectar", "employee recognition", "first PM role", "transferable skills", "engineering relationships", "dogfooding"]
   }
 ];
 
