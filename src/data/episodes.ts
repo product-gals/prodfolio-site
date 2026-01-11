@@ -1,4 +1,5 @@
 import rachelPhoto from "@/assets/rachel-kronenfeld.jpeg";
+import brandonPhoto from "@/assets/brandon-green.jpeg";
 
 export interface Episode {
   id: string;
@@ -88,6 +89,7 @@ export const episodes: Episode[] = [
       website: "https://buffer.com",
       industry: "Social Media & SaaS",
       bio: "Brandon Lucas Green is a Staff Product Manager at Buffer, the popular social media management platform. His unconventional journey from music school to tech showcases how creativity and adaptability can be powerful assets in product management. Brandon has navigated various work environments throughout his career and brings a unique perspective on the evolving nature of product management and what it takes to thrive in today's competitive PM landscape.",
+      photo: brandonPhoto,
       linkedin: "https://www.linkedin.com/in/brandonlgreen/"
     },
     description: "Brandon's unconventional journey from music school to Staff PM at Buffer, and how creativity shapes his approach to product.",
