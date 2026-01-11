@@ -1,5 +1,6 @@
 import rachelPhoto from "@/assets/rachel-kronenfeld.jpeg";
 import brandonPhoto from "@/assets/brandon-green.jpeg";
+import tylerPhoto from "@/assets/tyler-johnson.jpeg";
 
 export interface Episode {
   id: string;
@@ -170,6 +171,7 @@ export const episodes: Episode[] = [
       website: "https://nectarhr.com",
       industry: "Employee Recognition & Rewards",
       bio: "Tyler (TJ) Johnson is a Product Manager at Nectar, an employee recognition and rewards platform. He pivoted from customer marketing and product marketing into his first PM role in April 2024. TJ's journey is unique—Nectar's founders have been his best friends since age 3, and he joined the company after experiencing firsthand how customer obsession and relationship-building translate directly into product management success.",
+      photo: tylerPhoto,
       linkedin: "https://www.linkedin.com/in/tylerbjohnson24/"
     },
     description: "How TJ leveraged his product marketing background and customer obsession to land his first PM role at Nectar.",
