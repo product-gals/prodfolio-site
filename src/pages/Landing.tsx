@@ -479,6 +479,22 @@ const Landing = () => {
                       </blockquote>
                     </div>
                   </CarouselItem>
+
+                  {/* Testimonial 4 */}
+                  <CarouselItem>
+                    <div className="py-4 px-2">
+                      <blockquote className="text-center space-y-6">
+                        <p className="text-lg md:text-xl text-[#484689] leading-relaxed max-w-3xl mx-auto">
+                          "The product is really intuitive and has an amazing structure to help you along the setup process. I can see why it supports hiring managers, helps distinguish PM candidates, and improves the efficiency of the hiring process. As a candidate, I'm hoping it will also help me stand out in a sea of CVs."
+                        </p>
+                        <footer className="flex items-center justify-center gap-4 text-sm">
+                          <cite className="font-semibold text-[#100D22] not-italic">Evelyn</cite>
+                          <div className="w-px h-8 bg-[#100D22]/30"></div>
+                          <div className="text-[#484689]">Product Manager</div>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </CarouselItem>
                 </CarouselContent>
                 
                 {/* Navigation */}
