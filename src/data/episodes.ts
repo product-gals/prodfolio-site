@@ -9,6 +9,7 @@ import gaborPhoto from "@/assets/gabor-cselle.jpeg";
 import grahamPhoto from "@/assets/graham-reed.jpeg";
 import heidiPhoto from "@/assets/heidi-ram.jpeg";
 import nickPhoto from "@/assets/nick-photo.jpeg";
+import eddiePhoto from "@/assets/eddie-rosenfeld.jpeg";
 
 export interface Episode {
   id: string;
@@ -633,6 +634,7 @@ export const episodes: Episode[] = [
       website: "https://lavender.ai",
       industry: "AI & Sales Tech",
       bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional—he studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
+      photo: eddiePhoto,
       linkedin: "https://www.linkedin.com/in/eduardorosenfeld/"
     },
     description: "Eddie shares his unconventional journey from philosophy major to VP of Applied AI, and why attitude matters more than experience in startups.",
