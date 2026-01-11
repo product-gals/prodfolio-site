@@ -584,6 +584,49 @@ export const episodes: Episode[] = [
       { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
     keywords: ["incubator to PM", "startup ecosystem", "AI product manager", "side hustle", "customer discovery", "transferable skills", "portfolio", "storytelling", "done is better than perfect", "vanity metrics", "over-solutioning", "Dash Social", "Halifax"]
+  },
+  {
+    id: "14",
+    slug: "power-of-saying-yes",
+    title: "The Power of Saying Yes (and Figuring It Out Later)",
+    episodeNumber: "S2E6",
+    guest: {
+      name: "Eduardo (Eddie) Rosenfeld",
+      role: "VP, Applied AI",
+      company: "Lavender",
+      location: "Remote",
+      website: "https://lavender.ai",
+      industry: "AI & Sales Tech",
+      bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional—he studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
+      linkedin: "https://www.linkedin.com/in/eduardorosenfeld/"
+    },
+    description: "Eddie shares his unconventional journey from philosophy major to VP of Applied AI, and why attitude matters more than experience in startups.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Eddie Rosenfeld, VP of Applied AI at Lavender.ai, to explore his wildly unconventional path into tech and startup life.\n\nEddie shares how he went from studying philosophy and writing comedy scripts to moving across the world for a blockchain project, eventually landing at Lavender by learning a program overnight to impress the CTO. He breaks down why attitude trumps experience, how to prioritize when everything is on fire, and the difference between band-aid fixes and surgery in startup product work.\n\nThe conversation covers practical startup wisdom: if something takes under 5 minutes just do it, build product for customers not for cool ideas, reach out directly when job hunting, and remember that your network is your net worth. Eddie also delivers a memorable reminder: it's less about experience and more about being curious and willing to grind.",
+    youtubeId: "G-OiJXM2fyA",
+    spotifyUrl: "https://open.spotify.com/episode/6loW2Y9XzTZYvoA4smc6sE",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-the-power-of-saying-yes-and/id1784108281?i=1000730849013",
+    topic: "career",
+    topics: ["Startup Culture", "Career Transition", "Product Ops", "Customer Feedback", "Hustle Mindset", "AI"],
+    duration: "65 min",
+    publishedAt: "2025-05-21",
+    takeaways: [
+      "It's less about experience and more about attitude—be curious and willing to grind",
+      "If you can do something in under 5 minutes, just do it—reduces your mental backlog",
+      "Startups are always choosing between band-aids and surgery—be utilitarian about fixes",
+      "Product ops is about communicating customer feedback clearly to your team",
+      "Build product for your customers, not because you think it would be cool",
+      "When applying to startups, reach out directly to teams—don't apply into the void",
+      "Your network is your net worth—nurture relationships with everyone you meet",
+      "Don't keep to yourself when new—ask questions without feeling embarrassed",
+      "Burnout is real—have outlets outside of work to decompress",
+      "Embrace feedback as a gift—it helps you become a better person and teammate"
+    ],
+    resourcesMentioned: [
+      { title: "Lavender.ai", url: "https://lavender.ai" },
+      { title: "Superhuman (Email Tool)", url: "https://superhuman.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+    ],
+    keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
   }
 ];
 
