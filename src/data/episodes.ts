@@ -71,38 +71,39 @@ export const episodes: Episode[] = [
   },
   {
     id: "2",
-    slug: "why-ai-should-be-boring",
-    title: "Why AI Should Be Boring",
+    slug: "from-music-school-to-staff-pm",
+    title: "From Music School to Staff PM",
     episodeNumber: "S1E2",
     guest: {
-      name: "Aaron Kesler",
-      role: "VP of Product",
-      company: "AI Startup",
-      location: "Austin, TX",
-      website: "https://www.linkedin.com/in/aaronkesler/",
-      industry: "AI & Machine Learning",
-      bio: "Aaron Kesler is VP of Product at an AI startup where he leads product strategy for enterprise automation solutions. His unconventional path from sales to product leadership gives him a unique perspective on breaking into PM and building products that solve real problems. Aaron is known for his contrarian take that the best AI products are 'boring'—they solve mundane problems really well without chasing hype.",
-      linkedin: "https://www.linkedin.com/in/aaronkesler/",
-      twitter: "https://twitter.com/aaronkesler"
+      name: "Brandon Lucas Green",
+      role: "Staff Product Manager",
+      company: "Buffer",
+      location: "Boston, MA (Remote)",
+      website: "https://buffer.com",
+      industry: "Social Media & SaaS",
+      bio: "Brandon Lucas Green is a Staff Product Manager at Buffer, the popular social media management platform. His unconventional journey from music school to tech showcases how creativity and adaptability can be powerful assets in product management. Brandon has navigated various work environments throughout his career and brings a unique perspective on the evolving nature of product management and what it takes to thrive in today's competitive PM landscape.",
+      linkedin: "https://www.linkedin.com/in/brandonlgreen/"
     },
-    description: "Breaking into product management and the mindset shift of giving yourself the title.",
-    longDescription: "Aaron Kesler, VP of Product at an AI startup, joins us to discuss his unconventional path into product management and his hot take on AI product development.\n\nAaron argues that the best AI products are 'boring'—they solve real problems without the hype. We also dive into his advice for aspiring PMs: sometimes you need to give yourself the title before anyone else will. This episode is essential listening for anyone thinking about AI PM roles or transitioning into product from another function.",
-    youtubeId: "Kw9ssA8sSsI",
-    topic: "ai",
-    topics: ["AI Product Management", "Career Transition", "Breaking into PM", "Product Strategy"],
+    description: "Brandon's unconventional journey from music school to Staff PM at Buffer, and how creativity shapes his approach to product.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Brandon Lucas Green, a Staff Product Manager at Buffer, to explore his unconventional journey from music school to tech and how he navigated the world of product management.\n\nBrandon shares pivotal moments in his career, the challenges he faced, and how adaptability has shaped his success in different work environments. He also discusses the role of creativity in product management, offers insights into today's job market for PMs, and emphasizes the importance of self-reflection for career growth.\n\nFrom the evolving nature of product management to practical advice for aspiring PMs, this episode is packed with valuable takeaways.",
+    youtubeId: "5zn1aQwMo8E",
+    topic: "career",
+    topics: ["Career Transition", "Creativity in PM", "Job Market Insights", "Self-Reflection", "Remote Work"],
     duration: "45 min",
     publishedAt: "2024-12-01",
     takeaways: [
-      "The best AI products are 'boring'—they solve mundane problems exceptionally well",
-      "Don't chase AI capabilities; focus on problems AI can solve better than alternatives",
-      "Give yourself the PM title by doing PM work before you have the role",
-      "Sales experience translates well to PM: customer empathy and communication",
-      "Chase learning environments, not titles—the career follows growth"
+      "Unconventional backgrounds like music can bring unique creativity to product management",
+      "Adaptability is essential for success across different work environments and company cultures",
+      "Self-reflection is a critical skill for continuous career growth as a PM",
+      "The PM job market is evolving—understanding current trends helps you position yourself",
+      "Creativity isn't just for designers—it's a core PM skill for problem-solving",
+      "Pivotal career moments often come from unexpected challenges and how you respond to them"
     ],
     resourcesMentioned: [
-      { title: "Prodfolio - Build Your PM Portfolio", url: "https://prodfolio.io" }
+      { title: "Buffer", url: "https://buffer.com" },
+      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
     ],
-    keywords: ["AI product management", "career transition", "VP of Product", "AI PM", "breaking into PM"]
+    keywords: ["staff product manager", "Buffer", "career transition", "music to tech", "creativity in product management", "PM job market", "remote product manager", "career growth"]
   },
   {
     id: "3",
