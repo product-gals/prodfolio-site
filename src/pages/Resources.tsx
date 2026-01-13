@@ -141,7 +141,7 @@ const Resources = () => {
       <section className="py-8 px-4">
         <div className="prodfolio-container max-w-[800px] mx-auto">
           <div className="bg-gradient-to-r from-coral to-primary rounded-2xl p-6 md:p-8 text-center">
-            <p className="text-white/90 text-sm font-medium uppercase tracking-wider mb-2">Coming Spring 2025</p>
+            <p className="text-white/90 text-sm font-medium uppercase tracking-wider mb-2">Coming Spring 2026</p>
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
               Season 3
             </h2>
