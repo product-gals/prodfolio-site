@@ -10,6 +10,7 @@ import varshineThumbnail from "@/assets/varshine-episode-thumbnail.jpg";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
 import brodyThumbnail from "@/assets/brody-episode-thumbnail.jpg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
+import olympiaThumbnail from "@/assets/olympia-episode-thumbnail.jpg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
 import gaborPhoto from "@/assets/gabor-cselle.jpeg";
 import grahamPhoto from "@/assets/graham-reed.jpeg";
@@ -333,6 +334,7 @@ export const episodes: Episode[] = [
     },
     description: "Olympia shares her journey from journalism school to building products for investors at CNBC, and why storytelling is a PM superpower.",
     longDescription: "In this episode, hosts Santi and Meagan chat with Olympia Bardis, Senior Product Manager at CNBC, about her unconventional pivot from journalism to product management.\n\nOlympia shares how she graduated from journalism school wanting to be an on-air reporter, quickly realized it wasn't for her, and spent five and a half years figuring out her next move. With encouragement from an IT friend and inspiration from Mel Robbins' 5 Second Rule, she hustled her way into a hybrid content/product role at Fox before transitioning to CNBC.\n\nThe conversation covers the power of self-advocacy, treating yourself as a product, embracing rejection as redirection, and why the 'gift of yap' (storytelling) is crucial for product managers. Olympia also shares her hot take on whether the PM industry's trend toward hyper-specialization helps or hinders the profession.",
+    thumbnail: olympiaThumbnail,
     youtubeId: "pUYPr4m22g4",
     buzzsproutId: "16858395",
     spotifyUrl: "https://open.spotify.com/episode/6VNFMBEiE1IvAYv2tErSE7",
