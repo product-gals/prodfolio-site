@@ -1,6 +1,7 @@
 import rachelPhoto from "@/assets/rachel-kronenfeld.jpeg";
 import rachelThumbnail from "@/assets/rachel-episode-thumbnail.jpg";
 import brandonPhoto from "@/assets/brandon-green.jpeg";
+import brandonThumbnail from "@/assets/brandon-episode-thumbnail.jpg";
 import tylerPhoto from "@/assets/tyler-johnson.jpeg";
 import varshinePhoto from "@/assets/varshine-sridharan.png";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
@@ -108,6 +109,7 @@ export const episodes: Episode[] = [
     },
     description: "Brandon's unconventional journey from music school to Staff PM at Buffer, and how creativity shapes his approach to product.",
     longDescription: "In this episode, hosts Santi and Meagan sit down with Brandon Lucas Green, a Staff Product Manager at Buffer, to explore his unconventional journey from music school to tech and how he navigated the world of product management.\n\nBrandon shares pivotal moments in his career, the challenges he faced, and how adaptability has shaped his success in different work environments. He also discusses the role of creativity in product management, offers insights into today's job market for PMs, and emphasizes the importance of self-reflection for career growth.\n\nFrom the evolving nature of product management to practical advice for aspiring PMs, this episode is packed with valuable takeaways.",
+    thumbnail: brandonThumbnail,
     youtubeId: "5zn1aQwMo8E",
     buzzsproutId: "16600311",
     spotifyUrl: "https://open.spotify.com/episode/5JREScrUH29f8unFQlHFVG",
