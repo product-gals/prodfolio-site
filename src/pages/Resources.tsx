@@ -194,7 +194,7 @@ const Resources = () => {
                 <Link to={`/podcast/episodes/${episode.slug}`} className="block">
                   <div className="aspect-video relative bg-black/50 overflow-hidden">
                     <img
-                      src={`https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
+                      src={episode.thumbnail || `https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`}
                       alt={episode.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

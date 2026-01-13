@@ -516,7 +516,7 @@ const EpisodePage = () => {
                 >
                   <div className="aspect-video relative bg-black/50 overflow-hidden">
                     <img
-                      src={`https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                      src={ep.thumbnail || `https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
                       alt={ep.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
