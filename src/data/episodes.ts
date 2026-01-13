@@ -12,6 +12,7 @@ import brodyThumbnail from "@/assets/brody-episode-thumbnail.jpg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 import olympiaThumbnail from "@/assets/olympia-episode-thumbnail.jpg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
+import trevorThumbnail from "@/assets/trevor-episode-thumbnail.jpg";
 import gaborPhoto from "@/assets/gabor-cselle.jpeg";
 import grahamPhoto from "@/assets/graham-reed.jpeg";
 import heidiPhoto from "@/assets/heidi-ram.jpeg";
@@ -381,6 +382,7 @@ export const episodes: Episode[] = [
     },
     description: "Trevor unpacks fractional product management, how he pivoted from marketing, and his mission to build Mississippi's tech ecosystem.",
     longDescription: "In this episode, hosts Santi and Meagan sit down with Trevor Acy, a fractional product leader at Delta Product Group, to explore the world of fractional product management and his journey from marketing director to PM.\n\nTrevor shares how reading 'Inspired' and attending an SVPG workshop transformed his thinking—he told his CTO, 'I'm tired of telling people our product is good. I want to make our product better.' He spent a year applying product principles in his marketing role before taking a demotion to become an IC product manager.\n\nThe conversation covers practical advice for aspiring PMs (just get the reps in), the benefits of fractional work for companies, why you should do unscalable things for as long as possible, and Trevor's passion project: building Mississippi's tech and startup ecosystem through education and mentorship.",
+    thumbnail: trevorThumbnail,
     youtubeId: "EBVblJFDbUQ",
     buzzsproutId: "16895298",
     spotifyUrl: "https://open.spotify.com/episode/1XVDKaegavbjGnB4ZzUQFB",
