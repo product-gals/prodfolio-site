@@ -10,6 +10,7 @@ import grahamPhoto from "@/assets/graham-reed.jpeg";
 import heidiPhoto from "@/assets/heidi-ram.jpeg";
 import nickPhoto from "@/assets/nick-photo.jpeg";
 import eddiePhoto from "@/assets/eddie-rosenfeld.jpeg";
+import aaronPhoto from "@/assets/aaron-kesler.png";
 
 export interface Episode {
   id: string;
@@ -679,7 +680,8 @@ export const episodes: Episode[] = [
       website: "https://rozie.ai",
       industry: "AI & Conference Tech",
       bio: "Aaron Kesler is VP of Product at Rozie AI after 12 years in product management. His journey started founding a company in college, then working at Starbucks after quitting tech—where his regulars became his mentors and connected him to his next role. He moved through technical support, then took over as PM when the previous one left. He went on to Blue Cross and SnapLogic, where he led AI product management with two of the company's most successful launches. Aaron is also writing a book on Lean Pub about pivoting into product management.",
-      linkedin: "https://www.linkedin.com/in/aaron-kesler/"
+      linkedin: "https://www.linkedin.com/in/aaron-kesler/",
+      photo: aaronPhoto
     },
     description: "Aaron explains why AI should become boring, how vibe coding changes everything, and why AI PM skills are just traditional PM skills focused on mundane problems.",
     longDescription: "In this episode, hosts Santi and Meagan sit down with Aaron Kesler, VP of Product at Rozie AI, to discuss why the best AI is ultimately boring AI—and why that's exactly what we should want.\n\nAaron shares his unconventional journey from founding a startup in college to working at Starbucks (where his regulars became mentors who landed him his next role), eventually becoming an AI product leader. He breaks down why AI PM skills are really just traditional PM skills focused on automating mundane tasks, why companies building 'AI for AI's sake' will fail fast, and how vibe coding is about to disrupt everyone.\n\nThe conversation covers practical AI adoption advice: start with ChatGPT and just talk to it, focus on tasks you hate doing, and embrace experimentation. Aaron also shares insights from his upcoming book on pivoting into PM, including controversial advice: if you're doing the role, give yourself the title.",
