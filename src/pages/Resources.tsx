@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Play, Youtube, Headphones, Users, Briefcase, Cpu, TrendingUp } from "lucide-react";
+import { Play, Youtube, Headphones, Clock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
@@ -10,18 +10,17 @@ import { episodes } from "@/data/episodes";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
 
-type TopicFilter = "all" | "hiring" | "career" | "ai" | "leadership";
+type SeasonFilter = "all" | "s1" | "s2" | "s3";
 
-const topicFilters: { value: TopicFilter; label: string; icon: React.ReactNode }[] = [
-  { value: "all", label: "All Episodes", icon: <Play className="w-4 h-4" /> },
-  { value: "hiring", label: "Hiring & Recruiting", icon: <Users className="w-4 h-4" /> },
-  { value: "career", label: "Career Transitions", icon: <Briefcase className="w-4 h-4" /> },
-  { value: "ai", label: "AI & Tech", icon: <Cpu className="w-4 h-4" /> },
-  { value: "leadership", label: "Leadership", icon: <TrendingUp className="w-4 h-4" /> }
+const seasonFilters: { value: SeasonFilter; label: string; comingSoon?: boolean }[] = [
+  { value: "all", label: "All Episodes" },
+  { value: "s1", label: "Season 1" },
+  { value: "s2", label: "Season 2" },
+  { value: "s3", label: "Season 3", comingSoon: true }
 ];
 
 const Resources = () => {
-  const [activeFilter, setActiveFilter] = useState<TopicFilter>("all");
+  const [activeFilter, setActiveFilter] = useState<SeasonFilter>("all");
   const heroAnimation = useScrollAnimation();
   const episodesAnimation = useScrollAnimation();
 
@@ -42,9 +41,19 @@ const Resources = () => {
     }
   });
 
+  // Filter episodes by season based on episodeNumber (S1E1, S2E1, etc.)
+  const getSeasonFromEpisode = (episodeNumber?: string) => {
+    if (!episodeNumber) return null;
+    if (episodeNumber.startsWith("S1")) return "s1";
+    if (episodeNumber.startsWith("S2")) return "s2";
+    return null;
+  };
+
   const filteredEpisodes = activeFilter === "all"
     ? episodes
-    : episodes.filter(ep => ep.topic === activeFilter);
+    : activeFilter === "s3"
+    ? [] // Season 3 coming soon
+    : episodes.filter(ep => getSeasonFromEpisode(ep.episodeNumber) === activeFilter);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
@@ -152,11 +161,11 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Topic Filters */}
+      {/* Season Filters */}
       <section className="py-8 px-4">
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-wrap justify-center gap-3">
-            {topicFilters.map((filter) => (
+            {seasonFilters.map((filter) => (
               <button
                 key={filter.value}
                 onClick={() => setActiveFilter(filter.value)}
@@ -166,8 +175,13 @@ const Resources = () => {
                     : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
                 }`}
               >
-                {filter.icon}
+                {filter.value === "all" && <Play className="w-4 h-4" />}
                 {filter.label}
+                {filter.comingSoon && (
+                  <span className="ml-1 text-xs bg-coral/80 text-white px-2 py-0.5 rounded-full">
+                    Coming Soon
+                  </span>
+                )}
               </button>
             ))}
           </div>
@@ -181,7 +195,7 @@ const Resources = () => {
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <h2 className="text-3xl font-heading font-bold text-white mb-8 text-center">
-            {activeFilter === "all" ? "All Episodes" : `${topicFilters.find(f => f.value === activeFilter)?.label} Episodes`}
+            {activeFilter === "all" ? "All Episodes" : `${seasonFilters.find(f => f.value === activeFilter)?.label}`}
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -231,11 +245,19 @@ const Resources = () => {
             ))}
           </div>
 
-          {filteredEpisodes.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-white/60">No episodes found for this topic yet. Check back soon!</p>
+          {activeFilter === "s3" ? (
+            <div className="text-center py-16">
+              <div className="text-6xl mb-4">🎙️</div>
+              <h3 className="text-2xl font-heading font-bold text-white mb-3">Season 3 Coming Spring 2026</h3>
+              <p className="text-white/60 max-w-md mx-auto">
+                Featuring topics on breaking into product, AI, the messy middle, and what makes a good resume.
+              </p>
             </div>
-          )}
+          ) : filteredEpisodes.length === 0 ? (
+            <div className="text-center py-12">
+              <p className="text-white/60">No episodes found for this season yet. Check back soon!</p>
+            </div>
+          ) : null}
         </div>
       </section>
 
