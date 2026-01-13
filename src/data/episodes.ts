@@ -8,6 +8,7 @@ import tylerThumbnail from "@/assets/tyler-episode-thumbnail.jpg";
 import varshinePhoto from "@/assets/varshine-sridharan.png";
 import varshineThumbnail from "@/assets/varshine-episode-thumbnail.jpg";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
+import brodyThumbnail from "@/assets/brody-episode-thumbnail.jpg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
 import gaborPhoto from "@/assets/gabor-cselle.jpeg";
@@ -286,6 +287,7 @@ export const episodes: Episode[] = [
     },
     description: "Brody shares his provocative take on the future of product management and why the role may not exist in 10 years as we know it today.",
     longDescription: "In this thought-provoking episode, hosts Santi and Meagan sit down with Brody Clemmer, Lead Product Manager at Little Otter, to discuss the evolving—and potentially disappearing—nature of product management.\n\nBrody shares his unconventional path from running a bootstrapped web development firm at 22 to becoming a lead PM, all without a college degree. He challenges common assumptions about the PM career path, arguing that product management is a role, not a career, and that the title may not exist in 10 years—though product thinking will always be needed.\n\nThe conversation dives deep into the differences between startups and big tech, the importance of staying in the problem space, adaptive communication, and why Brody sometimes coaches PMs out of product management entirely. His hot take: go after another career path first, use product thinking foundations, and you'll find your way into product if it's meant to be.",
+    thumbnail: brodyThumbnail,
     youtubeId: "4ZLUXW06jbg",
     buzzsproutId: "16815265",
     spotifyUrl: "https://open.spotify.com/episode/7jKcv6eBAXTtN5z7hLAawe",
