@@ -6,6 +6,7 @@ import hostsThumbnail from "@/assets/meet-the-hosts-thumbnail.jpg";
 import tylerPhoto from "@/assets/tyler-johnson.jpeg";
 import tylerThumbnail from "@/assets/tyler-episode-thumbnail.jpg";
 import varshinePhoto from "@/assets/varshine-sridharan.png";
+import varshineThumbnail from "@/assets/varshine-episode-thumbnail.jpg";
 import brodyPhoto from "@/assets/brody-clemmer.jpeg";
 import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 import trevorPhoto from "@/assets/trevor-acy.jpeg";
@@ -237,6 +238,7 @@ export const episodes: Episode[] = [
     },
     description: "Varsh breaks myths about breaking into big tech and shares how she pivoted from solutions engineering to PM at Microsoft.",
     longDescription: "In this episode, hosts Santi and Meagan sit down with Varshine (Varsh) Sridharan, an AI Product Lead at Microsoft working on Copilot, to debunk common myths about breaking into big tech and discuss the evolving landscape of AI product management.\n\nVarsh shares her unconventional journey from solutions engineering at Microsoft India to TPM at Twilio, then pivoting internally to PM before returning to Microsoft. She emphasizes that you don't need big tech experience to get into big tech—what matters is your product building skills and customer empathy.\n\nThe conversation covers practical advice for job seekers: pivot internally rather than externally, create a niche with AI side projects, leverage LinkedIn strategically, and practice relentlessly for PM interviews. Varsh also discusses how AI is transforming product management, enabling PMs to bridge gaps between design and engineering like never before.",
+    thumbnail: varshineThumbnail,
     youtubeId: "RLgCLZ-9ICU",
     buzzsproutId: "16772572",
     spotifyUrl: "https://open.spotify.com/episode/4RIcXJmJCKrMO17n7WJ4Jg",
