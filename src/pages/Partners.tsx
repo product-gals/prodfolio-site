@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import aaronPhoto from "@/assets/aaron-kesler.png";
 
 interface Partner {
   id: string;
@@ -23,6 +24,7 @@ const partners: Partner[] = [
     description: "AI Product leader, storyteller & community builder - helping PMs think deeper, build smarter, and grow through honest product insights.",
     website: "https://kesler.io/links",
     linkedin: "https://www.linkedin.com/in/aaron-kesler/",
+    photo: aaronPhoto,
     type: "individual",
   },
   {
