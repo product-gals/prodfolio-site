@@ -158,13 +158,12 @@ export const episodes: Episode[] = [
     duration: "53 min",
     publishedAt: "2024-12-15",
     takeaways: [
-      "You can pivot to PM from any background—retail, customer support, music school, anything",
+      "You can pivot to PM from any background, even retail",
       "CX and customer support experience builds crucial empathy for product management",
-      "Mentorship is essential—seek it out and pay it forward when you can",
-      "Feedback isn't a personal attack—it's someone investing time to help you improve",
-      "Data is king, but context is queen—you need both to make great product decisions",
-      "PMs are the organizational glue—they build relationships across every department",
-      "Every day is a school day—continuous learning never stops in product"
+      "Mentorship is essential, seek it out and pay it forward when you can",
+      "Feedback isn't a personal attack, it's someone investing time to help you improve",
+      "Data is king, but context is queen, you need both to make great product decisions",
+      "PMs are the organizational glue, they build relationships across every department"
     ],
     keywords: ["product pivot hosts", "Santi Brace", "Meagan Glenn", "pivot to product management", "CX to PM", "mentorship", "product management podcast", "career transition"]
   },
