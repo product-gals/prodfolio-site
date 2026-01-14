@@ -64,7 +64,6 @@ export const episodes: Episode[] = [
       name: "Rachel Kronenfeld",
       role: "Product Manager",
       company: "LifeRaft",
-      location: "Canada",
       website: "https://www.liferaftinc.com",
       industry: "Open Source Intelligence & Software",
       bio: "Rachel Kronenfeld is a Product Manager at LifeRaft, a software company specializing in open source online intelligence and investigation. Before pivoting to product, Rachel spent years as a licensed private investigator and served as Director of Services at a managed service firm, where she actually used LifeRaft's product as a customer. Her unique journey from subject matter expert to PM showcases how deep industry knowledge can be a powerful path into product management.",
