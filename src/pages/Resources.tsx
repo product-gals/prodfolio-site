@@ -238,7 +238,7 @@ const Resources = () => {
                     to={`/podcast/episodes/${episode.slug}`}
                     className="text-primary text-sm font-medium hover:underline"
                   >
-                    Listen & Read Transcript →
+                    Listen & Learn More →
                   </Link>
                 </div>
               </article>
