@@ -220,6 +220,11 @@ const Resources = () => {
 
                 {/* Episode Info */}
                 <div className="p-5">
+                  {episode.topics?.[0] && (
+                    <span className="inline-block text-xs text-primary/80 bg-primary/10 px-2 py-1 rounded-full mb-3">
+                      {episode.topics[0]}
+                    </span>
+                  )}
                   <Link to={`/podcast/episodes/${episode.slug}`}>
                     <h3 className="text-lg font-heading font-bold text-white mb-2 line-clamp-2 hover:text-primary transition-colors">
                       {episode.title}
