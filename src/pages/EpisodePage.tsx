@@ -17,7 +17,6 @@ import {
   MapPin,
   Building2,
   Globe,
-  Briefcase,
   Tag,
   CheckCircle2,
   Youtube,
@@ -446,16 +445,6 @@ const EpisodePage = () => {
                           >
                             {episode.guest.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                           </a>
-                        </div>
-                      </div>
-                    )}
-
-                    {episode.guest.industry && (
-                      <div className="flex items-start gap-3">
-                        <Briefcase className="w-5 h-5 text-white/40 flex-shrink-0 mt-0.5" />
-                        <div>
-                          <p className="text-white/40 text-xs uppercase tracking-wider">Industry</p>
-                          <p className="text-white">{episode.guest.industry}</p>
                         </div>
                       </div>
                     )}
