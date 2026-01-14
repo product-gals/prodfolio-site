@@ -335,8 +335,7 @@ export const episodes: Episode[] = [
     resourcesMentioned: [
       { title: "Contagious: Why Things Catch On by Jonah Berger", url: "https://jonahberger.com/books/contagious/" },
       { title: "Measure What Matters by John Doerr", url: "https://www.whatmatters.com/the-book" },
-      { title: "The 5 Second Rule by Mel Robbins", url: "https://www.melrobbins.com/book/the-5-second-rule/" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "The 5 Second Rule by Mel Robbins", url: "https://www.melrobbins.com/book/the-5-second-rule/" }
     ],
     keywords: ["journalism to PM", "CNBC product manager", "career pivot", "self-advocacy", "storytelling", "media industry PM", "rejection", "Mel Robbins", "transferable skills", "retail investors"]
   },
