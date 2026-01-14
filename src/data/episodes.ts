@@ -123,13 +123,12 @@ export const episodes: Episode[] = [
       "Unconventional backgrounds like music can bring unique creativity to product management",
       "Adaptability is essential for success across different work environments and company cultures",
       "Self-reflection is a critical skill for continuous career growth as a PM",
-      "The PM job market is evolving—understanding current trends helps you position yourself",
-      "Creativity isn't just for designers—it's a core PM skill for problem-solving",
+      "The PM job market is evolving, understanding current trends helps you position yourself",
+      "Creativity isn't just for designers, it's a core PM skill for problem-solving",
       "Pivotal career moments often come from unexpected challenges and how you respond to them"
     ],
     resourcesMentioned: [
-      { title: "Buffer", url: "https://buffer.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Buffer", url: "https://buffer.com" }
     ],
     keywords: ["staff product manager", "Buffer", "career transition", "music to tech", "creativity in product management", "PM job market", "remote product manager", "career growth"]
   },
