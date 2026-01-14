@@ -290,9 +290,7 @@ export const episodes: Episode[] = [
       "When evaluating startups, ask: would they still have a business without the technology?"
     ],
     resourcesMentioned: [
-      { title: "Generalist World Community", url: "https://www.generalist.world" },
-      { title: "Little Otter Health", url: "https://www.littleotterhealth.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Generalist World Community", url: "https://www.generalist.world" }
     ],
     keywords: ["future of product management", "PM career path", "startup PM", "generalist", "problem space", "no degree PM", "entrepreneurial PM", "product thinking", "adaptive communication", "Little Otter"]
   },
