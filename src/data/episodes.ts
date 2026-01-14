@@ -67,7 +67,7 @@ export const episodes: Episode[] = [
       location: "Canada",
       website: "https://www.liferaftinc.com",
       industry: "Open Source Intelligence & Software",
-      bio: "Rachel Kronenfeld is a Product Manager at LifeRaft, a software company specializing in open source online intelligence and investigation. Before pivoting to product, Rachel spent 8 years as a licensed private investigator and served as Director of Services at a managed service firm—where she actually used LifeRaft's product as a customer. Her unique journey from subject matter expert to PM showcases how deep industry knowledge can be a powerful path into product management.",
+      bio: "Rachel Kronenfeld is a Product Manager at LifeRaft, a software company specializing in open source online intelligence and investigation. Before pivoting to product, Rachel spent years as a licensed private investigator and served as Director of Services at a managed service firm, where she actually used LifeRaft's product as a customer. Her unique journey from subject matter expert to PM showcases how deep industry knowledge can be a powerful path into product management.",
       photo: rachelPhoto,
       linkedin: "https://www.linkedin.com/in/rachel-kronenfeld-6911426b/"
     },
