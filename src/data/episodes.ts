@@ -234,16 +234,14 @@ export const episodes: Episode[] = [
     duration: "49 min",
     publishedAt: "2025-01-15",
     takeaways: [
-      "You don't need big tech experience to get into big tech—product building skills matter more than company names",
-      "Pivot to PM internally within your company—it's much easier than external hiring",
+      "You don't need big tech experience to get into big tech, product building skills matter more",
       "Get any job first, then move into PM internally rather than holding out for the perfect PM role",
       "Create a competitive edge with AI projects and side hustles to stand out in today's market",
       "Leverage your industry background when applying—your niche knowledge is a strength",
-      "Practice, practice, practice for PM interviews—write out answers and do mock interviews",
-      "Use LinkedIn strategically—engage with content, write posts about products, build connections",
-      "AI is the pivotal moment for PMs—learn to bridge design and engineering gaps with AI tools",
-      "Focus on the product you want to build, not just the company name",
-      "Rejection means 'not right now'—use the time to polish your skills and try again"
+      "Practice, practice, practice for PM interviews, write out answers and do mock interviews",
+      "Use LinkedIn strategically, engage with content, write posts about products, build connections",
+      "AI is the pivotal moment for PMs. Learn to bridge design and engineering gaps with AI tools",
+      "Rejection means 'not right now,' so use the time to improve your skills and try again"
     ],
     resourcesMentioned: [
       { title: "Cracking the PM Interview by Gayle Laakmann McDowell", url: "https://www.crackingthepminterview.com" },
