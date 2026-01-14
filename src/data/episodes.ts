@@ -170,7 +170,7 @@ export const episodes: Episode[] = [
   {
     id: "4",
     slug: "from-product-marketing-to-pm",
-    title: "From Product Marketing to PM",
+    title: "From Marketing to Product Management",
     episodeNumber: "S1E4",
     guest: {
       name: "Tyler (TJ) Johnson",
