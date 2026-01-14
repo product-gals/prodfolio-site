@@ -82,13 +82,12 @@ export const episodes: Episode[] = [
     duration: "43 min",
     publishedAt: "2024-11-15",
     takeaways: [
-      "You can pivot to PM from any background—subject matter expertise is incredibly valuable",
+      "You can pivot to PM from any background, subject matter expertise is incredibly valuable",
       "Transferable skills from sales, CX, and marketing apply directly to product management",
-      "Product management looks different at every company—be ready to learn on the job",
+      "Product management looks different at every company, so be ready to learn on the job",
       "Building strong relationships with engineering, design, and other departments is critical",
       "Let go of perfectionism—focus on MVPs and iterate based on customer feedback",
-      "Don't let 'PM is dead' narratives discourage you—fix your algorithm and stay positive",
-      "PMs are the glue between departments—it's hard to imagine a product company without them"
+      "Don't let 'PM is dead' narratives discourage you, fix your algorithm and stay positive"
     ],
     resourcesMentioned: [
       { title: "Cracking the PM Career by Jackie Bavaro & Gayle Laakmann McDowell", url: "https://www.crackingthepmcareer.com" },
