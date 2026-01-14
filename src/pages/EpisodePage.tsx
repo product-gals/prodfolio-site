@@ -250,6 +250,27 @@ const EpisodePage = () => {
                 </a>
               </div>
 
+              {/* About This Episode */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <h2 className="text-lg font-bold text-white mb-4">About This Episode</h2>
+                <div className="text-white/80 leading-relaxed whitespace-pre-line">
+                  {episode.longDescription}
+                </div>
+              </div>
+
+              {/* Key Takeaways */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <h2 className="text-lg font-bold text-white mb-4">Key Takeaways</h2>
+                <ul className="space-y-3">
+                  {episode.takeaways.map((takeaway, index) => (
+                    <li key={index} className="flex items-start gap-3 text-white/80">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      {takeaway}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Resources Mentioned */}
               {episode.resourcesMentioned && episode.resourcesMentioned.length > 0 && (
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
@@ -274,27 +295,6 @@ const EpisodePage = () => {
                   </ul>
                 </div>
               )}
-
-              {/* About This Episode */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <h2 className="text-lg font-bold text-white mb-4">About This Episode</h2>
-                <div className="text-white/80 leading-relaxed whitespace-pre-line">
-                  {episode.longDescription}
-                </div>
-              </div>
-
-              {/* Key Takeaways */}
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <h2 className="text-lg font-bold text-white mb-4">Key Takeaways</h2>
-                <ul className="space-y-3">
-                  {episode.takeaways.map((takeaway, index) => (
-                    <li key={index} className="flex items-start gap-3 text-white/80">
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      {takeaway}
-                    </li>
-                  ))}
-                </ul>
-              </div>
 
               {/* About the Guest */}
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">

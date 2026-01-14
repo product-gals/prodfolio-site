@@ -220,16 +220,18 @@ const Resources = () => {
 
                 {/* Episode Info */}
                 <div className="p-5">
-                  {episode.topics?.[0] && (
-                    <span className="inline-block text-xs text-primary/80 bg-primary/10 px-2 py-1 rounded-full mb-3">
-                      {episode.topics[0]}
-                    </span>
-                  )}
-                  <Link to={`/podcast/episodes/${episode.slug}`}>
-                    <h3 className="text-lg font-heading font-bold text-white mb-2 line-clamp-2 hover:text-primary transition-colors">
-                      {episode.title}
-                    </h3>
-                  </Link>
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <Link to={`/podcast/episodes/${episode.slug}`} className="flex-1 min-w-0">
+                      <h3 className="text-lg font-heading font-bold text-white line-clamp-2 hover:text-primary transition-colors">
+                        {episode.title}
+                      </h3>
+                    </Link>
+                    {episode.topics?.[0] && (
+                      <span className="text-[10px] text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded-full whitespace-nowrap shrink-0 mt-1">
+                        {episode.topics[0]}
+                      </span>
+                    )}
+                  </div>
                   <p className="text-primary text-sm font-medium mb-2">
                     with {episode.guest.name}
                   </p>

@@ -123,27 +123,26 @@ export const episodes: Episode[] = [
       "Unconventional backgrounds like music can bring unique creativity to product management",
       "Adaptability is essential for success across different work environments and company cultures",
       "Self-reflection is a critical skill for continuous career growth as a PM",
-      "The PM job market is evolving—understanding current trends helps you position yourself",
-      "Creativity isn't just for designers—it's a core PM skill for problem-solving",
+      "The PM job market is evolving, understanding current trends helps you position yourself",
+      "Creativity isn't just for designers, it's a core PM skill for problem-solving",
       "Pivotal career moments often come from unexpected challenges and how you respond to them"
     ],
     resourcesMentioned: [
-      { title: "Buffer", url: "https://buffer.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Buffer", url: "https://buffer.com" }
     ],
     keywords: ["staff product manager", "Buffer", "career transition", "music to tech", "creativity in product management", "PM job market", "remote product manager", "career growth"]
   },
   {
     id: "3",
     slug: "meet-the-hosts",
-    title: "Meet the Hosts",
+    title: "Meet Your Hosts",
     episodeNumber: "S1E3",
     guest: {
       name: "Santi & Meagan",
       role: "Your Hosts",
-      company: "The Product Pivot",
-      website: "https://www.youtube.com/@TheProductPivot",
-      industry: "Product Management",
+      company: "Prodfolio",
+      website: "https://prodfolio.io/",
+      industry: "Product Management, SaaS",
       bio: "Santiana Brace is a Product Leader at LifeRaft who pivoted from retail management through customer support and QA into product. Meagan Glenn is a Fractional Product Lead who transitioned from customer success into founding PM roles. Together, they share a passion for mentoring job seekers and helping others break into product management.",
       linkedin: "https://www.linkedin.com/in/santiana-brace/"
     },
@@ -155,22 +154,16 @@ export const episodes: Episode[] = [
     spotifyUrl: "https://open.spotify.com/episode/12qg8mul8WEQnVmVKfaHcv",
     appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-meet-your-hosts/id1784108281?i=1000694415392",
     topic: "career",
-    topics: ["Meet the Hosts", "Career Transition", "Mentorship", "Customer Experience", "Podcast Origin Story"],
+    topics: ["Career Transition", "Mentorship", "Customer Experience", "Podcast Origin Story"],
     duration: "53 min",
     publishedAt: "2024-12-15",
     takeaways: [
-      "You can pivot to PM from any background—retail, customer support, music school, anything",
+      "You can pivot to PM from any background, even retail",
       "CX and customer support experience builds crucial empathy for product management",
-      "Mentorship is essential—seek it out and pay it forward when you can",
-      "Feedback isn't a personal attack—it's someone investing time to help you improve",
-      "Data is king, but context is queen—you need both to make great product decisions",
-      "PMs are the organizational glue—they build relationships across every department",
-      "Every day is a school day—continuous learning never stops in product"
-    ],
-    resourcesMentioned: [
-      { title: "The Product Pivot on YouTube", url: "https://www.youtube.com/@TheProductPivot" },
-      { title: "Santi on LinkedIn", url: "https://www.linkedin.com/in/santiana-brace/" },
-      { title: "Meagan on LinkedIn", url: "https://www.linkedin.com/in/meagan-glenn/" }
+      "Mentorship is essential, seek it out and pay it forward when you can",
+      "Feedback isn't a personal attack, it's someone investing time to help you improve",
+      "Data is king, but context is queen, you need both to make great product decisions",
+      "PMs are the organizational glue, they build relationships across every department"
     ],
     keywords: ["product pivot hosts", "Santi Brace", "Meagan Glenn", "pivot to product management", "CX to PM", "mentorship", "product management podcast", "career transition"]
   },
