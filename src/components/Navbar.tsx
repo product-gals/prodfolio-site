@@ -46,6 +46,12 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6">
             <Link
+              to="/"
+              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+            >
+              Home
+            </Link>
+            <Link
               to="/features"
               className="text-sm font-medium text-white hover:text-white/80 transition-colors"
             >
@@ -122,6 +128,13 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-white/20 py-3 bg-white/10 backdrop-blur-md">
           <div className="prodfolio-container space-y-2">
+            <Link
+              to="/"
+              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
             <Link
               to="/features"
               className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
