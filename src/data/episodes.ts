@@ -29,7 +29,6 @@ export interface Episode {
     name: string;
     role: string;
     company: string;
-    location?: string;
     website?: string;
     industry?: string;
     bio: string;
@@ -64,15 +63,14 @@ export const episodes: Episode[] = [
       name: "Rachel Kronenfeld",
       role: "Product Manager",
       company: "LifeRaft",
-      location: "Canada",
       website: "https://www.liferaftinc.com",
       industry: "Open Source Intelligence & Software",
-      bio: "Rachel Kronenfeld is a Product Manager at LifeRaft, a software company specializing in open source online intelligence and investigation. Before pivoting to product, Rachel spent 8 years as a licensed private investigator and served as Director of Services at a managed service firm—where she actually used LifeRaft's product as a customer. Her unique journey from subject matter expert to PM showcases how deep industry knowledge can be a powerful path into product management.",
+      bio: "Rachel Kronenfeld is a Product Manager at LifeRaft, a software company specializing in open source online intelligence and investigation. Before pivoting to product, Rachel spent years as a licensed private investigator and served as Director of Services at a managed service firm, where she actually used LifeRaft's product as a customer. Her unique journey from subject matter expert to PM showcases how deep industry knowledge can be a powerful path into product management.",
       photo: rachelPhoto,
       linkedin: "https://www.linkedin.com/in/rachel-kronenfeld-6911426b/"
     },
     description: "How Rachel pivoted from private investigator to product manager by leveraging her subject matter expertise.",
-    longDescription: "Rachel Kronenfeld's path to product management is unlike any other. After 8 years as a private investigator and Director of Services at an intelligence firm, she made the leap to PM at LifeRaft—the very software she used as a customer.\n\nIn this episode, Rachel shares how she positioned herself for a PM role without traditional product experience, the challenges of learning on the job, and why being a subject matter expert gave her unique advantages. She also discusses working closely with engineering and design teams, letting go of perfectionism in favor of iteration, and why the 'PM is dead' narrative shouldn't discourage aspiring product managers.",
+    longDescription: "Rachel Kronenfeld's path to product management is unlike any other. After years as a private investigator and Director of Services at an intelligence firm, she made the leap to PM at LifeRaft, a software she used as a customer.\n\nIn this episode, Rachel shares how she positioned herself for a PM role without traditional product experience, the challenges of learning on the job, and why being a subject matter expert gave her unique advantages. She also discusses working closely with engineering and design teams, letting go of perfectionism in favor of iteration, and why the 'PM is dead' narrative shouldn't discourage aspiring product managers.",
     thumbnail: rachelThumbnail,
     youtubeId: "qS4IxwD9dCo",
     buzzsproutId: "16604831",
@@ -82,18 +80,16 @@ export const episodes: Episode[] = [
     duration: "43 min",
     publishedAt: "2024-11-15",
     takeaways: [
-      "You can pivot to PM from any background—subject matter expertise is incredibly valuable",
+      "You can pivot to PM from any background, subject matter expertise is incredibly valuable",
       "Transferable skills from sales, CX, and marketing apply directly to product management",
-      "Product management looks different at every company—be ready to learn on the job",
+      "Product management looks different at every company, so be ready to learn on the job",
       "Building strong relationships with engineering, design, and other departments is critical",
       "Let go of perfectionism—focus on MVPs and iterate based on customer feedback",
-      "Don't let 'PM is dead' narratives discourage you—fix your algorithm and stay positive",
-      "PMs are the glue between departments—it's hard to imagine a product company without them"
+      "Don't let 'PM is dead' narratives discourage you, fix your algorithm and stay positive"
     ],
     resourcesMentioned: [
       { title: "Cracking the PM Career by Jackie Bavaro & Gayle Laakmann McDowell", url: "https://www.crackingthepmcareer.com" },
-      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" }
     ],
     keywords: ["pivot to product management", "subject matter expert PM", "career transition", "private investigator to PM", "breaking into product", "transferable skills", "LifeRaft"]
   },
@@ -106,7 +102,6 @@ export const episodes: Episode[] = [
       name: "Brandon Lucas Green",
       role: "Staff Product Manager",
       company: "Buffer",
-      location: "Boston, MA (Remote)",
       website: "https://buffer.com",
       industry: "Social Media & SaaS",
       bio: "Brandon Lucas Green is a Staff Product Manager at Buffer, the popular social media management platform. His unconventional journey from music school to tech showcases how creativity and adaptability can be powerful assets in product management. Brandon has navigated various work environments throughout his career and brings a unique perspective on the evolving nature of product management and what it takes to thrive in today's competitive PM landscape.",
@@ -147,7 +142,6 @@ export const episodes: Episode[] = [
       name: "Santi & Meagan",
       role: "Your Hosts",
       company: "The Product Pivot",
-      location: "Remote",
       website: "https://www.youtube.com/@TheProductPivot",
       industry: "Product Management",
       bio: "Santiana Brace is a Product Leader at LifeRaft who pivoted from retail management through customer support and QA into product. Meagan Glenn is a Fractional Product Lead who transitioned from customer success into founding PM roles. Together, they share a passion for mentoring job seekers and helping others break into product management.",
@@ -189,7 +183,6 @@ export const episodes: Episode[] = [
       name: "Tyler (TJ) Johnson",
       role: "Product Manager",
       company: "Nectar",
-      location: "Remote",
       website: "https://nectarhr.com",
       industry: "Employee Recognition & Rewards",
       bio: "Tyler (TJ) Johnson is a Product Manager at Nectar, an employee recognition and rewards platform. He pivoted from customer marketing and product marketing into his first PM role in April 2024. TJ's journey is unique—Nectar's founders have been his best friends since age 3, and he joined the company after experiencing firsthand how customer obsession and relationship-building translate directly into product management success.",
@@ -232,7 +225,6 @@ export const episodes: Episode[] = [
       name: "Varshine Sridharan",
       role: "AI Product Lead",
       company: "Microsoft Copilot & Agents",
-      location: "Boulder, CO",
       website: "https://www.microsoft.com/copilot",
       industry: "Big Tech & AI",
       bio: "Varshine (Varsh) Sridharan is an AI Product Lead at Microsoft, building Gen AI products including Copilot. With nearly seven years of overall experience and four years in product management, she started her career as a solutions engineer at Microsoft in India before pivoting to PM at Twilio—then returning to Microsoft as a Senior PM. Varsh is passionate about mentoring aspiring PMs and breaking myths about what it takes to get into big tech.",
@@ -280,7 +272,6 @@ export const episodes: Episode[] = [
       name: "Brody Clemmer",
       role: "Lead Product Manager",
       company: "Little Otter",
-      location: "Remote",
       website: "https://www.littleotterhealth.com",
       industry: "Healthcare & Mental Health",
       bio: "Brody Clemmer is the Lead Product Manager at Little Otter, a pediatric mental health startup. With nearly 12 years in the product world, Brody came from an entrepreneurial background—running his own web development firm before discovering product management. He never went to college, going straight into the workforce after high school, and believes that a 'figure it out' mindset is what sets great PMs apart. Brody is passionate about coaching product managers and even helps PMs transition out of product when it's no longer the right fit.",
@@ -326,7 +317,6 @@ export const episodes: Episode[] = [
       name: "Olympia Bardis",
       role: "Senior Product Manager",
       company: "CNBC",
-      location: "Arizona",
       website: "https://www.cnbc.com",
       industry: "Media & Finance",
       bio: "Olympia Bardis is a Senior Product Manager at CNBC, where she builds products for retail investors. With a journalism degree and dreams of being an on-air reporter, Olympia spent five and a half years in legacy media at Fox News before pivoting to product management. She credits Mel Robbins' 5 Second Rule for giving her the courage to advocate for herself and make the leap. A native New Yorker with a passion for storytelling, she believes the 'gift of yap' is one of the most underrated PM skills.",
@@ -373,7 +363,6 @@ export const episodes: Episode[] = [
       name: "Trevor Acy",
       role: "Fractional Product Leader",
       company: "Delta Product Group",
-      location: "Mississippi",
       website: "https://www.linkedin.com/in/trevoracy/",
       industry: "Consulting & Fractional PM",
       bio: "Trevor Acy is a fractional product leader offering part-time product management, coaching, and training for business leaders. Previously a director of marketing in Nashville, Trevor pivoted to product after reading 'Inspired' and attending an SVPG workshop—even taking a demotion to make the switch. He moved home to Mississippi to help build the tech and startup ecosystem, working with nonprofits like The Bean Path and the Mississippi Coding Academy to spread product thinking across the state.",
@@ -421,7 +410,6 @@ export const episodes: Episode[] = [
       name: "Meagan Glenn & Santiana Brace",
       role: "Your Hosts",
       company: "The Product Pivot",
-      location: "Remote",
       website: "https://www.youtube.com/@TheProductPivot",
       industry: "Product Management",
       bio: "In this special hosts-only episode, Meagan and Santi recap Season 1, share personal updates (Meagan went fractional, Santi moved to ProdOps), tease Season 2 guests, and announce Prodfolio—their new portfolio platform for PMs. They also share community-submitted product tips and call for Season 3 guest suggestions.",
@@ -465,7 +453,6 @@ export const episodes: Episode[] = [
       name: "Gabor Mayer",
       role: "Product Manager, Commerce",
       company: "Google",
-      location: "London, UK",
       website: "https://www.google.com",
       industry: "Big Tech & E-commerce",
       bio: "Gabor Mayer is a Product Manager at Google Commerce. His PM journey started in 2007 as a programmer who kept ending up on the couch talking to customers. He worked at LogMeIn where he helped create Rescue Lens, a remote support tool used by companies like Microsoft and HP. After being rejected by Google 8 times between 2016 and 2021, he finally landed his dream role through intensive preparation and coaching. He now coaches other PMs and is writing a book on PM interviews.",
@@ -512,7 +499,6 @@ export const episodes: Episode[] = [
       name: "Graham Reed",
       role: "Head of Product Operations",
       company: "HeliosX Group",
-      location: "United Kingdom",
       website: "https://www.heliosx.com",
       industry: "Healthcare & Telehealth",
       bio: "Graham Reed is the Head of Product Operations at HeliosX Group (known as Zip Health in the US and MedExpress in the UK). He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
@@ -557,7 +543,6 @@ export const episodes: Episode[] = [
       name: "Heidi Ram",
       role: "Product Recruiter, Practice Lead",
       company: "The Product Recruiter",
-      location: "Toronto, Canada",
       website: "https://theproductrecruiter.com",
       industry: "Recruiting & Talent Acquisition",
       bio: "Heidi Ram is a Practice Lead at The Product Recruiter, a Toronto-based firm that helps technology companies make tough hiring decisions in product, UX, and product marketing. With 26+ years in recruiting, she works with CEOs, founders, and chief product officers to find top PM talent across North America. Heidi is passionate about helping candidates tell their story effectively and advocates for being strategic and intentional about career moves.",
@@ -602,7 +587,6 @@ export const episodes: Episode[] = [
       name: "Nikhil (Nick) Punjabi",
       role: "AI Product Manager",
       company: "Dash Social",
-      location: "Halifax, Nova Scotia",
       website: "https://dashsocial.com",
       industry: "Social Media & AI",
       bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business—even a lemonade stand—is one of the best ways to learn product fundamentals.",
@@ -648,7 +632,6 @@ export const episodes: Episode[] = [
       name: "Eduardo (Eddie) Rosenfeld",
       role: "VP, Applied AI",
       company: "Lavender",
-      location: "Remote",
       website: "https://lavender.ai",
       industry: "AI & Sales Tech",
       bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional—he studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
@@ -693,7 +676,6 @@ export const episodes: Episode[] = [
       name: "Aaron Kesler",
       role: "VP, Product Management (AI)",
       company: "RozieAI",
-      location: "Raleigh, NC",
       website: "https://rozie.ai",
       industry: "AI & Conference Tech",
       bio: "Aaron Kesler is VP of Product at Rozie AI after 12 years in product management. His journey started founding a company in college, then working at Starbucks after quitting tech—where his regulars became his mentors and connected him to his next role. He moved through technical support, then took over as PM when the previous one left. He went on to Blue Cross and SnapLogic, where he led AI product management with two of the company's most successful launches. Aaron is also writing a book on Lean Pub about pivoting into product management.",
