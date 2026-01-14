@@ -321,16 +321,14 @@ export const episodes: Episode[] = [
     duration: "44 min",
     publishedAt: "2025-02-12",
     takeaways: [
-      "You are your own best advocate—keep ringing the bell about your career goals",
-      "It's okay to fall out of love with things and pivot—that's how you grow",
+      "You are your own best advocate, so keep ringing the bell about your career goals",
+      "It's okay to fall out of love with things and pivot - that's how you grow",
       "Treat yourself as a product and iterate on your skills and approach",
-      "You know more than you think—trust yourself and have conviction in your ideas",
+      "You know more than you think, trust yourself and have conviction in your ideas",
       "Every rejection is a redirection and a great learning moment",
       "Take breaks when needed to sharpen skills, network, and reflect",
-      "Storytelling is a crucial PM skill—the 'gift of yap' transfers directly from journalism",
-      "Be flexible, open-minded, and adaptable—PMs are essentially contortionists",
-      "Honor the bliss of the learning curve—all novices start somewhere",
-      "If you help one person with your content, you did your job"
+      "Storytelling is a crucial PM skill, the 'gift of yap' transfers directly from journalism",
+      "Be flexible, open-minded, and adaptable - PMs are essentially contortionists"
     ],
     resourcesMentioned: [
       { title: "Contagious: Why Things Catch On by Jonah Berger", url: "https://jonahberger.com/books/contagious/" },
