@@ -203,9 +203,7 @@ export const episodes: Episode[] = [
       "Transferable skills matter more than traditional PM experience"
     ],
     resourcesMentioned: [
-      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
-      { title: "Nectar HR", url: "https://nectarhr.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" }
     ],
     keywords: ["product marketing to PM", "career transition", "customer obsession", "Nectar", "employee recognition", "first PM role", "transferable skills", "engineering relationships", "dogfooding"]
   },
