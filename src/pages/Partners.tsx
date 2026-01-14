@@ -76,7 +76,7 @@ const Partners = () => {
             {partners.map((partner) => (
               <div
                 key={partner.id}
-                className="bg-white rounded-2xl p-6 shadow-xl"
+                className="glass-card p-6"
               >
                 <div className="flex items-start gap-4">
                   {/* Photo/Logo placeholder */}
@@ -92,11 +92,11 @@ const Partners = () => {
                         )}
                       </div>
                     ) : (
-                      <div className="w-24 h-24 rounded-lg bg-white border-2 border-gray-100 flex items-center justify-center overflow-hidden">
+                      <div className="w-24 h-24 rounded-lg bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center overflow-hidden">
                         {partner.logo ? (
                           <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain p-2" />
                         ) : (
-                          <span className="text-2xl font-bold text-[#1a1a2e]">
+                          <span className="text-2xl font-bold text-white">
                             P2P
                           </span>
                         )}
@@ -106,10 +106,10 @@ const Partners = () => {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <h3 className="text-xl font-heading font-bold text-[#1a1a2e] mb-2">
+                    <h3 className="text-xl font-heading font-bold text-white mb-2">
                       {partner.name}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                    <p className="text-white/80 text-sm mb-4 leading-relaxed">
                       {partner.description}
                     </p>
                     <div className="flex flex-wrap gap-3">
@@ -117,7 +117,7 @@ const Partners = () => {
                         href={partner.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-primary text-sm font-medium hover:underline"
+                        className="inline-flex items-center gap-1 text-[#4DD9E5] text-sm font-medium hover:underline"
                       >
                         Link <ExternalLink className="w-3 h-3" />
                       </a>
@@ -126,7 +126,7 @@ const Partners = () => {
                           href={partner.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-[#0077B5] text-sm font-medium hover:underline"
+                          className="inline-flex items-center gap-1 text-[#4DD9E5] text-sm font-medium hover:underline"
                         >
                           LinkedIn <ExternalLink className="w-3 h-3" />
                         </a>
