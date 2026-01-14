@@ -43,7 +43,7 @@ const Examples = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] via-[#D6CEFF] to-[#B8A3FF]">
+    <div className="min-h-screen gradient-mesh-bg">
       <Navbar />
 
       {/* Hero Section */}
@@ -71,42 +71,42 @@ const Examples = () => {
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
               Featured Portfolios
             </h2>
-            <p className="text-navy/70">
+            <p className="text-white/80">
               Learn from PMs who are showcasing their work with confidence
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 float-animation">
             {featuredPortfolios.map((portfolio, index) => (
               <article
                 key={index}
-                className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 hover:shadow-xl transition-all hover:scale-[1.02]"
+                className="glass-card p-8 hover:shadow-xl transition-all hover:scale-[1.02]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-heading font-bold text-navy">{portfolio.name}</h3>
-                    <p className="text-primary font-medium text-sm">{portfolio.role}</p>
+                    <h3 className="text-xl font-heading font-bold text-white">{portfolio.name}</h3>
+                    <p className="text-white/80 font-medium text-sm">{portfolio.role}</p>
                   </div>
-                  <span className="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full border border-white/30">
                     {portfolio.stage}
                   </span>
                 </div>
 
-                <p className="text-navy/70 mb-4 leading-relaxed">
+                <p className="text-white/70 mb-4 leading-relaxed">
                   {portfolio.description}
                 </p>
 
                 <div className="flex items-center gap-2 mb-6 text-sm">
                   <Star className="w-4 h-4 text-coral" />
-                  <span className="text-navy/80 italic">{portfolio.highlight}</span>
+                  <span className="text-white/80 italic">{portfolio.highlight}</span>
                 </div>
 
                 <Button
                   asChild
-                  className="w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl inline-flex items-center justify-center gap-2"
+                  className="w-full bg-white text-navy hover:bg-white/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
                 >
                   <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
                     View Portfolio
@@ -118,17 +118,17 @@ const Examples = () => {
           </div>
 
           {/* Coming Soon */}
-          <div className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center max-w-2xl mx-auto">
-            <h3 className="text-2xl font-heading font-bold text-navy mb-4">
+          <div className="glass-card p-8 text-center max-w-2xl mx-auto">
+            <h3 className="text-2xl font-heading font-bold text-white mb-4">
               More examples coming soon
             </h3>
-            <p className="text-navy/70 mb-6">
+            <p className="text-white/70 mb-6">
               We're building a gallery of PM portfolios across industries and career stages. Want to be featured?
             </p>
             <Button
               asChild
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 font-semibold rounded-xl"
+              className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl"
             >
               <a href="mailto:hello@prodfolio.io?subject=Feature my portfolio">
                 Submit your portfolio
@@ -139,30 +139,30 @@ const Examples = () => {
       </section>
 
       {/* What Makes a Great Portfolio */}
-      <section className="py-12 px-4 bg-white/10 backdrop-blur-sm">
+      <section className="py-12 px-4 bg-white/5 backdrop-blur-md border-y border-white/10">
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
               What makes a great PM portfolio?
             </h2>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">3-4</div>
-              <p className="text-navy/70 text-sm">Strong case studies showing range</p>
+            <div className="glass-pill text-center p-6">
+              <div className="text-4xl font-bold text-white mb-2">3-4</div>
+              <p className="text-white/70 text-sm">Strong case studies showing range</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">Process</div>
-              <p className="text-navy/70 text-sm">Focus on how you think, not just results</p>
+            <div className="glass-pill text-center p-6">
+              <div className="text-4xl font-bold text-white mb-2">Process</div>
+              <p className="text-white/70 text-sm">Focus on how you think, not just results</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">Metrics</div>
-              <p className="text-navy/70 text-sm">Quantified impact with context</p>
+            <div className="glass-pill text-center p-6">
+              <div className="text-4xl font-bold text-white mb-2">Metrics</div>
+              <p className="text-white/70 text-sm">Quantified impact with context</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">Story</div>
-              <p className="text-navy/70 text-sm">A narrative that connects your work</p>
+            <div className="glass-pill text-center p-6">
+              <div className="text-4xl font-bold text-white mb-2">Story</div>
+              <p className="text-white/70 text-sm">A narrative that connects your work</p>
             </div>
           </div>
         </div>
