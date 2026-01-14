@@ -140,9 +140,9 @@ export const episodes: Episode[] = [
     guest: {
       name: "Santi & Meagan",
       role: "Your Hosts",
-      company: "The Product Pivot",
-      website: "https://www.youtube.com/@TheProductPivot",
-      industry: "Product Management",
+      company: "Prodfolio",
+      website: "https://prodfolio.io/",
+      industry: "Product Management, SaaS",
       bio: "Santiana Brace is a Product Leader at LifeRaft who pivoted from retail management through customer support and QA into product. Meagan Glenn is a Fractional Product Lead who transitioned from customer success into founding PM roles. Together, they share a passion for mentoring job seekers and helping others break into product management.",
       linkedin: "https://www.linkedin.com/in/santiana-brace/"
     },
