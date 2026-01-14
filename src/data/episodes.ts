@@ -247,8 +247,7 @@ export const episodes: Episode[] = [
       { title: "Cracking the PM Interview by Gayle Laakmann McDowell", url: "https://www.crackingthepminterview.com" },
       { title: "Exponent PM Interview Prep", url: "https://www.tryexponent.com" },
       { title: "Lenny's Newsletter", url: "https://www.lennysnewsletter.com" },
-      { title: "Lewis Lin PM Community", url: "https://www.lewis-lin.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Lewis Lin PM Community", url: "https://www.lewis-lin.com" }
     ],
     keywords: ["big tech PM", "Microsoft product manager", "AI product management", "Copilot", "breaking into big tech", "internal transfer", "PM interview prep", "career transition", "TPM to PM", "solutions engineering"]
   },
