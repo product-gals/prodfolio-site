@@ -423,12 +423,12 @@ const EpisodePage = () => {
                       </div>
                     </div>
 
-                    {episode.guest.location && (
+                    {episode.guest.industry && (
                       <div className="flex items-start gap-3">
                         <MapPin className="w-5 h-5 text-white/40 flex-shrink-0 mt-0.5" />
                         <div>
-                          <p className="text-white/40 text-xs uppercase tracking-wider">Location</p>
-                          <p className="text-white">{episode.guest.location}</p>
+                          <p className="text-white/40 text-xs uppercase tracking-wider">Industry</p>
+                          <p className="text-white">{episode.guest.industry}</p>
                         </div>
                       </div>
                     )}
