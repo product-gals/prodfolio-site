@@ -166,11 +166,6 @@ export const episodes: Episode[] = [
       "PMs are the organizational glue—they build relationships across every department",
       "Every day is a school day—continuous learning never stops in product"
     ],
-    resourcesMentioned: [
-      { title: "The Product Pivot on YouTube", url: "https://www.youtube.com/@TheProductPivot" },
-      { title: "Santi on LinkedIn", url: "https://www.linkedin.com/in/santiana-brace/" },
-      { title: "Meagan on LinkedIn", url: "https://www.linkedin.com/in/meagan-glenn/" }
-    ],
     keywords: ["product pivot hosts", "Santi Brace", "Meagan Glenn", "pivot to product management", "CX to PM", "mentorship", "product management podcast", "career transition"]
   },
   {
