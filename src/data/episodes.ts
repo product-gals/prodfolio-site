@@ -170,7 +170,7 @@ export const episodes: Episode[] = [
   {
     id: "4",
     slug: "from-product-marketing-to-pm",
-    title: "From Product Marketing to PM",
+    title: "From Marketing to Product Management",
     episodeNumber: "S1E4",
     guest: {
       name: "Tyler (TJ) Johnson",
@@ -183,7 +183,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/tylerbjohnson24/"
     },
     description: "How TJ leveraged his product marketing background and customer obsession to land his first PM role at Nectar.",
-    longDescription: "In this episode, hosts Santi and Meagan talk with Tyler (TJ) Johnson about his recent pivot from product marketing to product management at Nectar, an employee recognition and rewards platform.\n\nTJ shares how his customer-facing background in marketing gave him invaluable skills for PM work, why building strong relationships with engineers is critical, and the importance of 'wearing the hat before you have the position.' He also discusses the value of dogfooding your own product, how good leaders create more leaders (not followers), and why Marty Cagan's 'Inspired' shaped his understanding of product management.\n\nWith a unique backstory—the founders are his childhood best friends—TJ offers honest insights into navigating a PM role at a company where relationships run deep.",
+    longDescription: "In this episode, hosts Santi and Meagan talk with Tyler (TJ) Johnson about his recent pivot from product marketing to product management at Nectar, an employee recognition and rewards platform.\n\nTJ shares how his customer-facing background in marketing gave him invaluable skills for PM work, why building strong relationships with engineers is critical, and the importance of 'wearing the hat before you have the position.' He also discusses the value of dogfooding your own product, how good leaders create more leaders (not followers), and why Marty Cagan's 'Inspired' shaped his understanding of product management.\n\nWith a unique backstory, the founders are his childhood best friends, Tyler offers honest insights into navigating a PM role at a company where relationships run deep.",
     thumbnail: tylerThumbnail,
     youtubeId: "LDeP5TyASDc",
     buzzsproutId: "16729958",
@@ -203,9 +203,7 @@ export const episodes: Episode[] = [
       "Transferable skills matter more than traditional PM experience"
     ],
     resourcesMentioned: [
-      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
-      { title: "Nectar HR", url: "https://nectarhr.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" }
     ],
     keywords: ["product marketing to PM", "career transition", "customer obsession", "Nectar", "employee recognition", "first PM role", "transferable skills", "engineering relationships", "dogfooding"]
   },
@@ -236,23 +234,20 @@ export const episodes: Episode[] = [
     duration: "49 min",
     publishedAt: "2025-01-15",
     takeaways: [
-      "You don't need big tech experience to get into big tech—product building skills matter more than company names",
-      "Pivot to PM internally within your company—it's much easier than external hiring",
+      "You don't need big tech experience to get into big tech, product building skills matter more",
       "Get any job first, then move into PM internally rather than holding out for the perfect PM role",
       "Create a competitive edge with AI projects and side hustles to stand out in today's market",
       "Leverage your industry background when applying—your niche knowledge is a strength",
-      "Practice, practice, practice for PM interviews—write out answers and do mock interviews",
-      "Use LinkedIn strategically—engage with content, write posts about products, build connections",
-      "AI is the pivotal moment for PMs—learn to bridge design and engineering gaps with AI tools",
-      "Focus on the product you want to build, not just the company name",
-      "Rejection means 'not right now'—use the time to polish your skills and try again"
+      "Practice, practice, practice for PM interviews, write out answers and do mock interviews",
+      "Use LinkedIn strategically, engage with content, write posts about products, build connections",
+      "AI is the pivotal moment for PMs. Learn to bridge design and engineering gaps with AI tools",
+      "Rejection means 'not right now,' so use the time to improve your skills and try again"
     ],
     resourcesMentioned: [
       { title: "Cracking the PM Interview by Gayle Laakmann McDowell", url: "https://www.crackingthepminterview.com" },
       { title: "Exponent PM Interview Prep", url: "https://www.tryexponent.com" },
       { title: "Lenny's Newsletter", url: "https://www.lennysnewsletter.com" },
-      { title: "Lewis Lin PM Community", url: "https://www.lewis-lin.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Lewis Lin PM Community", url: "https://www.lewis-lin.com" }
     ],
     keywords: ["big tech PM", "Microsoft product manager", "AI product management", "Copilot", "breaking into big tech", "internal transfer", "PM interview prep", "career transition", "TPM to PM", "solutions engineering"]
   },
@@ -272,7 +267,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/brodyclemmer/"
     },
     description: "Brody shares his provocative take on the future of product management and why the role may not exist in 10 years as we know it today.",
-    longDescription: "In this thought-provoking episode, hosts Santi and Meagan sit down with Brody Clemmer, Lead Product Manager at Little Otter, to discuss the evolving—and potentially disappearing—nature of product management.\n\nBrody shares his unconventional path from running a bootstrapped web development firm at 22 to becoming a lead PM, all without a college degree. He challenges common assumptions about the PM career path, arguing that product management is a role, not a career, and that the title may not exist in 10 years—though product thinking will always be needed.\n\nThe conversation dives deep into the differences between startups and big tech, the importance of staying in the problem space, adaptive communication, and why Brody sometimes coaches PMs out of product management entirely. His hot take: go after another career path first, use product thinking foundations, and you'll find your way into product if it's meant to be.",
+    longDescription: "In this thought-provoking episode, hosts Santi and Meagan sit down with Brody Clemmer, Lead Product Manager at Little Otter, to discuss the evolving nature of product management.\n\nBrody shares his unconventional path from running a bootstrapped web development firm at 22 to becoming a lead PM, all without a college degree. He challenges common assumptions about the PM career path, arguing that product management is a role, not a career, and that the title may not exist in 10 years, though product thinking will always be needed.\n\nThe conversation dives deep into the differences between startups and big tech, the importance of staying in the problem space, adaptive communication, and why Brody sometimes coaches PMs out of product management entirely. His hot take: go after another career path first, use product thinking foundations, and you'll find your way into product if it's meant to be.",
     thumbnail: brodyThumbnail,
     youtubeId: "4ZLUXW06jbg",
     buzzsproutId: "16815265",
@@ -295,9 +290,7 @@ export const episodes: Episode[] = [
       "When evaluating startups, ask: would they still have a business without the technology?"
     ],
     resourcesMentioned: [
-      { title: "Generalist World Community", url: "https://www.generalist.world" },
-      { title: "Little Otter Health", url: "https://www.littleotterhealth.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Generalist World Community", url: "https://www.generalist.world" }
     ],
     keywords: ["future of product management", "PM career path", "startup PM", "generalist", "problem space", "no degree PM", "entrepreneurial PM", "product thinking", "adaptive communication", "Little Otter"]
   },
@@ -328,22 +321,19 @@ export const episodes: Episode[] = [
     duration: "44 min",
     publishedAt: "2025-02-12",
     takeaways: [
-      "You are your own best advocate—keep ringing the bell about your career goals",
-      "It's okay to fall out of love with things and pivot—that's how you grow",
+      "You are your own best advocate, so keep ringing the bell about your career goals",
+      "It's okay to fall out of love with things and pivot - that's how you grow",
       "Treat yourself as a product and iterate on your skills and approach",
-      "You know more than you think—trust yourself and have conviction in your ideas",
+      "You know more than you think, trust yourself and have conviction in your ideas",
       "Every rejection is a redirection and a great learning moment",
       "Take breaks when needed to sharpen skills, network, and reflect",
-      "Storytelling is a crucial PM skill—the 'gift of yap' transfers directly from journalism",
-      "Be flexible, open-minded, and adaptable—PMs are essentially contortionists",
-      "Honor the bliss of the learning curve—all novices start somewhere",
-      "If you help one person with your content, you did your job"
+      "Storytelling is a crucial PM skill, the 'gift of yap' transfers directly from journalism",
+      "Be flexible, open-minded, and adaptable - PMs are essentially contortionists"
     ],
     resourcesMentioned: [
       { title: "Contagious: Why Things Catch On by Jonah Berger", url: "https://jonahberger.com/books/contagious/" },
       { title: "Measure What Matters by John Doerr", url: "https://www.whatmatters.com/the-book" },
-      { title: "The 5 Second Rule by Mel Robbins", url: "https://melrobbins.com/the-5-second-rule/" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "The 5 Second Rule by Mel Robbins", url: "https://www.melrobbins.com/book/the-5-second-rule/" }
     ],
     keywords: ["journalism to PM", "CNBC product manager", "career pivot", "self-advocacy", "storytelling", "media industry PM", "rejection", "Mel Robbins", "transferable skills", "retail investors"]
   },
