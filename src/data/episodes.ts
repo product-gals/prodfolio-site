@@ -72,7 +72,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/rachel-kronenfeld-6911426b/"
     },
     description: "How Rachel pivoted from private investigator to product manager by leveraging her subject matter expertise.",
-    longDescription: "Rachel Kronenfeld's path to product management is unlike any other. After 8 years as a private investigator and Director of Services at an intelligence firm, she made the leap to PM at LifeRaft—the very software she used as a customer.\n\nIn this episode, Rachel shares how she positioned herself for a PM role without traditional product experience, the challenges of learning on the job, and why being a subject matter expert gave her unique advantages. She also discusses working closely with engineering and design teams, letting go of perfectionism in favor of iteration, and why the 'PM is dead' narrative shouldn't discourage aspiring product managers.",
+    longDescription: "Rachel Kronenfeld's path to product management is unlike any other. After years as a private investigator and Director of Services at an intelligence firm, she made the leap to PM at LifeRaft, a software she used as a customer.\n\nIn this episode, Rachel shares how she positioned herself for a PM role without traditional product experience, the challenges of learning on the job, and why being a subject matter expert gave her unique advantages. She also discusses working closely with engineering and design teams, letting go of perfectionism in favor of iteration, and why the 'PM is dead' narrative shouldn't discourage aspiring product managers.",
     thumbnail: rachelThumbnail,
     youtubeId: "qS4IxwD9dCo",
     buzzsproutId: "16604831",
@@ -92,8 +92,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "Cracking the PM Career by Jackie Bavaro & Gayle Laakmann McDowell", url: "https://www.crackingthepmcareer.com" },
-      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" }
     ],
     keywords: ["pivot to product management", "subject matter expert PM", "career transition", "private investigator to PM", "breaking into product", "transferable skills", "LifeRaft"]
   },
