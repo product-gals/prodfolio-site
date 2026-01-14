@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 
 import prodfolioLogoProd from "@/assets/prodfolio-logo-prod.png";
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
@@ -9,6 +10,8 @@ import prodfolioIcon from "@/assets/prodfolio-icon.png";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const resourcesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +20,18 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (resourcesRef.current && !resourcesRef.current.contains(event.target as Node)) {
+        setIsResourcesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -47,46 +62,65 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6">
             <Link
               to="/"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="font-medium text-white hover:text-white/80 transition-colors"
             >
               Home
             </Link>
             <Link
               to="/features"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="font-medium text-white hover:text-white/80 transition-colors"
             >
               Features
             </Link>
             <Link
               to="/examples"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="font-medium text-white hover:text-white/80 transition-colors"
             >
               Examples
             </Link>
             <Link
               to="/pricing"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="font-medium text-white hover:text-white/80 transition-colors"
             >
               Pricing
             </Link>
             <Link
               to="/about"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="font-medium text-white hover:text-white/80 transition-colors"
             >
               About
             </Link>
-            <Link
-              to="/podcast"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
-            >
-              Podcast
-            </Link>
-            <Link
-              to="/partners"
-              className="text-sm font-medium text-white hover:text-white/80 transition-colors"
-            >
-              Partners
-            </Link>
+
+            {/* Resources Dropdown */}
+            <div className="relative" ref={resourcesRef}>
+              <button
+                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1"
+              >
+                Resources
+                <ChevronDown className={`w-4 h-4 transition-transform ${isResourcesOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {isResourcesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-[#100D22]/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl py-2">
+                  <Link
+                    to="/podcast"
+                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                    onClick={() => setIsResourcesOpen(false)}
+                  >
+                    Podcast
+                  </Link>
+                  <Link
+                    to="/partners"
+                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                    onClick={() => setIsResourcesOpen(false)}
+                  >
+                    Partners
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <div className="flex items-center space-x-2 ml-4">
               <Button 
                 asChild 
@@ -130,53 +164,58 @@ const Navbar = () => {
           <div className="prodfolio-container space-y-2">
             <Link
               to="/"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/features"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </Link>
             <Link
               to="/examples"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Examples
             </Link>
             <Link
               to="/pricing"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link
               to="/about"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
+              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </Link>
-            <Link
-              to="/podcast"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Podcast
-            </Link>
-            <Link
-              to="/partners"
-              className="block py-2 text-sm font-medium text-white hover:text-white/80 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Partners
-            </Link>
+
+            {/* Resources Section */}
+            <div className="pt-2 border-t border-white/10">
+              <p className="py-2 text-white/60 text-sm font-medium">Resources</p>
+              <Link
+                to="/podcast"
+                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Podcast
+              </Link>
+              <Link
+                to="/partners"
+                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Partners
+              </Link>
+            </div>
             <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
               <a href="https://app.prodfolio.io/login">Log In</a>
             </Button>

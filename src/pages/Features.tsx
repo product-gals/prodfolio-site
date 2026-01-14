@@ -182,27 +182,27 @@ const Features = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">S</p>
-                  <p className="text-sm text-navy/80">Situation & Context</p>
+                  <p className="text-sm text-navy/80">Situation — Set the stage</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">I</p>
-                  <p className="text-sm text-navy/80">Impact & Results</p>
+                  <p className="text-sm text-navy/80">Insight — Your discovery process</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">G</p>
-                  <p className="text-sm text-navy/80">Growth & Learnings</p>
+                  <p className="text-sm text-navy/80">Goals — Define success</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">N</p>
-                  <p className="text-sm text-navy/80">Narrative & Story</p>
+                  <p className="text-sm text-navy/80">Navigation — Your approach</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">A</p>
-                  <p className="text-sm text-navy/80">Artifacts & Evidence</p>
+                  <p className="text-sm text-navy/80">Achievement — Prove impact</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">L</p>
-                  <p className="text-sm text-navy/80">Leadership & Skills</p>
+                  <p className="text-sm text-navy/80">Learnings — Reflect & grow</p>
                 </div>
               </div>
             </div>
@@ -225,14 +225,14 @@ const Features = () => {
                         <div className="h-2 bg-navy/10 rounded w-4/5 mt-1" />
                       </div>
                       <div>
-                        <p className="text-xs text-primary font-semibold mb-1">IMPACT</p>
+                        <p className="text-xs text-primary font-semibold mb-1">ACHIEVEMENT</p>
                         <div className="flex gap-2">
                           <span className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">+45% conversion</span>
                           <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">$2M revenue</span>
                         </div>
                       </div>
                       <div>
-                        <p className="text-xs text-primary font-semibold mb-1">GROWTH</p>
+                        <p className="text-xs text-primary font-semibold mb-1">LEARNINGS</p>
                         <div className="h-2 bg-navy/10 rounded w-3/4" />
                       </div>
                     </div>

@@ -192,47 +192,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Situation</h3>
               <p className="text-white/70 text-sm">
-                Set the context. What was the problem? Why did it matter to the business?
-              </p>
-            </div>
-
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-5 h-5 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Impact</h3>
-              <p className="text-white/70 text-sm">
-                Quantify your results. What metrics moved? What was the business outcome?
-              </p>
-            </div>
-
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
-                <GraduationCap className="w-5 h-5 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Growth</h3>
-              <p className="text-white/70 text-sm">
-                Show your development. What skills did you build? How did you level up?
-              </p>
-            </div>
-
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
-                <MessageSquare className="w-5 h-5 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Narrative</h3>
-              <p className="text-white/70 text-sm">
-                Tell the story. Walk through your process, decisions, and trade-offs.
-              </p>
-            </div>
-
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
-                <FolderOpen className="w-5 h-5 text-white" />
-              </div>
-              <h3 className="text-lg font-bold text-white mb-2">Artifacts</h3>
-              <p className="text-white/70 text-sm">
-                Show your work. PRDs, wireframes, data analysis—make it tangible.
+                Set the stage. What was the challenge or opportunity? Why did it matter?
               </p>
             </div>
 
@@ -240,9 +200,49 @@ const HowItWorks = () => {
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <Sparkles className="w-5 h-5 text-white" />
               </div>
+              <h3 className="text-lg font-bold text-white mb-2">Insight</h3>
+              <p className="text-white/70 text-sm">
+                Show your discovery process. What research or data led to your approach?
+              </p>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
+                <FolderOpen className="w-5 h-5 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Goals</h3>
+              <p className="text-white/70 text-sm">
+                Define what success looks like. What were you trying to achieve?
+              </p>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
+                <MessageSquare className="w-5 h-5 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Navigation</h3>
+              <p className="text-white/70 text-sm">
+                Explain your approach. What decisions and trade-offs did you make?
+              </p>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
+                <TrendingUp className="w-5 h-5 text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Achievement</h3>
+              <p className="text-white/70 text-sm">
+                Prove your impact. What metrics moved? What was the business outcome?
+              </p>
+            </div>
+
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+              <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
+                <GraduationCap className="w-5 h-5 text-white" />
+              </div>
               <h3 className="text-lg font-bold text-white mb-2">Learnings</h3>
               <p className="text-white/70 text-sm">
-                Reflect honestly. What would you do differently? What did you learn?
+                Reflect and grow. What would you do differently? What did you learn?
               </p>
             </div>
           </div>

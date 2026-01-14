@@ -33,8 +33,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/partners" className="hover:text-white hover:underline transition-all">
+                  Partners
+                </Link>
+              </li>
+              <li>
                 <a href="https://sugared-cactus-5d5.notion.site/The-SIGNAL-Framework-for-PM-Case-Studies-2a5f7107577780318be3e52f948684ed?pvs=74" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-all">
-                  PM Case Study Framework
+                  SIGNAL Framework
                 </a>
               </li>
             </ul>
