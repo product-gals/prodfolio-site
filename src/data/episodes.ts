@@ -154,7 +154,7 @@ export const episodes: Episode[] = [
     spotifyUrl: "https://open.spotify.com/episode/12qg8mul8WEQnVmVKfaHcv",
     appleUrl: "https://podcasts.apple.com/sk/podcast/the-product-pivot-meet-your-hosts/id1784108281?i=1000694415392",
     topic: "career",
-    topics: ["Meet Your Hosts", "Career Transition", "Mentorship", "Customer Experience", "Podcast Origin Story"],
+    topics: ["Career Transition", "Mentorship", "Customer Experience", "Podcast Origin Story"],
     duration: "53 min",
     publishedAt: "2024-12-15",
     takeaways: [
