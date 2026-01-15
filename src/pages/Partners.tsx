@@ -94,7 +94,7 @@ const Partners = () => {
               >
                 {/* Exclusive Offer Badge */}
                 {partner.promoCode && (
-                  <div className="absolute -top-3 -right-3 bg-[#4DD9E5] text-[#1a1a2e] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
+                  <div className="absolute -top-3 -right-3 bg-coral text-[#1a1a2e] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
                     <Tag className="w-3 h-3" />
                     {partner.promoDiscount}
                   </div>
@@ -104,7 +104,7 @@ const Partners = () => {
                   {/* Photo/Logo placeholder */}
                   <div className="flex-shrink-0">
                     {partner.type === "individual" ? (
-                      <div className="w-24 h-24 rounded-lg bg-[#4DD9E5] flex items-center justify-center overflow-hidden">
+                      <div className="w-24 h-24 rounded-lg bg-coral flex items-center justify-center overflow-hidden">
                         {partner.photo ? (
                           <img src={partner.photo} alt={partner.name} className="w-full h-full object-cover" />
                         ) : (
@@ -139,7 +139,7 @@ const Partners = () => {
                         href={partner.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-[#4DD9E5] text-sm font-medium hover:underline"
+                        className="inline-flex items-center gap-1 text-coral text-sm font-medium hover:underline"
                       >
                         Link <ExternalLink className="w-3 h-3" />
                       </a>
@@ -148,7 +148,7 @@ const Partners = () => {
                           href={partner.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-[#4DD9E5] text-sm font-medium hover:underline"
+                          className="inline-flex items-center gap-1 text-coral text-sm font-medium hover:underline"
                         >
                           LinkedIn <ExternalLink className="w-3 h-3" />
                         </a>
@@ -167,7 +167,7 @@ const Partners = () => {
                       </code>
                       <button
                         onClick={() => copyPromoCode(partner.promoCode!)}
-                        className="bg-[#4DD9E5] hover:bg-[#3bc9d5] text-[#1a1a2e] p-2 rounded-lg transition-colors"
+                        className="bg-coral hover:bg-coral/90 text-[#1a1a2e] p-2 rounded-lg transition-colors"
                         aria-label="Copy promo code"
                       >
                         {copiedCode === partner.promoCode ? (
