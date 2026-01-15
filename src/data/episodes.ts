@@ -583,8 +583,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "InnovaCorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
-      { title: "Udemy PM Courses", url: "https://www.udemy.com" },
-      { title: "Udacity Product Management Nanodegree", url: "https://www.udacity.com" }
+      { title: "Udemy PM Courses", url: "https://www.udemy.com" }
     ],
     keywords: ["incubator to PM", "startup ecosystem", "AI product manager", "side hustle", "customer discovery", "transferable skills", "portfolio", "storytelling", "done is better than perfect", "vanity metrics", "over-solutioning", "Dash Social", "Halifax"]
   },
