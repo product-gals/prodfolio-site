@@ -536,7 +536,6 @@ export const episodes: Episode[] = [
       "It's hard everywhere. Every company has challenges, so know your tolerance",
       "Two essential questions before accepting: Do I want to do this job? Can I work with these people?",
       "For pivoting into PM: join a tech company in any role, excel there, then pivot internally",
-      "Knowing why you say yes to a job is liberating, even accepting less-than-ideal roles strategically",
       "The average PM tenure is about 2 years. It's okay to join knowing it's not forever",
       "Most people don't start their career in product. It's a journey into product from other roles"
     ],
