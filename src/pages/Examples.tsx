@@ -143,8 +143,7 @@ const Examples = () => {
             </p>
             <Button
               asChild
-              variant="outline"
-              className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl"
+              className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl"
             >
               <a href="mailto:hello@prodfolio.io?subject=Feature my portfolio">
                 Submit your portfolio
