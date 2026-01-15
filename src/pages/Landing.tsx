@@ -407,10 +407,10 @@ const Landing = () => {
                 <div className="space-y-2">
                   {[
                     { letter: 'S', label: 'Situation', status: 'complete', desc: 'Context & challenge' },
-                    { letter: 'I', label: 'Impact', status: 'complete', desc: 'Measurable outcomes' },
-                    { letter: 'G', label: 'Growth', status: 'complete', desc: 'Skills developed' },
-                    { letter: 'N', label: 'Narrative', status: 'active', desc: 'Your story arc' },
-                    { letter: 'A', label: 'Artifacts', status: 'pending', desc: 'Visual evidence' },
+                    { letter: 'I', label: 'Insight', status: 'complete', desc: 'Key discovery' },
+                    { letter: 'G', label: 'Goals', status: 'complete', desc: 'What you aimed for' },
+                    { letter: 'N', label: 'Navigation', status: 'active', desc: 'How you got there' },
+                    { letter: 'A', label: 'Achievement', status: 'pending', desc: 'Measurable outcomes' },
                     { letter: 'L', label: 'Learnings', status: 'pending', desc: 'Key takeaways' },
                   ].map((item) => (
                     <div key={item.letter} className={`flex items-center gap-3 p-2 rounded-lg ${item.status === 'active' ? 'bg-primary/10 border border-primary/30' : ''}`}>
