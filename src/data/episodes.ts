@@ -433,7 +433,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/mayergabor/"
     },
     description: "Gabor shares his journey of 8 Google rejections, what changed between interview one and his final offer, and why being a good PM interviewee is a separate skill.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Gabor Mayer, Product Manager at Google Commerce, to discuss his inspiring journey from 8 rejections to finally landing his dream role at Google.\n\nGabor shares how his PM journey started in 2007 when he realized he loved talking to customers more than computers. He opens up about the personal motivation behind his persistence—wanting to prove to himself that he was a 'prime talent' after years of feeling like a secondary one.\n\nThe conversation covers the critical difference between being a good product manager and being a good PM interviewee, how AI will become standard for all PMs (like mobile did), his PM interview readiness quiz, and the three ways to break into product: APM programs, internal transfers, and building something. Gabor also teases his upcoming book on PM interviews.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Gabor Mayer, Product Manager at Google Commerce, to discuss his inspiring journey from 8 rejections to finally landing his dream role at Google.\n\nGabor shares how his PM journey started in 2007 when he realized he loved talking to customers more than computers. He opens up about the personal motivation behind his persistence - wanting to prove to himself that he was a 'prime talent' after years of feeling like a secondary one.\n\nThe conversation covers the critical difference between being a good product manager and being a good PM interviewee, how AI will become standard for all PMs (like mobile did), his PM interview readiness quiz, and the three ways to break into product: APM programs, internal transfers, and building something. Gabor also teases his upcoming book on PM interviews.",
     youtubeId: "AEXiTi2yFkA",
     buzzsproutId: "17812722",
     spotifyUrl: "https://open.spotify.com/episode/6NahFn6O6RLFKOU8O3oxeL",
@@ -444,14 +444,14 @@ export const episodes: Episode[] = [
     publishedAt: "2025-03-26",
     takeaways: [
       "Being a good PM and being a good PM interviewee are two completely different skill sets",
-      "Rejection is redirection—Gabor was rejected 8 times before landing Google",
-      "AI will become part of regular PM work like mobile did before—learn it now",
-      "Don't push AI into products just because it exists—ask what problem it solves 10x better",
+      "Rejection is redirection - Gabor was rejected 8 times before landing Google",
+      "AI will become part of regular PM work like mobile did before - learn it now",
+      "Don't push AI into products just because it exists - ask what problem it solves 10x better",
       "Use AI in your daily work to understand its capabilities and spark creative ideas",
       "Three ways to break into PM: APM programs, internal transfers, or build something",
       "Job hunting takes 6-9 months on average in this competitive market",
-      "Treat interview prep like a video game—unlock each level one at a time",
-      "Stop caring about lagging metrics and absolute numbers—focus on user success speed",
+      "Treat interview prep like a video game - unlock each level one at a time",
+      "Stop caring about lagging metrics and absolute numbers - focus on user success speed",
       "If you make your users successful, your product will be successful"
     ],
     resourcesMentioned: [
