@@ -278,14 +278,14 @@ export const episodes: Episode[] = [
     duration: "60 min",
     publishedAt: "2025-01-29",
     takeaways: [
-      "Intense curiosity is the most important trait for product managers—lean into it",
-      "Product management looks drastically different before Series D vs after—know the difference",
-      "Your job is to add value to the business—figure out how to do that, whatever it takes",
-      "Master adaptive communication—it's not what you say, it's what they hear",
+      "Intense curiosity is the most important trait for product managers - lean into it",
+      "Product management looks drastically different before Series D vs after - know the difference",
+      "Your job is to add value to the business - figure out how to do that, whatever it takes",
+      "Master adaptive communication - it's not what you say, it's what they hear",
       "Stay in the problem space far longer than you're comfortable with before jumping to solutions",
       "Product management may not exist as a title in 10 years, but product thinking always will",
-      "Consider going after another career path first—use product thinking foundations in any role",
-      "Product management is a role, not a career path—there's a ceiling, and that's okay",
+      "Consider going after another career path first - use product thinking foundations in any role",
+      "Product management is a role, not a career path - there's a ceiling, and that's okay",
       "The 'figure it out' mindset separates great PMs from good ones",
       "When evaluating startups, ask: would they still have a business without the technology?"
     ],
@@ -348,12 +348,12 @@ export const episodes: Episode[] = [
       company: "Delta Product Group",
       website: "https://www.linkedin.com/in/trevoracy/",
       industry: "Consulting & Fractional PM",
-      bio: "Trevor Acy is a fractional product leader offering part-time product management, coaching, and training for business leaders. Previously a director of marketing in Nashville, Trevor pivoted to product after reading 'Inspired' and attending an SVPG workshop—even taking a demotion to make the switch. He moved home to Mississippi to help build the tech and startup ecosystem, working with nonprofits like The Bean Path and the Mississippi Coding Academy to spread product thinking across the state.",
+      bio: "Trevor Acy is a fractional product leader offering part-time product management, coaching, and training for business leaders. Previously a director of marketing in Nashville, Trevor pivoted to product after reading 'Inspired' and attending an SVPG workshop - even taking a demotion to make the switch. He moved home to Mississippi to help build the tech and startup ecosystem, working with nonprofits like The Bean Path and the Mississippi Coding Academy to spread product thinking across the state.",
       photo: trevorPhoto,
       linkedin: "https://www.linkedin.com/in/trevoracy/"
     },
     description: "Trevor unpacks fractional product management, how he pivoted from marketing, and his mission to build Mississippi's tech ecosystem.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Trevor Acy, a fractional product leader at Delta Product Group, to explore the world of fractional product management and his journey from marketing director to PM.\n\nTrevor shares how reading 'Inspired' and attending an SVPG workshop transformed his thinking—he told his CTO, 'I'm tired of telling people our product is good. I want to make our product better.' He spent a year applying product principles in his marketing role before taking a demotion to become an IC product manager.\n\nThe conversation covers practical advice for aspiring PMs (just get the reps in), the benefits of fractional work for companies, why you should do unscalable things for as long as possible, and Trevor's passion project: building Mississippi's tech and startup ecosystem through education and mentorship.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Trevor Acy, a fractional product leader at Delta Product Group, to explore the world of fractional product management and his journey from marketing director to PM.\n\nTrevor shares how reading 'Inspired' and attending an SVPG workshop transformed his thinking - he told his CTO, 'I'm tired of telling people our product is good. I want to make our product better.' He spent a year applying product principles in his marketing role before taking a demotion to become an IC product manager.\n\nThe conversation covers practical advice for aspiring PMs (just get the reps in), the benefits of fractional work for companies, why you should do unscalable things for as long as possible, and Trevor's passion project: building Mississippi's tech and startup ecosystem through education and mentorship.",
     thumbnail: trevorThumbnail,
     youtubeId: "EBVblJFDbUQ",
     buzzsproutId: "16895298",
@@ -364,23 +364,19 @@ export const episodes: Episode[] = [
     duration: "60 min",
     publishedAt: "2025-02-26",
     takeaways: [
-      "Apply product principles in your current role before transitioning—treat your projects as products",
-      "Getting the reps in practicing the discipline is what makes you a better PM",
+      "Apply product principles in your current role before transitioning",
       "You can still think product-first even if your company is a feature factory",
-      "Be okay not knowing and being an amateur again—asking dumb questions is a PM superpower",
+      "Asking dumb questions is a PM superpower",
       "Sneak in customer-centered work alongside feature requests, then show the results",
-      "Do unscalable things for as long as possible—you'll learn where the real problems are",
+      "Do unscalable things for as long as possible, you'll learn where the real problems are",
       "Great PMs hold strong opinions while being totally open to counter information",
       "Fractional work opportunities come from people you know, not cold outreach",
-      "Get comfortable promoting yourself—it doesn't come naturally but it's essential",
-      "Find existing bright spots in your community and offer to help—opportunities follow"
+      "Get comfortable promoting yourself",
+      "Find existing bright spots in your community and offer to help, opportunities follow"
     ],
     resourcesMentioned: [
       { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
-      { title: "Silicon Valley Product Group (SVPG)", url: "https://www.svpg.com" },
-      { title: "The Bean Path (Jackson, MS)", url: "https://thebeanpath.org" },
-      { title: "Mississippi Coding Academy", url: "https://mscoding.org" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Mississippi Coding Academy", url: "https://mscoding.org" }
     ],
     keywords: ["fractional product manager", "marketing to PM", "SVPG", "Inspired", "Mississippi tech", "product coaching", "startup ecosystem", "Delta Product Group", "career transition", "community building"]
   },
@@ -390,16 +386,16 @@ export const episodes: Episode[] = [
     title: "Season Two Kickoff and More!",
     episodeNumber: "S2E1",
     guest: {
-      name: "Meagan Glenn & Santiana Brace",
+      name: "Santi & Meagan",
       role: "Your Hosts",
-      company: "The Product Pivot",
-      website: "https://www.youtube.com/@TheProductPivot",
-      industry: "Product Management",
-      bio: "In this special hosts-only episode, Meagan and Santi recap Season 1, share personal updates (Meagan went fractional, Santi moved to ProdOps), tease Season 2 guests, and announce Prodfolio—their new portfolio platform for PMs. They also share community-submitted product tips and call for Season 3 guest suggestions.",
+      company: "Prodfolio",
+      website: "https://prodfolio.io",
+      industry: "Product Management, SaaS",
+      bio: "In this special hosts-only episode, Meagan and Santi recap Season 1, share personal updates (Meagan went fractional, Santi moved to ProdOps), tease Season 2 guests, and announce Prodfolio - their new portfolio platform for PMs. They also share community-submitted product tips and call for Season 3 guest suggestions.",
       linkedin: "https://www.linkedin.com/company/the-product-pivot/"
     },
     description: "Hosts Meagan and Santi recap Season 1, share updates, tease Season 2 guests, and announce their new project: Prodfolio.",
-    longDescription: "In this special hosts-only episode, Meagan and Santi kick off Season 2 by reflecting on the incredible journey of Season 1—over 1,000 views and even being recognized in public!\n\nThey share personal career updates: Meagan pivoted to fractional product management after a layoff, while Santi transitioned into a Product Operations role. The hosts also announce Prodfolio, their passion project to help aspiring PMs build credibility through portfolio documentation.\n\nThe episode features community-submitted product tips, teasers for Season 2 guests (including a product recruiter, AI PM expert, and Big Tech PM), and a call for Season 3 suggestions. A behind-the-scenes look at the humans behind The Product Pivot.",
+    longDescription: "In this special hosts-only episode, Meagan and Santi kick off Season 2 by reflecting on the incredible journey of Season 1, with over 1,000 views and even being recognized in public!\n\nThey share personal career updates: Meagan pivoted to fractional product management after a layoff, while Santi transitioned into a Product Operations role. The hosts also announce Prodfolio, their passion project to help aspiring PMs build credibility through portfolio documentation.\n\nThe episode features community-submitted product tips, teasers for Season 2 guests (including a product recruiter, AI PM expert, and Big Tech PM), and a call for Season 3 suggestions. A behind-the-scenes look at the humans behind The Product Pivot.",
     youtubeId: "MqNuW8qXzmU",
     buzzsproutId: "17773184",
     spotifyUrl: "https://open.spotify.com/episode/0s8UN6C159QMczcJcarJfi",
@@ -409,22 +405,16 @@ export const episodes: Episode[] = [
     duration: "50 min",
     publishedAt: "2025-03-12",
     takeaways: [
-      "Product people don't come from product backgrounds—that's a universal truth from Season 1",
+      "Product people don't come from product backgrounds, that's a universal truth from Season 1",
       "Transferable skills are the heart of the PM pivot journey",
-      "Build like a dreamer, think like a CFO, test like a skeptic",
       "If you always argue from the customer's perspective, you'll never lose an argument",
-      "Build something—anything—and iterate with user feedback",
+      "Build something, then iterate with user feedback",
       "What separates senior PMs isn't just experience, it's mindset",
-      "Understand not just your users, but your team and organizational dynamics",
       "The PM role is whatever it takes to get the product launch over the line",
       "If your content helps one person, you did your job",
       "Treat yourself as a product and iterate"
     ],
-    resourcesMentioned: [
-      { title: "Prodfolio - PM Portfolio Platform", url: "https://prodfolio.io" },
-      { title: "The Product Pivot Season 1", url: "https://www.youtube.com/@TheProductPivot" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
-    ],
+    resourcesMentioned: [],
     keywords: ["season recap", "hosts episode", "Prodfolio", "PM portfolio", "product operations", "fractional PM", "season two", "community tips", "career update", "behind the scenes"]
   },
   {
@@ -443,7 +433,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/mayergabor/"
     },
     description: "Gabor shares his journey of 8 Google rejections, what changed between interview one and his final offer, and why being a good PM interviewee is a separate skill.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Gabor Mayer, Product Manager at Google Commerce, to discuss his inspiring journey from 8 rejections to finally landing his dream role at Google.\n\nGabor shares how his PM journey started in 2007 when he realized he loved talking to customers more than computers. He opens up about the personal motivation behind his persistence—wanting to prove to himself that he was a 'prime talent' after years of feeling like a secondary one.\n\nThe conversation covers the critical difference between being a good product manager and being a good PM interviewee, how AI will become standard for all PMs (like mobile did), his PM interview readiness quiz, and the three ways to break into product: APM programs, internal transfers, and building something. Gabor also teases his upcoming book on PM interviews.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Gabor Mayer, Product Manager at Google Commerce, to discuss his inspiring journey from 8 rejections to finally landing his dream role at Google.\n\nGabor shares how his PM journey started in 2007 when he realized he loved talking to customers more than computers. He opens up about the personal motivation behind his persistence - wanting to prove to himself that he was a 'prime talent' after years of feeling like a secondary one.\n\nThe conversation covers the critical difference between being a good product manager and being a good PM interviewee, how AI will become standard for all PMs (like mobile did), his PM interview readiness quiz, and the three ways to break into product: APM programs, internal transfers, and building something. Gabor also teases his upcoming book on PM interviews.",
     youtubeId: "AEXiTi2yFkA",
     buzzsproutId: "17812722",
     spotifyUrl: "https://open.spotify.com/episode/6NahFn6O6RLFKOU8O3oxeL",
@@ -454,22 +444,19 @@ export const episodes: Episode[] = [
     publishedAt: "2025-03-26",
     takeaways: [
       "Being a good PM and being a good PM interviewee are two completely different skill sets",
-      "Rejection is redirection—Gabor was rejected 8 times before landing Google",
-      "AI will become part of regular PM work like mobile did before—learn it now",
-      "Don't push AI into products just because it exists—ask what problem it solves 10x better",
+      "Rejection is redirection, Gabor was rejected 8 times before landing Google",
+      "AI will become part of regular PM work like mobile did before - learn it now",
+      "Don't push AI into products just because it exists - ask what problem it solves 10x better",
       "Use AI in your daily work to understand its capabilities and spark creative ideas",
       "Three ways to break into PM: APM programs, internal transfers, or build something",
       "Job hunting takes 6-9 months on average in this competitive market",
-      "Treat interview prep like a video game—unlock each level one at a time",
-      "Stop caring about lagging metrics and absolute numbers—focus on user success speed",
+      "Treat interview prep like a video game - unlock each level one at a time",
       "If you make your users successful, your product will be successful"
     ],
     resourcesMentioned: [
-      { title: "Notebook LM by Google", url: "https://notebooklm.google.com" },
+      { title: "Gabor's PM Interview Readiness Quiz", url: "https://test.bigupgrade.com/" },
       { title: "Cracking the PM Interview", url: "https://www.crackingthepminterview.com" },
-      { title: "Decode and Conquer by Lewis Lin", url: "https://www.lewis-lin.com/decode-and-conquer" },
-      { title: "Gabor's PM Interview Readiness Quiz", url: "https://www.linkedin.com/in/mayergabor/" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Decode and Conquer by Lewis Lin", url: "https://www.lewis-lin.com/decode-and-conquer" }
     ],
     keywords: ["Google PM", "FAANG interview", "PM interview prep", "8 rejections", "Big Tech", "AI product management", "Notebook LM", "interview skills", "career persistence", "LogMeIn"]
   },
@@ -484,12 +471,12 @@ export const episodes: Episode[] = [
       company: "HeliosX Group",
       website: "https://www.heliosx.com",
       industry: "Healthcare & Telehealth",
-      bio: "Graham Reed is the Head of Product Operations at HeliosX Group (known as Zip Health in the US and MedExpress in the UK). He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
+      bio: "Graham Reed is the Head of Product Operations at HeliosX Group. He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
       photo: grahamPhoto,
       linkedin: "https://www.linkedin.com/in/grahamreed/"
     },
-    description: "Graham dives deep into product operations—when to bring it in, the skills needed, and why it's the most welcoming community in product.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Graham Reed, Head of Product Operations at HeliosX Group, for a comprehensive exploration of the product ops discipline.\n\nGraham shares how he 'fell into' product ops after a decade in product management, and has since built product ops functions from scratch at multiple companies. He discusses when businesses should consider product ops (typically around 150+ employees), the key skills needed (soft skills over experience), and the difference between being a team of one versus building specialized teams.\n\nThe conversation covers how product ops helps teams focus on their 'primary function,' supports product leadership, and why the discipline is proudly community-driven and anti-gatekeeping—the opposite of the sometimes gate-kept product management world. Graham also shares his spicy take on a metric we should all stop pretending to care about.",
+    description: "Graham dives deep into product operations - when to bring it in, the skills needed, and why it's the most welcoming community in product.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Graham Reed, Head of Product Operations at HeliosX Group, for a comprehensive exploration of the product ops discipline.\n\nGraham shares how he 'fell into' product ops after a decade in product management, and has since built product ops functions from scratch at multiple companies. He discusses when businesses should consider product ops (typically around 150+ employees), the key skills needed (soft skills over experience), and the difference between being a team of one versus building specialized teams.\n\nThe conversation covers how product ops helps teams focus on their 'primary function,' supports product leadership, and why the discipline is proudly community-driven and anti-gatekeeping - the opposite of the sometimes gate-kept product management world. Graham also shares his spicy take on a metric we should all stop pretending to care about.",
     youtubeId: "FHoWewjQ8uc",
     buzzsproutId: "17850430",
     spotifyUrl: "https://open.spotify.com/episode/7lIt1DOoFL3k8w7RQo1f9k",
@@ -501,19 +488,18 @@ export const episodes: Episode[] = [
     takeaways: [
       "Every business has product ops as a function, even without a dedicated role",
       "Product ops typically becomes needed around 150+ employees (startup to scale-up transition)",
-      "Soft skills matter more than experience—communication, empathy, problem-solving are key",
+      "Soft skills matter more than experience - communication, empathy, problem-solving are key",
       "Product ops helps teams focus on their 'primary function' by removing friction",
       "You don't have to be a PM first, but it helps understand touch points between teams",
-      "The role is community-driven, not book-driven—very welcoming to newcomers",
-      "Look at what's not being addressed in your team—that's your product ops opportunity",
+      "The role is community-driven, not book-driven - very welcoming to newcomers",
+      "Look at what's not being addressed in your team - that's your product ops opportunity",
       "Product ops supports both the teams on the ground AND leadership",
-      "No two days are the same—you need to switch between strategic and tactical thinking",
+      "No two days are the same - you need to switch between strategic and tactical thinking",
       "Velocity is a metric we should stop pretending to care about"
     ],
     resourcesMentioned: [
       { title: "Product Operations by Melissa Perri & Denise Tilles", url: "https://www.productoperations.com" },
-      { title: "HeliosX Group", url: "https://www.heliosx.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Product Ops Confidential", url: "https://www.productopsconfidential.com/" }
     ],
     keywords: ["product operations", "product ops", "HeliosX", "ways of working", "change management", "team efficiency", "product leadership", "community-driven", "anti-gatekeeping", "velocity metric"]
   },
