@@ -611,24 +611,24 @@ export const episodes: Episode[] = [
     duration: "65 min",
     publishedAt: "2025-05-21",
     takeaways: [
-      "It's less about experience and more about attitude. Be curious and willing to grind",
-      "If you can do something in under 5 minutes, just do it. Reduces your mental backlog",
-      "Startups are always choosing between band-aids and surgery. Be utilitarian about fixes",
-      "Product ops is about communicating customer feedback clearly to your team",
-      "Build product for your customers, not because you think it would be cool",
-      "When applying to startups, reach out directly to teams. Don't apply into the void",
-      "Your network is your net worth. Nurture relationships with everyone you meet",
-      "Don't keep to yourself when new. Ask questions without feeling embarrassed",
-      "Burnout is real. Have outlets outside of work to decompress",
-      "Embrace feedback as a gift. It helps you become a better person and teammate"
+      "It's less about experience and more about attitude. Be curious and willing to grind.",
+      "If you can do something in under 5 minutes, just do it.",
+      "Startups are always choosing between band-aids and surgery.",
+      "Build product for your customers, not because you think it would be cool.",
+      "When applying to startups, reach out directly to teams. Don't apply into the void.",
+      "Your network is your net worth. Nurture relationships with everyone you meet.",
+      "Burnout is real. Have outlets outside of work to decompress.",
+      "Embrace feedback as a gift. It helps you become a better person and teammate."
     ],
-    resourcesMentioned: [],
+    resourcesMentioned: [
+      { title: "Purdue Applied Artificial Intelligence Course", url: "https://bootcamp-sl.discover.online.purdue.edu/applied-artificial-intelligence-course" }
+    ],
     keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
   },
   {
     id: "15",
     slug: "why-ai-should-be-boring",
-    title: "Why AI Should Be Boring — And That's a Good Thing",
+    title: "Why AI Should Be Boring - And That's a Good Thing",
     episodeNumber: "S2E7",
     guest: {
       name: "Aaron Kesler",
@@ -651,22 +651,20 @@ export const episodes: Episode[] = [
     duration: "55 min",
     publishedAt: "2025-06-04",
     takeaways: [
-      "AI PM skills are traditional PM skills—focus on customer problems, not the technology",
+      "AI PM skills are traditional PM skills - focus on customer problems, not the technology",
       "AI is perfect for automating mundane, repetitive tasks that people hate doing",
       "Companies building 'AI for AI's sake' without solving real problems will fail fast",
-      "Vibe coding enables non-technical people to build products—be aware of this disruption",
-      "AI should become boring—let it do boring things so we can focus on interesting work",
-      "Start with ChatGPT if you haven't—just chat with it like you'd chat with a person",
-      "Focus on what you hate doing daily/weekly/monthly—that's where AI helps most",
-      "If you're doing the PM role, give yourself the title—your resume is a marketing document",
-      "Product management is one of the most political roles—build relationships with everyone",
-      "NPS scores provide zero value—instead ask 'If this product went away, how upset would you be?'"
+      "Vibe coding enables non-technical people to build products - be aware of this disruption",
+      "AI should become boring - let it do boring things so we can focus on interesting work",
+      "Start with ChatGPT if you haven't - just chat with it like you'd chat with a person",
+      "Focus on what you hate doing daily/weekly/monthly - that's where AI helps most",
+      "If you're doing the PM role, give yourself the title - your resume is a marketing document",
+      "Product management is one of the most political roles - build relationships with everyone",
+      "NPS scores provide zero value - instead ask 'If this product went away, how upset would you be?'"
     ],
     resourcesMentioned: [
       { title: "ChatGPT", url: "https://chat.openai.com" },
-      { title: "Lean Pub (Book Publishing)", url: "https://leanpub.com" },
-      { title: "Shopify CEO's AI Memo", url: "https://www.shopify.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" }
     ],
     keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
   }

@@ -363,7 +363,7 @@ const EpisodePage = () => {
                 {/* Hosts */}
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="flex items-center gap-3">
-                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full" />
+                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full" loading="lazy" />
                     <div>
                       <p className="font-bold text-white">Meagan Glenn</p>
                       <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -372,7 +372,7 @@ const EpisodePage = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full" />
+                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full" loading="lazy" />
                     <div>
                       <p className="font-bold text-white">Santiana Brace</p>
                       <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -395,6 +395,7 @@ const EpisodePage = () => {
                       src={episode.guest.photo}
                       alt={episode.guest.name}
                       className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                      loading="lazy"
                     />
                   ) : (
                     <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-primary to-coral flex items-center justify-center">
@@ -505,9 +506,10 @@ const EpisodePage = () => {
                 >
                   <div className="aspect-video relative bg-black/50 overflow-hidden">
                     <img
-                      src={ep.thumbnail || `https://img.youtube.com/vi/${ep.youtubeId}/maxresdefault.jpg`}
+                      src={ep.thumbnail || `https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
                       alt={ep.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-5">
