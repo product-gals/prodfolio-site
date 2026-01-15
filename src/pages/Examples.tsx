@@ -75,7 +75,7 @@ const Examples = () => {
             Real portfolios from PMs at every stage. Get inspired, then build your own.
           </p>
           <p className="text-white/70">
-            Each portfolio is unique—find the style that fits you.
+            Learn from PMs who are showcasing their work with confidence
           </p>
         </div>
       </section>
@@ -86,47 +86,39 @@ const Examples = () => {
         className={`py-12 px-4 ${galleryAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              Featured Portfolios
-            </h2>
-            <p className="text-white/80">
-              Learn from PMs who are showcasing their work with confidence
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 float-animation">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12 float-animation">
             {featuredPortfolios.map((portfolio, index) => (
               <article
                 key={index}
-                className="glass-card p-8 hover:shadow-xl transition-all hover:scale-[1.02]"
+                className="glass-card p-5 hover:shadow-xl transition-all hover:scale-[1.02]"
               >
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-3">
                   <div>
-                    <h3 className="text-xl font-heading font-bold text-white">{portfolio.name}</h3>
-                    <p className="text-white/80 font-medium text-sm">{portfolio.role}</p>
+                    <h3 className="text-lg font-heading font-bold text-white">{portfolio.name}</h3>
+                    <p className="text-white/80 font-medium text-xs">{portfolio.role}</p>
                   </div>
-                  <span className="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full border border-white/30">
+                  <span className="bg-white/20 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full border border-white/30">
                     {portfolio.stage}
                   </span>
                 </div>
 
-                <p className="text-white/70 mb-4 leading-relaxed">
+                <p className="text-white/70 mb-3 leading-relaxed text-sm">
                   {portfolio.description}
                 </p>
 
-                <div className="flex items-center gap-2 mb-6 text-sm">
-                  <Star className="w-4 h-4 text-coral" />
+                <div className="flex items-center gap-2 mb-4 text-xs">
+                  <Star className="w-3.5 h-3.5 text-coral" />
                   <span className="text-white/80 italic">{portfolio.highlight}</span>
                 </div>
 
                 <Button
                   asChild
+                  size="sm"
                   className="w-full bg-white text-navy hover:bg-white/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
                 >
                   <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
                     View Portfolio
-                    <ExternalLink className="w-4 h-4" />
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </Button>
               </article>
