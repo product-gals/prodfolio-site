@@ -163,21 +163,21 @@ const Examples = () => {
           </div>
 
           <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <div className="glass-pill text-center p-6">
-              <div className="text-4xl font-bold text-white mb-2">3-4</div>
-              <p className="text-white/70 text-sm">Strong case studies showing range</p>
+            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
+              <div className="text-4xl font-bold text-white mb-2">1-3</div>
+              <p className="text-white/90 text-sm">Strong case studies showing your experience</p>
             </div>
-            <div className="glass-pill text-center p-6">
+            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
               <div className="text-4xl font-bold text-white mb-2">Process</div>
-              <p className="text-white/70 text-sm">Focus on how you think, not just results</p>
+              <p className="text-white/90 text-sm">Focus on how you think, not just results</p>
             </div>
-            <div className="glass-pill text-center p-6">
+            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
               <div className="text-4xl font-bold text-white mb-2">Metrics</div>
-              <p className="text-white/70 text-sm">Quantified impact with context</p>
+              <p className="text-white/90 text-sm">Quantified achievements tied to outcomes</p>
             </div>
-            <div className="glass-pill text-center p-6">
+            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
               <div className="text-4xl font-bold text-white mb-2">Story</div>
-              <p className="text-white/70 text-sm">A narrative that connects your work</p>
+              <p className="text-white/90 text-sm">A narrative that connects your work</p>
             </div>
           </div>
         </div>
