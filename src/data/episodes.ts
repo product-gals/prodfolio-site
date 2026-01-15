@@ -573,13 +573,11 @@ export const episodes: Episode[] = [
       "Starting a business or side hustle is one of the best ways to learn PM fundamentals",
       "Product managers are at the center of solutions that can genuinely change people's lives",
       "You must evangelize your product internally and externally. Be the herald of your product",
-      "Detach your ego from the product. Failure can affect your psyche if you over-identify",
       "Don't over-solution: don't build a plane when someone just wants a bicycle",
       "If you haven't adopted AI in your day-to-day as a PM, you are behind",
       "Done is better than perfect. Perfectionism actually hurts PM work",
       "Build a portfolio mapping your transferable skills to PM competencies",
-      "Document your journey to PM publicly. It differentiates you from the competition",
-      "Vanity metrics look good but don't mean anything fundamental. Avoid them"
+      "Document your journey to PM publicly. It differentiates you from the competition"
     ],
     resourcesMentioned: [
       { title: "InnovaCorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
