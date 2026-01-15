@@ -611,16 +611,14 @@ export const episodes: Episode[] = [
     duration: "65 min",
     publishedAt: "2025-05-21",
     takeaways: [
-      "It's less about experience and more about attitude. Be curious and willing to grind",
-      "If you can do something in under 5 minutes, just do it. Reduces your mental backlog",
-      "Startups are always choosing between band-aids and surgery. Be utilitarian about fixes",
-      "Product ops is about communicating customer feedback clearly to your team",
-      "Build product for your customers, not because you think it would be cool",
-      "When applying to startups, reach out directly to teams. Don't apply into the void",
-      "Your network is your net worth. Nurture relationships with everyone you meet",
-      "Don't keep to yourself when new. Ask questions without feeling embarrassed",
-      "Burnout is real. Have outlets outside of work to decompress",
-      "Embrace feedback as a gift. It helps you become a better person and teammate"
+      "It's less about experience and more about attitude. Be curious and willing to grind.",
+      "If you can do something in under 5 minutes, just do it.",
+      "Startups are always choosing between band-aids and surgery.",
+      "Build product for your customers, not because you think it would be cool.",
+      "When applying to startups, reach out directly to teams. Don't apply into the void.",
+      "Your network is your net worth. Nurture relationships with everyone you meet.",
+      "Burnout is real. Have outlets outside of work to decompress.",
+      "Embrace feedback as a gift. It helps you become a better person and teammate."
     ],
     resourcesMentioned: [
       { title: "Purdue Applied Artificial Intelligence Course", url: "https://bootcamp-sl.discover.online.purdue.edu/applied-artificial-intelligence-course" }
