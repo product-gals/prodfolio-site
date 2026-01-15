@@ -106,7 +106,7 @@ const Features = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-navy">AI Case Study Generator</p>
-                        <p className="text-xs text-navy/60">Analyzing your artifacts...</p>
+                        <p className="text-xs text-navy/60">Analyzing your document...</p>
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -133,7 +133,7 @@ const Features = () => {
                 AI-Powered
               </div>
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
-                Turn your artifacts into case studies in minutes
+                Turn your docs into case studies in minutes
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
                 Upload your PRDs, product briefs, or project plans and let AI get you started. You guide the process—we do the heavy lifting.
@@ -141,7 +141,7 @@ const Features = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Automatic data extraction from PM artifacts</span>
+                  <span className="text-navy/80">Automatic data extraction</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
