@@ -364,16 +364,15 @@ export const episodes: Episode[] = [
     duration: "60 min",
     publishedAt: "2025-02-26",
     takeaways: [
-      "Apply product principles in your current role before transitioning—treat your projects as products",
-      "Getting the reps in practicing the discipline is what makes you a better PM",
+      "Apply product principles in your current role before transitioning",
       "You can still think product-first even if your company is a feature factory",
-      "Be okay not knowing and being an amateur again—asking dumb questions is a PM superpower",
+      "Asking dumb questions is a PM superpower",
       "Sneak in customer-centered work alongside feature requests, then show the results",
-      "Do unscalable things for as long as possible—you'll learn where the real problems are",
+      "Do unscalable things for as long as possible, you'll learn where the real problems are",
       "Great PMs hold strong opinions while being totally open to counter information",
       "Fractional work opportunities come from people you know, not cold outreach",
-      "Get comfortable promoting yourself—it doesn't come naturally but it's essential",
-      "Find existing bright spots in your community and offer to help—opportunities follow"
+      "Get comfortable promoting yourself",
+      "Find existing bright spots in your community and offer to help, opportunities follow"
     ],
     resourcesMentioned: [
       { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
