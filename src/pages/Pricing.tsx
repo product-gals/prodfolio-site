@@ -76,7 +76,7 @@ const Pricing = () => {
         "Custom domain (yourname.com)",
         "Custom portfolio themes",
         "Case study templates",
-        "Analytics (Coming Soon)",
+        "Analytics (Beta)",
         "Priority support (email, chat or video)",
         "Early access to new features"
       ],
