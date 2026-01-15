@@ -628,7 +628,7 @@ export const episodes: Episode[] = [
   {
     id: "15",
     slug: "why-ai-should-be-boring",
-    title: "Why AI Should Be Boring — And That's a Good Thing",
+    title: "Why AI Should Be Boring - And That's a Good Thing",
     episodeNumber: "S2E7",
     guest: {
       name: "Aaron Kesler",
@@ -651,16 +651,16 @@ export const episodes: Episode[] = [
     duration: "55 min",
     publishedAt: "2025-06-04",
     takeaways: [
-      "AI PM skills are traditional PM skills—focus on customer problems, not the technology",
+      "AI PM skills are traditional PM skills - focus on customer problems, not the technology",
       "AI is perfect for automating mundane, repetitive tasks that people hate doing",
       "Companies building 'AI for AI's sake' without solving real problems will fail fast",
-      "Vibe coding enables non-technical people to build products—be aware of this disruption",
-      "AI should become boring—let it do boring things so we can focus on interesting work",
-      "Start with ChatGPT if you haven't—just chat with it like you'd chat with a person",
-      "Focus on what you hate doing daily/weekly/monthly—that's where AI helps most",
-      "If you're doing the PM role, give yourself the title—your resume is a marketing document",
-      "Product management is one of the most political roles—build relationships with everyone",
-      "NPS scores provide zero value—instead ask 'If this product went away, how upset would you be?'"
+      "Vibe coding enables non-technical people to build products - be aware of this disruption",
+      "AI should become boring - let it do boring things so we can focus on interesting work",
+      "Start with ChatGPT if you haven't - just chat with it like you'd chat with a person",
+      "Focus on what you hate doing daily/weekly/monthly - that's where AI helps most",
+      "If you're doing the PM role, give yourself the title - your resume is a marketing document",
+      "Product management is one of the most political roles - build relationships with everyone",
+      "NPS scores provide zero value - instead ask 'If this product went away, how upset would you be?'"
     ],
     resourcesMentioned: [
       { title: "ChatGPT", url: "https://chat.openai.com" },
