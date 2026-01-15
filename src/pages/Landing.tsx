@@ -107,7 +107,7 @@ const Landing = () => {
             </h1>
 
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Build a hiring-ready portfolio that proves how you think—in under an hour, not weeks. Join the PMs who stand out.
+              Build a portfolio that proves how you think—in hours, not weeks. Join the PMs who stand out.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
