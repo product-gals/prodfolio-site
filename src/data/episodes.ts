@@ -444,14 +444,13 @@ export const episodes: Episode[] = [
     publishedAt: "2025-03-26",
     takeaways: [
       "Being a good PM and being a good PM interviewee are two completely different skill sets",
-      "Rejection is redirection - Gabor was rejected 8 times before landing Google",
+      "Rejection is redirection, Gabor was rejected 8 times before landing Google",
       "AI will become part of regular PM work like mobile did before - learn it now",
       "Don't push AI into products just because it exists - ask what problem it solves 10x better",
       "Use AI in your daily work to understand its capabilities and spark creative ideas",
       "Three ways to break into PM: APM programs, internal transfers, or build something",
       "Job hunting takes 6-9 months on average in this competitive market",
       "Treat interview prep like a video game - unlock each level one at a time",
-      "Stop caring about lagging metrics and absolute numbers - focus on user success speed",
       "If you make your users successful, your product will be successful"
     ],
     resourcesMentioned: [
