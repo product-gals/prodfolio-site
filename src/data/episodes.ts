@@ -663,7 +663,8 @@ export const episodes: Episode[] = [
       "NPS scores provide zero value - instead ask 'If this product went away, how upset would you be?'"
     ],
     resourcesMentioned: [
-      { title: "ChatGPT", url: "https://chat.openai.com" }
+      { title: "ChatGPT", url: "https://chat.openai.com" },
+      { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" }
     ],
     keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
   }
