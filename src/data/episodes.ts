@@ -499,8 +499,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "Product Operations by Melissa Perri & Denise Tilles", url: "https://www.productoperations.com" },
-      { title: "HeliosX Group", url: "https://www.heliosx.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Product Ops Confidential", url: "https://www.productopsconfidential.com/" }
     ],
     keywords: ["product operations", "product ops", "HeliosX", "ways of working", "change management", "team efficiency", "product leadership", "community-driven", "anti-gatekeeping", "velocity metric"]
   },
