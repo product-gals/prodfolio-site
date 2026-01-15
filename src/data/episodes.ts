@@ -471,7 +471,7 @@ export const episodes: Episode[] = [
       company: "HeliosX Group",
       website: "https://www.heliosx.com",
       industry: "Healthcare & Telehealth",
-      bio: "Graham Reed is the Head of Product Operations at HeliosX Group (known as Zip Health in the US and MedExpress in the UK). He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
+      bio: "Graham Reed is the Head of Product Operations at HeliosX Group. He's been doing product ops for about five years, having 'fallen into it' after a decade in product management. Graham has built product ops functions from scratch at multiple companies and is passionate about the community-driven, anti-gatekeeping nature of the discipline. He's currently creating a UK meetup group for product ops professionals.",
       photo: grahamPhoto,
       linkedin: "https://www.linkedin.com/in/grahamreed/"
     },
