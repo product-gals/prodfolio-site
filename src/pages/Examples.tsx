@@ -39,6 +39,22 @@ const Examples = () => {
       highlight: "Strong process documentation",
       link: "https://app.prodfolio.io/p/santi-brace-2",
       stage: "Mid-level PM"
+    },
+    {
+      name: "Sneha Shah",
+      role: "Product Manager",
+      description: "A clean, well-organized portfolio showcasing product thinking and execution across multiple projects.",
+      highlight: "Clear impact metrics",
+      link: "https://app.prodfolio.io/p/sneha-shah",
+      stage: "Mid-level PM"
+    },
+    {
+      name: "Olympia Bardis",
+      role: "Product Manager",
+      description: "Portfolio highlighting user-focused product development with compelling case studies and outcomes.",
+      highlight: "Strong user empathy",
+      link: "https://app.prodfolio.io/p/olympia-bardis",
+      stage: "Mid-level PM"
     }
   ];
 
