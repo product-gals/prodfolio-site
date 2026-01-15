@@ -386,12 +386,12 @@ export const episodes: Episode[] = [
     title: "Season Two Kickoff and More!",
     episodeNumber: "S2E1",
     guest: {
-      name: "Meagan Glenn & Santiana Brace",
+      name: "Santi & Meagan",
       role: "Your Hosts",
-      company: "The Product Pivot",
-      website: "https://www.youtube.com/@TheProductPivot",
-      industry: "Product Management",
-      bio: "In this special hosts-only episode, Meagan and Santi recap Season 1, share personal updates (Meagan went fractional, Santi moved to ProdOps), tease Season 2 guests, and announce Prodfolio—their new portfolio platform for PMs. They also share community-submitted product tips and call for Season 3 guest suggestions.",
+      company: "Prodfolio",
+      website: "https://prodfolio.io",
+      industry: "Product Management, SaaS",
+      bio: "In this special hosts-only episode, Meagan and Santi recap Season 1, share personal updates (Meagan went fractional, Santi moved to ProdOps), tease Season 2 guests, and announce Prodfolio - their new portfolio platform for PMs. They also share community-submitted product tips and call for Season 3 guest suggestions.",
       linkedin: "https://www.linkedin.com/company/the-product-pivot/"
     },
     description: "Hosts Meagan and Santi recap Season 1, share updates, tease Season 2 guests, and announce their new project: Prodfolio.",
