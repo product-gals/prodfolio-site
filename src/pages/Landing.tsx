@@ -386,7 +386,7 @@ const Landing = () => {
                 Structure your story with SIGNAL
               </h3>
               <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                Our guided framework walks you through each case study—Situation, Impact, Growth, Narrative, Artifacts, Learnings. No more staring at a blank page.
+                Our guided framework walks you through each case study—Situation, Insight, Goals, Navigation, Achievement, Learnings. No more staring at a blank page.
               </p>
               <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
                 <a href="https://app.prodfolio.io/sign-up">
