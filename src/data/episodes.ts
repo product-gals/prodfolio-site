@@ -519,7 +519,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/heidiram/"
     },
     description: "Heidi shares recruiter insights on storytelling, standing out in hiring, and why your narrative matters more than your frameworks.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Heidi Ram, Practice Lead at The Product Recruiter, to get insider insights on what makes PM candidates stand out in today's competitive hiring market.\n\nHeidi shares why successful product managers are defined by their 'before and after' narrative—not by the frameworks they use or how many cross-functional teams they mention. She breaks down how to optimize LinkedIn as your marketing tech stack, craft resumes that convert to interviews, and why less experienced candidates often focus too much on the 'how' instead of business outcomes.\n\nThe conversation covers crucial career advice: move towards something rather than away from something, understand that it's hard everywhere, and ask two essential questions before accepting any role. Heidi also shares practical guidance for those pivoting into product—join a tech company in any role, excel there, then pivot internally.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Heidi Ram, Practice Lead at The Product Recruiter, to get insider insights on what makes PM candidates stand out in today's competitive hiring market.\n\nHeidi shares why successful product managers are defined by their 'before and after' narrative, not by the frameworks they use or how many cross-functional teams they mention. She breaks down how to optimize LinkedIn as your marketing tech stack, craft resumes that convert to interviews, and why less experienced candidates often focus too much on the 'how' instead of business outcomes.\n\nThe conversation covers crucial career advice: move towards something rather than away from something, understand that it's hard everywhere, and ask two essential questions before accepting any role. Heidi also shares practical guidance for those pivoting into product: join a tech company in any role, excel there, then pivot internally.",
     youtubeId: "Zg4SOZexDUE",
     buzzsproutId: "17895630",
     spotifyUrl: "https://open.spotify.com/episode/7ux2FTINmf6IHTY1jlCyfH",
@@ -529,16 +529,16 @@ export const episodes: Episode[] = [
     duration: "51 min",
     publishedAt: "2025-04-23",
     takeaways: [
-      "Success in PM hiring means showing a 'before and after' narrative—quantifiable impact on the product and business",
-      "LinkedIn is your marketing tech stack—optimize for recruiters with searchable titles and clear product focus",
+      "Success in PM hiring means showing a 'before and after' narrative with quantifiable impact on the product and business",
+      "LinkedIn is your marketing tech stack. Optimize for recruiters with searchable titles and clear product focus",
       "Less experienced candidates focus too much on 'how' (frameworks, cross-functional) instead of business outcomes",
-      "Move towards something, not away from something—don't leave just because things get hard",
-      "It's hard everywhere—every company has challenges, so know your tolerance",
+      "Move towards something, not away from something. Don't leave just because things get hard",
+      "It's hard everywhere. Every company has challenges, so know your tolerance",
       "Two essential questions before accepting: Do I want to do this job? Can I work with these people?",
       "For pivoting into PM: join a tech company in any role, excel there, then pivot internally",
-      "Knowing why you say yes to a job is liberating—even accepting less-than-ideal roles strategically",
-      "The average PM tenure is about 2 years—it's okay to join knowing it's not forever",
-      "Most people don't start their career in product—it's a journey into product from other roles"
+      "Knowing why you say yes to a job is liberating, even accepting less-than-ideal roles strategically",
+      "The average PM tenure is about 2 years. It's okay to join knowing it's not forever",
+      "Most people don't start their career in product. It's a journey into product from other roles"
     ],
     resourcesMentioned: [
       { title: "The Product Recruiter", url: "https://theproductrecruiter.com" },
