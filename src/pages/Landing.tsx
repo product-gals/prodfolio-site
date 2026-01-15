@@ -261,7 +261,7 @@ const Landing = () => {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Active PMs */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+            <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
@@ -275,7 +275,7 @@ const Landing = () => {
             </article>
 
             {/* Career Changers */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+            <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                 <Repeat className="w-8 h-8 text-white" />
               </div>
@@ -289,7 +289,7 @@ const Landing = () => {
             </article>
 
             {/* Hiring Managers */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+            <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                 <Users className="w-8 h-8 text-white" />
               </div>
