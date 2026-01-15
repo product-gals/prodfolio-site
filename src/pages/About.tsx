@@ -182,7 +182,7 @@ const About = () => {
               <h3 className="text-2xl font-heading font-bold mb-2 text-navy text-center">Meagan Glenn</h3>
               <p className="text-primary font-semibold mb-4 text-center font-body">Co-founder</p>
               <p className="text-navy/80 leading-relaxed mb-6 font-body">
-                Former startup PM turned career coach who's helped hundreds of PMs land roles. Rewrote her own portfolio five times before building the tool she wished existed. Fueled by oat milk lattes and a deep hatred of underselling.
+                Former startup PM turned career coach who's helped hundreds of PMs land roles. Rewrote her own portfolio five times before building the tool she wished existed. Fueled by iced coffee and a deep hatred of underselling.
               </p>
 
               <div className="mb-4 text-center">
