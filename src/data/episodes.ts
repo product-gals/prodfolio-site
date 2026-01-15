@@ -454,11 +454,9 @@ export const episodes: Episode[] = [
       "If you make your users successful, your product will be successful"
     ],
     resourcesMentioned: [
-      { title: "Notebook LM by Google", url: "https://notebooklm.google.com" },
+      { title: "Gabor's PM Interview Readiness Quiz", url: "https://test.bigupgrade.com/" },
       { title: "Cracking the PM Interview", url: "https://www.crackingthepminterview.com" },
-      { title: "Decode and Conquer by Lewis Lin", url: "https://www.lewis-lin.com/decode-and-conquer" },
-      { title: "Gabor's PM Interview Readiness Quiz", url: "https://www.linkedin.com/in/mayergabor/" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Decode and Conquer by Lewis Lin", url: "https://www.lewis-lin.com/decode-and-conquer" }
     ],
     keywords: ["Google PM", "FAANG interview", "PM interview prep", "8 rejections", "Big Tech", "AI product management", "Notebook LM", "interview skills", "career persistence", "LogMeIn"]
   },
