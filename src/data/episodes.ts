@@ -622,7 +622,9 @@ export const episodes: Episode[] = [
       "Burnout is real. Have outlets outside of work to decompress",
       "Embrace feedback as a gift. It helps you become a better person and teammate"
     ],
-    resourcesMentioned: [],
+    resourcesMentioned: [
+      { title: "Purdue Applied Artificial Intelligence Course", url: "https://bootcamp-sl.discover.online.purdue.edu/applied-artificial-intelligence-course" }
+    ],
     keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
   },
   {
