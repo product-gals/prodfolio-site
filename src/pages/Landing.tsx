@@ -170,7 +170,7 @@ const Landing = () => {
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">90%</div>
               <div className="text-sm text-white/80">of PMs don't have portfolios</div>
-              <div className="text-xs text-white/60 mt-1">Be the memorable one</div>
+              <div className="text-xs text-white/60 mt-1">Cut through the noise</div>
             </div>
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">&lt;1 hour</div>
