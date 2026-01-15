@@ -405,13 +405,11 @@ export const episodes: Episode[] = [
     duration: "50 min",
     publishedAt: "2025-03-12",
     takeaways: [
-      "Product people don't come from product backgrounds—that's a universal truth from Season 1",
+      "Product people don't come from product backgrounds, that's a universal truth from Season 1",
       "Transferable skills are the heart of the PM pivot journey",
-      "Build like a dreamer, think like a CFO, test like a skeptic",
       "If you always argue from the customer's perspective, you'll never lose an argument",
-      "Build something—anything—and iterate with user feedback",
+      "Build something, then iterate with user feedback",
       "What separates senior PMs isn't just experience, it's mindset",
-      "Understand not just your users, but your team and organizational dynamics",
       "The PM role is whatever it takes to get the product launch over the line",
       "If your content helps one person, you did your job",
       "Treat yourself as a product and iterate"
