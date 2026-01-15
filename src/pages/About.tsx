@@ -75,22 +75,13 @@ const About = () => {
         </div>
       </section>
 
-      {/* Decorative Separator */}
-      <div className="relative py-8 px-4">
-        <div className="max-w-[200px] mx-auto">
-          <div className="h-[2px] bg-gradient-to-r from-transparent via-white/40 to-transparent rounded-full"></div>
-          <div className="flex justify-center gap-2 mt-4">
-            <div className="w-2 h-2 rounded-full bg-white/30"></div>
-            <div className="w-2 h-2 rounded-full bg-white/50"></div>
-            <div className="w-2 h-2 rounded-full bg-white/30"></div>
-          </div>
-        </div>
-      </div>
+      {/* Gradient Transition */}
+      <div className="h-32 bg-gradient-to-b from-transparent to-white/90"></div>
 
-      {/* Origin Story - Flows on gradient */}
+      {/* Origin Story */}
       <section
         ref={storyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-[50px] pb-[60px] px-4 bg-white/5 backdrop-blur-sm ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-12 pb-[60px] px-4 bg-white/90 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         aria-labelledby="origin-story-heading"
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
