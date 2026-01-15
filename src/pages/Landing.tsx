@@ -456,34 +456,30 @@ const Landing = () => {
             <div className="order-1 lg:order-2">
               {/* Share UI Mockup */}
               <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto transform hover:scale-[1.02] transition-transform duration-300">
-                <div className="text-center mb-4 pb-4 border-b border-gray-100">
-                  <div className="font-semibold text-gray-900 mb-1">Your Portfolio is Live!</div>
-                  <div className="text-xs text-gray-500">Share it everywhere</div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="font-semibold text-gray-900">Share Settings</div>
+                  <div className="text-xs font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">Live</div>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-3 flex items-center gap-2 mb-4">
-                  <div className="flex-1 text-sm text-gray-700 font-mono truncate">prodfolio.io/p/sarah-chen</div>
-                  <button className="text-xs font-medium text-primary hover:text-primary/80 whitespace-nowrap">Copy</button>
-                </div>
-                <div className="grid grid-cols-3 gap-3 mb-4">
-                  <div className="text-center p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors cursor-pointer">
-                    <svg className="w-5 h-5 text-blue-600 mx-auto mb-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-                    <div className="text-xs font-medium text-blue-700">LinkedIn</div>
-                  </div>
-                  <div className="text-center p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
-                    <svg className="w-5 h-5 text-gray-700 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                    <div className="text-xs font-medium text-gray-700">Email</div>
-                  </div>
-                  <div className="text-center p-3 bg-green-50 rounded-lg hover:bg-green-100 transition-colors cursor-pointer">
-                    <svg className="w-5 h-5 text-green-600 mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    <div className="text-xs font-medium text-green-700">Resume</div>
+                {/* Password Protection Toggle */}
+                <div className="bg-gray-50 rounded-xl p-4 mb-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                      <span className="text-sm font-medium text-gray-900">Password Protection</span>
+                    </div>
+                    {/* Toggle switch - ON state */}
+                    <div className="w-11 h-6 bg-primary rounded-full relative">
+                      <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow"></div>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center justify-between text-xs text-gray-500 pt-3 border-t border-gray-100">
-                  <div className="flex items-center gap-1">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span>47 views this week</span>
+                {/* Portfolio Link */}
+                <div className="space-y-2">
+                  <div className="text-xs text-gray-500">Your portfolio link</div>
+                  <div className="bg-gray-50 rounded-lg p-3 flex items-center gap-2">
+                    <div className="flex-1 text-sm text-gray-600 font-mono truncate">prodfolio.io/p/your-name</div>
+                    <button className="px-3 py-1.5 bg-primary text-white text-xs font-medium rounded-lg hover:bg-primary/90">Copy</button>
                   </div>
-                  <span className="text-primary font-medium">View analytics →</span>
                 </div>
               </div>
             </div>
