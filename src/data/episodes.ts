@@ -540,9 +540,7 @@ export const episodes: Episode[] = [
       "Most people don't start their career in product. It's a journey into product from other roles"
     ],
     resourcesMentioned: [
-      { title: "The Product Recruiter", url: "https://theproductrecruiter.com" },
-      { title: "LinkedIn Profile Optimization", url: "https://www.linkedin.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "The Product Recruiter", url: "https://theproductrecruiter.com" }
     ],
     keywords: ["product recruiter", "hiring", "storytelling", "LinkedIn optimization", "resume", "job search", "interview process", "career transition", "before and after narrative", "business outcomes", "PM tenure", "The Product Recruiter"]
   },
