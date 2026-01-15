@@ -414,11 +414,7 @@ export const episodes: Episode[] = [
       "If your content helps one person, you did your job",
       "Treat yourself as a product and iterate"
     ],
-    resourcesMentioned: [
-      { title: "Prodfolio - PM Portfolio Platform", url: "https://prodfolio.io" },
-      { title: "The Product Pivot Season 1", url: "https://www.youtube.com/@TheProductPivot" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
-    ],
+    resourcesMentioned: [],
     keywords: ["season recap", "hosts episode", "Prodfolio", "PM portfolio", "product operations", "fractional PM", "season two", "community tips", "career update", "behind the scenes"]
   },
   {
