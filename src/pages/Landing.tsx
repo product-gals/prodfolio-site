@@ -107,7 +107,7 @@ const Landing = () => {
             </h1>
 
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Build a hiring-ready portfolio that proves how you think—in under an hour, not weeks. Join the PMs who stand out.
+              Build a portfolio that proves how you think - in hours, not weeks. Join the PMs who stand out.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
@@ -170,7 +170,7 @@ const Landing = () => {
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">90%</div>
               <div className="text-sm text-white/80">of PMs don't have portfolios</div>
-              <div className="text-xs text-white/60 mt-1">Be the memorable one</div>
+              <div className="text-xs text-white/60 mt-1">Cut through the noise</div>
             </div>
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">&lt;1 hour</div>
@@ -178,9 +178,9 @@ const Landing = () => {
               <div className="text-xs text-white/60 mt-1">Not weeks of tweaking</div>
             </div>
             <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">24,000+</div>
-              <div className="text-sm text-white/80">PM roles open right now</div>
-              <div className="text-xs text-white/60 mt-1">Your next opportunity awaits</div>
+              <div className="text-3xl font-bold text-white mb-1">+26%</div>
+              <div className="text-sm text-white/80">growth in entry-level PM roles</div>
+              <div className="text-xs text-white/60 mt-1">Now's the time to break in</div>
             </div>
           </div>
         </div>
@@ -255,13 +255,13 @@ const Landing = () => {
               Who Prodfolio is for
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Whether you're leveling up, making a move, or breaking in—we've got you.
+              Whether you're leveling up, making a move, or breaking in - we've got you.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Active PMs */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+            <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
@@ -275,13 +275,13 @@ const Landing = () => {
             </article>
 
             {/* Career Changers */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+            <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                 <Repeat className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Career changers breaking in</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                You think like a PM—even without the title. Show hiring managers the product mindset they're looking for.
+                You think like a PM - even without the title. Show hiring managers the product mindset they're looking for.
               </p>
               <a href="/for-career-changers" className="text-coral font-medium text-sm hover:underline">
                 Learn how →
@@ -289,7 +289,7 @@ const Landing = () => {
             </article>
 
             {/* Hiring Managers */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+            <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
                 <Users className="w-8 h-8 text-white" />
               </div>

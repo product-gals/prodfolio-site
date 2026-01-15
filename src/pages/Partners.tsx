@@ -62,7 +62,7 @@ const Partners = () => {
   });
 
   return (
-    <div className="min-h-screen bg-[#8B5CF6]">
+    <div className="min-h-screen gradient-mesh-bg">
       <Navbar />
 
       {/* Hero Section */}
@@ -192,7 +192,7 @@ const Partners = () => {
               <p className="text-white/80 mb-6 max-w-lg mx-auto">
                 Passionate about helping aspiring PMs build great portfolios? Let's work together.
               </p>
-              <Button asChild className="bg-white text-[#8B5CF6] hover:bg-white/90 font-semibold">
+              <Button asChild className="bg-white text-navy hover:bg-white/90 font-semibold">
                 <a href="mailto:hello@prodfolio.io">
                   Get in Touch
                 </a>
