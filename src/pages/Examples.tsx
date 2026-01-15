@@ -146,30 +146,30 @@ const Examples = () => {
       </section>
 
       {/* What Makes a Great Portfolio */}
-      <section className="py-12 px-4 bg-white/5 backdrop-blur-md border-y border-white/10">
+      <section className="py-16 px-4">
         <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
               What makes a great PM portfolio?
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
-              <div className="text-4xl font-bold text-white mb-2">1-3</div>
-              <p className="text-white/90 text-sm">Strong case studies showing your experience</p>
+          <div className="grid md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div className="glass-pill text-center">
+              <div className="text-2xl font-bold text-white mb-1">1-3</div>
+              <div className="text-sm text-white/80">Strong case studies</div>
             </div>
-            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
-              <div className="text-4xl font-bold text-white mb-2">Process</div>
-              <p className="text-white/90 text-sm">Focus on how you think, not just results</p>
+            <div className="glass-pill text-center">
+              <div className="text-2xl font-bold text-white mb-1">Process</div>
+              <div className="text-sm text-white/80">How you think</div>
             </div>
-            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
-              <div className="text-4xl font-bold text-white mb-2">Metrics</div>
-              <p className="text-white/90 text-sm">Quantified impact with clear outcomes</p>
+            <div className="glass-pill text-center">
+              <div className="text-2xl font-bold text-white mb-1">Metrics</div>
+              <div className="text-sm text-white/80">Quantified impact</div>
             </div>
-            <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
-              <div className="text-4xl font-bold text-white mb-2">Story</div>
-              <p className="text-white/90 text-sm">A narrative that connects your work</p>
+            <div className="glass-pill text-center">
+              <div className="text-2xl font-bold text-white mb-1">Story</div>
+              <div className="text-sm text-white/80">Connected narrative</div>
             </div>
           </div>
         </div>
