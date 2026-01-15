@@ -376,10 +376,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "Inspired by Marty Cagan", url: "https://www.svpg.com/inspired-how-to-create-products-customers-love/" },
-      { title: "Silicon Valley Product Group (SVPG)", url: "https://www.svpg.com" },
-      { title: "The Bean Path (Jackson, MS)", url: "https://thebeanpath.org" },
-      { title: "Mississippi Coding Academy", url: "https://mscoding.org" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Mississippi Coding Academy", url: "https://mscoding.org" }
     ],
     keywords: ["fractional product manager", "marketing to PM", "SVPG", "Inspired", "Mississippi tech", "product coaching", "startup ecosystem", "Delta Product Group", "career transition", "community building"]
   },
