@@ -173,7 +173,7 @@ const Examples = () => {
             </div>
             <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
               <div className="text-4xl font-bold text-white mb-2">Metrics</div>
-              <p className="text-white/90 text-sm">Quantified achievements tied to outcomes</p>
+              <p className="text-white/90 text-sm">Quantified impact with clear outcomes</p>
             </div>
             <div className="bg-white/15 backdrop-blur-sm rounded-2xl text-center p-6 border border-white/20">
               <div className="text-4xl font-bold text-white mb-2">Story</div>
