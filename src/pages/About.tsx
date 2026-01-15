@@ -69,8 +69,7 @@ const About = () => {
             We built the thing we needed
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed font-body">
-            Prodfolio started because two PMs got tired of watching talented product people undersell themselves —
-            ourselves included.
+            Prodfolio started because two PMs got tired of watching talented product people undersell themselves - ourselves included.
           </p>
         </div>
       </section>
@@ -98,7 +97,7 @@ const About = () => {
                 <p className="text-lg text-navy leading-[1.7] font-body">
                   Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
                   They realized they'd been in the same PM circles but had never actually met. So they did what any
-                  curious PMs would do — grabbed coffee.
+                  curious PMs would do - grabbed coffee.
                 </p>
               </div>
             </article>
@@ -109,10 +108,7 @@ const About = () => {
               <div>
                 <h3 className="text-3xl font-heading font-bold mb-4 text-navy">Then came the podcast</h3>
                 <p className="text-lg text-navy leading-[1.7] font-body">
-                  During that chat, they bonded over a shared dream: starting a podcast. They also noticed a gap — there
-                  weren't enough real, practical resources for people trying to break into product management.{" "}
-                  <strong className="text-navy">The Product Pivot</strong> was born. Three seasons later, they're
-                  still going strong.
+                  That chat turned into a podcast - <strong className="text-navy">The Product Pivot</strong> - where they interviewed PMs at every stage. Episode after episode, one theme kept coming up: PMs didn't know how to showcase their work. The same people giving brilliant answers on the show were struggling to communicate their value to hiring managers.
                 </p>
               </div>
             </article>
@@ -123,7 +119,7 @@ const About = () => {
               <div className="border-l-4 border-l-[#FF8B7B] pl-6">
                 <h3 className="text-3xl font-heading font-bold mb-4 text-navy">The "aha" moment</h3>
                 <p className="text-lg text-navy leading-[1.7] font-body mb-4">
-                  In October 2024, Meagan was job searching after working in product at a startup — but without a
+                  In October 2024, Meagan was job searching after working in product at a startup - but without a
                   product title on her resume. She tried building a portfolio in Notion and shared it with Santi for
                   feedback. Santi was kind about it, but Meagan still never felt confident sharing it with hiring
                   managers. <strong className="text-navy">Something was missing.</strong>
@@ -139,15 +135,12 @@ const About = () => {
             <article className="flex flex-col md:flex-row gap-6 items-start">
               <Users className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
               <div>
-                <h3 className="text-3xl font-heading font-bold mb-4 text-navy">We built it together — with you</h3>
+                <h3 className="text-3xl font-heading font-bold mb-4 text-navy">We built it together - with you</h3>
                 <p className="text-lg text-navy leading-[1.7] font-body mb-4">
-                  In February 2025, Prodfolio was born. Meagan and Santi talked to PMs about what they struggled with.
-                  They talked to hiring managers about what they looked for. They shipped an MVP, ran a beta cohort,
-                  collected feedback, improved the product, and now — here we are.
+                  In February 2025, Prodfolio was born. We talked to PMs about what they struggled with. We talked to hiring managers about what they actually looked for. We shipped an MVP, ran a beta cohort, and kept iterating based on real feedback.
                 </p>
                 <p className="text-lg text-navy leading-[1.7] font-body">
-                  Prodfolio isn't just a tool. It's proof that when you build something you actually need, other people
-                  need it too.
+                  Now PMs are landing interviews with portfolios they're proud to share. That's why we built this - and why we keep building.
                 </p>
               </div>
             </article>
@@ -189,8 +182,7 @@ const About = () => {
               <h3 className="text-2xl font-heading font-bold mb-2 text-navy text-center">Meagan Glenn</h3>
               <p className="text-primary font-semibold mb-4 text-center font-body">Co-founder</p>
               <p className="text-navy/80 leading-relaxed mb-6 font-body">
-                Product manager, podcast host, and career coach who's been helping PMs break into product for years.
-                Believes every PM has a story worth telling — you just need the right format.
+                Former startup PM turned career coach who's helped hundreds of PMs land roles. Rewrote her own portfolio five times before building the tool she wished existed. Fueled by oat milk lattes and a deep hatred of underselling.
               </p>
 
               <div className="mb-4 text-center">
@@ -232,8 +224,7 @@ const About = () => {
               <h3 className="text-2xl font-heading font-bold mb-2 text-navy text-center">Santiana Brace</h3>
               <p className="text-primary font-semibold mb-4 text-center font-body">Co-founder</p>
               <p className="text-navy/80 leading-relaxed mb-6 font-body">
-                Product manager and podcast host who knows firsthand how hard it is to showcase PM work. On a mission to
-                make portfolio-building less painful and more strategic for every PM.
+                PM and podcast co-host who pivoted into product and knows exactly how hard it is to prove you belong. Obsessed with making complex things simple. Will ask "but why?" until she gets to the real problem.
               </p>
 
               <div className="mb-4 text-center">
