@@ -475,8 +475,8 @@ export const episodes: Episode[] = [
       photo: grahamPhoto,
       linkedin: "https://www.linkedin.com/in/grahamreed/"
     },
-    description: "Graham dives deep into product operations—when to bring it in, the skills needed, and why it's the most welcoming community in product.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Graham Reed, Head of Product Operations at HeliosX Group, for a comprehensive exploration of the product ops discipline.\n\nGraham shares how he 'fell into' product ops after a decade in product management, and has since built product ops functions from scratch at multiple companies. He discusses when businesses should consider product ops (typically around 150+ employees), the key skills needed (soft skills over experience), and the difference between being a team of one versus building specialized teams.\n\nThe conversation covers how product ops helps teams focus on their 'primary function,' supports product leadership, and why the discipline is proudly community-driven and anti-gatekeeping—the opposite of the sometimes gate-kept product management world. Graham also shares his spicy take on a metric we should all stop pretending to care about.",
+    description: "Graham dives deep into product operations - when to bring it in, the skills needed, and why it's the most welcoming community in product.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Graham Reed, Head of Product Operations at HeliosX Group, for a comprehensive exploration of the product ops discipline.\n\nGraham shares how he 'fell into' product ops after a decade in product management, and has since built product ops functions from scratch at multiple companies. He discusses when businesses should consider product ops (typically around 150+ employees), the key skills needed (soft skills over experience), and the difference between being a team of one versus building specialized teams.\n\nThe conversation covers how product ops helps teams focus on their 'primary function,' supports product leadership, and why the discipline is proudly community-driven and anti-gatekeeping - the opposite of the sometimes gate-kept product management world. Graham also shares his spicy take on a metric we should all stop pretending to care about.",
     youtubeId: "FHoWewjQ8uc",
     buzzsproutId: "17850430",
     spotifyUrl: "https://open.spotify.com/episode/7lIt1DOoFL3k8w7RQo1f9k",
@@ -488,13 +488,13 @@ export const episodes: Episode[] = [
     takeaways: [
       "Every business has product ops as a function, even without a dedicated role",
       "Product ops typically becomes needed around 150+ employees (startup to scale-up transition)",
-      "Soft skills matter more than experience—communication, empathy, problem-solving are key",
+      "Soft skills matter more than experience - communication, empathy, problem-solving are key",
       "Product ops helps teams focus on their 'primary function' by removing friction",
       "You don't have to be a PM first, but it helps understand touch points between teams",
-      "The role is community-driven, not book-driven—very welcoming to newcomers",
-      "Look at what's not being addressed in your team—that's your product ops opportunity",
+      "The role is community-driven, not book-driven - very welcoming to newcomers",
+      "Look at what's not being addressed in your team - that's your product ops opportunity",
       "Product ops supports both the teams on the ground AND leadership",
-      "No two days are the same—you need to switch between strategic and tactical thinking",
+      "No two days are the same - you need to switch between strategic and tactical thinking",
       "Velocity is a metric we should stop pretending to care about"
     ],
     resourcesMentioned: [
