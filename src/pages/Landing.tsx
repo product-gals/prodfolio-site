@@ -107,7 +107,7 @@ const Landing = () => {
             </h1>
 
             <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Build a portfolio that proves how you think—in hours, not weeks. Join the PMs who stand out.
+              Build a portfolio that proves how you think - in hours, not weeks. Join the PMs who stand out.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
@@ -255,7 +255,7 @@ const Landing = () => {
               Who Prodfolio is for
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Whether you're leveling up, making a move, or breaking in—we've got you.
+              Whether you're leveling up, making a move, or breaking in - we've got you.
             </p>
           </div>
 
@@ -281,7 +281,7 @@ const Landing = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Career changers breaking in</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                You think like a PM—even without the title. Show hiring managers the product mindset they're looking for.
+                You think like a PM - even without the title. Show hiring managers the product mindset they're looking for.
               </p>
               <a href="/for-career-changers" className="text-coral font-medium text-sm hover:underline">
                 Learn how →
