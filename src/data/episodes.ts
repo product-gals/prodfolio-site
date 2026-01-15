@@ -664,9 +664,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "ChatGPT", url: "https://chat.openai.com" },
-      { title: "Lean Pub (Book Publishing)", url: "https://leanpub.com" },
-      { title: "Shopify CEO's AI Memo", url: "https://www.shopify.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Lean Pub (Book Publishing)", url: "https://leanpub.com" }
     ],
     keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
   }
