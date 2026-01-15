@@ -622,11 +622,7 @@ export const episodes: Episode[] = [
       "Burnout is real—have outlets outside of work to decompress",
       "Embrace feedback as a gift—it helps you become a better person and teammate"
     ],
-    resourcesMentioned: [
-      { title: "Lavender.ai", url: "https://lavender.ai" },
-      { title: "Superhuman (Email Tool)", url: "https://superhuman.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
-    ],
+    resourcesMentioned: [],
     keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
   },
   {
