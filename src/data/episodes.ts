@@ -519,7 +519,7 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/heidiram/"
     },
     description: "Heidi shares recruiter insights on storytelling, standing out in hiring, and why your narrative matters more than your frameworks.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Heidi Ram, Practice Lead at The Product Recruiter, to get insider insights on what makes PM candidates stand out in today's competitive hiring market.\n\nHeidi shares why successful product managers are defined by their 'before and after' narrative—not by the frameworks they use or how many cross-functional teams they mention. She breaks down how to optimize LinkedIn as your marketing tech stack, craft resumes that convert to interviews, and why less experienced candidates often focus too much on the 'how' instead of business outcomes.\n\nThe conversation covers crucial career advice: move towards something rather than away from something, understand that it's hard everywhere, and ask two essential questions before accepting any role. Heidi also shares practical guidance for those pivoting into product—join a tech company in any role, excel there, then pivot internally.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Heidi Ram, Practice Lead at The Product Recruiter, to get insider insights on what makes PM candidates stand out in today's competitive hiring market.\n\nHeidi shares why successful product managers are defined by their 'before and after' narrative, not by the frameworks they use or how many cross-functional teams they mention. She breaks down how to optimize LinkedIn as your marketing tech stack, craft resumes that convert to interviews, and why less experienced candidates often focus too much on the 'how' instead of business outcomes.\n\nThe conversation covers crucial career advice: move towards something rather than away from something, understand that it's hard everywhere, and ask two essential questions before accepting any role. Heidi also shares practical guidance for those pivoting into product: join a tech company in any role, excel there, then pivot internally.",
     youtubeId: "Zg4SOZexDUE",
     buzzsproutId: "17895630",
     spotifyUrl: "https://open.spotify.com/episode/7ux2FTINmf6IHTY1jlCyfH",
@@ -529,21 +529,18 @@ export const episodes: Episode[] = [
     duration: "51 min",
     publishedAt: "2025-04-23",
     takeaways: [
-      "Success in PM hiring means showing a 'before and after' narrative—quantifiable impact on the product and business",
-      "LinkedIn is your marketing tech stack—optimize for recruiters with searchable titles and clear product focus",
+      "Success in PM hiring means showing a 'before and after' narrative with quantifiable impact on the product and business",
+      "LinkedIn is your marketing tech stack. Optimize for recruiters with searchable titles and clear product focus",
       "Less experienced candidates focus too much on 'how' (frameworks, cross-functional) instead of business outcomes",
-      "Move towards something, not away from something—don't leave just because things get hard",
-      "It's hard everywhere—every company has challenges, so know your tolerance",
+      "Move towards something, not away from something. Don't leave just because things get hard",
+      "It's hard everywhere. Every company has challenges, so know your tolerance",
       "Two essential questions before accepting: Do I want to do this job? Can I work with these people?",
       "For pivoting into PM: join a tech company in any role, excel there, then pivot internally",
-      "Knowing why you say yes to a job is liberating—even accepting less-than-ideal roles strategically",
-      "The average PM tenure is about 2 years—it's okay to join knowing it's not forever",
-      "Most people don't start their career in product—it's a journey into product from other roles"
+      "The average PM tenure is about 2 years. It's okay to join knowing it's not forever",
+      "Most people don't start their career in product. It's a journey into product from other roles"
     ],
     resourcesMentioned: [
-      { title: "The Product Recruiter", url: "https://theproductrecruiter.com" },
-      { title: "LinkedIn Profile Optimization", url: "https://www.linkedin.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "The Product Recruiter", url: "https://theproductrecruiter.com" }
     ],
     keywords: ["product recruiter", "hiring", "storytelling", "LinkedIn optimization", "resume", "job search", "interview process", "career transition", "before and after narrative", "business outcomes", "PM tenure", "The Product Recruiter"]
   },
@@ -558,12 +555,12 @@ export const episodes: Episode[] = [
       company: "Dash Social",
       website: "https://dashsocial.com",
       industry: "Social Media & AI",
-      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business—even a lemonade stand—is one of the best ways to learn product fundamentals.",
+      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business, even a lemonade stand, is one of the best ways to learn product fundamentals.",
       photo: nickPhoto,
       linkedin: "https://www.linkedin.com/in/nikhil-punjabi/"
     },
     description: "Nick shares his journey from supporting startups at an incubator to becoming an AI PM, and why starting a side hustle teaches you PM fundamentals.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at InnovaCorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business—even a lemonade stand—teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at InnovaCorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business, even a lemonade stand, teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
     youtubeId: "UisomxfRnpk",
     buzzsproutId: "17929207",
     spotifyUrl: "https://open.spotify.com/episode/61FxN7RF1pUs5wKaflOlYF",
@@ -575,20 +572,16 @@ export const episodes: Episode[] = [
     takeaways: [
       "Starting a business or side hustle is one of the best ways to learn PM fundamentals",
       "Product managers are at the center of solutions that can genuinely change people's lives",
-      "You must evangelize your product internally and externally—be the herald of your product",
-      "Detach your ego from the product—failure can affect your psyche if you over-identify",
+      "You must evangelize your product internally and externally. Be the herald of your product",
       "Don't over-solution: don't build a plane when someone just wants a bicycle",
       "If you haven't adopted AI in your day-to-day as a PM, you are behind",
-      "Done is better than perfect—perfectionism actually hurts PM work",
+      "Done is better than perfect. Perfectionism actually hurts PM work",
       "Build a portfolio mapping your transferable skills to PM competencies",
-      "Document your journey to PM publicly—it differentiates you from the competition",
-      "Vanity metrics look good but don't mean anything fundamental—avoid them"
+      "Document your journey to PM publicly. It differentiates you from the competition"
     ],
     resourcesMentioned: [
       { title: "InnovaCorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
-      { title: "Udemy PM Courses", url: "https://www.udemy.com" },
-      { title: "Udacity Product Management Nanodegree", url: "https://www.udacity.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
+      { title: "Udemy PM Courses", url: "https://www.udemy.com" }
     ],
     keywords: ["incubator to PM", "startup ecosystem", "AI product manager", "side hustle", "customer discovery", "transferable skills", "portfolio", "storytelling", "done is better than perfect", "vanity metrics", "over-solutioning", "Dash Social", "Halifax"]
   },
@@ -603,7 +596,7 @@ export const episodes: Episode[] = [
       company: "Lavender",
       website: "https://lavender.ai",
       industry: "AI & Sales Tech",
-      bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional—he studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
+      bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional. He studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
       photo: eddiePhoto,
       linkedin: "https://www.linkedin.com/in/eduardorosenfeld/"
     },
@@ -618,22 +611,18 @@ export const episodes: Episode[] = [
     duration: "65 min",
     publishedAt: "2025-05-21",
     takeaways: [
-      "It's less about experience and more about attitude—be curious and willing to grind",
-      "If you can do something in under 5 minutes, just do it—reduces your mental backlog",
-      "Startups are always choosing between band-aids and surgery—be utilitarian about fixes",
+      "It's less about experience and more about attitude. Be curious and willing to grind",
+      "If you can do something in under 5 minutes, just do it. Reduces your mental backlog",
+      "Startups are always choosing between band-aids and surgery. Be utilitarian about fixes",
       "Product ops is about communicating customer feedback clearly to your team",
       "Build product for your customers, not because you think it would be cool",
-      "When applying to startups, reach out directly to teams—don't apply into the void",
-      "Your network is your net worth—nurture relationships with everyone you meet",
-      "Don't keep to yourself when new—ask questions without feeling embarrassed",
-      "Burnout is real—have outlets outside of work to decompress",
-      "Embrace feedback as a gift—it helps you become a better person and teammate"
+      "When applying to startups, reach out directly to teams. Don't apply into the void",
+      "Your network is your net worth. Nurture relationships with everyone you meet",
+      "Don't keep to yourself when new. Ask questions without feeling embarrassed",
+      "Burnout is real. Have outlets outside of work to decompress",
+      "Embrace feedback as a gift. It helps you become a better person and teammate"
     ],
-    resourcesMentioned: [
-      { title: "Lavender.ai", url: "https://lavender.ai" },
-      { title: "Superhuman (Email Tool)", url: "https://superhuman.com" },
-      { title: "The Product Pivot Podcast on YouTube", url: "https://www.youtube.com/@TheProductPivot" }
-    ],
+    resourcesMentioned: [],
     keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
   },
   {
