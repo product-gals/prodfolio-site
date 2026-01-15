@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Quote, Phone, Upload, Sparkles, Share2, TrendingUp, Repeat, Users, Shield, Lock, FileCheck } from "lucide-react";
+import { Quote, Phone, TrendingUp, Repeat, Users, Shield, Lock, FileCheck } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
@@ -305,70 +305,188 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* How It Works - 3 Steps */}
-      <section ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 bg-white/5 backdrop-blur-sm ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      {/* How It Works - Variant-style Feature Sections with UI Mockups */}
+      <section ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>} className={`py-20 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               From blank page to portfolio in under an hour
             </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               No design skills needed. No weeks of tweaking. Just your experience and our guided framework.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {/* Step 1 */}
-            <div className="text-center">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border-2 border-primary/30">
-                  <Upload className="w-10 h-10 text-primary" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  1
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-navy mb-3">Import your experience</h3>
-              <p className="text-navy/70 text-sm leading-relaxed">
-                Upload your resume or connect LinkedIn. Our AI extracts your roles, achievements, and the foundation of your story.
+          {/* Feature 01 - Import */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
+            <div className="order-2 lg:order-1">
+              <div className="text-coral font-semibold text-sm tracking-wide mb-3">01 — IMPORT</div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                Import your experience in seconds
+              </h3>
+              <p className="text-white/80 text-lg mb-6 leading-relaxed">
+                Upload your resume or connect LinkedIn. Our AI extracts your roles, achievements, and builds the foundation of your story automatically.
               </p>
+              <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
+                <a href="https://app.prodfolio.io/sign-up">
+                  Start importing <span aria-hidden="true">→</span>
+                </a>
+              </Button>
             </div>
-
-            {/* Step 2 */}
-            <div className="text-center">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border-2 border-primary/30">
-                  <Sparkles className="w-10 h-10 text-primary" />
+            <div className="order-1 lg:order-2">
+              {/* Import UI Mockup */}
+              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto transform hover:scale-[1.02] transition-transform duration-300">
+                <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-100">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-gray-900 text-sm">Resume Upload</div>
+                    <div className="text-xs text-gray-500">resume_sarah_chen.pdf</div>
+                  </div>
+                  <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                  </div>
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  2
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <span className="text-sm text-gray-700">Summary extracted</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <span className="text-sm text-gray-700">4 roles identified</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <span className="text-sm text-gray-700">12 achievements found</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 bg-primary/20 rounded-full flex items-center justify-center">
+                      <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                    </div>
+                    <span className="text-sm text-gray-500">Generating case study suggestions...</span>
+                  </div>
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-navy mb-3">Build with SIGNAL</h3>
-              <p className="text-navy/70 text-sm leading-relaxed">
-                Our guided framework walks you through each case study—Situation, Impact, Growth, Narrative, Artifacts, Learnings.
-              </p>
-            </div>
-
-            {/* Step 3 */}
-            <div className="text-center">
-              <div className="relative mb-6">
-                <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto border-2 border-primary/30">
-                  <Share2 className="w-10 h-10 text-primary" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-coral rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  3
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-navy mb-3">Share and stand out</h3>
-              <p className="text-navy/70 text-sm leading-relaxed">
-                Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, own your narrative.
-              </p>
             </div>
           </div>
 
-          <div className="text-center mt-10">
-            <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all shadow-xl font-semibold">
+          {/* Feature 02 - Build */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
+            <div className="order-2">
+              <div className="text-coral font-semibold text-sm tracking-wide mb-3">02 — BUILD</div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                Structure your story with SIGNAL
+              </h3>
+              <p className="text-white/80 text-lg mb-6 leading-relaxed">
+                Our guided framework walks you through each case study—Situation, Insight, Goals, Navigation, Achievement, Learnings. No more staring at a blank page.
+              </p>
+              <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
+                <a href="https://app.prodfolio.io/sign-up">
+                  See the framework <span aria-hidden="true">→</span>
+                </a>
+              </Button>
+            </div>
+            <div className="order-1">
+              {/* SIGNAL Framework UI Mockup */}
+              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:mr-auto transform hover:scale-[1.02] transition-transform duration-300">
+                <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
+                  <div>
+                    <div className="font-semibold text-gray-900">SIGNAL Framework</div>
+                    <div className="text-xs text-gray-500">Case Study Builder</div>
+                  </div>
+                  <div className="text-xs font-medium text-green-600 bg-green-50 px-2 py-1 rounded-full">4/6 Complete</div>
+                </div>
+                <div className="space-y-2">
+                  {[
+                    { letter: 'S', label: 'Situation', status: 'complete', desc: 'Context & challenge' },
+                    { letter: 'I', label: 'Insight', status: 'complete', desc: 'Key discovery' },
+                    { letter: 'G', label: 'Goals', status: 'complete', desc: 'What you aimed for' },
+                    { letter: 'N', label: 'Navigation', status: 'active', desc: 'How you got there' },
+                    { letter: 'A', label: 'Achievement', status: 'pending', desc: 'Measurable outcomes' },
+                    { letter: 'L', label: 'Learnings', status: 'pending', desc: 'Key takeaways' },
+                  ].map((item) => (
+                    <div key={item.letter} className={`flex items-center gap-3 p-2 rounded-lg ${item.status === 'active' ? 'bg-primary/10 border border-primary/30' : ''}`}>
+                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold ${
+                        item.status === 'complete' ? 'bg-green-100 text-green-700' :
+                        item.status === 'active' ? 'bg-primary text-white' :
+                        'bg-gray-100 text-gray-400'
+                      }`}>
+                        {item.status === 'complete' ? (
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                        ) : item.letter}
+                      </div>
+                      <div className="flex-1">
+                        <div className={`text-sm font-medium ${item.status === 'pending' ? 'text-gray-400' : 'text-gray-900'}`}>{item.label}</div>
+                        <div className="text-xs text-gray-500">{item.desc}</div>
+                      </div>
+                      {item.status === 'active' && (
+                        <div className="text-xs text-primary font-medium">Writing...</div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Feature 03 - Share */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="text-coral font-semibold text-sm tracking-wide mb-3">03 — SHARE</div>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                One link. Unlimited impact.
+              </h3>
+              <p className="text-white/80 text-lg mb-6 leading-relaxed">
+                Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, and own your narrative with a professional presence.
+              </p>
+              <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
+                <a href="https://app.prodfolio.io/sign-up">
+                  Create your link <span aria-hidden="true">→</span>
+                </a>
+              </Button>
+            </div>
+            <div className="order-1 lg:order-2">
+              {/* Share UI Mockup */}
+              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto transform hover:scale-[1.02] transition-transform duration-300">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="font-semibold text-gray-900">Share Settings</div>
+                  <div className="text-xs font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">Live</div>
+                </div>
+                {/* Password Protection Toggle */}
+                <div className="bg-gray-50 rounded-xl p-4 mb-4">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                      <span className="text-sm font-medium text-gray-900">Password Protection</span>
+                    </div>
+                    {/* Toggle switch - ON state */}
+                    <div className="w-11 h-6 bg-primary rounded-full relative">
+                      <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow"></div>
+                    </div>
+                  </div>
+                </div>
+                {/* Portfolio Link */}
+                <div className="space-y-2">
+                  <div className="text-xs text-gray-500">Your portfolio link</div>
+                  <div className="bg-gray-50 rounded-lg p-3 flex items-center gap-2">
+                    <div className="flex-1 text-sm text-gray-600 font-mono truncate">prodfolio.io/p/your-name</div>
+                    <button className="px-3 py-1.5 bg-primary text-white text-xs font-medium rounded-lg hover:bg-primary/90">Copy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
               <a href="https://app.prodfolio.io/sign-up">
                 Try it free—see how fast it is
               </a>
