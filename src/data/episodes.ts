@@ -596,7 +596,7 @@ export const episodes: Episode[] = [
       company: "Lavender",
       website: "https://lavender.ai",
       industry: "AI & Sales Tech",
-      bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional—he studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
+      bio: "Eddie Rosenfeld is the VP of Applied AI at Lavender.ai, where he helped build Aura, their autonomous outbound agent. His path into tech is wildly unconventional. He studied philosophy and wanted to be a screenwriter until COVID hit right before graduation. He went from filing paperwork to becoming a CEO's right-hand man, then moved to Spain and Mexico to build a blockchain database. He joined Lavender after learning a program overnight to complete an unsolicited task for the CTO. Eddie embodies startup hustle and the power of just saying yes and figuring it out later.",
       photo: eddiePhoto,
       linkedin: "https://www.linkedin.com/in/eduardorosenfeld/"
     },
@@ -611,16 +611,16 @@ export const episodes: Episode[] = [
     duration: "65 min",
     publishedAt: "2025-05-21",
     takeaways: [
-      "It's less about experience and more about attitude—be curious and willing to grind",
-      "If you can do something in under 5 minutes, just do it—reduces your mental backlog",
-      "Startups are always choosing between band-aids and surgery—be utilitarian about fixes",
+      "It's less about experience and more about attitude. Be curious and willing to grind",
+      "If you can do something in under 5 minutes, just do it. Reduces your mental backlog",
+      "Startups are always choosing between band-aids and surgery. Be utilitarian about fixes",
       "Product ops is about communicating customer feedback clearly to your team",
       "Build product for your customers, not because you think it would be cool",
-      "When applying to startups, reach out directly to teams—don't apply into the void",
-      "Your network is your net worth—nurture relationships with everyone you meet",
-      "Don't keep to yourself when new—ask questions without feeling embarrassed",
-      "Burnout is real—have outlets outside of work to decompress",
-      "Embrace feedback as a gift—it helps you become a better person and teammate"
+      "When applying to startups, reach out directly to teams. Don't apply into the void",
+      "Your network is your net worth. Nurture relationships with everyone you meet",
+      "Don't keep to yourself when new. Ask questions without feeling embarrassed",
+      "Burnout is real. Have outlets outside of work to decompress",
+      "Embrace feedback as a gift. It helps you become a better person and teammate"
     ],
     resourcesMentioned: [],
     keywords: ["startup", "do whatever it takes", "product ops", "Lavender", "AI", "customer feedback", "saying yes", "figuring it out", "band-aid vs surgery", "network", "philosophy to tech", "hustle", "attitude over experience"]
