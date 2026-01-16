@@ -472,19 +472,18 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-primary to-coral">
+      <section className="py-20 px-4 gradient-mesh-bg">
         <div className="prodfolio-container text-center max-w-[800px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
             Ready to build your portfolio?
           </h2>
           <p className="text-xl text-white/90 mb-10">
-            Join product managers who've discovered the portfolio advantage. Start free—no credit card required.
+            Join product managers who've discovered the portfolio advantage. Start free, no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               asChild
-              size="lg"
-              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold"
+              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
             >
               <a href="https://app.prodfolio.io/sign-up">
                 Start Your Portfolio Free
@@ -492,9 +491,8 @@ const Features = () => {
             </Button>
             <Button
               asChild
-              size="lg"
               variant="outline"
-              className="px-8 py-6 h-auto text-lg border-white text-white hover:bg-white/10 font-semibold"
+              className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 font-semibold rounded-xl"
             >
               <a href="/pricing">
                 View Pricing
