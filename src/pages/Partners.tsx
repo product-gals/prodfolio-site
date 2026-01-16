@@ -85,8 +85,8 @@ const Partners = () => {
         ref={partnersAnimation.ref as React.RefObject<HTMLElement>}
         className={`py-8 px-4 ${partnersAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-[1000px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+        <div className="prodfolio-container max-w-[1100px] mx-auto">
+          <div className="grid md:grid-cols-3 gap-6">
             {partners.map((partner) => (
               <article
                 key={partner.id}
@@ -189,12 +189,10 @@ const Partners = () => {
                 )}
               </article>
             ))}
-          </div>
 
-          {/* "Become a Partner" CTA Card */}
-          <div className="max-w-md mx-auto">
-            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:border-white/60 group">
-              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-colors">
+            {/* "Become a Partner" CTA Card */}
+            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl p-6 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all hover:border-white/60 group">
+              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/30 transition-colors">
                 <Handshake className="w-7 h-7 text-white" />
               </div>
               <h3 className="text-xl font-heading font-bold text-white mb-2">
