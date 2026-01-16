@@ -182,27 +182,27 @@ const Features = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">S</p>
-                  <p className="text-sm text-navy/80">Situation — Set the stage</p>
+                  <p className="text-sm text-navy/80">Situation</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">I</p>
-                  <p className="text-sm text-navy/80">Insight — Your discovery process</p>
+                  <p className="text-sm text-navy/80">Insight</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">G</p>
-                  <p className="text-sm text-navy/80">Goals — Define success</p>
+                  <p className="text-sm text-navy/80">Goals</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">N</p>
-                  <p className="text-sm text-navy/80">Navigation — Your approach</p>
+                  <p className="text-sm text-navy/80">Navigation</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">A</p>
-                  <p className="text-sm text-navy/80">Achievement — Prove impact</p>
+                  <p className="text-sm text-navy/80">Achievement</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">L</p>
-                  <p className="text-sm text-navy/80">Learnings — Reflect & grow</p>
+                  <p className="text-sm text-navy/80">Learnings</p>
                 </div>
               </div>
             </div>
