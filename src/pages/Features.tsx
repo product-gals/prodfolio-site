@@ -290,7 +290,7 @@ const Features = () => {
                 Make it yours with themes and branding
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Choose from professional themes, customize colors, add your headshot and personal video. Pro users can even use custom domains.
+                Choose from professional themes, custom colors, and Pro users can even add custom domains. Want to show your personality? Add your headshot and a personal video.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
