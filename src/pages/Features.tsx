@@ -449,7 +449,7 @@ const Features = () => {
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-4">Time to build</td>
-                  <td className="text-center py-4 px-4 text-green-400">&lt;1 hour</td>
+                  <td className="text-center py-4 px-4 text-green-400">Hours</td>
                   <td className="text-center py-4 px-4 text-white/60">Days</td>
                   <td className="text-center py-4 px-4 text-white/60">Weeks</td>
                 </tr>
