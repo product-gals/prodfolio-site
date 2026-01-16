@@ -338,7 +338,7 @@ const Features = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Password-protected portfolios</span>
+                  <span className="text-navy/80">Password-protected case studies</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -346,11 +346,11 @@ const Features = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <Share2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Easy LinkedIn and resume integration</span>
+                  <span className="text-navy/80">Easy resume upload</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <BarChart3 className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>Coming soon:</strong> Portfolio analytics</span>
+                  <span className="text-navy/80"><strong>In beta:</strong> Portfolio analytics</span>
                 </li>
               </ul>
             </div>
