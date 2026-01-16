@@ -182,27 +182,27 @@ const Features = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">S</p>
-                  <p className="text-sm text-navy/80">Situation — Set the stage</p>
+                  <p className="text-sm text-navy/80">Situation</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">I</p>
-                  <p className="text-sm text-navy/80">Insight — Your discovery process</p>
+                  <p className="text-sm text-navy/80">Insight</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">G</p>
-                  <p className="text-sm text-navy/80">Goals — Define success</p>
+                  <p className="text-sm text-navy/80">Goals</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">N</p>
-                  <p className="text-sm text-navy/80">Navigation — Your approach</p>
+                  <p className="text-sm text-navy/80">Navigation</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">A</p>
-                  <p className="text-sm text-navy/80">Achievement — Prove impact</p>
+                  <p className="text-sm text-navy/80">Achievement</p>
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
                   <p className="font-bold text-primary">L</p>
-                  <p className="text-sm text-navy/80">Learnings — Reflect & grow</p>
+                  <p className="text-sm text-navy/80">Learnings</p>
                 </div>
               </div>
             </div>
@@ -290,7 +290,7 @@ const Features = () => {
                 Make it yours with themes and branding
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Choose from professional themes, customize colors, add your headshot and personal video. Pro users can even use custom domains.
+                Choose from professional themes, custom colors, and Pro users can even add custom domains. Want to show your personality? Add your headshot and a personal video.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -333,12 +333,12 @@ const Features = () => {
                 Share confidently, even with NDAs
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                We built Prodfolio knowing most PM work is confidential. Password-protect your portfolio, share selectively, and use our NDA-safe frameworks.
+                We built Prodfolio knowing some PM work is confidential. Password-protect your case studies and share selectively without risking your NDA.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Password-protected portfolios</span>
+                  <span className="text-navy/80">Password-protected case studies</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -346,11 +346,11 @@ const Features = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <Share2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Easy LinkedIn and resume integration</span>
+                  <span className="text-navy/80">Easy resume upload</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <BarChart3 className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>Coming soon:</strong> Portfolio analytics</span>
+                  <span className="text-navy/80"><strong>In beta:</strong> Portfolio analytics</span>
                 </li>
               </ul>
             </div>
@@ -449,7 +449,7 @@ const Features = () => {
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-4">Time to build</td>
-                  <td className="text-center py-4 px-4 text-green-400">&lt;1 hour</td>
+                  <td className="text-center py-4 px-4 text-green-400">Hours</td>
                   <td className="text-center py-4 px-4 text-white/60">Days</td>
                   <td className="text-center py-4 px-4 text-white/60">Weeks</td>
                 </tr>
@@ -472,19 +472,18 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-primary to-coral">
+      <section className="py-20 px-4 gradient-mesh-bg">
         <div className="prodfolio-container text-center max-w-[800px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
             Ready to build your portfolio?
           </h2>
           <p className="text-xl text-white/90 mb-10">
-            Join product managers who've discovered the portfolio advantage. Start free—no credit card required.
+            Join product managers who've discovered the portfolio advantage. Start free, no credit card required.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               asChild
-              size="lg"
-              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold"
+              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
             >
               <a href="https://app.prodfolio.io/sign-up">
                 Start Your Portfolio Free
@@ -492,9 +491,8 @@ const Features = () => {
             </Button>
             <Button
               asChild
-              size="lg"
               variant="outline"
-              className="px-8 py-6 h-auto text-lg border-white text-white hover:bg-white/10 font-semibold"
+              className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 font-semibold rounded-xl"
             >
               <a href="/pricing">
                 View Pricing
