@@ -333,7 +333,7 @@ const Features = () => {
                 Share confidently, even with NDAs
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                We built Prodfolio knowing most PM work is confidential. Password-protect your portfolio, share selectively, and use our NDA-safe frameworks.
+                We built Prodfolio knowing some PM work is confidential. Password-protect your case studies and share selectively without risking your NDA.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
