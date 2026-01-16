@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Copy, Check, Tag } from "lucide-react";
+import { ExternalLink, Copy, Check, Tag, Linkedin, Globe, Handshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
@@ -83,42 +83,44 @@ const Partners = () => {
       {/* Partners Grid */}
       <section
         ref={partnersAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 ${partnersAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-8 px-4 ${partnersAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-[900px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="prodfolio-container max-w-[1100px] mx-auto">
+          <div className="grid md:grid-cols-3 gap-6">
             {partners.map((partner) => (
-              <div
+              <article
                 key={partner.id}
-                className="glass-card p-6 relative"
+                className="bg-white rounded-2xl shadow-xl p-6 relative hover:shadow-2xl transition-all hover:scale-[1.02] hover:-translate-y-1 flex flex-col"
               >
                 {/* Exclusive Offer Badge */}
                 {partner.promoCode && (
-                  <div className="absolute -top-3 -right-3 bg-coral text-[#1a1a2e] text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                    <Tag className="w-3 h-3" />
+                  <div className="absolute -top-3 -right-3 bg-coral text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-lg">
+                    <Tag className="w-3.5 h-3.5" />
                     {partner.promoDiscount}
                   </div>
                 )}
 
-                <div className="flex items-start gap-4">
-                  {/* Photo/Logo placeholder */}
+                <div className="flex items-start gap-4 flex-1">
+                  {/* Photo/Logo */}
                   <div className="flex-shrink-0">
                     {partner.type === "individual" ? (
-                      <div className="w-24 h-24 rounded-lg bg-coral flex items-center justify-center overflow-hidden">
+                      <div className="w-16 h-16 rounded-full bg-coral overflow-hidden ring-4 ring-coral/20">
                         {partner.photo ? (
                           <img src={partner.photo} alt={partner.name} className="w-full h-full object-cover" />
                         ) : (
-                          <span className="text-3xl font-bold text-white">
-                            {partner.name.split(' ').map(n => n[0]).join('')}
-                          </span>
+                          <div className="w-full h-full flex items-center justify-center">
+                            <span className="text-xl font-bold text-white">
+                              {partner.name.split(' ').map(n => n[0]).join('')}
+                            </span>
+                          </div>
                         )}
                       </div>
                     ) : (
-                      <div className="w-24 h-24 rounded-lg bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center overflow-hidden">
+                      <div className="w-16 h-16 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
                         {partner.logo ? (
                           <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain p-2" />
                         ) : (
-                          <span className="text-2xl font-bold text-white">
+                          <span className="text-lg font-bold text-primary">
                             P2P
                           </span>
                         )}
@@ -127,30 +129,34 @@ const Partners = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1">
-                    <h3 className="text-xl font-heading font-bold text-white mb-2">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-heading font-bold text-navy mb-1">
                       {partner.name}
                     </h3>
-                    <p className="text-white/80 text-sm mb-4 leading-relaxed">
+                    <p className="text-navy/70 text-sm mb-4 leading-relaxed">
                       {partner.description}
                     </p>
-                    <div className="flex flex-wrap gap-3">
+
+                    {/* Link buttons */}
+                    <div className="flex flex-wrap gap-2">
                       <a
                         href={partner.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-coral text-sm font-medium hover:underline"
+                        className="inline-flex items-center gap-1.5 bg-navy/5 hover:bg-navy/10 text-navy text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
                       >
-                        Link <ExternalLink className="w-3 h-3" />
+                        <Globe className="w-3.5 h-3.5" />
+                        Website
                       </a>
                       {partner.linkedin && (
                         <a
                           href={partner.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-coral text-sm font-medium hover:underline"
+                          className="inline-flex items-center gap-1.5 bg-[#0077B5]/10 hover:bg-[#0077B5]/20 text-[#0077B5] text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
                         >
-                          LinkedIn <ExternalLink className="w-3 h-3" />
+                          <Linkedin className="w-3.5 h-3.5" />
+                          LinkedIn
                         </a>
                       )}
                     </div>
@@ -159,15 +165,17 @@ const Partners = () => {
 
                 {/* Promo Code Section */}
                 {partner.promoCode && (
-                  <div className="mt-4 pt-4 border-t border-white/20">
-                    <p className="text-white/60 text-xs mb-2">{partner.promoDescription}</p>
+                  <div className="mt-5 pt-4 border-t border-navy/10">
+                    <p className="text-navy/60 text-xs mb-2 font-medium">{partner.promoDescription}</p>
                     <div className="flex items-center gap-2">
-                      <code className="bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white font-mono text-sm flex-1 text-center">
-                        {partner.promoCode}
-                      </code>
+                      <div className="bg-coral/10 border border-coral/20 rounded-lg px-4 py-2.5 flex-1 text-center">
+                        <code className="text-coral font-mono text-sm font-bold tracking-wider">
+                          {partner.promoCode}
+                        </code>
+                      </div>
                       <button
                         onClick={() => copyPromoCode(partner.promoCode!)}
-                        className="bg-coral hover:bg-coral/90 text-[#1a1a2e] p-2 rounded-lg transition-colors"
+                        className="bg-coral hover:bg-coral/90 text-white p-2.5 rounded-lg transition-colors"
                         aria-label="Copy promo code"
                       >
                         {copiedCode === partner.promoCode ? (
@@ -179,28 +187,26 @@ const Partners = () => {
                     </div>
                   </div>
                 )}
-              </div>
+              </article>
             ))}
-          </div>
 
-        </div>
-      </section>
-
-      {/* Become a Partner CTA */}
-      <section className="py-12 px-4">
-        <div className="prodfolio-container max-w-[900px] mx-auto">
-          <div className="glass-card p-8 md:p-12 text-center">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
-              Become a Partner
-            </h2>
-            <p className="text-white/80 mb-6 max-w-lg mx-auto">
-              Passionate about helping aspiring PMs build great portfolios? Let's work together.
-            </p>
-            <Button asChild className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
-              <a href="mailto:hello@prodfolio.io">
-                Get in Touch
-              </a>
-            </Button>
+            {/* "Become a Partner" CTA Card */}
+            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl p-6 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all hover:border-white/60 group">
+              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/30 transition-colors">
+                <Handshake className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-white mb-2">
+                Become a Partner
+              </h3>
+              <p className="text-white/70 text-sm mb-5 leading-relaxed">
+                Passionate about helping aspiring PMs build great portfolios? Let's work together.
+              </p>
+              <Button asChild className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
+                <a href="mailto:hello@prodfolio.io?subject=Partnership inquiry">
+                  Get in Touch
+                </a>
+              </Button>
+            </article>
           </div>
         </div>
       </section>

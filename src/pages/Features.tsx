@@ -379,7 +379,7 @@ const Features = () => {
                         <p className="text-xs text-navy/60 mb-2">Your portfolio link</p>
                         <div className="flex items-center gap-2">
                           <code className="flex-1 text-sm text-primary bg-primary/5 px-3 py-2 rounded">
-                            prodfolio.io/p/your-name
+                            app.prodfolio.io/p/your-name
                           </code>
                           <button className="p-2 bg-primary text-white rounded-lg text-xs">
                             Copy
