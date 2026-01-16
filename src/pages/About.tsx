@@ -11,7 +11,7 @@ const About = () => {
   const heroAnimation = useScrollAnimation();
   const storyAnimation = useScrollAnimation();
   const foundersAnimation = useScrollAnimation();
-  const missionAnimation = useScrollAnimation();
+  const ctaAnimation = useScrollAnimation();
 
   useSEO({
     title: "About Prodfolio | Built by PMs Who've Been There",
@@ -55,95 +55,97 @@ const About = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] via-[#D6CEFF] to-[#B8A3FF]">
+    <div className="min-h-screen gradient-mesh-bg">
       <Navbar />
 
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-[40px] px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-        aria-label="Hero introduction"
+        className={`py-16 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
-          <h1 className="text-6xl md:text-7xl font-heading font-bold mb-6 text-white">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
             We built the thing we needed
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed font-body">
+          <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
             Prodfolio started because two PMs got tired of watching talented product people undersell themselves - ourselves included.
           </p>
         </div>
       </section>
 
-      {/* Gradient Transition */}
-      <div className="h-32 bg-gradient-to-b from-transparent to-white/90"></div>
-
       {/* Origin Story */}
       <section
         ref={storyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-12 pb-[60px] px-4 bg-white/90 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-        aria-labelledby="origin-story-heading"
+        className={`py-12 px-4 ${storyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <h2 id="origin-story-heading" className="text-4xl md:text-5xl font-heading font-bold text-navy text-center mb-12">
+        <div className="prodfolio-container max-w-[900px] mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white text-center mb-10">
             How a LinkedIn coffee chat became Prodfolio
           </h2>
 
-          <div className="space-y-10 max-w-[900px] mx-auto">
+          <div className="space-y-6">
             {/* Coffee Chat */}
-            <article className="flex flex-col md:flex-row gap-6 items-start">
-              <Coffee className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
-              <div>
-                <h3 className="text-3xl font-heading font-bold mb-4 text-navy">It started with a coffee chat</h3>
-                <p className="text-lg text-navy leading-[1.7] font-body">
-                  Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
-                  They realized they'd been in the same PM circles but had never actually met. So they did what any
-                  curious PMs would do - grabbed coffee.
-                </p>
+            <div className="glass-card p-6">
+              <div className="flex gap-4 items-start">
+                <Coffee className="w-8 h-8 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-heading font-bold mb-2 text-white">It started with a coffee chat</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Meagan and Santiana met on LinkedIn in 2024 after Meagan helped Santi's friend with job searching.
+                    They realized they'd been in the same PM circles but had never actually met. So they did what any
+                    curious PMs would do - grabbed coffee.
+                  </p>
+                </div>
               </div>
-            </article>
+            </div>
 
             {/* Podcast */}
-            <article className="flex flex-col md:flex-row gap-6 items-start">
-              <Mic className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
-              <div>
-                <h3 className="text-3xl font-heading font-bold mb-4 text-navy">Then came the podcast</h3>
-                <p className="text-lg text-navy leading-[1.7] font-body">
-                  That chat turned into a podcast - <strong className="text-navy">The Product Pivot</strong> - where they interviewed PMs at every stage. Episode after episode, one theme kept coming up: PMs didn't know how to showcase their work. The same people giving brilliant answers on the show were struggling to communicate their value to hiring managers.
-                </p>
+            <div className="glass-card p-6">
+              <div className="flex gap-4 items-start">
+                <Mic className="w-8 h-8 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-heading font-bold mb-2 text-white">Then came the podcast</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    That chat turned into a podcast - <strong className="text-white">The Product Pivot</strong> - where they interviewed PMs at every stage. Episode after episode, one theme kept coming up: PMs didn't know how to showcase their work.
+                  </p>
+                </div>
               </div>
-            </article>
+            </div>
 
             {/* The Aha Moment */}
-            <article className="flex flex-col md:flex-row gap-6 items-start">
-              <Lightbulb className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
-              <div className="border-l-4 border-l-[#FF8B7B] pl-6">
-                <h3 className="text-3xl font-heading font-bold mb-4 text-navy">The "aha" moment</h3>
-                <p className="text-lg text-navy leading-[1.7] font-body mb-4">
-                  In October 2024, Meagan was job searching after working in product at a startup - but without a
-                  product title on her resume. She tried building a portfolio in Notion and shared it with Santi for
-                  feedback. Santi was kind about it, but Meagan still never felt confident sharing it with hiring
-                  managers. <strong className="text-navy">Something was missing.</strong>
-                </p>
-                <p className="text-lg text-navy leading-[1.7] font-body">
-                  So they started asking other PMs: do you struggle with showcasing your work? The answer was always the
-                  same. <strong className="text-navy">Yes.</strong>
-                </p>
+            <div className="glass-card p-6 border-l-4 border-l-coral">
+              <div className="flex gap-4 items-start">
+                <Lightbulb className="w-8 h-8 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-heading font-bold mb-2 text-white">The "aha" moment</h3>
+                  <p className="text-white/80 leading-relaxed mb-3">
+                    In October 2024, Meagan was job searching after working in product at a startup - but without a
+                    product title on her resume. She tried building a portfolio in Notion but never felt confident sharing it with hiring
+                    managers. <strong className="text-white">Something was missing.</strong>
+                  </p>
+                  <p className="text-white/80 leading-relaxed">
+                    So they started asking other PMs: do you struggle with showcasing your work? The answer was always the
+                    same. <strong className="text-white">Yes.</strong>
+                  </p>
+                </div>
               </div>
-            </article>
+            </div>
 
             {/* Building Prodfolio */}
-            <article className="flex flex-col md:flex-row gap-6 items-start">
-              <Users className="w-12 h-12 text-[#FF8B7B] flex-shrink-0" aria-hidden="true" />
-              <div>
-                <h3 className="text-3xl font-heading font-bold mb-4 text-navy">We built it together - with you</h3>
-                <p className="text-lg text-navy leading-[1.7] font-body mb-4">
-                  In February 2025, Prodfolio was born. We talked to PMs about what they struggled with. We talked to hiring managers about what they actually looked for. We shipped an MVP, ran a beta cohort, and kept iterating based on real feedback.
-                </p>
-                <p className="text-lg text-navy leading-[1.7] font-body">
-                  Now PMs are landing interviews with portfolios they're proud to share. That's why we built this - and why we keep building.
-                </p>
+            <div className="glass-card p-6">
+              <div className="flex gap-4 items-start">
+                <Users className="w-8 h-8 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-heading font-bold mb-2 text-white">We built it together - with you</h3>
+                  <p className="text-white/80 leading-relaxed mb-3">
+                    In February 2025, Prodfolio was born. We talked to PMs about what they struggled with. We talked to hiring managers about what they actually looked for. We shipped an MVP, ran a beta cohort, and kept iterating.
+                  </p>
+                  <p className="text-white/80 leading-relaxed">
+                    Now PMs are landing interviews with portfolios they're proud to share. That's why we built this - and why we keep building.
+                  </p>
+                </div>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
@@ -151,124 +153,98 @@ const About = () => {
       {/* Meet the Founders */}
       <section
         ref={foundersAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-[60px] px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-        aria-labelledby="team-heading"
+        className={`py-16 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 id="team-heading" className="text-4xl md:text-5xl font-heading font-bold mb-5 text-navy">
+        <div className="prodfolio-container max-w-[900px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3 text-white">
               Meet the PMs behind Prodfolio
             </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto font-body">
-              We're not just building Prodfolio — we're using it, breaking it, and improving it every day.
+            <p className="text-white/80 max-w-2xl mx-auto">
+              We're not just building Prodfolio - we're using it, breaking it, and improving it every day.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Meagan */}
-            <article className="bg-white/30 backdrop-blur-sm rounded-2xl p-10 border border-white/40 max-w-[480px]">
-              <div className="relative inline-block mb-6 w-full flex justify-center">
-                <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-primary/20">
-                  <img
-                    src={meaganPhoto}
-                    alt="Meagan Glenn, Co-founder of Prodfolio"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    width="240"
-                    height="240"
-                  />
-                </div>
+            <div className="glass-card p-6 text-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
+                <img
+                  src={meaganPhoto}
+                  alt="Meagan Glenn, Co-founder of Prodfolio"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <h3 className="text-2xl font-heading font-bold mb-2 text-navy text-center">Meagan Glenn</h3>
-              <p className="text-primary font-semibold mb-4 text-center font-body">Co-founder</p>
-              <p className="text-navy/80 leading-relaxed mb-6 font-body">
-                Former startup PM turned career coach who's helped hundreds of PMs land roles. Rewrote her own portfolio five times before building the tool she wished existed. Fueled by iced coffee and a deep hatred of underselling.
+              <h3 className="text-xl font-heading font-bold text-white">Meagan Glenn</h3>
+              <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                Former startup PM turned career coach who's helped hundreds of PMs land roles. Fueled by iced coffee and a deep hatred of underselling.
               </p>
-
-              <div className="mb-4 text-center">
-                <Button asChild className="rounded-full bg-primary hover:bg-primary/90 text-white transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              <div className="flex flex-col gap-2">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                   <a href="https://meaganglenn.me" target="_blank" rel="noopener noreferrer">
-                    See My Prodfolio →
+                    See My Prodfolio
                   </a>
                 </Button>
+                <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-coral text-sm hover:underline">
+                  LinkedIn
+                </a>
               </div>
-
-              <div className="flex justify-center gap-3">
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="sm"
-                  className="rounded-full text-navy/60 hover:text-navy hover:bg-navy/5 transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                >
-                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                  </a>
-                </Button>
-              </div>
-            </article>
+            </div>
 
             {/* Santiana */}
-            <article className="bg-white/30 backdrop-blur-sm rounded-2xl p-10 border border-white/40 max-w-[480px]">
-              <div className="relative inline-block mb-6 w-full flex justify-center">
-                <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-primary/20">
-                  <img
-                    src={santianaPhoto}
-                    alt="Santiana Brace, Co-founder of Prodfolio"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    width="240"
-                    height="240"
-                  />
-                </div>
+            <div className="glass-card p-6 text-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
+                <img
+                  src={santianaPhoto}
+                  alt="Santiana Brace, Co-founder of Prodfolio"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <h3 className="text-2xl font-heading font-bold mb-2 text-navy text-center">Santiana Brace</h3>
-              <p className="text-primary font-semibold mb-4 text-center font-body">Co-founder</p>
-              <p className="text-navy/80 leading-relaxed mb-6 font-body">
-                PM and podcast co-host who pivoted into product and knows exactly how hard it is to prove you belong. Obsessed with making complex things simple. Will ask "but why?" until she gets to the real problem.
+              <h3 className="text-xl font-heading font-bold text-white">Santiana Brace</h3>
+              <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                PM and podcast co-host who pivoted into product and knows exactly how hard it is to prove you belong. Will ask "but why?" until she gets to the real problem.
               </p>
-
-              <div className="mb-4 text-center">
-                <Button asChild className="rounded-full bg-primary hover:bg-primary/90 text-white transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2">
+              <div className="flex flex-col gap-2">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                   <a href="https://app.prodfolio.io/p/santi-brace-2" target="_blank" rel="noopener noreferrer">
-                    See My Prodfolio →
+                    See My Prodfolio
                   </a>
                 </Button>
+                <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-coral text-sm hover:underline">
+                  LinkedIn
+                </a>
               </div>
-
-              <div className="flex justify-center gap-3">
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="sm"
-                  className="rounded-full text-navy/60 hover:text-navy hover:bg-navy/5 transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                >
-                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                  </a>
-                </Button>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-[60px] px-4 bg-gradient-to-b from-[#D6CEFF] via-[#B8A3FF] to-[#9E85F9]" aria-label="Call to action">
-        <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">Ready to tell your story?</h2>
-          <p className="text-xl text-white/90 mb-10 leading-relaxed font-body">
+      <section
+        ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-16 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container text-center max-w-[900px] mx-auto">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
+            Ready to tell your story?
+          </h2>
+          <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
             Join the PMs who are finally showcasing their work with confidence.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               asChild
-              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2"
+              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
             >
               <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
             </Button>
             <Button
               asChild
-              className="px-8 py-6 h-auto text-lg bg-[#FF8B7B] text-white hover:bg-[#FF8B7B]/90 shadow-xl font-semibold rounded-xl transition-colors focus:ring-2 focus:ring-[#FF8B7B] focus:ring-offset-2"
+              className="px-8 py-6 h-auto text-lg bg-coral text-white hover:bg-coral/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
             >
               <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                 <Phone className="h-5 w-5" />
@@ -276,7 +252,7 @@ const About = () => {
               </a>
             </Button>
           </div>
-          <p className="mt-6 text-sm text-white/80 font-body">No credit card required. Get started in minutes.</p>
+          <p className="mt-6 text-sm text-white/70">No credit card required. Get started in minutes.</p>
         </div>
       </section>
 

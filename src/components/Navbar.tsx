@@ -84,12 +84,6 @@ const Navbar = () => {
             >
               Pricing
             </Link>
-            <Link
-              to="/about"
-              className="font-medium text-white hover:text-white/80 transition-colors"
-            >
-              About
-            </Link>
 
             {/* Resources Dropdown */}
             <div className="relative" ref={resourcesRef}>
@@ -189,13 +183,6 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Pricing
-            </Link>
-            <Link
-              to="/about"
-              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About
             </Link>
 
             {/* Resources Section */}
