@@ -183,22 +183,23 @@ const Partners = () => {
             ))}
           </div>
 
-          {/* Become a Partner CTA */}
-          <div className="mt-16 text-center">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 md:p-12">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
-                Become a Partner
-              </h2>
-              <p className="text-white/80 mb-6 max-w-lg mx-auto">
-                Passionate about helping aspiring PMs build great portfolios? Let's work together.
-              </p>
-              <Button asChild className="bg-white text-navy hover:bg-white/90 font-semibold">
-                <a href="mailto:hello@prodfolio.io">
-                  Get in Touch
-                </a>
-              </Button>
-            </div>
-          </div>
+        </div>
+      </section>
+
+      {/* Become a Partner CTA */}
+      <section className="py-16 px-4">
+        <div className="prodfolio-container text-center max-w-[900px] mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+            Become a Partner
+          </h2>
+          <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
+            Passionate about helping aspiring PMs build great portfolios? Let's work together.
+          </p>
+          <Button asChild className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105">
+            <a href="mailto:hello@prodfolio.io">
+              Get in Touch
+            </a>
+          </Button>
         </div>
       </section>
 
