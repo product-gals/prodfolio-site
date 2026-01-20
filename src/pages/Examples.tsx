@@ -175,21 +175,21 @@ const Examples = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/20">
-              <div className="text-3xl font-bold text-white mb-2">1-3</div>
-              <div className="text-sm text-white/80">Strong case studies</div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-lg">
+              <div className="text-3xl font-bold text-navy mb-2">1-3</div>
+              <div className="text-sm text-navy/70">Strong case studies</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/20">
-              <div className="text-2xl font-bold text-white mb-2">Process</div>
-              <div className="text-sm text-white/80">How you think</div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-lg">
+              <div className="text-2xl font-bold text-navy mb-2">Process</div>
+              <div className="text-sm text-navy/70">How you think</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/20">
-              <div className="text-2xl font-bold text-white mb-2">Metrics</div>
-              <div className="text-sm text-white/80">Quantified impact</div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-lg">
+              <div className="text-2xl font-bold text-navy mb-2">Metrics</div>
+              <div className="text-sm text-navy/70">Quantified impact</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/20">
-              <div className="text-2xl font-bold text-white mb-2">Story</div>
-              <div className="text-sm text-white/80">Connected narrative</div>
+            <div className="bg-white rounded-2xl p-5 text-center shadow-lg">
+              <div className="text-2xl font-bold text-navy mb-2">Story</div>
+              <div className="text-sm text-navy/70">Connected narrative</div>
             </div>
           </div>
         </div>
