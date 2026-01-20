@@ -179,7 +179,7 @@ const Landing = () => {
             </div>
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">+26%</div>
-              <div className="text-sm text-white/80">growth in entry-level PM roles</div>
+              <div className="text-sm text-white/80">growth in entry-level PM roles in the last 6 months</div>
               <div className="text-xs text-white/60 mt-1">Now's the time to break in</div>
             </div>
           </div>
