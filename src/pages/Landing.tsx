@@ -488,7 +488,7 @@ const Landing = () => {
           <div className="text-center mt-16">
             <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
               <a href="https://app.prodfolio.io/sign-up">
-                Try it free—see how fast it is
+                Try it free
               </a>
             </Button>
           </div>
