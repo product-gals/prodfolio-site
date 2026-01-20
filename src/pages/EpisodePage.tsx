@@ -36,6 +36,11 @@ const EpisodePage = () => {
   const episode = slug ? getEpisodeBySlug(slug) : undefined;
   const relatedEpisodes = slug ? getRelatedEpisodes(slug, 2) : [];
 
+  // Scroll to top when page loads or episode changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
   // Load Buzzsprout player script
   useEffect(() => {
     if (!episode?.buzzsproutId) return;
