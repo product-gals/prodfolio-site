@@ -313,7 +313,7 @@ const Landing = () => {
               From blank page to portfolio in under an hour
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              No design skills needed. No weeks of tweaking. Just your experience and our guided framework.
+              No design skills needed. No weeks of prompting. Just your experience and our guided framework.
             </p>
           </div>
 
