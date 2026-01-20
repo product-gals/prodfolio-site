@@ -338,7 +338,7 @@ const Features = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Password-protected case studies</span>
+                  <span className="text-navy/80">Restrict access to sensitive work</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
