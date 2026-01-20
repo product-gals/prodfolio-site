@@ -325,7 +325,7 @@ const Landing = () => {
                 Import your experience in seconds
               </h3>
               <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                Upload your resume or connect LinkedIn. Our AI extracts your roles, achievements, and builds the foundation of your story automatically.
+                Upload your resume. Our AI extracts information and experience, building the foundation for your portfolio.
               </p>
               <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
                 <a href="https://app.prodfolio.io/sign-up">
