@@ -136,7 +136,7 @@ const Features = () => {
                 Turn your docs into case studies in minutes
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Upload your PRDs, product briefs, or project plans and let AI get you started. You guide the process—we do the heavy lifting.
+                Upload your PRDs, product briefs, or project plans and let AI get you started. You guide the process and we do the heavy lifting.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
