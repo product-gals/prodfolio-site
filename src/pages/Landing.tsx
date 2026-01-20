@@ -269,7 +269,7 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 You've shipped products, led teams, driven results. Document your journey and own your narrative for that next promotion or role.
               </p>
-              <a href="https://app.prodfolio.io/sign-up" className="text-coral font-medium text-sm hover:underline">
+              <a href="https://app.prodfolio.io/sign-up" className="text-navy font-medium text-sm hover:underline">
                 Start building →
               </a>
             </article>
@@ -283,7 +283,7 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 You think like a PM - even without the title. Show hiring managers the product mindset they're looking for.
               </p>
-              <a href="/for-career-changers" className="text-coral font-medium text-sm hover:underline">
+              <a href="/for-career-changers" className="text-navy font-medium text-sm hover:underline">
                 Learn how →
               </a>
             </article>
@@ -297,7 +297,7 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Resumes tell you what. Portfolios show you how. Encourage your candidates to share their thinking.
               </p>
-              <a href="/for-hiring-managers" className="text-coral font-medium text-sm hover:underline">
+              <a href="/for-hiring-managers" className="text-navy font-medium text-sm hover:underline">
                 See how it helps →
               </a>
             </article>
@@ -320,7 +320,7 @@ const Landing = () => {
           {/* Feature 01 - Import */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2 lg:order-1">
-              <div className="text-coral font-semibold text-sm tracking-wide mb-3">01 — IMPORT</div>
+              <div className="text-navy font-semibold text-sm tracking-wide mb-3">01 — IMPORT</div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Import your experience in seconds
               </h3>
@@ -381,7 +381,7 @@ const Landing = () => {
           {/* Feature 02 - Build */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2">
-              <div className="text-coral font-semibold text-sm tracking-wide mb-3">02 — BUILD</div>
+              <div className="text-navy font-semibold text-sm tracking-wide mb-3">02 — BUILD</div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Structure your story with SIGNAL
               </h3>
@@ -440,7 +440,7 @@ const Landing = () => {
           {/* Feature 03 - Share */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="text-coral font-semibold text-sm tracking-wide mb-3">03 — SHARE</div>
+              <div className="text-navy font-semibold text-sm tracking-wide mb-3">03 — SHARE</div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 One link. Unlimited impact.
               </h3>
@@ -515,15 +515,15 @@ const Landing = () => {
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4">
                     <div className="flex items-start gap-3">
-                      <FileCheck className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                      <FileCheck className="w-5 h-5 text-navy flex-shrink-0 mt-1" />
                       <span className="text-white/90 text-sm">Focus on process and thinking, not specific metrics</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Lock className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                      <Lock className="w-5 h-5 text-navy flex-shrink-0 mt-1" />
                       <span className="text-white/90 text-sm">NDA-safe case study frameworks built in</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Shield className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                      <Shield className="w-5 h-5 text-navy flex-shrink-0 mt-1" />
                       <span className="text-white/90 text-sm">Describe scale and methodology, not client names</span>
                     </div>
                   </div>
