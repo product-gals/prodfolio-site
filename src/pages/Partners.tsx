@@ -199,7 +199,7 @@ const Partners = () => {
                 Become a Partner
               </h3>
               <p className="text-white/70 text-sm mb-5 leading-relaxed">
-                Passionate about helping aspiring PMs build great portfolios? Let's work together.
+                Passionate about helping PMs build great portfolios? Let's work together.
               </p>
               <Button asChild className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                 <a href="mailto:hello@prodfolio.io?subject=Partnership inquiry">

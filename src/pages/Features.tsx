@@ -24,6 +24,7 @@ const Features = () => {
   const frameworkAnimation = useScrollAnimation();
   const customizeAnimation = useScrollAnimation();
   const shareAnimation = useScrollAnimation();
+  const analyticsAnimation = useScrollAnimation();
   const compareAnimation = useScrollAnimation();
 
   useSEO({
@@ -75,6 +76,10 @@ const Features = () => {
             <a href="#share" className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium hover:bg-white/30 transition-colors">
               <Share2 className="w-4 h-4" />
               Sharing & Privacy
+            </a>
+            <a href="#analytics" className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium hover:bg-white/30 transition-colors">
+              <BarChart3 className="w-4 h-4" />
+              Analytics
             </a>
           </div>
 
@@ -136,7 +141,7 @@ const Features = () => {
                 Turn your docs into case studies in minutes
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Upload your PRDs, product briefs, or project plans and let AI get you started. You guide the process—we do the heavy lifting.
+                Upload your PRDs, product briefs, or project plans and let AI get you started. You guide the process and we do the heavy lifting.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -175,7 +180,7 @@ const Features = () => {
                 Guided prompts that structure your story
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Our proprietary SIGNAL framework walks you through each case study step-by-step, ensuring you capture what hiring managers actually want to see.
+                Our SIGNAL framework walks you through each case study step-by-step, ensuring you capture what hiring managers actually want to see.
               </p>
 
               {/* SIGNAL Breakdown */}
@@ -290,7 +295,7 @@ const Features = () => {
                 Make it yours with themes and branding
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Choose from professional themes, custom colors, and Pro users can even add custom domains. Want to show your personality? Add your headshot and a personal video.
+                Choose from professional themes, and Pro users can add custom colors and custom domains. Want to show your personality? Add your headshot and a personal video.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -298,8 +303,8 @@ const Features = () => {
                   <span className="text-navy/80">5+ professional themes included free</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Custom colors and accent options</span>
+                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                  <span className="text-navy/80"><strong>Pro:</strong> Custom colors and accent options</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -338,7 +343,7 @@ const Features = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Password-protected case studies</span>
+                  <span className="text-navy/80">Restrict access to sensitive work</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
@@ -347,10 +352,6 @@ const Features = () => {
                 <li className="flex items-start gap-3">
                   <Share2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <span className="text-navy/80">Easy resume upload</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <BarChart3 className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>In beta:</strong> Portfolio analytics</span>
                 </li>
               </ul>
             </div>
@@ -390,6 +391,100 @@ const Features = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature 5: Analytics (Left image, Right text) */}
+      <section
+        id="analytics"
+        ref={analyticsAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-20 px-4 bg-white ${analyticsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Left - Visual */}
+            <div className="flex-1 order-2 lg:order-1">
+              <div className="relative">
+                <div className="bg-gradient-to-br from-primary/10 to-coral/10 rounded-3xl p-8 border border-primary/20">
+                  {/* Analytics Dashboard Mock */}
+                  <div className="bg-white rounded-2xl shadow-xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-2">
+                        <BarChart3 className="w-5 h-5 text-primary" />
+                        <span className="font-semibold text-navy">Analytics</span>
+                      </div>
+                      <span className="text-xs text-navy/60">Last 7 days</span>
+                    </div>
+                    <div className="grid grid-cols-3 gap-3 mb-4">
+                      <div className="text-center p-3 bg-gray-50 rounded-lg">
+                        <p className="text-2xl font-bold text-navy">97</p>
+                        <p className="text-xs text-navy/60">views</p>
+                      </div>
+                      <div className="text-center p-3 bg-gray-50 rounded-lg">
+                        <p className="text-2xl font-bold text-navy">28</p>
+                        <p className="text-xs text-navy/60">case studies opened</p>
+                      </div>
+                      <div className="text-center p-3 bg-gray-50 rounded-lg">
+                        <p className="text-2xl font-bold text-navy">9</p>
+                        <p className="text-xs text-navy/60">multi-viewers</p>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-navy/80">Self-Service User Management</span>
+                        <span className="text-primary font-medium">61%</span>
+                      </div>
+                      <div className="h-2 bg-primary/20 rounded-full">
+                        <div className="h-2 bg-primary rounded-full" style={{width: '61%'}} />
+                      </div>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-navy/80">Chrome Extension Redesign</span>
+                        <span className="text-primary font-medium">32%</span>
+                      </div>
+                      <div className="h-2 bg-primary/20 rounded-full">
+                        <div className="h-2 bg-primary rounded-full" style={{width: '32%'}} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Decorative */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-coral/20 rounded-full blur-2xl" />
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary/20 rounded-full blur-xl" />
+              </div>
+            </div>
+
+            {/* Right - Text */}
+            <div className="flex-1 order-1 lg:order-2">
+              <div className="flex items-center gap-2 text-primary font-medium mb-4">
+                <BarChart3 className="w-5 h-5" />
+                Analytics
+              </div>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+                Know who's viewing your work
+              </h2>
+              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+                See which case studies resonate, track visitor engagement, and understand where your traffic comes from. Stop guessing and start optimizing.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Total views, unique visitors, and week-over-week momentum</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Case study ranking with performance insights</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Track resume downloads, LinkedIn clicks, and more</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">See traffic sources: LinkedIn, direct, referrals</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -443,6 +538,12 @@ const Features = () => {
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-4">NDA-safe guidance</td>
+                  <td className="text-center py-4 px-4 text-green-400">✓</td>
+                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                </tr>
+                <tr className="border-b border-white/10">
+                  <td className="py-4 px-4">Portfolio analytics</td>
                   <td className="text-center py-4 px-4 text-green-400">✓</td>
                   <td className="text-center py-4 px-4 text-white/40">—</td>
                   <td className="text-center py-4 px-4 text-white/40">—</td>
