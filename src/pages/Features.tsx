@@ -175,7 +175,7 @@ const Features = () => {
                 Guided prompts that structure your story
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Our proprietary SIGNAL framework walks you through each case study step-by-step, ensuring you capture what hiring managers actually want to see.
+                Our SIGNAL framework walks you through each case study step-by-step, ensuring you capture what hiring managers actually want to see.
               </p>
 
               {/* SIGNAL Breakdown */}
