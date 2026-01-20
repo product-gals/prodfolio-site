@@ -477,7 +477,7 @@ const Landing = () => {
                 <div className="space-y-2">
                   <div className="text-xs text-gray-500">Your portfolio link</div>
                   <div className="bg-gray-50 rounded-lg p-3 flex items-center gap-2">
-                    <div className="flex-1 text-sm text-gray-600 font-mono truncate">prodfolio.io/p/your-name</div>
+                    <div className="flex-1 text-sm text-gray-600 font-mono truncate">app.prodfolio.io/p/your-name</div>
                     <button className="px-3 py-1.5 bg-primary text-white text-xs font-medium rounded-lg hover:bg-primary/90">Copy</button>
                   </div>
                 </div>
