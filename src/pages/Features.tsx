@@ -290,7 +290,7 @@ const Features = () => {
                 Make it yours with themes and branding
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Choose from professional themes, custom colors, and Pro users can even add custom domains. Want to show your personality? Add your headshot and a personal video.
+                Choose from professional themes, and Pro users can add custom colors and custom domains. Want to show your personality? Add your headshot and a personal video.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -298,8 +298,8 @@ const Features = () => {
                   <span className="text-navy/80">5+ professional themes included free</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Custom colors and accent options</span>
+                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                  <span className="text-navy/80"><strong>Pro:</strong> Custom colors and accent options</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
