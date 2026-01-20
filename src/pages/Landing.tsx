@@ -508,28 +508,25 @@ const Landing = () => {
                 </div>
                 <div className="flex-1">
                   <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Yes, you can showcase PM work—even under NDA
+                    Yes, you can showcase PM work (even under NDA)
                   </h2>
                   <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                    Most PM work is confidential. We get it. Prodfolio helps you tell compelling stories without revealing proprietary details.
+                    Some PM work is confidential. We get it. Prodfolio helps you tell compelling stories without revealing proprietary details.
                   </p>
                   <div className="grid sm:grid-cols-3 gap-4">
                     <div className="flex items-start gap-3">
-                      <FileCheck className="w-5 h-5 text-navy flex-shrink-0 mt-1" />
+                      <FileCheck className="w-5 h-5 text-white flex-shrink-0 mt-1" />
                       <span className="text-white/90 text-sm">Focus on process and thinking, not specific metrics</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Lock className="w-5 h-5 text-navy flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">NDA-safe case study frameworks built in</span>
+                      <Lock className="w-5 h-5 text-white flex-shrink-0 mt-1" />
+                      <span className="text-white/90 text-sm">NDA-safe case study features built in</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Shield className="w-5 h-5 text-navy flex-shrink-0 mt-1" />
+                      <Shield className="w-5 h-5 text-white flex-shrink-0 mt-1" />
                       <span className="text-white/90 text-sm">Describe scale and methodology, not client names</span>
                     </div>
                   </div>
-                  <p className="text-white/60 text-sm mt-6 italic">
-                    Your portfolio shows how you work—not what's under NDA.
-                  </p>
                 </div>
               </div>
             </div>
