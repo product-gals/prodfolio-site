@@ -69,6 +69,10 @@ const Features = () => {
               <FileText className="w-4 h-4" />
               SIGNAL Framework
             </a>
+            <a href="#analytics" className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium hover:bg-white/30 transition-colors">
+              <BarChart3 className="w-4 h-4" />
+              Analytics
+            </a>
             <a href="#customize" className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium hover:bg-white/30 transition-colors">
               <Palette className="w-4 h-4" />
               Customization
@@ -76,10 +80,6 @@ const Features = () => {
             <a href="#share" className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium hover:bg-white/30 transition-colors">
               <Share2 className="w-4 h-4" />
               Sharing & Privacy
-            </a>
-            <a href="#analytics" className="flex items-center gap-2 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium hover:bg-white/30 transition-colors">
-              <BarChart3 className="w-4 h-4" />
-              Analytics
             </a>
           </div>
 
@@ -251,152 +251,7 @@ const Features = () => {
         </div>
       </section>
 
-      {/* Feature 3: Customization (Left image, Right text) */}
-      <section
-        id="customize"
-        ref={customizeAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-white ${customizeAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-      >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left - Visual */}
-            <div className="flex-1 order-2 lg:order-1">
-              <div className="relative">
-                <div className="bg-gradient-to-br from-primary/10 to-coral/10 rounded-3xl p-8 border border-primary/20">
-                  {/* Theme Selector Mock */}
-                  <div className="bg-white rounded-2xl shadow-xl p-6">
-                    <p className="text-sm font-semibold text-navy mb-4">Choose your theme</p>
-                    <div className="grid grid-cols-3 gap-3">
-                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-primary to-coral border-2 border-primary shadow-lg" />
-                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-navy to-primary/80 border border-navy/20" />
-                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700" />
-                    </div>
-                    <div className="mt-4 pt-4 border-t">
-                      <p className="text-sm font-semibold text-navy mb-2">Accent color</p>
-                      <div className="flex gap-2">
-                        <div className="w-8 h-8 rounded-full bg-primary border-2 border-primary shadow-md" />
-                        <div className="w-8 h-8 rounded-full bg-coral border border-coral/50" />
-                        <div className="w-8 h-8 rounded-full bg-green-500 border border-green-500/50" />
-                        <div className="w-8 h-8 rounded-full bg-blue-500 border border-blue-500/50" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right - Text */}
-            <div className="flex-1 order-1 lg:order-2">
-              <div className="flex items-center gap-2 text-primary font-medium mb-4">
-                <Palette className="w-5 h-5" />
-                Customization
-              </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
-                Make it yours with themes and branding
-              </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Choose from professional themes, and Pro users can add custom colors and custom domains. Want to show your personality? Add your headshot and a personal video.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">5+ professional themes included free</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>Pro:</strong> Custom colors and accent options</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Personal headshot and intro video</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>Pro:</strong> Custom domain (yourname.com)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature 4: Sharing & Privacy (Right image, Left text) */}
-      <section
-        id="share"
-        ref={shareAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-gradient-to-b from-white to-primary/5 ${shareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-      >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Left - Text */}
-            <div className="flex-1">
-              <div className="flex items-center gap-2 text-primary font-medium mb-4">
-                <Shield className="w-5 h-5" />
-                Sharing & Privacy
-              </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
-                Share confidently, even with NDAs
-              </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                We built Prodfolio knowing some PM work is confidential. Password-protect your case studies and share selectively without risking your NDA.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Restrict access to sensitive work</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">NDA-safe case study templates</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Share2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Easy resume upload</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Right - Visual */}
-            <div className="flex-1">
-              <div className="relative">
-                <div className="bg-gradient-to-br from-coral/10 to-primary/10 rounded-3xl p-8 border border-coral/20">
-                  {/* Share Settings Mock */}
-                  <div className="bg-white rounded-2xl shadow-xl p-6">
-                    <div className="flex items-center justify-between mb-6">
-                      <p className="font-semibold text-navy">Share Settings</p>
-                      <span className="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">Live</span>
-                    </div>
-                    <div className="space-y-4">
-                      <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                        <div className="flex items-center gap-3">
-                          <Lock className="w-5 h-5 text-primary" />
-                          <span className="text-sm text-navy">Password Protection</span>
-                        </div>
-                        <div className="w-10 h-6 bg-primary rounded-full relative">
-                          <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow" />
-                        </div>
-                      </div>
-                      <div className="p-3 bg-gray-50 rounded-lg">
-                        <p className="text-xs text-navy/60 mb-2">Your portfolio link</p>
-                        <div className="flex items-center gap-2">
-                          <code className="flex-1 text-sm text-primary bg-primary/5 px-3 py-2 rounded">
-                            app.prodfolio.io/p/your-name
-                          </code>
-                          <button className="p-2 bg-primary text-white rounded-lg text-xs">
-                            Copy
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature 5: Analytics (Left image, Right text) */}
+      {/* Feature 3: Analytics (Left image, Right text) */}
       <section
         id="analytics"
         ref={analyticsAnimation.ref as React.RefObject<HTMLElement>}
@@ -483,6 +338,151 @@ const Features = () => {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <span className="text-navy/80">See traffic sources: LinkedIn, direct, referrals</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature 4: Customization (Right image, Left text) */}
+      <section
+        id="customize"
+        ref={customizeAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-20 px-4 bg-gradient-to-b from-white to-primary/5 ${customizeAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Left - Text */}
+            <div className="flex-1">
+              <div className="flex items-center gap-2 text-primary font-medium mb-4">
+                <Palette className="w-5 h-5" />
+                Customization
+              </div>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+                Make it yours with themes and branding
+              </h2>
+              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+                Choose from professional themes, and Pro users can add custom colors and custom domains. Want to show your personality? Add your headshot and a personal video.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">5+ professional themes included free</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                  <span className="text-navy/80"><strong>Pro:</strong> Custom colors and accent options</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Personal headshot and intro video</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
+                  <span className="text-navy/80"><strong>Pro:</strong> Custom domain (yourname.com)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right - Visual */}
+            <div className="flex-1">
+              <div className="relative">
+                <div className="bg-gradient-to-br from-coral/10 to-primary/10 rounded-3xl p-8 border border-coral/20">
+                  {/* Theme Selector Mock */}
+                  <div className="bg-white rounded-2xl shadow-xl p-6">
+                    <p className="text-sm font-semibold text-navy mb-4">Choose your theme</p>
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-primary to-coral border-2 border-primary shadow-lg" />
+                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-navy to-primary/80 border border-navy/20" />
+                      <div className="aspect-[4/3] rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700" />
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <p className="text-sm font-semibold text-navy mb-2">Accent color</p>
+                      <div className="flex gap-2">
+                        <div className="w-8 h-8 rounded-full bg-primary border-2 border-primary shadow-md" />
+                        <div className="w-8 h-8 rounded-full bg-coral border border-coral/50" />
+                        <div className="w-8 h-8 rounded-full bg-green-500 border border-green-500/50" />
+                        <div className="w-8 h-8 rounded-full bg-blue-500 border border-blue-500/50" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature 5: Sharing & Privacy (Left image, Right text) */}
+      <section
+        id="share"
+        ref={shareAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-20 px-4 bg-white ${shareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Left - Visual */}
+            <div className="flex-1 order-2 lg:order-1">
+              <div className="relative">
+                <div className="bg-gradient-to-br from-primary/10 to-coral/10 rounded-3xl p-8 border border-primary/20">
+                  {/* Share Settings Mock */}
+                  <div className="bg-white rounded-2xl shadow-xl p-6">
+                    <div className="flex items-center justify-between mb-6">
+                      <p className="font-semibold text-navy">Share Settings</p>
+                      <span className="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full">Live</span>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-3">
+                          <Lock className="w-5 h-5 text-primary" />
+                          <span className="text-sm text-navy">Password Protection</span>
+                        </div>
+                        <div className="w-10 h-6 bg-primary rounded-full relative">
+                          <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow" />
+                        </div>
+                      </div>
+                      <div className="p-3 bg-gray-50 rounded-lg">
+                        <p className="text-xs text-navy/60 mb-2">Your portfolio link</p>
+                        <div className="flex items-center gap-2">
+                          <code className="flex-1 text-sm text-primary bg-primary/5 px-3 py-2 rounded">
+                            app.prodfolio.io/p/your-name
+                          </code>
+                          <button className="p-2 bg-primary text-white rounded-lg text-xs">
+                            Copy
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Text */}
+            <div className="flex-1 order-1 lg:order-2">
+              <div className="flex items-center gap-2 text-primary font-medium mb-4">
+                <Shield className="w-5 h-5" />
+                Sharing & Privacy
+              </div>
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+                Share confidently, even with NDAs
+              </h2>
+              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+                We built Prodfolio knowing some PM work is confidential. Password-protect your case studies and share selectively without risking your NDA.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Restrict access to sensitive work</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">NDA-safe case study templates</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Share2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Easy resume upload</span>
                 </li>
               </ul>
             </div>
