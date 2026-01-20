@@ -175,7 +175,7 @@ const Landing = () => {
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">&lt;1 hour</div>
               <div className="text-sm text-white/80">to build what sets you apart</div>
-              <div className="text-xs text-white/60 mt-1">Not weeks of tweaking</div>
+              <div className="text-xs text-white/60 mt-1">Not weeks of prompting</div>
             </div>
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">+26%</div>
