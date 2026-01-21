@@ -435,7 +435,7 @@ const Features = () => {
                       <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                         <div className="flex items-center gap-3">
                           <Lock className="w-5 h-5 text-primary" />
-                          <span className="text-sm text-navy">Password Protection</span>
+                          <span className="text-sm text-navy">Lock your case study</span>
                         </div>
                         <div className="w-10 h-6 bg-primary rounded-full relative">
                           <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow" />
@@ -468,7 +468,7 @@ const Features = () => {
                 Share confidently, even with NDAs
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                We built Prodfolio knowing some PM work is confidential. Password-protect your case studies and share selectively without risking your NDA.
+                We built Prodfolio knowing some PM work is confidential. Lock access to your case studies and share selectively without risking your NDA.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
