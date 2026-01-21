@@ -27,7 +27,7 @@ const Examples = () => {
     {
       name: "Meagan Glenn",
       role: "Co-founder, Prodfolio",
-      description: "Product manager and career coach showcasing a decade of PM experience with case studies spanning B2B and B2C products.",
+      description: "Fractional Head of Product and former career coach showcasing seven years of tech experience, with case studies spanning across B2B and B2C products.",
       highlight: "Great example of storytelling and career narrative",
       link: "https://meaganglenn.me",
       stage: "Fractional HoP",
@@ -37,7 +37,7 @@ const Examples = () => {
     {
       name: "Santiana Brace",
       role: "Co-founder, Prodfolio",
-      description: "Product manager demonstrating the SIGNAL framework in action with detailed case studies and clear impact metrics.",
+      description: "PM and ProdOps Lead demonstrating a great example of how to turn a side project into a case study using our SIGNAL framework.",
       highlight: "Strong process documentation",
       link: "https://app.prodfolio.io/p/santi-brace-2",
       stage: "ProdOps/PM",
