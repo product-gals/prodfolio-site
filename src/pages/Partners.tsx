@@ -208,11 +208,10 @@ const Partners = () => {
             <p className="text-navy/70 mb-6 leading-relaxed max-w-md mx-auto">
               Passionate about helping PMs build great portfolios? We'd love to collaborate with coaches, communities, and organizations in the PM space.
             </p>
-            <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl px-8">
-              <a href="mailto:hello@prodfolio.io?subject=Partnership inquiry">
-                Get in Touch
-              </a>
-            </Button>
+            <p className="text-navy/60 text-sm flex items-center justify-center gap-2">
+              Click the chat icon to get started
+              <span className="text-coral">→</span>
+            </p>
           </div>
         </div>
       </section>
