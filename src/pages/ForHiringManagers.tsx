@@ -197,12 +197,12 @@ const ForHiringManagers = () => {
               Add this to your job postings or candidate communications. It's free for candidates to get started.
             </p>
 
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/40 text-left mb-8">
+            <div className="bg-white rounded-2xl p-6 shadow-lg text-left mb-8">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-start gap-3">
                   <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <p className="text-navy/90 italic">
-                    "{shareText}"
+                    "We encourage candidates to share a portfolio showcasing their product thinking. You can build one for free at <a href="https://prodfolio.io" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">prodfolio.io</a>"
                   </p>
                 </div>
                 <Button
@@ -237,8 +237,7 @@ const ForHiringManagers = () => {
               </Button>
               <Button
                 asChild
-                variant="outline"
-                className="px-8 py-6 h-auto text-lg border-navy text-navy hover:bg-navy/10 font-semibold rounded-xl"
+                className="px-8 py-6 h-auto text-lg bg-coral text-white hover:bg-coral/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
               >
                 <a href="/examples">
                   See example portfolios
