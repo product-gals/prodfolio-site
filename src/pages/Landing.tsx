@@ -596,7 +596,7 @@ const Landing = () => {
               <p className="text-base text-[#484689] mb-6">
                 Build your first portfolio free - no card needed.
               </p>
-              <Button asChild size="default" className="px-8 py-3 text-base bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all shadow-xl">
+              <Button asChild size="default" className="px-8 py-3 text-base bg-white text-navy font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl">
                 <a href="https://app.prodfolio.io/sign-up">
                   Start Your Portfolio Free
                 </a>
