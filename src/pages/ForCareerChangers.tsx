@@ -123,47 +123,47 @@ const ForCareerChangers = () => {
                 What career changers showcase
               </h2>
               <p className="text-lg text-white/80">
-                Your portfolio isn't about PM experience—it's about PM thinking.
+                Your portfolio isn't about PM experience. It's about PM thinking.
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="space-y-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Process over pedigree</h3>
-                  <p className="text-white/80">
+                  <h3 className="text-lg font-bold text-navy mb-2">Process over pedigree</h3>
+                  <p className="text-navy/70">
                     Show how you approached a problem, not just that you solved it. Walk through your thinking, the trade-offs you considered, and why you made specific decisions.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Transferable skills from your current role</h3>
-                  <p className="text-white/80">
-                    Led cross-functional projects? Analyzed user data? Coordinated stakeholders? These are PM skills in action—frame them that way.
+                  <h3 className="text-lg font-bold text-navy mb-2">Transferable skills from your current role</h3>
+                  <p className="text-navy/70">
+                    Led cross-functional projects? Analyzed user data? Coordinated stakeholders? These are PM skills in action. Frame them that way.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Product thinking from everyday decisions</h3>
-                  <p className="text-white/80">
+                  <h3 className="text-lg font-bold text-navy mb-2">Product thinking from everyday decisions</h3>
+                  <p className="text-navy/70">
                     Proposed a process improvement? Identified an unmet customer need? Prioritized competing demands? These stories prove you think like a PM.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Side projects and passion work</h3>
-                  <p className="text-white/80">
-                    Personal apps, volunteer tech projects, community initiatives—these demonstrate initiative and give you full ownership stories to tell.
+                  <h3 className="text-lg font-bold text-navy mb-2">Side projects and passion work</h3>
+                  <p className="text-navy/70">
+                    Personal apps, volunteer tech projects, community initiatives: these demonstrate initiative and give you full ownership stories to tell.
                   </p>
                 </div>
               </div>
