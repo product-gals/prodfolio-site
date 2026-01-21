@@ -368,7 +368,7 @@ const EpisodePage = () => {
                 {/* Hosts */}
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="flex items-center gap-3">
-                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full" loading="lazy" />
+                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
                     <div>
                       <p className="font-bold text-white">Meagan Glenn</p>
                       <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -377,7 +377,7 @@ const EpisodePage = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full" loading="lazy" />
+                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
                     <div>
                       <p className="font-bold text-white">Santiana Brace</p>
                       <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -399,8 +399,9 @@ const EpisodePage = () => {
                     <img
                       src={episode.guest.photo}
                       alt={episode.guest.name}
-                      className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                      className="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gradient-to-br from-primary/20 to-coral/20"
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-primary to-coral flex items-center justify-center">
@@ -509,12 +510,13 @@ const EpisodePage = () => {
                   to={`/podcast/episodes/${ep.slug}`}
                   className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all group"
                 >
-                  <div className="aspect-video relative bg-black/50 overflow-hidden">
+                  <div className="aspect-video relative bg-gradient-to-br from-primary/20 to-coral/20 overflow-hidden">
                     <img
                       src={ep.thumbnail || `https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
                       alt={ep.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-5">

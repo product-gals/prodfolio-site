@@ -114,12 +114,12 @@ const Resources = () => {
               <div className="flex flex-wrap items-center gap-4 text-sm justify-center lg:justify-start">
                 <span className="text-white/50">Hosted by</span>
                 <div className="flex items-center gap-2">
-                  <img src={meaganPhoto} alt="Meagan Glenn" className="w-8 h-8 rounded-full border border-primary/40" />
+                  <img src={meaganPhoto} alt="Meagan Glenn" className="w-8 h-8 rounded-full border border-primary/40 bg-primary/20" loading="eager" decoding="async" />
                   <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary">Meagan Glenn</a>
                 </div>
                 <span className="text-white/30">&</span>
                 <div className="flex items-center gap-2">
-                  <img src={santianaPhoto} alt="Santiana Brace" className="w-8 h-8 rounded-full border border-primary/40" />
+                  <img src={santianaPhoto} alt="Santiana Brace" className="w-8 h-8 rounded-full border border-primary/40 bg-primary/20" loading="eager" decoding="async" />
                   <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary">Santiana Brace</a>
                 </div>
               </div>
@@ -206,12 +206,13 @@ const Resources = () => {
               >
                 {/* Episode Thumbnail */}
                 <Link to={`/podcast/episodes/${episode.slug}`} className="block">
-                  <div className="aspect-video relative bg-black/50 overflow-hidden">
+                  <div className="aspect-video relative bg-gradient-to-br from-primary/20 to-coral/20 overflow-hidden">
                     <img
                       src={episode.thumbnail || `https://img.youtube.com/vi/${episode.youtubeId}/hqdefault.jpg`}
                       alt={episode.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
                       {episode.duration}
