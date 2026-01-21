@@ -30,7 +30,7 @@ const Examples = () => {
       description: "Product manager and career coach showcasing a decade of PM experience with case studies spanning B2B and B2C products.",
       highlight: "Great example of storytelling and career narrative",
       link: "https://meaganglenn.me",
-      stage: "Senior PM",
+      stage: "Fractional HoP",
       initials: "MG",
       avatarBg: "bg-primary"
     },
@@ -40,7 +40,7 @@ const Examples = () => {
       description: "Product manager demonstrating the SIGNAL framework in action with detailed case studies and clear impact metrics.",
       highlight: "Strong process documentation",
       link: "https://app.prodfolio.io/p/santi-brace-2",
-      stage: "Mid-level PM",
+      stage: "ProdOps/PM",
       initials: "SB",
       avatarBg: "bg-coral"
     },
@@ -50,7 +50,7 @@ const Examples = () => {
       description: "A clean, well-organized portfolio showcasing product thinking and execution across multiple projects.",
       highlight: "Clear impact metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
-      stage: "Mid-level PM",
+      stage: "PM",
       initials: "SS",
       avatarBg: "bg-[#6B8E8E]"
     },
@@ -60,7 +60,7 @@ const Examples = () => {
       description: "Portfolio highlighting user-focused product development with compelling case studies and outcomes.",
       highlight: "Strong user empathy",
       link: "https://app.prodfolio.io/p/olympia-bardis",
-      stage: "Mid-level PM",
+      stage: "Senior PM",
       initials: "OB",
       avatarBg: "bg-[#8B7EC8]"
     }
