@@ -27,7 +27,7 @@ const Pricing = () => {
 
   const plans = [
     {
-      name: "FREE",
+      name: "Free",
       tagline: "Build your first portfolio",
       price: "$0",
       monthlyPrice: 0,
@@ -37,7 +37,7 @@ const Pricing = () => {
         "3 AI-generated case studies",
         "3 AI resume uploads",
         "SIGNAL framework with guided prompts",
-        "Public portfolio link (app.prodfolio.io/p/your-name)",
+        "Public portfolio link",
         '"Built with Prodfolio" footer'
       ],
       cta: "Get Started Free",
@@ -47,8 +47,8 @@ const Pricing = () => {
       annualLink: "https://app.prodfolio.io/sign-up"
     },
     {
-      name: "Starter",
-      tagline: "",
+      name: "Pro",
+      tagline: "Full access to Prodfolio",
       price: "$19",
       monthlyPrice: 19,
       features: [
@@ -56,32 +56,14 @@ const Pricing = () => {
         "Unlimited AI case study generation",
         "Unlimited AI resume uploads",
         "Password-protected portfolios",
-        "Quarterly update reminders",
-        "Headshot & personal video",
-        "Remove Prodfolio branding"
-      ],
-      cta: "Get Starter",
-      popular: true,
-      tier: "starter",
-      monthlyLink: "https://buy.stripe.com/8x2eVf2B21xH41V2W3bfO03",
-      annualLink: "https://buy.stripe.com/9B6eVf1wYa4d6a3407bfO04"
-    },
-    {
-      name: "Pro",
-      tagline: "",
-      price: "$29",
-      monthlyPrice: 29,
-      features: [
-        "Everything in Starter",
         "Custom domain (yourname.com)",
-        "Custom portfolio themes",
-        "Case study templates",
-        "Analytics (Beta)",
-        "Priority support (email, chat or video)",
-        "Early access to new features"
+        "Custom themes & colors",
+        "Analytics dashboard",
+        "Remove Prodfolio branding",
+        "Priority support"
       ],
       cta: "Get Pro",
-      popular: false,
+      popular: true,
       tier: "pro",
       monthlyLink: "https://buy.stripe.com/00w00l5NefoxeGzgMTbfO01",
       annualLink: "https://buy.stripe.com/aFa28tcbC6S18ib2W3bfO02"
@@ -235,7 +217,7 @@ const Pricing = () => {
           </div>
           
           {/* Main Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto items-stretch">
             {plans.map((plan, index) => {
               const displayPrice = plan.tier === "free" 
                 ? plan.price 
@@ -291,7 +273,7 @@ const Pricing = () => {
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start gap-2.5">
                           <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                          <span className={`text-sm leading-snug text-navy ${feature === "Everything in Starter" ? "font-bold" : ""}`}>{feature}</span>
+                          <span className="text-sm leading-snug text-navy">{feature}</span>
                         </li>
                       ))}
                     </ul>
