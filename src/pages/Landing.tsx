@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Quote, Phone, TrendingUp, Repeat, Users, Shield, Lock, FileCheck } from "lucide-react";
+import { Quote, Phone, TrendingUp, Repeat, Users } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
@@ -12,7 +12,6 @@ const Landing = () => {
   const insightsAnimation = useScrollAnimation();
   const audienceAnimation = useScrollAnimation();
   const howItWorksAnimation = useScrollAnimation();
-  const confidentialityAnimation = useScrollAnimation();
   const testimonialsAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
@@ -491,45 +490,6 @@ const Landing = () => {
                 Try it free
               </a>
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* NDA/Confidentiality Section */}
-      <section ref={confidentialityAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${confidentialityAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="prodfolio-container max-w-[1400px]">
-          <div className="max-w-4xl mx-auto">
-            <div className="glass-card p-10 md:p-12">
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30">
-                    <Shield className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Yes, you can showcase PM work (even under NDA)
-                  </h2>
-                  <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                    Some PM work is confidential. We get it. Prodfolio helps you tell compelling stories without revealing proprietary details.
-                  </p>
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="flex items-start gap-3">
-                      <FileCheck className="w-5 h-5 text-white flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">Focus on process and thinking, not specific metrics</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Lock className="w-5 h-5 text-white flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">NDA-safe case study features built in</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Shield className="w-5 h-5 text-white flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">Describe scale and methodology, not client names</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
