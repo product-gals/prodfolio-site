@@ -96,7 +96,7 @@ const Examples = () => {
             {featuredPortfolios.map((portfolio, index) => (
               <article
                 key={index}
-                className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all hover:scale-[1.02] hover:-translate-y-1"
+                className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all hover:scale-[1.02] hover:-translate-y-1 flex flex-col"
               >
                 {/* Header with avatar and badge */}
                 <div className="flex items-start gap-4 mb-4">
@@ -129,16 +129,18 @@ const Examples = () => {
                   <span className="text-navy/80 text-sm">{portfolio.highlight}</span>
                 </div>
 
-                {/* CTA Button */}
-                <Button
-                  asChild
-                  className="w-full bg-coral text-white hover:bg-coral/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
-                >
-                  <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
-                    View Portfolio
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </Button>
+                {/* CTA Button - pushed to bottom */}
+                <div className="mt-auto">
+                  <Button
+                    asChild
+                    className="w-full !bg-coral text-white hover:!bg-coral/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
+                  >
+                    <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
+                      View Portfolio
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
+                </div>
               </article>
             ))}
           </div>
