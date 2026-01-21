@@ -252,18 +252,18 @@ const HowItWorks = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-navy">
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
             See how fast it really is
           </h2>
-          <p className="text-xl text-navy/80 mb-8 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto">
             Start free. No credit card required. Your portfolio could be live in under an hour.
           </p>
           <Button
             asChild
-            className="px-8 py-6 h-auto text-lg bg-primary text-white hover:bg-primary/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105 inline-flex items-center gap-2"
+            className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105 inline-flex items-center gap-2"
           >
             <a href="https://app.prodfolio.io/sign-up">
               Start Your Portfolio Free

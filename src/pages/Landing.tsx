@@ -310,14 +310,14 @@ const Landing = () => {
           {/* Feature 01 - Import */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2 lg:order-1">
-              <div className="text-primary font-heading font-semibold text-base tracking-wide mb-3">01 — IMPORT</div>
+              <div className="inline-block bg-primary/15 text-primary font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">01 — IMPORT</div>
               <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 Import your experience in seconds
               </h3>
               <p className="text-navy/70 text-lg mb-6 leading-relaxed">
                 Upload your resume. Our AI extracts information and experience, building the foundation for your portfolio.
               </p>
-              <Button asChild className="bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2">
+              <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
                 <a href="https://app.prodfolio.io/sign-up">
                   Start importing <span aria-hidden="true">→</span>
                 </a>
@@ -371,14 +371,14 @@ const Landing = () => {
           {/* Feature 02 - Build */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2">
-              <div className="text-primary font-heading font-semibold text-base tracking-wide mb-3">02 — BUILD</div>
+              <div className="inline-block bg-primary/15 text-primary font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">02 — BUILD</div>
               <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 Structure your story with SIGNAL
               </h3>
               <p className="text-navy/70 text-lg mb-6 leading-relaxed">
                 Our guided framework walks you through each case study. No more staring at a blank page.
               </p>
-              <Button asChild className="bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2">
+              <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
                 <a href="https://app.prodfolio.io/sign-up">
                   See the framework <span aria-hidden="true">→</span>
                 </a>
@@ -430,14 +430,14 @@ const Landing = () => {
           {/* Feature 03 - Share */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="text-primary font-heading font-semibold text-base tracking-wide mb-3">03 — SHARE</div>
+              <div className="inline-block bg-primary/15 text-primary font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">03 — SHARE</div>
               <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 One link. Unlimited impact.
               </h3>
               <p className="text-navy/70 text-lg mb-6 leading-relaxed">
                 Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, and own your narrative with a professional presence.
               </p>
-              <Button asChild className="bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2">
+              <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
                 <a href="https://app.prodfolio.io/sign-up">
                   Create your link <span aria-hidden="true">→</span>
                 </a>
@@ -455,7 +455,7 @@ const Landing = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                      <span className="text-sm font-medium text-gray-900">Case Study Lock</span>
+                      <span className="text-sm font-medium text-gray-900">Lock your case study</span>
                     </div>
                     {/* Toggle switch - ON state */}
                     <div className="w-11 h-6 bg-primary rounded-full relative">
@@ -475,13 +475,6 @@ const Landing = () => {
             </div>
           </div>
 
-          <div className="text-center mt-16">
-            <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
-              <a href="https://app.prodfolio.io/sign-up">
-                Try it free
-              </a>
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -575,7 +568,7 @@ const Landing = () => {
       </section>
 
       {/* Final CTA - Centered floating glass card */}
-      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 pb-16 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className="text-center">
