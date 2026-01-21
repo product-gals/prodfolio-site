@@ -322,11 +322,9 @@ const Resources = () => {
               <p className="text-white/70 mb-6">
                 Have insights to share with the PM community? We'd love to hear from you.
               </p>
-              <Button asChild className="bg-coral hover:bg-coral/90 text-white">
-                <a href="mailto:theproductpivot@gmail.com">
-                  Get in Touch
-                </a>
-              </Button>
+              <p className="text-white/60 text-sm flex items-center justify-center gap-2">
+                Click the chat icon to get started 👉
+              </p>
             </div>
           </div>
         </div>
