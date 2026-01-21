@@ -5,6 +5,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ExternalLink, Star, Plus } from "lucide-react";
 
+import meaganPhoto from "@/assets/meagan-glenn.jpeg";
+import santiPhoto from "@/assets/santiana-diaz.png";
+import snehaPhoto from "@/assets/sneha-example.jpeg";
+import olympiaPhoto from "@/assets/olympia-todisco-example.jpeg";
+
 const Examples = () => {
   const heroAnimation = useScrollAnimation();
   const galleryAnimation = useScrollAnimation();
@@ -30,9 +35,8 @@ const Examples = () => {
       description: "Fractional Head of Product and former career coach showcasing seven years of tech experience, with case studies spanning across B2B and B2C products.",
       highlight: "Great example of storytelling and career narrative",
       link: "https://meaganglenn.me",
-      stage: "Fractional HoP",
-      initials: "MG",
-      avatarBg: "bg-primary"
+      stage: "Senior PM",
+      photo: meaganPhoto
     },
     {
       name: "Santiana Brace",
@@ -40,9 +44,8 @@ const Examples = () => {
       description: "PM and ProdOps Lead demonstrating a great example of how to turn a side project into a case study using our SIGNAL framework.",
       highlight: "Strong process documentation",
       link: "https://app.prodfolio.io/p/santi-brace-2",
-      stage: "ProdOps/PM",
-      initials: "SB",
-      avatarBg: "bg-coral"
+      stage: "Mid-level PM",
+      photo: santiPhoto
     },
     {
       name: "Sneha Shah",
@@ -50,9 +53,8 @@ const Examples = () => {
       description: "A clean, well-organized portfolio showcasing product thinking and execution across multiple projects.",
       highlight: "Clear impact metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
-      stage: "PM",
-      initials: "SS",
-      avatarBg: "bg-[#6B8E8E]"
+      stage: "Mid-level PM",
+      photo: snehaPhoto
     },
     {
       name: "Olympia Bardis",
@@ -60,9 +62,8 @@ const Examples = () => {
       description: "Portfolio highlighting user-focused product development with compelling case studies and outcomes.",
       highlight: "Strong user empathy",
       link: "https://app.prodfolio.io/p/olympia-bardis",
-      stage: "Senior PM",
-      initials: "OB",
-      avatarBg: "bg-[#8B7EC8]"
+      stage: "Mid-level PM",
+      photo: olympiaPhoto
     }
   ];
 
@@ -99,9 +100,11 @@ const Examples = () => {
               >
                 {/* Header with avatar and badge */}
                 <div className="flex items-start gap-4 mb-4">
-                  <div className={`w-12 h-12 ${portfolio.avatarBg} rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}>
-                    {portfolio.initials}
-                  </div>
+                  <img
+                    src={portfolio.photo}
+                    alt={portfolio.name}
+                    className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
                       <div>

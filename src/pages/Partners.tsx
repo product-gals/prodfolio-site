@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import aaronPhoto from "@/assets/aaron-kesler.png";
+import p2pLogo from "@/assets/p2p-logo.png";
 
 interface Partner {
   id: string;
@@ -37,6 +38,7 @@ const partners: Partner[] = [
     description: "Helping bridge the gap in product management experience for aspiring product managers.",
     website: "https://path2product.io/",
     linkedin: "https://www.linkedin.com/company/path2product/",
+    logo: p2pLogo,
     type: "organization",
     promoCode: "PRODFOLIO20",
     promoDiscount: "20% off",
