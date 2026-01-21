@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-navy text-white">
+    <footer className="py-12 bg-[#7B68EE] text-white">
       <div className="prodfolio-container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Product */}
