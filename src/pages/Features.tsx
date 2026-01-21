@@ -572,7 +572,7 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#9E85F9] via-[#6B5B95] to-[#1a1538]">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE]">
         <div className="prodfolio-container text-center max-w-[800px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
             Ready to build your portfolio?
