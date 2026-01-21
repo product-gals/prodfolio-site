@@ -208,7 +208,7 @@ const About = () => {
               <h3 className="text-xl font-heading font-bold text-white">Santiana Brace</h3>
               <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                PM and podcast co-host who pivoted into product and knows exactly how hard it is to prove you belong. Will ask "but why?" until she gets to the real problem.
+                ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Will ask "but why?" until she gets to the real problem.
               </p>
               <div className="flex gap-2 justify-center">
                 <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
