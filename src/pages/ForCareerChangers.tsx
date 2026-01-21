@@ -178,10 +178,10 @@ const ForCareerChangers = () => {
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
-            Ready to show you belong?
+            Turn your experience into opportunity
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Your experience counts more than you think. Let's turn it into a portfolio that gets you noticed.
+            It counts more than you think. Let's turn it into a portfolio that gets you noticed.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
