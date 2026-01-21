@@ -46,12 +46,10 @@ const ForHiringManagers = () => {
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <p className="text-lg text-white/80 mb-4 font-medium">For Hiring Managers</p>
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
-            Hire PMs based on
-            <br />
-            <span className="text-navy">how they think</span>
+            Skip the guesswork
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Resumes tell you what candidates did. Portfolios show you how they think. See authentic product work before the interview.
+            See real product thinking before the first interview.
           </p>
         </div>
       </section>
