@@ -194,7 +194,7 @@ const ForHiringManagers = () => {
               Encourage your candidates to use Prodfolio
             </h2>
             <p className="text-lg text-navy/80 mb-8">
-              Add this to your job postings or candidate communications. It's free for candidates to get started.
+              Add this to your job postings or candidate communications. Candidates can create and publish a full portfolio for free.
             </p>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg text-left mb-8">
