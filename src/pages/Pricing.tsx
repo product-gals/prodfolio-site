@@ -91,7 +91,7 @@ const Pricing = () => {
                 </svg>
               ))}
             </div>
-            <span className="font-medium text-navy">Trusted by product managers</span>
+            <span className="font-medium text-navy">Join 100+ PMs showcasing their work</span>
           </div>
         </div>
       </section>
