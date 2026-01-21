@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Quote, Phone, TrendingUp, Repeat, Users, Shield, Lock, FileCheck } from "lucide-react";
+import { Quote, Phone, TrendingUp, Repeat, Users } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
@@ -12,7 +12,6 @@ const Landing = () => {
   const insightsAnimation = useScrollAnimation();
   const audienceAnimation = useScrollAnimation();
   const howItWorksAnimation = useScrollAnimation();
-  const confidentialityAnimation = useScrollAnimation();
   const testimonialsAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
@@ -320,14 +319,14 @@ const Landing = () => {
           {/* Feature 01 - Import */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2 lg:order-1">
-              <div className="text-navy font-semibold text-sm tracking-wide mb-3">01 — IMPORT</div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+              <div className="text-primary font-heading font-semibold text-base tracking-wide mb-3">01 — IMPORT</div>
+              <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 Import your experience in seconds
               </h3>
-              <p className="text-white/80 text-lg mb-6 leading-relaxed">
+              <p className="text-navy/70 text-lg mb-6 leading-relaxed">
                 Upload your resume. Our AI extracts information and experience, building the foundation for your portfolio.
               </p>
-              <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
+              <Button asChild className="bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2">
                 <a href="https://app.prodfolio.io/sign-up">
                   Start importing <span aria-hidden="true">→</span>
                 </a>
@@ -381,14 +380,14 @@ const Landing = () => {
           {/* Feature 02 - Build */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2">
-              <div className="text-navy font-semibold text-sm tracking-wide mb-3">02 — BUILD</div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+              <div className="text-primary font-heading font-semibold text-base tracking-wide mb-3">02 — BUILD</div>
+              <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 Structure your story with SIGNAL
               </h3>
-              <p className="text-white/80 text-lg mb-6 leading-relaxed">
+              <p className="text-navy/70 text-lg mb-6 leading-relaxed">
                 Our guided framework walks you through each case study. No more staring at a blank page.
               </p>
-              <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
+              <Button asChild className="bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2">
                 <a href="https://app.prodfolio.io/sign-up">
                   See the framework <span aria-hidden="true">→</span>
                 </a>
@@ -440,14 +439,14 @@ const Landing = () => {
           {/* Feature 03 - Share */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="text-navy font-semibold text-sm tracking-wide mb-3">03 — SHARE</div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+              <div className="text-primary font-heading font-semibold text-base tracking-wide mb-3">03 — SHARE</div>
+              <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 One link. Unlimited impact.
               </h3>
-              <p className="text-white/80 text-lg mb-6 leading-relaxed">
+              <p className="text-navy/70 text-lg mb-6 leading-relaxed">
                 Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, and own your narrative with a professional presence.
               </p>
-              <Button asChild variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 inline-flex items-center gap-2">
+              <Button asChild className="bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2">
                 <a href="https://app.prodfolio.io/sign-up">
                   Create your link <span aria-hidden="true">→</span>
                 </a>
@@ -491,45 +490,6 @@ const Landing = () => {
                 Try it free
               </a>
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* NDA/Confidentiality Section */}
-      <section ref={confidentialityAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${confidentialityAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="prodfolio-container max-w-[1400px]">
-          <div className="max-w-4xl mx-auto">
-            <div className="glass-card p-10 md:p-12">
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30">
-                    <Shield className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Yes, you can showcase PM work (even under NDA)
-                  </h2>
-                  <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                    Some PM work is confidential. We get it. Prodfolio helps you tell compelling stories without revealing proprietary details.
-                  </p>
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="flex items-start gap-3">
-                      <FileCheck className="w-5 h-5 text-white flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">Focus on process and thinking, not specific metrics</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Lock className="w-5 h-5 text-white flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">NDA-safe case study features built in</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Shield className="w-5 h-5 text-white flex-shrink-0 mt-1" />
-                      <span className="text-white/90 text-sm">Describe scale and methodology, not client names</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -636,7 +596,7 @@ const Landing = () => {
               <p className="text-base text-[#484689] mb-6">
                 Build your first portfolio free - no card needed.
               </p>
-              <Button asChild size="default" className="px-8 py-3 text-base bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all shadow-xl">
+              <Button asChild size="default" className="px-8 py-3 text-base bg-white text-navy font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl">
                 <a href="https://app.prodfolio.io/sign-up">
                   Start Your Portfolio Free
                 </a>

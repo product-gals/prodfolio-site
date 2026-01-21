@@ -14,8 +14,7 @@ import {
   Clock,
   CheckCircle,
   Zap,
-  Lock,
-  Globe
+  Lock
 } from "lucide-react";
 
 const Features = () => {
@@ -363,7 +362,7 @@ const Features = () => {
                 Make it yours with themes and branding
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                Choose from professional themes, and Pro users can add custom colors and custom domains. Want to show your personality? Add your headshot and a personal video.
+                Choose from professional themes, custom colors, and custom domains. Want to show your personality? Add your headshot and a personal video.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -371,16 +370,16 @@ const Features = () => {
                   <span className="text-navy/80">5+ professional themes included free</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>Pro:</strong> Custom colors and accent options</span>
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Custom colors and accent options</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <span className="text-navy/80">Personal headshot and intro video</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Globe className="w-5 h-5 text-coral flex-shrink-0 mt-1" />
-                  <span className="text-navy/80"><strong>Pro:</strong> Custom domain (yourname.com)</span>
+                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                  <span className="text-navy/80">Custom domain (yourname.com)</span>
                 </li>
               </ul>
             </div>
@@ -436,7 +435,7 @@ const Features = () => {
                       <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                         <div className="flex items-center gap-3">
                           <Lock className="w-5 h-5 text-primary" />
-                          <span className="text-sm text-navy">Password Protection</span>
+                          <span className="text-sm text-navy">Lock your case study</span>
                         </div>
                         <div className="w-10 h-6 bg-primary rounded-full relative">
                           <div className="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow" />
@@ -469,7 +468,7 @@ const Features = () => {
                 Share confidently, even with NDAs
               </h2>
               <p className="text-lg text-navy/70 mb-6 leading-relaxed">
-                We built Prodfolio knowing some PM work is confidential. Password-protect your case studies and share selectively without risking your NDA.
+                We built Prodfolio knowing some PM work is confidential. Lock access to your case studies and share selectively without risking your NDA.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -573,7 +572,7 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 gradient-mesh-bg">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#9E85F9] via-[#6B5B95] to-[#1a1538]">
         <div className="prodfolio-container text-center max-w-[800px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
             Ready to build your portfolio?
