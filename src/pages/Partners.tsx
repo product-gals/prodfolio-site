@@ -209,8 +209,7 @@ const Partners = () => {
               Passionate about helping PMs build great portfolios? We'd love to collaborate with coaches, communities, and organizations in the PM space.
             </p>
             <p className="text-navy/60 text-sm flex items-center justify-center gap-2">
-              Click the chat icon to get started
-              <span className="text-coral">→</span>
+              Click the chat icon to get started 👉
             </p>
           </div>
         </div>
