@@ -259,7 +259,7 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 You've shipped products, led teams, driven results. Document your journey and own your narrative for that next promotion or role.
               </p>
-              <a href="https://app.prodfolio.io/sign-up" className="text-navy font-medium text-sm hover:underline">
+              <a href="https://app.prodfolio.io/sign-up" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
                 Start building →
               </a>
             </article>
@@ -273,7 +273,7 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 You think like a PM - even without the title. Show hiring managers the product mindset they're looking for.
               </p>
-              <a href="/for-career-changers" className="text-navy font-medium text-sm hover:underline">
+              <a href="/for-career-changers" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
                 Learn how →
               </a>
             </article>
@@ -287,7 +287,7 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Resumes tell you what. Portfolios show you how. Encourage your candidates to share their thinking.
               </p>
-              <a href="/for-hiring-managers" className="text-navy font-medium text-sm hover:underline">
+              <a href="/for-hiring-managers" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
                 See how it helps →
               </a>
             </article>
