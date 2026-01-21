@@ -106,9 +106,9 @@ const ForHiringManagers = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <Quote className="w-8 h-8 text-primary/50 mb-4" />
               <p className="text-lg text-navy/90 italic mb-4">
-                "I spent nearly an hour reading her portfolio before the interview and got to know her well. Fifteen minutes into the interview, I knew she was the PM I needed."
+                "A strong portfolio helps cut through the noise. A product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped."
               </p>
-              <p className="text-navy/70 font-medium">— VP of Product</p>
+              <p className="text-navy/70 font-medium">Heidi R., Product Recruiter</p>
             </div>
           </div>
         </div>
