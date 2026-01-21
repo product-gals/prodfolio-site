@@ -208,9 +208,10 @@ const Partners = () => {
             <p className="text-navy/70 mb-6 leading-relaxed max-w-md mx-auto">
               Passionate about helping PMs build great portfolios? We'd love to collaborate with coaches, communities, and organizations in the PM space.
             </p>
-            <p className="text-navy/60 text-sm flex items-center justify-center gap-2">
-              Click the chat icon to get started 👉
-            </p>
+            <div className="bg-primary/10 border border-primary/20 rounded-xl px-5 py-3 inline-flex items-center gap-2">
+              <span className="text-navy font-medium text-sm">Click the chat icon to get started</span>
+              <span className="text-lg">👉</span>
+            </div>
           </div>
         </div>
       </section>

@@ -322,9 +322,10 @@ const Resources = () => {
               <p className="text-white/70 mb-6">
                 Have insights to share with the PM community? We'd love to hear from you.
               </p>
-              <p className="text-white/60 text-sm flex items-center justify-center gap-2">
-                Click the chat icon to get started 👉
-              </p>
+              <div className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 inline-flex items-center gap-2 mx-auto">
+                <span className="text-white font-medium text-sm">Click the chat icon to get started</span>
+                <span className="text-lg">👉</span>
+              </div>
             </div>
           </div>
         </div>
