@@ -85,12 +85,12 @@ const Partners = () => {
         ref={partnersAnimation.ref as React.RefObject<HTMLElement>}
         className={`py-8 px-4 ${partnersAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-[1100px] mx-auto">
-          <div className="grid md:grid-cols-3 gap-6">
+        <div className="prodfolio-container max-w-[900px] mx-auto">
+          <div className="grid md:grid-cols-2 gap-6">
             {partners.map((partner) => (
               <article
                 key={partner.id}
-                className="bg-white rounded-2xl shadow-xl p-6 relative hover:shadow-2xl transition-all hover:scale-[1.02] hover:-translate-y-1 flex flex-col"
+                className="bg-white rounded-2xl shadow-xl p-6 relative hover:shadow-2xl transition-all hover:-translate-y-1"
               >
                 {/* Exclusive Offer Badge */}
                 {partner.promoCode && (
@@ -100,27 +100,27 @@ const Partners = () => {
                   </div>
                 )}
 
-                <div className="flex items-start gap-4 flex-1">
+                <div className="flex items-start gap-4">
                   {/* Photo/Logo */}
                   <div className="flex-shrink-0">
                     {partner.type === "individual" ? (
-                      <div className="w-16 h-16 rounded-full bg-coral overflow-hidden ring-4 ring-coral/20">
+                      <div className="w-14 h-14 rounded-full bg-coral overflow-hidden ring-4 ring-coral/20">
                         {partner.photo ? (
                           <img src={partner.photo} alt={partner.name} className="w-full h-full object-cover" />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center">
-                            <span className="text-xl font-bold text-white">
+                            <span className="text-lg font-bold text-white">
                               {partner.name.split(' ').map(n => n[0]).join('')}
                             </span>
                           </div>
                         )}
                       </div>
                     ) : (
-                      <div className="w-16 h-16 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
                         {partner.logo ? (
                           <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain p-2" />
                         ) : (
-                          <span className="text-lg font-bold text-primary">
+                          <span className="text-base font-bold text-primary">
                             P2P
                           </span>
                         )}
@@ -133,7 +133,7 @@ const Partners = () => {
                     <h3 className="text-lg font-heading font-bold text-navy mb-1">
                       {partner.name}
                     </h3>
-                    <p className="text-navy/70 text-sm mb-4 leading-relaxed">
+                    <p className="text-navy/70 text-sm mb-3 leading-relaxed">
                       {partner.description}
                     </p>
 
@@ -165,17 +165,17 @@ const Partners = () => {
 
                 {/* Promo Code Section */}
                 {partner.promoCode && (
-                  <div className="mt-5 pt-4 border-t border-navy/10">
-                    <p className="text-navy/60 text-xs mb-2 font-medium">{partner.promoDescription}</p>
-                    <div className="flex items-center gap-2">
-                      <div className="bg-coral/10 border border-coral/20 rounded-lg px-4 py-2.5 flex-1 text-center">
+                  <div className="mt-4 pt-4 border-t border-navy/10">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-coral/10 border border-coral/20 rounded-lg px-4 py-2 flex-1">
+                        <p className="text-navy/60 text-xs font-medium mb-0.5">{partner.promoDescription}</p>
                         <code className="text-coral font-mono text-sm font-bold tracking-wider">
                           {partner.promoCode}
                         </code>
                       </div>
                       <button
                         onClick={() => copyPromoCode(partner.promoCode!)}
-                        className="bg-coral hover:bg-coral/90 text-white p-2.5 rounded-lg transition-colors"
+                        className="bg-coral hover:bg-coral/90 text-white p-2.5 rounded-lg transition-colors flex-shrink-0"
                         aria-label="Copy promo code"
                       >
                         {copiedCode === partner.promoCode ? (
@@ -189,24 +189,28 @@ const Partners = () => {
                 )}
               </article>
             ))}
+          </div>
+        </div>
+      </section>
 
-            {/* "Become a Partner" CTA Card */}
-            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl p-6 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all hover:border-white/60 group">
-              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/30 transition-colors">
-                <Handshake className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-heading font-bold text-white mb-2">
-                Become a Partner
-              </h3>
-              <p className="text-white/70 text-sm mb-5 leading-relaxed">
-                Passionate about helping PMs build great portfolios? Let's work together.
-              </p>
-              <Button asChild className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
-                <a href="mailto:hello@prodfolio.io?subject=Partnership inquiry">
-                  Get in Touch
-                </a>
-              </Button>
-            </article>
+      {/* Become a Partner CTA */}
+      <section className="py-8 px-4">
+        <div className="prodfolio-container max-w-[600px] mx-auto">
+          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 text-center">
+            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Handshake className="w-7 h-7 text-primary" />
+            </div>
+            <h3 className="text-2xl font-heading font-bold text-navy mb-2">
+              Become a Partner
+            </h3>
+            <p className="text-navy/70 mb-6 leading-relaxed max-w-md mx-auto">
+              Passionate about helping PMs build great portfolios? We'd love to collaborate with coaches, communities, and organizations in the PM space.
+            </p>
+            <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-xl px-8">
+              <a href="mailto:hello@prodfolio.io?subject=Partnership inquiry">
+                Get in Touch
+              </a>
+            </Button>
           </div>
         </div>
       </section>
