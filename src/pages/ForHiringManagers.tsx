@@ -46,12 +46,10 @@ const ForHiringManagers = () => {
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <p className="text-lg text-white/80 mb-4 font-medium">For Hiring Managers</p>
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
-            Hire PMs based on
-            <br />
-            <span className="text-navy">how they think</span>
+            Skip the guesswork
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Resumes tell you what candidates did. Portfolios show you how they think. See authentic product work before the interview.
+            See real product thinking before the first interview.
           </p>
         </div>
       </section>
@@ -72,17 +70,17 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Search className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-bold text-navy mb-3">See authentic thinking</h3>
               <p className="text-navy/70 leading-relaxed">
-                Portfolios reveal how candidates identify problems, design solutions, and navigate trade-offs—the real work of product management.
+                Portfolios reveal how candidates identify problems, design solutions, and navigate trade-offs: the real work of product management.
               </p>
             </article>
 
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
@@ -92,7 +90,7 @@ const ForHiringManagers = () => {
               </p>
             </article>
 
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-7 h-7 text-primary" />
               </div>
@@ -105,12 +103,12 @@ const ForHiringManagers = () => {
 
           {/* Quote */}
           <div className="max-w-3xl mx-auto mt-12">
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
               <Quote className="w-8 h-8 text-primary/50 mb-4" />
               <p className="text-lg text-navy/90 italic mb-4">
-                "I spent nearly an hour reading her portfolio before the interview and got to know her well. Fifteen minutes into the interview, I knew she was the PM I needed."
+                "A strong portfolio helps cut through the noise. A product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped."
               </p>
-              <p className="text-navy/70 font-medium">— VP of Product</p>
+              <p className="text-navy/70 font-medium">Heidi R., Product Recruiter</p>
             </div>
           </div>
         </div>
@@ -132,51 +130,51 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Process documentation</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Process documentation</h3>
+                <p className="text-navy/70 text-sm">
                   How did they approach the problem? What methods did they use for discovery, validation, and prioritization?
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Strategic trade-offs</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Strategic trade-offs</h3>
+                <p className="text-navy/70 text-sm">
                   What alternatives did they consider? How did they make decisions under uncertainty and constraints?
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Quantified impact with context</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Quantified impact with context</h3>
+                <p className="text-navy/70 text-sm">
                   Not just metrics, but what they mean. Before/after comparisons, timeframes, and why these outcomes mattered.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Communication clarity</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Communication clarity</h3>
+                <p className="text-navy/70 text-sm">
                   Can they explain complex topics clearly? Do they tailor their communication for different audiences?
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Honest reflection</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Honest reflection</h3>
+                <p className="text-navy/70 text-sm">
                   Do they acknowledge what didn't work? What would they do differently? Learning from failure shows maturity.
                 </p>
               </div>
@@ -196,15 +194,15 @@ const ForHiringManagers = () => {
               Encourage your candidates to use Prodfolio
             </h2>
             <p className="text-lg text-navy/80 mb-8">
-              Add this to your job postings or candidate communications. It's free for candidates to get started.
+              Add this to your job postings or candidate communications. Candidates can create and publish a full portfolio for free.
             </p>
 
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/40 text-left mb-8">
+            <div className="bg-white rounded-2xl p-6 shadow-lg text-left mb-8">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-start gap-3">
                   <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <p className="text-navy/90 italic">
-                    "{shareText}"
+                    "We encourage candidates to share a portfolio showcasing their product thinking. You can build one for free at <a href="https://prodfolio.io" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">prodfolio.io</a>"
                   </p>
                 </div>
                 <Button
@@ -239,8 +237,7 @@ const ForHiringManagers = () => {
               </Button>
               <Button
                 asChild
-                variant="outline"
-                className="px-8 py-6 h-auto text-lg border-navy text-navy hover:bg-navy/10 font-semibold rounded-xl"
+                className="px-8 py-6 h-auto text-lg bg-coral text-white hover:bg-coral/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
               >
                 <a href="/examples">
                   See example portfolios

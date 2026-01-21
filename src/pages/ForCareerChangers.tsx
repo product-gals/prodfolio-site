@@ -3,13 +3,12 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Briefcase, Lightbulb, Target, CheckCircle, ArrowRight, Sparkles } from "lucide-react";
+import { Briefcase, Lightbulb, Target, CheckCircle, ArrowRight } from "lucide-react";
 
 const ForCareerChangers = () => {
   const heroAnimation = useScrollAnimation();
   const whyAnimation = useScrollAnimation();
   const whatAnimation = useScrollAnimation();
-  const storiesAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
   useSEO({
@@ -42,7 +41,7 @@ const ForCareerChangers = () => {
             <span className="text-navy">Now prove it.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Transitioning into product management? Your portfolio shows hiring managers what your resume can't—that you already have the mindset.
+            Transitioning into product management? Your portfolio shows hiring managers what your resume can't: that you already have the mindset.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
@@ -123,103 +122,51 @@ const ForCareerChangers = () => {
                 What career changers showcase
               </h2>
               <p className="text-lg text-white/80">
-                Your portfolio isn't about PM experience—it's about PM thinking.
+                Your portfolio isn't about PM experience. It's about PM thinking.
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="space-y-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Process over pedigree</h3>
-                  <p className="text-white/80">
+                  <h3 className="text-lg font-bold text-navy mb-2">Process over pedigree</h3>
+                  <p className="text-navy/70">
                     Show how you approached a problem, not just that you solved it. Walk through your thinking, the trade-offs you considered, and why you made specific decisions.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Transferable skills from your current role</h3>
-                  <p className="text-white/80">
-                    Led cross-functional projects? Analyzed user data? Coordinated stakeholders? These are PM skills in action—frame them that way.
+                  <h3 className="text-lg font-bold text-navy mb-2">Transferable skills from your current role</h3>
+                  <p className="text-navy/70">
+                    Led cross-functional projects? Analyzed user data? Coordinated stakeholders? These are PM skills in action. Frame them that way.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Product thinking from everyday decisions</h3>
-                  <p className="text-white/80">
+                  <h3 className="text-lg font-bold text-navy mb-2">Product thinking from everyday decisions</h3>
+                  <p className="text-navy/70">
                     Proposed a process improvement? Identified an unmet customer need? Prioritized competing demands? These stories prove you think like a PM.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Side projects and passion work</h3>
-                  <p className="text-white/80">
-                    Personal apps, volunteer tech projects, community initiatives—these demonstrate initiative and give you full ownership stories to tell.
+                  <h3 className="text-lg font-bold text-navy mb-2">Side projects and passion work</h3>
+                  <p className="text-navy/70">
+                    Personal apps, volunteer tech projects, community initiatives: these demonstrate initiative and give you full ownership stories to tell.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Success Stories Placeholder */}
-      <section
-        ref={storiesAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${storiesAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-      >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
-              Career changers who made the leap
-            </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
-              From engineering, marketing, design, and beyond—PMs come from everywhere.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <article className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-navy/80 italic mb-4">
-                "I spent months applying with just my engineering resume. My Prodfolio helped me tell the story of how I already think like a PM."
-              </p>
-              <p className="font-bold text-navy">Former Software Engineer</p>
-              <p className="text-sm text-navy/60">Now PM at a Series B startup</p>
-            </article>
-
-            <article className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-navy/80 italic mb-4">
-                "Coming from marketing, I wasn't sure how to position myself. The SIGNAL framework helped me structure my experience in a way that resonated."
-              </p>
-              <p className="font-bold text-navy">Former Marketing Manager</p>
-              <p className="text-sm text-navy/60">Now Product Manager</p>
-            </article>
-
-            <article className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-navy/80 italic mb-4">
-                "My bootcamp gave me theory, but Prodfolio helped me tell compelling stories about the real projects I'd led—even as a consultant."
-              </p>
-              <p className="font-bold text-navy">Former Business Analyst</p>
-              <p className="text-sm text-navy/60">Now Associate PM</p>
-            </article>
           </div>
         </div>
       </section>
@@ -231,10 +178,10 @@ const ForCareerChangers = () => {
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
-            Ready to show you belong?
+            Turn your experience into opportunity
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Your experience counts more than you think. Let's turn it into a portfolio that gets you noticed.
+            It counts more than you think. Let's turn it into a portfolio that gets you noticed.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button

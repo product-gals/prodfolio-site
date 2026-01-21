@@ -35,7 +35,7 @@ const Examples = () => {
       description: "Fractional Head of Product and former career coach showcasing seven years of tech experience, with case studies spanning across B2B and B2C products.",
       highlight: "Great example of storytelling and career narrative",
       link: "https://meaganglenn.me",
-      stage: "Senior PM",
+      stage: "Fractional HoP",
       photo: meaganPhoto
     },
     {
@@ -44,7 +44,7 @@ const Examples = () => {
       description: "PM and ProdOps Lead demonstrating a great example of how to turn a side project into a case study using our SIGNAL framework.",
       highlight: "Strong process documentation",
       link: "https://app.prodfolio.io/p/santi-brace-2",
-      stage: "Mid-level PM",
+      stage: "ProdOps Lead/PM",
       photo: santiPhoto
     },
     {
@@ -53,7 +53,7 @@ const Examples = () => {
       description: "A clean, well-organized portfolio showcasing product thinking and execution across multiple projects.",
       highlight: "Clear impact metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
-      stage: "Mid-level PM",
+      stage: "Product Manager",
       photo: snehaPhoto
     },
     {
@@ -62,7 +62,7 @@ const Examples = () => {
       description: "Portfolio highlighting user-focused product development with compelling case studies and outcomes.",
       highlight: "Strong user empathy",
       link: "https://app.prodfolio.io/p/olympia-bardis",
-      stage: "Mid-level PM",
+      stage: "Senior PM",
       photo: olympiaPhoto
     }
   ];
@@ -132,7 +132,7 @@ const Examples = () => {
                 {/* CTA Button */}
                 <Button
                   asChild
-                  className="w-full bg-navy text-white hover:bg-navy/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
+                  className="w-full bg-coral text-white hover:bg-coral/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
                 >
                   <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
                     View Portfolio

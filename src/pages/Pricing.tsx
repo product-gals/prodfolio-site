@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
 import { useState } from "react";
+import BookCallModal from "@/components/BookCallModal";
 
 const Pricing = () => {
   const scrollRef = useScrollAnimation();
@@ -358,6 +359,22 @@ const Pricing = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Still Have Questions CTA */}
+      <section className="pb-12">
+        <div className="prodfolio-container max-w-2xl text-center">
+          <h3 className="text-2xl font-display font-bold text-navy mb-3">Still have questions?</h3>
+          <p className="text-navy/70 mb-6">We're happy to walk you through Prodfolio and help you decide if it's the right fit.</p>
+          <BookCallModal
+            trigger={
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 h-auto rounded-xl shadow-lg inline-flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Book a 15 min call
+              </Button>
+            }
+          />
         </div>
       </section>
 

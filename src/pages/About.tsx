@@ -179,17 +179,19 @@ const About = () => {
               <h3 className="text-xl font-heading font-bold text-white">Meagan Glenn</h3>
               <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                Former startup PM turned career coach who's helped hundreds of PMs land roles. Fueled by iced coffee and a deep hatred of underselling.
+                Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
-              <div className="flex flex-col gap-2">
+              <div className="flex gap-2 justify-center">
                 <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                   <a href="https://meaganglenn.me" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
                   </a>
                 </Button>
-                <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-coral text-sm hover:underline">
-                  LinkedIn
-                </a>
+                <Button asChild size="sm" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl">
+                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
               </div>
             </div>
 
@@ -206,17 +208,19 @@ const About = () => {
               <h3 className="text-xl font-heading font-bold text-white">Santiana Brace</h3>
               <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                PM and podcast co-host who pivoted into product and knows exactly how hard it is to prove you belong. Will ask "but why?" until she gets to the real problem.
+                ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Expert at cutting through complexity to find the simplest path forward.
               </p>
-              <div className="flex flex-col gap-2">
+              <div className="flex gap-2 justify-center">
                 <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                   <a href="https://app.prodfolio.io/p/santi-brace-2" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
                   </a>
                 </Button>
-                <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-coral text-sm hover:underline">
-                  LinkedIn
-                </a>
+                <Button asChild size="sm" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl">
+                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
               </div>
             </div>
           </div>

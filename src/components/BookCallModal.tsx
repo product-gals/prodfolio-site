@@ -57,33 +57,21 @@ const BookCallModal = ({ trigger }: BookCallModalProps) => {
             </p>
           </div>
           
-          {/* Right side - Static Calendar Image */}
-          <div className="hidden md:flex bg-gradient-to-br from-primary/10 via-primary/5 to-coral/10 items-center justify-center p-6">
-            <div className="bg-white rounded-xl shadow-lg p-4 w-full max-w-[220px] select-none pointer-events-none">
-              <div className="text-center mb-3">
-                <p className="text-sm font-semibold text-navy font-heading">Select a Date & Time</p>
+          {/* Right side - Decorative Illustration */}
+          <div className="hidden md:flex bg-gradient-to-br from-primary/10 via-primary/5 to-coral/10 items-center justify-center p-8">
+            <div className="text-center">
+              {/* Abstract conversation/connection illustration */}
+              <div className="relative w-32 h-32 mx-auto mb-4">
+                {/* Speech bubbles representing conversation */}
+                <div className="absolute top-0 left-0 w-16 h-12 bg-primary/20 rounded-2xl rounded-bl-sm"></div>
+                <div className="absolute top-8 right-0 w-20 h-10 bg-coral/30 rounded-2xl rounded-br-sm"></div>
+                <div className="absolute bottom-4 left-4 w-14 h-10 bg-primary/30 rounded-2xl rounded-bl-sm"></div>
+                {/* Connection dots */}
+                <div className="absolute top-6 left-14 w-2 h-2 bg-primary rounded-full"></div>
+                <div className="absolute top-14 right-6 w-2 h-2 bg-coral rounded-full"></div>
+                <div className="absolute bottom-8 left-16 w-2 h-2 bg-primary/60 rounded-full"></div>
               </div>
-              <div className="grid grid-cols-7 gap-1 text-xs text-center mb-3">
-                {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, i) => (
-                  <div key={i} className="text-navy/40 font-medium py-1">{day}</div>
-                ))}
-                {Array.from({ length: 31 }, (_, i) => (
-                  <div 
-                    key={i} 
-                    className={`py-1 rounded ${i === 14 ? 'bg-primary text-white' : 'text-navy/70'}`}
-                  >
-                    {i + 1}
-                  </div>
-                ))}
-              </div>
-              <div className="space-y-2">
-                <div className="bg-primary/10 text-primary text-xs font-medium py-2 px-3 rounded text-center">
-                  10:00 AM
-                </div>
-                <div className="border border-primary/20 text-navy/60 text-xs py-2 px-3 rounded text-center">
-                  2:00 PM
-                </div>
-              </div>
+              <p className="text-sm text-navy/60 font-medium">Let's chat!</p>
             </div>
           </div>
         </div>

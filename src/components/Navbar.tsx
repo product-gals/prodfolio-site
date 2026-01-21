@@ -121,7 +121,7 @@ const Navbar = () => {
                 variant="outline" 
                 className="border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all"
               >
-                <a href="https://app.prodfolio.io/login">Log In</a>
+                <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
               </Button>
               <Button 
                 asChild 
@@ -204,7 +204,7 @@ const Navbar = () => {
               </Link>
             </div>
             <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
-              <a href="https://app.prodfolio.io/login">Log In</a>
+              <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
             </Button>
             <Button asChild className="w-full bg-white text-primary hover:bg-white/90 py-2.5 h-auto shadow-md shadow-white/10">
               <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your portfolio free</a>
