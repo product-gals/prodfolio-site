@@ -5,6 +5,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ExternalLink, Star, Plus } from "lucide-react";
 
+import meaganPhoto from "@/assets/meagan-glenn.jpeg";
+import santiPhoto from "@/assets/santiana-diaz.png";
+import snehaPhoto from "@/assets/sneha-example.jpeg";
+import olympiaPhoto from "@/assets/olympia-todisco-example.jpeg";
+
 const Examples = () => {
   const heroAnimation = useScrollAnimation();
   const galleryAnimation = useScrollAnimation();
@@ -31,8 +36,7 @@ const Examples = () => {
       highlight: "Great example of storytelling and career narrative",
       link: "https://meaganglenn.me",
       stage: "Senior PM",
-      initials: "MG",
-      avatarBg: "bg-primary"
+      photo: meaganPhoto
     },
     {
       name: "Santiana Brace",
@@ -41,8 +45,7 @@ const Examples = () => {
       highlight: "Strong process documentation",
       link: "https://app.prodfolio.io/p/santi-brace-2",
       stage: "Mid-level PM",
-      initials: "SB",
-      avatarBg: "bg-coral"
+      photo: santiPhoto
     },
     {
       name: "Sneha Shah",
@@ -51,8 +54,7 @@ const Examples = () => {
       highlight: "Clear impact metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
       stage: "Mid-level PM",
-      initials: "SS",
-      avatarBg: "bg-[#6B8E8E]"
+      photo: snehaPhoto
     },
     {
       name: "Olympia Bardis",
@@ -61,8 +63,7 @@ const Examples = () => {
       highlight: "Strong user empathy",
       link: "https://app.prodfolio.io/p/olympia-bardis",
       stage: "Mid-level PM",
-      initials: "OB",
-      avatarBg: "bg-[#8B7EC8]"
+      photo: olympiaPhoto
     }
   ];
 
@@ -99,9 +100,11 @@ const Examples = () => {
               >
                 {/* Header with avatar and badge */}
                 <div className="flex items-start gap-4 mb-4">
-                  <div className={`w-12 h-12 ${portfolio.avatarBg} rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}>
-                    {portfolio.initials}
-                  </div>
+                  <img
+                    src={portfolio.photo}
+                    alt={portfolio.name}
+                    className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
                       <div>
