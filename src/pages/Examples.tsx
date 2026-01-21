@@ -132,7 +132,7 @@ const Examples = () => {
                 {/* CTA Button */}
                 <Button
                   asChild
-                  className="w-full bg-navy text-white hover:bg-navy/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
+                  className="w-full bg-coral text-white hover:bg-coral/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
                 >
                   <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
                     View Portfolio
