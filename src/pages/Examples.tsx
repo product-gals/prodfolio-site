@@ -201,10 +201,10 @@ const Examples = () => {
         className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[800px] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-navy">
             Ready to build yours?
           </h2>
-          <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
+          <p className="text-lg text-navy/70 mb-8 max-w-xl mx-auto">
             Join the PMs showcasing their work with confidence. Start free, no design skills needed.
           </p>
           <Button
