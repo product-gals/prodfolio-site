@@ -203,13 +203,13 @@ const Examples = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[800px] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-navy">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
             Ready to build yours?
           </h2>
-          <p className="text-lg text-navy/70 mb-8 max-w-xl mx-auto">
+          <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
             Join the PMs showcasing their work with confidence. Start free, no design skills needed.
           </p>
           <Button

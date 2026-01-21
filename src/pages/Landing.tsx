@@ -568,7 +568,7 @@ const Landing = () => {
       </section>
 
       {/* Final CTA - Centered floating glass card */}
-      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 pb-16 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className="text-center">

@@ -186,14 +186,14 @@ const ForHiringManagers = () => {
       {/* Encourage Candidates CTA */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
               Encourage your candidates to use Prodfolio
             </h2>
-            <p className="text-lg text-navy/80 mb-8">
+            <p className="text-lg text-white/80 mb-8">
               Add this to your job postings or candidate communications. Candidates can create and publish a full portfolio for free.
             </p>
 
