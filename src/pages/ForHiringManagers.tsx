@@ -130,51 +130,51 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Process documentation</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Process documentation</h3>
+                <p className="text-navy/70 text-sm">
                   How did they approach the problem? What methods did they use for discovery, validation, and prioritization?
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Strategic trade-offs</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Strategic trade-offs</h3>
+                <p className="text-navy/70 text-sm">
                   What alternatives did they consider? How did they make decisions under uncertainty and constraints?
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Quantified impact with context</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Quantified impact with context</h3>
+                <p className="text-navy/70 text-sm">
                   Not just metrics, but what they mean. Before/after comparisons, timeframes, and why these outcomes mattered.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Communication clarity</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Communication clarity</h3>
+                <p className="text-navy/70 text-sm">
                   Can they explain complex topics clearly? Do they tailor their communication for different audiences?
                 </p>
               </div>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30 flex items-start gap-4">
+            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-white mb-1">Honest reflection</h3>
-                <p className="text-white/80 text-sm">
+                <h3 className="text-lg font-bold text-navy mb-1">Honest reflection</h3>
+                <p className="text-navy/70 text-sm">
                   Do they acknowledge what didn't work? What would they do differently? Learning from failure shows maturity.
                 </p>
               </div>
