@@ -70,17 +70,17 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Search className="w-7 h-7 text-primary" />
               </div>
               <h3 className="text-xl font-heading font-bold text-navy mb-3">See authentic thinking</h3>
               <p className="text-navy/70 leading-relaxed">
-                Portfolios reveal how candidates identify problems, design solutions, and navigate trade-offs—the real work of product management.
+                Portfolios reveal how candidates identify problems, design solutions, and navigate trade-offs: the real work of product management.
               </p>
             </article>
 
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
@@ -90,7 +90,7 @@ const ForHiringManagers = () => {
               </p>
             </article>
 
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-7 h-7 text-primary" />
               </div>
@@ -103,7 +103,7 @@ const ForHiringManagers = () => {
 
           {/* Quote */}
           <div className="max-w-3xl mx-auto mt-12">
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
               <Quote className="w-8 h-8 text-primary/50 mb-4" />
               <p className="text-lg text-navy/90 italic mb-4">
                 "I spent nearly an hour reading her portfolio before the interview and got to know her well. Fifteen minutes into the interview, I knew she was the PM I needed."
