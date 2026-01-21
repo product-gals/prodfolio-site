@@ -42,7 +42,7 @@ const ForCareerChangers = () => {
             <span className="text-navy">Now prove it.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-            Transitioning into product management? Your portfolio shows hiring managers what your resume can't—that you already have the mindset.
+            Transitioning into product management? Your portfolio shows hiring managers what your resume can't: that you already have the mindset.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
