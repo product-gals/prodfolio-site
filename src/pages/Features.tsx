@@ -500,70 +500,88 @@ const Features = () => {
               Why Prodfolio vs. the alternatives?
             </h2>
             <p className="text-lg text-white/70 max-w-2xl mx-auto">
-              Notion is great for docs. Webflow is great for designers. Here's why Prodfolio is built for PMs.
+              General tools work for general needs. Here's why Prodfolio is purpose-built for product managers.
             </p>
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[600px]">
+            <table className="w-full min-w-[800px]">
               <thead>
                 <tr className="border-b border-white/10">
-                  <th className="text-left py-4 px-4 text-white/60 font-normal">Feature</th>
-                  <th className="text-center py-4 px-4">
+                  <th className="text-left py-4 px-3 text-white/60 font-normal">Feature</th>
+                  <th className="text-center py-4 px-3">
                     <span className="text-primary font-bold">Prodfolio</span>
                   </th>
-                  <th className="text-center py-4 px-4 text-white/60">Notion + Super</th>
-                  <th className="text-center py-4 px-4 text-white/60">Webflow</th>
+                  <th className="text-center py-4 px-3 text-white/60">Notion</th>
+                  <th className="text-center py-4 px-3 text-white/60">Squarespace</th>
+                  <th className="text-center py-4 px-3 text-white/60">Webflow</th>
+                  <th className="text-center py-4 px-3 text-white/60">Canva</th>
                 </tr>
               </thead>
               <tbody className="text-white/80">
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">PM-specific templates</td>
-                  <td className="text-center py-4 px-4 text-green-400">✓</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                  <td className="py-4 px-3">PM-specific templates</td>
+                  <td className="text-center py-4 px-3 text-green-400">✓</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">AI case study generation</td>
-                  <td className="text-center py-4 px-4 text-green-400">✓</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                  <td className="py-4 px-3">AI case study generation</td>
+                  <td className="text-center py-4 px-3 text-green-400">✓</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">Guided SIGNAL framework</td>
-                  <td className="text-center py-4 px-4 text-green-400">✓</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                  <td className="py-4 px-3">Guided SIGNAL framework</td>
+                  <td className="text-center py-4 px-3 text-green-400">✓</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">NDA-safe guidance</td>
-                  <td className="text-center py-4 px-4 text-green-400">✓</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                  <td className="py-4 px-3">NDA-safe guidance</td>
+                  <td className="text-center py-4 px-3 text-green-400">✓</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">Portfolio analytics</td>
-                  <td className="text-center py-4 px-4 text-green-400">✓</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
-                  <td className="text-center py-4 px-4 text-white/40">—</td>
+                  <td className="py-4 px-3">Portfolio analytics</td>
+                  <td className="text-center py-4 px-3 text-green-400">✓</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/60">Basic</td>
+                  <td className="text-center py-4 px-3 text-white/60">Basic</td>
+                  <td className="text-center py-4 px-3 text-white/40">—</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">Time to build</td>
-                  <td className="text-center py-4 px-4 text-green-400">Hours</td>
-                  <td className="text-center py-4 px-4 text-white/60">Days</td>
-                  <td className="text-center py-4 px-4 text-white/60">Weeks</td>
+                  <td className="py-4 px-3">Time to build</td>
+                  <td className="text-center py-4 px-3 text-green-400">Hours</td>
+                  <td className="text-center py-4 px-3 text-white/60">Days</td>
+                  <td className="text-center py-4 px-3 text-white/60">Days</td>
+                  <td className="text-center py-4 px-3 text-white/60">Weeks</td>
+                  <td className="text-center py-4 px-3 text-white/60">Hours</td>
                 </tr>
                 <tr className="border-b border-white/10">
-                  <td className="py-4 px-4">Design skills needed</td>
-                  <td className="text-center py-4 px-4 text-green-400">None</td>
-                  <td className="text-center py-4 px-4 text-white/60">Some</td>
-                  <td className="text-center py-4 px-4 text-white/60">Extensive</td>
+                  <td className="py-4 px-3">Design skills needed</td>
+                  <td className="text-center py-4 px-3 text-green-400">None</td>
+                  <td className="text-center py-4 px-3 text-white/60">Some</td>
+                  <td className="text-center py-4 px-3 text-white/60">Some</td>
+                  <td className="text-center py-4 px-3 text-white/60">Extensive</td>
+                  <td className="text-center py-4 px-3 text-white/60">Some</td>
                 </tr>
                 <tr>
-                  <td className="py-4 px-4">Starting price</td>
-                  <td className="text-center py-4 px-4 text-green-400">Free</td>
-                  <td className="text-center py-4 px-4 text-white/60">$22/mo</td>
-                  <td className="text-center py-4 px-4 text-white/60">$14/mo</td>
+                  <td className="py-4 px-3">Starting price</td>
+                  <td className="text-center py-4 px-3 text-green-400">Free</td>
+                  <td className="text-center py-4 px-3 text-white/60">Free</td>
+                  <td className="text-center py-4 px-3 text-white/60">$16/mo</td>
+                  <td className="text-center py-4 px-3 text-white/60">$14/mo</td>
+                  <td className="text-center py-4 px-3 text-white/60">Free</td>
                 </tr>
               </tbody>
             </table>
