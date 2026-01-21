@@ -179,7 +179,7 @@ const About = () => {
               <h3 className="text-xl font-heading font-bold text-white">Meagan Glenn</h3>
               <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure. Fueled by iced coffee.
+                Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
               <div className="flex gap-2 justify-center">
                 <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
