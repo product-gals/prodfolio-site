@@ -3,13 +3,12 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Briefcase, Lightbulb, Target, CheckCircle, ArrowRight, Sparkles } from "lucide-react";
+import { Briefcase, Lightbulb, Target, CheckCircle, ArrowRight } from "lucide-react";
 
 const ForCareerChangers = () => {
   const heroAnimation = useScrollAnimation();
   const whyAnimation = useScrollAnimation();
   const whatAnimation = useScrollAnimation();
-  const storiesAnimation = useScrollAnimation();
   const ctaAnimation = useScrollAnimation();
 
   useSEO({
@@ -168,58 +167,6 @@ const ForCareerChangers = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Success Stories Placeholder */}
-      <section
-        ref={storiesAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${storiesAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
-      >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
-              Career changers who made the leap
-            </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
-              From engineering, marketing, design, and beyond—PMs come from everywhere.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <article className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-navy/80 italic mb-4">
-                "I spent months applying with just my engineering resume. My Prodfolio helped me tell the story of how I already think like a PM."
-              </p>
-              <p className="font-bold text-navy">Former Software Engineer</p>
-              <p className="text-sm text-navy/60">Now PM at a Series B startup</p>
-            </article>
-
-            <article className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-navy/80 italic mb-4">
-                "Coming from marketing, I wasn't sure how to position myself. The SIGNAL framework helped me structure my experience in a way that resonated."
-              </p>
-              <p className="font-bold text-navy">Former Marketing Manager</p>
-              <p className="text-sm text-navy/60">Now Product Manager</p>
-            </article>
-
-            <article className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 text-center">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Sparkles className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-navy/80 italic mb-4">
-                "My bootcamp gave me theory, but Prodfolio helped me tell compelling stories about the real projects I'd led—even as a consultant."
-              </p>
-              <p className="font-bold text-navy">Former Business Analyst</p>
-              <p className="text-sm text-navy/60">Now Associate PM</p>
-            </article>
           </div>
         </div>
       </section>
