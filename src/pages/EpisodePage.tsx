@@ -78,29 +78,50 @@ const EpisodePage = () => {
       : "Episode Not Found | The Product Pivot Podcast",
     description: episode?.longDescription || "Episode not found",
     canonical: `https://prodfolio.io/podcast/episodes/${slug}`,
-    structuredData: episode ? {
-      "@context": "https://schema.org",
-      "@type": "PodcastEpisode",
-      "name": episode.title,
-      "description": episode.longDescription,
-      "datePublished": episode.publishedAt,
-      "duration": episode.duration,
-      "url": `https://prodfolio.io/podcast/episodes/${slug}`,
-      "partOfSeries": {
-        "@type": "PodcastSeries",
-        "name": "The Product Pivot",
-        "url": "https://prodfolio.io/podcast"
+    structuredData: episode ? [
+      {
+        "@context": "https://schema.org",
+        "@type": "PodcastEpisode",
+        "name": episode.title,
+        "description": episode.longDescription,
+        "datePublished": episode.publishedAt,
+        "duration": episode.duration,
+        "url": `https://prodfolio.io/podcast/episodes/${slug}`,
+        "partOfSeries": {
+          "@type": "PodcastSeries",
+          "name": "The Product Pivot",
+          "url": "https://prodfolio.io/podcast"
+        },
+        "author": [
+          { "@type": "Person", "name": "Meagan Glenn" },
+          { "@type": "Person", "name": "Santiana Brace" }
+        ],
+        "guest": {
+          "@type": "Person",
+          "name": episode.guest.name,
+          "jobTitle": episode.guest.role
+        }
       },
-      "author": [
-        { "@type": "Person", "name": "Meagan Glenn" },
-        { "@type": "Person", "name": "Santiana Brace" }
-      ],
-      "guest": {
-        "@type": "Person",
-        "name": episode.guest.name,
-        "jobTitle": episode.guest.role
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": episode.title,
+        "description": episode.longDescription,
+        "thumbnailUrl": episode.thumbnail || `https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`,
+        "uploadDate": episode.publishedAt,
+        "duration": episode.duration,
+        "embedUrl": `https://www.youtube.com/embed/${episode.youtubeId}`,
+        "contentUrl": `https://www.youtube.com/watch?v=${episode.youtubeId}`,
+        "publisher": {
+          "@type": "Organization",
+          "name": "Prodfolio",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://prodfolio.io/prodfolio-icon.png"
+          }
+        }
       }
-    } : undefined
+    ] : undefined
   });
 
   if (!episode) {
