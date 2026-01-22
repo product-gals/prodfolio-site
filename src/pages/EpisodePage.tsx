@@ -9,7 +9,8 @@ import { getEpisodeBySlug, getRelatedEpisodes } from "@/data/episodes";
 import {
   Clock,
   Calendar,
-  ChevronLeft,
+  ChevronRight,
+  Home,
   Linkedin,
   Twitter,
   Instagram,
@@ -120,6 +121,30 @@ const EpisodePage = () => {
             "url": "https://prodfolio.io/prodfolio-icon.png"
           }
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://prodfolio.io"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Podcast",
+            "item": "https://prodfolio.io/podcast"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": episode.title,
+            "item": `https://prodfolio.io/podcast/episodes/${slug}`
+          }
+        ]
       }
     ] : undefined
   });
@@ -157,16 +182,37 @@ const EpisodePage = () => {
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
       <Navbar />
 
-      {/* Back Navigation */}
-      <div className="prodfolio-container max-w-[1200px] mx-auto pt-6 px-4">
-        <Link
-          to="/podcast"
-          className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          Back to all episodes
-        </Link>
-      </div>
+      {/* Breadcrumb Navigation */}
+      <nav className="prodfolio-container max-w-[1200px] mx-auto pt-6 px-4" aria-label="Breadcrumb">
+        <ol className="flex items-center gap-2 text-sm">
+          <li>
+            <Link
+              to="/"
+              className="flex items-center gap-1 text-white/60 hover:text-white transition-colors"
+            >
+              <Home className="w-4 h-4" />
+              <span className="sr-only">Home</span>
+            </Link>
+          </li>
+          <li className="text-white/40">
+            <ChevronRight className="w-4 h-4" />
+          </li>
+          <li>
+            <Link
+              to="/podcast"
+              className="text-white/60 hover:text-white transition-colors"
+            >
+              Podcast
+            </Link>
+          </li>
+          <li className="text-white/40">
+            <ChevronRight className="w-4 h-4" />
+          </li>
+          <li className="text-white/80 truncate max-w-[200px] sm:max-w-none" title={episode.title}>
+            {episode.title}
+          </li>
+        </ol>
+      </nav>
 
       {/* Hero Section with Episode Header */}
       <section
