@@ -435,7 +435,7 @@ const EpisodePage = () => {
                 {/* Hosts */}
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="flex items-center gap-3">
-                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
+                    <img src={meaganPhoto} alt="Meagan Glenn, Co-host of The Product Pivot podcast" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
                     <div>
                       <p className="font-bold text-white">Meagan Glenn</p>
                       <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -444,7 +444,7 @@ const EpisodePage = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
+                    <img src={santianaPhoto} alt="Santiana Brace, Co-host of The Product Pivot podcast" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
                     <div>
                       <p className="font-bold text-white">Santiana Brace</p>
                       <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">

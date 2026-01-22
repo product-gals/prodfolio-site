@@ -7,7 +7,20 @@ export default function TermsOfService() {
   useSEO({
     title: "Terms of Service | Prodfolio",
     description: "Terms of Service for Prodfolio. Learn about your rights and responsibilities when using our portfolio platform.",
-    canonical: "https://www.prodfolio.io/terms",
+    canonical: "https://prodfolio.io/terms",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service",
+      "description": "Terms of Service for Prodfolio. Learn about your rights and responsibilities when using our portfolio platform.",
+      "url": "https://prodfolio.io/terms",
+      "dateModified": "2025-11-16",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Prodfolio",
+        "url": "https://prodfolio.io"
+      }
+    }
   });
 
   useEffect(() => {

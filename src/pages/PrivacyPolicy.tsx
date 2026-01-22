@@ -6,7 +6,21 @@ const PrivacyPolicy = () => {
   useSEO({
     title: "Privacy Policy | Prodfolio",
     description: "Learn how Prodfolio collects, uses, and protects your data. We handle your information with care and never sell your data to third parties.",
+    canonical: "https://prodfolio.io/privacy",
     noindex: false,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy",
+      "description": "Learn how Prodfolio collects, uses, and protects your data.",
+      "url": "https://prodfolio.io/privacy",
+      "dateModified": "2025-11-16",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Prodfolio",
+        "url": "https://prodfolio.io"
+      }
+    }
   });
 
   return (

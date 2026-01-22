@@ -114,12 +114,12 @@ const Resources = () => {
               <div className="flex flex-wrap items-center gap-4 text-sm justify-center lg:justify-start">
                 <span className="text-white/50">Hosted by</span>
                 <div className="flex items-center gap-2">
-                  <img src={meaganPhoto} alt="Meagan Glenn" className="w-8 h-8 rounded-full border border-primary/40 bg-primary/20" loading="eager" decoding="async" />
+                  <img src={meaganPhoto} alt="Meagan Glenn, Co-host of The Product Pivot podcast" className="w-8 h-8 rounded-full border border-primary/40 bg-primary/20" loading="eager" decoding="async" />
                   <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary">Meagan Glenn</a>
                 </div>
                 <span className="text-white/30">&</span>
                 <div className="flex items-center gap-2">
-                  <img src={santianaPhoto} alt="Santiana Brace" className="w-8 h-8 rounded-full border border-primary/40 bg-primary/20" loading="eager" decoding="async" />
+                  <img src={santianaPhoto} alt="Santiana Brace, Co-host of The Product Pivot podcast" className="w-8 h-8 rounded-full border border-primary/40 bg-primary/20" loading="eager" decoding="async" />
                   <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-primary">Santiana Brace</a>
                 </div>
               </div>
