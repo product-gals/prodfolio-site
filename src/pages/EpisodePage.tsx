@@ -9,7 +9,8 @@ import { getEpisodeBySlug, getRelatedEpisodes } from "@/data/episodes";
 import {
   Clock,
   Calendar,
-  ChevronLeft,
+  ChevronRight,
+  Home,
   Linkedin,
   Twitter,
   Instagram,
@@ -78,29 +79,74 @@ const EpisodePage = () => {
       : "Episode Not Found | The Product Pivot Podcast",
     description: episode?.longDescription || "Episode not found",
     canonical: `https://prodfolio.io/podcast/episodes/${slug}`,
-    structuredData: episode ? {
-      "@context": "https://schema.org",
-      "@type": "PodcastEpisode",
-      "name": episode.title,
-      "description": episode.longDescription,
-      "datePublished": episode.publishedAt,
-      "duration": episode.duration,
-      "url": `https://prodfolio.io/podcast/episodes/${slug}`,
-      "partOfSeries": {
-        "@type": "PodcastSeries",
-        "name": "The Product Pivot",
-        "url": "https://prodfolio.io/podcast"
+    structuredData: episode ? [
+      {
+        "@context": "https://schema.org",
+        "@type": "PodcastEpisode",
+        "name": episode.title,
+        "description": episode.longDescription,
+        "datePublished": episode.publishedAt,
+        "duration": episode.duration,
+        "url": `https://prodfolio.io/podcast/episodes/${slug}`,
+        "partOfSeries": {
+          "@type": "PodcastSeries",
+          "name": "The Product Pivot",
+          "url": "https://prodfolio.io/podcast"
+        },
+        "author": [
+          { "@type": "Person", "name": "Meagan Glenn" },
+          { "@type": "Person", "name": "Santiana Brace" }
+        ],
+        "guest": {
+          "@type": "Person",
+          "name": episode.guest.name,
+          "jobTitle": episode.guest.role
+        }
       },
-      "author": [
-        { "@type": "Person", "name": "Meagan Glenn" },
-        { "@type": "Person", "name": "Santiana Brace" }
-      ],
-      "guest": {
-        "@type": "Person",
-        "name": episode.guest.name,
-        "jobTitle": episode.guest.role
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": episode.title,
+        "description": episode.longDescription,
+        "thumbnailUrl": episode.thumbnail || `https://img.youtube.com/vi/${episode.youtubeId}/maxresdefault.jpg`,
+        "uploadDate": episode.publishedAt,
+        "duration": episode.duration,
+        "embedUrl": `https://www.youtube.com/embed/${episode.youtubeId}`,
+        "contentUrl": `https://www.youtube.com/watch?v=${episode.youtubeId}`,
+        "publisher": {
+          "@type": "Organization",
+          "name": "Prodfolio",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://prodfolio.io/prodfolio-icon.png"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://prodfolio.io"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Podcast",
+            "item": "https://prodfolio.io/podcast"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": episode.title,
+            "item": `https://prodfolio.io/podcast/episodes/${slug}`
+          }
+        ]
       }
-    } : undefined
+    ] : undefined
   });
 
   if (!episode) {
@@ -136,16 +182,37 @@ const EpisodePage = () => {
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
       <Navbar />
 
-      {/* Back Navigation */}
-      <div className="prodfolio-container max-w-[1200px] mx-auto pt-6 px-4">
-        <Link
-          to="/podcast"
-          className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          Back to all episodes
-        </Link>
-      </div>
+      {/* Breadcrumb Navigation */}
+      <nav className="prodfolio-container max-w-[1200px] mx-auto pt-6 px-4" aria-label="Breadcrumb">
+        <ol className="flex items-center gap-2 text-sm">
+          <li>
+            <Link
+              to="/"
+              className="flex items-center gap-1 text-white/60 hover:text-white transition-colors"
+            >
+              <Home className="w-4 h-4" />
+              <span className="sr-only">Home</span>
+            </Link>
+          </li>
+          <li className="text-white/40">
+            <ChevronRight className="w-4 h-4" />
+          </li>
+          <li>
+            <Link
+              to="/podcast"
+              className="text-white/60 hover:text-white transition-colors"
+            >
+              Podcast
+            </Link>
+          </li>
+          <li className="text-white/40">
+            <ChevronRight className="w-4 h-4" />
+          </li>
+          <li className="text-white/80 truncate max-w-[200px] sm:max-w-none" title={episode.title}>
+            {episode.title}
+          </li>
+        </ol>
+      </nav>
 
       {/* Hero Section with Episode Header */}
       <section
@@ -368,7 +435,7 @@ const EpisodePage = () => {
                 {/* Hosts */}
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="flex items-center gap-3">
-                    <img src={meaganPhoto} alt="Meagan Glenn" className="w-12 h-12 rounded-full" loading="lazy" />
+                    <img src={meaganPhoto} alt="Meagan Glenn, Co-host of The Product Pivot podcast" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
                     <div>
                       <p className="font-bold text-white">Meagan Glenn</p>
                       <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -377,7 +444,7 @@ const EpisodePage = () => {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <img src={santianaPhoto} alt="Santiana Brace" className="w-12 h-12 rounded-full" loading="lazy" />
+                    <img src={santianaPhoto} alt="Santiana Brace, Co-host of The Product Pivot podcast" className="w-12 h-12 rounded-full bg-primary/20" loading="lazy" decoding="async" />
                     <div>
                       <p className="font-bold text-white">Santiana Brace</p>
                       <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">
@@ -399,8 +466,9 @@ const EpisodePage = () => {
                     <img
                       src={episode.guest.photo}
                       alt={episode.guest.name}
-                      className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
+                      className="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gradient-to-br from-primary/20 to-coral/20"
                       loading="lazy"
+                      decoding="async"
                     />
                   ) : (
                     <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-primary to-coral flex items-center justify-center">
@@ -509,12 +577,13 @@ const EpisodePage = () => {
                   to={`/podcast/episodes/${ep.slug}`}
                   className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-primary/40 transition-all group"
                 >
-                  <div className="aspect-video relative bg-black/50 overflow-hidden">
+                  <div className="aspect-video relative bg-gradient-to-br from-primary/20 to-coral/20 overflow-hidden">
                     <img
                       src={ep.thumbnail || `https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
                       alt={ep.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-5">
