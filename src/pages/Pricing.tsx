@@ -16,6 +16,52 @@ const Pricing = () => {
     title: "Product Portfolio Builder Pricing | Free & Pro Plans - Prodfolio",
     description: "Compare Prodfolio pricing plans — from Free to Premium. Build and showcase your product portfolio with AI-powered storytelling tools.",
     canonical: "https://prodfolio.io/pricing",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I switch plans later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods do you accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We go through Stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I try before I buy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cancel anytime?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Cancel your subscription anytime from your account settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Prodfolio different from other portfolio tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're built by PMs, for PMs. Every feature is designed around how you actually work and what hiring managers actually want to see. Plus, you're joining a community of product people who get it."
+          }
+        }
+      ]
+    }
   });
 
   const getPrice = (monthlyPrice: number, tier: string) => {
