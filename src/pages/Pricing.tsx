@@ -96,8 +96,8 @@ const Pricing = () => {
     {
       name: "Pro",
       tagline: "Full access to Prodfolio",
-      price: "$19",
-      monthlyPrice: 19,
+      price: "$29",
+      monthlyPrice: 29,
       features: [
         "Unlimited portfolios",
         "Unlimited AI case study generation",
