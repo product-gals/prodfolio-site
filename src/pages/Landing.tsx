@@ -238,7 +238,7 @@ const Landing = () => {
       </section>
 
       {/* Who Prodfolio is For - Audience Segmentation */}
-      <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
