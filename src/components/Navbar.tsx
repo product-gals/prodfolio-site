@@ -76,7 +76,7 @@ const Navbar = () => {
               to="/examples"
               className="font-medium text-white hover:text-white/80 transition-colors"
             >
-              Examples
+              Portfolio Examples
             </Link>
             <Link
               to="/pricing"
@@ -175,7 +175,7 @@ const Navbar = () => {
               className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Examples
+              Portfolio Examples
             </Link>
             <Link
               to="/pricing"
