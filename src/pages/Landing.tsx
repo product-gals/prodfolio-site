@@ -250,47 +250,67 @@ const Landing = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Active PMs */}
+            {/* Product Managers */}
             <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
-                <TrendingUp className="w-8 h-8 text-white" />
+                <TrendingUp className="w-8 h-8 text-white" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">PMs ready to level up</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Product Managers</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                You've shipped products, led teams, driven results. Document your journey and own your narrative for that next promotion or role.
+                You've shipped products, led teams, driven results. Document your impact and own your narrative for that next promotion or role.
               </p>
               <a href="https://app.prodfolio.io/sign-up" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
                 Start building →
               </a>
             </article>
 
-            {/* Career Changers */}
+            {/* Aspiring Product Managers */}
             <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
-                <Repeat className="w-8 h-8 text-white" />
+                <Repeat className="w-8 h-8 text-white" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Career changers breaking in</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Aspiring Product Managers</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                You think like a PM - even without the title. Show hiring managers the product mindset they're looking for.
+                No PM title yet? Showcase your product thinking and prove you have the mindset hiring managers are looking for.
               </p>
               <a href="/for-career-changers" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
                 Learn how →
               </a>
             </article>
 
-            {/* Hiring Managers */}
+            {/* Product Leaders & Teams */}
             <article className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-white/30">
-                <Users className="w-8 h-8 text-white" />
+                <Users className="w-8 h-8 text-white" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Hiring managers seeking signal</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Product Leaders & Teams</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
-                Resumes tell you what. Portfolios show you how. Encourage your candidates to share their thinking.
+                Directors, PMMs, and designers - your work drives product success. Make your strategic impact visible.
               </p>
-              <a href="/for-hiring-managers" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
-                See how it helps →
+              <a href="https://app.prodfolio.io/sign-up" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
+                Start building →
               </a>
             </article>
+          </div>
+
+          {/* Hiring Manager Banner */}
+          <div className="max-w-3xl mx-auto mt-10">
+            <a
+              href="/for-hiring-managers"
+              className="block bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/15 transition-all group"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex-1">
+                  <p className="text-white font-semibold text-lg">Hiring for product roles?</p>
+                  <p className="text-white/70 text-sm">See how Prodfolio helps you evaluate candidates beyond the resume.</p>
+                </div>
+                <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-all">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
