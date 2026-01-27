@@ -238,7 +238,7 @@ const Landing = () => {
       </section>
 
       {/* Who Prodfolio is For - Audience Segmentation */}
-      <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -330,7 +330,7 @@ const Landing = () => {
           {/* Feature 01 - Import */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2 lg:order-1">
-              <div className="inline-block bg-primary/15 text-primary font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">01 — IMPORT</div>
+              <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">01 — IMPORT</div>
               <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 Import your experience in seconds
               </h3>
@@ -391,7 +391,7 @@ const Landing = () => {
           {/* Feature 02 - Build */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2">
-              <div className="inline-block bg-primary/15 text-primary font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">02 — BUILD</div>
+              <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">02 — BUILD</div>
               <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 Structure your story with SIGNAL
               </h3>
@@ -450,7 +450,7 @@ const Landing = () => {
           {/* Feature 03 - Share */}
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="inline-block bg-primary/15 text-primary font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">03 — SHARE</div>
+              <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">03 — SHARE</div>
               <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
                 One link. Unlimited impact.
               </h3>
