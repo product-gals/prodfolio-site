@@ -259,8 +259,8 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 You've shipped products, led teams, driven results. Document your impact and own your narrative for that next promotion or role.
               </p>
-              <a href="https://app.prodfolio.io/sign-up" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
-                Start building →
+              <a href="/examples" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
+                See examples →
               </a>
             </article>
 
@@ -287,8 +287,8 @@ const Landing = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Directors, PMMs, and designers - your work drives product success. Make your strategic impact visible.
               </p>
-              <a href="https://app.prodfolio.io/sign-up" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
-                Start building →
+              <a href="/features" className="inline-block mt-2 px-5 py-2 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-all">
+                See features →
               </a>
             </article>
           </div>
