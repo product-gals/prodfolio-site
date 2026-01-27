@@ -11,7 +11,9 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const [isWhoItsForOpen, setIsWhoItsForOpen] = useState(false);
   const resourcesRef = useRef<HTMLDivElement>(null);
+  const whoItsForRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +24,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (resourcesRef.current && !resourcesRef.current.contains(event.target as Node)) {
         setIsResourcesOpen(false);
+      }
+      if (whoItsForRef.current && !whoItsForRef.current.contains(event.target as Node)) {
+        setIsWhoItsForOpen(false);
       }
     };
 
@@ -72,6 +77,44 @@ const Navbar = () => {
             >
               Features
             </Link>
+
+            {/* Who it's for Dropdown */}
+            <div className="relative" ref={whoItsForRef}>
+              <button
+                onClick={() => setIsWhoItsForOpen(!isWhoItsForOpen)}
+                className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1"
+              >
+                Who it's for
+                <ChevronDown className={`w-4 h-4 transition-transform ${isWhoItsForOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {isWhoItsForOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-[#100D22]/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl py-2">
+                  <Link
+                    to="/features"
+                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                    onClick={() => setIsWhoItsForOpen(false)}
+                  >
+                    Product Managers
+                  </Link>
+                  <Link
+                    to="/for-career-changers"
+                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                    onClick={() => setIsWhoItsForOpen(false)}
+                  >
+                    Career Changers
+                  </Link>
+                  <Link
+                    to="/for-hiring-managers"
+                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                    onClick={() => setIsWhoItsForOpen(false)}
+                  >
+                    Hiring Managers
+                  </Link>
+                </div>
+              )}
+            </div>
+
             <Link
               to="/examples"
               className="font-medium text-white hover:text-white/80 transition-colors"
@@ -184,6 +227,32 @@ const Navbar = () => {
             >
               Pricing
             </Link>
+
+            {/* Who it's for Section */}
+            <div className="pt-2 border-t border-white/10">
+              <p className="py-2 text-white/60 text-sm font-medium">Who it's for</p>
+              <Link
+                to="/features"
+                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Product Managers
+              </Link>
+              <Link
+                to="/for-career-changers"
+                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Career Changers
+              </Link>
+              <Link
+                to="/for-hiring-managers"
+                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Hiring Managers
+              </Link>
+            </div>
 
             {/* Resources Section */}
             <div className="pt-2 border-t border-white/10">
