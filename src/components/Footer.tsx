@@ -1,10 +1,64 @@
 import prodfolioIcon from "@/assets/prodfolio-icon.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+    // Simulate submission - replace with actual newsletter API
+    await new Promise(resolve => setTimeout(resolve, 500));
+    setSubmitted(true);
+    setIsSubmitting(false);
+    setEmail("");
+  };
+
   return (
     <footer className="py-12 bg-[#484689] text-white">
       <div className="prodfolio-container">
+        {/* Newsletter CTA Box */}
+        <div className="mb-10 rounded-2xl p-8 md:p-10"
+          style={{
+            background: "linear-gradient(to right, #D4A59A, #C4A4C4, #A8A0D8)"
+          }}
+        >
+          <div className="max-w-2xl mx-auto text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              Stay in the loop
+            </h3>
+            <p className="text-white/90 mb-6">
+              Get the latest product management tips, career advice, and exclusive content delivered to your inbox.
+            </p>
+            {submitted ? (
+              <p className="text-white font-medium">Thanks for subscribing!</p>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 justify-center">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-white/50"
+                  required
+                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="px-6 py-3 bg-[#484689] hover:bg-[#3a3970] text-white font-semibold rounded-lg transition-colors disabled:opacity-50"
+                >
+                  {isSubmitting ? "Subscribing..." : "Subscribe"}
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Product */}
           <div>
