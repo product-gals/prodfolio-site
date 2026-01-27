@@ -32,8 +32,8 @@ const Examples = () => {
     {
       name: "Meagan Glenn",
       role: "Co-founder, Prodfolio",
-      description: "Fractional Head of Product and former career coach showcasing seven years of tech experience, with case studies spanning across B2B and B2C products.",
-      highlight: "Great example of storytelling and career narrative",
+      description: "B2B and B2C case studies from a Fractional Head of Product.",
+      highlight: "See how to: structure a 7-year career narrative",
       link: "https://meaganglenn.me",
       stage: "Fractional HoP",
       photo: meaganPhoto
@@ -41,8 +41,8 @@ const Examples = () => {
     {
       name: "Santiana Brace",
       role: "Co-founder, Prodfolio",
-      description: "PM and ProdOps Lead demonstrating a great example of how to turn a side project into a case study using our SIGNAL framework.",
-      highlight: "Strong process documentation",
+      description: "SIGNAL framework in action from a ProdOps Lead.",
+      highlight: "See how to: turn side projects into case studies",
       link: "https://app.prodfolio.io/p/santi-brace-2",
       stage: "ProdOps Lead/PM",
       photo: santiPhoto
@@ -50,8 +50,8 @@ const Examples = () => {
     {
       name: "Sneha Shah",
       role: "Product Manager",
-      description: "A clean, well-organized portfolio showcasing product thinking and execution across multiple projects.",
-      highlight: "Clear impact metrics",
+      description: "Clean, well-organized portfolio layout.",
+      highlight: "See how to: quantify impact with clear metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
       stage: "Product Manager",
       photo: snehaPhoto
@@ -59,8 +59,8 @@ const Examples = () => {
     {
       name: "Olympia Bardis",
       role: "Product Manager",
-      description: "Portfolio highlighting user-focused product development with compelling case studies and outcomes.",
-      highlight: "Strong user empathy",
+      description: "User-focused case studies with strong outcomes.",
+      highlight: "See how to: demonstrate deep user empathy",
       link: "https://app.prodfolio.io/p/olympia-bardis",
       stage: "Senior PM",
       photo: olympiaPhoto
@@ -124,9 +124,9 @@ const Examples = () => {
                 </p>
 
                 {/* Highlight tag */}
-                <div className="flex items-center gap-2 mb-5 bg-coral/10 rounded-lg px-3 py-2">
-                  <Star className="w-4 h-4 text-coral flex-shrink-0" />
-                  <span className="text-navy/80 text-sm">{portfolio.highlight}</span>
+                <div className="flex items-center gap-2 mb-5 bg-primary/10 rounded-lg px-3 py-2">
+                  <Star className="w-4 h-4 text-primary flex-shrink-0" />
+                  <span className="text-navy/80 text-sm font-medium">{portfolio.highlight}</span>
                 </div>
 
                 {/* CTA Button - pushed to bottom */}
