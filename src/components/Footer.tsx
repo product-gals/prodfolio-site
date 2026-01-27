@@ -39,45 +39,7 @@ const Footer = () => {
   return (
     <footer className="py-12 bg-[#484689] text-white">
       <div className="prodfolio-container">
-        {/* Newsletter CTA Box */}
-        <div className="mb-10 rounded-2xl p-8 md:p-10"
-          style={{
-            background: "linear-gradient(to right, #D4A59A, #C4A4C4, #A8A0D8)"
-          }}
-        >
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Stay in the loop
-            </h3>
-            <p className="text-white/90 mb-6">
-              Get the latest product management tips, career advice, and exclusive content delivered to your inbox.
-            </p>
-            {submitted ? (
-              <p className="text-white font-medium">Thanks for subscribing!</p>
-            ) : (
-              <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 justify-center">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-white/50"
-                  required
-                />
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="px-6 py-3 bg-[#484689] hover:bg-[#3a3970] text-white font-semibold rounded-lg transition-colors disabled:opacity-50"
-                >
-                  {isSubmitting ? "Subscribing..." : "Subscribe"}
-                </button>
-              </form>
-            )}
-            {error && <p className="text-red-200 text-sm mt-2">{error}</p>}
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-8">
           {/* Product */}
           <div>
             <h4 className="font-semibold mb-4 text-white">Product</h4>
@@ -149,6 +111,36 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* Newsletter - spans 2 columns on desktop */}
+          <div className="col-span-2 md:col-span-2">
+            <h4 className="font-semibold mb-4 text-white">Stay in the loop</h4>
+            <p className="text-sm text-white/80 mb-4">
+              PM tips, career advice, and exclusive content.
+            </p>
+            {submitted ? (
+              <p className="text-white/90 text-sm font-medium">Thanks for subscribing!</p>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="px-3 py-2 rounded-lg text-gray-900 placeholder-gray-500 text-sm w-full focus:outline-none focus:ring-2 focus:ring-white/50"
+                  required
+                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="px-4 py-2 bg-white text-[#484689] font-semibold text-sm rounded-lg hover:bg-white/90 transition-colors disabled:opacity-50 whitespace-nowrap"
+                >
+                  {isSubmitting ? "..." : "Subscribe"}
+                </button>
+              </form>
+            )}
+            {error && <p className="text-red-200 text-xs mt-2">{error}</p>}
           </div>
         </div>
         

@@ -108,7 +108,7 @@ const Partners = () => {
                     {partner.type === "individual" ? (
                       <div className="w-14 h-14 rounded-full bg-coral overflow-hidden ring-4 ring-coral/20">
                         {partner.photo ? (
-                          <img src={partner.photo} alt={partner.name} className="w-full h-full object-cover" />
+                          <img src={partner.photo} alt={partner.name} className="w-full h-full object-cover" loading="eager" />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center">
                             <span className="text-lg font-bold text-white">
@@ -120,7 +120,7 @@ const Partners = () => {
                     ) : (
                       <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
                         {partner.logo ? (
-                          <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain p-2" />
+                          <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain p-2" loading="eager" />
                         ) : (
                           <span className="text-base font-bold text-primary">
                             P2P
