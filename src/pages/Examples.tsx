@@ -203,21 +203,26 @@ const Examples = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container text-center max-w-[800px] mx-auto">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
-            Ready to build yours?
-          </h2>
-          <p className="text-lg text-white/80 mb-8 max-w-xl mx-auto">
-            Join the PMs showcasing their work with confidence. Start free, no design skills needed.
-          </p>
-          <Button
-            asChild
-            className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
-          >
-            <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
-          </Button>
+        <div className="prodfolio-container max-w-[600px] mx-auto">
+          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 text-center">
+            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Star className="w-7 h-7 text-primary" />
+            </div>
+            <h2 className="text-2xl font-heading font-bold mb-2 text-navy">
+              Ready to build yours?
+            </h2>
+            <p className="text-navy/70 mb-6 max-w-md mx-auto">
+              Join the PMs showcasing their work with confidence. Start free, no design skills needed.
+            </p>
+            <Button
+              asChild
+              className="px-8 py-6 h-auto text-lg bg-primary text-white hover:bg-primary/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
+            >
+              <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
+            </Button>
+          </div>
         </div>
       </section>
 
