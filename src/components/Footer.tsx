@@ -7,16 +7,33 @@ const Footer = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const [error, setError] = useState("");
+
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
     setIsSubmitting(true);
-    // Simulate submission - replace with actual newsletter API
-    await new Promise(resolve => setTimeout(resolve, 500));
-    setSubmitted(true);
-    setIsSubmitting(false);
-    setEmail("");
+    setError("");
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Subscription failed");
+      }
+
+      setSubmitted(true);
+      setEmail("");
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -56,6 +73,7 @@ const Footer = () => {
                 </button>
               </form>
             )}
+            {error && <p className="text-red-200 text-sm mt-2">{error}</p>}
           </div>
         </div>
 
