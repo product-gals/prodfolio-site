@@ -25,7 +25,7 @@ const ForCareerChangers = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] via-[#D6CEFF] to-[#B8A3FF]">
+    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -77,7 +77,7 @@ const ForCareerChangers = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="glass-card-subtle p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Briefcase className="w-7 h-7 text-primary" />
               </div>
@@ -87,7 +87,7 @@ const ForCareerChangers = () => {
               </p>
             </article>
 
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="glass-card-subtle p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Lightbulb className="w-7 h-7 text-primary" />
               </div>
@@ -97,7 +97,7 @@ const ForCareerChangers = () => {
               </p>
             </article>
 
-            <article className="bg-white/40 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+            <article className="glass-card-subtle p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-primary" />
               </div>
@@ -127,7 +127,7 @@ const ForCareerChangers = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+              <div className="glass-card-solid p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-2">Process over pedigree</h3>
@@ -137,7 +137,7 @@ const ForCareerChangers = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+              <div className="glass-card-solid p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-2">Transferable skills from your current role</h3>
@@ -147,7 +147,7 @@ const ForCareerChangers = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+              <div className="glass-card-solid p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-2">Product thinking from everyday decisions</h3>
@@ -157,7 +157,7 @@ const ForCareerChangers = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+              <div className="glass-card-solid p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-bold text-navy mb-2">Side projects and passion work</h3>

@@ -55,7 +55,7 @@ const About = () => {
   });
 
   return (
-    <div className="min-h-screen gradient-mesh-bg">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}

@@ -68,7 +68,7 @@ const Examples = () => {
   ];
 
   return (
-    <div className="min-h-screen gradient-mesh-bg">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -109,7 +109,7 @@ const Examples = () => {
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <h3 className="text-lg font-heading font-bold text-navy">{portfolio.name}</h3>
-                        <p className="text-navy/60 text-sm">{portfolio.role}</p>
+                        <p className="text-navy/70 text-sm">{portfolio.role}</p>
                       </div>
                       <span className="bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
                         {portfolio.stage}
@@ -175,7 +175,7 @@ const Examples = () => {
       <section className="py-12 px-4">
         <div className="prodfolio-container max-w-[1000px] mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
               What makes a great PM portfolio?
             </h2>
           </div>

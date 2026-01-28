@@ -31,10 +31,10 @@ export default function TermsOfService() {
     <div className="min-h-screen gradient-mesh-bg">
       <Navbar />
       
-      <main className="py-20 px-4">
+      <main id="main-content" className="py-20 px-4">
         <article className="prodfolio-container max-w-4xl mx-auto">
           <header className="mb-12 text-center">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text-navy">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-navy">
               Terms of Service
             </h1>
             <p className="text-lg text-navy/80">

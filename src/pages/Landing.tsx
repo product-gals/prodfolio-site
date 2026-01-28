@@ -90,7 +90,7 @@ const Landing = () => {
       ]
     }
   });
-  return <main className="gradient-mesh-bg overflow-hidden">
+  return <main id="main-content" className="gradient-mesh-bg overflow-hidden">
       {/* Hero Section - Reduced padding, larger text */}
       <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-16 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px] relative z-10">
@@ -98,7 +98,7 @@ const Landing = () => {
             <p className="text-lg md:text-xl text-white/80 mb-4 font-medium tracking-wide uppercase">
               The portfolio platform built for product managers
             </p>
-            <h1 className="text-6xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-6 text-white">
+            <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[1.1] tracking-tight mb-6 text-white">
               Show your work.
               <br />
               <span className="gradient-text">Own your impact.</span>
@@ -149,7 +149,7 @@ const Landing = () => {
       <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2">
               Your work speaks louder than another application
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto">
@@ -160,17 +160,17 @@ const Landing = () => {
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">90%</div>
               <div className="text-sm text-white/80">of PMs don't have portfolios</div>
-              <div className="text-xs text-white/60 mt-1">Cut through the noise</div>
+              <div className="text-xs text-white/70 mt-1">Cut through the noise</div>
             </div>
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">&lt;1 hour</div>
               <div className="text-sm text-white/80">to build what sets you apart</div>
-              <div className="text-xs text-white/60 mt-1">Not weeks of prompting</div>
+              <div className="text-xs text-white/70 mt-1">Not weeks of prompting</div>
             </div>
             <div className="glass-pill text-center">
               <div className="text-3xl font-bold text-white mb-1">+26%</div>
               <div className="text-sm text-white/80">growth in entry-level PM roles in the last 6 months</div>
-              <div className="text-xs text-white/60 mt-1">Now's the time to break in</div>
+              <div className="text-xs text-white/70 mt-1">Now's the time to break in</div>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ const Landing = () => {
       <section ref={insightsAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className={`text-center mb-10 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Designed for how hiring managers evaluate PMs
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">We asked VPs of Product and recruiters what they look for.</p>
@@ -241,7 +241,7 @@ const Landing = () => {
       <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Who Prodfolio is for
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -319,7 +319,7 @@ const Landing = () => {
       <section ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>} className={`py-20 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               From blank page to portfolio in under an hour
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -503,13 +503,13 @@ const Landing = () => {
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-[900px] mx-auto">
             <div className={`text-center mb-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
                 What product managers are saying
               </h2>
             </div>
             
             <div className={`bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-xl ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <Carousel className="w-full">
+              <Carousel className="w-full" aria-label="Product manager testimonials">
                 <CarouselContent>
                   {/* Testimonial 1 */}
                   <CarouselItem>
@@ -591,7 +591,7 @@ const Landing = () => {
       <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 px-4 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[600px] mx-auto">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-2 leading-tight">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2 leading-tight">
               Your resume lists what you did.
               <br />
               Your Prodfolio shows how you think.

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useSEO } from "@/hooks/useSEO";
 import Navbar from "@/components/Navbar";
@@ -22,23 +22,23 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" id="main-content" role="main">
       <Navbar />
       
-      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 px-6 py-20">
+      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent/20 to-primary/5 px-6 py-20">
         <div className="text-center max-w-2xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-navy mb-6">
+          <h1 className="text-5xl md:text-6xl font-heading font-bold text-navy mb-6">
             Page could not be found
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8">
             Sorry, we couldn't find the page you're looking for.
           </p>
-          <a 
-            href="/" 
+          <Link
+            to="/"
             className="inline-block text-primary hover:underline text-lg font-medium"
           >
             Go back home
-          </a>
+          </Link>
         </div>
       </div>
 

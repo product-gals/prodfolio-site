@@ -40,7 +40,7 @@ const Features = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] to-white">
+    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -110,7 +110,7 @@ const Features = () => {
                       </div>
                       <div>
                         <p className="font-semibold text-navy">AI Case Study Generator</p>
-                        <p className="text-xs text-navy/60">Analyzing your document...</p>
+                        <p className="text-xs text-navy/70">Analyzing your document...</p>
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -269,20 +269,20 @@ const Features = () => {
                         <BarChart3 className="w-5 h-5 text-primary" />
                         <span className="font-semibold text-navy">Analytics</span>
                       </div>
-                      <span className="text-xs text-navy/60">Last 7 days</span>
+                      <span className="text-xs text-navy/70">Last 7 days</span>
                     </div>
                     <div className="grid grid-cols-3 gap-3 mb-4">
                       <div className="text-center p-3 bg-gray-50 rounded-lg">
                         <p className="text-2xl font-bold text-navy">97</p>
-                        <p className="text-xs text-navy/60">views</p>
+                        <p className="text-xs text-navy/70">views</p>
                       </div>
                       <div className="text-center p-3 bg-gray-50 rounded-lg">
                         <p className="text-2xl font-bold text-navy">28</p>
-                        <p className="text-xs text-navy/60">case studies opened</p>
+                        <p className="text-xs text-navy/70">case studies opened</p>
                       </div>
                       <div className="text-center p-3 bg-gray-50 rounded-lg">
                         <p className="text-2xl font-bold text-navy">9</p>
-                        <p className="text-xs text-navy/60">multi-viewers</p>
+                        <p className="text-xs text-navy/70">multi-viewers</p>
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -442,7 +442,7 @@ const Features = () => {
                         </div>
                       </div>
                       <div className="p-3 bg-gray-50 rounded-lg">
-                        <p className="text-xs text-navy/60 mb-2">Your portfolio link</p>
+                        <p className="text-xs text-navy/70 mb-2">Your portfolio link</p>
                         <div className="flex items-center gap-2">
                           <code className="flex-1 text-sm text-primary bg-primary/5 px-3 py-2 rounded">
                             app.prodfolio.io/p/your-name
@@ -506,16 +506,17 @@ const Features = () => {
 
           <div className="overflow-x-auto">
             <table className="w-full min-w-[800px]">
+              <caption className="sr-only">Feature comparison between Prodfolio, Notion, Squarespace, Webflow, and Canva</caption>
               <thead>
                 <tr className="border-b border-white/10">
-                  <th className="text-left py-4 px-3 text-white/60 font-normal">Feature</th>
+                  <th className="text-left py-4 px-3 text-white/70 font-normal">Feature</th>
                   <th className="text-center py-4 px-3">
                     <span className="text-primary font-bold">Prodfolio</span>
                   </th>
-                  <th className="text-center py-4 px-3 text-white/60">Notion</th>
-                  <th className="text-center py-4 px-3 text-white/60">Squarespace</th>
-                  <th className="text-center py-4 px-3 text-white/60">Webflow</th>
-                  <th className="text-center py-4 px-3 text-white/60">Canva</th>
+                  <th className="text-center py-4 px-3 text-white/70">Notion</th>
+                  <th className="text-center py-4 px-3 text-white/70">Squarespace</th>
+                  <th className="text-center py-4 px-3 text-white/70">Webflow</th>
+                  <th className="text-center py-4 px-3 text-white/70">Canva</th>
                 </tr>
               </thead>
               <tbody className="text-white/80">
@@ -555,33 +556,33 @@ const Features = () => {
                   <td className="py-4 px-3">Portfolio analytics</td>
                   <td className="text-center py-4 px-3 text-green-400">✓</td>
                   <td className="text-center py-4 px-3 text-white/40">—</td>
-                  <td className="text-center py-4 px-3 text-white/60">Basic</td>
-                  <td className="text-center py-4 px-3 text-white/60">Basic</td>
+                  <td className="text-center py-4 px-3 text-white/70">Basic</td>
+                  <td className="text-center py-4 px-3 text-white/70">Basic</td>
                   <td className="text-center py-4 px-3 text-white/40">—</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-3">Time to build</td>
                   <td className="text-center py-4 px-3 text-green-400">Hours</td>
-                  <td className="text-center py-4 px-3 text-white/60">Days</td>
-                  <td className="text-center py-4 px-3 text-white/60">Days</td>
-                  <td className="text-center py-4 px-3 text-white/60">Weeks</td>
-                  <td className="text-center py-4 px-3 text-white/60">Hours</td>
+                  <td className="text-center py-4 px-3 text-white/70">Days</td>
+                  <td className="text-center py-4 px-3 text-white/70">Days</td>
+                  <td className="text-center py-4 px-3 text-white/70">Weeks</td>
+                  <td className="text-center py-4 px-3 text-white/70">Hours</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-3">Design skills needed</td>
                   <td className="text-center py-4 px-3 text-green-400">None</td>
-                  <td className="text-center py-4 px-3 text-white/60">Some</td>
-                  <td className="text-center py-4 px-3 text-white/60">Some</td>
-                  <td className="text-center py-4 px-3 text-white/60">Extensive</td>
-                  <td className="text-center py-4 px-3 text-white/60">Some</td>
+                  <td className="text-center py-4 px-3 text-white/70">Some</td>
+                  <td className="text-center py-4 px-3 text-white/70">Some</td>
+                  <td className="text-center py-4 px-3 text-white/70">Extensive</td>
+                  <td className="text-center py-4 px-3 text-white/70">Some</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-3">Starting price</td>
                   <td className="text-center py-4 px-3 text-green-400">Free</td>
-                  <td className="text-center py-4 px-3 text-white/60">Free</td>
-                  <td className="text-center py-4 px-3 text-white/60">$16/mo</td>
-                  <td className="text-center py-4 px-3 text-white/60">$14/mo</td>
-                  <td className="text-center py-4 px-3 text-white/60">Free</td>
+                  <td className="text-center py-4 px-3 text-white/70">Free</td>
+                  <td className="text-center py-4 px-3 text-white/70">$16/mo</td>
+                  <td className="text-center py-4 px-3 text-white/70">$14/mo</td>
+                  <td className="text-center py-4 px-3 text-white/70">Free</td>
                 </tr>
               </tbody>
             </table>
