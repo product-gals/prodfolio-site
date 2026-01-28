@@ -298,7 +298,7 @@ const PrivacyPolicy = () => {
             {/* Footer */}
             <footer className="text-center pt-8 pb-4">
               <p className="text-navy/70 text-sm">
-                <strong>Prodfolio™ is a product of Just Fractional LLC. All rights reserved.</strong>
+                <strong>Prodfolio™ is a trademark of Just Fractional LLC. All rights reserved.</strong>
               </p>
             </footer>
           </div>
