@@ -168,7 +168,7 @@ const Examples = () => {
       </section>
 
       {/* What Makes a Great Portfolio */}
-      <section className="py-12 px-4">
+      <section className="pt-12 pb-6 px-4">
         <div className="prodfolio-container max-w-[1000px] mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
@@ -200,7 +200,7 @@ const Examples = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[600px] mx-auto">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
