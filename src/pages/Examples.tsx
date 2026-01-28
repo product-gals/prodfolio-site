@@ -33,7 +33,7 @@ const Examples = () => {
       name: "Meagan Glenn",
       role: "Co-founder, Prodfolio",
       description: "See a mix of B2B and B2C case studies.",
-      highlight: "See how to: structure a 7-year career narrative",
+      highlight: "See how to: balance B2B and B2C case studies",
       link: "https://meaganglenn.me",
       stage: "B2C & B2B SaaS",
       photo: meaganPhoto
@@ -123,14 +123,15 @@ const Examples = () => {
                   {portfolio.description}
                 </p>
 
-                {/* Highlight tag */}
-                <div className="flex items-center gap-2 mb-5 bg-primary/10 rounded-lg px-3 py-2">
-                  <Star className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-navy/80 text-sm font-medium">{portfolio.highlight}</span>
-                </div>
-
-                {/* CTA Button - pushed to bottom */}
+                {/* Highlight and CTA - pushed to bottom together */}
                 <div className="mt-auto">
+                  {/* Highlight tag */}
+                  <div className="flex items-center gap-2 mb-5 bg-primary/10 rounded-lg px-3 py-2">
+                    <Star className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span className="text-navy/80 text-sm font-medium">{portfolio.highlight}</span>
+                  </div>
+
+                  {/* CTA Button */}
                   <Button
                     asChild
                     className="w-full !bg-coral text-white hover:!bg-coral/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
