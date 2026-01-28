@@ -153,10 +153,10 @@ const About = () => {
       {/* Meet the Founders */}
       <section
         ref={foundersAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-10 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[900px] mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3 text-white">
               Meet the PMs behind Prodfolio
             </h2>
@@ -167,7 +167,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Meagan */}
-            <div className="glass-card p-6 text-center">
+            <div className="glass-card p-5 text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={meaganPhoto}
@@ -177,7 +177,7 @@ const About = () => {
                 />
               </div>
               <h3 className="text-xl font-heading font-bold text-white">Meagan Glenn</h3>
-              <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
@@ -187,7 +187,7 @@ const About = () => {
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl">
+                <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold rounded-xl">
                   <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
@@ -196,7 +196,7 @@ const About = () => {
             </div>
 
             {/* Santiana */}
-            <div className="glass-card p-6 text-center">
+            <div className="glass-card p-5 text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={santianaPhoto}
@@ -206,7 +206,7 @@ const About = () => {
                 />
               </div>
               <h3 className="text-xl font-heading font-bold text-white">Santiana Brace</h3>
-              <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Expert at cutting through complexity to find the simplest path forward.
               </p>
@@ -216,7 +216,7 @@ const About = () => {
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl">
+                <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold rounded-xl">
                   <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
