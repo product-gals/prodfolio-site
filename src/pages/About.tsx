@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Coffee, Mic, Lightbulb, Users, Phone } from "lucide-react";
+import { Coffee, Mic, Lightbulb, Users } from "lucide-react";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
 
@@ -245,15 +245,6 @@ const About = () => {
               className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
             >
               <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
-            </Button>
-            <Button
-              asChild
-              className="px-8 py-6 h-auto text-lg bg-coral text-white hover:bg-coral/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
-            >
-              <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Book a 15 min call
-              </a>
             </Button>
           </div>
           <p className="mt-6 text-sm text-white/70">No credit card required. Get started in minutes.</p>
