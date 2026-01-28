@@ -50,7 +50,7 @@ const Examples = () => {
     {
       name: "Sneha Shah",
       role: "Product Manager",
-      description: "See a custom, well-organized portfolio. Designed to stand out",
+      description: "See a customized, well-organized portfolio. Designed to stand out.",
       highlight: "See how to: quantify impact with clear metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
       stage: "Insurance",
