@@ -158,14 +158,10 @@ const Examples = () => {
               <p className="text-white/70 text-sm mb-5 leading-relaxed">
                 Want to be featured? We're building a gallery of PM portfolios across industries and career stages.
               </p>
-              <Button
-                asChild
-                className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
-              >
-                <a href="mailto:hello@prodfolio.io?subject=Feature my portfolio">
-                  Submit Your Portfolio
-                </a>
-              </Button>
+              <div className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 inline-flex items-center gap-2">
+                <span className="text-white font-medium text-sm">Click the chat icon to submit yours</span>
+                <span className="text-lg">👉</span>
+              </div>
             </article>
           </div>
         </div>
