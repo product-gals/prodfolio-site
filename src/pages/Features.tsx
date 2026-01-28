@@ -94,7 +94,7 @@ const Features = () => {
       <section
         id="ai-powered"
         ref={aiAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-white ${aiAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 bg-white ${aiAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -165,7 +165,7 @@ const Features = () => {
       <section
         id="framework"
         ref={frameworkAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-gradient-to-b from-white to-primary/5 ${frameworkAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 bg-gradient-to-b from-white to-primary/5 ${frameworkAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -254,7 +254,7 @@ const Features = () => {
       <section
         id="analytics"
         ref={analyticsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-white ${analyticsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 bg-white ${analyticsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -348,7 +348,7 @@ const Features = () => {
       <section
         id="customize"
         ref={customizeAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-gradient-to-b from-white to-primary/5 ${customizeAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 bg-gradient-to-b from-white to-primary/5 ${customizeAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -417,7 +417,7 @@ const Features = () => {
       <section
         id="share"
         ref={shareAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-white ${shareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 bg-white ${shareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -492,7 +492,7 @@ const Features = () => {
       {/* Comparison Section */}
       <section
         ref={compareAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-20 px-4 bg-navy ${compareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 bg-navy ${compareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
