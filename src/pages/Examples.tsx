@@ -35,7 +35,7 @@ const Examples = () => {
       description: "See a mix of B2B and B2C case studies.",
       highlight: "See how to: structure a 7-year career narrative",
       link: "https://meaganglenn.me",
-      stage: "Fractional HoP",
+      stage: "B2C & B2B SaaS",
       photo: meaganPhoto
     },
     {
@@ -44,7 +44,7 @@ const Examples = () => {
       description: "See the SIGNAL framework in action from a PM that transitioned from QA into product.",
       highlight: "See how to: turn side projects into case studies",
       link: "https://app.prodfolio.io/p/santi-brace-2",
-      stage: "ProdOps Lead/PM",
+      stage: "B2B SaaS",
       photo: santiPhoto
     },
     {
@@ -53,16 +53,16 @@ const Examples = () => {
       description: "See a custom, well-organized portfolio. Designed to stand out",
       highlight: "See how to: quantify impact with clear metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
-      stage: "Product Manager",
+      stage: "Insurance",
       photo: snehaPhoto
     },
     {
       name: "Olympia Bardis",
-      role: "Product Manager",
+      role: "Senior Product Manager",
       description: "A product leader showing a career narrative across multiple case studies.",
       highlight: "See how to: incorporate visuals into your case study",
       link: "https://app.prodfolio.io/p/olympia-bardis",
-      stage: "Senior PM",
+      stage: "Fintech",
       photo: olympiaPhoto
     }
   ];
