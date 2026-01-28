@@ -237,7 +237,7 @@ const About = () => {
             Ready to tell your story?
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Join the PMs who are finally showcasing their work with confidence.
+            Join the PMs who are showcasing their work with confidence.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
