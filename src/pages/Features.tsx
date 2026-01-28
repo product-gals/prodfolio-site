@@ -589,23 +589,20 @@ const Features = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 px-4">
+      {/* CTA Section - Gradient transition to footer */}
+      <section className="py-12 px-4 bg-gradient-to-b from-navy to-[#484689]">
         <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 text-center">
-            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Sparkles className="w-7 h-7 text-primary" />
-            </div>
-            <h2 className="text-2xl font-heading font-bold text-navy mb-2">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2">
               Ready to build your portfolio?
             </h2>
-            <p className="text-navy/70 mb-6 max-w-md mx-auto">
+            <p className="text-white/70 mb-6 max-w-md mx-auto">
               Join product managers who've discovered the portfolio advantage. Start free, no credit card required.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Button
                 asChild
-                className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 shadow-lg font-semibold rounded-xl transition-all hover:scale-105"
+                className="px-6 py-5 h-auto text-base bg-white text-primary hover:bg-white/90 shadow-lg font-semibold rounded-xl transition-all hover:scale-105"
               >
                 <a href="https://app.prodfolio.io/sign-up">
                   Start Your Portfolio Free
@@ -614,7 +611,7 @@ const Features = () => {
               <Button
                 asChild
                 variant="outline"
-                className="px-6 py-5 h-auto text-base border-primary/30 text-navy hover:bg-primary/5 font-semibold rounded-xl"
+                className="px-6 py-5 h-auto text-base border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
               >
                 <a href="/pricing">
                   View Pricing
