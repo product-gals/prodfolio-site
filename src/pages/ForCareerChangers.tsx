@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Briefcase, Lightbulb, Target, CheckCircle, ArrowRight } from "lucide-react";
+import { Briefcase, Lightbulb, Target, CheckCircle } from "lucide-react";
 
 const ForCareerChangers = () => {
   const heroAnimation = useScrollAnimation();
@@ -174,29 +174,23 @@ const ForCareerChangers = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
-            Turn your experience into opportunity
-          </h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            It counts more than you think. Let's turn it into a portfolio that gets you noticed.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="prodfolio-container max-w-[600px] mx-auto">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+              Turn your experience into opportunity
+            </h2>
+            <p className="text-white/70 mb-6 max-w-md mx-auto">
+              It counts more than you think. Start free, no PM experience required.
+            </p>
             <Button
               asChild
-              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105 inline-flex items-center gap-2"
+              className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
             >
-              <a href="https://app.prodfolio.io/sign-up">
-                Start Your Portfolio Free
-                <ArrowRight className="w-5 h-5" />
-              </a>
+              <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
             </Button>
           </div>
-          <p className="mt-6 text-sm text-white/70">
-            No PM experience required. Seriously.
-          </p>
         </div>
       </section>
 

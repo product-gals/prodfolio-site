@@ -1,4 +1,4 @@
-import { Mic, Handshake } from "lucide-react";
+import { Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -95,26 +95,23 @@ const Partnerships = () => {
       {/* Mission Section */}
       <section
         ref={missionAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${missionAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`py-12 px-4 ${missionAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="glass-card-solid p-8 text-center">
-            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Handshake className="w-7 h-7 text-primary" />
-            </div>
-            <h2 className="text-2xl font-heading font-bold mb-4 text-navy">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2">
               Our mission
             </h2>
-            <p className="text-navy/80 leading-relaxed mb-6">
+            <p className="text-white/70 leading-relaxed mb-6 max-w-md mx-auto">
               We believe every product professional deserves the tools and platform to showcase their impact.
               Through partnerships with educators, recruiters, and product-focused organizations, we're building
               an ecosystem that helps product people advance their careers.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild className="bg-white text-primary hover:bg-white/90 shadow-lg font-semibold rounded-xl px-6 py-5 h-auto">
+              <Button asChild className="px-6 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
                 <a href="/pricing">Start Building Your Portfolio</a>
               </Button>
-              <Button variant="outline" asChild className="border-primary/30 text-primary hover:bg-primary/5 font-semibold rounded-xl px-6 py-5 h-auto">
+              <Button variant="outline" asChild className="px-6 py-5 h-auto text-base border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl">
                 <a href="/podcast">Listen to the Podcast</a>
               </Button>
             </div>
