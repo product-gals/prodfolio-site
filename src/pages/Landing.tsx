@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Quote, TrendingUp, Repeat, Users, Sparkles } from "lucide-react";
+import { Quote, TrendingUp, Repeat, Users } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Footer from "@/components/Footer";
@@ -590,19 +590,16 @@ const Landing = () => {
       {/* Final CTA - Centered floating glass card */}
       <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 px-4 ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 text-center">
-            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Sparkles className="w-7 h-7 text-primary" />
-            </div>
-            <h2 className="text-2xl font-bold text-navy mb-2 leading-tight">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-bold text-white mb-2 leading-tight">
               Your resume lists what you did.
               <br />
               Your Prodfolio shows how you think.
             </h2>
-            <p className="text-navy/70 mb-6">
+            <p className="text-white/70 mb-6">
               Build your first portfolio free - no card needed.
             </p>
-            <Button asChild size="default" className="px-8 py-5 text-base bg-primary text-white font-semibold hover:bg-primary/90 hover:scale-105 transition-all shadow-xl rounded-xl">
+            <Button asChild size="default" className="px-8 py-5 text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
               <a href="https://app.prodfolio.io/sign-up">
                 Start Your Portfolio Free
               </a>

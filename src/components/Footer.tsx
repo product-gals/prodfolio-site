@@ -1,4 +1,3 @@
-import prodfolioIcon from "@/assets/prodfolio-icon.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -144,14 +143,9 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-white/80">
-          <div className="flex items-center mb-4 md:mb-0">
-            <img src={prodfolioIcon} alt="Prodfolio" className="h-8 w-8 mr-3" />
-            <span>© {new Date().getFullYear()} Prodfolio. All rights reserved.</span>
-          </div>
-          
+        <div className="border-t border-white/20 pt-6 flex flex-col md:flex-row md:justify-between items-center gap-4 text-sm text-white/80">
           {/* Social Links */}
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 order-2 md:order-1">
             <a 
               href="https://www.linkedin.com/company/prodfoliohq/"
               target="_blank" 
@@ -186,6 +180,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <span className="order-1 md:order-2">© {new Date().getFullYear()} Prodfolio. All rights reserved.</span>
         </div>
       </div>
     </footer>

@@ -10,9 +10,7 @@ import prodfolioIcon from "@/assets/prodfolio-icon.png";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isWhoItsForOpen, setIsWhoItsForOpen] = useState(false);
-  const resourcesRef = useRef<HTMLDivElement>(null);
   const whoItsForRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -24,12 +22,9 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close dropdowns when clicking outside
+  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (resourcesRef.current && !resourcesRef.current.contains(event.target as Node)) {
-        setIsResourcesOpen(false);
-      }
       if (whoItsForRef.current && !whoItsForRef.current.contains(event.target as Node)) {
         setIsWhoItsForOpen(false);
       }
@@ -70,12 +65,6 @@ const Navbar = () => {
               className="font-medium text-white hover:text-white/80 transition-colors"
             >
               Home
-            </Link>
-            <Link
-              to="/features"
-              className="font-medium text-white hover:text-white/80 transition-colors"
-            >
-              Features
             </Link>
 
             {/* Who it's for Dropdown */}
@@ -128,36 +117,6 @@ const Navbar = () => {
               Pricing
             </Link>
 
-            {/* Resources Dropdown */}
-            <div className="relative" ref={resourcesRef}>
-              <button
-                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
-                className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1"
-              >
-                Resources
-                <ChevronDown className={`w-4 h-4 transition-transform ${isResourcesOpen ? 'rotate-180' : ''}`} />
-              </button>
-
-              {isResourcesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-[#100D22]/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl py-2">
-                  <Link
-                    to="/podcast"
-                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                    onClick={() => setIsResourcesOpen(false)}
-                  >
-                    Podcast
-                  </Link>
-                  <Link
-                    to="/partners"
-                    className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                    onClick={() => setIsResourcesOpen(false)}
-                  >
-                    Partners
-                  </Link>
-                </div>
-              )}
-            </div>
-
             <div className="flex items-center space-x-2 ml-4">
               <Button 
                 asChild 
@@ -166,11 +125,11 @@ const Navbar = () => {
               >
                 <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
               </Button>
-              <Button 
-                asChild 
+              <Button
+                asChild
                 className="bg-white text-primary hover:bg-white/90 transition-all px-5 py-2.5 h-auto shadow-md shadow-white/10"
               >
-                <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your Prodfolio free</a>
+                <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Build your Prodfolio free</a>
               </Button>
             </div>
           </div>
@@ -205,13 +164,6 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </Link>
-            <Link
-              to="/features"
-              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Features
             </Link>
             <Link
               to="/examples"
@@ -253,30 +205,11 @@ const Navbar = () => {
                 Hiring Managers
               </Link>
             </div>
-
-            {/* Resources Section */}
-            <div className="pt-2 border-t border-white/10">
-              <p className="py-2 text-white/60 text-sm font-medium">Resources</p>
-              <Link
-                to="/podcast"
-                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Podcast
-              </Link>
-              <Link
-                to="/partners"
-                className="block py-2 pl-4 font-medium text-white hover:text-white/80 transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Partners
-              </Link>
-            </div>
             <Button asChild variant="ghost" className="w-full text-white hover:bg-white/10">
               <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
             </Button>
             <Button asChild className="w-full bg-white text-primary hover:bg-white/90 py-2.5 h-auto shadow-md shadow-white/10">
-              <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your Prodfolio free</a>
+              <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Build your Prodfolio free</a>
             </Button>
           </div>
         </div>
