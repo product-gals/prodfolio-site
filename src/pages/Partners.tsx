@@ -64,7 +64,7 @@ const Partners = () => {
   });
 
   return (
-    <div className="min-h-screen gradient-mesh-bg">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -73,7 +73,7 @@ const Partners = () => {
         className={`pt-24 pb-8 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-[900px] mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-white">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
             Prodfolio Partners
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
@@ -170,7 +170,7 @@ const Partners = () => {
                   <div className="mt-4 pt-4 border-t border-navy/10">
                     <div className="flex items-center gap-3">
                       <div className="bg-coral/10 border border-coral/20 rounded-lg px-4 py-2 flex-1">
-                        <p className="text-navy/60 text-xs font-medium mb-0.5">{partner.promoDescription}</p>
+                        <p className="text-navy/70 text-xs font-medium mb-0.5">{partner.promoDescription}</p>
                         <code className="text-coral font-mono text-sm font-bold tracking-wider">
                           {partner.promoCode}
                         </code>

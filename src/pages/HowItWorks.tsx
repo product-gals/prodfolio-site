@@ -42,13 +42,13 @@ const HowItWorks = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] via-[#D6CEFF] to-[#B8A3FF]">
+    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-16 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
@@ -85,7 +85,7 @@ const HowItWorks = () => {
 
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Step 1 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 flex flex-col md:flex-row gap-6 items-start">
+            <div className="glass-card-subtle p-8 flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center border-2 border-primary/30">
@@ -115,7 +115,7 @@ const HowItWorks = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 flex flex-col md:flex-row gap-6 items-start">
+            <div className="glass-card-subtle p-8 flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center border-2 border-primary/30">
@@ -131,14 +131,14 @@ const HowItWorks = () => {
                 <p className="text-navy/70 leading-relaxed mb-4">
                   Our guided framework walks you through each case study section. No more staring at a blank page wondering what to write.
                 </p>
-                <p className="text-sm text-navy/60 italic">
+                <p className="text-sm text-navy/70 italic">
                   Situation → Impact → Growth → Narrative → Artifacts → Learnings
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-white/40 flex flex-col md:flex-row gap-6 items-start">
+            <div className="glass-card-subtle p-8 flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center border-2 border-primary/30">
@@ -186,7 +186,7 @@ const HowItWorks = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+            <div className="glass-card p-6">
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <Target className="w-5 h-5 text-white" />
               </div>
@@ -196,7 +196,7 @@ const HowItWorks = () => {
               </p>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+            <div className="glass-card p-6">
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <Sparkles className="w-5 h-5 text-white" />
               </div>
@@ -206,7 +206,7 @@ const HowItWorks = () => {
               </p>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+            <div className="glass-card p-6">
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <FolderOpen className="w-5 h-5 text-white" />
               </div>
@@ -216,7 +216,7 @@ const HowItWorks = () => {
               </p>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+            <div className="glass-card p-6">
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <MessageSquare className="w-5 h-5 text-white" />
               </div>
@@ -226,7 +226,7 @@ const HowItWorks = () => {
               </p>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+            <div className="glass-card p-6">
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
@@ -236,7 +236,7 @@ const HowItWorks = () => {
               </p>
             </div>
 
-            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/30">
+            <div className="glass-card p-6">
               <div className="w-10 h-10 bg-coral rounded-lg flex items-center justify-center mb-4">
                 <GraduationCap className="w-5 h-5 text-white" />
               </div>

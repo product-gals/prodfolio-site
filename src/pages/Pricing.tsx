@@ -118,19 +118,19 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen gradient-mesh-bg">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-10 pb-4">
         <div className="prodfolio-container text-center">
-          <h1 className="text-6xl md:text-7xl font-display font-bold mb-4 text-navy">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
             Invest in your PM career
           </h1>
-          <p className="text-xl text-navy/80 mb-4">
+          <p className="text-xl text-white/80 mb-4">
             For less than the cost of a coffee per week, stand out in every application. Start free, no credit card required.
           </p>
-          <div className="flex items-center justify-center gap-2 text-sm text-navy/70">
+          <div className="flex items-center justify-center gap-2 text-sm text-white/70">
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <svg key={i} className="w-4 h-4 fill-coral" viewBox="0 0 20 20">
@@ -138,7 +138,7 @@ const Pricing = () => {
                 </svg>
               ))}
             </div>
-            <span className="font-medium text-navy">Join 100+ PMs showcasing their work</span>
+            <span className="font-medium text-white">Join 100+ PMs showcasing their work</span>
           </div>
         </div>
       </section>
@@ -159,7 +159,7 @@ const Pricing = () => {
               <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start md:items-center">
                 {/* Left Side - Info */}
                 <div className="flex-1">
-                  <h2 className="text-4xl md:text-5xl font-display font-bold mb-3 text-navy">
+                  <h2 className="text-4xl md:text-5xl font-heading font-bold mb-3 text-navy">
                     Founding Member
                   </h2>
 
@@ -168,7 +168,7 @@ const Pricing = () => {
                   </p>
 
                   <div className="flex items-baseline gap-3 mb-4">
-                    <span className="text-6xl font-display font-bold text-navy">$14.50/mo</span>
+                    <span className="text-6xl font-heading font-bold text-navy">$14.50/mo</span>
                     <span className="text-xl text-navy/70">(50% off!)</span>
                   </div>
 
@@ -182,7 +182,7 @@ const Pricing = () => {
                 {/* Right Side - Features */}
                 <div className="md:w-80 shrink-0">
                   <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-5 shadow-xl">
-                    <h3 className="font-bold text-lg mb-3 font-display text-navy">Everything in Pro, plus:</h3>
+                    <h3 className="font-bold text-lg mb-3 font-heading text-navy">Everything in Pro, plus:</h3>
                     <ul className="space-y-2.5">
                       <li className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -211,7 +211,7 @@ const Pricing = () => {
                     </ul>
 
                     <Button
-                      className="w-full mt-5 bg-primary hover:bg-primary/90 text-white font-display font-semibold text-base py-6 rounded-xl shadow-soft transition-all duration-200 hover:shadow-xl"
+                      className="w-full mt-5 bg-primary hover:bg-primary/90 text-white font-heading font-semibold text-base py-6 rounded-xl shadow-soft transition-all duration-200 hover:shadow-xl"
                       onClick={() => window.open('https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06', '_blank')}
                     >
                       Become a Founding Member
@@ -231,7 +231,7 @@ const Pricing = () => {
       >
         <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6">
           <div className="text-center mb-4">
-            <h2 className="text-3xl font-display font-bold mb-3 text-navy">Standard Plans</h2>
+            <h2 className="text-3xl font-heading font-bold mb-3 text-navy">Standard Plans</h2>
 
             {/* Billing Toggle */}
             <div className="inline-flex items-center gap-3 bg-white/95 backdrop-blur-md border border-primary/20 rounded-full p-1.5 shadow-xl mb-4">
@@ -290,7 +290,7 @@ const Pricing = () => {
                   
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between gap-2 mb-2 min-h-[32px]">
-                      <CardTitle className="text-xl font-display text-navy">{plan.name}</CardTitle>
+                      <CardTitle className="text-xl font-heading text-navy">{plan.name}</CardTitle>
                       {plan.tier === "free" && (
                         <span className="bg-coral/10 text-coral text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap">
                           No credit card required
@@ -298,13 +298,13 @@ const Pricing = () => {
                       )}
                     </div>
                     <div className="mt-3 mb-2">
-                      <div className="text-5xl font-display font-bold text-navy">{displayPrice}</div>
+                      <div className="text-5xl font-heading font-bold text-navy">{displayPrice}</div>
                       <div className="mt-2 min-h-[44px]">
                         {plan.tier !== "free" && (
                           <div className="text-sm text-navy/70">
                             per {billingCycle === "monthly" ? "month" : "month"}
                             {billingCycle === "annual" && (
-                              <div className="text-xs text-navy/60 mt-1">billed annually</div>
+                              <div className="text-xs text-navy/70 mt-1">billed annually</div>
                             )}
                           </div>
                         )}
@@ -358,7 +358,7 @@ const Pricing = () => {
               <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <h3 className="text-2xl font-display font-bold text-navy">30-Day Money-Back Guarantee</h3>
+              <h3 className="text-2xl font-heading font-bold text-navy">30-Day Money-Back Guarantee</h3>
             </div>
             <p className="text-lg text-navy/80 leading-relaxed">
               Try Prodfolio risk-free. If you're not satisfied within 30 days, we'll refund you, no questions asked.
@@ -370,36 +370,36 @@ const Pricing = () => {
       {/* FAQ Section */}
       <section className="pt-8 pb-10">
         <div className="prodfolio-container max-w-3xl">
-          <h2 className="text-4xl font-display font-bold text-center mb-6 text-navy">
+          <h2 className="text-4xl font-heading font-bold text-center mb-6 text-navy">
             Frequently asked questions
           </h2>
           <div className="space-y-4">
             <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-navy">Can I switch plans later?</h3>
+              <h3 className="text-lg font-heading font-bold mb-3 text-navy">Can I switch plans later?</h3>
               <p className="text-navy/80 leading-relaxed">
                 Yes! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.
               </p>
             </div>
             <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-navy">What payment methods do you accept?</h3>
+              <h3 className="text-lg font-heading font-bold mb-3 text-navy">What payment methods do you accept?</h3>
               <p className="text-navy/80 leading-relaxed">
                 We go through stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
               </p>
             </div>
             <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-navy">Can I try before I buy?</h3>
+              <h3 className="text-lg font-heading font-bold mb-3 text-navy">Can I try before I buy?</h3>
               <p className="text-navy/80 leading-relaxed">
                 Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features.
               </p>
             </div>
             <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-navy">Can I cancel anytime?</h3>
+              <h3 className="text-lg font-heading font-bold mb-3 text-navy">Can I cancel anytime?</h3>
               <p className="text-navy/80 leading-relaxed">
                 Absolutely. Cancel your subscription anytime from your account settings. We may reach out for feedback on how to improve :)
               </p>
             </div>
             <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-display font-bold mb-3 text-navy">What makes Prodfolio different from other portfolio tools?</h3>
+              <h3 className="text-lg font-heading font-bold mb-3 text-navy">What makes Prodfolio different from other portfolio tools?</h3>
               <p className="text-navy/80 leading-relaxed">
                 We're built by PMs, for PMs. Every feature is designed around how you actually work and what hiring managers actually want to see. Plus, you're joining a community of product people who get it.
               </p>
@@ -415,7 +415,7 @@ const Pricing = () => {
             <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Phone className="w-7 h-7 text-primary" />
             </div>
-            <h3 className="text-2xl font-display font-bold text-navy mb-2">Still have questions?</h3>
+            <h3 className="text-2xl font-heading font-bold text-navy mb-2">Still have questions?</h3>
             <p className="text-navy/70 mb-6">We're happy to walk you through Prodfolio and help you decide if it's the right fit.</p>
             <BookCallModal
               trigger={

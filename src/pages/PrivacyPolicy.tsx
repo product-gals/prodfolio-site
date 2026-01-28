@@ -27,10 +27,10 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen flex flex-col gradient-mesh-bg">
       <Navbar />
       
-      <main className="flex-1 py-20 px-4">
+      <main id="main-content" className="flex-1 py-20 px-4">
         <article className="prodfolio-container max-w-4xl mx-auto">
           <header className="mb-12 text-center">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text-navy">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-navy">
               Privacy Policy
             </h1>
             <p className="text-lg text-navy/80">

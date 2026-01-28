@@ -35,12 +35,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav 
+    <>
+    <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-navy focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:font-semibold">
+      Skip to content
+    </a>
+    <nav
       className={`sticky top-0 z-50 transition-all duration-500 bg-[#100D22]/80 backdrop-blur-md border-b border-white/20 ${
-        isScrolled 
-          ? "shadow-lg" 
+        isScrolled
+          ? "shadow-lg"
           : "shadow-sm"
       }`}
+      aria-label="Main navigation"
     >
       <div className="prodfolio-container">
         <div className="flex justify-between items-center py-4">
@@ -71,18 +76,22 @@ const Navbar = () => {
             <div className="relative" ref={whoItsForRef}>
               <button
                 onClick={() => setIsWhoItsForOpen(!isWhoItsForOpen)}
+                onKeyDown={(e) => { if (e.key === 'Escape') setIsWhoItsForOpen(false); }}
                 className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1"
+                aria-expanded={isWhoItsForOpen}
+                aria-haspopup="true"
               >
                 Who it's for
-                <ChevronDown className={`w-4 h-4 transition-transform ${isWhoItsForOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-4 h-4 transition-transform ${isWhoItsForOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
               </button>
 
               {isWhoItsForOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-[#100D22]/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl py-2">
+                <div className="absolute top-full left-0 mt-2 w-48 bg-[#100D22]/95 backdrop-blur-md border border-white/20 rounded-lg shadow-xl py-2" role="menu">
                   <Link
                     to="/features"
                     className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                     onClick={() => setIsWhoItsForOpen(false)}
+                    role="menuitem"
                   >
                     Product Managers
                   </Link>
@@ -90,6 +99,7 @@ const Navbar = () => {
                     to="/for-career-changers"
                     className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                     onClick={() => setIsWhoItsForOpen(false)}
+                    role="menuitem"
                   >
                     Career Changers
                   </Link>
@@ -97,6 +107,7 @@ const Navbar = () => {
                     to="/for-hiring-managers"
                     className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
                     onClick={() => setIsWhoItsForOpen(false)}
+                    role="menuitem"
                   >
                     Hiring Managers
                   </Link>
@@ -139,13 +150,15 @@ const Navbar = () => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white hover:text-white/80 transition-colors"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
               )}
@@ -215,6 +228,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
+    </>
   );
 };
 

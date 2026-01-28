@@ -351,6 +351,48 @@
     @apply border-t border-primary/20;
   }
 
+  /* Glass card tiers - consolidated design system */
+  .glass-card-subtle {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card-subtle:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(158, 133, 249, 0.15);
+  }
+
+  .glass-card-solid {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(158, 133, 249, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card-solid:hover {
+    box-shadow: 0 12px 40px rgba(158, 133, 249, 0.15);
+  }
+
+  /* Lighter gradient variant for secondary pages */
+  .gradient-mesh-bg-light {
+    background: linear-gradient(180deg,
+      hsl(254 91% 75%) 0%,
+      hsl(252 70% 72%) 25%,
+      hsl(250 80% 82%) 50%,
+      hsl(248 100% 90%) 75%,
+      hsl(248 31% 41%) 100%
+    );
+    min-height: 100vh;
+  }
+
   /* Scroll animations - Fast, purpose-driven (<300ms) */
   .animate-on-scroll {
     opacity: 0;
@@ -361,6 +403,15 @@
   .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Fallback: ensure content is visible if JS fails */
+  @media (scripting: none) {
+    .animate-on-scroll,
+    .stagger-children > * {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 
   /* Stagger children animations */

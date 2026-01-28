@@ -35,7 +35,7 @@ const ForHiringManagers = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9E85F9] via-[#C4B5FF] via-[#D6CEFF] to-[#B8A3FF]">
+    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -70,7 +70,7 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="bg-white rounded-2xl p-8 shadow-lg">
+            <article className="glass-card-solid p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Search className="w-7 h-7 text-primary" />
               </div>
@@ -80,7 +80,7 @@ const ForHiringManagers = () => {
               </p>
             </article>
 
-            <article className="bg-white rounded-2xl p-8 shadow-lg">
+            <article className="glass-card-solid p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
@@ -90,7 +90,7 @@ const ForHiringManagers = () => {
               </p>
             </article>
 
-            <article className="bg-white rounded-2xl p-8 shadow-lg">
+            <article className="glass-card-solid p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-7 h-7 text-primary" />
               </div>
@@ -103,7 +103,7 @@ const ForHiringManagers = () => {
 
           {/* Quote */}
           <div className="max-w-3xl mx-auto mt-12">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="glass-card-solid p-8">
               <Quote className="w-8 h-8 text-primary/50 mb-4" />
               <p className="text-lg text-navy/90 italic mb-4">
                 "A strong portfolio helps cut through the noise. A product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped."
@@ -130,7 +130,7 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+            <div className="glass-card-solid p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold text-navy mb-1">Process documentation</h3>
@@ -140,7 +140,7 @@ const ForHiringManagers = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+            <div className="glass-card-solid p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold text-navy mb-1">Strategic trade-offs</h3>
@@ -150,7 +150,7 @@ const ForHiringManagers = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+            <div className="glass-card-solid p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold text-navy mb-1">Quantified impact with context</h3>
@@ -160,7 +160,7 @@ const ForHiringManagers = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+            <div className="glass-card-solid p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold text-navy mb-1">Communication clarity</h3>
@@ -170,7 +170,7 @@ const ForHiringManagers = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl p-6 shadow-lg flex items-start gap-4">
+            <div className="glass-card-solid p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-bold text-navy mb-1">Honest reflection</h3>
