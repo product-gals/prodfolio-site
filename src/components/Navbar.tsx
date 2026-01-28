@@ -129,7 +129,7 @@ const Navbar = () => {
                 asChild
                 className="bg-white text-primary hover:bg-white/90 transition-all px-5 py-2.5 h-auto shadow-md shadow-white/10"
               >
-                <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your Prodfolio free</a>
+                <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Build your Prodfolio free</a>
               </Button>
             </div>
           </div>
@@ -209,7 +209,7 @@ const Navbar = () => {
               <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
             </Button>
             <Button asChild className="w-full bg-white text-primary hover:bg-white/90 py-2.5 h-auto shadow-md shadow-white/10">
-              <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your Prodfolio free</a>
+              <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Build your Prodfolio free</a>
             </Button>
           </div>
         </div>
