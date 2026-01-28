@@ -41,7 +41,7 @@ const Examples = () => {
     {
       name: "Santiana Brace",
       role: "Co-founder, Prodfolio",
-      description: "SIGNAL framework in action from a ProdOps Lead.",
+      description: "See the SIGNAL framework in action from a PM that transitioned from QA into product.",
       highlight: "See how to: turn side projects into case studies",
       link: "https://app.prodfolio.io/p/santi-brace-2",
       stage: "ProdOps Lead/PM",
