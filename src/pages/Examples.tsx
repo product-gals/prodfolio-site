@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ExternalLink, Star, Plus } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 
 import meaganPhoto from "@/assets/meagan-glenn.jpeg";
 import santiPhoto from "@/assets/santiana-diaz.png";
@@ -148,18 +148,15 @@ const Examples = () => {
 
           {/* "You here?" CTA Card - standalone row */}
           <div className="max-w-md mx-auto">
-            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:border-white/60 group">
-              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-colors">
-                <Plus className="w-7 h-7 text-white" />
-              </div>
-              <h3 className="text-xl font-heading font-bold text-white mb-2">
+            <article className="bg-white/95 backdrop-blur-md border border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white transition-all group">
+              <h3 className="text-lg font-heading font-bold text-navy mb-1">
                 You here?
               </h3>
-              <p className="text-white/70 text-sm mb-5 leading-relaxed">
+              <p className="text-navy/70 text-sm mb-3 leading-relaxed">
                 Want to be featured? We're building a gallery of PM portfolios across industries and career stages.
               </p>
-              <div className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 inline-flex items-center gap-2">
-                <span className="text-white font-medium text-sm">Click the chat icon to submit yours</span>
+              <div className="bg-primary text-white rounded-lg px-4 py-2 inline-flex items-center gap-2">
+                <span className="font-medium text-sm">Click the chat icon to submit yours</span>
                 <span className="text-lg">👉</span>
               </div>
             </article>
