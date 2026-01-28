@@ -143,11 +143,9 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 pt-6 flex flex-col items-center gap-4 text-sm text-white/80">
-          <span>© {new Date().getFullYear()} Prodfolio. All rights reserved.</span>
-
+        <div className="border-t border-white/20 pt-6 flex flex-col md:flex-row md:justify-between items-center gap-4 text-sm text-white/80">
           {/* Social Links */}
-          <div className="flex space-x-6">
+          <div className="flex space-x-6 order-2 md:order-1">
             <a 
               href="https://www.linkedin.com/company/prodfoliohq/"
               target="_blank" 
@@ -182,6 +180,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <span className="order-1 md:order-2">© {new Date().getFullYear()} Prodfolio. All rights reserved.</span>
         </div>
       </div>
     </footer>
