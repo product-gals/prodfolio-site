@@ -590,8 +590,8 @@ const Features = () => {
         </div>
       </section>
 
-      {/* CTA Section - Gradient transition to footer */}
-      <section className="py-12 px-4 bg-gradient-to-b from-navy to-[#484689]">
+      {/* CTA Section */}
+      <section className="py-12 px-4">
         <div className="prodfolio-container max-w-[600px] mx-auto">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
             <h2 className="text-2xl font-heading font-bold text-white mb-2">
@@ -603,7 +603,7 @@ const Features = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Button
                 asChild
-                className="px-6 py-5 h-auto text-base bg-white text-primary hover:bg-white/90 shadow-lg font-semibold rounded-xl transition-all hover:scale-105"
+                className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
               >
                 <a href="https://app.prodfolio.io/sign-up">
                   Start Your Portfolio Free

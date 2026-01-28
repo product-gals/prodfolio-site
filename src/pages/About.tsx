@@ -3,7 +3,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Coffee, Mic, Lightbulb, Users, Phone } from "lucide-react";
+import { Coffee, Mic, Lightbulb, Users } from "lucide-react";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
 
@@ -153,10 +153,10 @@ const About = () => {
       {/* Meet the Founders */}
       <section
         ref={foundersAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-10 px-4 ${foundersAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[900px] mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3 text-white">
               Meet the PMs behind Prodfolio
             </h2>
@@ -167,7 +167,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Meagan */}
-            <div className="glass-card p-6 text-center">
+            <div className="glass-card p-5 text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={meaganPhoto}
@@ -177,7 +177,7 @@ const About = () => {
                 />
               </div>
               <h3 className="text-xl font-heading font-bold text-white">Meagan Glenn</h3>
-              <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
@@ -187,7 +187,7 @@ const About = () => {
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl">
+                <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold rounded-xl">
                   <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
@@ -196,7 +196,7 @@ const About = () => {
             </div>
 
             {/* Santiana */}
-            <div className="glass-card p-6 text-center">
+            <div className="glass-card p-5 text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={santianaPhoto}
@@ -206,7 +206,7 @@ const About = () => {
                 />
               </div>
               <h3 className="text-xl font-heading font-bold text-white">Santiana Brace</h3>
-              <p className="text-coral font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white font-semibold text-sm mb-3">Co-founder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Expert at cutting through complexity to find the simplest path forward.
               </p>
@@ -216,7 +216,7 @@ const About = () => {
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="border-white/40 text-white hover:bg-white/10 font-semibold rounded-xl">
+                <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/20 font-semibold rounded-xl">
                   <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
@@ -230,33 +230,23 @@ const About = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container text-center max-w-[900px] mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
-            Ready to tell your story?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Join the PMs who are finally showcasing their work with confidence.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="prodfolio-container max-w-[600px] mx-auto">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2">
+              Ready to tell your story?
+            </h2>
+            <p className="text-white/70 mb-6 max-w-md mx-auto">
+              Join the PMs who are showcasing their work with confidence. Start free, no credit card required.
+            </p>
             <Button
               asChild
-              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
+              className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
             >
               <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
             </Button>
-            <Button
-              asChild
-              className="px-8 py-6 h-auto text-lg bg-coral text-white hover:bg-coral/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
-            >
-              <a href="https://cal.com/meag.glenn/15min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Book a 15 min call
-              </a>
-            </Button>
           </div>
-          <p className="mt-6 text-sm text-white/70">No credit card required. Get started in minutes.</p>
         </div>
       </section>
 

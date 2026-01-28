@@ -50,7 +50,7 @@ const Examples = () => {
     {
       name: "Sneha Shah",
       role: "Product Manager",
-      description: "See a custom, well-organized portfolio. Designed to stand out",
+      description: "See a customized, well-organized portfolio. Designed to stand out.",
       highlight: "See how to: quantify impact with clear metrics",
       link: "https://app.prodfolio.io/p/sneha-shah",
       stage: "Insurance",
@@ -60,7 +60,7 @@ const Examples = () => {
       name: "Olympia Bardis",
       role: "Senior Product Manager",
       description: "A product leader showing a career narrative across multiple case studies.",
-      highlight: "See how to: incorporate visuals into your case study",
+      highlight: "See how to: incorporate visuals into your case studies",
       link: "https://app.prodfolio.io/p/olympia-bardis",
       stage: "Fintech",
       photo: olympiaPhoto
@@ -158,14 +158,10 @@ const Examples = () => {
               <p className="text-white/70 text-sm mb-5 leading-relaxed">
                 Want to be featured? We're building a gallery of PM portfolios across industries and career stages.
               </p>
-              <Button
-                asChild
-                className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl inline-flex items-center justify-center gap-2"
-              >
-                <a href="mailto:hello@prodfolio.io?subject=Feature my portfolio">
-                  Submit Your Portfolio
-                </a>
-              </Button>
+              <div className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 inline-flex items-center gap-2">
+                <span className="text-white font-medium text-sm">Click the chat icon to submit yours</span>
+                <span className="text-lg">👉</span>
+              </div>
             </article>
           </div>
         </div>
@@ -207,19 +203,16 @@ const Examples = () => {
         className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 text-center">
-            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Star className="w-7 h-7 text-primary" />
-            </div>
-            <h2 className="text-2xl font-heading font-bold mb-2 text-navy">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2">
               Ready to build yours?
             </h2>
-            <p className="text-navy/70 mb-6 max-w-md mx-auto">
+            <p className="text-white/70 mb-6 max-w-md mx-auto">
               Join the PMs showcasing their work with confidence. Start free, no design skills needed.
             </p>
             <Button
               asChild
-              className="px-8 py-6 h-auto text-lg bg-primary text-white hover:bg-primary/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
+              className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
             >
               <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
             </Button>

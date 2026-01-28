@@ -143,7 +143,7 @@ const PrivacyPolicy = () => {
                 Because Simple Analytics respects your privacy by design, no cookie consent banner is required for analytics.
               </p>
               <p className="text-navy/90">
-                Learn more at <a href="https://simpleanalytics.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#FF8B7B] hover:underline">simpleanalytics.com/privacy-policy</a>
+                Learn more at <a href="https://simpleanalytics.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#FF8B7B] hover:underline font-bold">simpleanalytics.com/privacy-policy</a>
               </p>
             </section>
 

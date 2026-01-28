@@ -186,14 +186,14 @@ const ForHiringManagers = () => {
       {/* Encourage Candidates CTA */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-gradient-to-b from-[#9E85F9] to-[#7B68EE] ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
+        <div className="prodfolio-container max-w-[600px] mx-auto">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-2">
               Encourage your candidates to use Prodfolio
             </h2>
-            <p className="text-lg text-white/80 mb-8">
+            <p className="text-white/70 mb-6">
               Add this to your job postings or candidate communications. Candidates can create and publish a full portfolio for free.
             </p>
 
@@ -226,10 +226,10 @@ const ForHiringManagers = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Button
                 asChild
-                className="px-8 py-6 h-auto text-lg bg-primary text-white hover:bg-primary/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
+                className="px-6 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
               >
                 <a href="mailto:partnerships@prodfolio.io?subject=Partnership inquiry">
                   Partner with us
@@ -237,7 +237,8 @@ const ForHiringManagers = () => {
               </Button>
               <Button
                 asChild
-                className="px-8 py-6 h-auto text-lg bg-coral text-white hover:bg-coral/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
+                variant="outline"
+                className="px-6 py-5 h-auto text-base border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
               >
                 <a href="/examples">
                   See example portfolios
