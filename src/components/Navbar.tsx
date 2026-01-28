@@ -66,12 +66,6 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              to="/"
-              className="font-medium text-white hover:text-white/80 transition-colors"
-            >
-              Home
-            </Link>
-            <Link
               to="/features"
               className="font-medium text-white hover:text-white/80 transition-colors"
             >
@@ -119,7 +113,7 @@ const Navbar = () => {
               to="/examples"
               className="font-medium text-white hover:text-white/80 transition-colors"
             >
-              Portfolio Examples
+              Examples
             </Link>
             <Link
               to="/pricing"
@@ -166,11 +160,11 @@ const Navbar = () => {
               >
                 <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
               </Button>
-              <Button 
-                asChild 
+              <Button
+                asChild
                 className="bg-white text-primary hover:bg-white/90 transition-all px-5 py-2.5 h-auto shadow-md shadow-white/10"
               >
-                <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your Prodfolio free</a>
+                <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Get Started</a>
               </Button>
             </div>
           </div>
@@ -200,13 +194,6 @@ const Navbar = () => {
         <div className="md:hidden border-t border-white/20 py-3 bg-white/10 backdrop-blur-md">
           <div className="prodfolio-container space-y-2">
             <Link
-              to="/"
-              className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
               to="/features"
               className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
@@ -218,7 +205,7 @@ const Navbar = () => {
               className="block py-2 font-medium text-white hover:text-white/80 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Portfolio Examples
+              Examples
             </Link>
             <Link
               to="/pricing"
@@ -276,7 +263,7 @@ const Navbar = () => {
               <a href="https://app.prodfolio.io/login" target="_blank" rel="noopener noreferrer">Log In</a>
             </Button>
             <Button asChild className="w-full bg-white text-primary hover:bg-white/90 py-2.5 h-auto shadow-md shadow-white/10">
-              <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Start your Prodfolio free</a>
+              <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">Get Started</a>
             </Button>
           </div>
         </div>
