@@ -251,14 +251,15 @@
     box-shadow: 0 12px 40px rgba(158, 133, 249, 0.2);
   }
 
-  /* Continuous gradient background - Purple → Blue → Purple variations */
+  /* Continuous gradient background - Purple → Navy → Purple (footer) */
   .gradient-mesh-bg {
-    background: linear-gradient(180deg, 
+    background: linear-gradient(180deg,
       hsl(254 91% 75%) 0%,
-      hsl(248 31% 41%) 25%,
-      hsl(254 91% 75%) 50%,
-      hsl(248 100% 90%) 75%,
-      hsl(254 91% 75%) 100%
+      hsl(248 31% 41%) 20%,
+      hsl(254 91% 75%) 45%,
+      hsl(248 100% 90%) 60%,
+      hsl(240 50% 20%) 85%,
+      hsl(242 32% 41%) 100%
     );
     min-height: 100vh;
   }
