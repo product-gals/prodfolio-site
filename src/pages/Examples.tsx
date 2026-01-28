@@ -32,7 +32,7 @@ const Examples = () => {
     {
       name: "Meagan Glenn",
       role: "Co-founder, Prodfolio",
-      description: "B2B and B2C case studies from a Fractional Head of Product.",
+      description: "See a mix of B2B and B2C case studies.",
       highlight: "See how to: structure a 7-year career narrative",
       link: "https://meaganglenn.me",
       stage: "Fractional HoP",
@@ -59,8 +59,8 @@ const Examples = () => {
     {
       name: "Olympia Bardis",
       role: "Product Manager",
-      description: "User-focused case studies with strong outcomes.",
-      highlight: "See how to: demonstrate deep user empathy",
+      description: "A product leader showing a career narrative across multiple case studies.",
+      highlight: "See how to: incorporate visuals into your case study",
       link: "https://app.prodfolio.io/p/olympia-bardis",
       stage: "Senior PM",
       photo: olympiaPhoto
