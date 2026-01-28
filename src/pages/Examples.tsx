@@ -60,7 +60,7 @@ const Examples = () => {
       name: "Olympia Bardis",
       role: "Senior Product Manager",
       description: "A product leader showing a career narrative across multiple case studies.",
-      highlight: "See how to: incorporate visuals into your case study",
+      highlight: "See how to: incorporate visuals into your case studies.",
       link: "https://app.prodfolio.io/p/olympia-bardis",
       stage: "Fintech",
       photo: olympiaPhoto
