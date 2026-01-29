@@ -57,14 +57,14 @@ const ForHiringManagers = () => {
       {/* Why Portfolios Change Hiring */}
       <section
         ref={benefitsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${benefitsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-16 px-4 ${benefitsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Why portfolios change PM hiring
             </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               The best signal for PM capability isn't interview performance—it's seeing how they actually work.
             </p>
           </div>

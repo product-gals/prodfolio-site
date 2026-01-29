@@ -38,7 +38,7 @@ const ForCareerChangers = () => {
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
             You think like a PM.
             <br />
-            <span className="text-navy">Now prove it.</span>
+            <span className="text-white/90">Now prove it.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             Transitioning into product management? Your portfolio shows hiring managers what your resume can't: that you already have the mindset.
@@ -64,20 +64,20 @@ const ForCareerChangers = () => {
       {/* Why You Don't Need a PM Title */}
       <section
         ref={whyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${whyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-16 px-4 ${whyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               You don't need a PM title to build a PM portfolio
             </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Hiring managers care about how you think, not what your business card says.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="glass-card-subtle p-8">
+            <article className="glass-card-solid p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Briefcase className="w-7 h-7 text-primary" />
               </div>
@@ -87,7 +87,7 @@ const ForCareerChangers = () => {
               </p>
             </article>
 
-            <article className="glass-card-subtle p-8">
+            <article className="glass-card-solid p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Lightbulb className="w-7 h-7 text-primary" />
               </div>
@@ -97,7 +97,7 @@ const ForCareerChangers = () => {
               </p>
             </article>
 
-            <article className="glass-card-subtle p-8">
+            <article className="glass-card-solid p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-primary" />
               </div>

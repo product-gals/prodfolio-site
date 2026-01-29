@@ -148,18 +148,18 @@ const Examples = () => {
 
           {/* "You here?" CTA Card - standalone row */}
           <div className="max-w-md mx-auto">
-            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl p-6 text-center hover:bg-white/15 transition-all hover:border-white/60 group">
-              <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/30 transition-colors">
-                <Plus className="w-7 h-7 text-white" />
+            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white/15 transition-all hover:border-white/60 group">
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/30 transition-colors">
+                <Plus className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-white mb-2">
+              <h3 className="text-lg font-heading font-bold text-white mb-1">
                 You here?
               </h3>
-              <p className="text-white/70 text-sm mb-5 leading-relaxed">
+              <p className="text-white/80 text-sm mb-3 leading-relaxed">
                 Want to be featured? We're building a gallery of PM portfolios across industries and career stages.
               </p>
-              <div className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 inline-flex items-center gap-2">
-                <span className="text-white font-medium text-sm">Click the chat icon to submit yours</span>
+              <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2 inline-flex items-center gap-2">
+                <span className="text-white font-semibold text-sm">Click the chat icon to submit yours</span>
                 <span className="text-lg">👉</span>
               </div>
             </article>
@@ -168,7 +168,7 @@ const Examples = () => {
       </section>
 
       {/* What Makes a Great Portfolio */}
-      <section className="py-12 px-4">
+      <section className="pt-12 pb-6 px-4">
         <div className="prodfolio-container max-w-[1000px] mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
@@ -200,7 +200,7 @@ const Examples = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-12 px-4 ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[600px] mx-auto">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl p-8 text-center">
