@@ -52,18 +52,18 @@ const Navbar = () => {
           }`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center py-2.5">
+            <div className="flex justify-between items-center py-1.5">
               <div className="flex items-center">
                 <Link to="/" className="flex items-center">
                   <img
                     src={prodfolioLogoProd}
                     alt="Prodfolio - Show Your Work. Own Your Impact."
-                    className="h-10 md:h-12 hidden md:block drop-shadow-[0_0_20px_rgba(158,133,249,0.4)] transition-all hover:drop-shadow-[0_0_25px_rgba(158,133,249,0.6)]"
+                    className="h-12 md:h-16 hidden md:block drop-shadow-[0_0_20px_rgba(158,133,249,0.4)] transition-all hover:drop-shadow-[0_0_25px_rgba(158,133,249,0.6)]"
                   />
                   <img
                     src={prodfolioIcon}
                     alt="Prodfolio"
-                    className="h-10 md:hidden drop-shadow-[0_0_20px_rgba(158,133,249,0.4)]"
+                    className="h-12 md:hidden drop-shadow-[0_0_20px_rgba(158,133,249,0.4)]"
                   />
                 </Link>
               </div>

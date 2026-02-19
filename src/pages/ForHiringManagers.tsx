@@ -35,7 +35,7 @@ const ForHiringManagers = () => {
   };
 
   return (
-    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -70,32 +70,32 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="glass-card-solid p-8">
+            <article className="glass-card p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Search className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-navy mb-3">See authentic thinking</h3>
-              <p className="text-navy/70 leading-relaxed">
+              <h3 className="text-xl font-heading font-bold text-white mb-3">See authentic thinking</h3>
+              <p className="text-white/70 leading-relaxed">
                 Portfolios reveal how candidates identify problems, design solutions, and navigate trade-offs: the real work of product management.
               </p>
             </article>
 
-            <article className="glass-card-solid p-8">
+            <article className="glass-card p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Clock className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-navy mb-3">Reduce interview guesswork</h3>
-              <p className="text-navy/70 leading-relaxed">
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Reduce interview guesswork</h3>
+              <p className="text-white/70 leading-relaxed">
                 Come to interviews with context. Ask deeper questions. Spend less time on basics and more on fit and collaboration style.
               </p>
             </article>
 
-            <article className="glass-card-solid p-8">
+            <article className="glass-card p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-navy mb-3">Compare candidates fairly</h3>
-              <p className="text-navy/70 leading-relaxed">
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Compare candidates fairly</h3>
+              <p className="text-white/70 leading-relaxed">
                 Structured portfolios make it easier to compare candidates on substance, not just interview polish or presentation skills.
               </p>
             </article>
@@ -103,12 +103,12 @@ const ForHiringManagers = () => {
 
           {/* Quote */}
           <div className="max-w-3xl mx-auto mt-12">
-            <div className="glass-card-solid p-8">
+            <div className="glass-card p-8">
               <Quote className="w-8 h-8 text-primary/50 mb-4" />
-              <p className="text-lg text-navy/90 italic mb-4">
+              <p className="text-lg text-white/90 italic mb-4">
                 "A strong portfolio helps cut through the noise. A product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped."
               </p>
-              <p className="text-navy/70 font-medium">Heidi R., Product Recruiter</p>
+              <p className="text-white/70 font-medium">Heidi R., Product Recruiter</p>
             </div>
           </div>
         </div>
@@ -130,51 +130,51 @@ const ForHiringManagers = () => {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-4">
-            <div className="glass-card-solid p-6 flex items-start gap-4">
+            <div className="glass-card p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-navy mb-1">Process documentation</h3>
-                <p className="text-navy/70 text-sm">
+                <h3 className="text-lg font-bold text-white mb-1">Process documentation</h3>
+                <p className="text-white/70 text-sm">
                   How did they approach the problem? What methods did they use for discovery, validation, and prioritization?
                 </p>
               </div>
             </div>
 
-            <div className="glass-card-solid p-6 flex items-start gap-4">
+            <div className="glass-card p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-navy mb-1">Strategic trade-offs</h3>
-                <p className="text-navy/70 text-sm">
+                <h3 className="text-lg font-bold text-white mb-1">Strategic trade-offs</h3>
+                <p className="text-white/70 text-sm">
                   What alternatives did they consider? How did they make decisions under uncertainty and constraints?
                 </p>
               </div>
             </div>
 
-            <div className="glass-card-solid p-6 flex items-start gap-4">
+            <div className="glass-card p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-navy mb-1">Quantified impact with context</h3>
-                <p className="text-navy/70 text-sm">
+                <h3 className="text-lg font-bold text-white mb-1">Quantified impact with context</h3>
+                <p className="text-white/70 text-sm">
                   Not just metrics, but what they mean. Before/after comparisons, timeframes, and why these outcomes mattered.
                 </p>
               </div>
             </div>
 
-            <div className="glass-card-solid p-6 flex items-start gap-4">
+            <div className="glass-card p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-navy mb-1">Communication clarity</h3>
-                <p className="text-navy/70 text-sm">
+                <h3 className="text-lg font-bold text-white mb-1">Communication clarity</h3>
+                <p className="text-white/70 text-sm">
                   Can they explain complex topics clearly? Do they tailor their communication for different audiences?
                 </p>
               </div>
             </div>
 
-            <div className="glass-card-solid p-6 flex items-start gap-4">
+            <div className="glass-card p-6 flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-navy mb-1">Honest reflection</h3>
-                <p className="text-navy/70 text-sm">
+                <h3 className="text-lg font-bold text-white mb-1">Honest reflection</h3>
+                <p className="text-white/70 text-sm">
                   Do they acknowledge what didn't work? What would they do differently? Learning from failure shows maturity.
                 </p>
               </div>

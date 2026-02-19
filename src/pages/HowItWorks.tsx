@@ -42,7 +42,7 @@ const HowItWorks = () => {
   });
 
   return (
-    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -54,7 +54,7 @@ const HowItWorks = () => {
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
             From blank page to portfolio
             <br />
-            <span className="text-navy">in under an hour</span>
+            <span className="gradient-text">in under an hour</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
             No design skills needed. No weeks of tweaking. Just your experience and our guided framework.
@@ -75,17 +75,17 @@ const HowItWorks = () => {
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Three steps to stand out
             </h2>
-            <p className="text-lg text-navy/80 max-w-2xl mx-auto">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
               We've done the hard work of figuring out what makes a PM portfolio great. You just fill in your story.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Step 1 */}
-            <div className="glass-card-subtle p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div className="glass-card p-8 flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center border-2 border-primary/30">
@@ -97,11 +97,11 @@ const HowItWorks = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-heading font-bold text-navy mb-3">Import your experience</h3>
-                <p className="text-navy/70 leading-relaxed mb-4">
+                <h3 className="text-2xl font-heading font-bold text-white mb-3">Import your experience</h3>
+                <p className="text-white/70 leading-relaxed mb-4">
                   Upload your resume or connect your LinkedIn profile. Our AI extracts your roles, companies, and achievements—giving you a foundation to build on.
                 </p>
-                <ul className="space-y-2 text-sm text-navy/70">
+                <ul className="space-y-2 text-sm text-white/70">
                   <li className="flex items-center gap-2">
                     <FileText className="w-4 h-4 text-primary" />
                     PDF, DOCX, or LinkedIn import
@@ -115,7 +115,7 @@ const HowItWorks = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="glass-card-subtle p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div className="glass-card p-8 flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center border-2 border-primary/30">
@@ -127,18 +127,18 @@ const HowItWorks = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-heading font-bold text-navy mb-3">Build with SIGNAL</h3>
-                <p className="text-navy/70 leading-relaxed mb-4">
+                <h3 className="text-2xl font-heading font-bold text-white mb-3">Build with SIGNAL</h3>
+                <p className="text-white/70 leading-relaxed mb-4">
                   Our guided framework walks you through each case study section. No more staring at a blank page wondering what to write.
                 </p>
-                <p className="text-sm text-navy/70 italic">
+                <p className="text-sm text-white/70 italic">
                   Situation → Impact → Growth → Narrative → Artifacts → Learnings
                 </p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="glass-card-subtle p-8 flex flex-col md:flex-row gap-6 items-start">
+            <div className="glass-card p-8 flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="relative">
                   <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center border-2 border-primary/30">
@@ -150,11 +150,11 @@ const HowItWorks = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-heading font-bold text-navy mb-3">Share and stand out</h3>
-                <p className="text-navy/70 leading-relaxed mb-4">
+                <h3 className="text-2xl font-heading font-bold text-white mb-3">Share and stand out</h3>
+                <p className="text-white/70 leading-relaxed mb-4">
                   Get your personalized portfolio link. Add it to your LinkedIn, include it in applications, share it with hiring managers.
                 </p>
-                <ul className="space-y-2 text-sm text-navy/70">
+                <ul className="space-y-2 text-sm text-white/70">
                   <li className="flex items-center gap-2">
                     <Share2 className="w-4 h-4 text-primary" />
                     Shareable link: prodfolio.io/p/yourname
