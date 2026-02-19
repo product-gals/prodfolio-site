@@ -71,7 +71,7 @@ const Navbar = () => {
               <div className="hidden md:flex items-center space-x-6">
                 <Link
                   to="/"
-                  className="font-medium text-white hover:text-white/80 transition-colors"
+                  className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                 >
                   Home
                 </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
                   <button
                     onClick={() => setIsWhoItsForOpen(!isWhoItsForOpen)}
                     onKeyDown={(e) => { if (e.key === 'Escape') setIsWhoItsForOpen(false); }}
-                    className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1"
+                    className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                     aria-expanded={isWhoItsForOpen}
                     aria-haspopup="true"
                   >
@@ -121,13 +121,13 @@ const Navbar = () => {
 
                 <Link
                   to="/examples"
-                  className="font-medium text-white hover:text-white/80 transition-colors"
+                  className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                 >
                   Portfolio Examples
                 </Link>
                 <Link
                   to="/pricing"
-                  className="font-medium text-white hover:text-white/80 transition-colors"
+                  className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                 >
                   Pricing
                 </Link>
