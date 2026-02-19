@@ -49,6 +49,7 @@ const Features = () => {
         className={`pt-28 pb-20 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
+          <p className="text-lg text-white/80 mb-4 font-medium">For Product Managers</p>
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
             Everything you need to
             <br />
