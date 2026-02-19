@@ -47,8 +47,8 @@ const Navbar = () => {
         <div
           className={`rounded-2xl transition-all duration-500 border ${
             isScrolled
-              ? "bg-white/10 backdrop-blur-xl border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_0_1px_rgba(158,133,249,0.15)]"
-              : "bg-white/5 backdrop-blur-lg border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
+              ? "bg-[#100D22]/80 backdrop-blur-xl border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_0_1px_rgba(158,133,249,0.15)]"
+              : "bg-[#100D22]/60 backdrop-blur-lg border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
           }`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
