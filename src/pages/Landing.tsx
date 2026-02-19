@@ -91,12 +91,12 @@ const Landing = () => {
     }
   });
   return <main id="main-content" className="gradient-mesh-bg overflow-hidden">
-      {/* Hero Section - Reduced padding, larger text */}
+      {/* Hero Section */}
       <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-28 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px] relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-lg md:text-xl text-white/80 mb-4 font-medium tracking-wide uppercase">
-              The portfolio platform built for product managers
+            <p className="text-base md:text-lg text-white/70 mb-5 font-medium tracking-wide">
+              Resumes show your titles — not how you think
             </p>
             <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[1.1] tracking-tight mb-6 text-white">
               Show your work.
@@ -104,24 +104,27 @@ const Landing = () => {
               <span className="gradient-text">Own your impact.</span>
             </h1>
 
-            <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Build a portfolio that proves how you think - in hours, not weeks. Join the PMs who stand out.
+            <p className="text-lg md:text-xl mb-4 text-white/90 leading-relaxed max-w-2xl mx-auto">
+              Build a portfolio that proves how you think — not just what you shipped.
             </p>
-            
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-6" aria-label="Primary call to action">
+            <p className="text-base text-white/60 mb-8 max-w-xl mx-auto">
+              Go from blank page to shareable link in under an hour. No design skills needed.
+            </p>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary call to action">
               <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold">
                 <a href="https://app.prodfolio.io/sign-up">
                   Start Your Portfolio Free
                 </a>
               </Button>
             </div>
-            
-            
+            <p className="text-sm text-white/50">Join 500+ product managers building their portfolios</p>
+
           </header>
 
-          {/* Product Screenshot Mockup - 1.3x larger with float animation */}
-          <div className="max-w-[1100px] mx-auto float-animation">
-            <div className="glass-card relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-500">
+          {/* Product Screenshot Mockup */}
+          <div className="max-w-[1100px] mx-auto">
+            <div className="glass-card relative overflow-hidden hover-lift">
               {/* Browser Chrome */}
               <div className="bg-white/10 border-b border-white/20 px-4 py-3 flex items-center gap-2">
                 <div className="flex gap-2">
@@ -322,10 +325,10 @@ const Landing = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2 lg:order-1">
               <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">01 — IMPORT</div>
-              <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Import your experience in seconds
               </h3>
-              <p className="text-navy/70 text-lg mb-6 leading-relaxed">
+              <p className="text-white/70 text-lg mb-6 leading-relaxed">
                 Upload your resume. Our AI extracts information and experience, building the foundation for your portfolio.
               </p>
               <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
@@ -336,43 +339,43 @@ const Landing = () => {
             </div>
             <div className="order-1 lg:order-2">
               {/* Import UI Mockup */}
-              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto transform hover:scale-[1.02] transition-transform duration-300">
-                <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-100">
-                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto hover-lift">
+                <div className="flex items-center gap-3 mb-4 pb-4 border-b border-white/15">
+                  <div className="w-10 h-10 bg-white/15 rounded-full flex items-center justify-center">
+                    <svg className="w-5 h-5 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                   </div>
                   <div className="flex-1">
-                    <div className="font-semibold text-gray-900 text-sm">Resume Upload</div>
-                    <div className="text-xs text-gray-500">resume_sarah_chen.pdf</div>
+                    <div className="font-semibold text-white text-sm">Resume Upload</div>
+                    <div className="text-xs text-white/60">resume_sarah_chen.pdf</div>
                   </div>
-                  <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                    <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                  <div className="w-5 h-5 bg-green-400/20 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                    <div className="w-5 h-5 bg-green-400/20 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                     </div>
-                    <span className="text-sm text-gray-700">Basics filled in</span>
+                    <span className="text-sm text-white/80">Basics filled in</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                    <div className="w-5 h-5 bg-green-400/20 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                     </div>
-                    <span className="text-sm text-gray-700">About section created</span>
+                    <span className="text-sm text-white/80">About section created</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
-                      <svg className="w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                    <div className="w-5 h-5 bg-green-400/20 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                     </div>
-                    <span className="text-sm text-gray-700">Professional summary written</span>
+                    <span className="text-sm text-white/80">Professional summary written</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 bg-primary/20 rounded-full flex items-center justify-center">
-                      <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                    <div className="w-5 h-5 bg-white/15 rounded-full flex items-center justify-center">
+                      <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                     </div>
-                    <span className="text-sm text-gray-500">Adding experience...</span>
+                    <span className="text-sm text-white/60">Adding experience...</span>
                   </div>
                 </div>
               </div>
@@ -383,10 +386,10 @@ const Landing = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
             <div className="order-2">
               <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">02 — BUILD</div>
-              <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Structure your story with SIGNAL
               </h3>
-              <p className="text-navy/70 text-lg mb-6 leading-relaxed">
+              <p className="text-white/70 text-lg mb-6 leading-relaxed">
                 Our guided framework walks you through each case study. No more staring at a blank page.
               </p>
               <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
@@ -397,13 +400,13 @@ const Landing = () => {
             </div>
             <div className="order-1">
               {/* SIGNAL Framework UI Mockup */}
-              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:mr-auto transform hover:scale-[1.02] transition-transform duration-300">
-                <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:mr-auto hover-lift">
+                <div className="flex items-center justify-between mb-4 pb-4 border-b border-white/15">
                   <div>
-                    <div className="font-semibold text-gray-900">SIGNAL Framework</div>
-                    <div className="text-xs text-gray-500">Case Study Builder</div>
+                    <div className="font-semibold text-white">SIGNAL Framework</div>
+                    <div className="text-xs text-white/60">Case Study Builder</div>
                   </div>
-                  <div className="text-xs font-medium text-green-600 bg-green-50 px-2 py-1 rounded-full">4/6 Complete</div>
+                  <div className="text-xs font-medium text-green-400 bg-green-400/15 px-2 py-1 rounded-full">4/6 Complete</div>
                 </div>
                 <div className="space-y-2">
                   {[
@@ -414,19 +417,19 @@ const Landing = () => {
                     { letter: 'A', label: 'Achievement', status: 'pending', desc: 'Measurable outcomes' },
                     { letter: 'L', label: 'Learnings', status: 'pending', desc: 'Key takeaways' },
                   ].map((item) => (
-                    <div key={item.letter} className={`flex items-center gap-3 p-2 rounded-lg ${item.status === 'active' ? 'bg-primary/10 border border-primary/30' : ''}`}>
+                    <div key={item.letter} className={`flex items-center gap-3 p-2 rounded-lg ${item.status === 'active' ? 'bg-white/10 border border-primary/40' : ''}`}>
                       <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold ${
-                        item.status === 'complete' ? 'bg-green-100 text-green-700' :
+                        item.status === 'complete' ? 'bg-green-400/20 text-green-400' :
                         item.status === 'active' ? 'bg-primary text-white' :
-                        'bg-gray-100 text-gray-400'
+                        'bg-white/10 text-white/40'
                       }`}>
                         {item.status === 'complete' ? (
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                         ) : item.letter}
                       </div>
                       <div className="flex-1">
-                        <div className={`text-sm font-medium ${item.status === 'pending' ? 'text-gray-400' : 'text-gray-900'}`}>{item.label}</div>
-                        <div className="text-xs text-gray-500">{item.desc}</div>
+                        <div className={`text-sm font-medium ${item.status === 'pending' ? 'text-white/40' : 'text-white'}`}>{item.label}</div>
+                        <div className="text-xs text-white/50">{item.desc}</div>
                       </div>
                       {item.status === 'active' && (
                         <div className="text-xs text-primary font-medium">Writing...</div>
@@ -442,10 +445,10 @@ const Landing = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">03 — SHARE</div>
-              <h3 className="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 One link. Unlimited impact.
               </h3>
-              <p className="text-navy/70 text-lg mb-6 leading-relaxed">
+              <p className="text-white/70 text-lg mb-6 leading-relaxed">
                 Get your personalized portfolio link. Share it with hiring managers, add it to LinkedIn, and own your narrative with a professional presence.
               </p>
               <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
@@ -456,17 +459,17 @@ const Landing = () => {
             </div>
             <div className="order-1 lg:order-2">
               {/* Share UI Mockup */}
-              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto hover-lift">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="font-semibold text-gray-900">Share Settings</div>
-                  <div className="text-xs font-medium text-green-600 bg-green-50 px-3 py-1 rounded-full">Live</div>
+                  <div className="font-semibold text-white">Share Settings</div>
+                  <div className="text-xs font-medium text-green-400 bg-green-400/15 px-3 py-1 rounded-full">Live</div>
                 </div>
                 {/* Case Study Lock Toggle */}
-                <div className="bg-gray-50 rounded-xl p-4 mb-4">
+                <div className="bg-white/10 rounded-xl p-4 mb-4 border border-white/10">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                      <span className="text-sm font-medium text-gray-900">Lock your case study</span>
+                      <span className="text-sm font-medium text-white">Lock your case study</span>
                     </div>
                     {/* Toggle switch - ON state */}
                     <div className="w-11 h-6 bg-primary rounded-full relative">
@@ -476,9 +479,9 @@ const Landing = () => {
                 </div>
                 {/* Portfolio Link */}
                 <div className="space-y-2">
-                  <div className="text-xs text-gray-500">Your portfolio link</div>
-                  <div className="bg-gray-50 rounded-lg p-3 flex items-center gap-2">
-                    <div className="flex-1 text-sm text-gray-600 font-mono truncate">app.prodfolio.io/p/your-name</div>
+                  <div className="text-xs text-white/50">Your portfolio link</div>
+                  <div className="bg-white/10 rounded-lg p-3 flex items-center gap-2 border border-white/10">
+                    <div className="flex-1 text-sm text-white/70 font-mono truncate">app.prodfolio.io/p/your-name</div>
                     <button className="px-3 py-1.5 bg-primary text-white text-xs font-medium rounded-lg hover:bg-primary/90">Copy</button>
                   </div>
                 </div>

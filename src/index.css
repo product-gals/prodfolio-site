@@ -253,15 +253,31 @@
 
   /* Continuous gradient background - Purple → Navy → Purple (footer) */
   .gradient-mesh-bg {
-    background: linear-gradient(180deg,
-      hsl(254 91% 75%) 0%,
-      hsl(248 31% 41%) 20%,
-      hsl(254 91% 75%) 45%,
-      hsl(248 100% 90%) 60%,
-      hsl(240 50% 20%) 85%,
-      hsl(242 32% 41%) 100%
-    );
+    background:
+      radial-gradient(ellipse 60% 50% at 15% 20%, hsla(270, 80%, 65%, 0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 85% 35%, hsla(254, 91%, 75%, 0.3) 0%, transparent 65%),
+      radial-gradient(ellipse 45% 35% at 50% 70%, hsla(6, 100%, 74%, 0.12) 0%, transparent 60%),
+      linear-gradient(180deg,
+        hsl(254 91% 75%) 0%,
+        hsl(248 31% 41%) 20%,
+        hsl(254 91% 75%) 45%,
+        hsl(248 100% 90%) 60%,
+        hsl(240 50% 20%) 85%,
+        hsl(242 32% 41%) 100%
+      );
     min-height: 100vh;
+    position: relative;
+  }
+
+  .gradient-mesh-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 128px 128px;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
   }
 
   /* Gradient text effect - Purple to lighter purple */
