@@ -118,7 +118,7 @@ const Landing = () => {
                 </a>
               </Button>
             </div>
-            <p className="text-sm text-white/50">Join 500+ product managers building their portfolios</p>
+            <p className="text-sm text-white/50">Join 125+ product managers building their portfolios</p>
 
           </header>
 
