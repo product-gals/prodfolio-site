@@ -104,11 +104,10 @@ const Landing = () => {
               <span className="gradient-text">Own your impact.</span>
             </h1>
 
-            <p className="text-lg md:text-xl mb-4 text-white/90 leading-relaxed max-w-2xl mx-auto">
-              Build a portfolio that proves how you think — not just what you shipped.
-            </p>
-            <p className="text-base text-white/60 mb-8 max-w-xl mx-auto">
-              Go from blank page to shareable link in under an hour. No design skills needed.
+            <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto leading-relaxed">
+              Go from blank page to shareable link in under an hour.
+              <br />
+              No design skills needed.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary call to action">
