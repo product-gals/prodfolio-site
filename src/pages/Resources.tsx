@@ -271,9 +271,9 @@ const Resources = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4 cta-glow-section">
         <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 text-center">
+          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
             <h3 className="text-xl font-heading font-bold text-white mb-3">Follow The Product Pivot</h3>
             <p className="text-white/70 mb-6">
               Stay connected and never miss an episode or update.
