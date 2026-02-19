@@ -117,7 +117,7 @@ const ForHiringManagers = () => {
       {/* What to Look For */}
       <section
         ref={evaluateAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${evaluateAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-16 px-4 ${evaluateAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
