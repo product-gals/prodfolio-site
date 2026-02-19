@@ -238,7 +238,7 @@ const ForHiringManagers = () => {
               <Button
                 asChild
                 variant="outline"
-                className="px-6 py-5 h-auto text-base border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
+                className="px-6 py-5 h-auto text-base bg-transparent border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
               >
                 <a href="/examples">
                   See example portfolios
