@@ -92,7 +92,7 @@ const Landing = () => {
   });
   return <main id="main-content" className="gradient-mesh-bg overflow-hidden">
       {/* Hero Section */}
-      <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-28 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-28 pb-12 overflow-hidden ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         {/* Animated background orbs — decorative, hero section only */}
         <div className="hero-orb hero-orb-1" aria-hidden="true" />
         <div className="hero-orb hero-orb-2" aria-hidden="true" />

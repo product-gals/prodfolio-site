@@ -74,7 +74,7 @@ const Examples = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-28 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-28 pb-2 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
@@ -89,7 +89,7 @@ const Examples = () => {
       {/* Featured Portfolios */}
       <section
         ref={galleryAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-8 px-4 ${galleryAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-4 pb-8 px-4 ${galleryAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1000px] mx-auto">
           <div className="grid md:grid-cols-2 gap-6 mb-8">

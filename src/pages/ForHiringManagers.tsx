@@ -41,7 +41,7 @@ const ForHiringManagers = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-28 pb-16 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-28 pb-6 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <p className="text-lg text-white/80 mb-4 font-medium">For Hiring Managers</p>
@@ -117,7 +117,7 @@ const ForHiringManagers = () => {
       {/* What to Look For */}
       <section
         ref={evaluateAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${evaluateAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-6 px-4 ${evaluateAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
@@ -186,7 +186,7 @@ const ForHiringManagers = () => {
       {/* Encourage Candidates CTA */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[600px] mx-auto">
           <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
@@ -238,7 +238,7 @@ const ForHiringManagers = () => {
               <Button
                 asChild
                 variant="outline"
-                className="px-6 py-5 h-auto text-base border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
+                className="px-6 py-5 h-auto text-base bg-transparent border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
               >
                 <a href="/examples">
                   See example portfolios
