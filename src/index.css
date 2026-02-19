@@ -251,19 +251,18 @@
     box-shadow: 0 12px 40px rgba(158, 133, 249, 0.2);
   }
 
-  /* Continuous gradient background - Purple → Navy → Purple (footer) */
+  /* Primary dark gradient — used on ALL marketing pages for consistency.
+     Clean top-to-bottom arc: deep purple → dark purple-navy → near-navy base.
+     No bounce-back stops, no light lavender zone, no uninvited coral tint. */
   .gradient-mesh-bg {
     background:
-      radial-gradient(ellipse 60% 50% at 15% 20%, hsla(270, 80%, 65%, 0.35) 0%, transparent 70%),
-      radial-gradient(ellipse 50% 40% at 85% 35%, hsla(254, 91%, 75%, 0.3) 0%, transparent 65%),
-      radial-gradient(ellipse 45% 35% at 50% 70%, hsla(6, 100%, 74%, 0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 15% 20%, hsla(270, 80%, 65%, 0.3) 0%, transparent 65%),
+      radial-gradient(ellipse 50% 40% at 85% 35%, hsla(254, 91%, 75%, 0.25) 0%, transparent 60%),
       linear-gradient(180deg,
-        hsl(254 91% 75%) 0%,
-        hsl(248 31% 41%) 20%,
-        hsl(254 91% 75%) 45%,
-        hsl(248 100% 90%) 60%,
-        hsl(240 50% 20%) 85%,
-        hsl(242 32% 41%) 100%
+        hsl(252 70% 45%) 0%,
+        hsl(248 45% 27%) 30%,
+        hsl(246 41% 15%) 60%,
+        hsl(242 35% 18%) 100%
       );
     min-height: 100vh;
     position: relative;
@@ -367,7 +366,10 @@
     @apply border-t border-primary/20;
   }
 
-  /* Glass card tiers - consolidated design system */
+  /* Glass card tiers - consolidated design system.
+     Use .glass-card for content on the dark gradient.
+     Use .glass-card-solid ONLY for Pricing plan cards (purchase-decision white contrast).
+     DEPRECATED: .glass-card-subtle — confused middle ground, use .glass-card instead. */
   .glass-card-subtle {
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
@@ -397,7 +399,9 @@
     box-shadow: 0 12px 40px rgba(158, 133, 249, 0.15);
   }
 
-  /* Lighter gradient variant for secondary pages */
+  /* DEPRECATED for page-level use — causes inconsistent light/dark split across the site.
+     All marketing pages should use .gradient-mesh-bg.
+     Retained here only if needed for specific sub-section tints. */
   .gradient-mesh-bg-light {
     background: linear-gradient(180deg,
       hsl(254 91% 75%) 0%,

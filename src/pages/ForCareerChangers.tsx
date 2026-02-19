@@ -25,7 +25,7 @@ const ForCareerChangers = () => {
   });
 
   return (
-    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -77,32 +77,32 @@ const ForCareerChangers = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="glass-card-solid p-8">
+            <article className="glass-card p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Briefcase className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-navy mb-3">Side projects count</h3>
-              <p className="text-navy/70 leading-relaxed">
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Side projects count</h3>
+              <p className="text-white/70 leading-relaxed">
                 Built an app? Launched a community project? Led a volunteer initiative? These demonstrate real product thinking.
               </p>
             </article>
 
-            <article className="glass-card-solid p-8">
+            <article className="glass-card p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Lightbulb className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-navy mb-3">Reframe your experience</h3>
-              <p className="text-navy/70 leading-relaxed">
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Reframe your experience</h3>
+              <p className="text-white/70 leading-relaxed">
                 Engineers solve problems. Marketers understand users. Designers ship experiences. You already have transferable PM skills.
               </p>
             </article>
 
-            <article className="glass-card-solid p-8">
+            <article className="glass-card p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="text-xl font-heading font-bold text-navy mb-3">Show the mindset</h3>
-              <p className="text-navy/70 leading-relaxed">
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Show the mindset</h3>
+              <p className="text-white/70 leading-relaxed">
                 PMs identify problems, prioritize solutions, and drive outcomes. Show how you've done this—in any role.
               </p>
             </article>
@@ -127,41 +127,41 @@ const ForCareerChangers = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="glass-card-solid p-6 flex items-start gap-4">
+              <div className="glass-card p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-navy mb-2">Process over pedigree</h3>
-                  <p className="text-navy/70">
+                  <h3 className="text-lg font-bold text-white mb-2">Process over pedigree</h3>
+                  <p className="text-white/70">
                     Show how you approached a problem, not just that you solved it. Walk through your thinking, the trade-offs you considered, and why you made specific decisions.
                   </p>
                 </div>
               </div>
 
-              <div className="glass-card-solid p-6 flex items-start gap-4">
+              <div className="glass-card p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-navy mb-2">Transferable skills from your current role</h3>
-                  <p className="text-navy/70">
+                  <h3 className="text-lg font-bold text-white mb-2">Transferable skills from your current role</h3>
+                  <p className="text-white/70">
                     Led cross-functional projects? Analyzed user data? Coordinated stakeholders? These are PM skills in action. Frame them that way.
                   </p>
                 </div>
               </div>
 
-              <div className="glass-card-solid p-6 flex items-start gap-4">
+              <div className="glass-card p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-navy mb-2">Product thinking from everyday decisions</h3>
-                  <p className="text-navy/70">
+                  <h3 className="text-lg font-bold text-white mb-2">Product thinking from everyday decisions</h3>
+                  <p className="text-white/70">
                     Proposed a process improvement? Identified an unmet customer need? Prioritized competing demands? These stories prove you think like a PM.
                   </p>
                 </div>
               </div>
 
-              <div className="glass-card-solid p-6 flex items-start gap-4">
+              <div className="glass-card p-6 flex items-start gap-4">
                 <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-navy mb-2">Side projects and passion work</h3>
-                  <p className="text-navy/70">
+                  <h3 className="text-lg font-bold text-white mb-2">Side projects and passion work</h3>
+                  <p className="text-white/70">
                     Personal apps, volunteer tech projects, community initiatives: these demonstrate initiative and give you full ownership stories to tell.
                   </p>
                 </div>

@@ -181,7 +181,7 @@ const Pricing = () => {
 
                 {/* Right Side - Features */}
                 <div className="md:w-80 shrink-0">
-                  <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-5 shadow-xl">
+                  <div className="bg-primary/10 border border-primary/30 rounded-2xl p-5">
                     <h3 className="font-bold text-lg mb-3 font-heading text-navy">Everything in Pro, plus:</h3>
                     <ul className="space-y-2.5">
                       <li className="flex items-start gap-3">
@@ -231,16 +231,16 @@ const Pricing = () => {
       >
         <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6">
           <div className="text-center mb-4">
-            <h2 className="text-3xl font-heading font-bold mb-3 text-navy">Standard Plans</h2>
+            <h2 className="text-3xl font-heading font-bold mb-3 text-white">Standard Plans</h2>
 
             {/* Billing Toggle */}
-            <div className="inline-flex items-center gap-3 bg-white/95 backdrop-blur-md border border-primary/20 rounded-full p-1.5 shadow-xl mb-4">
+            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-1.5 shadow-xl mb-4">
               <button
                 onClick={() => setBillingCycle("monthly")}
                 className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
                   billingCycle === "monthly"
-                    ? "bg-primary text-white font-medium shadow-sm"
-                    : "text-navy/70 hover:text-navy"
+                    ? "bg-white text-navy font-medium shadow-sm"
+                    : "text-white/70 hover:text-white"
                 }`}
               >
                 Monthly
@@ -249,8 +249,8 @@ const Pricing = () => {
                 onClick={() => setBillingCycle("annual")}
                 className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
                   billingCycle === "annual"
-                    ? "bg-primary text-white font-medium shadow-sm"
-                    : "text-navy/70 hover:text-navy"
+                    ? "bg-white text-navy font-medium shadow-sm"
+                    : "text-white/70 hover:text-white"
                 }`}
               >
                 Annual
@@ -259,8 +259,8 @@ const Pricing = () => {
                 </span>
               </button>
             </div>
-            
-            <p className="text-lg text-navy/80">Choose the plan that works best for you</p>
+
+            <p className="text-lg text-white/70">Choose the plan that works best for you</p>
           </div>
           
           {/* Main Pricing Cards */}
@@ -327,13 +327,13 @@ const Pricing = () => {
                   </CardContent>
                   
                   <CardFooter className="pt-0 pb-6 mt-auto">
-                    <Button 
+                    <Button
                       asChild
                       className={`w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 ${
-                        plan.popular 
-                          ? "btn-coral hover:-translate-y-1" 
+                        plan.popular
+                          ? "bg-navy text-white hover:bg-navy/90 hover:-translate-y-1"
                           : plan.tier === "free"
-                          ? "btn-outline-premium"
+                          ? "border-2 border-primary text-primary bg-transparent hover:bg-primary/5"
                           : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
                       }`}
                       style={{ borderRadius: '12px' }}
@@ -353,14 +353,14 @@ const Pricing = () => {
       {/* Money-Back Guarantee Section */}
       <section className="pt-4 pb-2">
         <div className="prodfolio-container max-w-4xl">
-          <div className="bg-white/95 backdrop-blur-md border-2 border-primary/30 rounded-2xl p-5 shadow-lg text-center">
+          <div className="glass-card p-5 text-center">
             <div className="flex items-center justify-center gap-3 mb-2">
               <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <h3 className="text-2xl font-heading font-bold text-navy">30-Day Money-Back Guarantee</h3>
+              <h3 className="text-2xl font-heading font-bold text-white">30-Day Money-Back Guarantee</h3>
             </div>
-            <p className="text-lg text-navy/80 leading-relaxed">
+            <p className="text-lg text-white/80 leading-relaxed">
               Try Prodfolio risk-free. If you're not satisfied within 30 days, we'll refund you, no questions asked.
             </p>
           </div>
@@ -370,37 +370,37 @@ const Pricing = () => {
       {/* FAQ Section */}
       <section className="pt-8 pb-10">
         <div className="prodfolio-container max-w-3xl">
-          <h2 className="text-4xl font-heading font-bold text-center mb-6 text-navy">
+          <h2 className="text-4xl font-heading font-bold text-center mb-6 text-white">
             Frequently asked questions
           </h2>
           <div className="space-y-4">
-            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-heading font-bold mb-3 text-navy">Can I switch plans later?</h3>
-              <p className="text-navy/80 leading-relaxed">
+            <div className="glass-card p-5 hover-lift">
+              <h3 className="text-lg font-heading font-bold mb-3 text-white">Can I switch plans later?</h3>
+              <p className="text-white/80 leading-relaxed">
                 Yes! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.
               </p>
             </div>
-            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-heading font-bold mb-3 text-navy">What payment methods do you accept?</h3>
-              <p className="text-navy/80 leading-relaxed">
+            <div className="glass-card p-5 hover-lift">
+              <h3 className="text-lg font-heading font-bold mb-3 text-white">What payment methods do you accept?</h3>
+              <p className="text-white/80 leading-relaxed">
                 We go through stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
               </p>
             </div>
-            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-heading font-bold mb-3 text-navy">Can I try before I buy?</h3>
-              <p className="text-navy/80 leading-relaxed">
+            <div className="glass-card p-5 hover-lift">
+              <h3 className="text-lg font-heading font-bold mb-3 text-white">Can I try before I buy?</h3>
+              <p className="text-white/80 leading-relaxed">
                 Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features.
               </p>
             </div>
-            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-heading font-bold mb-3 text-navy">Can I cancel anytime?</h3>
-              <p className="text-navy/80 leading-relaxed">
+            <div className="glass-card p-5 hover-lift">
+              <h3 className="text-lg font-heading font-bold mb-3 text-white">Can I cancel anytime?</h3>
+              <p className="text-white/80 leading-relaxed">
                 Absolutely. Cancel your subscription anytime from your account settings. We may reach out for feedback on how to improve :)
               </p>
             </div>
-            <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl p-5 hover-lift shadow-xl">
-              <h3 className="text-lg font-heading font-bold mb-3 text-navy">What makes Prodfolio different from other portfolio tools?</h3>
-              <p className="text-navy/80 leading-relaxed">
+            <div className="glass-card p-5 hover-lift">
+              <h3 className="text-lg font-heading font-bold mb-3 text-white">What makes Prodfolio different from other portfolio tools?</h3>
+              <p className="text-white/80 leading-relaxed">
                 We're built by PMs, for PMs. Every feature is designed around how you actually work and what hiring managers actually want to see. Plus, you're joining a community of product people who get it.
               </p>
             </div>

@@ -253,34 +253,34 @@ const Landing = () => {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Product Managers */}
-            <article className="bg-white/95 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
-              <h3 className="text-xl font-bold text-navy mb-3">Product Managers</h3>
-              <p className="text-navy/70 text-sm leading-relaxed mb-4">
+            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+              <h3 className="text-xl font-bold text-white mb-3">Product Managers</h3>
+              <p className="text-white/70 text-sm leading-relaxed mb-4">
                 You've shipped products, led teams, driven results. Document your impact and own your narrative for that next promotion or role.
               </p>
-              <a href="/examples" className="inline-block mt-2 px-5 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all">
+              <a href="/examples" className="inline-block mt-2 px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
                 See examples →
               </a>
             </article>
 
             {/* Aspiring Product Managers */}
-            <article className="bg-white/95 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
-              <h3 className="text-xl font-bold text-navy mb-3">Aspiring Product Managers</h3>
-              <p className="text-navy/70 text-sm leading-relaxed mb-4">
+            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+              <h3 className="text-xl font-bold text-white mb-3">Aspiring Product Managers</h3>
+              <p className="text-white/70 text-sm leading-relaxed mb-4">
                 No PM title yet? Showcase your product thinking and prove you have the mindset hiring managers are looking for.
               </p>
-              <a href="/for-career-changers" className="inline-block mt-2 px-5 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all">
+              <a href="/for-career-changers" className="inline-block mt-2 px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
                 Learn how →
               </a>
             </article>
 
             {/* Product Leaders & Teams */}
-            <article className="bg-white/95 backdrop-blur-sm border border-white/30 rounded-2xl shadow-lg p-8 text-center hover:scale-[1.02] transition-transform">
-              <h3 className="text-xl font-bold text-navy mb-3">Product Leaders & Teams</h3>
-              <p className="text-navy/70 text-sm leading-relaxed mb-4">
+            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform">
+              <h3 className="text-xl font-bold text-white mb-3">Product Leaders & Teams</h3>
+              <p className="text-white/70 text-sm leading-relaxed mb-4">
                 Directors, PMMs, and designers - your work drives product success. Make your strategic impact visible.
               </p>
-              <a href="/features" className="inline-block mt-2 px-5 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-all">
+              <a href="/features" className="inline-block mt-2 px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
                 See features →
               </a>
             </article>

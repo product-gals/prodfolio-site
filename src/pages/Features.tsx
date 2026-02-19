@@ -40,7 +40,7 @@ const Features = () => {
   });
 
   return (
-    <div className="min-h-screen gradient-mesh-bg-light" id="main-content" role="main">
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
 
       {/* Hero Section */}
@@ -52,7 +52,7 @@ const Features = () => {
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
             Everything you need to
             <br />
-            <span className="text-navy">showcase your PM work</span>
+            <span className="gradient-text">showcase your PM work</span>
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10">
             From AI-powered case studies to NDA-safe sharing, Prodfolio has the tools you need to build a portfolio that stands out.
@@ -94,14 +94,14 @@ const Features = () => {
       <section
         id="ai-powered"
         ref={aiAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 bg-white ${aiAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${aiAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left - Visual */}
             <div className="flex-1 order-2 lg:order-1">
               <div className="relative">
-                <div className="bg-gradient-to-br from-primary/10 to-coral/10 rounded-3xl p-8 border border-primary/20">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
                   {/* Mock UI */}
                   <div className="bg-white rounded-2xl shadow-xl p-6 space-y-4">
                     <div className="flex items-center gap-3 mb-4">
@@ -125,7 +125,7 @@ const Features = () => {
                   </div>
                 </div>
                 {/* Decorative */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-coral/20 rounded-full blur-2xl" />
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/30 rounded-full blur-2xl" />
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary/20 rounded-full blur-xl" />
               </div>
             </div>
@@ -136,24 +136,24 @@ const Features = () => {
                 <Sparkles className="w-5 h-5" />
                 AI-Powered
               </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 Turn your docs into case studies in minutes
               </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+              <p className="text-lg text-white/70 mb-6 leading-relaxed">
                 Upload your PRDs, product briefs, or project plans and let AI get you started. You guide the process and we do the heavy lifting.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Automatic data extraction</span>
+                  <span className="text-white/80">Automatic data extraction</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Smart suggestions for case study structure</span>
+                  <span className="text-white/80">Smart suggestions for case study structure</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Unlimited AI generations on paid plans</span>
+                  <span className="text-white/80">Unlimited AI generations on paid plans</span>
                 </li>
               </ul>
             </div>
@@ -165,7 +165,7 @@ const Features = () => {
       <section
         id="framework"
         ref={frameworkAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 bg-gradient-to-b from-white to-primary/5 ${frameworkAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${frameworkAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -175,38 +175,38 @@ const Features = () => {
                 <FileText className="w-5 h-5" />
                 SIGNAL Framework
               </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 Guided prompts that structure your story
               </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+              <p className="text-lg text-white/70 mb-6 leading-relaxed">
                 Our SIGNAL framework walks you through each case study step-by-step, ensuring you capture what hiring managers actually want to see.
               </p>
 
               {/* SIGNAL Breakdown */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
+                <div className="bg-white/10 rounded-xl p-4 border border-white/20">
                   <p className="font-bold text-primary">S</p>
-                  <p className="text-sm text-navy/80">Situation</p>
+                  <p className="text-sm text-white/80">Situation</p>
                 </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
+                <div className="bg-white/10 rounded-xl p-4 border border-white/20">
                   <p className="font-bold text-primary">I</p>
-                  <p className="text-sm text-navy/80">Insight</p>
+                  <p className="text-sm text-white/80">Insight</p>
                 </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
+                <div className="bg-white/10 rounded-xl p-4 border border-white/20">
                   <p className="font-bold text-primary">G</p>
-                  <p className="text-sm text-navy/80">Goals</p>
+                  <p className="text-sm text-white/80">Goals</p>
                 </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
+                <div className="bg-white/10 rounded-xl p-4 border border-white/20">
                   <p className="font-bold text-primary">N</p>
-                  <p className="text-sm text-navy/80">Navigation</p>
+                  <p className="text-sm text-white/80">Navigation</p>
                 </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
+                <div className="bg-white/10 rounded-xl p-4 border border-white/20">
                   <p className="font-bold text-primary">A</p>
-                  <p className="text-sm text-navy/80">Achievement</p>
+                  <p className="text-sm text-white/80">Achievement</p>
                 </div>
-                <div className="bg-white rounded-xl p-4 shadow-sm border border-primary/10">
+                <div className="bg-white/10 rounded-xl p-4 border border-white/20">
                   <p className="font-bold text-primary">L</p>
-                  <p className="text-sm text-navy/80">Learnings</p>
+                  <p className="text-sm text-white/80">Learnings</p>
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@ const Features = () => {
             {/* Right - Visual */}
             <div className="flex-1">
               <div className="relative">
-                <div className="bg-gradient-to-br from-coral/10 to-primary/10 rounded-3xl p-8 border border-coral/20">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
                   {/* Mock Case Study Editor */}
                   <div className="bg-white rounded-2xl shadow-xl p-6">
                     <div className="flex items-center gap-2 mb-4">
@@ -254,14 +254,14 @@ const Features = () => {
       <section
         id="analytics"
         ref={analyticsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 bg-white ${analyticsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${analyticsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left - Visual */}
             <div className="flex-1 order-2 lg:order-1">
               <div className="relative">
-                <div className="bg-gradient-to-br from-primary/10 to-coral/10 rounded-3xl p-8 border border-primary/20">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
                   {/* Analytics Dashboard Mock */}
                   <div className="bg-white rounded-2xl shadow-xl p-6">
                     <div className="flex items-center justify-between mb-4">
@@ -304,7 +304,7 @@ const Features = () => {
                   </div>
                 </div>
                 {/* Decorative */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-coral/20 rounded-full blur-2xl" />
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/30 rounded-full blur-2xl" />
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary/20 rounded-full blur-xl" />
               </div>
             </div>
@@ -315,28 +315,28 @@ const Features = () => {
                 <BarChart3 className="w-5 h-5" />
                 Analytics
               </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 Know who's viewing your work
               </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+              <p className="text-lg text-white/70 mb-6 leading-relaxed">
                 See which case studies resonate, track visitor engagement, and understand where your traffic comes from. Stop guessing and start optimizing.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Total views, unique visitors, and week-over-week momentum</span>
+                  <span className="text-white/80">Total views, unique visitors, and week-over-week momentum</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Case study ranking with performance insights</span>
+                  <span className="text-white/80">Case study ranking with performance insights</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Track resume downloads, LinkedIn clicks, and more</span>
+                  <span className="text-white/80">Track resume downloads, LinkedIn clicks, and more</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">See traffic sources: LinkedIn, direct, referrals</span>
+                  <span className="text-white/80">See traffic sources: LinkedIn, direct, referrals</span>
                 </li>
               </ul>
             </div>
@@ -348,7 +348,7 @@ const Features = () => {
       <section
         id="customize"
         ref={customizeAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 bg-gradient-to-b from-white to-primary/5 ${customizeAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${customizeAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -358,28 +358,28 @@ const Features = () => {
                 <Palette className="w-5 h-5" />
                 Customization
               </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 Make it yours with themes and branding
               </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+              <p className="text-lg text-white/70 mb-6 leading-relaxed">
                 Choose from professional themes, custom colors, and custom domains. Want to show your personality? Add your headshot and a personal video.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">5+ professional themes included free</span>
+                  <span className="text-white/80">5+ professional themes included free</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Custom colors and accent options</span>
+                  <span className="text-white/80">Custom colors and accent options</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Personal headshot and intro video</span>
+                  <span className="text-white/80">Personal headshot and intro video</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Custom domain (yourname.com)</span>
+                  <span className="text-white/80">Custom domain (yourname.com)</span>
                 </li>
               </ul>
             </div>
@@ -387,7 +387,7 @@ const Features = () => {
             {/* Right - Visual */}
             <div className="flex-1">
               <div className="relative">
-                <div className="bg-gradient-to-br from-coral/10 to-primary/10 rounded-3xl p-8 border border-coral/20">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
                   {/* Theme Selector Mock */}
                   <div className="bg-white rounded-2xl shadow-xl p-6">
                     <p className="text-sm font-semibold text-navy mb-4">Choose your theme</p>
@@ -417,14 +417,14 @@ const Features = () => {
       <section
         id="share"
         ref={shareAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 bg-white ${shareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${shareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left - Visual */}
             <div className="flex-1 order-2 lg:order-1">
               <div className="relative">
-                <div className="bg-gradient-to-br from-primary/10 to-coral/10 rounded-3xl p-8 border border-primary/20">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
                   {/* Share Settings Mock */}
                   <div className="bg-white rounded-2xl shadow-xl p-6">
                     <div className="flex items-center justify-between mb-6">
@@ -464,24 +464,24 @@ const Features = () => {
                 <Shield className="w-5 h-5" />
                 Sharing & Privacy
               </div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
                 Share confidently, even with NDAs
               </h2>
-              <p className="text-lg text-navy/70 mb-6 leading-relaxed">
+              <p className="text-lg text-white/70 mb-6 leading-relaxed">
                 We built Prodfolio knowing some PM work is confidential. Lock access to your case studies and share selectively without risking your NDA.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Lock className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Restrict access to sensitive work</span>
+                  <span className="text-white/80">Restrict access to sensitive work</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">NDA-safe case study templates</span>
+                  <span className="text-white/80">NDA-safe case study templates</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Share2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-navy/80">Easy resume upload</span>
+                  <span className="text-white/80">Easy resume upload</span>
                 </li>
               </ul>
             </div>
