@@ -47,8 +47,8 @@ const Navbar = () => {
         <div
           className={`rounded-2xl transition-all duration-500 border ${
             isScrolled
-              ? "bg-[#100D22]/75 backdrop-blur-xl border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_0_1px_rgba(158,133,249,0.1)]"
-              : "bg-[#100D22]/60 backdrop-blur-lg border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
+              ? "bg-white/10 backdrop-blur-xl border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.3),0_0_0_1px_rgba(158,133,249,0.15)]"
+              : "bg-white/5 backdrop-blur-lg border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
           }`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -90,7 +90,7 @@ const Navbar = () => {
                   </button>
 
                   {isWhoItsForOpen && (
-                    <div className="absolute top-full left-0 mt-3 w-48 bg-[#100D22]/90 backdrop-blur-xl border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] py-2" role="menu">
+                    <div className="absolute top-full left-0 mt-3 w-48 bg-[#1a1040]/90 backdrop-blur-xl border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] py-2" role="menu">
                       <Link
                         to="/features"
                         className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
