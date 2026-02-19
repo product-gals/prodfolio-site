@@ -256,7 +256,7 @@
      No bounce-back stops, no light lavender zone, no uninvited coral tint. */
   .gradient-mesh-bg {
     background:
-      radial-gradient(ellipse 60% 50% at 15% 20%, hsla(270, 80%, 65%, 0.3) 0%, transparent 65%),
+      radial-gradient(ellipse 60% 50% at 15% 20%, hsla(254, 91%, 75%, 0.3) 0%, transparent 65%),
       radial-gradient(ellipse 50% 40% at 85% 35%, hsla(254, 91%, 75%, 0.25) 0%, transparent 60%),
       linear-gradient(180deg,
         hsl(252 70% 45%) 0%,
