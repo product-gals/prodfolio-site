@@ -62,7 +62,7 @@ const Resources = () => {
       {/* Hero Section - Podcast Branding */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-16 pb-12 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-28 pb-12 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">

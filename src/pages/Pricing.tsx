@@ -122,7 +122,7 @@ const Pricing = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-10 pb-4">
+      <section className="pt-28 pb-4">
         <div className="prodfolio-container text-center">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
             Invest in your PM career

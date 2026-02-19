@@ -25,7 +25,7 @@ const NotFound = () => {
     <div className="min-h-screen flex flex-col" id="main-content" role="main">
       <Navbar />
       
-      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent/20 to-primary/5 px-6 py-20">
+      <div className="flex-1 flex items-center justify-center bg-gradient-to-br from-primary/10 via-accent/20 to-primary/5 px-6 pt-28 pb-20">
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-heading font-bold text-navy mb-6">
             Page could not be found
