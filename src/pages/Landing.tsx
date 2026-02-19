@@ -92,7 +92,7 @@ const Landing = () => {
   });
   return <main id="main-content" className="gradient-mesh-bg overflow-hidden">
       {/* Hero Section - Reduced padding, larger text */}
-      <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-16 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-28 pb-12 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px] relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-12">
             <p className="text-lg md:text-xl text-white/80 mb-4 font-medium tracking-wide uppercase">

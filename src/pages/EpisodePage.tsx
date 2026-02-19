@@ -183,7 +183,7 @@ const EpisodePage = () => {
       <Navbar />
 
       {/* Breadcrumb Navigation */}
-      <nav className="prodfolio-container max-w-[1200px] mx-auto pt-6 px-4" aria-label="Breadcrumb">
+      <nav className="prodfolio-container max-w-[1200px] mx-auto pt-24 px-4" aria-label="Breadcrumb">
         <ol className="flex items-center gap-2 text-sm">
           <li>
             <Link

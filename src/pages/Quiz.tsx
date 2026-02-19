@@ -262,7 +262,7 @@ const Quiz = () => {
         <Navbar />
         
         {/* Hero Section */}
-        <section className="py-20 px-4" style={{ background: 'linear-gradient(135deg, #484689 0%, #9E85F9 100%)' }}>
+        <section className="pt-28 pb-20 px-4" style={{ background: 'linear-gradient(135deg, #484689 0%, #9E85F9 100%)' }}>
           <div className="prodfolio-container max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Is Your PM Portfolio Ready to Land Your Dream Role?

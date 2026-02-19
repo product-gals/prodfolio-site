@@ -70,7 +70,7 @@ const Partners = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-24 pb-8 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-32 pb-8 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="prodfolio-container max-w-[900px] mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
