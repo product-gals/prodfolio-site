@@ -46,7 +46,7 @@ const Features = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-28 pb-20 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-28 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <p className="text-lg text-white/80 mb-4 font-medium">For Product Managers</p>
