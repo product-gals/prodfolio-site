@@ -167,7 +167,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Meagan */}
-            <div className="glass-card p-5 text-center">
+            <div className="glass-card p-5 text-center flex flex-col">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={meaganPhoto}
@@ -181,7 +181,7 @@ const About = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
-              <div className="flex gap-2 justify-center">
+              <div className="flex gap-2 justify-center mt-auto">
                 <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                   <a href="https://meaganglenn.me" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
@@ -196,7 +196,7 @@ const About = () => {
             </div>
 
             {/* Santiana */}
-            <div className="glass-card p-5 text-center">
+            <div className="glass-card p-5 text-center flex flex-col">
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={santianaPhoto}
@@ -210,7 +210,7 @@ const About = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Expert at cutting through complexity to find the simplest path forward.
               </p>
-              <div className="flex gap-2 justify-center">
+              <div className="flex gap-2 justify-center mt-auto">
                 <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
                   <a href="https://app.prodfolio.io/p/santi-brace-2" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
