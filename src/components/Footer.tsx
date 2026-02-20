@@ -92,6 +92,11 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <Link to="/ai-info" className="hover:text-white hover:underline transition-all">
+                  AI Info
+                </Link>
+              </li>
             </ul>
           </div>
           
