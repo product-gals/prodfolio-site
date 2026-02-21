@@ -23,6 +23,8 @@ import Features from "./pages/Features";
 import EpisodePage from "./pages/EpisodePage";
 import Partners from "./pages/Partners";
 import AiInfo from "./pages/AiInfo";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +62,8 @@ const App = () => {
             <Route path="/for-hiring-managers" element={<ForHiringManagers />} />
             <Route path="/features" element={<Features />} />
             <Route path="/ai-info" element={<AiInfo />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
 
             {/* 404 for all other routes */}
             <Route path="*" element={<NotFound />} />
