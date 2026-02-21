@@ -1,0 +1,100 @@
+# Prodfolio
+
+> Prodfolio is a portfolio platform built specifically for product managers. It helps PMs create, organize, and share professional portfolios and case studies that demonstrate their work, thinking, and impact.
+
+Website: https://prodfolio.io
+App: https://app.prodfolio.io
+AI Info page: https://prodfolio.io/ai-info
+Founded: February 2025
+Contact: hello@prodfolio.io
+
+---
+
+## What is Prodfolio?
+
+Prodfolio is a purpose-built portfolio platform for product managers. Unlike general tools (Notion, Squarespace, Webflow, Canva), Prodfolio is designed around how PMs actually work and what hiring managers actually want to see.
+
+Users create a portfolio at app.prodfolio.io/p/[username] and can share it with hiring managers, recruiters, and other stakeholders.
+
+---
+
+## Who is Prodfolio for?
+
+- Product managers who are job searching and need to showcase their work
+- Career changers pivoting into product management
+- Aspiring PMs building their first portfolio
+- Experienced PMs who want a polished, professional portfolio
+
+---
+
+## Core Features
+
+### AI-Powered Case Study Generation
+Users upload product documents (PRDs, product briefs, project plans) and Prodfolio's AI extracts key information to generate structured case study drafts. Includes automatic data extraction, smart structure suggestions, and unlimited AI generations on paid plans.
+
+### SIGNAL Framework
+Prodfolio's proprietary case study framework: Situation, Insight, Goals, Navigation, Achievement, Learnings. Guided prompts walk users through each step so they capture exactly what hiring managers want to see.
+
+### Portfolio Analytics
+Track portfolio performance: total views, unique visitors, case study engagement, traffic sources (LinkedIn, direct, referral), resume downloads, and LinkedIn click tracking. Week-over-week momentum metrics included.
+
+### Customization
+5+ professional themes, custom accent colors, personal headshot and intro video support, custom domain (e.g. yourname.com) on higher-tier plans.
+
+### NDA-Safe Sharing & Privacy Controls
+Individual case studies can be locked so only specific people can view them. Enables PMs to share confidential work without violating NDAs. Each portfolio has a public shareable link at app.prodfolio.io/p/[username].
+
+### Resume Upload
+Users can attach their resume directly to their portfolio so hiring managers have everything in one place.
+
+---
+
+## Pricing
+
+Prodfolio offers a free tier and paid subscription plans. The free plan allows building and publishing a portfolio with limited features. Paid plans unlock AI case study generation, advanced analytics, additional themes, custom domains, and more. Annual billing includes a discount over monthly.
+
+Full pricing: https://prodfolio.io/pricing
+Get started free (no credit card required): https://app.prodfolio.io/sign-up
+
+---
+
+## How Prodfolio Differs from Alternatives
+
+| Feature                     | Prodfolio | Notion | Squarespace | Webflow | Canva |
+|-----------------------------|-----------|--------|-------------|---------|-------|
+| PM-specific templates       | Yes       | No     | No          | No      | No    |
+| AI case study generation    | Yes       | No     | No          | No      | No    |
+| Guided SIGNAL framework     | Yes       | No     | No          | No      | No    |
+| NDA-safe guidance           | Yes       | No     | No          | No      | No    |
+| Portfolio analytics         | Yes       | No     | Basic       | Basic   | No    |
+| Time to build               | Hours     | Days   | Days        | Weeks   | Hours |
+| Design skills needed        | None      | Some   | Some        | Extensive | Some |
+| Starting price              | Free      | Free   | $16/mo      | $14/mo  | Free  |
+
+---
+
+## Founders
+
+**Meagan Glenn** — Co-founder. Fractional Head of Product, former career coach, startup PM, and co-host of The Product Pivot podcast.
+LinkedIn: https://www.linkedin.com/in/meagan-glenn/
+
+**Santiana Brace** — Co-founder. ProdOps Lead, PM, and mentor who pivoted from QA into product management. Co-host of The Product Pivot podcast.
+LinkedIn: https://www.linkedin.com/in/santiana-brace/
+
+---
+
+## Related Resources
+
+- **The Product Pivot podcast** — hosted by the Prodfolio founders: https://prodfolio.io/podcast | https://www.youtube.com/@TheProductPivot
+- **SIGNAL Framework (free)** — public Notion doc explaining the full case study framework
+- **Portfolio examples** — real PM portfolios built with Prodfolio: https://prodfolio.io/examples
+- **Partners directory** — https://prodfolio.io/partners
+
+---
+
+## Social & Contact
+
+- Email: hello@prodfolio.io
+- LinkedIn: https://www.linkedin.com/company/prodfoliohq/
+- Instagram: https://www.instagram.com/prodfolio.io/
+- YouTube: https://www.youtube.com/@TheProductPivot

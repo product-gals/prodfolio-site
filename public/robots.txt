@@ -31,3 +31,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://prodfolio.io/sitemap.xml
+
+# AI/LLM info
+LLMs: https://prodfolio.io/llms.txt

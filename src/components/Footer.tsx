@@ -61,6 +61,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
+                <Link to="/blog" className="hover:text-white hover:underline transition-all">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link to="/podcast" className="hover:text-white hover:underline transition-all">
                   Podcast
                 </Link>
@@ -91,6 +96,11 @@ const Footer = () => {
                 <a href="mailto:hello@prodfolio.io" className="hover:text-white hover:underline transition-all">
                   Contact
                 </a>
+              </li>
+              <li>
+                <Link to="/ai-info" className="hover:text-white hover:underline transition-all">
+                  AI Info
+                </Link>
               </li>
             </ul>
           </div>
