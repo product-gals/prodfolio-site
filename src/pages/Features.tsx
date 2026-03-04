@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
@@ -495,7 +494,7 @@ const Features = () => {
       {/* Comparison Section */}
       <section
         ref={compareAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 bg-navy ${compareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${compareAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
@@ -594,40 +593,19 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 px-4 cta-glow-section">
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
-              Ready to build your portfolio?
-            </h2>
-            <p className="text-white/70 mb-6 max-w-md mx-auto">
-              Join product managers who've discovered the portfolio advantage.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-3">
-              <Button
-                asChild
-                className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
-              >
-                <a href="https://app.prodfolio.io/sign-up">
-                  Start Your Portfolio Free
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                className="px-6 py-5 h-auto text-base border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl"
-              >
-                <a href="/pricing">
-                  View Pricing
-                </a>
-              </Button>
-            </div>
-            <p className="mt-4">
-              <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
-                Not sure where to start? Take the free quiz →
-              </Link>
-            </p>
-          </div>
+      <section className="pt-6 pb-12 px-4 cta-glow-section">
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Ready to build your portfolio?
+          </h2>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="https://app.prodfolio.io/sign-up">
+              Start Your 7-Day Free Trial
+            </a>
+          </Button>
         </div>
       </section>
 
