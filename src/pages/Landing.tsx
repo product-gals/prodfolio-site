@@ -84,12 +84,7 @@ const Landing = () => {
         {
           "@type": "WebSite",
           "name": "Prodfolio",
-          "url": "https://prodfolio.io",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://prodfolio.io/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
+          "url": "https://prodfolio.io"
         }
       ]
     }
