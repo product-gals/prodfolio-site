@@ -936,59 +936,64 @@ export const blogPosts: BlogPost[] = [
 
 <p>User research generates massive amounts of qualitative data — interview transcripts, survey responses, support tickets. Synthesizing it manually takes hours. This is where AI tools deliver the most immediate value.</p>
 
-<h3>What to Use</h3>
+<h3>Tools Worth Using</h3>
 <ul>
-<li><strong>Transcription and analysis tools</strong> — AI-powered platforms can automatically transcribe user interviews, generate summaries, and identify patterns across multiple conversations. Look for tools that support multiple languages and customizable analysis views</li>
-<li><strong>Feedback aggregation</strong> — Tools that pull user feedback from multiple sources (support tickets, reviews, social media, surveys) and cluster them by theme, so you can spot trends without reading every individual comment</li>
+<li><strong><a href="https://dovetail.com" rel="noopener noreferrer" target="_blank">Dovetail</a></strong> — The standout for qualitative research analysis. It automatically tags themes like pricing confusion or onboarding friction across interview transcripts, turning scattered user feedback into structured insights without manual coding. Especially strong for teams running multiple research cycles</li>
+<li><strong><a href="https://granola.ai" rel="noopener noreferrer" target="_blank">Granola</a></strong> — A rising star for structured meeting intelligence. Unlike generic transcription tools, Granola uses templates to format notes specifically for product use cases — user interviews, design critiques, stakeholder reviews — so your notes come out organized by the categories you actually care about</li>
+<li><strong><a href="https://www.productboard.com" rel="noopener noreferrer" target="_blank">Productboard</a></strong> — Best for consolidating feedback from multiple customer-facing teams. It creates a shared view of customer input and reduces the "I heard this from a customer" problem by centralizing requests and linking them to roadmap items</li>
 </ul>
 
 <h3>How PMs Actually Use This</h3>
-<blockquote><strong>Example:</strong> "I ran 12 user interviews over two weeks. Instead of spending 8 hours manually coding transcripts, I used AI-powered analysis to identify the top 5 recurring themes in under an hour. The output wasn't perfect — I still reviewed and adjusted the categorization — but it cut my synthesis time by 75%."</blockquote>
+<blockquote><strong>Example:</strong> "I ran 12 user interviews over two weeks. Instead of spending 8 hours manually coding transcripts in a spreadsheet, I ran them through Dovetail and had the top 5 recurring themes identified in under an hour. The output wasn't perfect — I still reviewed and adjusted the categorization — but it cut my synthesis time by 75%."</blockquote>
 
 <h2>Documentation and PRDs</h2>
 
 <p>Writing PRDs, user stories, and spec documents is necessary but time-consuming. AI tools can generate structured first drafts from basic inputs, which you then refine.</p>
 
-<h3>What to Use</h3>
+<h3>Tools Worth Using</h3>
 <ul>
-<li><strong>AI PRD generators</strong> — Tools like ChatPRD convert basic inputs into structured product requirement documents, user stories, and acceptance criteria. You provide the context; the tool provides the format</li>
-<li><strong>General-purpose AI assistants</strong> — Claude, ChatGPT, and similar tools are excellent for drafting one-pagers, summarizing meeting notes, and generating user story variations. The key is providing good prompts with context</li>
+<li><strong><a href="https://www.chatprd.ai" rel="noopener noreferrer" target="_blank">ChatPRD</a></strong> — Built specifically for PMs. Feed it a product idea and it generates a complete PRD with user personas, success metrics, edge cases, and technical considerations. What used to take a full day now takes an hour of drafting plus refinement. SOC 2 Type II compliant, which matters when you're working with sensitive product strategy</li>
+<li><strong><a href="https://www.notion.so" rel="noopener noreferrer" target="_blank">Notion AI</a></strong> — Works directly inside your existing workspace. It turns messy meeting bullets into structured summaries, drafts roadmap narratives from planning notes, and generates first-pass user stories. The advantage is zero context-switching — the AI works where your docs already live</li>
+<li><strong><a href="https://claude.ai" rel="noopener noreferrer" target="_blank">Claude</a></strong> — The most versatile general-purpose AI for PM work. Excellent for drafting one-pagers, brainstorming edge cases, summarizing lengthy research reports, and pressure-testing your PRD logic. Its long context window makes it especially useful for synthesizing multiple documents at once</li>
 </ul>
 
 <h3>How PMs Actually Use This</h3>
-<blockquote><strong>Example:</strong> "I use AI to generate a first draft of user stories from my product brief. It handles the boilerplate 'As a user, I want...' format, and I spend my time refining the acceptance criteria and edge cases — the parts that require judgment."</blockquote>
+<blockquote><strong>Example:</strong> "I use ChatPRD to generate a first draft of my PRD from a brief product idea, then refine it in Notion AI where my team's docs already live. Claude handles the ad-hoc work — summarizing competitor research, drafting stakeholder emails, or brainstorming what could go wrong before a launch."</blockquote>
 
 <h2>Data Analysis and Insights</h2>
 
 <p>Not every PM is a SQL expert, and even those who are don't always have time to run complex queries. AI-powered analytics tools can bridge the gap.</p>
 
-<h3>What to Use</h3>
+<h3>Tools Worth Using</h3>
 <ul>
-<li><strong>Product analytics platforms with AI layers</strong> — Tools like Amplitude AI help you understand user behaviors, identify patterns, and get actionable insights from your product data without writing queries</li>
-<li><strong>Natural language query tools</strong> — Some platforms now let you ask questions in plain English ("What's the conversion rate for users who completed onboarding last month?") and get answers from your data</li>
+<li><strong><a href="https://amplitude.com" rel="noopener noreferrer" target="_blank">Amplitude AI</a></strong> — Lets you ask questions about user behavior in plain English and get answers from your product data without writing queries. It identifies patterns, surfaces anomalies, and generates cohort analyses that would take hours to build manually</li>
+<li><strong><a href="https://www.cursor.com" rel="noopener noreferrer" target="_blank">Cursor</a></strong> — An AI-powered code editor that's a game-changer for PMs who want to get closer to the data. Even if you're not an engineer, Cursor helps you write and run SQL queries, build quick internal tools, or prototype ideas without waiting on engineering. Think of it as having a patient pair programmer who can translate "show me users who dropped off at step 3" into working code</li>
+<li><strong><a href="https://claude.ai/code" rel="noopener noreferrer" target="_blank">Claude Code</a></strong> — Anthropic's CLI tool for working with code directly in your terminal. For PMs who are comfortable in the command line, it can write scripts to pull data, build quick analyses, or even prototype features. It's especially useful when you need to automate a recurring report or parse a messy dataset — tasks that would normally require an engineering ticket</li>
 </ul>
 
 <h3>How PMs Actually Use This</h3>
-<blockquote><strong>Example:</strong> "I asked our analytics tool to identify the top 3 drop-off points in our trial-to-paid funnel. It surfaced a pattern I hadn't noticed: users who skipped the team invitation step churned at 3x the rate of those who didn't. That insight drove our next sprint's priority."</blockquote>
+<blockquote><strong>Example:</strong> "I needed to analyze trial-to-paid conversion by signup cohort, but our analytics dashboard didn't have that view. Instead of filing a data request, I used Cursor to write the SQL query myself. It surfaced a pattern: users who skipped the team invitation step churned at 3x the rate of those who didn't. That insight drove our next sprint's priority — and I had the data within an hour instead of waiting a week."</blockquote>
 
 <h2>Roadmapping and Prioritization</h2>
 
 <p>AI won't set your product strategy — but it can help you organize inputs, score features against criteria, and generate roadmap drafts that you refine.</p>
 
-<h3>What to Use</h3>
+<h3>Tools Worth Using</h3>
 <ul>
-<li><strong>AI-assisted prioritization</strong> — Tools that score feature requests against frameworks like RICE or weighted scoring, using data from customer feedback, revenue impact, and development effort</li>
-<li><strong>Roadmap generation</strong> — Some tools can draft a roadmap from a set of prioritized features, timelines, and dependencies. The output is a starting point, not a final product</li>
+<li><strong><a href="https://www.productboard.com" rel="noopener noreferrer" target="_blank">Productboard</a></strong> — Connects customer feedback directly to feature prioritization. Its AI layer helps score feature requests against frameworks like RICE using actual customer data, revenue impact, and development effort — so your roadmap decisions are grounded in evidence, not gut feelings</li>
+<li><strong><a href="https://linear.app" rel="noopener noreferrer" target="_blank">Linear</a></strong> — Keeps execution tight with AI-powered issue categorization, blocker prediction, and workflow automation. It's designed for speed — PMs who need to keep engineering teams unblocked love it because it surfaces potential delays before they become real problems</li>
+<li><strong><a href="https://www.notion.so" rel="noopener noreferrer" target="_blank">Notion AI</a></strong> — For teams that keep their roadmap in Notion, the AI layer can generate roadmap drafts from a set of prioritized features and timelines, restructure planning docs, and create executive summaries from detailed plans</li>
 </ul>
 
 <h2>Communication and Stakeholder Management</h2>
 
 <p>PMs spend a huge amount of time writing — status updates, stakeholder emails, release notes, presentation decks. AI handles the first draft so you can focus on the message.</p>
 
-<h3>What to Use</h3>
+<h3>Tools Worth Using</h3>
 <ul>
-<li><strong>Meeting summarization</strong> — AI tools that record meetings and generate action items, decisions, and summaries. Especially useful for cross-functional syncs where you need to share notes with multiple teams</li>
-<li><strong>Writing assistants</strong> — Draft release notes, stakeholder updates, and internal comms faster. Always review and edit — AI captures the structure, you add the nuance</li>
+<li><strong><a href="https://granola.ai" rel="noopener noreferrer" target="_blank">Granola</a></strong> — Goes beyond basic transcription. Its template-based approach means your meeting notes automatically come out structured for the type of meeting you were in — stakeholder review notes look different from sprint retro notes. This saves the 20 minutes of post-meeting reformatting that most PMs dread</li>
+<li><strong><a href="https://krisp.ai" rel="noopener noreferrer" target="_blank">Krisp</a></strong> — An AI-powered noise cancellation and meeting assistant. It removes background noise from your calls (essential for remote PMs working from coffee shops or home offices), transcribes meetings, and generates summaries with action items. The noise cancellation alone makes it worth the price for anyone on frequent video calls</li>
+<li><strong><a href="https://otter.ai" rel="noopener noreferrer" target="_blank">Otter.ai</a></strong> — The industry standard for transcription accuracy. Especially strong in enterprise environments with multiple speakers. Free tier gives you 300 minutes per month — enough for most individual PMs to cover their key meetings</li>
 </ul>
 
 <h2>How to Show AI Fluency in Your Portfolio</h2>
@@ -1029,7 +1034,7 @@ export const blogPosts: BlogPost[] = [
 <p>Yes — if you used them to achieve a specific outcome. "Used AI-powered research synthesis to cut analysis time by 75% across 12 user interviews" is meaningful. "Familiar with AI tools" in a skills list is not. Tie the tool to a result.</p>
 
 <h3>What's the best free AI tool for product managers?</h3>
-<p>For general PM tasks — drafting PRDs, summarizing research, brainstorming — a general-purpose AI assistant (Claude, ChatGPT) is the most versatile free option. For specific workflows, many analytics and research tools offer free tiers that are worth exploring before committing to paid plans.</p>
+<p>For general PM tasks — drafting PRDs, summarizing research, brainstorming — Claude is the most versatile free option. For PM-specific documentation, ChatPRD has a free tier that generates structured PRDs fast. For analytics, Amplitude and Dovetail both offer free tiers worth exploring before committing to paid plans.</p>
     `,
   },
   {
