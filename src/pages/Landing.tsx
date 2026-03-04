@@ -7,6 +7,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
 import portfolioPreview from "@/assets/portfolio-preview.png";
+import aaronTestimonial from "@/assets/aaron-testimonial.png";
+import heidiTestimonial from "@/assets/heidi-testimonial.png";
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
   const statsAnimation = useScrollAnimation();
@@ -223,7 +225,7 @@ const Landing = () => {
                 </div>
                 <div className="pt-4 flex-1 flex flex-col">
                   <div className="flex items-start gap-4 flex-1">
-                    <img src="/lovable-uploads/0cae8eea-dd71-4a45-aafc-571da7eca51f.png" alt="Aaron K., VP of Product" className="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+                    <img src={aaronTestimonial} alt="Aaron K., VP of Product" className="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
                     <div className="flex-1 flex flex-col">
                       <p className="text-base text-white/95 mb-4 leading-relaxed italic flex-1">
                         "Portfolios reveal how PMs navigate complexity — <strong>how they think, influence without authority, and drive outcomes from discovery to launch.</strong>"
@@ -245,7 +247,7 @@ const Landing = () => {
                 </div>
                 <div className="pt-4 flex-1 flex flex-col">
                   <div className="flex items-start gap-4 flex-1">
-                    <img src="/lovable-uploads/56866b99-b328-4d88-9257-54008e00de28.png" alt="Heidi R., Product Recruiter" className="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+                    <img src={heidiTestimonial} alt="Heidi R., Product Recruiter" className="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
                     <div className="flex-1 flex flex-col">
                       <p className="text-base text-white/95 mb-4 leading-relaxed italic flex-1">
                         "A strong portfolio helps cut through the noise. <strong>A product manager's portfolio showcases how they define problems, apply thinking and the impact of what they shipped.</strong>"
