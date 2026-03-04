@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Quote } from "lucide-react";
+import { Quote, Star, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import StickyCTA from "@/components/StickyCTA";
 import portfolioPreview from "@/assets/portfolio-preview.png";
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
@@ -90,7 +92,8 @@ const Landing = () => {
       ]
     }
   });
-  return <main id="main-content" className="gradient-mesh-bg overflow-hidden">
+  return <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
+      <Navbar />
       {/* Hero Section */}
       <section ref={heroAnimation.ref as React.RefObject<HTMLElement>} className={`relative pt-28 pb-12 overflow-hidden ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         {/* Animated background orbs — decorative, hero section only */}
@@ -100,14 +103,15 @@ const Landing = () => {
 
         <div className="prodfolio-container max-w-[1400px] relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-12">
-            <p className="text-base md:text-lg text-white/70 mb-5 font-medium tracking-wide">
-              Resumes show your titles — not how you think
-            </p>
             <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[1.1] tracking-tight mb-6 text-white">
               Show your work.
               <br />
               <span className="gradient-text">Own your impact.</span>
             </h1>
+
+            <p className="text-base md:text-lg text-white/70 mb-5 font-medium tracking-wide">
+              Resumes show your titles — not how you think
+            </p>
 
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto leading-relaxed">
               Go from blank page to shareable link in under an hour.
@@ -121,8 +125,22 @@ const Landing = () => {
                   Start Your Portfolio Free
                 </a>
               </Button>
+              <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all font-semibold">
+                <Link to="/quiz">
+                  Take the Free Quiz
+                </Link>
+              </Button>
             </div>
-            <p className="text-sm text-white/50">Join 125+ product managers building their portfolios</p>
+            <p className="text-sm text-white/70 flex items-center justify-center gap-1">
+              <span className="flex gap-0.5" aria-label="5 out of 5 stars">
+                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+              </span>
+              Join 125+ product managers building their portfolios
+            </p>
 
           </header>
 
@@ -130,14 +148,14 @@ const Landing = () => {
           <div className="max-w-[1100px] mx-auto">
             <div className="glass-card relative overflow-hidden hover-lift">
               {/* Browser Chrome */}
-              <div className="bg-white/10 border-b border-white/20 px-4 py-3 flex items-center gap-2">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
+              <div className="bg-white/5 border-b border-white/10 px-4 py-2.5 flex items-center gap-2">
+                <div className="flex gap-1.5">
+                  <div className="w-2.5 h-2.5 rounded-full bg-white/20"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-white/20"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-white/20"></div>
                 </div>
-                <div className="flex-1 mx-4">
-                  <div className="bg-white/20 rounded px-3 py-1 text-xs text-white border border-white/30">
+                <div className="flex-1 mx-8">
+                  <div className="bg-white/10 rounded-md px-3 py-1 text-xs text-white/50 border border-white/10 max-w-xs mx-auto text-center font-mono">
                     prodfolio.io/p/sarah-chen
                   </div>
                 </div>
@@ -274,9 +292,9 @@ const Landing = () => {
               <p className="text-white/70 text-sm leading-relaxed mb-4">
                 No PM title yet? Showcase your product thinking and prove you have the mindset hiring managers are looking for.
               </p>
-              <a href="/for-career-changers" className="inline-block mt-2 px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
-                Learn how →
-              </a>
+              <Link to="/quiz" className="inline-block mt-2 px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
+                Find your starting point →
+              </Link>
             </article>
 
             {/* Product Leaders & Teams */}
@@ -496,92 +514,82 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* Testimonials Section - Single compact glass card */}
-      <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      {/* Testimonials Section */}
+      <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className="max-w-[900px] mx-auto">
-            <div className={`text-center mb-8 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
-                What product managers are saying
-              </h2>
-            </div>
-            
-            <div className={`bg-white/15 backdrop-blur-md border border-white/20 rounded-3xl p-8 shadow-xl ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-              <Carousel className="w-full" aria-label="Product manager testimonials">
-                <CarouselContent>
-                  {/* Testimonial 1 */}
-                  <CarouselItem>
-                    <div className="py-4 px-2">
-                      <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                          "Building a portfolio or personal website from scratch would have taken me <strong>weeks or even months</strong> that I simply don't have as a busy PM. More importantly, Prodfolio <strong>understands what hiring managers and recruiters in product management are looking for</strong>."
-                        </p>
-                        <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Senior Product Manager</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Tech Industry</div>
-                        </footer>
-                      </blockquote>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Testimonial 2 */}
-                  <CarouselItem>
-                    <div className="py-4 px-2">
-                      <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                          "I spent <strong>8-12 hours</strong> building a portfolio in Notion, and I still felt too nervous to share it with hiring managers. Generic tools just aren't built with PM storytelling in mind. <strong>Prodfolio gets what product managers actually need</strong>."
-                        </p>
-                        <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Product Lead</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Tech Industry</div>
-                        </footer>
-                      </blockquote>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Testimonial 3 */}
-                  <CarouselItem>
-                    <div className="py-4 px-2">
-                      <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                          "I've used Wix, Squarespace, and Behance before. They were <strong>so time-consuming</strong>, and I had no idea how to structure a case study. I really like how Prodfolio's case study <strong>shows you exactly what to include</strong>—this is what you do, these are your metrics."
-                        </p>
-                        <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Amy W.</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Product Manager</div>
-                        </footer>
-                      </blockquote>
-                    </div>
-                  </CarouselItem>
-
-                  {/* Testimonial 4 */}
-                  <CarouselItem>
-                    <div className="py-4 px-2">
-                      <blockquote className="text-center space-y-6">
-                        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-                          "The product is really intuitive and has an <strong>amazing structure</strong> to help you along the setup process. I can see why it supports hiring managers, helps distinguish PM candidates, and improves the efficiency of the hiring process. As a candidate, I'm hoping it will also help me <strong>stand out in a sea of CVs</strong>."
-                        </p>
-                        <footer className="flex items-center justify-center gap-4 text-sm">
-                          <cite className="font-semibold text-white not-italic">Evelyn</cite>
-                          <div className="w-px h-8 bg-white/30"></div>
-                          <div className="text-white/70">Product Manager</div>
-                        </footer>
-                      </blockquote>
-                    </div>
-                  </CarouselItem>
-                </CarouselContent>
-                
-                {/* Navigation */}
-                <div className="flex items-center justify-center gap-6 mt-6">
-                  <CarouselPrevious className="relative static translate-y-0 bg-white/20 border-white/40 text-white hover:bg-white/30" />
-                  <CarouselNext className="relative static translate-y-0 bg-white/20 border-white/40 text-white hover:bg-white/30" />
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+              What product managers are saying
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {[
+              { quote: "Building a portfolio from scratch would have taken me weeks. Prodfolio understands what hiring managers in product management are looking for.", name: "Senior PM", role: "Tech Industry" },
+              { quote: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it. Prodfolio gets what product managers actually need.", name: "Product Lead", role: "Tech Industry" },
+              { quote: "I've used Wix, Squarespace, and Behance — they were so time-consuming. Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
+              { quote: "The product is really intuitive with an amazing structure. As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
+            ].map((t, i) => (
+              <blockquote key={i} className="glass-card p-6 flex flex-col">
+                <div className="mb-4">
+                  <Quote className="w-5 h-5 text-primary/60" />
                 </div>
-              </Carousel>
+                <p className="text-base text-white/90 leading-relaxed flex-1 mb-4">
+                  "{t.quote}"
+                </p>
+                <footer className="flex items-center gap-3 text-sm border-t border-white/10 pt-4">
+                  <cite className="font-semibold text-white not-italic">{t.name}</cite>
+                  <div className="w-px h-4 bg-white/30"></div>
+                  <div className="text-white/70">{t.role}</div>
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-white/40 text-sm">
+            <span>Trusted by PMs in</span>
+            <span>SaaS</span>
+            <span>·</span>
+            <span>Fintech</span>
+            <span>·</span>
+            <span>Healthcare</span>
+            <span>·</span>
+            <span>E-commerce</span>
+            <span>·</span>
+            <span>Enterprise</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Progress Reminder */}
+      <section className="py-8">
+        <div className="prodfolio-container max-w-[600px] mx-auto">
+          <div className="flex items-center gap-3 sm:gap-4 justify-center">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-green-400/20 rounded-full flex items-center justify-center">
+                <CheckCircle className="w-4 h-4 text-green-400" />
+              </div>
+              <span className="text-sm text-white/70 hidden sm:inline">Upload your resume</span>
+              <span className="text-sm text-white/70 sm:hidden">Import</span>
+            </div>
+            <div className="h-px w-6 sm:w-8 bg-white/20"></div>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-green-400/20 rounded-full flex items-center justify-center">
+                <CheckCircle className="w-4 h-4 text-green-400" />
+              </div>
+              <span className="text-sm text-white/70 hidden sm:inline">Build with SIGNAL</span>
+              <span className="text-sm text-white/70 sm:hidden">Build</span>
+            </div>
+            <div className="h-px w-6 sm:w-8 bg-white/20"></div>
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-primary/30 rounded-full flex items-center justify-center">
+                <span className="text-xs text-primary font-bold">3</span>
+              </div>
+              <span className="text-sm text-white font-semibold hidden sm:inline">Share your link</span>
+              <span className="text-sm text-white font-semibold sm:hidden">Share</span>
             </div>
           </div>
+          <p className="text-center text-white/50 text-sm mt-4">
+            You're one step away from a portfolio you're proud of.
+          </p>
         </div>
       </section>
 
@@ -602,11 +610,17 @@ const Landing = () => {
                 Start Your Portfolio Free
               </a>
             </Button>
+            <p className="mt-4">
+              <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
+                Not sure where to start? Take the free quiz →
+              </Link>
+            </p>
           </div>
         </div>
       </section>
 
       <Footer />
-    </main>;
+      <StickyCTA />
+    </div>;
 };
 export default Landing;

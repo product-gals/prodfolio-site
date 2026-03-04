@@ -77,7 +77,12 @@ const Navbar = () => {
                 </Link>
 
                 {/* Who it's for Dropdown */}
-                <div className="relative" ref={whoItsForRef}>
+                <div
+                  className="relative"
+                  ref={whoItsForRef}
+                  onMouseEnter={() => setIsWhoItsForOpen(true)}
+                  onMouseLeave={() => setIsWhoItsForOpen(false)}
+                >
                   <button
                     onClick={() => setIsWhoItsForOpen(!isWhoItsForOpen)}
                     onKeyDown={(e) => { if (e.key === 'Escape') setIsWhoItsForOpen(false); }}
@@ -89,34 +94,37 @@ const Navbar = () => {
                     <ChevronDown className={`w-4 h-4 transition-transform ${isWhoItsForOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
                   </button>
 
-                  {isWhoItsForOpen && (
-                    <div className="absolute top-full left-0 mt-3 w-48 bg-[#1a1040]/90 backdrop-blur-xl border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] py-2" role="menu">
-                      <Link
-                        to="/features"
-                        className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                        onClick={() => setIsWhoItsForOpen(false)}
-                        role="menuitem"
-                      >
-                        Product Managers
-                      </Link>
-                      <Link
-                        to="/for-career-changers"
-                        className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                        onClick={() => setIsWhoItsForOpen(false)}
-                        role="menuitem"
-                      >
-                        Career Changers
-                      </Link>
-                      <Link
-                        to="/for-hiring-managers"
-                        className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
-                        onClick={() => setIsWhoItsForOpen(false)}
-                        role="menuitem"
-                      >
-                        Hiring Managers
-                      </Link>
-                    </div>
-                  )}
+                  <div
+                    className={`absolute top-full left-0 mt-3 w-48 bg-[#1a1040]/90 backdrop-blur-xl border border-white/15 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] py-2 transition-all duration-200 ${
+                      isWhoItsForOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'
+                    }`}
+                    role="menu"
+                  >
+                    <Link
+                      to="/features"
+                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                      onClick={() => setIsWhoItsForOpen(false)}
+                      role="menuitem"
+                    >
+                      Product Managers
+                    </Link>
+                    <Link
+                      to="/for-career-changers"
+                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                      onClick={() => setIsWhoItsForOpen(false)}
+                      role="menuitem"
+                    >
+                      Career Changers
+                    </Link>
+                    <Link
+                      to="/for-hiring-managers"
+                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                      onClick={() => setIsWhoItsForOpen(false)}
+                      role="menuitem"
+                    >
+                      Hiring Managers
+                    </Link>
+                  </div>
                 </div>
 
                 <Link
@@ -130,6 +138,12 @@ const Navbar = () => {
                   className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                 >
                   Pricing
+                </Link>
+                <Link
+                  to="/quiz"
+                  className="font-medium text-coral-light hover:text-white transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
+                >
+                  Quiz
                 </Link>
 
                 <div className="flex items-center space-x-2 ml-4">
@@ -199,6 +213,13 @@ const Navbar = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Pricing
+                </Link>
+                <Link
+                  to="/quiz"
+                  className="block py-2 font-medium text-coral-light hover:text-white transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Free Quiz
                 </Link>
 
                 {/* Who it's for Section */}

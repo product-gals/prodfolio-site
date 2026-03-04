@@ -102,6 +102,17 @@ const Blog = () => {
             </div>
           </Link>
 
+          {/* Inline CTA */}
+          <div className="mb-8 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex-1">
+              <p className="text-white font-semibold">Not sure which portfolio type fits you?</p>
+              <p className="text-white/60 text-sm mt-1">Take our 3-minute quiz and get a personalized recommendation.</p>
+            </div>
+            <Link to="/quiz" className="px-6 py-3 bg-white text-navy font-semibold text-sm rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap">
+              Take the Free Quiz
+            </Link>
+          </div>
+
           {/* Rest of posts grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
             {rest.map((post) => (

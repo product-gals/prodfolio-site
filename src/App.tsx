@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
+
 import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import Partnerships from "./pages/Partnerships";
@@ -36,15 +36,7 @@ const App = () => {
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Routes>
-            <Route 
-              path="/" 
-              element={
-                <div data-testid="main-app-container">
-                  <Navbar />
-                  <Landing />
-                </div>
-              }
-            />
+            <Route path="/" element={<Landing />} />
             
             {/* Marketing pages */}
             <Route path="/about" element={<About />} />

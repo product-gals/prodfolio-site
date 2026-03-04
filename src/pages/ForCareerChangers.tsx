@@ -3,7 +3,8 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Briefcase, Lightbulb, Target, CheckCircle } from "lucide-react";
+import StickyCTA from "@/components/StickyCTA";
+import { Briefcase, Lightbulb, Target, CheckCircle, X } from "lucide-react";
 
 const ForCareerChangers = () => {
   const heroAnimation = useScrollAnimation();
@@ -171,6 +172,53 @@ const ForCareerChangers = () => {
         </div>
       </section>
 
+      {/* Before/After Section */}
+      <section className="py-16 px-4">
+        <div className="prodfolio-container max-w-[1000px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
+              From "I have no PM experience" to "Here's my portfolio"
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="glass-card p-6">
+              <div className="text-coral font-heading font-bold text-sm mb-4 uppercase tracking-wide">Without a portfolio</div>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-3">
+                  <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                  <span>Resume gets lost in a stack of 200 applications</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                  <span>No way to prove product thinking without a PM title</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                  <span>"Tell me about a product you built" becomes a struggle</span>
+                </li>
+              </ul>
+            </div>
+            <div className="glass-card p-6">
+              <div className="text-primary font-heading font-bold text-sm mb-4 uppercase tracking-wide">With your Prodfolio</div>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Shareable link in every application proves you can ship</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Structured case studies show PM thinking from any role</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Walk through real examples with confidence in interviews</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
@@ -195,6 +243,7 @@ const ForCareerChangers = () => {
       </section>
 
       <Footer />
+      <StickyCTA />
     </div>
   );
 };

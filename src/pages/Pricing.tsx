@@ -1,8 +1,10 @@
 import { Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
 import { useState } from "react";
@@ -326,14 +328,14 @@ const Pricing = () => {
                     </ul>
                   </CardContent>
                   
-                  <CardFooter className="pt-0 pb-6 mt-auto">
+                  <CardFooter className="pt-0 pb-6 mt-auto flex-col">
                     <Button
                       asChild
                       className={`w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 ${
                         plan.popular
                           ? "bg-navy text-white hover:bg-navy/90 hover:-translate-y-1"
                           : plan.tier === "free"
-                          ? "border-2 border-primary text-primary bg-transparent hover:bg-primary/5"
+                          ? "bg-white text-navy hover:bg-white/90 hover:-translate-y-1 shadow-md"
                           : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
                       }`}
                       style={{ borderRadius: '12px' }}
@@ -342,6 +344,9 @@ const Pricing = () => {
                         {plan.cta}
                       </a>
                     </Button>
+                    {plan.tier === "free" && (
+                      <p className="text-xs text-navy/50 text-center mt-2">No credit card required. Upgrade anytime.</p>
+                    )}
                   </CardFooter>
                 </Card>
               );
@@ -373,38 +378,48 @@ const Pricing = () => {
           <h2 className="text-4xl font-heading font-bold text-center mb-6 text-white">
             Frequently asked questions
           </h2>
-          <div className="space-y-4">
-            <div className="glass-card p-5 hover-lift">
-              <h3 className="text-lg font-heading font-bold mb-3 text-white">Can I switch plans later?</h3>
-              <p className="text-white/80 leading-relaxed">
+          <Accordion type="single" collapsible className="space-y-3">
+            <AccordionItem value="faq-0" className="glass-card px-5 py-1 border-none">
+              <AccordionTrigger className="text-lg font-heading font-bold text-white hover:no-underline py-4">
+                Can I switch plans later?
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed pb-4">
                 Yes! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.
-              </p>
-            </div>
-            <div className="glass-card p-5 hover-lift">
-              <h3 className="text-lg font-heading font-bold mb-3 text-white">What payment methods do you accept?</h3>
-              <p className="text-white/80 leading-relaxed">
-                We go through stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
-              </p>
-            </div>
-            <div className="glass-card p-5 hover-lift">
-              <h3 className="text-lg font-heading font-bold mb-3 text-white">Can I try before I buy?</h3>
-              <p className="text-white/80 leading-relaxed">
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="faq-1" className="glass-card px-5 py-1 border-none">
+              <AccordionTrigger className="text-lg font-heading font-bold text-white hover:no-underline py-4">
+                What payment methods do you accept?
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed pb-4">
+                We go through Stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="faq-2" className="glass-card px-5 py-1 border-none">
+              <AccordionTrigger className="text-lg font-heading font-bold text-white hover:no-underline py-4">
+                Can I try before I buy?
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed pb-4">
                 Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features.
-              </p>
-            </div>
-            <div className="glass-card p-5 hover-lift">
-              <h3 className="text-lg font-heading font-bold mb-3 text-white">Can I cancel anytime?</h3>
-              <p className="text-white/80 leading-relaxed">
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="faq-3" className="glass-card px-5 py-1 border-none">
+              <AccordionTrigger className="text-lg font-heading font-bold text-white hover:no-underline py-4">
+                Can I cancel anytime?
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed pb-4">
                 Absolutely. Cancel your subscription anytime from your account settings. We may reach out for feedback on how to improve :)
-              </p>
-            </div>
-            <div className="glass-card p-5 hover-lift">
-              <h3 className="text-lg font-heading font-bold mb-3 text-white">What makes Prodfolio different from other portfolio tools?</h3>
-              <p className="text-white/80 leading-relaxed">
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="faq-4" className="glass-card px-5 py-1 border-none">
+              <AccordionTrigger className="text-lg font-heading font-bold text-white hover:no-underline py-4">
+                What makes Prodfolio different from other portfolio tools?
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed pb-4">
                 We're built by PMs, for PMs. Every feature is designed around how you actually work and what hiring managers actually want to see. Plus, you're joining a community of product people who get it.
-              </p>
-            </div>
-          </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
@@ -427,6 +442,7 @@ const Pricing = () => {
       </section>
 
       <Footer />
+      <StickyCTA />
     </div>
   );
 };

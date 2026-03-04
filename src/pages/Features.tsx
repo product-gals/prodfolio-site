@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
 import {
   Sparkles,
   FileText,
@@ -620,11 +622,17 @@ const Features = () => {
                 </a>
               </Button>
             </div>
+            <p className="mt-4">
+              <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
+                Not sure where to start? Take the free quiz →
+              </Link>
+            </p>
           </div>
         </div>
       </section>
 
       <Footer />
+      <StickyCTA />
     </div>
   );
 };

@@ -3,7 +3,9 @@ import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ExternalLink, Star, Plus } from "lucide-react";
+import StickyCTA from "@/components/StickyCTA";
+import { Link } from "react-router-dom";
+import { ExternalLink, Star, Plus, CheckCircle, X } from "lucide-react";
 
 import meaganPhoto from "@/assets/meagan-glenn.jpeg";
 import santiPhoto from "@/assets/santiana-diaz.png";
@@ -141,6 +143,12 @@ const Examples = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </Button>
+                  <a
+                    href="https://app.prodfolio.io/sign-up"
+                    className="block text-center text-xs text-white/50 hover:text-white/80 transition-colors mt-2 underline underline-offset-2"
+                  >
+                    Inspired? Build your own for free →
+                  </a>
                 </div>
               </article>
             ))}
@@ -153,16 +161,64 @@ const Examples = () => {
                 <Plus className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-heading font-bold text-white mb-1">
-                You here?
+                Your portfolio could be here
               </h3>
-              <p className="text-white/80 text-sm mb-3 leading-relaxed">
-                Want to be featured? We're building a gallery of PM portfolios across industries and career stages.
+              <p className="text-white/80 text-sm mb-4 leading-relaxed">
+                Join the PMs showcasing their work. Start building for free — no design skills needed.
               </p>
-              <div className="bg-white/20 border border-white/30 rounded-lg px-4 py-2 inline-flex items-center gap-2">
-                <span className="text-white font-semibold text-sm">Click the chat icon to submit yours</span>
-                <span className="text-lg">👉</span>
-              </div>
+              <Button
+                asChild
+                className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl px-6"
+              >
+                <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
+              </Button>
+              <p className="text-white/50 text-xs mt-3">
+                Want to be featured? <a href="mailto:hello@prodfolio.io" className="underline underline-offset-2 hover:text-white/80 transition-colors">Let us know</a>
+              </p>
             </article>
+          </div>
+
+          {/* Before/After Comparison */}
+          <div className="mt-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white text-center mb-8">
+              The Prodfolio difference
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              <div className="glass-card p-6">
+                <div className="text-coral font-heading font-bold text-sm mb-4 uppercase tracking-wide">Without a Portfolio</div>
+                <ul className="space-y-3 text-white/70 text-sm">
+                  <li className="flex items-start gap-3">
+                    <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                    <span>Spent weeks building in Notion or Squarespace</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                    <span>No structure for PM-specific case studies</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                    <span>Too nervous to share with hiring managers</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="glass-card p-6">
+                <div className="text-primary font-heading font-bold text-sm mb-4 uppercase tracking-wide">With Prodfolio</div>
+                <ul className="space-y-3 text-white/70 text-sm">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span>Built and published in under an hour</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span>SIGNAL framework structures every case study</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                    <span>Confidently sharing on LinkedIn and in applications</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -221,6 +277,7 @@ const Examples = () => {
       </section>
 
       <Footer />
+      <StickyCTA />
     </div>
   );
 };

@@ -94,6 +94,17 @@ const BlogPost = () => {
             </div>
           </header>
 
+          {/* Mid-article CTA */}
+          <div className="my-8 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex-1">
+              <p className="text-white font-semibold text-sm">Not sure where to start with your portfolio?</p>
+              <p className="text-white/60 text-xs mt-1">Take our 3-minute quiz and get personalized recommendations.</p>
+            </div>
+            <Link to="/quiz" className="px-5 py-2.5 bg-white text-navy font-semibold text-sm rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap">
+              Take the Quiz
+            </Link>
+          </div>
+
           {/* Content */}
           <div
             className="prose prose-invert prose-lg max-w-none
@@ -129,12 +140,20 @@ const BlogPost = () => {
             <p className="text-white/70 mb-5 text-sm">
               Prodfolio helps PMs present their work with the structure and clarity hiring managers actually want.
             </p>
-            <a
-              href="https://app.prodfolio.io/sign-up"
-              className="inline-block px-7 py-3 bg-white text-[#100D22] font-semibold rounded-xl hover:bg-white/90 transition-colors text-sm"
-            >
-              Start for free
-            </a>
+            <div className="flex flex-col sm:flex-row justify-center gap-3">
+              <a
+                href="https://app.prodfolio.io/sign-up"
+                className="inline-block px-7 py-3 bg-white text-[#100D22] font-semibold rounded-xl hover:bg-white/90 transition-colors text-sm"
+              >
+                Start for free
+              </a>
+              <Link
+                to="/quiz"
+                className="inline-block px-7 py-3 border border-white/30 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-colors text-sm"
+              >
+                Take the quiz
+              </Link>
+            </div>
           </div>
 
           {/* Prev / Next navigation */}

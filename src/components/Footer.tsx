@@ -80,6 +80,11 @@ const Footer = () => {
                   SIGNAL Framework
                 </a>
               </li>
+              <li>
+                <Link to="/quiz" className="hover:text-white hover:underline transition-all">
+                  Free Portfolio Quiz
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -124,17 +129,17 @@ const Footer = () => {
 
           {/* Newsletter - spans 2 columns on desktop */}
           <div className="col-span-2 md:col-span-2">
-            <h4 className="font-semibold mb-4 text-white">Stay in the loop</h4>
+            <h4 className="font-semibold mb-4 text-white">Free PM career tips, weekly</h4>
             <p className="text-sm text-white/80 mb-4">
-              PM tips, career advice, and exclusive content.
+              Portfolio strategies, interview prep, and career moves — trusted by 125+ PMs.
             </p>
             {submitted ? (
-              <p className="text-white/90 text-sm font-medium">Thanks for subscribing!</p>
+              <p className="text-white/90 text-sm font-medium">You're in! Check your inbox for a welcome email.</p>
             ) : (
               <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="you@company.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="px-3 py-2 rounded-lg text-gray-900 placeholder-gray-500 text-sm w-full focus:outline-none focus:ring-2 focus:ring-white/50"
@@ -145,11 +150,16 @@ const Footer = () => {
                   disabled={isSubmitting}
                   className="px-4 py-2 bg-white text-[#484689] font-semibold text-sm rounded-lg hover:bg-white/90 transition-colors disabled:opacity-50 whitespace-nowrap"
                 >
-                  {isSubmitting ? "..." : "Subscribe"}
+                  {isSubmitting ? "..." : "Join free"}
                 </button>
               </form>
             )}
             {error && <p className="text-red-200 text-xs mt-2">{error}</p>}
+            <p className="mt-3 text-xs text-white/60">
+              <Link to="/quiz" className="hover:text-white underline underline-offset-2 transition-colors">
+                Not sure if you need a portfolio? Take our free quiz →
+              </Link>
+            </p>
           </div>
         </div>
         
