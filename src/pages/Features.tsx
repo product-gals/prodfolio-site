@@ -87,7 +87,7 @@ const Features = () => {
 
           <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold">
             <a href="https://app.prodfolio.io/sign-up">
-              Start Building Free
+              Start Your 7-Day Free Trial
             </a>
           </Button>
         </div>
@@ -534,10 +534,10 @@ const Features = () => {
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-3">AI case study generation</td>
                   <td className="text-center py-4 px-3 text-green-400">✓</td>
+                  <td className="text-center py-4 px-3 text-white/70">General AI</td>
                   <td className="text-center py-4 px-3 text-white/40">—</td>
-                  <td className="text-center py-4 px-3 text-white/40">—</td>
-                  <td className="text-center py-4 px-3 text-white/40">—</td>
-                  <td className="text-center py-4 px-3 text-white/40">—</td>
+                  <td className="text-center py-4 px-3 text-white/70">General AI</td>
+                  <td className="text-center py-4 px-3 text-white/70">General AI</td>
                 </tr>
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-3">Guided SIGNAL framework</td>
@@ -574,17 +574,17 @@ const Features = () => {
                 <tr className="border-b border-white/10">
                   <td className="py-4 px-3">Design skills needed</td>
                   <td className="text-center py-4 px-3 text-green-400">None</td>
-                  <td className="text-center py-4 px-3 text-white/70">Some</td>
+                  <td className="text-center py-4 px-3 text-white/70">None</td>
                   <td className="text-center py-4 px-3 text-white/70">Some</td>
                   <td className="text-center py-4 px-3 text-white/70">Extensive</td>
-                  <td className="text-center py-4 px-3 text-white/70">Some</td>
+                  <td className="text-center py-4 px-3 text-white/70">None</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-3">Starting price</td>
                   <td className="text-center py-4 px-3 text-green-400">Free</td>
                   <td className="text-center py-4 px-3 text-white/70">Free</td>
                   <td className="text-center py-4 px-3 text-white/70">$16/mo</td>
-                  <td className="text-center py-4 px-3 text-white/70">$14/mo</td>
+                  <td className="text-center py-4 px-3 text-white/70">Free</td>
                   <td className="text-center py-4 px-3 text-white/70">Free</td>
                 </tr>
               </tbody>

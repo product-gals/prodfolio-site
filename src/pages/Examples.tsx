@@ -162,7 +162,7 @@ const Examples = () => {
                 asChild
                 className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl px-6"
               >
-                <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
+                <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
               </Button>
               <p className="text-white/50 text-xs mt-3">
                 Want to be featured? <a href="mailto:hello@prodfolio.io" className="underline underline-offset-2 hover:text-white/80 transition-colors">Let us know</a>
@@ -258,7 +258,7 @@ const Examples = () => {
             asChild
             className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
           >
-            <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
+            <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
           </Button>
         </div>
       </section>

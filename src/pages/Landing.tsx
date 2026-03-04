@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Quote, Star, CheckCircle } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -519,7 +519,7 @@ const Landing = () => {
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">
-              What product managers are saying
+              Hear it from PMs like you
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
@@ -549,59 +549,22 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* Progress Reminder + Final CTA */}
-      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="prodfolio-container max-w-[600px] mx-auto mb-8">
-          <div className="flex items-center gap-3 sm:gap-4 justify-center">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-green-400/20 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-              </div>
-              <span className="text-sm text-white/70 hidden sm:inline">Upload your resume</span>
-              <span className="text-sm text-white/70 sm:hidden">Import</span>
-            </div>
-            <div className="h-px w-6 sm:w-8 bg-white/20"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-green-400/20 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-              </div>
-              <span className="text-sm text-white/70 hidden sm:inline">Build with SIGNAL</span>
-              <span className="text-sm text-white/70 sm:hidden">Build</span>
-            </div>
-            <div className="h-px w-6 sm:w-8 bg-white/20"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary/30 rounded-full flex items-center justify-center">
-                <span className="text-xs text-primary font-bold">3</span>
-              </div>
-              <span className="text-sm text-white font-semibold hidden sm:inline">Share your link</span>
-              <span className="text-sm text-white font-semibold sm:hidden">Share</span>
-            </div>
-          </div>
-          <p className="text-center text-white/50 text-sm mt-4">
-            You're one step away from a portfolio you're proud of.
+      {/* Final CTA */}
+      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Your next PM role starts with your portfolio.
+          </h2>
+          <Button asChild className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
+            <a href="https://app.prodfolio.io/sign-up">
+              Start Your 7-Day Free Trial
+            </a>
+          </Button>
+          <p className="mt-4">
+            <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
+              Not sure where to start? Take the free quiz →
+            </Link>
           </p>
-        </div>
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
-            <h2 className="text-2xl font-heading font-bold text-white mb-2 leading-tight">
-              Your resume lists what you did.
-              <br />
-              Your Prodfolio shows how you think.
-            </h2>
-            <p className="text-white/70 mb-6">
-              Build your first portfolio free - no card needed.
-            </p>
-            <Button asChild size="default" className="px-8 py-5 text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
-              <a href="https://app.prodfolio.io/sign-up">
-                Start Your Portfolio Free
-              </a>
-            </Button>
-            <p className="mt-4">
-              <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
-                Not sure where to start? Take the free quiz →
-              </Link>
-            </p>
-          </div>
         </div>
       </section>
 
