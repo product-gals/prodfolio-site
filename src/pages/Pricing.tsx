@@ -127,7 +127,7 @@ const Pricing = () => {
       <section className="pt-28 pb-4">
         <div className="prodfolio-container text-center">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
-            Invest in your PM career
+            Invest in your <span className="gradient-text">PM career</span>
           </h1>
           <p className="text-xl text-white/80 mb-4">
             For less than the cost of a coffee per week, stand out in every application.

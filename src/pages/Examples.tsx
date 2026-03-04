@@ -80,9 +80,9 @@ const Examples = () => {
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
-            See what's possible
+            See <span className="gradient-text">what's possible</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-2">
+          <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mb-2">
             Real portfolios from PMs at every stage. Get inspired, then build your own.
           </p>
         </div>

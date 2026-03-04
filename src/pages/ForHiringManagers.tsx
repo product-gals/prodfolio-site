@@ -46,7 +46,7 @@ const ForHiringManagers = () => {
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <p className="text-lg text-white/80 mb-4 font-medium">For Hiring Managers</p>
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
-            Skip the guesswork
+            Skip the <span className="gradient-text">guesswork</span>
           </h1>
           <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mb-10">
             See real product thinking before the first interview.

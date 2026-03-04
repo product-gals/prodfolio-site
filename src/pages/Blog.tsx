@@ -52,7 +52,7 @@ const Blog = () => {
       >
         <div className="prodfolio-container max-w-[1100px] mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-white">
-            PM Career Advice
+            PM Career <span className="gradient-text">Advice</span>
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto">
             Practical guides on portfolios, case studies, job searching, and breaking into product management.
