@@ -93,8 +93,8 @@ const Examples = () => {
         ref={galleryAnimation.ref as React.RefObject<HTMLElement>}
         className={`pt-4 pb-8 px-4 ${galleryAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[1000px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="prodfolio-container max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             {featuredPortfolios.map((portfolio, index) => (
               <article
                 key={index}
@@ -143,20 +143,12 @@ const Examples = () => {
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </Button>
-                  <a
-                    href="https://app.prodfolio.io/sign-up"
-                    className="block text-center text-xs text-white/50 hover:text-white/80 transition-colors mt-2 underline underline-offset-2"
-                  >
-                    Inspired? Build your own for free →
-                  </a>
                 </div>
               </article>
             ))}
-          </div>
 
-          {/* "You here?" CTA Card - standalone row */}
-          <div className="max-w-md mx-auto">
-            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white/15 transition-all hover:border-white/60 group">
+            {/* "You here?" CTA Card - inline in grid */}
+            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white/15 transition-all hover:border-white/60 group flex flex-col justify-center">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/30 transition-colors">
                 <Plus className="w-6 h-6 text-white" />
               </div>
@@ -225,14 +217,14 @@ const Examples = () => {
 
       {/* What Makes a Great Portfolio */}
       <section className="pt-12 pb-6 px-4">
-        <div className="prodfolio-container max-w-[1000px] mx-auto">
+        <div className="prodfolio-container max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
               What makes a great PM portfolio?
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="glass-card p-5 text-center">
               <div className="text-3xl font-bold text-white mb-2">1-3</div>
               <div className="text-sm text-white/70">Strong case studies</div>
@@ -258,8 +250,8 @@ const Examples = () => {
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
         className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
+        <div className="max-w-md mx-auto">
+          <div className="glass-card p-8 text-center">
             <h2 className="text-2xl font-heading font-bold text-white mb-2">
               Ready to build yours?
             </h2>
