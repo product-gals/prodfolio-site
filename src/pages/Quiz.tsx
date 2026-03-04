@@ -517,14 +517,28 @@ const Quiz = () => {
       return;
     }
 
-    console.log("Quiz lead captured:", {
-      firstName,
-      email,
-      marketingOptIn,
-      answers,
-      multiAnswers,
+    // Get archetype to store alongside quiz data
+    const results = buildResults(
       journeyStage,
-    });
+      answers[2] || "",
+      answers[4] || "",
+      multiAnswers[3] || [],
+    );
+
+    // Fire-and-forget: send quiz data to API
+    fetch("/api/quiz-submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName: firstName.trim(),
+        email: email.trim(),
+        marketingOptIn,
+        journeyStage,
+        answers,
+        multiAnswers,
+        archetype: results.archetype.title,
+      }),
+    }).catch((err) => console.error("Quiz submission error:", err));
 
     setShowEmailCapture(false);
     setShowResults(true);
@@ -577,7 +591,7 @@ const Quiz = () => {
               Start the Quiz
             </Button>
             <p className="mt-4 text-sm text-white/50">
-              Completely free · Takes 3 minutes · No credit card required
+              Completely free · Takes 3 minutes
             </p>
           </div>
         </section>
@@ -790,7 +804,7 @@ const Quiz = () => {
               <a href="https://app.prodfolio.io/sign-up">Start Building Free</a>
             </Button>
             <p className="mt-3 text-sm text-white/40">
-              Free to start · No credit card required
+              Free to start
             </p>
           </div>
         </section>

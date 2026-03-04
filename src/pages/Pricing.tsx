@@ -130,7 +130,7 @@ const Pricing = () => {
             Invest in your PM career
           </h1>
           <p className="text-xl text-white/80 mb-4">
-            For less than the cost of a coffee per week, stand out in every application. Start free, no credit card required.
+            For less than the cost of a coffee per week, stand out in every application.
           </p>
           <div className="flex items-center justify-center gap-2 text-sm text-white/70">
             <span className="flex gap-0.5">
@@ -293,7 +293,7 @@ const Pricing = () => {
                       <CardTitle className="text-xl font-heading text-navy">{plan.name}</CardTitle>
                       {plan.tier === "free" && (
                         <span className="bg-coral/10 text-coral text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap">
-                          No credit card required
+                          Free plan
                         </span>
                       )}
                     </div>
@@ -343,7 +343,7 @@ const Pricing = () => {
                       </a>
                     </Button>
                     {plan.tier === "free" && (
-                      <p className="text-xs text-navy/50 text-center mt-2">No credit card required. Upgrade anytime.</p>
+                      <p className="text-xs text-navy/50 text-center mt-2">Upgrade anytime.</p>
                     )}
                   </CardFooter>
                 </Card>

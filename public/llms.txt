@@ -54,7 +54,7 @@ Users can attach their resume directly to their portfolio so hiring managers hav
 Prodfolio offers a free tier and paid subscription plans. The free plan allows building and publishing a portfolio with limited features. Paid plans unlock AI case study generation, advanced analytics, additional themes, custom domains, and more. Annual billing includes a discount over monthly.
 
 Full pricing: https://prodfolio.io/pricing
-Get started free (no credit card required): https://app.prodfolio.io/sign-up
+Get started: https://app.prodfolio.io/sign-up
 
 ---
 

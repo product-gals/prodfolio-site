@@ -601,7 +601,7 @@ const Features = () => {
               Ready to build your portfolio?
             </h2>
             <p className="text-white/70 mb-6 max-w-md mx-auto">
-              Join product managers who've discovered the portfolio advantage. Start free, no credit card required.
+              Join product managers who've discovered the portfolio advantage.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Button

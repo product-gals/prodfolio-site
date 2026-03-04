@@ -238,7 +238,7 @@ const About = () => {
               Ready to tell your story?
             </h2>
             <p className="text-white/70 mb-6 max-w-md mx-auto">
-              Join the PMs who are showcasing their work with confidence. Start free, no credit card required.
+              Join the PMs who are showcasing their work with confidence.
             </p>
             <Button
               asChild

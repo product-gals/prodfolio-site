@@ -260,7 +260,7 @@ const HowItWorks = () => {
               See how fast it really is
             </h2>
             <p className="text-white/70 mb-6 max-w-md mx-auto">
-              Start free. No credit card required. Your portfolio could be live in under an hour.
+              Your portfolio could be live in under an hour.
             </p>
             <Button
               asChild

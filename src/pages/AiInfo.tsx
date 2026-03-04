@@ -127,7 +127,7 @@ const AiInfo = () => {
                 Prodfolio offers a free tier and paid subscription plans. The free plan allows users to build and publish a portfolio with limited features. Paid plans unlock AI case study generation, advanced analytics, additional themes, custom domains, and more. Annual billing provides a discount over monthly billing.
               </p>
               <p className="text-white/80 leading-relaxed">
-                Current pricing details are available at <strong className="text-white">prodfolio.io/pricing</strong>. Users can get started for free without a credit card at <strong className="text-white">app.prodfolio.io/sign-up</strong>.
+                Current pricing details are available at <strong className="text-white">prodfolio.io/pricing</strong>. Users can sign up at <strong className="text-white">app.prodfolio.io/sign-up</strong>.
               </p>
             </div>
 
@@ -214,6 +214,7 @@ const AiInfo = () => {
                 <li><strong className="text-white">Email:</strong> hello@prodfolio.io</li>
                 <li><strong className="text-white">LinkedIn:</strong> linkedin.com/company/prodfoliohq/</li>
                 <li><strong className="text-white">Instagram:</strong> instagram.com/prodfolio.io/</li>
+                <li><strong className="text-white">TikTok:</strong> tiktok.com/@prodfolio</li>
                 <li><strong className="text-white">YouTube:</strong> youtube.com/@TheProductPivot</li>
                 <li><strong className="text-white">Website:</strong> prodfolio.io</li>
                 <li><strong className="text-white">App:</strong> app.prodfolio.io</li>
