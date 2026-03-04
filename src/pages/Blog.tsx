@@ -37,6 +37,10 @@ const Blog = () => {
         url: "https://prodfolio.io",
       },
     },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Blog", url: "https://prodfolio.io/blog" },
+    ],
   });
 
   const [featured, ...rest] = sortedBlogPosts;

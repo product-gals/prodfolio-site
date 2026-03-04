@@ -51,7 +51,11 @@ const About = () => {
       "sameAs": [
         "https://www.youtube.com/@TheProductPivot"
       ]
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "About", url: "https://prodfolio.io/about" },
+    ],
   });
 
   return (

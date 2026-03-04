@@ -14,6 +14,10 @@ const Partnerships = () => {
     title: "Product Management Partnerships | Collaborate with Prodfolio",
     description: "Partner with Prodfolio to elevate product professionals. Join our network of educators, recruiters, and product organizations.",
     canonical: "https://prodfolio.io/partnerships",
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Partnerships", url: "https://prodfolio.io/partnerships" },
+    ],
   });
 
   const partners = [

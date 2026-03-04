@@ -63,7 +63,11 @@ const Pricing = () => {
           }
         }
       ]
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Pricing", url: "https://prodfolio.io/pricing" },
+    ],
   });
 
   const getPrice = (monthlyPrice: number, tier: string) => {

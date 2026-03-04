@@ -23,7 +23,11 @@ const ForHiringManagers = () => {
       "name": "Prodfolio for Hiring Managers",
       "description": "Resources for hiring managers evaluating product management candidates.",
       "url": "https://prodfolio.io/for-hiring-managers"
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "For Hiring Managers", url: "https://prodfolio.io/for-hiring-managers" },
+    ],
   });
 
   const shareText = "We encourage candidates to share a portfolio showcasing their product thinking. You can build one for free at prodfolio.io";

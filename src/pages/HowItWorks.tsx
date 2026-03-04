@@ -38,7 +38,11 @@ const HowItWorks = () => {
           "text": "Get your personalized portfolio link and share it with hiring managers"
         }
       ]
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "How It Works", url: "https://prodfolio.io/how-it-works" },
+    ],
   });
 
   return (

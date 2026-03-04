@@ -62,6 +62,10 @@ const Partners = () => {
     title: "Prodfolio Partners | Product Management Community",
     description: "Great portfolios start with great support. Meet the product management leaders and organizations partnering with Prodfolio.",
     canonical: "https://prodfolio.io/partners",
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Partners", url: "https://prodfolio.io/partners" },
+    ],
   });
 
   return (

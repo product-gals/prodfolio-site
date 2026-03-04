@@ -38,7 +38,11 @@ const Resources = () => {
         { "@type": "Person", "name": "Meagan Glenn" },
         { "@type": "Person", "name": "Santiana Brace" }
       ]
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Podcast", url: "https://prodfolio.io/podcast" },
+    ],
   });
 
   // Filter episodes by season based on episodeNumber (S1E1, S2E1, etc.)

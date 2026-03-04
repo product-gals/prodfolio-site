@@ -22,7 +22,11 @@ const ForCareerChangers = () => {
       "name": "PM Portfolio for Career Changers",
       "description": "Resources and tools for professionals transitioning into product management roles.",
       "url": "https://prodfolio.io/for-career-changers"
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "For Career Changers", url: "https://prodfolio.io/for-career-changers" },
+    ],
   });
 
   return (

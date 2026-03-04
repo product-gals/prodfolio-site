@@ -37,7 +37,11 @@ const Features = () => {
       "name": "Prodfolio Features",
       "description": "Explore all features of Prodfolio - the portfolio platform built for product managers.",
       "url": "https://prodfolio.io/features"
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Features", url: "https://prodfolio.io/features" },
+    ],
   });
 
   return (

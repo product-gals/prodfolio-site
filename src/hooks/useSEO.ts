@@ -1,5 +1,10 @@
 import { useEffect } from 'react';
 
+interface Breadcrumb {
+  name: string;
+  url: string;
+}
+
 interface SEOData {
   title: string;
   description: string;
@@ -10,6 +15,7 @@ interface SEOData {
   canonical?: string;
   noindex?: boolean;
   structuredData?: object;
+  breadcrumbs?: Breadcrumb[];
 }
 
 export const useSEO = (seoData: SEOData) => {
@@ -85,12 +91,39 @@ export const useSEO = (seoData: SEOData) => {
       structuredDataScript.textContent = JSON.stringify(seoData.structuredData);
     }
 
+    // Add breadcrumb structured data
+    if (seoData.breadcrumbs && seoData.breadcrumbs.length > 0) {
+      let breadcrumbScript = document.querySelector('#breadcrumb-data') as HTMLScriptElement;
+      if (!breadcrumbScript) {
+        breadcrumbScript = document.createElement('script');
+        breadcrumbScript.id = 'breadcrumb-data';
+        breadcrumbScript.type = 'application/ld+json';
+        document.head.appendChild(breadcrumbScript);
+      }
+      breadcrumbScript.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": seoData.breadcrumbs.map((crumb, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "name": crumb.name,
+          "item": crumb.url,
+        })),
+      });
+    }
+
     // Cleanup function to remove structured data when component unmounts
     return () => {
       if (seoData.structuredData) {
         const structuredDataScript = document.querySelector('#structured-data');
         if (structuredDataScript) {
           structuredDataScript.remove();
+        }
+      }
+      if (seoData.breadcrumbs) {
+        const breadcrumbScript = document.querySelector('#breadcrumb-data');
+        if (breadcrumbScript) {
+          breadcrumbScript.remove();
         }
       }
     };

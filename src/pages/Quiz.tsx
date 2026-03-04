@@ -440,6 +440,10 @@ const Quiz = () => {
     description:
       "Take our quick 3-minute quiz to discover what's holding your PM portfolio back and get personalized recommendations to stand out.",
     canonical: "https://prodfolio.io/quiz",
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Portfolio Quiz", url: "https://prodfolio.io/quiz" },
+    ],
   });
 
   const calculateJourneyStage = (): JourneyStage => {

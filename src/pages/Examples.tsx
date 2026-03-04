@@ -27,7 +27,11 @@ const Examples = () => {
       "name": "PM Portfolio Examples",
       "description": "A collection of product manager portfolio examples showcasing different styles and career stages.",
       "url": "https://prodfolio.io/examples"
-    }
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "Examples", url: "https://prodfolio.io/examples" },
+    ],
   });
 
   const featuredPortfolios = [

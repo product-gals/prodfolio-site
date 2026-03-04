@@ -47,6 +47,11 @@ const BlogPost = () => {
             url: `https://prodfolio.io/blog/${post.slug}`,
             keywords: post.tags.join(", "),
           },
+          breadcrumbs: [
+            { name: "Home", url: "https://prodfolio.io" },
+            { name: "Blog", url: "https://prodfolio.io/blog" },
+            { name: post.title, url: `https://prodfolio.io/blog/${post.slug}` },
+          ],
         }
       : {
           title: "Post Not Found | Prodfolio Blog",
