@@ -48,22 +48,22 @@ const HowItWorks = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-28 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-28 pb-4 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
             From blank page to portfolio
             <br />
             <span className="gradient-text">in under an hour</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white/80 max-w-2xl mx-auto mb-6">
             No design skills needed. No weeks of tweaking. Just your experience and our guided framework.
           </p>
           <Button
             asChild
             className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
           >
-            <a href="https://app.prodfolio.io/sign-up">Try It Free</a>
+            <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
           </Button>
         </div>
       </section>
@@ -71,11 +71,11 @@ const HowItWorks = () => {
       {/* 3 Steps */}
       <section
         ref={stepsAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 bg-white/10 backdrop-blur-sm ${stepsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-16 px-4 ${stepsAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
               Three steps to stand out
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -177,7 +177,7 @@ const HowItWorks = () => {
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
               The SIGNAL Framework
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -252,23 +252,21 @@ const HowItWorks = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
-              See how fast it really is
-            </h2>
-            <p className="text-white/70 mb-6 max-w-md mx-auto">
-              Your portfolio could be live in under an hour.
-            </p>
-            <Button
-              asChild
-              className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
-            >
-              <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
-            </Button>
-          </div>
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-2">
+            See how fast it really is
+          </h2>
+          <p className="text-white/70 mb-6 max-w-md mx-auto">
+            Your portfolio could be live in under an hour.
+          </p>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
+          </Button>
         </div>
       </section>
 

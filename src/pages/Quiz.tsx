@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { ArrowLeft, ArrowRight, Check, ClipboardCheck, Download } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ClipboardCheck, Download, Target, Sparkles, TrendingUp } from "lucide-react";
 import { toPng } from "html-to-image";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -562,23 +562,22 @@ const Quiz = () => {
   // ── Intro Screen ──────────────────────────────────────────────────────
   if (showIntro) {
     return (
-      <div className="min-h-screen gradient-mesh-bg" style={{ backgroundColor: "#0c0a1a" }}>
+      <div className="min-h-screen flex flex-col gradient-mesh-bg" style={{ backgroundColor: "#0c0a1a" }}>
         <Navbar />
 
         <section
           ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-          className={`pt-28 pb-16 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+          className={`pt-28 pb-16 px-4 flex-1 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         >
           <div className="prodfolio-container max-w-[1200px] mx-auto text-center">
             <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center">
               <ClipboardCheck className="w-8 h-8 text-coral" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
               Do you need a <span className="gradient-text">PM portfolio?</span>
             </h1>
-            <p className="text-lg text-white/60 mb-12 max-w-xl mx-auto">
-              Identify your strengths, uncover gaps, and get personalized guidance for your career
-              stage.
+            <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
+              Identify your strengths, uncover gaps, and get personalized guidance for your career stage.
             </p>
 
             <Button
@@ -591,6 +590,33 @@ const Quiz = () => {
             <p className="mt-4 text-sm text-white/50">
               Completely free · Takes 3 minutes
             </p>
+          </div>
+
+          {/* What you'll get */}
+          <div className="prodfolio-container max-w-[900px] mx-auto mt-20">
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="glass-card p-6 text-center">
+                <div className="w-10 h-10 mx-auto mb-4 rounded-lg bg-coral/20 flex items-center justify-center">
+                  <Target className="w-5 h-5 text-coral" />
+                </div>
+                <h3 className="text-white font-semibold mb-2">Your career stage</h3>
+                <p className="text-white/60 text-sm">Find out where you stand and what hiring managers expect at your level.</p>
+              </div>
+              <div className="glass-card p-6 text-center">
+                <div className="w-10 h-10 mx-auto mb-4 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <Sparkles className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="text-white font-semibold mb-2">Portfolio recommendations</h3>
+                <p className="text-white/60 text-sm">Get specific advice on what to include based on your experience and goals.</p>
+              </div>
+              <div className="glass-card p-6 text-center">
+                <div className="w-10 h-10 mx-auto mb-4 rounded-lg bg-green-500/20 flex items-center justify-center">
+                  <TrendingUp className="w-5 h-5 text-green-400" />
+                </div>
+                <h3 className="text-white font-semibold mb-2">Your next steps</h3>
+                <p className="text-white/60 text-sm">A personalized action plan to stand out in your next application.</p>
+              </div>
+            </div>
           </div>
         </section>
 
