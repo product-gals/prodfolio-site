@@ -43,7 +43,7 @@ const Pricing = () => {
           "name": "Can I try before I buy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features."
+            "text": "Yes! Every sign up comes with a 7-day free trial — full access, no limitations."
           }
         },
         {
@@ -89,7 +89,7 @@ const Pricing = () => {
         "Public portfolio link",
         '"Built with Prodfolio" footer'
       ],
-      cta: "Get Started Free",
+      cta: "Get Started",
       popular: false,
       tier: "free",
       monthlyLink: "https://app.prodfolio.io/sign-up",
@@ -97,7 +97,7 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      tagline: "Full access to Prodfolio",
+      tagline: "Try everything free for 7 days",
       price: "$29",
       monthlyPrice: 29,
       features: [
@@ -111,11 +111,11 @@ const Pricing = () => {
         "Remove Prodfolio branding",
         "Priority support"
       ],
-      cta: "Get Pro",
+      cta: "Start 7-Day Free Trial",
       popular: true,
       tier: "pro",
-      monthlyLink: "https://buy.stripe.com/00w00l5NefoxeGzgMTbfO01",
-      annualLink: "https://buy.stripe.com/aFa28tcbC6S18ib2W3bfO02"
+      monthlyLink: "https://app.prodfolio.io/sign-up",
+      annualLink: "https://app.prodfolio.io/sign-up"
     }
   ];
 
@@ -342,9 +342,6 @@ const Pricing = () => {
                         {plan.cta}
                       </a>
                     </Button>
-                    {plan.tier === "free" && (
-                      <p className="text-xs text-navy/50 text-center mt-2">Upgrade anytime.</p>
-                    )}
                   </CardFooter>
                 </Card>
               );
@@ -398,7 +395,7 @@ const Pricing = () => {
                 Can I try before I buy?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 leading-relaxed pb-4">
-                Yes! Start with our Free plan to explore the platform. You can upgrade to paid plans anytime to unlock more features.
+                Yes! Every sign up comes with a 7-day free trial — full access, no limitations.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="faq-3" className="glass-card px-5 py-1 border-none">
@@ -422,20 +419,18 @@ const Pricing = () => {
       </section>
 
       {/* Still Have Questions CTA */}
-      <section className="py-12 px-4 cta-glow-section">
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
-            <h3 className="text-2xl font-heading font-bold text-white mb-2">Still have questions?</h3>
-            <p className="text-white/80 mb-6">We're happy to walk you through Prodfolio and help you decide if it's the right fit.</p>
-            <BookCallModal
-              trigger={
-                <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-semibold px-8 py-6 h-auto rounded-xl shadow-lg inline-flex items-center gap-2">
-                  <Phone className="h-5 w-5" />
-                  Book a 15 min call
-                </Button>
-              }
-            />
-          </div>
+      <section className="pt-6 pb-12 px-4 cta-glow-section">
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-2">Still have questions?</h2>
+          <p className="text-white/80 mb-6">We're happy to walk you through Prodfolio and help you decide if it's the right fit.</p>
+          <BookCallModal
+            trigger={
+              <Button className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl inline-flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Book a 15 min call
+              </Button>
+            }
+          />
         </div>
       </section>
 

@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
-import { Briefcase, Lightbulb, Target, CheckCircle, X } from "lucide-react";
+import { CheckCircle, X } from "lucide-react";
 
 const ForCareerChangers = () => {
   const heroAnimation = useScrollAnimation();
@@ -32,16 +32,14 @@ const ForCareerChangers = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-28 pb-16 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-28 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
           <p className="text-lg text-white/80 mb-4 font-medium">For Career Changers</p>
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
-            You think like a PM.
-            <br />
-            <span className="text-white/90">Now prove it.</span>
+            Your experience is more relevant than you think.
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mb-10">
             Transitioning into product management? Your portfolio shows hiring managers what your resume can't: that you already have the mindset.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -65,46 +63,37 @@ const ForCareerChangers = () => {
       {/* Why You Don't Need a PM Title */}
       <section
         ref={whyAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${whyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${whyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">
               You don't need a PM title to build a PM portfolio
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Hiring managers care about how you think, not what your business card says.
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="glass-card p-8">
-              <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
-                <Briefcase className="w-7 h-7 text-primary" />
-              </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <article className="glass-card p-6">
+              <span className="text-sm font-mono text-primary/60 font-bold mb-3 block">01</span>
               <h3 className="text-xl font-heading font-bold text-white mb-3">Side projects count</h3>
               <p className="text-white/70 leading-relaxed">
                 Built an app? Launched a community project? Led a volunteer initiative? These demonstrate real product thinking.
               </p>
             </article>
 
-            <article className="glass-card p-8">
-              <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
-                <Lightbulb className="w-7 h-7 text-primary" />
-              </div>
+            <article className="glass-card p-6">
+              <span className="text-sm font-mono text-primary/60 font-bold mb-3 block">02</span>
               <h3 className="text-xl font-heading font-bold text-white mb-3">Reframe your experience</h3>
               <p className="text-white/70 leading-relaxed">
                 Engineers solve problems. Marketers understand users. Designers ship experiences. You already have transferable PM skills.
               </p>
             </article>
 
-            <article className="glass-card p-8">
-              <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
-                <Target className="w-7 h-7 text-primary" />
-              </div>
+            <article className="glass-card p-6">
+              <span className="text-sm font-mono text-primary/60 font-bold mb-3 block">03</span>
               <h3 className="text-xl font-heading font-bold text-white mb-3">Show the mindset</h3>
               <p className="text-white/70 leading-relaxed">
-                PMs identify problems, prioritize solutions, and drive outcomes. Show how you've done this—in any role.
+                PMs identify problems, prioritize solutions, and drive outcomes. Show how you've done this — in any role.
               </p>
             </article>
           </div>
@@ -114,11 +103,11 @@ const ForCareerChangers = () => {
       {/* What Career Changers Showcase */}
       <section
         ref={whatAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-16 px-4 ${whatAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`py-12 px-4 ${whatAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="prodfolio-container max-w-[1200px] mx-auto">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-10">
               <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
                 What career changers showcase
               </h2>
@@ -173,11 +162,11 @@ const ForCareerChangers = () => {
       </section>
 
       {/* Before/After Section */}
-      <section className="py-16 px-4">
+      <section className="py-12 px-4">
         <div className="prodfolio-container max-w-[1000px] mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              From "I have no PM experience" to "Here's my portfolio"
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+              From "I have no PM experience" to "here's my portfolio"
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -222,23 +211,18 @@ const ForCareerChangers = () => {
       {/* CTA Section */}
       <section
         ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
-        className={`py-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+        className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
-            <h2 className="text-2xl font-heading font-bold text-white mb-2">
-              Turn your experience into opportunity
-            </h2>
-            <p className="text-white/70 mb-6 max-w-md mx-auto">
-              It counts more than you think. Start free, no PM experience required.
-            </p>
-            <Button
-              asChild
-              className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
-            >
-              <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
-            </Button>
-          </div>
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Turn your experience into an opportunity
+          </h2>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
+          </Button>
         </div>
       </section>
 

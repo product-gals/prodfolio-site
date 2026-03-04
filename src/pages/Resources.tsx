@@ -150,7 +150,7 @@ const Resources = () => {
       <section className="py-8 px-4">
         <div className="prodfolio-container max-w-[800px] mx-auto">
           <div className="bg-gradient-to-r from-coral to-primary rounded-2xl p-6 md:p-8 text-center">
-            <p className="text-white/90 text-sm font-medium uppercase tracking-wider mb-2">Coming Spring 2026</p>
+            <p className="text-white/90 text-sm font-medium uppercase tracking-wider mb-2">Coming March 2026</p>
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
               Season 3
             </h2>
@@ -257,7 +257,7 @@ const Resources = () => {
           {activeFilter === "s3" ? (
             <div className="text-center py-16">
               <div className="text-6xl mb-4">🎙️</div>
-              <h3 className="text-2xl font-heading font-bold text-white mb-3">Season 3 Coming Spring 2026</h3>
+              <h3 className="text-2xl font-heading font-bold text-white mb-3">Season 3 Coming March 2026</h3>
               <p className="text-white/60 max-w-md mx-auto">
                 Featuring topics on breaking into product, AI, the messy middle, and what makes a good resume.
               </p>
