@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Copy, Check, Tag, Linkedin, Globe, Handshake } from "lucide-react";
+import { Copy, Check, Tag, Linkedin, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
@@ -49,6 +49,7 @@ const partners: Partner[] = [
 const Partners = () => {
   const heroAnimation = useScrollAnimation();
   const partnersAnimation = useScrollAnimation();
+  const ctaAnimation = useScrollAnimation();
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
 
   const copyPromoCode = (code: string) => {
@@ -70,13 +71,13 @@ const Partners = () => {
       {/* Hero Section */}
       <section
         ref={heroAnimation.ref as React.RefObject<HTMLElement>}
-        className={`pt-32 pb-8 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
+        className={`pt-28 pb-8 px-4 ${heroAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-[900px] mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
+        <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
             Prodfolio Partners
           </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
             Great portfolios start with great support. These are the people who get it.
           </p>
         </div>
@@ -87,12 +88,12 @@ const Partners = () => {
         ref={partnersAnimation.ref as React.RefObject<HTMLElement>}
         className={`py-8 px-4 ${partnersAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
-        <div className="prodfolio-container max-w-[900px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {partners.map((partner) => (
               <article
                 key={partner.id}
-                className="bg-white rounded-2xl shadow-xl p-6 relative hover:shadow-2xl transition-all hover:-translate-y-1"
+                className="glass-card p-6 relative"
               >
                 {/* Exclusive Offer Badge */}
                 {partner.promoCode && (
@@ -118,11 +119,11 @@ const Partners = () => {
                         )}
                       </div>
                     ) : (
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center">
                         {partner.logo ? (
                           <img src={partner.logo} alt={partner.name} className="w-full h-full object-contain p-2" loading="eager" />
                         ) : (
-                          <span className="text-base font-bold text-primary">
+                          <span className="text-base font-bold text-white">
                             P2P
                           </span>
                         )}
@@ -132,10 +133,10 @@ const Partners = () => {
 
                   {/* Content */}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg font-heading font-bold text-navy mb-1">
+                    <h3 className="text-lg font-heading font-bold text-white mb-1">
                       {partner.name}
                     </h3>
-                    <p className="text-navy/70 text-sm mb-3 leading-relaxed">
+                    <p className="text-white/70 text-sm mb-3 leading-relaxed">
                       {partner.description}
                     </p>
 
@@ -145,7 +146,7 @@ const Partners = () => {
                         href={partner.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 bg-navy/5 hover:bg-navy/10 text-navy text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
+                        className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
                       >
                         <Globe className="w-3.5 h-3.5" />
                         Website
@@ -155,7 +156,7 @@ const Partners = () => {
                           href={partner.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 bg-[#0077B5]/10 hover:bg-[#0077B5]/20 text-[#0077B5] text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
+                          className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
                         >
                           <Linkedin className="w-3.5 h-3.5" />
                           LinkedIn
@@ -167,10 +168,10 @@ const Partners = () => {
 
                 {/* Promo Code Section */}
                 {partner.promoCode && (
-                  <div className="mt-4 pt-4 border-t border-navy/10">
+                  <div className="mt-4 pt-4 border-t border-white/20">
                     <div className="flex items-center gap-3">
                       <div className="bg-coral/10 border border-coral/20 rounded-lg px-4 py-2 flex-1">
-                        <p className="text-navy/70 text-xs font-medium mb-0.5">{partner.promoDescription}</p>
+                        <p className="text-white/70 text-xs font-medium mb-0.5">{partner.promoDescription}</p>
                         <code className="text-coral font-mono text-sm font-bold tracking-wider">
                           {partner.promoCode}
                         </code>
@@ -196,23 +197,25 @@ const Partners = () => {
       </section>
 
       {/* Become a Partner CTA */}
-      <section className="py-8 px-4">
-        <div className="prodfolio-container max-w-[600px] mx-auto">
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-8 text-center">
-            <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Handshake className="w-7 h-7 text-primary" />
-            </div>
-            <h3 className="text-2xl font-heading font-bold text-navy mb-2">
-              Become a Partner
-            </h3>
-            <p className="text-navy/70 mb-6 leading-relaxed max-w-md mx-auto">
-              Passionate about helping PMs build great portfolios? We'd love to collaborate with coaches, communities, and organizations in the PM space.
-            </p>
-            <div className="bg-primary/10 border border-primary/20 rounded-xl px-5 py-3 inline-flex items-center gap-2">
-              <span className="text-navy font-medium text-sm">Click the chat icon to get started</span>
-              <span className="text-lg">👉</span>
-            </div>
-          </div>
+      <section
+        ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
+        className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Become a Partner
+          </h2>
+          <p className="text-white/70 mb-6 leading-relaxed max-w-md mx-auto">
+            Passionate about helping PMs build great portfolios? We'd love to collaborate with coaches, communities, and organizations in the PM space.
+          </p>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="mailto:partnerships@prodfolio.io?subject=Partnership inquiry">
+              Partner with us
+            </a>
+          </Button>
         </div>
       </section>
 
