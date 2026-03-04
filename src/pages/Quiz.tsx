@@ -612,26 +612,28 @@ const Quiz = () => {
         {/* Profile Card — the shareable piece */}
         <section className="pt-28 pb-8 px-4">
           <div className="prodfolio-container max-w-[800px] mx-auto">
-            <div className="glass-card p-8 md:p-10 text-center">
-              <p className="text-sm text-white/50 uppercase tracking-wider mb-4">
-                Your PM Profile
-              </p>
-              <h1 className="text-3xl md:text-4xl font-heading font-bold text-white mb-3">
+            <div className="glass-card p-8 md:p-12 text-center">
+              <div className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full mb-6">
+                <span className="text-sm font-medium text-white tracking-wide">
+                  Your PM Profile
+                </span>
+              </div>
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
                 {results.archetype.title}
               </h1>
-              <p className="text-lg text-white/80 leading-relaxed max-w-xl mx-auto mb-6">
+              <p className="text-lg text-white/70 leading-relaxed max-w-xl mx-auto mb-8">
                 {results.archetype.description}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
                   onClick={handleShare}
-                  className="px-5 py-2.5 bg-white/10 border border-white/20 text-white text-sm font-medium rounded-lg hover:bg-white/20 transition-all"
+                  className="px-6 py-3 bg-white text-navy text-sm font-semibold rounded-xl hover:bg-white/90 transition-all"
                 >
                   Share on LinkedIn
                 </button>
                 <button
                   onClick={handleCopyLink}
-                  className="px-5 py-2.5 text-white/60 text-sm font-medium hover:text-white transition-all"
+                  className="px-6 py-3 bg-white/10 border border-white/20 text-white text-sm font-medium rounded-xl hover:bg-white/20 transition-all"
                 >
                   Copy result
                 </button>
@@ -681,26 +683,24 @@ const Quiz = () => {
 
         {/* CTA */}
         <section className="py-12 px-4">
-          <div className="prodfolio-container max-w-[600px] mx-auto">
-            <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
-              <h2 className="text-2xl font-heading font-bold text-white mb-3">
-                {stage.ctaAngle}
-              </h2>
-              <p className="text-white/70 mb-6">
-                Prodfolio helps you build a professional PM portfolio in under an hour. No design
-                skills needed.
-              </p>
-              <Button
-                asChild
-                size="lg"
-                className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
-              >
-                <a href="https://app.prodfolio.io/sign-up">Start Building Free</a>
-              </Button>
-              <p className="mt-4 text-sm text-white/50">
-                Free to start · No credit card required
-              </p>
-            </div>
+          <div className="prodfolio-container max-w-[800px] mx-auto text-center">
+            <h2 className="text-2xl font-heading font-bold text-white mb-3">
+              {stage.ctaAngle}
+            </h2>
+            <p className="text-white/60 mb-6">
+              Prodfolio helps you build a professional PM portfolio in under an hour. No design
+              skills needed.
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="px-8 py-3.5 h-auto text-base bg-white text-navy hover:bg-white/90 font-semibold rounded-xl transition-all"
+            >
+              <a href="https://app.prodfolio.io/sign-up">Start Building Free</a>
+            </Button>
+            <p className="mt-3 text-sm text-white/40">
+              Free to start · No credit card required
+            </p>
           </div>
         </section>
 
