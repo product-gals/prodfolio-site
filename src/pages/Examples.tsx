@@ -216,7 +216,7 @@ const Examples = () => {
       </section>
 
       {/* What Makes a Great Portfolio */}
-      <section className="pt-12 pb-6 px-4">
+      <section className="pt-4 pb-6 px-4">
         <div className="prodfolio-container max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">
@@ -251,12 +251,9 @@ const Examples = () => {
         className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="text-center">
-          <h2 className="text-2xl font-heading font-bold text-white mb-2">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
             Ready to build yours?
           </h2>
-          <p className="text-white/70 mb-6 max-w-md mx-auto">
-            Join the PMs showcasing their work with confidence. Start free, no design skills needed.
-          </p>
           <Button
             asChild
             className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"

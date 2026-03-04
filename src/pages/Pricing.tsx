@@ -1,4 +1,4 @@
-import { Check, Phone } from "lucide-react";
+import { Check, Phone, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -133,13 +133,11 @@ const Pricing = () => {
             For less than the cost of a coffee per week, stand out in every application. Start free, no credit card required.
           </p>
           <div className="flex items-center justify-center gap-2 text-sm text-white/70">
-            <div className="flex gap-0.5">
+            <span className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <svg key={i} className="w-4 h-4 fill-coral" viewBox="0 0 20 20">
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
+                <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
               ))}
-            </div>
+            </span>
             <span className="font-medium text-white">Join 125+ PMs showcasing their work</span>
           </div>
         </div>
