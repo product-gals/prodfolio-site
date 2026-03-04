@@ -209,7 +209,7 @@ const Resources = () => {
                   <div className="aspect-video relative bg-gradient-to-br from-primary/20 to-coral/20 overflow-hidden">
                     <img
                       src={episode.thumbnail || `https://img.youtube.com/vi/${episode.youtubeId}/hqdefault.jpg`}
-                      alt={episode.title}
+                      alt={`The Product Pivot podcast episode: ${episode.title}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       decoding="async"

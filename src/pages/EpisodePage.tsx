@@ -465,7 +465,7 @@ const EpisodePage = () => {
                   {episode.guest.photo ? (
                     <img
                       src={episode.guest.photo}
-                      alt={episode.guest.name}
+                      alt={`${episode.guest.name}, podcast guest from ${episode.guest.company}`}
                       className="w-24 h-24 rounded-full mx-auto mb-4 object-cover bg-gradient-to-br from-primary/20 to-coral/20"
                       loading="lazy"
                       decoding="async"
@@ -580,7 +580,7 @@ const EpisodePage = () => {
                   <div className="aspect-video relative bg-gradient-to-br from-primary/20 to-coral/20 overflow-hidden">
                     <img
                       src={ep.thumbnail || `https://img.youtube.com/vi/${ep.youtubeId}/hqdefault.jpg`}
-                      alt={ep.title}
+                      alt={`The Product Pivot podcast episode: ${ep.title}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       decoding="async"
