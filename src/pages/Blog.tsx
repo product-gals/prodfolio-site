@@ -57,6 +57,9 @@ const Blog = () => {
           <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
             Frameworks, guides, and honest takes on building a PM career.
           </p>
+          <p className="text-sm text-white/40 mt-3 max-w-2xl mx-auto">
+            The advice here reflects our team's experience and conversations with PMs and hiring managers. Every career path is different — tailor what you read to your own situation.
+          </p>
         </div>
       </section>
 

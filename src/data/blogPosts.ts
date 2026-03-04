@@ -11,6 +11,139 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "pm-job-search-mistakes",
+    title: "7 Job Search Mistakes That Keep PMs From Getting Interviews",
+    excerpt: "Your resume is solid and your case studies are sharp — but you're still not getting callbacks. These common job search mistakes might be the reason.",
+    date: "2026-03-04",
+    readTime: "8 min read",
+    category: "Job Search",
+    tags: ["Job Search", "Resume Tips", "LinkedIn", "Interviews", "Product Management"],
+    content: `
+<p>You've done the hard work. You've built your portfolio, written your case studies, polished your resume. And yet — the interviews aren't coming.</p>
+
+<p>The frustrating truth is that most PM job search problems aren't about qualifications. They're about <strong>friction</strong>. Small, fixable mistakes that make it harder for recruiters and hiring managers to find you, reach you, or take you seriously.</p>
+
+<p>Here are seven mistakes that cost PMs interviews — and how to fix each one.</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+<li>Most job search failures aren't about qualifications — they're about <strong>unnecessary friction</strong></li>
+<li>Recruiters move fast. If you're hard to reach or hard to evaluate, they move on</li>
+<li>Your resume should show <strong>applied outcomes</strong>, not skill inventories</li>
+<li>Side projects built with modern tools are a signal of initiative — put them on your resume</li>
+<li>A portfolio does the heavy lifting your resume can't — but only if people can find it</li>
+</ul>
+
+<h2>1. Your Email Signature Is Working Against You</h2>
+
+<p>When you're actively job searching, every email you send is an opportunity. Most PMs waste it with a bare-bones signature — just a name, maybe a title.</p>
+
+<p><strong>Fix it.</strong> Your email signature should include:</p>
+
+<ul>
+<li>A link to your <strong>LinkedIn profile</strong></li>
+<li>Your <strong>phone number</strong> (recruiters text to book calls — make it easy)</li>
+<li>A <strong>scheduling link</strong> (Calendly or similar) so they can book time without the back-and-forth</li>
+<li>A link to your <strong>portfolio</strong> — this is prime real estate most candidates ignore</li>
+</ul>
+
+<p>Every touchpoint should make it effortless for someone to learn more about you or get in touch. If a recruiter has to ask for your availability or hunt for your LinkedIn, you've added friction that didn't need to exist.</p>
+
+<h2>2. You're Not Checking Your Spam Folder</h2>
+
+<p>This one sounds basic, but it costs candidates real opportunities. Recruiters reaching out for the first time — people you don't regularly email — often land in spam or junk filters. Calendar invites are especially prone to this.</p>
+
+<p><strong>Fix it.</strong> Check your spam and junk folders <strong>daily</strong> while you're actively searching. Set a reminder if you need to. One missed calendar invite from a recruiter can quietly kill an opportunity you never knew existed.</p>
+
+<h2>3. Your LinkedIn Is Gated Off</h2>
+
+<p>If your LinkedIn privacy settings make it hard for recruiters to discover you or connect with you, you're invisible to the people actively trying to fill PM roles.</p>
+
+<p><strong>Two things to fix immediately:</strong></p>
+
+<ol>
+<li><strong>Update your privacy settings</strong> so anyone can discover your profile and send you messages. Go to Me > Settings & Privacy > Visibility > Adjust your visibility.</li>
+<li><strong>Remove the gate that requires people to know your email</strong> before connecting. If someone wants to reach you about a role, don't add a step between them and the "Connect" button.</li>
+</ol>
+
+<p>Being discoverable isn't a nice-to-have when you're job searching — it's the whole point.</p>
+
+<h2>4. You're Wasting the First Message</h2>
+
+<p>Here's a pattern that drives recruiters up the wall: a candidate sends a message asking <em>"Can I send you my resume?"</em></p>
+
+<p>You had their attention. They opened your message. And instead of showing them something useful, you asked for permission to show them something useful. That's three extra steps where none were needed:</p>
+
+<ol>
+<li>They reply with "yes"</li>
+<li>You send the resume in a follow-up</li>
+<li>They make new time to actually review it — maybe days later, when they're busier</li>
+</ol>
+
+<p><strong>Fix it.</strong> Lead with the goods. Attach your resume (as a PDF — more on that in a moment), include a link to your portfolio, and write two sentences about why you're reaching out. One message. Everything they need to evaluate you, right there.</p>
+
+<h2>5. You're Sharing Your Resume From a Cloud Drive</h2>
+
+<p>Not OneDrive. Not Google Drive. Not any drive. <strong>PDF attachment only.</strong></p>
+
+<p>Cloud-hosted resumes create problems: permission errors, expired links, formatting that changes based on the viewer's device, and the extra click of opening a browser tab. Recruiters reviewing dozens of candidates don't have patience for "request access" screens.</p>
+
+<p>A PDF is universal, offline-friendly, and looks exactly how you intended. Keep it simple.</p>
+
+<p>(Your portfolio, on the other hand, <em>should</em> be a link — a clean, shareable URL is the whole point. It's your resume that needs to be a PDF.)</p>
+
+<h2>6. Your Resume Is a Skills Inventory Instead of an Outcomes Story</h2>
+
+<p>If page one of your resume is dominated by a "Core Competencies" or "Skills" block — a wall of buzzwords like <em>product strategy, stakeholder management, agile methodology</em> — you look like someone listing what they learned, not what they've done.</p>
+
+<p>This is especially damaging for senior PMs. If you're a VP or CPO, do you really need to tell a recruiter that "product management" is your core competency? That's your <em>title</em>.</p>
+
+<p><strong>Fix it.</strong> Take those keywords and <strong>weave them into the outcomes</strong> under each role. Instead of listing "data-driven decision making" as a skill, write: <em>"Used cohort analysis to identify a 23% drop-off in trial-to-paid conversion, leading to a redesigned onboarding flow that recovered $180K ARR."</em></p>
+
+<p>The keywords are still there for ATS systems — but now they're attached to proof. That's what makes a recruiter stop scrolling. For the deeper story behind each project, <a href="/blog/how-to-write-product-management-case-study">your case studies</a> do the heavy lifting your resume can't.</p>
+
+<h2>7. You're Hiding Your Side Projects</h2>
+
+<p>If you've built something — an app, a tool, a prototype, even a scrappy automation — <strong>put it on your resume.</strong> This is especially true if you've used modern AI tools to build it. That's not a footnote. That's a signal.</p>
+
+<p>It shows initiative, curiosity, and the ability to ship something without being told to. Those are exactly the traits <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">hiring managers told us they look for</a>.</p>
+
+<p>Don't bury your side project under "Other" or "Hobbies." Give it a real entry with context: what problem it solves, what you built, what you learned. Then link to a <a href="/blog/how-to-build-pm-portfolio-no-experience">case study in your portfolio</a> for the full story.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+
+<ol>
+<li><strong>Treating your job search like a passive activity</strong> — Applying and waiting isn't a strategy. Make yourself findable, reachable, and easy to evaluate.</li>
+<li><strong>Optimizing your resume but ignoring everything around it</strong> — Your email, LinkedIn, signature, and portfolio all shape how recruiters experience you.</li>
+<li><strong>Being overly formal in outreach</strong> — Recruiters are people. A concise, direct message beats a stiff "Dear Hiring Manager" every time.</li>
+<li><strong>Applying broadly instead of targeting</strong> — Ten thoughtful applications with tailored portfolios beat fifty spray-and-pray submissions.</li>
+</ol>
+
+<h2>Make It Easy for Them to Say Yes</h2>
+
+<p>Every fix on this list has one thing in common: <strong>reducing friction between you and the person trying to hire you.</strong> Recruiters are scanning dozens of candidates. Hiring managers have limited time. The PMs who get interviews aren't always the most qualified — they're the ones who make it easiest to see their value.</p>
+
+<p>Clean up these seven things, pair them with a <a href="/how-it-works">portfolio that shows how you think</a>, and you'll be ahead of most candidates before the interview even starts.</p>
+
+<p>Not sure what kind of portfolio fits your situation? <a href="/quiz">Take the quiz</a> — it takes two minutes and gives you a personalized recommendation.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How often should I update my LinkedIn when job searching?</h3>
+<p>At minimum, update your headline and "Open to Work" settings when you start searching. Beyond that, posting once or twice a week — even just sharing an article with your take — keeps you visible in recruiter searches and shows you're active in the PM community.</p>
+
+<h3>Should I include a cover letter with my PM applications?</h3>
+<p>Only if it adds something your resume and portfolio don't. A two-paragraph note explaining why this specific company and role interests you can help. A generic "I'm excited to apply" letter doesn't. If you have a strong portfolio, it replaces most of what a cover letter is trying to do.</p>
+
+<h3>How do I follow up without being annoying?</h3>
+<p>One follow-up after a week is fine — keep it short and add something new (a link to your portfolio, a relevant article, a brief note on why you're interested). If you don't hear back after that, move on. Two unreturned messages is the limit.</p>
+
+<h3>Is it worth reaching out to recruiters directly on LinkedIn?</h3>
+<p>Yes — if you do it right. Don't ask "Are you hiring?" Lead with who you are, what you're looking for, and a link to your portfolio. Make it easy for them to forward you to the right person internally. The easier you make their job, the more likely they are to respond.</p>
+    `,
+  },
+  {
     slug: "what-hiring-managers-look-for-in-pm-portfolios",
     title: "What Hiring Managers Look for in PM Portfolios",
     excerpt: "We talked to hiring managers and recruiters who review PM portfolios every week. Here's what actually matters — and what most candidates get wrong.",
