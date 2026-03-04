@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -7,6 +8,16 @@ import { sortedBlogPosts } from "@/data/blogPosts";
 import { format } from "date-fns";
 import { Clock, ArrowRight } from "lucide-react";
 
+type CategoryFilter = "all" | "Portfolio Tips" | "Job Search" | "Career Tips" | "PM Advice";
+
+const categoryFilters: { value: CategoryFilter; label: string }[] = [
+  { value: "all", label: "All Posts" },
+  { value: "Portfolio Tips", label: "Portfolio Tips" },
+  { value: "Job Search", label: "Job Search" },
+  { value: "Career Tips", label: "Career Tips" },
+  { value: "PM Advice", label: "PM Advice" },
+];
+
 const categoryColors: Record<string, string> = {
   "Portfolio Tips": "bg-purple-500/20 text-purple-300 border-purple-500/30",
   "Job Search": "bg-coral/20 text-coral-light border-coral/30",
@@ -15,6 +26,7 @@ const categoryColors: Record<string, string> = {
 };
 
 const Blog = () => {
+  const [activeFilter, setActiveFilter] = useState<CategoryFilter>("all");
   const heroAnimation = useScrollAnimation();
   const postsAnimation = useScrollAnimation();
 
@@ -43,7 +55,11 @@ const Blog = () => {
     ],
   });
 
-  const [featured, ...rest] = sortedBlogPosts;
+  const filteredPosts = activeFilter === "all"
+    ? sortedBlogPosts
+    : sortedBlogPosts.filter((post) => post.category === activeFilter);
+
+  const [featured, ...rest] = filteredPosts;
 
   return (
     <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
@@ -67,6 +83,27 @@ const Blog = () => {
         </div>
       </section>
 
+      {/* Category Filters */}
+      <section className="pb-8 px-4">
+        <div className="prodfolio-container max-w-[1100px] mx-auto">
+          <div className="flex flex-wrap justify-center gap-3">
+            {categoryFilters.map((filter) => (
+              <button
+                key={filter.value}
+                onClick={() => setActiveFilter(filter.value)}
+                className={`px-5 py-2.5 rounded-full font-medium transition-all text-sm ${
+                  activeFilter === filter.value
+                    ? "bg-primary text-white shadow-lg shadow-primary/30"
+                    : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
+                }`}
+              >
+                {filter.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Posts */}
       <section
         ref={postsAnimation.ref as React.RefObject<HTMLElement>}
@@ -75,39 +112,43 @@ const Blog = () => {
         <div className="prodfolio-container max-w-[1100px] mx-auto">
 
           {/* Featured post */}
-          <Link
-            to={`/blog/${featured.slug}`}
-            className="block glass-card p-7 mb-8 group hover:border-white/20 transition-all"
-          >
-            <div className="md:flex md:gap-8 md:items-center">
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <span
-                    className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${categoryColors[featured.category] ?? "bg-white/10 text-white/70 border-white/20"}`}
-                  >
-                    {featured.category}
-                  </span>
-                  <span className="text-white/40 text-xs">Featured</span>
+          {featured && (
+            <Link
+              to={`/blog/${featured.slug}`}
+              className="block glass-card p-7 mb-8 group hover:border-white/20 transition-all"
+            >
+              <div className="md:flex md:gap-8 md:items-center">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span
+                      className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${categoryColors[featured.category] ?? "bg-white/10 text-white/70 border-white/20"}`}
+                    >
+                      {featured.category}
+                    </span>
+                    {activeFilter === "all" && (
+                      <span className="text-white/40 text-xs">Featured</span>
+                    )}
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3 group-hover:text-purple-light transition-colors">
+                    {featured.title}
+                  </h2>
+                  <p className="text-white/70 leading-relaxed mb-4">{featured.excerpt}</p>
+                  <div className="flex items-center gap-4 text-sm text-white/50">
+                    <span>{format(new Date(featured.date), "MMMM d, yyyy")}</span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5" />
+                      {featured.readTime}
+                    </span>
+                  </div>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3 group-hover:text-purple-light transition-colors">
-                  {featured.title}
-                </h2>
-                <p className="text-white/70 leading-relaxed mb-4">{featured.excerpt}</p>
-                <div className="flex items-center gap-4 text-sm text-white/50">
-                  <span>{format(new Date(featured.date), "MMMM d, yyyy")}</span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5" />
-                    {featured.readTime}
+                <div className="hidden md:flex items-center mt-6 md:mt-0 flex-shrink-0">
+                  <span className="flex items-center gap-2 text-purple-light font-semibold group-hover:gap-3 transition-all">
+                    Read article <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
               </div>
-              <div className="hidden md:flex items-center mt-6 md:mt-0 flex-shrink-0">
-                <span className="flex items-center gap-2 text-purple-light font-semibold group-hover:gap-3 transition-all">
-                  Read article <ArrowRight className="w-4 h-4" />
-                </span>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          )}
 
           {/* Inline CTA */}
           <div className="mb-8 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 flex flex-col sm:flex-row items-center gap-4">

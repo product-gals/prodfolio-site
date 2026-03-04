@@ -7,6 +7,14 @@
 - **Accuracy:** All advice must be honest and grounded in real PM experience. No overpromising, no hype
 - **SEO focus:** Target longtail keywords. Every post should answer a specific question someone would search for
 
+## Pre-Writing Research
+
+Before writing, complete these steps:
+
+1. **Define search intent** — What is the reader hoping to find when they search for the target keyword? (informational, how-to, comparison, etc.) Shape the entire post around that intent
+2. **Analyze competing content** — Review the top-ranking articles for your target keyword. Identify gaps in their coverage and make sure your post addresses what they miss
+3. **Identify keywords** — Choose a primary longtail keyword and 2-3 secondary keywords. These should inform your title, headings, and natural usage throughout the post
+
 ## Post Structure
 
 Every blog post should follow this general structure:
@@ -37,6 +45,7 @@ Every blog post should follow this general structure:
 - **Category:** One of: "Portfolio Tips", "Job Search", "Career Tips", "PM Advice"
 - **FAQ section:** Each question should target a real search query. Use natural language, not keyword-stuffed phrasing
 - **Internal links:** Link to at least 2 other Prodfolio pages (quiz, how-it-works, blog posts, etc.)
+- **External links:** Include 1-2 links to credible external sources (e.g., SVPG, Lenny's Newsletter, industry reports) where they add value. Builds trust and supports SEO
 
 ## AI Friendliness
 
