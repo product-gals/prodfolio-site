@@ -14,7 +14,7 @@ export default function TermsOfService() {
       "name": "Terms of Service",
       "description": "Terms of Service for Prodfolio. Learn about your rights and responsibilities when using our portfolio platform.",
       "url": "https://prodfolio.io/terms",
-      "dateModified": "2025-11-16",
+      "dateModified": "2026-03-03",
       "publisher": {
         "@type": "Organization",
         "name": "Prodfolio",
@@ -38,7 +38,7 @@ export default function TermsOfService() {
               Terms of Service
             </h1>
             <p className="text-lg text-navy/80">
-              <strong>Last updated: November 16, 2025</strong>
+              <strong>Last updated: March 3, 2026</strong>
             </p>
             <p className="text-lg text-navy/90 mt-4 max-w-2xl mx-auto">
               Welcome to Prodfolio. By using our service, you agree to these terms.
@@ -225,14 +225,23 @@ export default function TermsOfService() {
               
               <h3 className="text-2xl font-bold mb-3 text-navy">Pricing Plans</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li><strong>Free:</strong> Basic features with watermark</li>
-                <li><strong>Starter:</strong> $19/month - full features, no watermark</li>
-                <li><strong>Pro:</strong> $29/month - advanced features, priority support</li>
-                <li><strong>Founding Member:</strong> $348 one-time - two year access (limited availability)</li>
+                <li><strong>Free:</strong> $0/month — 1 portfolio, 3 AI case studies, 3 AI resume uploads, "Built with Prodfolio" footer</li>
+                <li><strong>Pro:</strong> $29/month (or $23/month billed annually) — unlimited portfolios, unlimited AI generation, custom domain, analytics, no Prodfolio branding, priority support</li>
+                <li><strong>Founding Member:</strong> $14.50/month — everything in Pro, plus portfolio review, direct Slack access to founders, monthly AMAs, and Founding Member badge (limited availability)</li>
               </ul>
               <p className="text-navy/90 mb-4">
                 Prices may change, but we'll notify existing subscribers before any increases.
               </p>
+
+              <h3 className="text-2xl font-bold mb-3 text-navy">7-Day Free Trial</h3>
+              <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
+                <li>All paid plans include a <strong>7-day free trial</strong> so you can explore the full experience before being charged</li>
+                <li>Your trial begins when you sign up for a paid plan and provide payment information</li>
+                <li>You will not be charged during the 7-day trial period</li>
+                <li>If you cancel before the trial ends, you won't be charged at all</li>
+                <li>If you don't cancel, your subscription will automatically begin at the end of the trial period and you'll be billed at the plan rate</li>
+                <li>The free trial is available once per user — if you've previously used a trial or had a paid subscription, you may not be eligible for another trial</li>
+              </ul>
 
               <h3 className="text-2xl font-bold mb-3 text-navy">Billing</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
@@ -252,10 +261,11 @@ export default function TermsOfService() {
 
               <h3 className="text-2xl font-bold mb-3 text-navy">Refunds & Money-Back Guarantee</h3>
               <p className="text-navy/90 mb-4">
-                <strong>Try Prodfolio risk-free.</strong> If you're not satisfied within 30 days of your first purchase, we'll refund you, no questions asked.
+                <strong>Try Prodfolio risk-free.</strong> Start with a 7-day free trial on any paid plan. If you continue past the trial and still aren't satisfied within 30 days of your first charge, we'll refund you, no questions asked.
               </p>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li><strong>All paid plans:</strong> Full refund within 30 days of initial purchase</li>
+                <li><strong>7-day free trial:</strong> Cancel anytime during the trial and you won't be charged</li>
+                <li><strong>All paid plans:</strong> Full refund within 30 days of your first charge (after the trial ends)</li>
                 <li><strong>After 30 days:</strong> No refunds for partial months, but you can cancel anytime</li>
                 <li><strong>Cancellations:</strong> You retain access until the end of your billing period</li>
                 <li>Email hello@prodfolio.io for refund requests</li>

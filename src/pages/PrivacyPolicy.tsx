@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
       "name": "Privacy Policy",
       "description": "Learn how Prodfolio collects, uses, and protects your data.",
       "url": "https://prodfolio.io/privacy",
-      "dateModified": "2025-11-16",
+      "dateModified": "2026-03-03",
       "publisher": {
         "@type": "Organization",
         "name": "Prodfolio",
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
             <p className="text-lg text-navy/80">
-              <strong>Last updated: November 16, 2025</strong>
+              <strong>Last updated: March 3, 2026</strong>
             </p>
             <p className="text-lg text-navy/90 mt-4 max-w-2xl mx-auto">
               At Prodfolio, your privacy matters. We collect only the information we need to support your experience — and we handle it with care.
@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
                 <li>Send you product updates and tips (only if you opt in)</li>
                 <li>Improve our product</li>
                 <li>Provide customer support</li>
-                <li>Process payments (for paid plans)</li>
+                <li>Process payments and manage free trials (for paid plans)</li>
                 <li>Prevent fraud and abuse</li>
               </ul>
               <p className="text-navy/90 mt-4 font-semibold">
@@ -222,6 +222,9 @@ const PrivacyPolicy = () => {
                 <li>Your portfolio is removed from public view immediately</li>
                 <li>All your data is permanently deleted within 30 days</li>
               </ul>
+              <p className="text-navy/90 mt-4">
+                <strong>Free trial data:</strong> If you cancel during your 7-day free trial, your payment information is not retained by Prodfolio (Stripe may retain minimal records per their policies). Your account and content follow the same deletion process described above.
+              </p>
               <p className="text-navy/90 mt-4">
                 Some information may be retained longer if required by law:
               </p>
