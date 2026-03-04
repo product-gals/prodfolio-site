@@ -23,6 +23,7 @@ const staticPages = [
   { path: '/examples', priority: '0.9', changefreq: 'weekly' },
   { path: '/pricing', priority: '0.9', changefreq: 'weekly' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
+  { path: '/blog', priority: '0.9', changefreq: 'weekly' },
   { path: '/podcast', priority: '0.7', changefreq: 'weekly' },
   { path: '/for-career-changers', priority: '0.8', changefreq: 'monthly' },
   { path: '/for-hiring-managers', priority: '0.7', changefreq: 'monthly' },
@@ -32,6 +33,29 @@ const staticPages = [
   { path: '/terms', priority: '0.3', changefreq: 'yearly' },
   { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
 ];
+
+// Extract blog post data from blogPosts.ts
+function getBlogPosts() {
+  const blogPath = path.join(__dirname, '../src/data/blogPosts.ts');
+  const content = fs.readFileSync(blogPath, 'utf-8');
+
+  const posts = [];
+
+  const slugMatches = content.matchAll(/slug:\s*["']([^"']+)["']/g);
+  const dateMatches = content.matchAll(/date:\s*["']([^"']+)["']/g);
+
+  const slugs = [...slugMatches].map(m => m[1]);
+  const dates = [...dateMatches].map(m => m[1]);
+
+  for (let i = 0; i < slugs.length; i++) {
+    posts.push({
+      slug: slugs[i],
+      date: dates[i] || TODAY
+    });
+  }
+
+  return posts;
+}
 
 // Extract episode data from episodes.ts
 function getEpisodes() {
@@ -60,6 +84,7 @@ function getEpisodes() {
 
 function generateSitemap() {
   const episodes = getEpisodes();
+  const blogPosts = getBlogPosts();
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -95,6 +120,21 @@ function generateSitemap() {
 
   xml += `
 
+  <!-- Blog Posts -->`;
+
+  // Add blog post pages
+  for (const post of blogPosts) {
+    xml += `
+  <url>
+    <loc>${SITE_URL}/blog/${post.slug}</loc>
+    <lastmod>${post.date}</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>`;
+  }
+
+  xml += `
+
 </urlset>
 `;
 
@@ -108,4 +148,5 @@ fs.writeFileSync(outputPath, sitemap);
 
 console.log(`✓ Sitemap generated with ${staticPages.length} static pages`);
 console.log(`✓ Found ${getEpisodes().length} podcast episodes`);
+console.log(`✓ Found ${getBlogPosts().length} blog posts`);
 console.log(`✓ Written to: ${outputPath}`);
