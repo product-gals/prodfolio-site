@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { ArrowLeft, ArrowRight, Check } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import { toPng } from "html-to-image";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
@@ -16,10 +17,10 @@ const questions = [
     question: "What best describes your current role?",
     subtext: "Select one",
     options: [
-      "Product Manager (any level)",
+      "Student/Recent grad interested in PM",
       "Aspiring PM (actively pursuing PM roles)",
       "Adjacent role (Designer, Engineer, Analyst, etc.)",
-      "Student/Recent grad interested in PM",
+      "Product Manager (any level)",
       "Other",
     ],
     type: "single",
@@ -40,10 +41,10 @@ const questions = [
     question: "Do you currently have a way to showcase your PM work?",
     subtext: "Select one",
     options: [
-      "Yes, I have a portfolio or case studies",
-      "I have some materials, but nothing polished",
       "No, and I'm not sure where to start",
       "No, but I'm working on it",
+      "I have some materials, but nothing polished",
+      "Yes, I have a portfolio or case studies",
     ],
     type: "single",
   },
@@ -51,11 +52,11 @@ const questions = [
     question: "What's your biggest career challenge right now?",
     subtext: "Select all that apply",
     options: [
-      "Getting noticed by recruiters and hiring managers",
       "Breaking into PM from another field",
+      "Building credibility without a formal PM title",
+      "Getting noticed by recruiters and hiring managers",
       "Showcasing my impact clearly",
       "Moving to the next PM level",
-      "Building credibility without a formal PM title",
     ],
     type: "multiple",
   },
@@ -64,10 +65,10 @@ const questions = [
     subtext: "Select one",
     options: [
       "Land my first PM role",
+      "Transition from my current role to PM",
       "Get more interview opportunities",
       "Showcase my work professionally",
       "Advance to senior PM level",
-      "Transition from my current role to PM",
     ],
     type: "single",
   },
@@ -75,11 +76,11 @@ const questions = [
     question: "How actively are you pursuing PM opportunities right now?",
     subtext: "Select one",
     options: [
-      "Very active (applying/interviewing regularly)",
-      "Moderately active (exploring options)",
-      "Preparing to start soon",
-      "Passively looking",
       "Not currently looking but want to be ready",
+      "Passively looking",
+      "Preparing to start soon",
+      "Moderately active (exploring options)",
+      "Very active (applying/interviewing regularly)",
     ],
     type: "single",
   },
@@ -91,22 +92,22 @@ const stageBase: Record<JourneyStage, { label: string; teaserSummary: string; ct
     aspiring: {
       label: "Aspiring PM",
       teaserSummary: "You're an Aspiring PM building your foundation",
-      ctaAngle: "Start building your portfolio to prove you think like a PM",
+      ctaAngle: "You've got the product instincts — let's make them visible",
     },
     early: {
       label: "Early PM",
       teaserSummary: "You're an Early PM ready to make your impact visible",
-      ctaAngle: "Turn your first PM wins into a portfolio that opens doors",
+      ctaAngle: "You've already got wins worth sharing — let's showcase them",
     },
     mid: {
       label: "Mid-Level PM",
       teaserSummary: "You're a Mid-Level PM leveling up your career",
-      ctaAngle: "Showcase the leadership that earns your next promotion",
+      ctaAngle: "Your leadership speaks for itself — now give it a stage",
     },
     senior: {
       label: "Senior PM",
       teaserSummary: "You're a Senior PM with strategic vision to share",
-      ctaAngle: "Document the strategic impact that defines your career",
+      ctaAngle: "Your impact deserves to be documented — let's tell that story",
     },
   };
 
@@ -139,12 +140,12 @@ function getArchetype(stage: JourneyStage, goal: string) {
       return {
         title: "The Career Switcher",
         description:
-          "You're pivoting into PM and need to prove your product thinking before you have the title.",
+          "You're making the leap into PM — and your unique background is exactly what makes you stand out.",
       };
     return {
       title: "The Foundation Builder",
       description:
-        "You're laying the groundwork for a PM career and need to show you can think like a product leader.",
+        "You're building the foundation for your PM career, and you're already thinking about it the right way.",
     };
   }
   if (stage === "early") {
@@ -152,18 +153,18 @@ function getArchetype(stage: JourneyStage, goal: string) {
       return {
         title: "The Visibility Seeker",
         description:
-          "You have PM experience but aren't getting the traction you deserve. Your work needs a stage.",
+          "You've got real PM experience — now it's about getting your work in front of the right people.",
       };
     if (goal.includes("Showcase my work"))
       return {
         title: "The Impact Storyteller",
         description:
-          "You've done the work — now you need to frame it in a way that makes hiring managers take notice.",
+          "You've done the work — now it's time to tell the story behind it in a way that does it justice.",
       };
     return {
       title: "The Rising PM",
       description:
-        "You're early in your PM journey with real experience to show. Time to make that impact visible.",
+        "You're early in your PM journey with real experience under your belt. The best part? You're just getting started.",
     };
   }
   if (stage === "mid") {
@@ -171,12 +172,12 @@ function getArchetype(stage: JourneyStage, goal: string) {
       return {
         title: "The Level-Up Leader",
         description:
-          "You're ready for the next tier. Your portfolio needs to reflect strategic thinking, not just execution.",
+          "You're ready for the next chapter. Your experience speaks volumes — let's make sure your portfolio does too.",
       };
     return {
       title: "The Strategic Operator",
       description:
-        "You've grown beyond feature delivery. Your portfolio should show how you drive business outcomes.",
+        "You've grown well beyond feature delivery. Time to let your strategic impact take center stage.",
     };
   }
   // senior
@@ -184,12 +185,12 @@ function getArchetype(stage: JourneyStage, goal: string) {
     return {
       title: "The Executive Storyteller",
       description:
-        "You've driven major outcomes but haven't documented the strategic narrative behind them.",
+        "You've driven major outcomes throughout your career — they deserve a narrative that matches their scale.",
     };
   return {
     title: "The Senior Strategist",
     description:
-      "You operate at a high level and your portfolio should reflect the organizational impact you've made.",
+      "You've shaped products and teams at the highest level. That kind of impact is worth documenting.",
   };
 }
 
@@ -200,19 +201,19 @@ function getInsight(stage: JourneyStage, portfolio: string) {
 
   if (hasPortfolio) {
     if (stage === "aspiring" || stage === "early")
-      return "You already have portfolio materials — that puts you ahead of most PMs at your stage. The next step is making sure they tell a compelling story about your thinking process, not just your output.";
-    return "You have a portfolio, which is rare at your level. The opportunity now is to elevate it from a list of projects to a narrative about strategic impact and leadership.";
+      return "You already have portfolio materials — that's awesome, and it puts you ahead of most PMs at your stage. The next step is making sure they tell the story of how you think, not just what you shipped.";
+    return "You have a ton of wins to choose from — that's a great position to be in. The opportunity now is to weave them into a narrative about your strategic impact and leadership.";
   }
   if (hasPartial) {
     if (stage === "aspiring")
-      return "You have materials to work with — that's more than most people breaking into PM. The key is reframing what you have into structured case studies that showcase product thinking.";
-    return "Having some materials means you're not starting from zero. The gap is turning scattered work samples into a cohesive story that demonstrates how you think, decide, and drive outcomes.";
+      return "You have materials to work with — that's more than most people breaking into PM! The fun part now is shaping what you have into case studies that show off your product thinking.";
+    return "Having some materials means you're not starting from zero — nice! The next move is turning those scattered work samples into a cohesive story that shows how you think, decide, and drive outcomes.";
   }
   if (noIdea) {
-    return "Starting from scratch is more common than you'd think — most PMs don't have portfolios. This is actually an advantage: you can build it right from the start rather than retrofitting something that doesn't work.";
+    return "Starting from scratch is more common than you'd think — most PMs don't have portfolios. The good news? You get to build it right from the start instead of retrofitting something that doesn't work.";
   }
   // "working on it"
-  return "You're already in motion, which matters. The most common mistake at this stage is trying to document everything instead of choosing 2-3 projects that best demonstrate your problem-solving approach.";
+  return "You're already in motion — love that. One tip: resist the urge to document everything. The magic is in choosing 2-3 projects that best show your problem-solving approach and going deep on those.";
 }
 
 function getRecommendations(
@@ -226,26 +227,26 @@ function getRecommendations(
   // Rec 1: Based on portfolio readiness
   if (portfolio.includes("Yes")) {
     recs.push({
-      heading: "Audit your existing portfolio",
+      heading: "Restructure your case studies around decisions, not features",
       detail:
-        "You have materials — now make sure they're telling the right story. Most portfolios fail because they read like feature lists instead of decision-making narratives.",
+        "You have materials — but most portfolios fail because they read like feature lists instead of decision-making narratives.",
       steps: [
-        "Open each case study and check: does the first sentence state the outcome?",
+        "Open each case study and check: does the first sentence state the outcome or just describe the project?",
         "Rewrite any section that describes what you built without explaining why you made that choice",
         "Add a \"Tradeoffs\" section to your top 2 projects — hiring managers love seeing how you navigated constraints",
-        "Remove any project that doesn't clearly show your thinking process, even if it was a big launch",
+        "A structured framework like SIGNAL (Situation, Insight, Goals, Navigation, Achievement, Learnings) can help you reorganize existing content fast",
       ],
     });
   } else if (portfolio.includes("some materials")) {
     recs.push({
       heading: "Pick your 2 strongest projects and go deep",
       detail:
-        "You don't need 10 case studies. Two well-structured ones will outperform a dozen shallow summaries every time.",
+        "You don't need 10 case studies. Two well-structured ones will outperform a dozen scattered docs every time.",
       steps: [
         "Choose 2 projects where you can clearly articulate: the problem, your approach, the tradeoffs, and the measurable result",
-        "Write each one using the STAR format: Situation, Task, Action, Result — but lead with the Result",
+        "Structure each one around outcomes first — lead with what changed, then explain how you got there",
         "Include at least one specific metric per project, even if it's an estimate (\"~30% reduction in support tickets\")",
-        "Add context about constraints — timeline, team size, competing priorities — this is where your PM thinking shows",
+        "A tool like Prodfolio can help you go from scattered notes to a shareable portfolio in under an hour with guided prompts",
       ],
     });
   } else if (portfolio.includes("not sure")) {
@@ -255,9 +256,9 @@ function getRecommendations(
         "The biggest barrier is the blank page. You don't need a perfect portfolio to start — you need one case study that shows how you think.",
       steps: [
         "Pick any project where you identified a problem and drove toward a solution — it doesn't have to be a PM project",
-        "Write 4 paragraphs: what was happening (context), what you did about it (approach), what you shipped (output), what changed (outcome)",
+        "Cover four things: what was happening (context), what you did (approach), what shipped (output), what changed (outcome)",
         "Don't worry about design — focus on the narrative first, polish later",
-        "Share it with one person for feedback before expanding to more case studies",
+        "Prodfolio's guided prompts walk you through each section so you're never staring at a blank page",
       ],
     });
   } else {
@@ -269,7 +270,7 @@ function getRecommendations(
         "Flip your case study structure: lead with the result, then explain how you got there",
         "For each project, write a one-sentence summary that a hiring manager can scan in 5 seconds",
         "Cut any section that's longer than 3 paragraphs — hiring managers skim, not read",
-        "Add before/after comparisons where possible (\"Before: X happened. After: Y improved by Z%\")",
+        "The SIGNAL framework can help you organize what you already have into a structure that highlights your thinking",
       ],
     });
   }
@@ -283,8 +284,8 @@ function getRecommendations(
       steps: [
         "Reframe non-PM projects through a product lens: what user problem did you solve? What did you prioritize and why?",
         "Include one \"product teardown\" — analyze a product you use and describe what you'd change and why",
-        "Show how you gathered user input or data to inform a decision, even informally",
-        "End each case study with \"what I'd do differently\" — self-awareness signals PM maturity",
+        "End each case study with what you learned and what you'd do differently — self-awareness signals PM maturity",
+        "Upload your resume or project docs and let AI help you draft the first version, then refine it in your own voice",
       ],
     });
   } else if (goal.includes("interview opportunities")) {
@@ -294,8 +295,8 @@ function getRecommendations(
         "The best portfolio in the world doesn't help if no one sees it. Distribution matters as much as content.",
       steps: [
         "Add your portfolio URL to your LinkedIn headline — not just the About section",
-        "Turn your strongest case study into a LinkedIn post (narrative format, not a link dump)",
-        "Add the link to your resume header, email signature, and any job application \"additional links\" fields",
+        "Turn your strongest case study into a LinkedIn post (narrative format, not a link dump) and link back to your full portfolio",
+        "Add the link to your resume header, email signature, and every job application's \"additional links\" field",
         "Comment thoughtfully on PM content from hiring managers — your profile with a portfolio link gets clicked",
       ],
     });
@@ -306,9 +307,9 @@ function getRecommendations(
         "Most portfolio reviews last under a minute. Your structure matters more than your word count.",
       steps: [
         "Add a one-sentence outcome summary to the top of every case study — this is what gets read first",
-        "Use clear section headers (Problem, Approach, Result) so readers can jump to what interests them",
+        "Use clear section headers so readers can jump to what interests them — Prodfolio's case study templates handle this structure for you",
         "Bold your key metrics and decisions — make them scannable without reading full paragraphs",
-        "Keep each case study under 800 words. Link to deeper detail for those who want it.",
+        "If you're working with sensitive projects, make sure you can lock individual case studies so you control who sees what",
       ],
     });
   } else if (goal.includes("senior PM level")) {
@@ -429,6 +430,8 @@ const Quiz = () => {
   const [email, setEmail] = useState("");
   const [marketingOptIn, setMarketingOptIn] = useState(false);
   const [journeyStage, setJourneyStage] = useState<JourneyStage>("early");
+  const [copied, setCopied] = useState(false);
+  const shareCardRef = useRef<HTMLDivElement>(null);
 
   const heroAnimation = useScrollAnimation();
 
@@ -594,22 +597,109 @@ const Quiz = () => {
       multiAnswers[3] || [],
     );
 
-    const handleShare = () => {
-      const text = `I just took the Prodfolio PM Portfolio Quiz — I'm "${results.archetype.title}"\n\n${results.archetype.description}\n\nFind your PM profile: https://prodfolio.io/quiz`;
-      const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent("https://prodfolio.io/quiz")}&summary=${encodeURIComponent(text)}`;
-      window.open(linkedInUrl, "_blank", "noopener,noreferrer");
+    const handleDownloadImage = async () => {
+      if (!shareCardRef.current) return;
+      try {
+        const dataUrl = await toPng(shareCardRef.current, {
+          pixelRatio: 2,
+          cacheBust: true,
+        });
+        const link = document.createElement("a");
+        link.download = `prodfolio-pm-profile.png`;
+        link.href = dataUrl;
+        link.click();
+      } catch (err) {
+        console.error("Failed to generate image:", err);
+      }
     };
 
-    const handleCopyLink = () => {
+    const handleCopyLink = async () => {
       const text = `I'm "${results.archetype.title}" — ${results.archetype.description}\n\nTake the free PM Portfolio Quiz: https://prodfolio.io/quiz`;
-      navigator.clipboard.writeText(text);
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        // Fallback for non-secure contexts
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     };
 
     return (
       <div className="min-h-screen gradient-mesh-bg" style={{ backgroundColor: "#0c0a1a" }}>
         <Navbar />
 
-        {/* Profile Card — the shareable piece */}
+        {/* Hidden shareable image card — rendered offscreen for html-to-image */}
+        <div style={{ position: "absolute", left: "-9999px", top: 0 }}>
+          <div
+            ref={shareCardRef}
+            style={{
+              width: 1200,
+              height: 630,
+              background: "linear-gradient(135deg, #1a1145 0%, #2d1b69 40%, #1a1145 100%)",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "60px 80px",
+              fontFamily: "system-ui, -apple-system, sans-serif",
+            }}
+          >
+            <div
+              style={{
+                fontSize: 16,
+                fontWeight: 500,
+                color: "rgba(255,255,255,0.5)",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase" as const,
+                marginBottom: 24,
+              }}
+            >
+              My PM Profile
+            </div>
+            <div
+              style={{
+                fontSize: 56,
+                fontWeight: 800,
+                color: "#ffffff",
+                textAlign: "center",
+                lineHeight: 1.2,
+                marginBottom: 20,
+              }}
+            >
+              {results.archetype.title}
+            </div>
+            <div
+              style={{
+                fontSize: 22,
+                color: "rgba(255,255,255,0.7)",
+                textAlign: "center",
+                maxWidth: 800,
+                lineHeight: 1.5,
+                marginBottom: 40,
+              }}
+            >
+              {results.archetype.description}
+            </div>
+            <div
+              style={{
+                fontSize: 16,
+                color: "rgba(255,255,255,0.4)",
+              }}
+            >
+              Take the quiz at prodfolio.io/quiz
+            </div>
+          </div>
+        </div>
+
+        {/* Profile Card — visible on page */}
         <section className="pt-28 pb-8 px-4">
           <div className="prodfolio-container max-w-[800px] mx-auto">
             <div className="glass-card p-8 md:p-12 text-center">
@@ -626,16 +716,17 @@ const Quiz = () => {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
-                  onClick={handleShare}
-                  className="px-6 py-3 bg-white text-navy text-sm font-semibold rounded-xl hover:bg-white/90 transition-all"
+                  onClick={handleDownloadImage}
+                  className="flex items-center gap-2 px-6 py-3 bg-white text-navy text-sm font-semibold rounded-xl hover:bg-white/90 transition-all"
                 >
-                  Share on LinkedIn
+                  <Download className="w-4 h-4" />
+                  Download to share
                 </button>
                 <button
                   onClick={handleCopyLink}
                   className="px-6 py-3 bg-white/10 border border-white/20 text-white text-sm font-medium rounded-xl hover:bg-white/20 transition-all"
                 >
-                  Copy result
+                  {copied ? "Copied!" : "Copy result"}
                 </button>
               </div>
             </div>
