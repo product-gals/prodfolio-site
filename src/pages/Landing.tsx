@@ -202,9 +202,9 @@ const Landing = () => {
       </section>
 
       {/* Hiring Managers Section - Overlapping glass cards, reduced height */}
-      <section ref={insightsAnimation.ref as React.RefObject<HTMLElement>} className={`py-16 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={insightsAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className={`text-center mb-10 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          <div className={`text-center mb-8 ${insightsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Designed for how hiring managers evaluate PMs
             </h2>
@@ -265,7 +265,7 @@ const Landing = () => {
       {/* Who Prodfolio is For - Audience Segmentation */}
       <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Who Prodfolio is for
             </h2>
@@ -332,9 +332,9 @@ const Landing = () => {
       </section>
 
       {/* How It Works - Variant-style Feature Sections with UI Mockups */}
-      <section ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>} className={`py-20 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={howItWorksAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${howItWorksAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               From blank page to portfolio in under an hour
             </h2>
@@ -517,51 +517,41 @@ const Landing = () => {
       {/* Testimonials Section */}
       <section ref={testimonialsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${testimonialsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">
               What product managers are saying
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {[
-              { quote: "Building a portfolio from scratch would have taken me weeks. Prodfolio understands what hiring managers in product management are looking for.", name: "Senior PM", role: "Tech Industry" },
-              { quote: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it. Prodfolio gets what product managers actually need.", name: "Product Lead", role: "Tech Industry" },
-              { quote: "I've used Wix, Squarespace, and Behance — they were so time-consuming. Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
-              { quote: "The product is really intuitive with an amazing structure. As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
+              { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Senior PM", role: "SaaS Company" },
+              { before: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it.", highlight: "Prodfolio gets what product managers actually need.", name: "Product Lead", role: "Finance" },
+              { before: "I've used Wix, Squarespace, and Behance — they were so time-consuming.", highlight: "Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
+              { before: "The product is really intuitive with an amazing structure.", highlight: "As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
             ].map((t, i) => (
-              <blockquote key={i} className="glass-card p-6 flex flex-col">
-                <div className="mb-4">
-                  <Quote className="w-5 h-5 text-primary/60" />
+              <blockquote key={i} className="glass-card p-5 flex flex-col">
+                <div className="flex gap-0.5 mb-3">
+                  {[...Array(5)].map((_, j) => (
+                    <Star key={j} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+                  ))}
                 </div>
-                <p className="text-base text-white/90 leading-relaxed flex-1 mb-4">
-                  "{t.quote}"
+                <p className="text-base text-white/70 leading-relaxed flex-1 mb-4">
+                  {t.before} <span className="text-white font-medium">{t.highlight}</span>
                 </p>
-                <footer className="flex items-center gap-3 text-sm border-t border-white/10 pt-4">
+                <footer className="flex items-center gap-3 text-sm border-t border-white/10 pt-3">
                   <cite className="font-semibold text-white not-italic">{t.name}</cite>
-                  <div className="w-px h-4 bg-white/30"></div>
-                  <div className="text-white/70">{t.role}</div>
+                  <div className="w-px h-4 bg-white/20"></div>
+                  <span className="text-white/50">{t.role}</span>
                 </footer>
               </blockquote>
             ))}
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-white/40 text-sm">
-            <span>Trusted by PMs in</span>
-            <span>SaaS</span>
-            <span>·</span>
-            <span>Fintech</span>
-            <span>·</span>
-            <span>Healthcare</span>
-            <span>·</span>
-            <span>E-commerce</span>
-            <span>·</span>
-            <span>Enterprise</span>
-          </div>
         </div>
       </section>
 
-      {/* Progress Reminder */}
-      <section className="py-8">
-        <div className="prodfolio-container max-w-[600px] mx-auto">
+      {/* Progress Reminder + Final CTA */}
+      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className="prodfolio-container max-w-[600px] mx-auto mb-8">
           <div className="flex items-center gap-3 sm:gap-4 justify-center">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-green-400/20 rounded-full flex items-center justify-center">
@@ -591,10 +581,6 @@ const Landing = () => {
             You're one step away from a portfolio you're proud of.
           </p>
         </div>
-      </section>
-
-      {/* Final CTA - Centered floating glass card */}
-      <section ref={ctaAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[600px] mx-auto">
           <div className="bg-[#9E85F9]/10 backdrop-blur-md rounded-2xl border border-[#9E85F9]/25 shadow-[0_8px_32px_rgba(158,133,249,0.2)] p-8 text-center">
             <h2 className="text-2xl font-heading font-bold text-white mb-2 leading-tight">
