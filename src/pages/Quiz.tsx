@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { ArrowLeft, ArrowRight, Check, Download } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ClipboardCheck, Download } from "lucide-react";
 import { toPng } from "html-to-image";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -570,14 +570,12 @@ const Quiz = () => {
           className={`pt-28 pb-16 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
         >
           <div className="prodfolio-container max-w-[1200px] mx-auto text-center">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center">
+              <ClipboardCheck className="w-8 h-8 text-coral" />
+            </div>
             <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
-              Is your PM portfolio
-              <br />
-              <span className="gradient-text">ready to land your dream role?</span>
+              Do you need a <span className="gradient-text">PM portfolio?</span>
             </h1>
-            <p className="text-xl text-white/70 mb-4 max-w-2xl mx-auto">
-              Find out in just 3 minutes with this free assessment.
-            </p>
             <p className="text-lg text-white/60 mb-12 max-w-xl mx-auto">
               Identify your strengths, uncover gaps, and get personalized guidance for your career
               stage.
