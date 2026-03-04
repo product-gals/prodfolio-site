@@ -54,8 +54,8 @@ const Blog = () => {
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-white">
             PM Career <span className="gradient-text">Advice</span>
           </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Practical guides on portfolios, case studies, job searching, and breaking into product management.
+          <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
+            Frameworks, guides, and honest takes on building a PM career.
           </p>
         </div>
       </section>

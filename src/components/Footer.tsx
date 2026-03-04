@@ -129,9 +129,9 @@ const Footer = () => {
 
           {/* Newsletter - spans 2 columns on desktop */}
           <div className="col-span-2 md:col-span-2">
-            <h4 className="font-semibold mb-4 text-white">Free PM career tips, weekly</h4>
+            <h4 className="font-semibold mb-4 text-white">Off the Roadmap</h4>
             <p className="text-sm text-white/80 mb-4">
-              Portfolio strategies, interview prep, and career moves — trusted by 125+ PMs.
+              A weekly newsletter for mid-career PMs figuring out what's next.
             </p>
             {submitted ? (
               <p className="text-white/90 text-sm font-medium">You're in! Check your inbox for a welcome email.</p>
