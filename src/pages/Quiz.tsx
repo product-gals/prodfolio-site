@@ -102,12 +102,12 @@ const stageBase: Record<JourneyStage, { label: string; teaserSummary: string; ct
     mid: {
       label: "Mid-Level PM",
       teaserSummary: "You're a Mid-Level PM leveling up your career",
-      ctaAngle: "Your leadership speaks for itself — now give it a stage",
+      ctaAngle: "Your impact deserves to be documented — let's tell that story",
     },
     senior: {
       label: "Senior PM",
       teaserSummary: "You're a Senior PM with strategic vision to share",
-      ctaAngle: "Your impact deserves to be documented — let's tell that story",
+      ctaAngle: "Your leadership speaks for itself — now give it a stage",
     },
   };
 
@@ -206,7 +206,7 @@ function getInsight(stage: JourneyStage, portfolio: string) {
   }
   if (hasPartial) {
     if (stage === "aspiring")
-      return "You have materials to work with — that's more than most people breaking into PM! The fun part now is shaping what you have into case studies that show off your product thinking.";
+      return "You have materials to work with — that's more than most people breaking into product management! The fun part now is shaping what you have into case studies that show off your product thinking.";
     return "Having some materials means you're not starting from zero — nice! The next move is turning those scattered work samples into a cohesive story that shows how you think, decide, and drive outcomes.";
   }
   if (noIdea) {
