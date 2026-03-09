@@ -547,8 +547,8 @@ const Landing = () => {
             Your next PM role starts with your portfolio.
           </h2>
           <Button asChild className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
-            <a href="https://app.prodfolio.io/sign-up">
-              Get Started Free
+            <a href="https://buy.stripe.com/00w28t4Jab8hbunbszbfO08" target="_blank" rel="noopener noreferrer">
+              Start Your 14-Day Free Trial
             </a>
           </Button>
           <p className="mt-4">
