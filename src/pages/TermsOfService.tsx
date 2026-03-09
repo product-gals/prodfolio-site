@@ -233,11 +233,11 @@ export default function TermsOfService() {
                 Prices may change, but we'll notify existing subscribers before any increases.
               </p>
 
-              <h3 className="text-2xl font-bold mb-3 text-navy">7-Day Free Trial</h3>
+              <h3 className="text-2xl font-bold mb-3 text-navy">14-Day Free Trial</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li>All paid plans include a <strong>7-day free trial</strong> so you can explore the full experience before being charged</li>
-                <li>Your trial begins when you sign up for a paid plan and provide payment information</li>
-                <li>You will not be charged during the 7-day trial period</li>
+                <li>Pro includes a <strong>14-day free trial</strong> so you can explore the full experience before being charged</li>
+                <li>Your trial begins when you upgrade to Pro and provide payment information</li>
+                <li>You will not be charged during the 14-day trial period</li>
                 <li>If you cancel before the trial ends, you won't be charged at all</li>
                 <li>If you don't cancel, your subscription will automatically begin at the end of the trial period and you'll be billed at the plan rate</li>
                 <li>The free trial is available once per user — if you've previously used a trial or had a paid subscription, you may not be eligible for another trial</li>
@@ -261,10 +261,10 @@ export default function TermsOfService() {
 
               <h3 className="text-2xl font-bold mb-3 text-navy">Refunds & Money-Back Guarantee</h3>
               <p className="text-navy/90 mb-4">
-                <strong>Try Prodfolio risk-free.</strong> Start with a 7-day free trial on any paid plan. If you continue past the trial and still aren't satisfied within 30 days of your first charge, we'll refund you, no questions asked.
+                <strong>Try Prodfolio risk-free.</strong> Start with a 14-day free trial on Pro. If you continue past the trial and still aren't satisfied within 30 days of your first charge, we'll refund you, no questions asked.
               </p>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li><strong>7-day free trial:</strong> Cancel anytime during the trial and you won't be charged</li>
+                <li><strong>14-day free trial:</strong> Cancel anytime during the trial and you won't be charged</li>
                 <li><strong>All paid plans:</strong> Full refund within 30 days of your first charge (after the trial ends)</li>
                 <li><strong>After 30 days:</strong> No refunds for partial months, but you can cancel anytime</li>
                 <li><strong>Cancellations:</strong> You retain access until the end of your billing period</li>

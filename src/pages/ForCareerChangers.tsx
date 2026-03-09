@@ -225,7 +225,7 @@ const ForCareerChangers = () => {
             asChild
             className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
           >
-            <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
+            <a href="https://app.prodfolio.io/sign-up">Get Started Free</a>
           </Button>
         </div>
       </section>

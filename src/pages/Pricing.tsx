@@ -43,7 +43,7 @@ const Pricing = () => {
           "name": "Can I try before I buy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! Every sign up comes with a 7-day free trial — full access, no limitations."
+            "text": "Yes! Pro comes with a 14-day free trial. You'll enter payment info to start, but won't be charged until the trial ends. Cancel anytime."
           }
         },
         {
@@ -101,7 +101,7 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      tagline: "Try everything free for 7 days",
+      tagline: "Try everything free for 14 days",
       price: "$29",
       monthlyPrice: 29,
       features: [
@@ -115,7 +115,7 @@ const Pricing = () => {
         "Remove Prodfolio branding",
         "Priority support"
       ],
-      cta: "Start 7-Day Free Trial",
+      cta: "Start 14-Day Free Trial",
       popular: true,
       tier: "pro",
       monthlyLink: "https://app.prodfolio.io/sign-up",
@@ -399,7 +399,7 @@ const Pricing = () => {
                 Can I try before I buy?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 leading-relaxed pb-4">
-                Yes! Every sign up comes with a 7-day free trial — full access, no limitations.
+                Yes! Pro comes with a 14-day free trial. You'll enter payment info to start, but won't be charged until the trial ends. Cancel anytime.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="faq-3" className="glass-card px-5 py-1 border-none">

@@ -90,7 +90,7 @@ const Features = () => {
 
           <Button asChild size="lg" className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold">
             <a href="https://app.prodfolio.io/sign-up">
-              Start Your 7-Day Free Trial
+              Get Started Free
             </a>
           </Button>
         </div>
@@ -607,7 +607,7 @@ const Features = () => {
             className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
           >
             <a href="https://app.prodfolio.io/sign-up">
-              Start Your 7-Day Free Trial
+              Get Started Free
             </a>
           </Button>
         </div>

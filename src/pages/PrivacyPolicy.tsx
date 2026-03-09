@@ -223,7 +223,7 @@ const PrivacyPolicy = () => {
                 <li>All your data is permanently deleted within 30 days</li>
               </ul>
               <p className="text-navy/90 mt-4">
-                <strong>Free trial data:</strong> If you cancel during your 7-day free trial, your payment information is not retained by Prodfolio (Stripe may retain minimal records per their policies). Your account and content follow the same deletion process described above.
+                <strong>Free trial data:</strong> If you cancel during your 14-day free trial, your payment information is not retained by Prodfolio (Stripe may retain minimal records per their policies). Your account and content follow the same deletion process described above.
               </p>
               <p className="text-navy/90 mt-4">
                 Some information may be retained longer if required by law:
