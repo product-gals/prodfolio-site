@@ -58,7 +58,7 @@ const Navbar = () => {
                   <img
                     src={prodfolioLogoProd}
                     alt="Prodfolio - Show Your Work. Own Your Impact."
-                    className="h-12 md:h-16 hidden md:block drop-shadow-[0_0_20px_rgba(158,133,249,0.4)] transition-all hover:drop-shadow-[0_0_25px_rgba(158,133,249,0.6)]"
+                    className="h-12 md:h-16 hidden md:block scale-125 origin-left drop-shadow-[0_0_20px_rgba(158,133,249,0.4)] transition-all hover:drop-shadow-[0_0_25px_rgba(158,133,249,0.6)]"
                   />
                   <img
                     src={prodfolioIcon}
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </Link>
               </div>
 
-              <div className="hidden md:flex items-center space-x-6">
+              <div className="hidden md:flex items-center space-x-8">
                 <Link
                   to="/"
                   className="font-medium text-white hover:text-white/80 transition-colors [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
@@ -152,7 +152,7 @@ const Navbar = () => {
                   Quiz
                 </Link>
 
-                <div className="flex items-center space-x-2 ml-4">
+                <div className="flex items-center space-x-4 ml-8">
                   <Button
                     asChild
                     variant="outline"

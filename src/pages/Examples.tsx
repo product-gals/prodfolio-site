@@ -168,9 +168,6 @@ const Examples = () => {
               >
                 <a href="https://app.prodfolio.io/sign-up">Start Your 7-Day Free Trial</a>
               </Button>
-              <p className="text-white/50 text-xs mt-3">
-                Want to be featured? <a href="mailto:hello@prodfolio.io" className="underline underline-offset-2 hover:text-white/80 transition-colors">Let us know</a>
-              </p>
             </article>
           </div>
 

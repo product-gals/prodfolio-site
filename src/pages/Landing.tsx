@@ -106,14 +106,8 @@ const Landing = () => {
               <span className="gradient-text">Own your impact.</span>
             </h1>
 
-            <p className="text-base md:text-lg text-white/70 mb-5 font-medium tracking-wide">
-              Resumes show your titles — not how you think
-            </p>
-
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto leading-relaxed">
-              Go from blank page to shareable link in under an hour.
-              <br />
-              No design skills needed.
+              Go from blank page to shareable portfolio in under an hour — no design skills needed.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary call to action">
@@ -205,7 +199,7 @@ const Landing = () => {
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
               Designed for how hiring managers evaluate PMs
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto">We asked VPs of Product and recruiters what they look for.</p>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">We asked VPs of Product and recruiters what they look for:</p>
           </div>
           
           {/* Overlapping cards */}
