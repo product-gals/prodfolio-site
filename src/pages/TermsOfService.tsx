@@ -245,7 +245,7 @@ export default function TermsOfService() {
 
               <h3 className="text-2xl font-bold mb-3 text-navy">Billing</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li>Processed securely through Stripe</li>
+                <li>Processed securely through Stripe (credit/debit cards, Apple Pay, Google Pay, and Link)</li>
                 <li>Billed monthly or annually (your choice)</li>
                 <li>Failed payments may result in service interruption</li>
                 <li>You're responsible for applicable taxes</li>

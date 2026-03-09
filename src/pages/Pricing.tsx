@@ -35,7 +35,7 @@ const Pricing = () => {
           "name": "What payment methods do you accept?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We go through Stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available."
+            "text": "We accept credit/debit cards, Apple Pay, Google Pay, and Link by Stripe for one-click checkout."
           }
         },
         {
@@ -391,7 +391,7 @@ const Pricing = () => {
                 What payment methods do you accept?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 leading-relaxed pb-4">
-                We go through Stripe, so we offer a lot of different payment options. Click on the preferred plan and see what options are available.
+                We accept credit/debit cards, Apple Pay, Google Pay, and Link by Stripe for one-click checkout.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="faq-2" className="glass-card px-5 py-1 border-none">

@@ -152,19 +152,21 @@ const Examples = () => {
             ))}
 
             {/* "You here?" CTA Card - inline in grid */}
-            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white/15 transition-all hover:border-white/60 group flex flex-col justify-center">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/30 transition-colors">
-                <Plus className="w-6 h-6 text-white" />
+            <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white/15 transition-all hover:border-white/60 group flex flex-col">
+              <div className="flex-1 flex flex-col justify-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/30 transition-colors">
+                  <Plus className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-lg font-heading font-bold text-white mb-1">
+                  Your portfolio could be here
+                </h3>
+                <p className="text-white/80 text-sm mb-4 leading-relaxed">
+                  Join the PMs showcasing their work. Start building for free — no design skills needed.
+                </p>
               </div>
-              <h3 className="text-lg font-heading font-bold text-white mb-1">
-                Your portfolio could be here
-              </h3>
-              <p className="text-white/80 text-sm mb-4 leading-relaxed">
-                Join the PMs showcasing their work. Start building for free — no design skills needed.
-              </p>
               <Button
                 asChild
-                className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl px-6"
+                className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl px-6 w-full"
               >
                 <a href="https://app.prodfolio.io/sign-up">Get Started Free</a>
               </Button>
