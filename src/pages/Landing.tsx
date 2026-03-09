@@ -6,7 +6,9 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
-import portfolioPreview from "@/assets/portfolio-preview.png";
+import screenshotTop from "@/assets/screenshot-top-portfolio.png";
+import screenshotMid from "@/assets/screenshot-mid-portfolio.png";
+import screenshotBottom from "@/assets/screenshot-bottom-portfolio.png";
 import aaronTestimonial from "@/assets/aaron-testimonial.png";
 import heidiTestimonial from "@/assets/heidi-testimonial.png";
 const Landing = () => {
@@ -147,14 +149,16 @@ const Landing = () => {
                 </div>
                 <div className="flex-1 mx-8">
                   <div className="bg-white/10 rounded-md px-3 py-1 text-xs text-white/50 border border-white/10 max-w-xs mx-auto text-center font-mono">
-                    prodfolio.io/p/sarah-chen
+                    app.prodfolio.io/sarah-chen
                   </div>
                 </div>
               </div>
               
-              {/* Portfolio screenshot example */}
-              <div className="bg-white/5 relative overflow-hidden">
-                <img src={portfolioPreview} alt="Example portfolio showing Sarah Chen's professional PM portfolio with summary, skills, and case studies" className="w-full h-auto" loading="eager" />
+              {/* Scrollable portfolio preview */}
+              <div className="bg-white relative overflow-y-auto max-h-[500px] md:max-h-[600px] scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+                <img src={screenshotTop} alt="Portfolio header with summary, professional timeline, and contact info" className="w-full h-auto block" loading="eager" />
+                <img src={screenshotMid} alt="Case studies and professional references" className="w-full h-auto block" loading="lazy" />
+                <img src={screenshotBottom} alt="Product philosophy and beyond work projects" className="w-full h-auto block" loading="lazy" />
               </div>
             </div>
           </div>
@@ -162,7 +166,7 @@ const Landing = () => {
       </section>
 
       {/* Market Stats Bar - Opportunity-focused messaging */}
-      <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+      <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`pt-4 pb-12 -mt-4 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="prodfolio-container max-w-[1400px]">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2">
@@ -184,8 +188,8 @@ const Landing = () => {
               <div className="text-xs text-white/70 mt-1">Not weeks of prompting</div>
             </div>
             <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">+26%</div>
-              <div className="text-sm text-white/80">growth in entry-level PM roles in the last 6 months</div>
+              <div className="text-3xl font-bold text-white mb-1">+28%</div>
+              <div className="text-sm text-white/80">growth in Associate PM roles in the US this month</div>
               <div className="text-xs text-white/70 mt-1">Now's the time to break in</div>
             </div>
           </div>
