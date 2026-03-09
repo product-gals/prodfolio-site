@@ -155,11 +155,6 @@ const Footer = () => {
               </form>
             )}
             {error && <p className="text-red-200 text-xs mt-2">{error}</p>}
-            <p className="mt-3 text-xs text-white/60">
-              <Link to="/quiz" className="hover:text-white underline underline-offset-2 transition-colors">
-                Not sure if you need a portfolio? Take our free quiz →
-              </Link>
-            </p>
           </div>
         </div>
         

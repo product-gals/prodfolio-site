@@ -12,7 +12,7 @@ import BookCallModal from "@/components/BookCallModal";
 
 const Pricing = () => {
   const scrollRef = useScrollAnimation();
-  const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("annual");
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
 
   useSEO({
     title: "Product Portfolio Builder Pricing | Free & Pro Plans - Prodfolio",
@@ -43,7 +43,7 @@ const Pricing = () => {
           "name": "Can I try before I buy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! Pro comes with a 14-day free trial. You'll enter payment info to start, but won't be charged until the trial ends. Cancel anytime."
+            "text": "Yes! Start free and explore Prodfolio. When you're ready for the full experience, become a Founding Member — cancel anytime."
           }
         },
         {
@@ -70,63 +70,10 @@ const Pricing = () => {
     ],
   });
 
-  const getPrice = (monthlyPrice: number, tier: string) => {
-    if (tier === "free") return null;
-    if (billingCycle === "annual") {
-      return Math.floor(monthlyPrice * 0.8); // 20% discount
-    }
-    return monthlyPrice;
-  };
-
-  const plans = [
-    {
-      name: "Free",
-      tagline: "Build your first portfolio",
-      price: "$0",
-      monthlyPrice: 0,
-      features: [
-        "1 portfolio with unlimited edits",
-        "Professional themes (5 options)",
-        "3 AI-generated case studies",
-        "3 AI resume uploads",
-        "SIGNAL framework with guided prompts",
-        "Public portfolio link",
-        '"Built with Prodfolio" footer'
-      ],
-      cta: "Get Started",
-      popular: false,
-      tier: "free",
-      monthlyLink: "https://app.prodfolio.io/sign-up",
-      annualLink: "https://app.prodfolio.io/sign-up"
-    },
-    {
-      name: "Pro",
-      tagline: "Try everything free for 14 days",
-      price: "$29",
-      monthlyPrice: 29,
-      features: [
-        "Unlimited portfolios",
-        "Unlimited AI case study generation",
-        "Unlimited AI resume uploads",
-        "Password-protected portfolios",
-        "Custom domain (yourname.com)",
-        "Custom themes & colors",
-        "Analytics dashboard",
-        "Remove Prodfolio branding",
-        "Priority support"
-      ],
-      cta: "Start 14-Day Free Trial",
-      popular: true,
-      tier: "pro",
-      monthlyLink: "https://app.prodfolio.io/sign-up",
-      annualLink: "https://app.prodfolio.io/sign-up"
-    }
-  ];
-
   return (
     <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-28 pb-4">
         <div className="prodfolio-container text-center">
@@ -147,83 +94,33 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Founding Member Section - Featured */}
-      <section className="pt-6 pb-6 relative overflow-hidden">
-        <div className="prodfolio-container max-w-5xl relative z-10">
-          <div className="relative bg-white/95 backdrop-blur-md border-2 border-primary/40 rounded-3xl p-6 md:p-10 shadow-xl">
-            {/* Decorative Corner Badge */}
-            <div className="absolute -top-3 -right-3 z-20">
-              <div className="bg-coral text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl rotate-12 animate-pulse">
-                LIMITED OFFER
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10">
-              <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start md:items-center">
-                {/* Left Side - Info */}
-                <div className="flex-1">
-                  <h2 className="text-4xl md:text-5xl font-heading font-bold mb-3 text-navy">
-                    Founding Member
-                  </h2>
-
-                  <p className="text-xl text-navy/80 mb-4">
-                    Join the founding cohort shaping the future of Prodfolio together.
-                  </p>
-
-                  <div className="flex items-baseline gap-3 mb-4">
-                    <span className="text-6xl font-heading font-bold text-navy">$14.50/mo</span>
-                    <span className="text-xl text-navy/70">(50% off!)</span>
-                  </div>
-
-                  <div className="bg-primary/10 border-l-4 border-primary rounded-xl p-4 backdrop-blur-sm">
-                    <p className="text-sm leading-relaxed text-navy/80">
-                      <strong className="text-navy">What makes this different:</strong> This isn't early access with bugs. The platform works. You get proximity — direct line to the founders, personalized support, and input on what we build next.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Right Side - Features */}
-                <div className="md:w-80 shrink-0">
-                  <div className="bg-primary/10 border border-primary/30 rounded-2xl p-5">
-                    <h3 className="font-bold text-lg mb-3 font-heading text-navy">Everything in Pro, plus:</h3>
-                    <ul className="space-y-2.5">
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Portfolio review</strong> within 30 days</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Direct Slack access</strong> to founders</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Monthly AMAs</strong> with exclusive roadmap sessions</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Featured on our site</strong> (optional)</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Shape the roadmap</strong> with your feedback</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy"><strong>Founding Member badge</strong> on your portfolio</span>
-                      </li>
-                    </ul>
-
-                    <Button
-                      className="w-full mt-5 bg-primary hover:bg-primary/90 text-white font-heading font-semibold text-base py-6 rounded-xl shadow-soft transition-all duration-200 hover:shadow-xl"
-                      onClick={() => window.open('https://buy.stripe.com/8x29AVb7y7W5dCvcwDbfO06', '_blank')}
-                    >
-                      Become a Founding Member
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
+      {/* Billing Toggle */}
+      <section className="pt-6 pb-2">
+        <div className="text-center">
+          <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-1.5 shadow-xl">
+            <button
+              onClick={() => setBillingCycle("monthly")}
+              className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
+                billingCycle === "monthly"
+                  ? "bg-white text-navy font-medium shadow-sm"
+                  : "text-white/70 hover:text-white"
+              }`}
+            >
+              Monthly
+            </button>
+            <button
+              onClick={() => setBillingCycle("annual")}
+              className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
+                billingCycle === "annual"
+                  ? "bg-white text-navy font-medium shadow-sm"
+                  : "text-white/70 hover:text-white"
+              }`}
+            >
+              Annual
+              <span className="text-xs bg-coral text-white px-2 py-0.5 rounded-full font-bold">
+                Save 28%
+              </span>
+            </button>
           </div>
         </div>
       </section>
@@ -234,122 +131,122 @@ const Pricing = () => {
         className={`pt-4 pb-8 ${scrollRef.isVisible ? 'animate-fade-in' : 'opacity-0'}`}
       >
         <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6">
-          <div className="text-center mb-4">
-            <h2 className="text-3xl font-heading font-bold mb-3 text-white">Standard Plans</h2>
-
-            {/* Billing Toggle */}
-            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full p-1.5 shadow-xl mb-4">
-              <button
-                onClick={() => setBillingCycle("monthly")}
-                className={`px-6 py-2.5 rounded-full transition-all duration-200 ${
-                  billingCycle === "monthly"
-                    ? "bg-white text-navy font-medium shadow-sm"
-                    : "text-white/70 hover:text-white"
-                }`}
-              >
-                Monthly
-              </button>
-              <button
-                onClick={() => setBillingCycle("annual")}
-                className={`px-6 py-2.5 rounded-full transition-all duration-200 flex items-center gap-2 ${
-                  billingCycle === "annual"
-                    ? "bg-white text-navy font-medium shadow-sm"
-                    : "text-white/70 hover:text-white"
-                }`}
-              >
-                Annual
-                <span className="text-xs bg-coral text-white px-2 py-0.5 rounded-full font-bold">
-                  Save 20%
-                </span>
-              </button>
-            </div>
-
-            <p className="text-lg text-white/70">Choose the plan that works best for you</p>
-          </div>
-          
-          {/* Main Pricing Cards */}
           <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto items-stretch">
-            {plans.map((plan, index) => {
-              const displayPrice = plan.tier === "free" 
-                ? plan.price 
-                : `$${getPrice(plan.monthlyPrice, plan.tier)}`;
-              
-              return (
-                <Card 
-                  key={index}
-                  className={`relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300 ${
-                    plan.popular
-                      ? 'border-2 border-primary shadow-xl ring-2 ring-primary/20'
-                      : ''
-                  }`}
-                  style={{ borderRadius: '24px' }}
+            {/* Free Plan */}
+            <Card
+              className="relative flex flex-col bg-white/95 backdrop-blur-md border border-primary/20 hover-lift transition-all duration-300"
+              style={{ borderRadius: '24px' }}
+            >
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between gap-2 mb-2 min-h-[32px]">
+                  <CardTitle className="text-xl font-heading text-navy">Free</CardTitle>
+                </div>
+                <div className="mt-3 mb-2">
+                  <div className="text-5xl font-heading font-bold text-navy">$0</div>
+                  <div className="mt-2 min-h-[44px]" />
+                </div>
+                <CardDescription className="text-sm leading-relaxed text-navy/70 min-h-[20px]">
+                  Build your first portfolio
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="pt-0 pb-4 flex-grow">
+                <ul className="space-y-3">
+                  {[
+                    "1 portfolio with unlimited edits",
+                    "Professional themes (5 options)",
+                    "3 AI-generated case studies",
+                    "3 AI resume uploads",
+                    "SIGNAL framework with guided prompts",
+                    "Public portfolio link",
+                    '"Built with Prodfolio" footer'
+                  ].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm leading-snug text-navy">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+
+              <CardFooter className="pt-0 pb-6 mt-auto flex-col">
+                <Button
+                  asChild
+                  className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-white text-navy hover:bg-white/90 hover:-translate-y-1 shadow-md"
+                  style={{ borderRadius: '12px' }}
                 >
-                  {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
-                      <span className="bg-gradient-primary text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-soft animate-pulse">
-                        Most Popular
-                      </span>
+                  <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">
+                    Get Started Free
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+
+            {/* Founding Member Plan */}
+            <Card
+              className="relative flex flex-col bg-white/95 backdrop-blur-md border-2 border-primary shadow-xl ring-2 ring-primary/20 hover-lift transition-all duration-300"
+              style={{ borderRadius: '24px' }}
+            >
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
+                <span className="bg-coral text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-xl">
+                  LIMITED — 45 spots left
+                </span>
+              </div>
+
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between gap-2 mb-2 min-h-[32px]">
+                  <CardTitle className="text-xl font-heading text-navy">Founding Member</CardTitle>
+                </div>
+                <div className="mt-3 mb-2">
+                  <div className="text-5xl font-heading font-bold text-navy">
+                    {billingCycle === "monthly" ? "$15" : "$10.75"}
+                  </div>
+                  <div className="mt-2 min-h-[44px]">
+                    <div className="text-sm text-navy/70">
+                      per month{billingCycle === "annual" && <span className="block text-xs mt-0.5">$129 billed annually</span>}
                     </div>
-                  )}
-                  
-                  <CardHeader className="pb-4">
-                    <div className="flex items-start justify-between gap-2 mb-2 min-h-[32px]">
-                      <CardTitle className="text-xl font-heading text-navy">{plan.name}</CardTitle>
-                      {plan.tier === "free" && (
-                        <span className="bg-coral/10 text-coral text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap">
-                          Free plan
-                        </span>
-                      )}
-                    </div>
-                    <div className="mt-3 mb-2">
-                      <div className="text-5xl font-heading font-bold text-navy">{displayPrice}</div>
-                      <div className="mt-2 min-h-[44px]">
-                        {plan.tier !== "free" && (
-                          <div className="text-sm text-navy/70">
-                            per {billingCycle === "monthly" ? "month" : "month"}
-                            {billingCycle === "annual" && (
-                              <div className="text-xs text-navy/70 mt-1">billed annually</div>
-                            )}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    <CardDescription className="text-sm leading-relaxed text-navy/70 min-h-[20px]">
-                      {plan.tagline}
-                    </CardDescription>
-                  </CardHeader>
-                  
-                  <CardContent className="pt-0 pb-4 flex-grow">
-                    <ul className="space-y-3">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-2.5">
-                          <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                          <span className="text-sm leading-snug text-navy">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                  
-                  <CardFooter className="pt-0 pb-6 mt-auto flex-col">
-                    <Button
-                      asChild
-                      className={`w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 ${
-                        plan.popular
-                          ? "bg-navy text-white hover:bg-navy/90 hover:-translate-y-1"
-                          : plan.tier === "free"
-                          ? "bg-white text-navy hover:bg-white/90 hover:-translate-y-1 shadow-md"
-                          : "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-1"
-                      }`}
-                      style={{ borderRadius: '12px' }}
-                    >
-                      <a href={billingCycle === "annual" ? plan.annualLink : plan.monthlyLink} target="_blank" rel="noopener noreferrer">
-                        {plan.cta}
-                      </a>
-                    </Button>
-                  </CardFooter>
-                </Card>
-              );
-            })}
+                  </div>
+                </div>
+                <CardDescription className="text-sm leading-relaxed text-navy/70 min-h-[20px]">
+                  Everything unlocked + founder perks
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="pt-0 pb-4 flex-grow">
+                <ul className="space-y-3">
+                  {[
+                    "Unlimited portfolios",
+                    "Unlimited AI case study generation",
+                    "Unlimited AI resume uploads",
+                    "Password-protected portfolios",
+                    "Custom domain (yourname.com)",
+                    "Custom themes & colors",
+                    "Analytics dashboard",
+                    "Remove Prodfolio branding",
+                    "Priority support",
+                    "Portfolio review within 30 days",
+                    "Direct Slack access to founders",
+                    "Monthly AMAs & roadmap sessions",
+                    "Founding Member badge on your portfolio",
+                  ].map((feature, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm leading-snug text-navy">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+
+              <CardFooter className="pt-0 pb-6 mt-auto flex-col">
+                <Button
+                  className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-navy text-white hover:bg-navy/90 hover:-translate-y-1"
+                  style={{ borderRadius: '12px' }}
+                  onClick={() => window.open('https://buy.stripe.com/00w28t4Jab8hbunbszbfO08', '_blank')}
+                >
+                  Become a Founding Member
+                </Button>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </section>
@@ -399,7 +296,7 @@ const Pricing = () => {
                 Can I try before I buy?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 leading-relaxed pb-4">
-                Yes! Pro comes with a 14-day free trial. You'll enter payment info to start, but won't be charged until the trial ends. Cancel anytime.
+                Yes! Start free and explore Prodfolio. When you're ready for the full experience, become a Founding Member — cancel anytime.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="faq-3" className="glass-card px-5 py-1 border-none">

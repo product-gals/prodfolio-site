@@ -226,8 +226,8 @@ export default function TermsOfService() {
               <h3 className="text-2xl font-bold mb-3 text-navy">Pricing Plans</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
                 <li><strong>Free:</strong> $0/month — 1 portfolio, 3 AI case studies, 3 AI resume uploads, "Built with Prodfolio" footer</li>
-                <li><strong>Pro:</strong> $29/month (or $23/month billed annually) — unlimited portfolios, unlimited AI generation, custom domain, analytics, no Prodfolio branding, priority support</li>
-                <li><strong>Founding Member:</strong> $14.50/month — everything in Pro, plus portfolio review, direct Slack access to founders, monthly AMAs, and Founding Member badge (limited availability)</li>
+                <li><strong>Pro:</strong> $29/month — unlimited portfolios, unlimited AI generation, custom domain, analytics, no Prodfolio branding, priority support</li>
+                <li><strong>Founding Member:</strong> $15/month — everything in Pro, plus portfolio review, direct Slack access to founders, monthly AMAs, and Founding Member badge (limited availability)</li>
               </ul>
               <p className="text-navy/90 mb-4">
                 Prices may change, but we'll notify existing subscribers before any increases.
@@ -246,7 +246,7 @@ export default function TermsOfService() {
               <h3 className="text-2xl font-bold mb-3 text-navy">Billing</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
                 <li>Processed securely through Stripe (credit/debit cards, Apple Pay, Google Pay, and Link)</li>
-                <li>Billed monthly or annually (your choice)</li>
+                <li>Billed monthly</li>
                 <li>Failed payments may result in service interruption</li>
                 <li>You're responsible for applicable taxes</li>
               </ul>
