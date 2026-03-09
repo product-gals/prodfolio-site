@@ -43,7 +43,7 @@ const Pricing = () => {
           "name": "Can I try before I buy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes! Start free and explore Prodfolio. When you're ready for the full experience, become a Founding Member — cancel anytime."
+            "text": "Yes! Start free and explore Prodfolio. When you're ready for more, try Founding Member with a 14-day free trial — no charge until the trial ends. Cancel anytime."
           }
         },
         {
@@ -159,6 +159,7 @@ const Pricing = () => {
                     "3 AI resume uploads",
                     "SIGNAL framework with guided prompts",
                     "Public portfolio link",
+                    "Basic analytics",
                     '"Built with Prodfolio" footer'
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-2.5">
@@ -166,13 +167,23 @@ const Pricing = () => {
                       <span className="text-sm leading-snug text-navy">{feature}</span>
                     </li>
                   ))}
+                  <li className="flex items-start gap-2.5">
+                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <BookCallModal
+                      trigger={
+                        <button className="text-sm leading-snug text-navy underline underline-offset-2 hover:text-primary transition-colors text-left">
+                          <em className="text-primary not-italic font-medium">Optional</em> <span className="italic">onboarding call</span>
+                        </button>
+                      }
+                    />
+                  </li>
                 </ul>
               </CardContent>
 
               <CardFooter className="pt-0 pb-6 mt-auto flex-col">
                 <Button
                   asChild
-                  className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-white text-navy hover:bg-white/90 hover:-translate-y-1 shadow-md"
+                  className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-navy text-white hover:bg-navy/90 hover:-translate-y-1 shadow-md"
                   style={{ borderRadius: '12px' }}
                 >
                   <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">
@@ -189,7 +200,7 @@ const Pricing = () => {
             >
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-auto">
                 <span className="bg-coral text-white px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-xl">
-                  LIMITED — 45 spots left
+                  LIMITED SPOTS
                 </span>
               </div>
 
@@ -213,35 +224,57 @@ const Pricing = () => {
               </CardHeader>
 
               <CardContent className="pt-0 pb-4 flex-grow">
+                <p className="text-xs font-semibold text-navy/50 uppercase tracking-wide mb-3">Included in free trial</p>
                 <ul className="space-y-3">
                   {[
-                    "Unlimited portfolios",
-                    "Unlimited AI case study generation",
-                    "Unlimited AI resume uploads",
+                    "Unlimited portfolios, AI case studies & resume uploads",
                     "Password-protected portfolios",
                     "Custom domain (yourname.com)",
                     "Custom themes & colors",
-                    "Analytics dashboard",
+                    "Advanced analytics dashboard",
                     "Remove Prodfolio branding",
                     "Priority support",
-                    "Portfolio review within 30 days",
-                    "Direct Slack access to founders",
-                    "Monthly AMAs & roadmap sessions",
-                    "Founding Member badge on your portfolio",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-2.5">
                       <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                       <span className="text-sm leading-snug text-navy">{feature}</span>
                     </li>
                   ))}
+                  <li className="flex items-start gap-2.5">
+                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <BookCallModal
+                      trigger={
+                        <button className="text-sm leading-snug text-navy underline underline-offset-2 hover:text-primary transition-colors text-left">
+                          <em className="text-primary not-italic font-medium">Optional</em> <span className="italic">onboarding call</span>
+                        </button>
+                      }
+                    />
+                  </li>
                 </ul>
+
+                <div className="border-t border-navy/10 mt-4 pt-4">
+                  <p className="text-xs font-semibold text-navy/50 uppercase tracking-wide mb-3">After trial — founder perks</p>
+                  <ul className="space-y-3">
+                    {[
+                      "Portfolio review within 30 days",
+                      "Direct Slack access to founders",
+                      "Monthly AMAs & roadmap sessions",
+                      "Founding Member badge on your portfolio",
+                    ].map((feature, i) => (
+                      <li key={i} className="flex items-start gap-2.5">
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-sm leading-snug text-navy">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </CardContent>
 
               <CardFooter className="pt-0 pb-6 mt-auto flex-col">
                 <Button
                   className="w-full h-12 font-semibold transition-all duration-200 focus:outline-none focus:ring-0 bg-navy text-white hover:bg-navy/90 hover:-translate-y-1"
                   style={{ borderRadius: '12px' }}
-                  onClick={() => window.open('https://buy.stripe.com/00w28t4Jab8hbunbszbfO08', '_blank')}
+                  onClick={() => window.open(billingCycle === "annual" ? 'https://buy.stripe.com/cNi5kF8Zq4JTeGzaovbfO09' : 'https://buy.stripe.com/00w28t4Jab8hbunbszbfO08', '_blank')}
                 >
                   Become a Founding Member
                 </Button>
@@ -296,7 +329,7 @@ const Pricing = () => {
                 Can I try before I buy?
               </AccordionTrigger>
               <AccordionContent className="text-white/80 leading-relaxed pb-4">
-                Yes! Start free and explore Prodfolio. When you're ready for the full experience, become a Founding Member — cancel anytime.
+                Yes! Start free and explore Prodfolio. When you're ready for more, try Founding Member with a 14-day free trial — no charge until the trial ends. Cancel anytime.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="faq-3" className="glass-card px-5 py-1 border-none">
