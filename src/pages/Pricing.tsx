@@ -1,4 +1,4 @@
-import { Check, Phone, Star } from "lucide-react";
+import { Calendar, Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -8,7 +8,6 @@ import StickyCTA from "@/components/StickyCTA";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useSEO } from "@/hooks/useSEO";
 import { useState } from "react";
-import BookCallModal from "@/components/BookCallModal";
 
 const Pricing = () => {
   const scrollRef = useScrollAnimation();
@@ -167,16 +166,6 @@ const Pricing = () => {
                       <span className="text-sm leading-snug text-navy">{feature}</span>
                     </li>
                   ))}
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <BookCallModal
-                      trigger={
-                        <button className="text-sm leading-snug text-navy underline underline-offset-2 hover:text-primary transition-colors text-left">
-                          <em className="text-primary not-italic font-medium">Optional</em> <span className="italic">onboarding call</span>
-                        </button>
-                      }
-                    />
-                  </li>
                 </ul>
               </CardContent>
 
@@ -240,16 +229,6 @@ const Pricing = () => {
                       <span className="text-sm leading-snug text-navy">{feature}</span>
                     </li>
                   ))}
-                  <li className="flex items-start gap-2.5">
-                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                    <BookCallModal
-                      trigger={
-                        <button className="text-sm leading-snug text-navy underline underline-offset-2 hover:text-primary transition-colors text-left">
-                          <em className="text-primary not-italic font-medium">Optional</em> <span className="italic">onboarding call</span>
-                        </button>
-                      }
-                    />
-                  </li>
                 </ul>
 
                 <div className="border-t border-navy/10 mt-4 pt-4">
@@ -352,21 +331,35 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Still Have Questions CTA */}
-      <section className="pt-6 pb-12 px-4 cta-glow-section">
-        <div className="text-center">
-          <h2 className="text-2xl font-heading font-bold text-white mb-2">Still have questions?</h2>
-          <p className="text-white/80 mb-6">We're happy to walk you through Prodfolio and help you decide if it's the right fit.</p>
-          <BookCallModal
-            trigger={
-              <Button className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl inline-flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Book a 15 min call
-              </Button>
-            }
-          />
+      {/* Live Setup Session CTA */}
+      <section className="pt-2 pb-6">
+        <div className="prodfolio-container max-w-4xl">
+          <a
+            href="https://cal.com/prodfolio/portfolio-setup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block glass-card p-5 hover:bg-white/15 transition-all group"
+          >
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 bg-primary/30 rounded-full flex items-center justify-center shrink-0">
+                  <Calendar className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-lg">Want help getting started?</p>
+                  <p className="text-white/70 text-sm">Join a free 1-hour live setup session — Tuesdays & Thursdays. Leave with a published portfolio.</p>
+                </div>
+              </div>
+              <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-all hidden sm:flex">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
+
 
       <Footer />
       <StickyCTA />
