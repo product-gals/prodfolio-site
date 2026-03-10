@@ -1320,13 +1320,15 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>You know you want to grow as a PM. But "grow" can mean a lot of things — and the career ladder isn't always obvious. What's the actual difference between a PM and a Senior PM? When do you become a Director? What does a CPO even do?</p>
 
+<p><em>Note: Titles, timelines, and expectations vary significantly by company size, industry, and geography. This guide reflects common patterns across the industry — not a universal standard.</em></p>
+
 <p>The product management career path has more levels and titles than most people realize, and it varies significantly by company size. This guide breaks down each level — what's expected, what skills matter most, and what it takes to move up.</p>
 
 <h2>Key Takeaways</h2>
 
 <ul>
 <li>The typical PM career path runs: <strong>APM → PM → Senior PM → Group PM → Director → VP → CPO</strong></li>
-<li>Most PMs spend <strong>2-3 years at each level</strong> before moving up, with longer timelines at senior levels</li>
+<li>Most PMs spend <strong>roughly 2-3 years at each level</strong> before moving up, though this varies widely by company and individual</li>
 <li>The shift from IC to management happens around <strong>Group PM or Director level</strong> — and it's not for everyone</li>
 <li>At each level, the scope expands: from features → products → portfolios → company strategy</li>
 <li>Your <a href="/blog/how-to-write-product-management-case-study">portfolio</a> should evolve to reflect the level you're targeting, not just the level you're at</li>
@@ -1350,7 +1352,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>Typical experience:</strong> 0-2 years</p>
 
-<p>APMs are learning the fundamentals of product management under the guidance of more senior PMs. You're not expected to set strategy — you're expected to <strong>execute well, learn fast, and develop your product instincts</strong>.</p>
+<p>Companies like Google, Meta, and Microsoft have formalized APM programs that have become the standard entry point into product management. APMs are learning the fundamentals of product management under the guidance of more senior PMs. You're not expected to set strategy — you're expected to <strong>execute well, learn fast, and develop your product instincts</strong>.</p>
 
 <p>What you own:</p>
 <ul>
@@ -1364,7 +1366,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>PM: Product Manager</h2>
 
-<p><strong>Typical experience:</strong> 2-5 years</p>
+<p><strong>Typical experience:</strong> 2-5 years (varies by company size and pace)</p>
 
 <p>This is where you go from executing someone else's roadmap to <strong>owning your own product area</strong>. You're making real decisions about what to build, how to prioritize, and how to measure success.</p>
 
@@ -1380,9 +1382,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Senior PM: Senior Product Manager</h2>
 
-<p><strong>Typical experience:</strong> 5-8 years</p>
+<p><strong>Typical experience:</strong> 5-8 years (though some reach this level faster at high-growth companies)</p>
 
-<p>Senior PMs operate with <strong>more autonomy and broader scope</strong>. You're not just executing a strategy — you're shaping it. You're expected to identify problems worth solving, not just solve assigned problems.</p>
+<p>Senior PMs operate with <strong>more autonomy and broader scope</strong>. According to <a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener noreferrer">Lenny Rachitsky's surveys of thousands of PMs</a>, the Senior PM level is where career paths start to diverge most significantly. You're not just executing a strategy — you're shaping it. You're expected to identify problems worth solving, not just solve assigned problems.</p>
 
 <p>What changes:</p>
 <ul>
@@ -1393,7 +1395,7 @@ export const blogPosts: BlogPost[] = [
 <li>Your decisions have revenue and business-model implications</li>
 </ul>
 
-<p><strong>How to move up:</strong> At this level, the fork in the road appears. You can go deeper as an individual contributor (Principal/Staff PM) or move into management (Group PM/Director). Both are valid — know which one plays to your strengths.</p>
+<p><strong>How to move up:</strong> At this level, the fork in the road appears. You can go deeper as an individual contributor (Principal/Staff PM) or move into management (Group PM/Director). Both are valid — <a href="https://www.ravi-mehta.com/product-manager-skills/" target="_blank" rel="noopener noreferrer">Ravi Mehta's PM competency model</a> is a useful framework for identifying which skills to develop for each track.</p>
 
 <h2>Group PM / Principal PM</h2>
 
@@ -1425,7 +1427,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>VP of Product</h2>
 
-<p><strong>Typical experience:</strong> 12+ years</p>
+<p><strong>Typical experience:</strong> 12+ years (though startup VPs can reach this much earlier)</p>
 
 <p>The VP of Product oversees the <strong>entire product management function</strong>. You're setting the product vision, aligning it with business strategy, and building the team that executes it.</p>
 
@@ -1459,7 +1461,7 @@ export const blogPosts: BlogPost[] = [
 
 <ol>
 <li><strong>Chasing titles over skills</strong> — A "Senior PM" title at a 10-person startup is different from one at Google. Focus on building the skills and demonstrating the impact that matches the level you want, regardless of your current title</li>
-<li><strong>Assuming management is the only path</strong> — The IC track (Principal/Staff PM) is a legitimate and well-compensated career path. If you love being close to the product and users, management might not be for you — and that's fine</li>
+<li><strong>Assuming management is the only path</strong> — The IC track (Principal/Staff PM) is a legitimate and well-compensated career path. Companies like Google, Stripe, and Atlassian have well-defined IC ladders that go to Staff and Principal levels. If you love being close to the product and users, management might not be for you — and that's fine</li>
 <li><strong>Not updating your portfolio as you grow</strong> — A Senior PM applying for Director roles with APM-level case studies sends the wrong signal. Your portfolio should evolve with your career, showing progressively broader scope and impact</li>
 <li><strong>Ignoring the skills gap</strong> — Each level requires new skills. PM to Senior PM requires more strategic thinking. Senior PM to Director requires people management. Identify the gap and work on it deliberately — don't just wait for a promotion</li>
 </ol>
@@ -1473,7 +1475,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Frequently Asked Questions</h2>
 
 <h3>How long does it take to go from APM to Senior PM?</h3>
-<p>Typically 4-7 years, though it varies widely. Most PMs spend 1-2 years as an APM, 2-3 years as a PM, and then move to Senior PM. Progression depends on the company, your performance, and whether you actively seek growth opportunities or wait for them to come to you.</p>
+<p>Typically 4-7 years, though it varies widely based on company size, growth stage, and individual performance. At large tech companies with structured leveling (per <a href="https://www.levels.fyi/" target="_blank" rel="noopener noreferrer">levels.fyi</a> data), timelines tend to be longer and more predictable. At startups, progression can happen much faster — but often with less structured support. The key factor is whether you actively seek growth opportunities or wait for them to come to you.</p>
 
 <h3>Can I skip levels?</h3>
 <p>Sometimes. Moving to a smaller company often means jumping a level — a Senior PM at a large company might become a Director or VP at a startup. The trade-off is less structured support and more ambiguity. Make sure the skip is matched by real skills, not just a title upgrade.</p>
@@ -1482,7 +1484,7 @@ export const blogPosts: BlogPost[] = [
 <p>A Group PM typically manages 2-4 PMs and owns a product area. A Director manages Group PMs (or a larger team of PMs) and owns an entire product line. The Director role involves more organizational leadership, hiring, and executive communication. Think of Group PM as "team lead" and Director as "department leader."</p>
 
 <h3>Is a PM career path different at startups vs. big tech?</h3>
-<p>Yes. Startups have fewer levels and faster progression — you might go from PM to VP in 3-4 years. Big tech has more defined levels with longer timelines but higher compensation at each step. The skills are similar; the scope and pace differ.</p>
+<p>Yes. Startups have fewer levels and faster progression — you might go from PM to VP in 3-4 years. Big tech has more defined levels with longer timelines but typically higher compensation at each step (you can explore this on <a href="https://www.levels.fyi/" target="_blank" rel="noopener noreferrer">levels.fyi</a>). The core skills are similar; the scope and pace differ.</p>
 
 <h3>Do I need an MBA to reach Director or VP?</h3>
 <p>No. While some Directors and VPs have MBAs, many don't. What matters at senior levels is a track record of business impact, team leadership, and strategic thinking — which your portfolio and career history demonstrate more effectively than a degree.</p>
