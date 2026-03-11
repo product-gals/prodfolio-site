@@ -174,7 +174,7 @@ const Landing = () => {
               Your work speaks louder than another application
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto">
-              The PMs who stand out are the ones who show their thinking—not just list their titles.
+              The PMs who stand out are the ones who show their thinking, not just list their titles.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -411,7 +411,7 @@ const Landing = () => {
                 Our guided framework walks you through each case study. No more staring at a blank page.
               </p>
               <Button asChild size="lg" className="px-6 py-5 h-auto text-base bg-primary text-white hover:bg-primary/90 inline-flex items-center gap-2 rounded-xl font-semibold">
-                <a href="https://app.prodfolio.io/sign-up">
+                <a href="/how-it-works">
                   See the framework <span aria-hidden="true">→</span>
                 </a>
               </Button>
@@ -584,11 +584,13 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
-              <Button asChild size="lg" className="px-8 py-5 h-auto text-base bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold rounded-xl">
-                <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
-                  Book a free session
-                </a>
-              </Button>
+              <div className="flex justify-center">
+                <Button asChild size="lg" className="px-8 py-5 h-auto text-base bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold rounded-xl">
+                  <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
+                    Join a live session <span aria-hidden="true">➜</span>
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -601,13 +603,13 @@ const Landing = () => {
             Your next PM role starts with your portfolio.
           </h2>
           <Button asChild className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
-            <a href="https://buy.stripe.com/00w28t4Jab8hbunbszbfO08" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">
               Start Your 14-Day Free Trial
             </a>
           </Button>
           <p className="mt-4">
             <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
-              Not sure where to start? Take the free quiz →
+              Not sure where to start? Take our quiz ➜
             </Link>
           </p>
         </div>
