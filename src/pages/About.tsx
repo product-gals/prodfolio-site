@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import { Coffee, Mic, Lightbulb, Users } from "lucide-react";
 import meaganPhoto from "@/assets/meagan-photo.png";
 import santianaPhoto from "@/assets/santiana-photo.png";
+import emilyPhoto from "@/assets/emily-photo.jpeg";
+import olympiaPhoto from "@/assets/olympia-todisco.jpeg";
 
 const About = () => {
   const heroAnimation = useScrollAnimation();
@@ -32,14 +34,14 @@ const About = () => {
         {
           "@type": "Person",
           "name": "Meagan Glenn",
-          "jobTitle": "Co-founder",
+          "jobTitle": "Cofounder",
           "sameAs": "https://www.linkedin.com/in/meagan-glenn/",
           "url": "https://meaganglenn.me"
         },
         {
           "@type": "Person",
           "name": "Santiana Brace",
-          "jobTitle": "Co-founder",
+          "jobTitle": "Cofounder",
           "sameAs": "https://www.linkedin.com/in/santiana-brace/",
           "url": "https://app.prodfolio.io/p/santi-brace-2"
         }
@@ -73,7 +75,7 @@ const About = () => {
             We built the thing <span className="gradient-text">we needed</span>
           </h1>
           <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-3xl mx-auto">
-            Prodfolio started because two PMs got tired of watching talented product people undersell themselves - ourselves included.
+            Prodfolio started because we got tired of watching talented product people undersell themselves - ourselves included.
           </p>
         </div>
       </section>
@@ -142,11 +144,8 @@ const About = () => {
                 <Users className="w-8 h-8 text-coral flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-heading font-bold mb-2 text-white">We built it together - with you</h3>
-                  <p className="text-white/80 leading-relaxed mb-3">
-                    In February 2025, Prodfolio was born. We talked to PMs about what they struggled with. We talked to hiring managers about what they actually looked for. We shipped an MVP, ran a beta cohort, and kept iterating.
-                  </p>
                   <p className="text-white/80 leading-relaxed">
-                    Now PMs are landing interviews with portfolios they're proud to share. That's why we built this - and why we keep building.
+                    In February 2025, Prodfolio was born — built alongside the PM community, not just for it. We talked to PMs about what they struggled with, hiring managers about what they actually looked for, and kept shipping until it clicked. Now PMs are landing interviews with portfolios they're proud to share. That's why we built this — and why we keep building.
                   </p>
                 </div>
               </div>
@@ -163,7 +162,7 @@ const About = () => {
         <div className="prodfolio-container max-w-[900px] mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3 text-white">
-              Meet the PMs behind Prodfolio
+              Meet the team
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto">
               We're not just building Prodfolio - we're using it, breaking it, and improving it every day.
@@ -176,13 +175,13 @@ const About = () => {
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={meaganPhoto}
-                  alt="Meagan Glenn, Co-founder of Prodfolio"
+                  alt="Meagan Glenn, Cofounder of Prodfolio"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
               <h3 className="text-xl font-heading font-bold text-white">Meagan Glenn</h3>
-              <p className="text-white font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white font-semibold text-sm mb-3">Cofounder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
@@ -205,13 +204,13 @@ const About = () => {
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
                 <img
                   src={santianaPhoto}
-                  alt="Santiana Brace, Co-founder of Prodfolio"
+                  alt="Santiana Brace, Cofounder of Prodfolio"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
               </div>
               <h3 className="text-xl font-heading font-bold text-white">Santiana Brace</h3>
-              <p className="text-white font-semibold text-sm mb-3">Co-founder</p>
+              <p className="text-white font-semibold text-sm mb-3">Cofounder</p>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Expert at cutting through complexity to find the simplest path forward.
               </p>
@@ -223,6 +222,59 @@ const About = () => {
                 </Button>
                 <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
                   <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Olympia */}
+            <div className="glass-card p-5 text-center flex flex-col">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
+                <img
+                  src={olympiaPhoto}
+                  alt="Olympia Bardis, Product Advisor at Prodfolio"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-white">Olympia Bardis</h3>
+              <p className="text-white font-semibold text-sm mb-3">Product Advisor</p>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                Senior PM at CNBC with deep expertise in subscription products, fintech, and digital consumer experiences. She's passionate about building user-centric products and is an active advocate for women in tech — and she brings all of that energy to helping shape Prodfolio.
+              </p>
+              <div className="flex gap-2 justify-center mt-auto">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
+                  <a href="https://app.prodfolio.io/p/olympia-bardis" target="_blank" rel="noopener noreferrer">
+                    See My Prodfolio
+                  </a>
+                </Button>
+                <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
+                  <a href="https://www.linkedin.com/in/olympiabardis/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Emily */}
+            <div className="glass-card p-5 text-center flex flex-col">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 mx-auto mb-4">
+                <img
+                  src={emilyPhoto}
+                  alt="Emily Barba-Jaume, Operations Strategist at Prodfolio"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="text-xl font-heading font-bold text-white">Emily Barba-Jaume</h3>
+              <p className="text-white font-semibold text-sm mb-3">Operations Strategist</p>
+              <p className="text-white/80 text-sm leading-relaxed mb-4">
+                The person who keeps the wheels turning and the chaos manageable. With a background in workforce development, team management, and operational coordination, Emily makes sure Prodfolio runs smoothly so everyone else can focus on building. Off the clock? Iced coffee in hand, fur babies by her side.
+              </p>
+              <div className="flex gap-2 justify-center mt-auto">
+                <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
+                  <a href="https://www.linkedin.com/in/emily-barba-jaume-054363224/" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
                 </Button>
