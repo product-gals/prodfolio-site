@@ -53,6 +53,11 @@ const Footer = () => {
                   Pricing
                 </Link>
               </li>
+              <li>
+                <Link to="/how-it-works" className="hover:text-white hover:underline transition-all">
+                  How It Works
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -73,11 +78,6 @@ const Footer = () => {
               <li>
                 <Link to="/partners" className="hover:text-white hover:underline transition-all">
                   Partners
-                </Link>
-              </li>
-              <li>
-                <Link to="/how-it-works" className="hover:text-white hover:underline transition-all">
-                  How It Works
                 </Link>
               </li>
               <li>
