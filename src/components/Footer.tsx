@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/quiz" className="hover:text-white hover:underline transition-all">
-                  Free Portfolio Quiz
+                  What Kind of PM Are You?
                 </Link>
               </li>
             </ul>

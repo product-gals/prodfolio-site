@@ -225,7 +225,7 @@ const Navbar = () => {
                   className="block py-2 font-medium text-coral-light hover:text-white transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Free Quiz
+                  What Kind of PM Are You?
                 </Link>
 
                 {/* Who it's for Section */}

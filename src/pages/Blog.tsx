@@ -157,7 +157,7 @@ const Blog = () => {
               <p className="text-white/60 text-sm mt-1">Take our 3-minute quiz and get a personalized recommendation.</p>
             </div>
             <Link to="/quiz" className="px-6 py-3 bg-white text-navy font-semibold text-sm rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap">
-              Take the Free Quiz
+              What Kind of PM Are You?
             </Link>
           </div>
 

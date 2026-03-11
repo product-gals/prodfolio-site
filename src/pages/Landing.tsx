@@ -121,7 +121,7 @@ const Landing = () => {
               </Button>
               <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all font-semibold">
                 <Link to="/quiz">
-                  Take the Free Quiz
+                  What Kind of PM Are You?
                 </Link>
               </Button>
             </div>
@@ -609,7 +609,7 @@ const Landing = () => {
           </Button>
           <p className="mt-4">
             <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
-              Not sure where to start? Take our quiz ➜
+              Not sure where to start? Find out what kind of PM you are ➜
             </Link>
           </p>
         </div>

@@ -246,7 +246,7 @@ const About = () => {
           </Button>
           <p className="mt-4">
             <Link to="/quiz" className="text-sm text-white/60 hover:text-white/90 transition-colors underline underline-offset-2">
-              Not sure where to start? Take the free quiz →
+              Not sure where to start? Find out what kind of PM you are →
             </Link>
           </p>
         </div>

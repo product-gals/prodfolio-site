@@ -436,13 +436,13 @@ const Quiz = () => {
   const heroAnimation = useScrollAnimation();
 
   useSEO({
-    title: "3-Minute Portfolio Quiz | Find Out What's Holding You Back - Prodfolio",
+    title: "What Kind of PM Are You? | Free Quiz - Prodfolio",
     description:
-      "Take our quick 3-minute quiz to discover what's holding your PM portfolio back and get personalized recommendations to stand out.",
+      "Take our free 3-minute quiz to discover your PM archetype and get personalized recommendations to stand out.",
     canonical: "https://prodfolio.io/quiz",
     breadcrumbs: [
       { name: "Home", url: "https://prodfolio.io" },
-      { name: "Portfolio Quiz", url: "https://prodfolio.io/quiz" },
+      { name: "What Kind of PM Are You?", url: "https://prodfolio.io/quiz" },
     ],
   });
 
@@ -578,7 +578,7 @@ const Quiz = () => {
               <ClipboardCheck className="w-8 h-8 text-coral" />
             </div>
             <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-white">
-              Do you need a <span className="gradient-text">PM portfolio?</span>
+              What kind of <span className="gradient-text">PM are you?</span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
               Identify your strengths, uncover gaps, and get personalized guidance for your career stage.
@@ -656,7 +656,7 @@ const Quiz = () => {
     };
 
     const handleCopyLink = async () => {
-      const text = `I'm "${results.archetype.title}" — ${results.archetype.description}\n\nTake the free PM Portfolio Quiz: https://prodfolio.io/quiz`;
+      const text = `I'm "${results.archetype.title}" — ${results.archetype.description}\n\nWhat kind of PM are you? Take the free quiz: https://prodfolio.io/quiz`;
       try {
         await navigator.clipboard.writeText(text);
       } catch {

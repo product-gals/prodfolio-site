@@ -770,7 +770,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Identify three companies you're interested in. Find one PM at each on LinkedIn. Send a personalized message asking for a 20-minute coffee chat. That's it — three messages this week.</p>
 
-<p>If you're not sure how to position yourself in these conversations, <a href="/quiz">take the portfolio quiz</a> to clarify your PM positioning — it'll make your outreach sharper and give you something concrete to share when the conversation turns to your work.</p>
+<p>If you're not sure how to position yourself in these conversations, <a href="/quiz">find out what kind of PM you are</a> to clarify your PM positioning — it'll make your outreach sharper and give you something concrete to share when the conversation turns to your work.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -890,7 +890,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Adjust the emphasis, swap in the right metrics, and lead with the case study that best matches the role. That's often all it takes to make a portfolio speak the language of the company you're targeting.</p>
 
-<p>Not sure which type of PM role fits your background? <a href="/quiz">Take the portfolio quiz</a> to get a personalized recommendation for how to position your experience.</p>
+<p>Not sure which type of PM role fits your background? <a href="/quiz">Find out what kind of PM you are</a> and get a personalized recommendation for how to position your experience.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1735,7 +1735,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Want to see what this looks like in practice? <a href="/examples">Browse real PM portfolio examples</a> built with these principles — including portfolios from career changers, B2B PMs, and product leaders.</p>
 
-<p>Not sure what format fits your career stage? <a href="/quiz">Take the portfolio quiz</a> for a personalized recommendation.</p>
+<p>Not sure what format fits your career stage? <a href="/quiz">Find out what kind of PM you are</a> for a personalized recommendation.</p>
 
 <h2>Build What They're Looking For</h2>
 
@@ -1857,7 +1857,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>A clean, shareable format</strong> — Hiring managers spend seconds on first impressions. A messy Google Doc loses to a polished portfolio page every time.</li>
 </ol>
 
-<p>Not sure which type of portfolio fits your situation? <a href="/quiz">The portfolio quiz</a> takes two minutes and gives you a personalized recommendation based on your career stage.</p>
+<p>Not sure which type of portfolio fits your situation? <a href="/quiz">The quiz</a> takes two minutes and gives you a personalized recommendation based on your career stage.</p>
 
 <h2>Common Mistakes to Avoid</h2>
 
