@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
@@ -58,7 +59,7 @@ const ForCareerChangers = () => {
               variant="outline"
               className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 font-medium rounded-xl"
             >
-              <a href="/quiz">What Kind of PM Are You?</a>
+              <Link to="/quiz">What Kind of PM Are You?</Link>
             </Button>
           </div>
         </div>

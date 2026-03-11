@@ -604,7 +604,7 @@ const Landing = () => {
           </h2>
           <Button asChild className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl">
             <a href="https://app.prodfolio.io/sign-up" target="_blank" rel="noopener noreferrer">
-              Start Your 14-Day Free Trial
+              Start Your Portfolio Free
             </a>
           </Button>
           <p className="mt-4">

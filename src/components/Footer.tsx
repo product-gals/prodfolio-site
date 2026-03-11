@@ -131,7 +131,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-2">
             <h4 className="font-semibold mb-4 text-white">Off the Roadmap</h4>
             <p className="text-sm text-white/80 mb-4">
-              A weekly newsletter for mid-career PMs figuring out what's next.
+              Real talk for PMs navigating the messy middle of their careers.
             </p>
             {submitted ? (
               <p className="text-white/90 text-sm font-medium">You're in! Check your inbox for a welcome email.</p>
@@ -150,7 +150,7 @@ const Footer = () => {
                   disabled={isSubmitting}
                   className="px-4 py-2 bg-white text-[#484689] font-semibold text-sm rounded-lg hover:bg-white/90 transition-colors disabled:opacity-50 whitespace-nowrap"
                 >
-                  {isSubmitting ? "..." : "Join free"}
+                  {isSubmitting ? "..." : "Count me in"}
                 </button>
               </form>
             )}
