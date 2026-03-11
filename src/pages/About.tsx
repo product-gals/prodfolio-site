@@ -185,17 +185,23 @@ const About = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Fractional Head of Product, former career coach, startup PM, and podcast co-host. When she's not building Prodfolio, you'll find her on a hiking trail or planning her next adventure.
               </p>
-              <div className="flex gap-2 justify-center mt-auto">
-                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
+              <div className="flex flex-col gap-2 items-center mt-auto">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl w-full">
                   <a href="https://meaganglenn.me" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
-                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
+                <div className="flex gap-3 mt-1">
+                  <a href="https://www.linkedin.com/in/meagan-glenn/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                   </a>
-                </Button>
+                  <a href="https://www.tiktok.com/@itsmeag.glenn" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="TikTok">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V9.48a8.18 8.18 0 004.76 1.52V7.56a4.83 4.83 0 01-1-.87z"/></svg>
+                  </a>
+                  <a href="https://meaganglenn.substack.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="Substack">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -214,17 +220,17 @@ const About = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 ProdOps Lead, PM, mentor, and podcast co-host who pivoted from QA into product. Mom of two who knows firsthand how hard it is to prove you belong. Expert at cutting through complexity to find the simplest path forward.
               </p>
-              <div className="flex gap-2 justify-center mt-auto">
-                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
+              <div className="flex flex-col gap-2 items-center mt-auto">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl w-full">
                   <a href="https://app.prodfolio.io/p/santi-brace-2" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
-                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
+                <div className="flex gap-3 mt-1">
+                  <a href="https://www.linkedin.com/in/santiana-brace/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                   </a>
-                </Button>
+                </div>
               </div>
             </div>
 
@@ -243,17 +249,17 @@ const About = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Senior PM at CNBC with deep expertise in subscription products, fintech, and digital consumer experiences. She's passionate about building user-centric products and is an active advocate for women in tech — and she brings all of that energy to helping shape Prodfolio.
               </p>
-              <div className="flex gap-2 justify-center mt-auto">
-                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl">
+              <div className="flex flex-col gap-2 items-center mt-auto">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl w-full">
                   <a href="https://app.prodfolio.io/p/olympia-bardis" target="_blank" rel="noopener noreferrer">
                     See My Prodfolio
                   </a>
                 </Button>
-                <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
-                  <a href="https://www.linkedin.com/in/olympiabardis/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
+                <div className="flex gap-3 mt-1">
+                  <a href="https://www.linkedin.com/in/olympiabardis/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                   </a>
-                </Button>
+                </div>
               </div>
             </div>
 
@@ -272,12 +278,17 @@ const About = () => {
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 The person who keeps the wheels turning and the chaos manageable. With a background in workforce development, team management, and operational coordination, Emily makes sure Prodfolio runs smoothly so everyone else can focus on building. Off the clock? Iced coffee in hand, fur babies by her side.
               </p>
-              <div className="flex gap-2 justify-center mt-auto">
-                <Button asChild size="sm" variant="outline" className="bg-white/20 border-white/40 text-white hover:bg-white/30 font-semibold rounded-xl backdrop-blur-sm">
+              <div className="flex flex-col gap-2 items-center mt-auto">
+                <Button asChild size="sm" className="bg-white text-navy hover:bg-white/90 font-semibold rounded-xl w-full">
                   <a href="https://www.linkedin.com/in/emily-barba-jaume-054363224/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
+                    Connect on LinkedIn
                   </a>
                 </Button>
+                <div className="flex gap-3 mt-1">
+                  <a href="https://www.linkedin.com/in/emily-barba-jaume-054363224/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
