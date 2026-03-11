@@ -213,7 +213,6 @@ const Pricing = () => {
               </CardHeader>
 
               <CardContent className="pt-0 pb-4 flex-grow">
-                <p className="text-xs font-semibold text-navy/50 uppercase tracking-wide mb-3">Included in free trial</p>
                 <ul className="space-y-3">
                   {[
                     "Unlimited portfolios, AI case studies & resume uploads",
@@ -223,6 +222,10 @@ const Pricing = () => {
                     "Advanced analytics dashboard",
                     "Remove Prodfolio branding",
                     "Priority support",
+                    "Portfolio review within 30 days",
+                    "Direct Slack access to founders",
+                    "Monthly AMAs & roadmap sessions",
+                    "Founding Member badge on your portfolio",
                   ].map((feature, i) => (
                     <li key={i} className="flex items-start gap-2.5">
                       <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -230,23 +233,6 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-
-                <div className="border-t border-navy/10 mt-4 pt-4">
-                  <p className="text-xs font-semibold text-navy/50 uppercase tracking-wide mb-3">After trial — founder perks</p>
-                  <ul className="space-y-3">
-                    {[
-                      "Portfolio review within 30 days",
-                      "Direct Slack access to founders",
-                      "Monthly AMAs & roadmap sessions",
-                      "Founding Member badge on your portfolio",
-                    ].map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2.5">
-                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm leading-snug text-navy">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </CardContent>
 
               <CardFooter className="pt-0 pb-6 mt-auto flex-col">
