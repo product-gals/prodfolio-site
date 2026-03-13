@@ -550,46 +550,50 @@ const Landing = () => {
         <div className="prodfolio-container max-w-[1400px]">
           <div className="max-w-3xl mx-auto">
             <div className="glass-card p-8 md:p-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-primary/30 rounded-full flex items-center justify-center">
-                  <Users className="w-5 h-5 text-white" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-heading font-bold text-white">
-                  Build your portfolio live with us
-                </h2>
-              </div>
-              <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                Join a free 1-hour setup session. You'll upload your resume, generate an AI case study, customize your theme, and leave with a published portfolio you can share that same day.
-              </p>
-              <div className="grid sm:grid-cols-3 gap-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <Calendar className="w-5 h-5 text-primary shrink-0" />
-                  <div>
-                    <div className="text-sm font-semibold text-white">Tuesdays & Thursdays</div>
-                    <div className="text-xs text-white/60">1 hour, live on Zoom</div>
+              <div className="flex flex-col md:flex-row md:items-center gap-8">
+                {/* Left: heading + description */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-primary/30 rounded-full flex items-center justify-center shrink-0">
+                      <Users className="w-5 h-5 text-white" />
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-white">
+                      Build your portfolio live with us
+                    </h2>
                   </div>
+                  <p className="text-white/80 text-lg leading-relaxed">
+                    Join a free 1-hour setup session. You'll upload your resume, generate an AI case study, customize your theme, and leave with a published portfolio you can share that same day.
+                  </p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  <div>
-                    <div className="text-sm font-semibold text-white">100% free</div>
-                    <div className="text-xs text-white/60">No account required to book</div>
+                {/* Right: stats + CTA */}
+                <div className="flex flex-col gap-4 md:min-w-[260px]">
+                  <div className="flex items-center gap-3">
+                    <Calendar className="w-5 h-5 text-primary shrink-0" />
+                    <div>
+                      <div className="text-sm font-semibold text-white">Tuesdays & Thursdays</div>
+                      <div className="text-xs text-white/60">1 hour, live on Zoom</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                  <div>
-                    <div className="text-sm font-semibold text-white">Leave with a live portfolio</div>
-                    <div className="text-xs text-white/60">Ready to share in 1 hour</div>
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <div>
+                      <div className="text-sm font-semibold text-white">100% free</div>
+                      <div className="text-xs text-white/60">No account required to book</div>
+                    </div>
                   </div>
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    <div>
+                      <div className="text-sm font-semibold text-white">Leave with a live portfolio</div>
+                      <div className="text-xs text-white/60">Ready to share in 1 hour</div>
+                    </div>
+                  </div>
+                  <Button asChild size="lg" className="mt-2 px-8 py-5 h-auto text-base bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold rounded-xl w-full">
+                    <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
+                      Join a live session <span aria-hidden="true">➜</span>
+                    </a>
+                  </Button>
                 </div>
-              </div>
-              <div className="flex justify-center">
-                <Button asChild size="lg" className="px-8 py-5 h-auto text-base bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold rounded-xl">
-                  <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
-                    Join a live session <span aria-hidden="true">➜</span>
-                  </a>
-                </Button>
               </div>
             </div>
           </div>
