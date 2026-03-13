@@ -695,112 +695,104 @@ export const blogPosts: BlogPost[] = [
     category: "Portfolio Tips",
     tags: ["PM Portfolio", "Case Studies", "Career Changers", "Job Search", "Product Management"],
     content: `
-<p>You're applying to a B2B SaaS company, but your case studies are all about consumer apps. Or you've spent five years in enterprise software and now want to break into a consumer-facing role. Either way, you've got a portfolio problem.</p>
+<p>You have solid case studies, but the role you're targeting looks nothing like your last job. Maybe you're a B2C PM applying to enterprise SaaS. Maybe you've been at a large company and want to join a startup. Maybe you spent three years on core product and now want a growth role.</p>
 
-<p>The core PM skills — research, prioritization, execution, measurement — are the same in B2B and B2C. But <strong>how those skills show up in your work is different</strong>, and hiring managers notice. A portfolio that doesn't speak the language of the role you're targeting will get passed over, even if the underlying thinking is strong.</p>
-
-<p>This guide breaks down the key differences and shows you how to tailor your case studies for either audience.</p>
+<p>Here's the thing most PMs get wrong: <strong>you don't need new projects. You need new framing.</strong> The same case study — same decisions, same outcomes — can signal completely different strengths depending on which details you emphasize and which metrics you lead with. Hiring managers told us they're evaluating <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">how you think, not where you worked</a>. Your job is to make the right thinking visible for the role you want.</p>
 
 <h2>Key Takeaways</h2>
 
 <ul>
-<li>Core PM skills are universal, but <strong>how you demonstrate them differs</strong> between B2B and B2C</li>
-<li>B2B hiring managers look for stakeholder management, sales alignment, and long-term customer relationships</li>
-<li>B2C hiring managers look for data-driven experimentation, rapid iteration, and user engagement at scale</li>
-<li>You don't need B2B experience to apply for B2B roles (or vice versa) — you need to <strong>frame your existing work</strong> in the right language</li>
-<li>Lead with your most relevant case study — don't make the hiring manager dig for it</li>
+<li>The same project can be framed for dramatically different role types — the skill is knowing <strong>what to emphasize</strong></li>
+<li>Five common reframing dimensions: B2B↔B2C, 0-to-1↔Scale, Growth↔Core, Technical↔Consumer, Startup↔Enterprise</li>
+<li>Each section of the <a href="/blog/how-to-write-product-management-case-study">SIGNAL framework</a> can be tuned for your target role</li>
+<li>In 2026, <a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener noreferrer">hybrid and PLG roles</a> blur traditional categories — showing range is more valuable than fitting a box</li>
+<li>You don't need to rewrite your portfolio from scratch. Adjust framing and ordering — that's usually enough</li>
 </ul>
 
-<h2>What Actually Differs Between B2B and B2C PM Work</h2>
+<h2>Five Dimensions of Role Reframing</h2>
 
-<p>The fundamental difference comes down to <strong>who you're building for and how decisions get made</strong>.</p>
-
-<h3>B2B Product Management</h3>
-
-<ul>
-<li><strong>Users ≠ buyers.</strong> The person using the product is rarely the person who bought it. You're navigating multiple stakeholders — IT, procurement, end users, executives — with different needs</li>
-<li><strong>Longer sales cycles.</strong> Features often get built to close deals or retain enterprise accounts. You work closely with sales and customer success</li>
-<li><strong>Fewer, deeper customer relationships.</strong> Instead of analyzing data from millions of users, you're having direct conversations with dozens of key accounts</li>
-<li><strong>Stability over novelty.</strong> Enterprise customers value reliability. A breaking change can violate SLAs and cost real revenue</li>
-</ul>
-
-<h3>B2C Product Management</h3>
-
-<ul>
-<li><strong>Users are buyers</strong> (usually). The person using the product makes the decision to keep using it. Engagement and retention are everything</li>
-<li><strong>Scale-driven decisions.</strong> You're running A/B tests on millions of users, analyzing funnels, and optimizing for marginal gains that compound at scale</li>
-<li><strong>Faster iteration.</strong> Ship, measure, iterate. The feedback loop is shorter and more data-driven</li>
-<li><strong>Growth and virality matter.</strong> Acquisition, activation, and referral loops are central to your strategy</li>
-</ul>
-
-<h2>How to Tailor Your Case Studies for B2B Roles</h2>
-
-<p>If you're targeting B2B roles, your case studies should emphasize:</p>
+<p>PM roles differ across several dimensions, and each one shifts what a hiring manager scans for. Before you reframe a case study, identify which dimension matters most for the role you're targeting.</p>
 
 <ol>
-<li><strong>Stakeholder complexity</strong> — Show how you navigated competing priorities between buyers, users, sales, and engineering. The <a href="/blog/how-to-write-product-management-case-study">Navigation section of SIGNAL</a> is where this lives</li>
-<li><strong>Customer-driven roadmapping</strong> — Describe how you incorporated direct customer feedback (not just data) into your prioritization decisions</li>
-<li><strong>Revenue and retention metrics</strong> — ARR impact, churn reduction, expansion revenue, NPS from key accounts. These are the metrics B2B hiring managers care about</li>
-<li><strong>Cross-functional collaboration with sales</strong> — Did you work with the sales team to shape the roadmap? Did a feature you built help close a key deal? Include it</li>
+<li><strong>B2B ↔ B2C</strong> — B2B hiring managers scan for stakeholder complexity, customer relationships, and revenue metrics (ARR, churn, NPS). B2C hiring managers scan for experimentation velocity, engagement metrics (DAU/MAU, retention), and growth loops. Note: many modern SaaS companies — Figma, Notion, Slack — blend both. If the role involves product-led growth with enterprise upsells, show that you can operate across the spectrum</li>
+<li><strong>0-to-1 ↔ Scale</strong> — 0-to-1 roles want to see ambiguity tolerance, scrappy validation, and user discovery. Scale roles want optimization rigor, experimentation frameworks, and incremental gains that compound</li>
+<li><strong>Growth ↔ Core Product</strong> — Growth roles care about funnel metrics, activation, and experimentation volume. Core product roles care about user satisfaction, feature adoption, and long-term platform health</li>
+<li><strong>Technical ↔ Consumer-Facing</strong> — Technical PM roles scan for API design decisions, system trade-offs, and developer experience. Consumer roles scan for user empathy, design collaboration, and behavioral insights</li>
+<li><strong>Startup ↔ Enterprise</strong> — Startups want speed, ownership, and resourcefulness. Enterprise companies want process maturity, cross-functional alignment, and the ability to influence without authority at scale</li>
 </ol>
 
-<blockquote><strong>Example framing:</strong> "Partnered with customer success to identify the top 3 feature requests from our enterprise tier, then led a cross-functional team to deliver an admin dashboard that reduced onboarding support tickets by 40% and contributed to a 92% renewal rate for Q4."</blockquote>
+<p>Most roles combine multiple dimensions. A "Senior PM, Growth" at a Series B startup is growth + startup + possibly 0-to-1. Read the job description carefully and identify which two or three dimensions dominate.</p>
 
-<h2>How to Tailor Your Case Studies for B2C Roles</h2>
+<h2>How to Reframe a Case Study: Before and After</h2>
 
-<p>If you're targeting B2C roles, your case studies should emphasize:</p>
+<p>The best way to understand reframing is to see it. Below are three examples of the <strong>same underlying project</strong> described two different ways. The facts don't change — the emphasis does.</p>
 
-<ol>
-<li><strong>Data-driven experimentation</strong> — A/B tests, funnel analysis, cohort studies. Show that you make decisions with data, not intuition</li>
-<li><strong>User engagement metrics</strong> — DAU/MAU, retention curves, session duration, feature adoption rates. These are the currency of consumer PM work</li>
-<li><strong>Speed and iteration</strong> — Show a fast ship-measure-learn cycle. Describe experiments that failed and what you learned, not just successes</li>
-<li><strong>Growth thinking</strong> — Acquisition loops, referral mechanics, onboarding optimization. If you've worked on growth, highlight it</li>
-</ol>
+<h3>Example 1: B2C framing → B2B framing</h3>
 
-<blockquote><strong>Example framing:</strong> "Ran 6 A/B tests on the onboarding flow over 8 weeks, testing copy, step count, and default configurations. The winning variant increased 7-day retention from 31% to 44% and reduced time-to-first-value by 55%."</blockquote>
+<blockquote><strong>B2C version:</strong> "Ran 6 A/B tests on the onboarding flow over 8 weeks, testing copy, step count, and default configurations. The winning variant increased 7-day retention from 31% to 44% and reduced time-to-first-value by 55%."</blockquote>
 
-<h2>Crossing Over: B2B to B2C (or Vice Versa)</h2>
+<blockquote><strong>B2B version:</strong> "Identified a critical onboarding drop-off through session analysis and validated the hypothesis with 8 customer interviews across our mid-market segment. Led a cross-functional initiative with engineering and customer success that reduced time-to-value by 55%, contributing to a 12-point increase in quarterly NPS from key accounts."</blockquote>
 
-<p>If your experience is in one world and you're applying to the other, don't panic. Focus on the transferable elements:</p>
+<p><strong>What changed:</strong> The B2C version leads with experimentation velocity and data scale — how many tests, how fast, what retention moved. The B2B version leads with customer relationships (interviews, segments), cross-functional collaboration (engineering, CS), and business-level impact (NPS, key accounts). Same project. Different signal.</p>
 
-<h3>B2B Experience → B2C Application</h3>
-<p>Highlight any work involving user research, A/B testing, or engagement metrics. If you've done any self-serve or product-led growth work in a B2B context, lead with it. Reframe enterprise stakeholder management as "navigating complex user needs" — the skill is the same.</p>
+<h3>Example 2: Enterprise framing → Startup framing</h3>
 
-<h3>B2C Experience → B2B Application</h3>
-<p>Emphasize cross-functional collaboration, customer empathy, and strategic prioritization. If you've worked with customer support or done direct user interviews, highlight the depth of those relationships. Reframe funnel optimization as "improving the customer journey" — B2B hiring managers value that framing.</p>
+<blockquote><strong>Enterprise version:</strong> "Partnered with customer success to identify the top 3 feature requests from our enterprise tier, then led a cross-functional team of 8 across engineering, design, and QA to deliver an admin dashboard that reduced onboarding support tickets by 40% and contributed to a 92% renewal rate."</blockquote>
 
-<p>In either direction, your <a href="/blog/how-to-build-pm-portfolio-no-experience">portfolio structure matters more than your exact experience</a>. A well-structured case study with the right framing can make B2B work relevant to a B2C role, and vice versa.</p>
+<blockquote><strong>Startup version:</strong> "Spotted that enterprise onboarding was our biggest churn risk. Talked to 6 customers in a week, scoped an MVP admin dashboard, and shipped it in 3 weeks with one engineer. Support tickets dropped 40%. We iterated twice based on early usage data before moving on."</blockquote>
+
+<p><strong>What changed:</strong> The enterprise version emphasizes process — stakeholder alignment, team size, cross-functional orchestration. The startup version emphasizes speed, scrappiness, and ownership. It names the same outcome (40% ticket reduction) but frames the path as lean and fast, not structured and scaled.</p>
+
+<h3>Example 3: Core product framing → Growth framing</h3>
+
+<blockquote><strong>Core product version:</strong> "Redesigned the settings architecture to reduce configuration complexity. Consolidated 47 settings into 12 grouped categories with smart defaults. Support tickets related to settings dropped 40% and feature discoverability (measured by settings page engagement) increased 28%."</blockquote>
+
+<blockquote><strong>Growth version:</strong> "Identified that 23% of new users contacted support before completing setup — a major activation blocker. Simplified the configuration flow from 47 options to 12 smart defaults, reducing setup friction. Post-launch, activation rate increased 18%, support-driven churn dropped 40%, and we saw a measurable improvement in the day-1 to day-7 retention curve."</blockquote>
+
+<p><strong>What changed:</strong> The core product version frames the work as improving an existing system — architecture, complexity reduction, discoverability. The growth version connects the exact same work to funnel metrics — activation, churn, retention curves. A growth hiring manager reading the first version would think "good feature work." Reading the second, they'd think "this person understands the funnel."</p>
+
+<h2>Reframing Each SIGNAL Section</h2>
+
+<p>If you've structured your case studies with the <a href="/blog/how-to-write-product-management-case-study">SIGNAL framework</a>, reframing becomes systematic. Each section has levers you can adjust:</p>
+
+<ul>
+<li><strong><span style="color: #6b4fbb; font-weight: 800;">S</span>ituation</strong> — Change the business context you emphasize. For B2B: revenue risk, customer churn, enterprise contracts. For startup: speed, market window, resource constraints. For growth: funnel stage, activation gap, retention problem</li>
+<li><strong><span style="color: #6b4fbb; font-weight: 800;">I</span>nsight</strong> — Highlight the research method the target role values. Customer interviews and account-level analysis for B2B. Quantitative data and cohort analysis for B2C/growth. Competitive analysis and market sizing for 0-to-1</li>
+<li><strong><span style="color: #6b4fbb; font-weight: 800;">G</span>oals</strong> — Swap the metric type. ARR and retention for B2B. DAU/MAU and conversion for B2C. Time-to-ship and validation velocity for startup. <a href="/blog/how-to-use-metrics-in-pm-portfolio">Match your metrics to what the hiring manager measures</a></li>
+<li><strong><span style="color: #6b4fbb; font-weight: 800;">N</span>avigation</strong> — Adjust collaboration emphasis. Sales alignment and stakeholder negotiation for B2B. Experiment design and rapid iteration for growth. Scrappy decision-making with limited resources for startup</li>
+<li><strong><span style="color: #6b4fbb; font-weight: 800;">A</span>chievement</strong> — Lead with the metric category the hiring manager cares about. Same results, different headline number</li>
+<li><strong><span style="color: #6b4fbb; font-weight: 800;">L</span>earnings</strong> — Reflect on skills relevant to the target role. Cross-functional influence for enterprise. Speed vs. quality trade-offs for startup. Experiment design lessons for growth</li>
+</ul>
+
+<p>You're not inventing new content — you're adjusting the spotlight. As <a href="https://www.svpg.com/inspired-how-to-create-products-customers-love/" rel="noopener noreferrer" target="_blank">Marty Cagan has written</a>, the best PMs demonstrate product discovery and delivery skills regardless of context. Your case study already contains those skills. Reframing makes them visible to the right audience.</p>
 
 <h2>Common Mistakes to Avoid</h2>
 
 <ol>
-<li><strong>Using the wrong metrics for the audience</strong> — Don't lead with DAU/MAU when applying to an enterprise SaaS company. Don't lead with ARR when applying to a consumer app. Match your metrics to what the hiring manager cares about</li>
-<li><strong>Not tailoring at all</strong> — Sending the same portfolio to every company signals that you didn't think about fit. Reorder your case studies so the most relevant one leads</li>
-<li><strong>Overcomplicating the difference</strong> — At its core, PM work is PM work. Don't rewrite your entire portfolio for every application — just adjust the framing and emphasis</li>
-<li><strong>Hiding your actual background</strong> — If you're a B2B PM applying to B2C, own it. Explain what draws you to the switch and how your skills transfer. Authenticity beats pretending you're something you're not</li>
+<li><strong>Rewriting your entire portfolio for every application</strong> — You don't need a new portfolio per company. Adjust the framing of your top case study and reorder so the most relevant one leads. That's usually enough</li>
+<li><strong>Pretending to be something you're not</strong> — If you're a B2B PM applying to a consumer role, own it. Explain what draws you to the switch and how your skills transfer. A brief note in your portfolio intro naming the transition is more credible than pretending your enterprise work was consumer-facing</li>
+<li><strong>Ignoring hybrid roles</strong> — In 2026, many PM roles blend categories. A "B2B SaaS" company with a self-serve tier needs growth thinking <em>and</em> enterprise stakeholder skills. If you have experience across dimensions, that's a strength — show range instead of forcing yourself into one box</li>
+<li><strong>Leading with the wrong case study</strong> — Your first case study sets the hiring manager's frame for everything that follows. If it doesn't match the role type, they may not read the second one. Put your most relevant case study first, even if it's not your "best" project</li>
 </ol>
 
-<h2>Start Tailoring Today</h2>
+<h2>Start Reframing Today</h2>
 
-<p>Look at your current case studies and ask: <em>if a B2B hiring manager read this, would the right signals jump out? What about a B2C hiring manager?</em> If the answer is no, you don't need new projects — you need new framing.</p>
+<p>Pick your strongest case study. Identify the role type you're targeting. Walk through each SIGNAL section and ask: <em>does this emphasize what that hiring manager cares about?</em> If it doesn't, you know what to adjust.</p>
 
-<p>Adjust the emphasis, swap in the right metrics, and lead with the case study that best matches the role. That's often all it takes to make a portfolio speak the language of the company you're targeting.</p>
+<p>You don't need new projects. You don't need a different background. You need to make the right thinking visible for the right audience.</p>
 
-<p>Not sure which type of PM role fits your background? <a href="/quiz">Find out what kind of PM you are</a> and get a personalized recommendation for how to position your experience.</p>
+<p>Not sure what kind of portfolio fits your career stage? <a href="/quiz">Take the quiz</a> to get a personalized recommendation for how to position your experience.</p>
 
 <h2>Frequently Asked Questions</h2>
 
-<h3>Can I include both B2B and B2C case studies in my portfolio?</h3>
-<p>Yes — variety is an asset. Just lead with the case study that's most relevant to the role you're applying to. If you're applying to a B2B role, put your B2B (or closest equivalent) case study first. The second case study can show range.</p>
+<h3>How many versions of a case study should I maintain?</h3>
+<p>Two to three framings of your strongest case study is practical. Most reframing is about shifting emphasis — swapping which metric leads, adjusting the business context in your Situation section, highlighting different collaboration dynamics. You're not rewriting from scratch each time, so maintaining a few versions is manageable.</p>
 
-<h3>What if I've only worked in B2B and want to switch to B2C?</h3>
-<p>Focus on the transferable skills: user research, data analysis, prioritization, and cross-functional leadership. If you've done any product-led growth or self-serve optimization work, that's your bridge. A product teardown of a consumer app you admire can also fill the gap.</p>
+<h3>What if my experience doesn't map neatly to any role type?</h3>
+<p>That's increasingly common — and increasingly valuable. Many PM roles in 2026 span traditional categories, especially at companies with product-led growth and enterprise sales motions running simultaneously. Frame your mixed experience as range. A case study that shows both data-driven experimentation <em>and</em> stakeholder navigation signals versatility.</p>
 
-<h3>Do B2B portfolios need to look different from B2C portfolios?</h3>
-<p>The format should be the same — clean, scannable, case-study-led. The difference is in the content: what metrics you highlight, what decisions you emphasize, and how you describe your stakeholder dynamics. Structure stays the same; framing changes.</p>
-
-<h3>Is B2B or B2C product management harder?</h3>
-<p>Neither is inherently harder — they're different. B2B involves deeper stakeholder complexity and longer planning horizons. B2C involves faster iteration and higher data volumes. The difficulty depends on your strengths. The best PMs can operate in either world because the core skills are universal.</p>
+<h3>Should I mention that I'm switching role types in my portfolio?</h3>
+<p>Yes. A brief note in your portfolio intro — one or two sentences naming the switch and your motivation — is more credible than silence. Hiring managers can see your background; acknowledging the transition and explaining why shows self-awareness. Pair it with a case study reframed for the target role, and you've addressed the question before they ask it.</p>
     `,
   },
   {
@@ -1754,7 +1746,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong><span style="color: #6b4fbb; font-weight: 800;">L</span>earnings</strong> — What would you do differently next time?</li>
 </ol>
 
-<p>This structure works because it mirrors how experienced PMs actually talk about their work. <a href="/how-it-works">Prodfolio's case study builder walks you through each step</a>, so you don't have to figure out the structure from scratch.</p>
+<p>This structure works because it mirrors how experienced PMs actually talk about their work. And if you're targeting a specific role type — B2B, growth, startup — each SIGNAL section can be <a href="/blog/how-to-reframe-pm-portfolio-for-any-role">reframed to match what that hiring manager cares about</a>. <a href="/how-it-works">Prodfolio's case study builder walks you through each step</a>, so you don't have to figure out the structure from scratch.</p>
 
 <h2>What Your Portfolio Actually Needs</h2>
 
@@ -1938,7 +1930,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Start With What You Have</h2>
 
-<p>Pick one project where you had clear ownership and can speak to the thinking behind the decisions. Use SIGNAL to structure it, and keep editing until every section earns its place.</p>
+<p>Pick one project where you had clear ownership and can speak to the thinking behind the decisions. Use SIGNAL to structure it, and keep editing until every section earns its place. If you're applying across role types — say, from B2C to B2B or from enterprise to startup — the same case study can work for both with <a href="/blog/how-to-reframe-pm-portfolio-for-any-role">the right reframing</a>.</p>
 
 <p>If you want a tool that walks you through each SIGNAL section step by step, <a href="/how-it-works">Prodfolio's case study builder</a> is designed to do exactly that — so you can focus on the story, not the formatting.</p>
 
