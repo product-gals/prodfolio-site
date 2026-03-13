@@ -443,7 +443,7 @@ export const blogPosts: BlogPost[] = [
 
 <ol>
 <li><strong>Base salary</strong> — Your fixed annual pay. This is the most visible number, but it's not always the most negotiable</li>
-<li><strong>Annual bonus</strong> — Typically 10-30% of base, depending on level. Usually tied to individual and company performance. This is often non-negotiable as a percentage, but it increases if your base goes up</li>
+<li><strong>Annual bonus</strong> — Typically 10-20% of base for IC PMs, and up to 25-30% at director level and above. Usually tied to individual and company performance. This is often non-negotiable as a percentage, but it increases if your base goes up</li>
 <li><strong>Equity (RSUs or stock options)</strong> — Often the largest component at senior levels. Usually vests over 4 years. This is frequently <em>more</em> negotiable than base salary</li>
 <li><strong>Sign-on bonus</strong> — A one-time payment to offset what you're leaving behind or to sweeten the deal. Many companies don't include this in the initial offer but will add it if you ask</li>
 </ol>
@@ -455,13 +455,13 @@ export const blogPosts: BlogPost[] = [
 <p>Negotiation starts before you open your mouth. The prep work is what separates candidates who get more from candidates who cave.</p>
 
 <h3>1. Research Market Rates</h3>
-<p>Use <a href="https://www.levels.fyi" rel="noopener noreferrer" target="_blank">Levels.fyi</a> for tech company comp data, Glassdoor for broader salary ranges, and Blind for anonymous real-world data points. Know the range for your level, location, and company tier before you negotiate.</p>
+<p>Use <a href="https://www.levels.fyi/t/product-manager" rel="noopener noreferrer" target="_blank">Levels.fyi</a> for tech company comp data, <a href="https://www.glassdoor.com/Salaries/product-manager-salary-SRCH_KO0,15.htm" rel="noopener noreferrer" target="_blank">Glassdoor</a> for broader salary ranges, and <a href="https://www.teamblind.com" rel="noopener noreferrer" target="_blank">Blind</a> for anonymous real-world data points. Know the range for your level, location, and company tier before you negotiate.</p>
 
 <h3>2. Know Your Walk-Away Number</h3>
 <p>What's the minimum total compensation you'd accept? Set this privately before the conversation. If you don't have a floor, you'll negotiate from emotion, not data.</p>
 
 <h3>3. Prepare Your Value Case</h3>
-<p>Why should this company pay you at the top of the range? Tie your ask to specifics: relevant experience, unique skills (especially AI or technical depth in 2026), competing offers, or a track record of impact. Your <a href="/blog/how-to-write-product-management-case-study">case studies</a> are useful here — they're proof of the outcomes you've driven.</p>
+<p>Why should this company pay you at the top of the range? Tie your ask to specifics: relevant experience, unique skills (like AI fluency or technical depth), competing offers, or a track record of impact. Your <a href="/blog/how-to-write-product-management-case-study">case studies</a> are useful here — they're proof of the outcomes you've driven.</p>
 
 <h2>The Negotiation Conversation</h2>
 
@@ -526,7 +526,7 @@ export const blogPosts: BlogPost[] = [
 <p>A common starting point is 10-15% above the initial offer for base salary. For total comp, focus on the specific components where there's room (equity and sign-on are often the most flexible). Anchor your ask to market data, not an arbitrary percentage.</p>
 
 <h3>What if I don't have a competing offer?</h3>
-<p>You don't need one. Use market data from Levels.fyi and Glassdoor, reference the scope of the role, and highlight your specific track record. A well-researched value case is just as effective as a competing offer number.</p>
+<p>You don't need one. Use market data from <a href="https://www.levels.fyi/t/product-manager" rel="noopener noreferrer" target="_blank">Levels.fyi</a> and <a href="https://www.glassdoor.com/Salaries/product-manager-salary-SRCH_KO0,15.htm" rel="noopener noreferrer" target="_blank">Glassdoor</a>, reference the scope of the role, and highlight your specific track record. A well-researched value case is just as effective as a competing offer number.</p>
 
 <h3>Should I negotiate if I'm a career changer or new to PM?</h3>
 <p>Yes — though your leverage is different. Focus on transferable skills, relevant domain expertise, and the evidence in your portfolio. Even a modest negotiation on sign-on or equity can add meaningful value to your total compensation.</p>
