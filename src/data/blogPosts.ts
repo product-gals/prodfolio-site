@@ -687,13 +687,13 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: "b2b-vs-b2c-product-management-portfolio",
-    title: "B2B vs. B2C Product Management: How to Tailor Your Portfolio",
-    excerpt: "B2B and B2C product management require different skills and metrics. Here's how to tailor your portfolio and case studies to the type of role you're targeting.",
+    slug: "how-to-reframe-pm-portfolio-for-any-role",
+    title: "How to Reframe Your PM Portfolio for Any Role Type",
+    excerpt: "The same case study can land a B2B role, a growth role, or a startup role — if you know what to change. Here's how to reframe your portfolio for any PM position.",
     date: "2026-03-02",
     readTime: "8 min read",
     category: "Portfolio Tips",
-    tags: ["B2B", "B2C", "PM Portfolio", "Case Studies", "Product Management"],
+    tags: ["PM Portfolio", "Case Studies", "Career Changers", "Job Search", "Product Management"],
     content: `
 <p>You're applying to a B2B SaaS company, but your case studies are all about consumer apps. Or you've spent five years in enterprise software and now want to break into a consumer-facing role. Either way, you've got a portfolio problem.</p>
 
@@ -1534,7 +1534,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-hiring-managers-look-for-in-pm-portfolios",
     title: "What Hiring Managers Look for in PM Portfolios",
-    excerpt: "We interviewed hiring managers, recruiters, and product leaders about what they look for in PM portfolios. Here's what actually matters — and what most candidates get wrong.",
+    excerpt: "What do hiring managers actually look for when they review PM portfolios? Based on conversations with product leaders and recruiters, here's what matters — and what most candidates get wrong.",
     date: "2026-03-04",
     readTime: "9 min read",
     category: "Job Search",
@@ -1544,9 +1544,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>The problem usually isn't your experience — it's a mismatch between what you're showcasing and what the person on the other side actually needs to see.</p>
 
-<p>While building Prodfolio, we interviewed hiring managers, recruiters, and product leaders across startups, mid-size companies, and enterprise organizations — people who review PM portfolios as part of their regular hiring process. We also drew on conversations from <em>The Product Pivot</em> podcast, where career transitions and hiring are recurring themes. Their feedback was consistent: <strong>most portfolios make them work too hard to find the signal.</strong></p>
+<p>While building Prodfolio, we talked to hiring managers, recruiters, and product leaders across startups, mid-size companies, and enterprise organizations — people who review PM portfolios regularly. We also drew on conversations from our podcast, <a href="https://theproductpivot.buzzsprout.com/" target="_blank" rel="noopener"><em>The Product Pivot</em></a>, where career transitions and hiring are recurring themes. The feedback was consistent: <strong>most portfolios make them work too hard to find the signal.</strong></p>
 
-<p>This post breaks down what they told us they're actually looking for — and how to make sure your portfolio delivers it.</p>
+<p>This post synthesizes the patterns we heard — what they're actually looking for, and how to make sure your portfolio delivers it.</p>
 
 <h2>Key Takeaways</h2>
 
@@ -1560,17 +1560,17 @@ export const blogPosts: BlogPost[] = [
 
 <h2>They're Not Reading — They're Scanning</h2>
 
-<p>One recruiter we spoke with reviews 20 to 50 candidates per open role. That means your portfolio gets a few seconds to earn a deeper look. If the first thing they see is a wall of text or an "About Me" essay, you've already lost.</p>
+<p>Recruiters reviewing 20 to 50 candidates per open role don't have time to dig. Your portfolio gets a few seconds to earn a deeper look. If the first thing they see is a wall of text or an "About Me" essay, you've already lost.</p>
 
 <p><strong>What they want first:</strong> a snapshot. Your photo, a one-line tagline that says what kind of PM you are, and quick signals — years of experience, industry focus, what you're looking for. Think of it as your portfolio's above-the-fold.</p>
 
-<blockquote><strong>From a VP of Product at a growth-stage SaaS company:</strong> "I want a snapshot in the first five seconds — photo, tagline, quick signals. If I have to scroll to understand who this person is, I'm already behind."</blockquote>
+<blockquote>"I want a snapshot in the first five seconds — photo, tagline, quick signals. If I have to scroll to understand who this person is, I'm already behind." — a product VP we spoke with on <a href="https://theproductpivot.buzzsprout.com/" target="_blank" rel="noopener"><em>The Product Pivot</em></a></blockquote>
 
 <p>This doesn't mean your portfolio should be shallow. It means the <strong>entry point</strong> should be scannable, with depth available one click deeper.</p>
 
 <h2>Case Studies Are the Main Event</h2>
 
-<p>Every hiring manager we talked to said the same thing: <strong>case studies are the most important part of a PM portfolio.</strong> Not your resume. Not your skills list. Not your "About Me."</p>
+<p>The most consistent pattern we heard: <strong>case studies are the most important part of a PM portfolio.</strong> Not your resume. Not your skills list. Not your "About Me."</p>
 
 <p>But they don't want a novel. They want structured case studies that answer three questions fast:</p>
 
@@ -1582,7 +1582,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>One product leader described their ideal case study format as a collapsible panel: challenge up front, framework used, results, and lessons learned. Everything visible in a glance, with the option to expand for detail.</p>
 
-<blockquote><strong>From a senior PM trainer and hiring consultant:</strong> "I want to see how PMs think and decide, not just what they built. The decisions and trade-offs are where the real signal is."</blockquote>
+<blockquote>"I want to see how PMs think and decide, not just what they built. The decisions and trade-offs are where the real signal is." — a PM hiring consultant we spoke with</blockquote>
 
 <p>The <a href="/blog/how-to-write-product-management-case-study">SIGNAL framework</a> maps directly to this structure — Situation, Insight, Goals, Navigation, Achievement, Learnings. It's designed to surface the thinking that hiring managers are evaluating.</p>
 
@@ -1600,11 +1600,11 @@ export const blogPosts: BlogPost[] = [
 
 <p>Multiple reviewers emphasized that shorter is better. One group of hiring managers suggested capping role descriptions at 120 characters — "old school Twitter energy." If a section doesn't earn its place, cut it.</p>
 
-<blockquote><strong>From a technical recruiter at a mid-size product company:</strong> "I need to consume information quickly and concisely. If I can't get the gist of a case study in 30 seconds, I'm moving on."</blockquote>
+<blockquote>"I need to consume information quickly and concisely. If I can't get the gist of a case study in 30 seconds, I'm moving on." — a technical recruiter we spoke with</blockquote>
 
 <h3>3. Include Real References</h3>
 
-<p>This one surprised us. Multiple hiring managers brought up references unprompted — and were dismissive of standard LinkedIn recommendations. One product leader called them <em>"generic and vanity."</em></p>
+<p>This one came up more than we expected. Several hiring managers brought up references unprompted — and were dismissive of standard LinkedIn recommendations, calling them <em>"generic and vanity."</em></p>
 
 <p>What they want instead: <strong>specific, per-project references</strong> from people who worked with you on that initiative. A short quote from your engineering lead about how you handled a scope dispute is worth more than a paragraph of LinkedIn praise. <a href="/how-it-works">Prodfolio lets you attach references directly to individual case studies</a> — so the right context shows up in the right place.</p>
 
@@ -1620,7 +1620,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>What Makes Them Move On</h2>
 
-<p>We also asked what makes hiring managers close a portfolio. The answers were consistent:</p>
+<p>We also asked what makes them close a portfolio. The patterns were consistent:</p>
 
 <ol>
 <li><strong>No case studies</strong> — A resume and an "About Me" isn't a portfolio. If there are no case studies, there's nothing to evaluate.</li>
@@ -1651,12 +1651,12 @@ export const blogPosts: BlogPost[] = [
 
 <p>The gap between most PM portfolios and what hiring managers actually want isn't huge — but it's specific. Front-load your snapshot. Make case studies the centerpiece. Show your thinking, not just your results. Keep it concise. Be honest.</p>
 
-<p>If you want to structure your case studies using the framework hiring managers told us they value most, <a href="/how-it-works">Prodfolio's builder walks you through SIGNAL step by step</a> — so you can focus on the content, not the format.</p>
+<p>If you want to structure your case studies using the framework that maps to what hiring managers evaluate, <a href="/how-it-works">Prodfolio's builder walks you through SIGNAL step by step</a> — so you can focus on the content, not the format.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How many case studies should I include in my PM portfolio?</h3>
-<p>Two to three strong case studies is the sweet spot. Hiring managers told us they rarely read more than three — and they'd rather see two great ones than five mediocre ones. Focus on variety: different product types, different PM skills, different stages of the lifecycle.</p>
+<p>Two to three strong case studies is the sweet spot. Most reviewers rarely read more than three — and they'd rather see two great ones than five mediocre ones. Focus on variety: different product types, different PM skills, different stages of the lifecycle.</p>
 
 <h3>Do hiring managers actually read the full case study?</h3>
 <p>Usually not on the first pass. They scan for structure, skim the key decisions and results, and only read deeply if those initial signals are strong. That's why structure and headings matter so much — they're doing triage, not leisure reading.</p>
@@ -1862,56 +1862,85 @@ export const blogPosts: BlogPost[] = [
 <h3><span style="color: #6b4fbb; font-weight: 800;">S</span> &mdash; Situation</h3>
 <p><em>Set the stage. What was the challenge or opportunity? Why did it matter?</em></p>
 
-<p>Don't just say "we needed to improve onboarding." Explain <em>why</em> — what data surfaced the problem and why the company cared enough to invest in solving it.</p>
+<p>Don't just say "I needed to improve onboarding." Explain <em>why</em> — what data surfaced the problem and why the company cared enough to invest in solving it. Ground the reader in the business context so they understand the stakes.</p>
 
-<blockquote><strong>Example:</strong> "Our self-serve onboarding had a 62% drop-off at step 3. Support tickets about setup increased 40% QoQ. For a company betting on product-led growth, this was a blocker."</blockquote>
+<blockquote><strong>Example (B2B SaaS):</strong> "I was the PM for a self-serve onboarding flow that had a 62% drop-off at step 3. Support tickets about setup had increased 40% quarter-over-quarter. For a company whose growth model depended on users activating without sales involvement, this was a revenue blocker — not just a UX annoyance."</blockquote>
 
 <h3><span style="color: #6b4fbb; font-weight: 800;">I</span> &mdash; Insight</h3>
 <p><em>Show your discovery process. What research or data led to your approach?</em></p>
 
-<p>This is where you prove your solution wasn't a guess. What data did you look at? What did users tell you? What surprised you?</p>
+<p>This is where you prove your solution wasn't a guess. What data did you look at? What did users tell you? What surprised you? The best Insight sections show a moment where your assumption changed.</p>
 
-<blockquote><strong>Example:</strong> "Session recordings showed users weren't confused by the UI — they were confused by the <em>decisions</em> it asked them to make. In 5 interviews, every person said some version of 'I didn't know which option to pick, so I left.'"</blockquote>
+<blockquote><strong>Example (consumer mobile):</strong> "I assumed the drop-off was a UI problem, so I started with session recordings. But the pattern was different — users were tapping through screens quickly, then stopping cold at the permissions request. I ran 6 user interviews and heard the same thing: 'I didn't understand why the app needed access to my contacts.' The problem wasn't friction. It was trust."</blockquote>
 
 <h3><span style="color: #6b4fbb; font-weight: 800;">G</span> &mdash; Goals</h3>
 <p><em>Define what success looks like. What were you trying to achieve?</em></p>
 
-<p>"Improve onboarding" is a theme, not a goal. Be specific about your targets <em>and</em> your constraints.</p>
+<p>"Improve onboarding" is a theme, not a goal. Be specific about your targets <em>and</em> your constraints. This section shows you can scope — one of the hardest PM skills to demonstrate.</p>
 
-<blockquote><strong>Example:</strong> "Reduce step-3 drop-off from 62% to under 40% within 6 weeks. Decrease setup support tickets by 25%. Hard constraint: no changes to the underlying integration architecture."</blockquote>
+<blockquote><strong>Example (B2B SaaS):</strong> "I set three targets: reduce step-3 drop-off from 62% to under 40% within 6 weeks, decrease setup-related support tickets by 25%, and maintain our integration completion rate. Hard constraint from engineering: no changes to the underlying API architecture. That meant solving this at the UX layer."</blockquote>
 
 <h3><span style="color: #6b4fbb; font-weight: 800;">N</span> &mdash; Navigation</h3>
 <p><em>Explain your approach. What decisions and trade-offs did you make?</em></p>
 
-<p>This is the section hiring managers care about most. Don't describe what you built — describe what you <em>decided</em> and what you decided <em>against</em>.</p>
+<p>This is the section hiring managers care about most. Don't describe what you built — describe what you <em>decided</em> and what you decided <em>against</em>. Name the trade-offs. Show that other people had different opinions and explain how you worked through it.</p>
 
-<blockquote><strong>Example:</strong> "We explored three approaches: a guided wizard (too long to build), an interactive questionnaire (added complexity), and smart defaults based on signup data. We shipped defaults first, with a 'customize' path for power users. Our engineering lead pushed for the wizard — I facilitated a trade-off discussion and we agreed to revisit if customization rates were high."</blockquote>
+<blockquote><strong>Example (marketplace):</strong> "I scoped three options: a progressive disclosure flow (lowest effort, modest impact), a personalized onboarding path based on user type (medium effort, high potential), and a full guided setup wizard (high effort, uncertain payoff). I advocated for the personalized path. Our engineering lead pushed for the wizard — he'd seen it work at a previous company. I facilitated a trade-off discussion where I mapped each option against our 6-week constraint and our API limitation. The team aligned on the personalized path with a commitment to revisit the wizard if customization rates exceeded 30%."</blockquote>
 
 <h3><span style="color: #6b4fbb; font-weight: 800;">A</span> &mdash; Achievement</h3>
 <p><em>Prove your impact. What metrics moved?</em></p>
 
-<p>Be honest. If results were mixed, say so — it's more credible than a highlight reel.</p>
+<p>Be honest. If results were mixed, say so — it's more credible than a highlight reel. The best Achievement sections acknowledge what <em>didn't</em> move and explain why.</p>
 
-<blockquote><strong>Example:</strong> "Step-3 drop-off decreased from 62% to 34%. Support tickets dropped 31%. But overall onboarding completion only increased 8% — suggesting additional drop-off points we hadn't addressed yet."</blockquote>
+<blockquote><strong>Example (B2B SaaS):</strong> "Step-3 drop-off decreased from 62% to 34%, exceeding my target. Support tickets dropped 31%. But overall onboarding completion only improved by 8% — which told me there were additional drop-off points downstream that I hadn't scoped into this initiative. I flagged that in our next planning cycle and it became Q3's top priority."</blockquote>
 
 <h3><span style="color: #6b4fbb; font-weight: 800;">L</span> &mdash; Learnings</h3>
 <p><em>Reflect and grow. What would you do differently?</em></p>
 
-<p>Most PMs skip this section. Don't. It's where you show self-awareness — something that's hard to evaluate in a standard interview.</p>
+<p>Most PMs skip this section. Don't. It's where you show self-awareness — something that's hard to evaluate in a standard interview. A thoughtful reflection on what you'd change is more impressive than perfect results.</p>
 
-<blockquote><strong>Example:</strong> "I'd involve support earlier — they had insights that would have accelerated research by a week. I also learned that smart defaults only work when users trust the system's recommendations. We added tooltip explanations in a fast-follow, and default-path engagement increased another 12%."</blockquote>
+<blockquote><strong>Example (consumer mobile):</strong> "I should have involved our support team earlier — they had pattern data on the trust objection that would have saved me a week of discovery. I also learned that progressive disclosure only works when users understand what they're opting into. After launch, I added contextual explanations at each permission step and saw opt-in rates increase another 15%. The takeaway I carry forward: solve for trust before solving for friction."</blockquote>
+
+<h2>What a Bad Case Study Looks Like (and How to Fix It)</h2>
+
+<p>Here's the kind of case study that gets skimmed and forgotten:</p>
+
+<blockquote><strong>Before:</strong> "We redesigned the onboarding flow. The team worked on it for two months. We did user research and made improvements based on feedback. The new design performed better and users were happier. The project was a success and we learned a lot."</blockquote>
+
+<p>What's wrong: no specifics, no ownership ("we" throughout), no metrics, no decisions shown, no honest reflection. It could describe any project at any company. Now compare:</p>
+
+<blockquote><strong>After (using SIGNAL):</strong> "I owned the onboarding redesign after our data showed 62% of users dropped off at the integration step (Situation). Session recordings revealed the problem wasn't UI complexity — users didn't understand which integration to choose (Insight). I targeted a 22-point reduction in drop-off within 6 weeks, without touching the API layer (Goals). I chose smart defaults over a guided wizard after running a trade-off analysis with engineering — we'd revisit the wizard if customization rates topped 30% (Navigation). Drop-off fell from 62% to 34%, but end-to-end completion only rose 8%, pointing to downstream issues I hadn't scoped (Achievement). Next time, I'd map the full funnel before optimizing a single step (Learnings)."</blockquote>
+
+<p>Same project. Completely different signal to a hiring manager.</p>
+
+<h2>Adjusting SIGNAL by Seniority</h2>
+
+<p>The framework works at any level, but the emphasis shifts as you grow:</p>
+
+<h3>Early-career / aspiring PMs</h3>
+<p>Lean into <strong>Insight</strong> and <strong>Navigation</strong>. At this level, you're proving you can think through problems and make reasoned decisions. Side projects, volunteer work, and product teardowns are all fair game — what matters is showing a structured thought process, not having a VP title when you did the work.</p>
+
+<h3>Mid-level PMs</h3>
+<p>Emphasize <strong>Navigation</strong> and <strong>Achievement</strong>. Show cross-functional complexity: how you aligned stakeholders with competing priorities, navigated ambiguity, and measured outcomes that tied to business metrics. This is where hiring managers look for evidence that you can own a problem end-to-end.</p>
+
+<h3>Senior / leadership PMs</h3>
+<p>Focus on <strong>Situation</strong> and <strong>Learnings</strong>. At this level, the signal is in how you framed the problem (did you identify the right thing to work on?), how you influenced strategy without direct authority, and what systemic lessons you extracted. Your Achievement section should connect to company-level outcomes, not just feature metrics.</p>
 
 <h2>Common Mistakes to Avoid</h2>
 
 <ol>
-<li><strong>Hiding behind "we"</strong> — Make sure the reader can tell what <em>you</em> specifically did. "I led the research" is more useful than "we decided."</li>
-<li><strong>Including every detail</strong> — A case study isn't a retro. If a section doesn't show your thinking, your impact, or your growth — cut it.</li>
-<li><strong>Waiting for a "perfect" project</strong> — Some of the best case studies are about small wins or things that didn't go as planned. What matters is how you tell the story.</li>
+<li><strong>Hiding behind "we"</strong> — Make sure the reader can tell what <em>you</em> specifically did. "I led the research and recommended the approach" is useful. "We decided" is not. You can acknowledge the team while being clear about your role.</li>
+<li><strong>Including every detail</strong> — A case study isn't a retro doc. If a section doesn't show your thinking, your impact, or your growth — cut it. Aim for 500–800 words total.</li>
+<li><strong>Trying to cover an entire product</strong> — Scope your case study to one decision, one initiative, or one problem. "I rebuilt the entire checkout flow" is too broad. "I identified and fixed the payment step that caused 40% of cart abandonment" is a case study.</li>
+<li><strong>Confusing chronology with narrative</strong> — Don't just list what happened in order. Lead with what matters. Sometimes the most important moment was a mid-project pivot, not the kickoff.</li>
+<li><strong>Polishing away the struggle</strong> — If everything in your case study went perfectly, it won't feel real. The constraint that forced a creative solution, the stakeholder you had to convince, the metric that didn't move — those details build more credibility than a highlight reel.</li>
 </ol>
 
 <h2>Start With What You Have</h2>
 
 <p>Pick one project where you had clear ownership and can speak to the thinking behind the decisions. Use SIGNAL to structure it, and keep editing until every section earns its place.</p>
+
+<p>If you want a tool that walks you through each SIGNAL section step by step, <a href="/how-it-works">Prodfolio's case study builder</a> is designed to do exactly that — so you can focus on the story, not the formatting.</p>
 
 <p>If you're staring at a blank page, <a href="/quiz">take the quiz</a> to figure out what type of portfolio fits your career stage — and what kind of case studies will make the biggest impact for where you're headed.</p>
 
@@ -1924,10 +1953,13 @@ export const blogPosts: BlogPost[] = [
 <p>Two to three strong case studies is better than five mediocre ones. Focus on variety — different types of products, different stages of the lifecycle, or different PM skills on display.</p>
 
 <h3>What if I can't share specific metrics due to NDA?</h3>
-<p>Use directional language and percentages instead of absolute numbers. "Reduced churn by 18%" is fine even if you can't say the exact revenue figure. You can also describe the <em>magnitude</em> of impact without revealing proprietary data.</p>
+<p>You have several options. Use ranges instead of exact numbers ("reduced churn by 15–20%"). Use directional language ("significant reduction in support volume"). Anonymize the company and product while keeping the story intact. Or describe the <em>type</em> of impact without the figure ("moved our primary activation metric by a meaningful amount — enough to change the team's quarterly priorities"). The key is showing that you measured outcomes, even if you can't share the exact numbers.</p>
 
 <h3>Can I write a case study about a side project?</h3>
-<p>Absolutely. Side projects can be great case studies, especially for aspiring PMs or career changers. The SIGNAL framework works just as well — you still had a situation, made decisions, and learned something.</p>
+<p>Absolutely. Side projects can be great case studies, especially for aspiring PMs or career changers. The SIGNAL framework works just as well — you still had a situation, made decisions, and learned something. What matters is the quality of your thinking, not the scale of the project.</p>
+
+<h3>How is SIGNAL different from STAR?</h3>
+<p>STAR (Situation, Task, Action, Result) was designed for behavioral interview answers — short, verbal responses to a specific prompt. SIGNAL adds three things that matter for written portfolio case studies: an Insight section that shows your research process, a Goals section that demonstrates you can scope before building, and a Learnings section that proves self-awareness. It's the difference between answering someone else's question and telling your own story.</p>
     `,
   },
 ];
