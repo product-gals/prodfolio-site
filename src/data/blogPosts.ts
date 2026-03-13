@@ -163,11 +163,11 @@ export const blogPosts: BlogPost[] = [
     title: "Product Manager Resume Tips That Actually Get Interviews",
     excerpt: "Most PM resumes list responsibilities instead of outcomes. Here's how to write a resume that passes ATS filters, impresses recruiters, and lands you interviews.",
     date: "2026-03-04",
-    readTime: "8 min read",
+    readTime: "9 min read",
     category: "Job Search",
     tags: ["Resume Tips", "ATS", "Job Search", "Recruiters", "Product Management"],
     content: `
-<p>Your resume has six seconds. That's how long a recruiter spends on a first scan before deciding whether to keep reading or move on. And if your resume doesn't clear the ATS filter first, a human never sees it at all.</p>
+<p>Recruiters spend seconds scanning a resume before deciding whether to keep reading or move on. An <a href="https://www.theladders.com/static/images/basicSite/pdfs/TheLadders-EyeTracking-StudyC2.pdf" rel="noopener noreferrer" target="_blank">eye-tracking study by TheLadders</a> found the average initial scan lasts just 7.4 seconds. And if your resume doesn't clear the ATS filter first, a human never sees it at all.</p>
 
 <p>The problem with most PM resumes isn't a lack of experience — it's how that experience is presented. Listing responsibilities tells a recruiter what your job was. Listing <strong>outcomes</strong> tells them what you're capable of. That distinction is the difference between a callback and silence.</p>
 
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
 <h2>Key Takeaways</h2>
 
 <ul>
-<li>Over 97% of tech companies use ATS to filter resumes — <strong>keywords matter</strong>, but only when attached to outcomes</li>
+<li>Most large companies use ATS to filter resumes — <strong>keywords matter</strong>, but only when attached to outcomes</li>
 <li>Replace your "Core Competencies" block with <strong>metrics-driven bullet points</strong> under each role</li>
 <li>Keep it to one page for under 7 years of experience, two pages for senior roles</li>
 <li>Your resume gets you the interview — your <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">portfolio</a> gets you the offer</li>
@@ -197,7 +197,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Applicant Tracking Systems scan your resume for keyword matches against the job description. But stuffing keywords into a skills block isn't the answer — ATS and recruiters both prefer keywords <strong>in context</strong>.</p>
 
-<p>The keywords that matter most for PM resumes in 2026:</p>
+<p>Keywords that commonly appear in PM job descriptions:</p>
 
 <ul>
 <li><strong>Strategy:</strong> product roadmap, go-to-market, product vision, competitive analysis</li>
@@ -207,6 +207,16 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>The key: weave these terms into your bullet points naturally, not into a separate keyword block. <em>"Led A/B testing on the checkout flow, increasing conversion rate by 12%"</em> hits the keywords <strong>and</strong> shows impact.</p>
+
+<h2>What's Changed for PM Resumes in 2026</h2>
+
+<p>Two shifts are reshaping how PM resumes get evaluated. If your resume doesn't account for both, it's already dated.</p>
+
+<h3>AI fluency is now expected</h3>
+<p>Hiring managers increasingly expect PMs to demonstrate comfort with AI-powered workflows. If you've shipped features involving LLMs, designed AI-assisted user experiences, or used AI tools to accelerate product discovery, say so. Terms like <em>AI product strategy, prompt engineering, LLM integration,</em> and <em>ML-powered features</em> are showing up in PM job descriptions at every level — not just technical PM roles.</p>
+
+<h3>Authenticity cuts through AI-generated noise</h3>
+<p>Hiring managers are reporting a surge in generic, AI-generated applications. The result: personalization signals matter more than ever. Resumes that mirror the specific job description, reference the company's product by name, and include concrete metrics stand out against a flood of polished-but-interchangeable applications. A tailored resume now isn't just best practice — it's a filter for seriousness.</p>
 
 <h2>How to Write Bullet Points That Land</h2>
 
@@ -233,16 +243,35 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The Right Resume Structure</h2>
 
-<p>Keep the structure simple. ATS systems and recruiters both prefer standard sections in a logical order:</p>
+<p>Keep the structure simple. As <a href="https://www.tryexponent.com/blog/how-to-write-the-perfect-product-manager-resume" rel="noopener noreferrer" target="_blank">Exponent's PM resume guide</a> reinforces, ATS systems and recruiters both prefer standard sections in a logical order:</p>
 
 <ol>
 <li><strong>Header</strong> — Name, location (city is enough), email, phone, LinkedIn URL, and portfolio link</li>
 <li><strong>Summary</strong> — 2-3 sentences. Your PM focus area, years of experience, and one headline achievement. Weave in keywords from the target job description</li>
 <li><strong>Experience</strong> — Reverse chronological. 3-5 bullet points per role, each with the action-context-result formula</li>
 <li><strong>Projects / Side Projects</strong> — If you've built something, include it. <a href="/blog/pm-job-search-mistakes">Side projects are a signal of initiative</a> that hiring managers value</li>
-<li><strong>Education</strong> — Keep it brief. Degrees and relevant certifications only</li>
+<li><strong>Education</strong> — Keep it brief. Degrees and relevant certifications (PSPO, CPM) only. Bootcamp credentials can help if your experience is thin, but they won't carry weight on their own — pair them with project evidence</li>
 <li><strong>Skills</strong> — A short list of tools and methodologies. This is a supplement, not the main event</li>
 </ol>
+
+<h3>What a Strong Summary Looks Like</h3>
+
+<blockquote>
+<strong>Bad:</strong> "Passionate product manager seeking a challenging role where I can leverage my skills in agile development and cross-functional collaboration."<br>
+<strong>Good:</strong> "Product manager with 5 years of experience in B2B SaaS, focused on growth and retention. Led a pricing redesign that increased net revenue retention from 94% to 108% and shipped an onboarding flow that cut time-to-value by 40%."
+</blockquote>
+
+<p>The first one could belong to anyone. The second tells the recruiter exactly what you do, where you've done it, and what happened because of your work.</p>
+
+<h3>Adjusting by Career Stage</h3>
+
+<p>The structure above works across levels, but the emphasis shifts:</p>
+
+<ul>
+<li><strong>APM / early-career PM</strong> — Lead with projects and side projects. If your work experience is thin, your portfolio and case studies carry the weight. Highlight transferable skills from your previous role</li>
+<li><strong>Mid-level PM (3-7 years)</strong> — Lead with experience. Focus on outcomes, team size, and scope. This is where the action-context-result formula does the most work</li>
+<li><strong>Senior PM / Director+</strong> — Emphasize strategy, org-level impact, and leadership. Metrics should reflect business outcomes (revenue, market share, org growth), not just feature-level results</li>
+</ul>
 
 <p><strong>Link your portfolio prominently.</strong> Put it in the header, right next to your LinkedIn. Your resume gets you the interview — your <a href="/how-it-works">portfolio shows how you think</a> and closes the deal.</p>
 
@@ -284,7 +313,7 @@ export const blogPosts: BlogPost[] = [
 <p>Use directional metrics, percentages, or scope indicators. "Reduced churn by roughly 15%" is better than "improved retention." "Led a team of 6" is better than "managed a team." If exact numbers are under NDA, describe the magnitude: "drove a six-figure increase in ARR."</p>
 
 <h3>Do I need a different resume for each job application?</h3>
-<p>You don't need to rewrite it, but you should adjust three things: your summary, the order of your bullet points, and the language you use to mirror the job description. This takes 15-20 minutes per application and significantly increases your callback rate.</p>
+<p>You don't need to rewrite it, but you should adjust three things: your summary, the order of your bullet points, and the language you use to mirror the job description. This targeted effort per application significantly increases your callback rate.</p>
 
 <h3>Should I include my portfolio link on my resume?</h3>
 <p>Absolutely — and make it prominent. Put it in your header alongside your LinkedIn URL. Your resume proves you've had the right roles. Your portfolio proves you think like a strong PM. Together, they're far more compelling than either one alone.</p>
@@ -1391,7 +1420,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>You've done the hard work. You've built your portfolio, written your case studies, polished your resume. And yet — the interviews aren't coming.</p>
 
-<p>The frustrating truth is that most PM job search problems aren't about qualifications. They're about <strong>friction</strong>. Small, fixable mistakes that make it harder for recruiters and hiring managers to find you, reach you, or take you seriously.</p>
+<p>The frustrating truth is that most PM job search problems aren't about qualifications. They're about <strong>friction</strong>. Small, fixable mistakes that make it harder for recruiters and hiring managers to find you, reach you, or take you seriously. An <a href="https://www.theladders.com/static/images/basicSite/pdfs/TheLadders-EyeTracking-StudyC2.pdf" target="_blank" rel="noopener noreferrer">eye-tracking study by TheLadders</a> found that recruiters spend an average of just 7.4 seconds on an initial resume scan. Every point of friction you add makes it easier to move on to the next candidate.</p>
 
 <p>Here are seven mistakes that cost PMs interviews — and how to fix each one.</p>
 
@@ -1407,13 +1436,13 @@ export const blogPosts: BlogPost[] = [
 
 <h2>1. Your Email Signature Is Working Against You</h2>
 
-<p>When you're actively job searching, every email you send is an opportunity. Most PMs waste it with a bare-bones signature — just a name, maybe a title.</p>
+<p>When you're actively job searching, every networking email, recruiter reply, and direct outreach you send is an opportunity. Most PMs waste it with a bare-bones signature — just a name, maybe a title.</p>
 
 <p><strong>Fix it.</strong> Your email signature should include:</p>
 
 <ul>
-<li>A link to your <strong>LinkedIn profile</strong></li>
-<li>Your <strong>phone number</strong> (recruiters text to book calls — make it easy)</li>
+<li>A link to your <strong>LinkedIn profile</strong> — <a href="https://www.jobvite.com/wp-content/uploads/2021/09/Jobvite-RecruiterNation-Report-WEB-2.pdf" target="_blank" rel="noopener noreferrer">53% of recruiters</a> rank LinkedIn as their top source for quality candidates</li>
+<li>Your <strong>phone number</strong> (recruiters often text or call to book screens — make it easy)</li>
 <li>A <strong>scheduling link</strong> (Calendly or similar) so they can book time without the back-and-forth</li>
 <li>A link to your <strong>portfolio</strong> — this is prime real estate most candidates ignore</li>
 </ul>
@@ -1428,7 +1457,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>3. Your LinkedIn Is Gated Off</h2>
 
-<p>If your LinkedIn privacy settings make it hard for recruiters to discover you or connect with you, you're invisible to the people actively trying to fill PM roles.</p>
+<p>If your LinkedIn privacy settings make it hard for recruiters to discover you or connect with you, you're invisible to the people actively trying to fill PM roles. According to <a href="https://www.jobvite.com/wp-content/uploads/2021/09/Jobvite-RecruiterNation-Report-WEB-2.pdf" target="_blank" rel="noopener noreferrer">Jobvite's Recruiter Nation Report</a>, 65% of recruiters use LinkedIn for sourcing — and <a href="https://www.theproductrecruiter.com/insights" target="_blank" rel="noopener noreferrer">product-focused recruiters</a> rely on it even more heavily.</p>
 
 <p><strong>Two things to fix immediately:</strong></p>
 
@@ -1451,13 +1480,13 @@ export const blogPosts: BlogPost[] = [
 <li>They make new time to actually review it — maybe days later, when they're busier</li>
 </ol>
 
-<p><strong>Fix it.</strong> Lead with the goods. Attach your resume (as a PDF — more on that in a moment), include a link to your portfolio, and write two sentences about why you're reaching out. One message. Everything they need to evaluate you, right there.</p>
+<p><strong>Fix it.</strong> Lead with the goods. Attach your resume (as a PDF — more on that in a moment), include a link to your portfolio, and write two sentences about why you're reaching out. One message. Everything they need to evaluate you, right there. <a href="https://www.linkedin.com/business/talent/blog/talent-strategy/these-inmails-get-best-response-rates" target="_blank" rel="noopener noreferrer">LinkedIn's own data</a> shows that shorter, more direct messages get 22% higher response rates — and individually crafted messages outperform bulk sends by 15%.</p>
 
 <h2>5. You're Sharing Your Resume From a Cloud Drive</h2>
 
 <p>Not OneDrive. Not Google Drive. Not any drive. <strong>PDF attachment only.</strong></p>
 
-<p>Cloud-hosted resumes create problems: permission errors, expired links, formatting that changes based on the viewer's device, and the extra click of opening a browser tab. Recruiters reviewing dozens of candidates don't have patience for "request access" screens.</p>
+<p>Cloud-hosted resumes create problems: permission errors, expired links, formatting that changes based on the viewer's device, and the extra click of opening a browser tab. Recruiters reviewing dozens of candidates don't have patience for "request access" screens. And with <a href="https://www.jobscan.co/blog/greenhouse-ats-what-job-seekers-need-to-know/" target="_blank" rel="noopener noreferrer">nearly 98% of Fortune 500 companies</a> using applicant tracking systems, a cleanly formatted PDF is the safest way to ensure your resume parses correctly.</p>
 
 <p>A PDF is universal, offline-friendly, and looks exactly how you intended. Keep it simple.</p>
 
@@ -1481,27 +1510,18 @@ export const blogPosts: BlogPost[] = [
 
 <p>Don't bury your side project under "Other" or "Hobbies." Give it a real entry with context: what problem it solves, what you built, what you learned. Then link to a <a href="/blog/how-to-build-pm-portfolio-no-experience">case study in your portfolio</a> for the full story.</p>
 
-<h2>Common Mistakes to Avoid</h2>
-
-<ol>
-<li><strong>Treating your job search like a passive activity</strong> — Applying and waiting isn't a strategy. Make yourself findable, reachable, and easy to evaluate.</li>
-<li><strong>Optimizing your resume but ignoring everything around it</strong> — Your email, LinkedIn, signature, and portfolio all shape how recruiters experience you.</li>
-<li><strong>Being overly formal in outreach</strong> — Recruiters are people. A concise, direct message beats a stiff "Dear Hiring Manager" every time.</li>
-<li><strong>Applying broadly instead of targeting</strong> — Ten thoughtful applications with tailored portfolios beat fifty spray-and-pray submissions.</li>
-</ol>
-
 <h2>Make It Easy for Them to Say Yes</h2>
 
 <p>Every fix on this list has one thing in common: <strong>reducing friction between you and the person trying to hire you.</strong> Recruiters are scanning dozens of candidates. Hiring managers have limited time. The PMs who get interviews aren't always the most qualified — they're the ones who make it easiest to see their value.</p>
 
-<p>Clean up these seven things, pair them with a <a href="/how-it-works">portfolio that shows how you think</a>, and you'll be ahead of most candidates before the interview even starts.</p>
+<p>Clean up these seven things, and then make sure the thing they land on — your portfolio — does the rest. A strong portfolio turns a recruiter's curiosity into a conversation. <a href="/how-it-works">Here's how Prodfolio helps you build one</a> that shows how you think, not just what you've done.</p>
 
-<p>Not sure what kind of portfolio fits your situation? <a href="/quiz">Take the quiz</a> — it takes two minutes and gives you a personalized recommendation.</p>
+<p>Not sure what kind of portfolio fits your career stage? <a href="/quiz">Take the quiz</a> — it takes two minutes and gives you a personalized recommendation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How often should I update my LinkedIn when job searching?</h3>
-<p>At minimum, update your headline and "Open to Work" settings when you start searching. Beyond that, posting once or twice a week — even just sharing an article with your take — keeps you visible in recruiter searches and shows you're active in the PM community.</p>
+<p>At minimum, update your headline and "Open to Work" settings when you start searching — <a href="https://www.linkedin.com/business/talent/blog/talent-strategy/these-inmails-get-best-response-rates" target="_blank" rel="noopener noreferrer">LinkedIn's data shows</a> that candidates with "Open to Work" enabled get 37% higher response rates from recruiters. Beyond that, posting once or twice a week — even just sharing an article with your take — keeps you visible in recruiter searches and shows you're active in the PM community.</p>
 
 <h3>Should I include a cover letter with my PM applications?</h3>
 <p>Only if it adds something your resume and portfolio don't. A two-paragraph note explaining why this specific company and role interests you can help. A generic "I'm excited to apply" letter doesn't. If you have a strong portfolio, it replaces most of what a cover letter is trying to do.</p>
