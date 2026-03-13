@@ -1038,13 +1038,15 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-01",
     readTime: "7 min read",
     category: "Job Search",
-    tags: ["Resume Tips", "Job Search", "Bullet Points", "ATS", "Product Management"],
+    tags: ["Resume Tips", "Job Search", "Bullet Points", "Product Management"],
     content: `
 <p>You've got the experience. You've shipped products, led teams, and moved metrics. But when you look at your resume, it reads like a job description — not a highlight reel.</p>
 
-<p>The problem is almost always in the bullet points. Most PM resumes describe <strong>what the job was</strong> instead of <strong>what you accomplished in the job</strong>. And recruiters — who spend six seconds on a first scan — can't tell the difference between you and every other PM who "managed a product roadmap."</p>
+<p>The problem is almost always in the bullet points. Most PM resumes describe <strong>what the job was</strong> instead of <strong>what you accomplished in the job</strong>. And recruiters — who scan resumes in seconds — can't tell the difference between you and every other PM who "managed a product roadmap."</p>
 
 <p>This guide gives you a repeatable formula for writing bullet points that prove your impact, with before-and-after examples you can model.</p>
+
+<p>New to product management or transitioning from another field? This formula works for you too — the key is framing impact from any role. If you're building your PM experience from scratch, the <a href="/blog/how-to-build-pm-portfolio-no-experience">portfolio guide for career changers</a> pairs well with this one.</p>
 
 <h2>Key Takeaways</h2>
 
@@ -1095,7 +1097,7 @@ export const blogPosts: BlogPost[] = [
 
 <blockquote>
 <strong>Before:</strong> "Used data to make product decisions."<br>
-<strong>After:</strong> "Built cohort analysis showing a 23% drop-off in trial-to-paid conversion at day 5, leading to a redesigned onboarding flow that recovered $180K ARR."
+<strong>After:</strong> "Built cohort analysis revealing a significant drop-off in trial-to-paid conversion at day 5, leading to a redesigned onboarding flow that recovered an estimated $150-200K in ARR."
 </blockquote>
 
 <h3>Launch and Go-to-Market</h3>
@@ -1130,7 +1132,7 @@ export const blogPosts: BlogPost[] = [
 
 <blockquote>
 <strong>Before:</strong> "Worked on improving customer retention."<br>
-<strong>After:</strong> "Identified top 3 churn drivers through support ticket analysis and exit surveys, then shipped targeted fixes that reduced monthly churn from 6.2% to 4.1% over two quarters."
+<strong>After:</strong> "Identified top 3 churn drivers through support ticket analysis and exit surveys, then shipped targeted fixes that reduced monthly churn by roughly one-third over two quarters."
 </blockquote>
 
 <h3>Growth and Acquisition</h3>
@@ -1162,16 +1164,25 @@ export const blogPosts: BlogPost[] = [
 
 <ol>
 <li><strong>Starting with "Responsible for"</strong> — This is the weakest possible opening. It describes a job description, not an achievement. Replace with an action verb</li>
-<li><strong>No metrics anywhere</strong> — Even one metric per bullet transforms it from a claim to evidence. <a href="/blog/how-to-use-metrics-in-pm-portfolio">Directional metrics</a> work when exact numbers are under NDA</li>
+<li><strong>No metrics anywhere</strong> — Even one metric per bullet transforms it from a claim to evidence. As <a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener noreferrer">Lenny Rachitsky</a> frequently emphasizes, the strongest PM resumes lead with outcomes, not responsibilities. <a href="/blog/how-to-use-metrics-in-pm-portfolio">Directional metrics</a> work when exact numbers are under NDA</li>
 <li><strong>Listing tools instead of outcomes</strong> — "Used Jira, Figma, and SQL" is a skills list, not a bullet. "Used SQL to identify a 23% trial conversion drop-off" ties the tool to an outcome</li>
 <li><strong>Including every task</strong> — Bullet points aren't a comprehensive log of your activities. They're your greatest hits. Edit ruthlessly</li>
 </ol>
 
 <h2>Rewrite Your Bullets This Week</h2>
 
-<p>Open your resume and read each bullet out loud. For each one, ask: <em>Does this answer "What changed because I was in the role?"</em> If it doesn't, rewrite it using the Action + Context + Result formula. If you can't identify a result, the bullet probably doesn't deserve space on your resume.</p>
+<p>Set aside 30 minutes and try this:</p>
+
+<ol>
+<li><strong>Pull up your top 3 roles</strong> and read each bullet out loud</li>
+<li><strong>For each bullet, ask:</strong> <em>"What changed because I was in the role?"</em> If you can't answer, the bullet describes a responsibility — not an achievement</li>
+<li><strong>Rewrite your 5 weakest bullets</strong> using the Action + Context + Result formula — start with a strong verb, add scope, and attach at least one metric</li>
+<li><strong>Cut anything left</strong> that still reads like a job description. Three strong bullets beat six forgettable ones</li>
+</ol>
 
 <p>Your resume gets you to the interview. Your <a href="/blog/how-to-write-product-management-case-study">case studies</a> show the depth behind these bullet points. Together, they tell a complete story of what you're capable of.</p>
+
+<p>Not sure how to position your experience for the roles you're targeting? <a href="/quiz">Take the quiz</a> to get a personalized recommendation for your career stage.</p>
 
 <h2>Frequently Asked Questions</h2>
 
