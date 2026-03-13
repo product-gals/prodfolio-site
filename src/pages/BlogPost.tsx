@@ -120,8 +120,8 @@ const BlogPost = () => {
           {/* Mid-article CTA */}
           <div className="mt-12 mb-2 bg-[#6b4fbb] rounded-2xl p-7 flex flex-col sm:flex-row items-center gap-5">
             <div className="flex-1">
-              <p className="text-white font-semibold text-base">Not sure where to start with your portfolio?</p>
-              <p className="text-white/60 text-sm mt-1.5">Take our 3-minute quiz and get personalized recommendations.</p>
+              <p className="text-white font-semibold text-base">Not sure what kind of PM you are?</p>
+              <p className="text-white/60 text-sm mt-1.5">Take our free 3-minute quiz to discover your PM archetype and get personalized recommendations.</p>
             </div>
             <Link to="/quiz" className="px-6 py-3 bg-white text-[#1a1a2e] font-semibold text-sm rounded-xl hover:bg-gray-100 transition-colors whitespace-nowrap">
               Take the Quiz

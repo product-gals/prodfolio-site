@@ -153,8 +153,8 @@ const Blog = () => {
           {/* Inline CTA */}
           <div className="mb-8 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 flex flex-col sm:flex-row items-center gap-4">
             <div className="flex-1">
-              <p className="text-white font-semibold">Not sure which portfolio type fits you?</p>
-              <p className="text-white/60 text-sm mt-1">Take our 3-minute quiz and get a personalized recommendation.</p>
+              <p className="text-white font-semibold">Not sure what kind of PM you are?</p>
+              <p className="text-white/60 text-sm mt-1">Take our free 3-minute quiz to discover your PM archetype and get personalized recommendations.</p>
             </div>
             <Link to="/quiz" className="px-6 py-3 bg-white text-navy font-semibold text-sm rounded-xl hover:bg-white/90 transition-colors whitespace-nowrap">
               What Kind of PM Are You?
