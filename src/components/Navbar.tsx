@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 
@@ -12,6 +12,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isWhoItsForOpen, setIsWhoItsForOpen] = useState(false);
   const whoItsForRef = useRef<HTMLDivElement>(null);
+  const menuItemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +34,40 @@ const Navbar = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  const handleMenuKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (!isWhoItsForOpen) {
+      if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setIsWhoItsForOpen(true);
+        setTimeout(() => menuItemsRef.current[0]?.focus(), 0);
+      }
+      return;
+    }
+
+    const items = menuItemsRef.current.filter(Boolean);
+    const currentIndex = items.findIndex((item) => item === document.activeElement);
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        items[(currentIndex + 1) % items.length]?.focus();
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        items[(currentIndex - 1 + items.length) % items.length]?.focus();
+        break;
+      case 'Escape':
+        e.preventDefault();
+        setIsWhoItsForOpen(false);
+        // Return focus to the trigger button
+        (whoItsForRef.current?.querySelector('button') as HTMLButtonElement)?.focus();
+        break;
+      case 'Tab':
+        setIsWhoItsForOpen(false);
+        break;
+    }
+  }, [isWhoItsForOpen]);
 
   return (
     <>
@@ -85,7 +120,7 @@ const Navbar = () => {
                 >
                   <button
                     onClick={() => setIsWhoItsForOpen(!isWhoItsForOpen)}
-                    onKeyDown={(e) => { if (e.key === 'Escape') setIsWhoItsForOpen(false); }}
+                    onKeyDown={handleMenuKeyDown}
                     className="font-medium text-white hover:text-white/80 transition-colors flex items-center gap-1 [text-shadow:0_1px_3px_rgba(0,0,0,0.8)]"
                     aria-expanded={isWhoItsForOpen}
                     aria-haspopup="true"
@@ -104,28 +139,36 @@ const Navbar = () => {
                       isWhoItsForOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
                     }`}
                     role="menu"
+                    aria-label="Who it's for"
+                    onKeyDown={handleMenuKeyDown}
                   >
                     <Link
                       to="/features"
-                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors focus:bg-white/10 focus:outline-none"
                       onClick={() => setIsWhoItsForOpen(false)}
                       role="menuitem"
+                      tabIndex={isWhoItsForOpen ? 0 : -1}
+                      ref={(el) => { menuItemsRef.current[0] = el; }}
                     >
                       Product Managers
                     </Link>
                     <Link
                       to="/for-career-changers"
-                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors focus:bg-white/10 focus:outline-none"
                       onClick={() => setIsWhoItsForOpen(false)}
                       role="menuitem"
+                      tabIndex={isWhoItsForOpen ? 0 : -1}
+                      ref={(el) => { menuItemsRef.current[1] = el; }}
                     >
                       Career Changers
                     </Link>
                     <Link
                       to="/for-hiring-managers"
-                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors"
+                      className="block px-4 py-2 text-white hover:bg-white/10 transition-colors focus:bg-white/10 focus:outline-none"
                       onClick={() => setIsWhoItsForOpen(false)}
                       role="menuitem"
+                      tabIndex={isWhoItsForOpen ? 0 : -1}
+                      ref={(el) => { menuItemsRef.current[2] = el; }}
                     >
                       Hiring Managers
                     </Link>

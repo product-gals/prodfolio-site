@@ -144,7 +144,7 @@ const Examples = () => {
                   >
                     <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
                       View Portfolio
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="w-4 h-4" aria-hidden="true" />
                     </a>
                   </Button>
                 </div>
@@ -155,7 +155,7 @@ const Examples = () => {
             <article className="bg-white/10 backdrop-blur-md border-2 border-dashed border-white/40 rounded-2xl px-6 py-5 text-center hover:bg-white/15 transition-all hover:border-white/60 group flex flex-col">
               <div className="flex-1 flex flex-col justify-center">
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/30 transition-colors">
-                  <Plus className="w-6 h-6 text-white" />
+                  <Plus className="w-6 h-6 text-white" aria-hidden="true" />
                 </div>
                 <h3 className="text-lg font-heading font-bold text-white mb-1">
                   Your portfolio could be here

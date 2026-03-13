@@ -599,6 +599,32 @@
     }
   }
 
+  /* High contrast support */
+  @media (prefers-contrast: more) {
+    :root {
+      --border: 246 41% 30%;
+      --muted-foreground: 248 10% 25%;
+    }
+
+    .glass-card,
+    [class*="backdrop-blur"] {
+      border-width: 2px;
+      border-color: hsl(0 0% 100% / 0.4);
+    }
+
+    .text-white\/60 {
+      color: hsl(0 0% 100% / 0.85);
+    }
+
+    .text-white\/70 {
+      color: hsl(0 0% 100% / 0.9);
+    }
+
+    .text-white\/80 {
+      color: hsl(0 0% 100% / 0.95);
+    }
+  }
+
   /* Premium button gradient - Brand Purple #9E85F9 */
   .btn-gradient {
     background: linear-gradient(135deg, hsl(254 91% 75%) 0%, hsl(248 31% 41%) 100%);

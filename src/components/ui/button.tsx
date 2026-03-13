@@ -23,10 +23,10 @@ const buttonVariants = cva(
         outlinePremium: "border-2 border-primary/20 bg-white/90 backdrop-blur-sm text-primary hover:border-primary/40 hover:bg-primary/5 hover:shadow-[0_4px_16px_hsl(var(--primary)/0.15)]",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 px-3",
-        lg: "h-11 px-8",
-        icon: "h-10 w-10",
+        default: "h-11 px-4 py-2",
+        sm: "h-10 px-3",
+        lg: "h-12 px-8",
+        icon: "h-11 w-11",
       },
     },
     defaultVariants: {
