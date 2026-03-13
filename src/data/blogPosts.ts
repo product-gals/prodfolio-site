@@ -1052,13 +1052,21 @@ export const blogPosts: BlogPost[] = [
 
 <p>This guide shows you how to choose the right side project, scope it to something you can actually finish, and frame it as a case study that demonstrates real PM skills.</p>
 
+<p>To show you what we mean, here's the same side project described two ways:</p>
+
+<blockquote><strong>Weak:</strong> "I built a habit tracking app using React and Firebase. It has user authentication, a dashboard, and push notifications."</blockquote>
+
+<blockquote><strong>Strong:</strong> "I noticed my running group kept dropping training plans because no one could see each other's progress. I built a simple shared tracker in Notion — no code, just tables and linked views. Within a week, 8 of 12 members were logging daily. Completion rates went from ~40% to 75% over the first month. The insight: accountability didn't require a fancy app — it required visibility."</blockquote>
+
+<p>Same effort. Completely different signal to a hiring manager. The first says "I can code." The second says "I think like a PM."</p>
+
 <h2>Key Takeaways</h2>
 
 <ul>
 <li>Side projects don't need to be impressive — they need to <strong>demonstrate PM thinking</strong></li>
 <li>The best side projects solve a <strong>real problem for a real user</strong>, even if the user is you</li>
 <li>Scope small. A finished MVP with a clear write-up beats an ambitious project that's 60% done</li>
-<li>AI tools in 2026 make building faster — showing that you leveraged AI is itself a signal</li>
+<li>AI tools make building faster than ever — showing that you leveraged AI is itself a signal</li>
 <li>The case study you write about the project matters more than the project itself</li>
 </ul>
 
@@ -1084,13 +1092,15 @@ export const blogPosts: BlogPost[] = [
 <h3>2. A Product Teardown With Recommendations</h3>
 <p>Pick a product you use daily and analyze a specific flow. What problem does it solve? What trade-offs did the team likely make? What would you change and why? Write it up as a structured analysis using <a href="/blog/how-to-write-product-management-case-study">SIGNAL</a>.</p>
 
-<p>This doesn't require building anything — it requires product thinking. And it's surprisingly effective for career changers who need portfolio material fast.</p>
+<p>This doesn't require building anything — it requires product thinking. And it's surprisingly effective for career changers who need portfolio material fast. Prodfolio cofounder Santiana actually used her work on <em>The Product Pivot</em> podcast as <a href="https://app.prodfolio.io/p/santi-brace-2/case-study/building-the-product-pivot-podcast-a-storytelling-platform-for-pm-career-growth">a case study in her own portfolio</a> — framing it around the audience problem she identified, the format decisions she made, and the growth outcomes. A side project you're already doing can become your strongest portfolio piece when you apply the right lens.</p>
 
 <h3>3. An AI-Enhanced Tool or Feature</h3>
-<p>In 2026, demonstrating <a href="/blog/ai-tools-for-product-managers">AI fluency through side projects</a> is a significant differentiator. Build a tool that uses an AI API — a chatbot, a recommendation engine, an automated categorizer. What matters isn't the AI sophistication. It's that you identified a use case, built a solution, and documented the decisions.</p>
+<p>Demonstrating <a href="/blog/ai-tools-for-product-managers">AI fluency through side projects</a> is a growing differentiator. Build a tool that uses an AI API — a chatbot, a recommendation engine, an automated categorizer. What matters isn't the AI sophistication. It's that you identified a use case, built a solution, and documented the decisions.</p>
 
-<h3>4. Pro-Bono Work for a Nonprofit</h3>
-<p>Nonprofits are full of product problems — outdated websites, manual processes, poor donor experiences. Volunteer to solve one. You get a real stakeholder, real constraints, and a real outcome to write about.</p>
+<h3>4. Pro-Bono Work for a Nonprofit or Community</h3>
+<p>Nonprofits and community organizations are full of product problems — outdated websites, manual processes, poor donor experiences, clunky volunteer coordination. Volunteer to solve one specific problem. You get a real stakeholder, real constraints, and a real outcome to write about.</p>
+
+<blockquote><strong>Example:</strong> "A local food bank was tracking volunteer shifts in a shared Google Doc that broke every week. I mapped their workflow, identified the core pain point (scheduling conflicts), and built an Airtable-based system with automated confirmations. No-shows dropped by 40% in the first month. The constraint — zero budget — forced sharper prioritization than most paid projects."</blockquote>
 
 <h3>5. A Template or Framework That Helps Other PMs</h3>
 <p>Build a Notion template for PRDs, a prioritization spreadsheet, or a user research script template. If other PMs find it useful, that's your metric. It also builds your reputation in the PM community, which helps with <a href="/blog/how-to-network-into-pm-role">networking</a>.</p>
@@ -1146,7 +1156,7 @@ export const blogPosts: BlogPost[] = [
 <p>One or two well-documented side projects alongside one case study from professional work is a strong combination. Don't include side projects that you can't write up properly — a bullet point about a half-finished app hurts more than it helps.</p>
 
 <h3>Can I use a class project or bootcamp assignment?</h3>
-<p>You can, but reframe it as a product decision story, not an academic exercise. Remove any references to it being an assignment. Focus on the problem you identified, the decisions you made, and what you learned — not the grade or the course requirements.</p>
+<p>You can, but lead with the problem and your decisions — not the academic context. Frame it as a product decision story, not a class assignment. Hiring managers care about the problem you identified, the trade-offs you navigated, and what you learned — not the course name or the grade.</p>
 
 <h3>What if my side project failed?</h3>
 <p>Failed projects make excellent case studies — sometimes better than successes. <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">Hiring managers value honest reflection</a>. Write about what you expected to happen, what actually happened, and what you learned. A thoughtful failure shows more PM maturity than a success story with no critical analysis.</p>
