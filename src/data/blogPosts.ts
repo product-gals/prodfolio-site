@@ -589,7 +589,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Why Metrics Matter More Than You Think</h2>
 
-<p>When <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">we asked hiring managers what they look for</a> in PM portfolios, the feedback was clear: no metrics is a deal-breaker. One product leader put it bluntly — <em>"Even directional metrics matter. 'Reduced churn by roughly 18%' is better than 'users were happier.'"</em></p>
+<p>When <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">we interviewed hiring managers about what they look for</a> in PM portfolios, the feedback was consistent: missing metrics is one of the most common deal-breakers. As one VP of Product told us, <em>"Even directional metrics matter. 'Reduced churn by roughly 18%' is better than 'users were happier.'"</em></p>
 
 <p>Metrics serve three purposes in your portfolio:</p>
 
@@ -601,14 +601,14 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Outcome Metrics vs. Output Metrics</h2>
 
-<p>The most common mistake PMs make with metrics is reporting <strong>output</strong> instead of <strong>outcomes</strong>.</p>
+<p>The most common mistake PMs make with metrics is reporting <strong>output</strong> instead of <strong>outcomes</strong>. This is a distinction <a href="https://www.svpg.com/product-vs-feature-teams/" target="_blank" rel="noopener noreferrer">Marty Cagan has written about extensively</a> — product teams should be measured by the outcomes they deliver, not the features they ship.</p>
 
 <ul>
 <li><strong>Output:</strong> "Shipped 12 features in Q3" — This tells me you were busy, not that you were effective</li>
 <li><strong>Outcome:</strong> "Shipped a redesigned checkout flow that increased conversion from 2.3% to 3.1%" — This tells me you moved a metric that matters</li>
 </ul>
 
-<p>Hiring managers care about outcomes. Here are the metric categories that resonate most:</p>
+<p>Hiring managers care about outcomes. As <a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener noreferrer">Lenny Rachitsky</a> frequently emphasizes, the strongest PM resumes and portfolios lead with results, not responsibilities. Here are the metric categories that resonate most:</p>
 
 <h3>Revenue and Growth</h3>
 <p>Monthly recurring revenue (MRR), annual recurring revenue (ARR), average revenue per user (ARPU), customer lifetime value (LTV). If your work moved revenue, say so.</p>
@@ -677,7 +677,7 @@ export const blogPosts: BlogPost[] = [
 <p>Look for indirect metrics. Did support tickets decrease? Did user complaints about a flow drop? Did adoption of a feature increase after your changes? Even internal metrics like "reduced QA cycles from 3 to 1" show impact. If you truly can't find any numbers, describe the qualitative outcome with enough specificity that it's still credible.</p>
 
 <h3>How many metrics should I include per case study?</h3>
-<p>Two to three is the sweet spot. Lead with your strongest outcome metric, add one supporting metric for context, and include a baseline (the "before" number) so the reader can gauge the magnitude of change. More than three risks overwhelming the reader.</p>
+<p>Two to three is the sweet spot. Lead with your strongest outcome metric, add one supporting metric for context, and include a baseline (the "before" number) so the reader can gauge the magnitude of change. More than three risks overwhelming the reader. That said, one strong metric with full context — the problem, your decision, and the result — beats three thin numbers with no story behind them. If you're a career changer with limited PM-titled experience, don't force metrics you don't have. One well-framed number is enough.</p>
 
 <h3>Should I include metrics in my portfolio summary or just in case studies?</h3>
 <p>Both. Your portfolio summary or tagline should include one headline metric that captures your overall impact — something like "PM who's driven $2M+ in incremental ARR across three products." Then each case study should have its own specific metrics tied to that project's outcomes.</p>
@@ -1690,11 +1690,11 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Why "No Experience" Isn't the Problem You Think It Is</h2>
 
-<p>Hiring managers reviewing PM portfolios aren't checking whether you had the right job title. They're looking for evidence that you can <strong>identify problems, make decisions with incomplete information, and drive outcomes</strong>. (We know because <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">we asked them</a>.)</p>
+<p>Hiring managers reviewing PM portfolios aren't checking whether you had the right job title. They're looking for evidence that you can <strong>identify problems, make decisions with incomplete information, and drive outcomes</strong>. That's consistent with <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">what hiring managers tell us they evaluate</a> — and with <a href="https://jackiebavaro.substack.com/p/how-to-become-a-product-manager" target="_blank" rel="noopener">Jackie Bavaro's breakdown of paths into PM</a>, which identifies eight different routes, most of which don't start with a PM title.</p>
 
 <p>You've done that. Maybe not in a PM role — but you've done it. The gap isn't experience. It's <strong>framing</strong>.</p>
 
-<p>A marketing manager who redesigned a campaign based on user feedback? That's product thinking. An engineer who proposed a feature after analyzing support tickets? That's product thinking. A teacher who restructured a curriculum based on student outcomes? Believe it or not — product thinking.</p>
+<p>A marketing manager who redesigned a campaign based on user feedback? That's product thinking. An engineer who proposed a feature after analyzing support tickets? That's product thinking. A teacher who restructured a curriculum based on student outcomes? Believe it or not — product thinking. As <a href="https://www.mindtheproduct.com/a-guide-to-breaking-into-product-management/" target="_blank" rel="noopener">Mind the Product's career-change guide</a> puts it, the skills that make a great PM — empathy, analytical thinking, communication — are built in all kinds of roles.</p>
 
 <p>Your portfolio's job is to make that thinking visible.</p>
 
@@ -1723,19 +1723,23 @@ export const blogPosts: BlogPost[] = [
 
 <h3>3. Volunteer or Nonprofit Work</h3>
 
-<p>Nonprofits are full of product problems — outdated websites, manual processes, poor donor experiences. Volunteer to solve one, and you have a case study.</p>
+<p>Nonprofits are full of product problems — outdated websites, manual processes, poor donor experiences. Volunteer to solve one, and you have a case study. The scale doesn't matter. What matters is that you identified a real problem, worked within constraints, and delivered something measurable.</p>
+
+<blockquote><strong>Example:</strong> "I volunteered to redesign the donation flow for a local animal rescue. Their online donations had dropped 30% after a site migration. I audited the existing flow, simplified it from five steps to two, and worked with their web admin to implement the changes. Monthly online donations recovered within six weeks."</blockquote>
 
 <h3>4. Product Teardowns</h3>
 
 <p>Pick a product you use daily and analyze a specific feature or flow. What problem does it solve? What trade-offs did the team likely make? What would you change and why? A thoughtful teardown shows analytical thinking even without building anything.</p>
 
+<blockquote><strong>Example:</strong> "I analyzed Spotify's Discover Weekly playlist. I mapped the user flow from playlist delivery to track save, identified three friction points where users drop off, and proposed a 'save all' feature with a hypothesis on how it would increase library growth by 10-15%. I backed the proposal with competitive analysis of Apple Music's similar flow."</blockquote>
+
 <h3>5. Concept Projects</h3>
 
-<p>Design a solution to a real problem — even if you never build it. The key is treating it like a real PM would: research the problem, define success metrics, scope an MVP, and explain your decisions. Skip the pixel-perfect mockups. Focus on the <em>thinking</em>.</p>
+<p>Design a solution to a real problem — even if you never build it. The key is treating it like a real PM would: research the problem, define success metrics, scope an MVP, and explain your decisions. Skip the pixel-perfect mockups. Focus on the <em>thinking</em>. That said, concept projects are strongest when paired with at least one real project or teardown in your portfolio — on their own, they can feel too academic to a hiring manager.</p>
 
 <h2>How to Structure Each Case Study</h2>
 
-<p>Raw material isn't enough. A project only becomes a portfolio piece when it's structured to highlight your thinking. The <a href="/blog/how-to-write-product-management-case-study">SIGNAL framework</a> works for any project — shipped product or side project:</p>
+<p>Raw material isn't enough. A project only becomes a portfolio piece when it's structured to highlight your thinking. <a href="/blog/how-to-write-product-management-case-study">SIGNAL</a> is a six-part case study structure designed specifically for PM portfolios — it works for any project, whether it's a shipped product or a side project:</p>
 
 <ol>
 <li><strong><span style="color: #6b4fbb; font-weight: 800;">S</span>ituation</strong> — What was the problem and why did it matter?</li>
