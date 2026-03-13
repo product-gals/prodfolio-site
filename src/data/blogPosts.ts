@@ -293,7 +293,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "how-to-break-into-product-management",
     title: "How to Break Into Product Management (From Any Background)",
-    excerpt: "92% of PMs didn't start with the title. Here's a realistic roadmap for breaking into product management from engineering, marketing, consulting, or any other career.",
+    excerpt: "Most PMs didn't start with the title. Here's a realistic roadmap for breaking into product management from engineering, marketing, consulting, or any other career.",
     date: "2026-03-03",
     readTime: "9 min read",
     category: "Career Tips",
@@ -301,7 +301,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>You want to become a product manager, but every job listing asks for 3-5 years of PM experience. How are you supposed to get PM experience without a PM job?</p>
 
-<p>Here's what the job listings won't tell you: <strong>92% of product managers didn't start with "Product Manager" as their title.</strong> They transitioned from engineering, marketing, consulting, support, design, and a dozen other roles. The path into PM isn't a straight line — it's a lateral move that you engineer deliberately.</p>
+<p>Here's what the job listings won't tell you: according to <a href="https://brainstation.io/career-guides/how-to-get-a-job-as-a-product-manager" rel="noopener noreferrer" target="_blank">BrainStation's Digital Skills Survey</a>, <strong>88% of product management professionals started their careers in a different field.</strong> They transitioned from engineering, marketing, consulting, support, design, and a dozen other roles. The path into PM isn't a straight line — it's a lateral move that you engineer deliberately.</p>
 
 <p>This guide gives you a realistic roadmap for making that move, regardless of where you're starting from.</p>
 
@@ -309,7 +309,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li>Most PMs transitioned from other roles — <strong>you don't need PM experience to land a PM job</strong></li>
-<li>The most common paths in are from engineering (11%), consulting (10%), and internal transfers at your current company</li>
+<li>The most common paths in are from engineering, consulting, and internal transfers at your current company</li>
 <li>You need to <strong>demonstrate PM thinking</strong>, not just learn PM theory — build something, analyze something, ship something</li>
 <li>A portfolio with structured <a href="/blog/how-to-write-product-management-case-study">case studies</a> is how you prove you can do the job before you've had the title</li>
 <li>Networking and internal transfers are more effective than cold applications</li>
@@ -373,7 +373,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
 <li><strong>Internal transfer</strong> — The easiest path. You already know the product and have relationships. Volunteer for PM-adjacent projects, express your interest to your manager, and build a case</li>
-<li><strong>Referrals</strong> — Referred candidates are hired 9.5x more often than cold applicants. Network with PMs at target companies</li>
+<li><strong>Referrals</strong> — According to <a href="https://www.pinpointhq.com/insights/referrals-are-7x-more-likely-to-be-hired-than-job-board-candidates/" rel="noopener noreferrer" target="_blank">Pinpoint's analysis of 4.5 million applications</a>, referred candidates are 7x more likely to be hired than cold applicants. Network with PMs at target companies</li>
 <li><strong>APM programs</strong> — Companies like Google, Meta, Atlassian, and Salesforce run structured Associate Product Manager programs for career changers and new grads</li>
 <li><strong>Startups</strong> — Smaller companies care less about titles and more about evidence that you can do the work. Your portfolio matters more here than anywhere</li>
 </ul>
@@ -400,13 +400,13 @@ export const blogPosts: BlogPost[] = [
 <p>No. While some PMs — especially those from consulting — use MBAs as a transition path, it's not required. Most hiring managers care more about evidence of product thinking (case studies, side projects, structured analysis) than degrees. An MBA is one path, but it's not the most common or necessary one.</p>
 
 <h3>How long does it take to transition into a PM role?</h3>
-<p>Typically 3-9 months from when you start actively working on the transition — building your portfolio, networking, and applying. Internal transfers can happen faster. The timeline depends on how much PM-adjacent work you can create and how strong your network is.</p>
+<p>Based on conversations we've had with career changers on <em>The Product Pivot</em> podcast, most people land their first PM role within 3-9 months of actively working on the transition — building a portfolio, networking, and applying. Internal transfers can happen faster. The timeline depends on how much PM-adjacent work you can create and how strong your network is.</p>
 
 <h3>Should I take a pay cut to get my first PM role?</h3>
 <p>It depends on the opportunity. An associate PM role at a growth-stage company might pay less than your senior engineering role, but it puts you on the PM career track. Consider the long-term trajectory, not just the starting salary. That said, don't undervalue yourself — a strong portfolio and relevant experience justify competitive compensation.</p>
 
-<h3>Is product management a good career in 2026?</h3>
-<p>Yes. There are over 26,000 open PM roles in the U.S. alone, and demand is growing — especially for PMs with AI fluency and technical depth. The market is competitive for entry-level roles, which makes a strong portfolio even more important for standing out.</p>
+<h3>Is product management a good career right now?</h3>
+<p>Yes. Tens of thousands of PM and APM roles are posted across major job boards at any given time, and demand continues to grow — especially for PMs with AI fluency and technical depth. The market is competitive for entry-level roles, which makes a strong portfolio even more important for standing out.</p>
 
 <h3>What's the best first PM role for a career changer?</h3>
 <p>Look for companies where your domain expertise is an advantage. If you're transitioning from healthcare, target health-tech companies. If you're coming from finance, fintech firms value your background. The closer the fit between your experience and the product domain, the easier the transition.</p>
