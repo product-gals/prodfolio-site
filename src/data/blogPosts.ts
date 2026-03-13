@@ -660,137 +660,6 @@ export const blogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: "how-to-network-into-pm-role",
-    title: "How to Network Your Way Into a Product Manager Role",
-    excerpt: "85% of jobs are filled through referrals. Here's how to build genuine PM connections through coffee chats, LinkedIn outreach, and strategic networking — without being awkward about it.",
-    date: "2026-03-02",
-    readTime: "8 min read",
-    category: "Job Search",
-    tags: ["Networking", "Referrals", "Job Search", "Coffee Chats", "Product Management"],
-    content: `
-<p>You can have the perfect resume and a polished portfolio, but if nobody at the company knows who you are, you're competing against a wall of applicants. And the numbers are brutal: <strong>referred candidates are hired 9.5x more often than cold applicants</strong>. Roughly 85% of jobs are filled through networking and referrals.</p>
-
-<p>The good news: you don't need to be an extrovert, work a room, or cold-message 200 strangers on LinkedIn. Effective PM networking is about building genuine relationships with a small number of the right people — and making it easy for them to help you.</p>
-
-<h2>Key Takeaways</h2>
-
-<ul>
-<li>Referred candidates are hired <strong>9.5x more often</strong> than cold applicants — networking isn't optional</li>
-<li>Coffee chats with PMs at target companies are the highest-ROI networking activity</li>
-<li>Reach out to <strong>individual contributors</strong>, not hiring managers or recruiters — they have more time and better product insight</li>
-<li>Always bring value first: share something relevant, ask thoughtful questions, and make follow-up easy</li>
-<li>One strong connection per company is worth more than 50 weak LinkedIn connections</li>
-</ul>
-
-<h2>Why Cold Applications Aren't Enough</h2>
-
-<p>Here's what happens to most cold applications: your resume enters an ATS, gets keyword-scanned, and competes against hundreds of other candidates. Even if you clear the filter, a recruiter spends six seconds deciding whether to keep reading.</p>
-
-<p>A referral changes the equation entirely. When a PM at the company forwards your resume with a note — <em>"I talked to this person, they're sharp, their portfolio is strong"</em> — you skip the pile. You arrive with credibility already established.</p>
-
-<p>That's why your networking strategy isn't a nice-to-have alongside applications. It <em>is</em> the strategy.</p>
-
-<h2>The Coffee Chat Playbook</h2>
-
-<p>A coffee chat is an informal 20-30 minute conversation with a PM at a company you're interested in. It's not an interview. It's not a pitch. It's a genuine conversation where you learn about their work and they learn about you.</p>
-
-<h3>Who to Reach Out To</h3>
-
-<p>Target <strong>individual contributor PMs</strong> — not hiring managers, not recruiters. ICs have more time, more product context, and are more likely to have a genuine conversation. They're also the people most likely to refer you if the conversation goes well.</p>
-
-<p>Where to find them:</p>
-
-<ul>
-<li><strong>LinkedIn</strong> — Search for PMs at your target company. Filter by 1st and 2nd degree connections</li>
-<li><strong>Alumni networks</strong> — Same university, bootcamp, or previous company. Shared history makes outreach easier</li>
-<li><strong>PM communities</strong> — Lenny's Newsletter community, Product School alumni, Mind the Product, or local PM meetup groups</li>
-</ul>
-
-<p>Limit yourself to 1-2 people per company. People talk internally, and reaching out to five PMs at the same company looks desperate.</p>
-
-<h3>How to Send the First Message</h3>
-
-<p>Keep it short, specific, and focused on them — not you. Here's a template:</p>
-
-<blockquote><strong>Example:</strong> "Hi [Name], I'm a [your background] exploring the transition to product management, and I've been following [company]'s work on [specific product/feature]. I'd love to hear about your experience on the team — would you have 20 minutes for a virtual coffee sometime in the next couple weeks? Happy to work around your schedule."</blockquote>
-
-<p>Key principles: mention something specific about their company or product (shows you've done your homework), keep the time commitment small (20 minutes), and make scheduling easy.</p>
-
-<h3>What to Ask During the Chat</h3>
-
-<p>Spend at least an hour preparing before each coffee chat. Review their LinkedIn, any blog posts or talks, and the company's recent product updates. Then focus your questions on:</p>
-
-<ul>
-<li>What their day-to-day looks like on the team</li>
-<li>What challenges the product team is currently focused on</li>
-<li>What they wish they'd known before joining</li>
-<li>What skills or qualities the team values most in PMs</li>
-</ul>
-
-<p>End every conversation with: <em>"Based on what we discussed, is there anyone else you think I should talk to?"</em> This one question turns every coffee chat into a multiplier.</p>
-
-<h3>How to Follow Up</h3>
-
-<p>Send a thank-you note within 24 hours. Reference something specific from the conversation. Then, periodically share something relevant — an article about their product space, a congratulations on a product launch, or an update on your own progress. This keeps the relationship warm without being pushy.</p>
-
-<p>When a role opens up that fits, you'll already have a relationship with someone who can refer you — and they'll have a reason to.</p>
-
-<h2>LinkedIn Outreach That Actually Works</h2>
-
-<p>Most LinkedIn messages are terrible. They're either too generic ("I'd love to connect!") or too transactional ("Can you refer me?"). Here's how to stand out:</p>
-
-<ol>
-<li><strong>Personalize every message</strong> — Reference their specific company, product, or a post they wrote. Generic outreach gets ignored</li>
-<li><strong>Lead with curiosity, not asks</strong> — "I'd love to learn about your experience" works better than "I'm looking for a referral"</li>
-<li><strong>Include your portfolio link</strong> — Make it easy for them to see your work. A strong <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">portfolio</a> gives them something concrete to evaluate</li>
-<li><strong>Keep it to 3-4 sentences</strong> — Long messages don't get read. Short, specific, and respectful of their time</li>
-</ol>
-
-<h2>Building Your Network Before You Need It</h2>
-
-<p>The worst time to start networking is when you're desperately job hunting. The best time is months before. Here's how to build relationships proactively:</p>
-
-<ul>
-<li><strong>Engage on LinkedIn</strong> — Comment thoughtfully on posts from PMs you admire. Share your own takes on product topics. This builds visibility before you ever send a DM</li>
-<li><strong>Attend PM events</strong> — Meetups, webinars, Product School events, and local PM communities. You don't have to present — just show up, ask good questions, and follow up with people you connected with</li>
-<li><strong>Give before you ask</strong> — Share useful resources, make introductions, or offer your expertise in areas where you're strong. People remember those who added value before asking for help</li>
-</ul>
-
-<h2>Common Mistakes to Avoid</h2>
-
-<ol>
-<li><strong>Asking for a referral in the first message</strong> — Build the relationship first. Nobody refers a stranger. If the conversation goes well and a role opens up, the referral will happen naturally</li>
-<li><strong>Being transactional</strong> — If your only goal is to extract value, people sense it. Be genuinely curious about their work and their perspective</li>
-<li><strong>Reaching out to too many people at one company</strong> — 1-2 connections per target company is the right number. More than that and you look like you're spamming</li>
-<li><strong>Not following up</strong> — A single conversation without follow-up is a wasted opportunity. The relationship compounds over time with small touchpoints</li>
-<li><strong>Neglecting your portfolio before networking</strong> — When a PM offers to refer you, the first thing they'll do is look at your work. Make sure your <a href="/blog/how-to-write-product-management-case-study">case studies</a> and <a href="/blog/product-manager-resume-tips">resume</a> are ready before you start outreach</li>
-</ol>
-
-<h2>Start This Week</h2>
-
-<p>Identify three companies you're interested in. Find one PM at each on LinkedIn. Send a personalized message asking for a 20-minute coffee chat. That's it — three messages this week.</p>
-
-<p>If you're not sure how to position yourself in these conversations, <a href="/quiz">find out what kind of PM you are</a> to clarify your PM positioning — it'll make your outreach sharper and give you something concrete to share when the conversation turns to your work.</p>
-
-<h2>Frequently Asked Questions</h2>
-
-<h3>How many coffee chats should I do per week?</h3>
-<p>Two to three is sustainable. More than that and the quality of your preparation drops. Each chat requires research, so it's better to have three great conversations than seven surface-level ones.</p>
-
-<h3>What if someone doesn't respond to my outreach?</h3>
-<p>Send one polite follow-up after a week. If there's still no response, move on. People are busy — a non-response isn't personal. Focus your energy on the connections that engage.</p>
-
-<h3>Should I network if I'm not actively job searching?</h3>
-<p>Yes — this is actually the best time. Networking without the pressure of needing something makes conversations more genuine. The relationships you build now will be there when you need them later.</p>
-
-<h3>How do I turn a coffee chat into a referral?</h3>
-<p>You don't ask directly in the first conversation. Stay in touch, share relevant updates, and when a role opens up, reach out with something like: "I saw [company] posted a PM role on [team]. Based on our conversation about [topic], it seems like a strong fit — would you be comfortable referring me?" Include your resume and portfolio link to make it easy for them.</p>
-
-<h3>Is it weird to reach out to someone I've never met?</h3>
-<p>No — this is expected in the tech industry. PMs receive outreach regularly and most are happy to help if you're respectful of their time and have done your homework. A personalized message that shows genuine interest in their work will almost always get a positive response.</p>
-    `,
-  },
-  {
     slug: "b2b-vs-b2c-product-management-portfolio",
     title: "B2B vs. B2C Product Management: How to Tailor Your Portfolio",
     excerpt: "B2B and B2C product management require different skills and metrics. Here's how to tailor your portfolio and case studies to the type of role you're targeting.",
@@ -1103,7 +972,7 @@ export const blogPosts: BlogPost[] = [
 <blockquote><strong>Example:</strong> "A local food bank was tracking volunteer shifts in a shared Google Doc that broke every week. I mapped their workflow, identified the core pain point (scheduling conflicts), and built an Airtable-based system with automated confirmations. No-shows dropped by 40% in the first month. The constraint — zero budget — forced sharper prioritization than most paid projects."</blockquote>
 
 <h3>5. A Template or Framework That Helps Other PMs</h3>
-<p>Build a Notion template for PRDs, a prioritization spreadsheet, or a user research script template. If other PMs find it useful, that's your metric. It also builds your reputation in the PM community, which helps with <a href="/blog/how-to-network-into-pm-role">networking</a>.</p>
+<p>Build a Notion template for PRDs, a prioritization spreadsheet, or a user research script template. If other PMs find it useful, that's your metric. It also builds your reputation in the PM community.</p>
 
 <h2>How to Scope It So You Actually Finish</h2>
 
@@ -1636,7 +1505,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "what-hiring-managers-look-for-in-pm-portfolios",
     title: "What Hiring Managers Look for in PM Portfolios",
-    excerpt: "We talked to hiring managers and recruiters who review PM portfolios every week. Here's what actually matters — and what most candidates get wrong.",
+    excerpt: "We interviewed hiring managers, recruiters, and product leaders about what they look for in PM portfolios. Here's what actually matters — and what most candidates get wrong.",
     date: "2026-03-04",
     readTime: "9 min read",
     category: "Job Search",
@@ -1644,14 +1513,16 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>You spent weeks on your portfolio. You structured your case studies carefully. You picked a clean template. And then… silence. No interviews. No callbacks.</p>
 
-<p>The problem usually isn't your experience — it's a mismatch between what you're showcasing and what the person on the other side actually needs to see. We talked to hiring managers and recruiters who review PM portfolios regularly, and their feedback was consistent: <strong>most portfolios make them work too hard to find the signal.</strong></p>
+<p>The problem usually isn't your experience — it's a mismatch between what you're showcasing and what the person on the other side actually needs to see.</p>
 
-<p>This post breaks down what they're actually looking for — and how to make sure your portfolio delivers it.</p>
+<p>While building Prodfolio, we interviewed hiring managers, recruiters, and product leaders across startups, mid-size companies, and enterprise organizations — people who review PM portfolios as part of their regular hiring process. We also drew on conversations from <em>The Product Pivot</em> podcast, where career transitions and hiring are recurring themes. Their feedback was consistent: <strong>most portfolios make them work too hard to find the signal.</strong></p>
+
+<p>This post breaks down what they told us they're actually looking for — and how to make sure your portfolio delivers it.</p>
 
 <h2>Key Takeaways</h2>
 
 <ul>
-<li>Hiring managers spend <strong>seconds on a first impression</strong> — your portfolio needs to front-load the important stuff</li>
+<li>Hiring managers reviewing dozens of candidates per role spend <strong>very little time on a first impression</strong> — your portfolio needs to front-load the important stuff</li>
 <li>They want to see <strong>how you think and decide</strong>, not just what you shipped</li>
 <li>Case studies should be the centerpiece, not your resume or bio</li>
 <li>Scannability matters more than comprehensiveness — concise beats thorough</li>
@@ -1664,7 +1535,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>What they want first:</strong> a snapshot. Your photo, a one-line tagline that says what kind of PM you are, and quick signals — years of experience, industry focus, what you're looking for. Think of it as your portfolio's above-the-fold.</p>
 
-<blockquote><strong>From a VP of Product:</strong> "I want a snapshot in the first five seconds — photo, tagline, quick signals. If I have to scroll to understand who this person is, I'm already behind."</blockquote>
+<blockquote><strong>From a VP of Product at a growth-stage SaaS company:</strong> "I want a snapshot in the first five seconds — photo, tagline, quick signals. If I have to scroll to understand who this person is, I'm already behind."</blockquote>
 
 <p>This doesn't mean your portfolio should be shallow. It means the <strong>entry point</strong> should be scannable, with depth available one click deeper.</p>
 
@@ -1682,7 +1553,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>One product leader described their ideal case study format as a collapsible panel: challenge up front, framework used, results, and lessons learned. Everything visible in a glance, with the option to expand for detail.</p>
 
-<blockquote><strong>From a senior PM trainer:</strong> "I want to see how PMs think and decide, not just what they built. The decisions and trade-offs are where the real signal is."</blockquote>
+<blockquote><strong>From a senior PM trainer and hiring consultant:</strong> "I want to see how PMs think and decide, not just what they built. The decisions and trade-offs are where the real signal is."</blockquote>
 
 <p>The <a href="/blog/how-to-write-product-management-case-study">SIGNAL framework</a> maps directly to this structure — Situation, Insight, Goals, Navigation, Achievement, Learnings. It's designed to surface the thinking that hiring managers are evaluating.</p>
 
@@ -1700,7 +1571,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>Multiple reviewers emphasized that shorter is better. One group of hiring managers suggested capping role descriptions at 120 characters — "old school Twitter energy." If a section doesn't earn its place, cut it.</p>
 
-<blockquote><strong>From a tech recruiter:</strong> "I need to consume information quickly and concisely. If I can't get the gist of a case study in 30 seconds, I'm moving on."</blockquote>
+<blockquote><strong>From a technical recruiter at a mid-size product company:</strong> "I need to consume information quickly and concisely. If I can't get the gist of a case study in 30 seconds, I'm moving on."</blockquote>
 
 <h3>3. Include Real References</h3>
 
