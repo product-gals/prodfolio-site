@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Prepare for a PM Behavioral Interview",
     excerpt: "Behavioral interviews trip up even experienced PMs. Here's how to structure your answers, build a story bank, and avoid the mistakes that cost candidates offers.",
     date: "2026-03-04",
-    readTime: "9 min read",
+    readTime: "8 min read",
     category: "Job Search",
     tags: ["Behavioral Interview", "Interview Prep", "STAR Method", "Job Search", "Product Management"],
     content: `
@@ -30,9 +30,9 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li>Behavioral interviews test <strong>how you think and work</strong>, not what you know about product frameworks</li>
 <li>The best preparation is a <strong>story bank</strong> — 8-10 structured stories you can adapt to any question</li>
-<li>Use a clear framework (STAR or SPSIL) to keep answers under 2 minutes and easy to follow</li>
+<li>Use a clear framework like STAR — and add a <strong>Lessons</strong> step to keep answers under 2 minutes and easy to follow</li>
 <li>The <strong>Learnings</strong> section is what separates good answers from great ones — don't skip it</li>
-<li>Your <a href="/blog/how-to-write-product-management-case-study">portfolio case studies</a> are your best prep material — they're pre-structured stories</li>
+<li>Your <a href="/blog/how-to-write-product-management-case-study">portfolio case studies</a> double as great prep material — they're pre-structured stories</li>
 </ul>
 
 <h2>What Behavioral Interviews Actually Test</h2>
@@ -45,7 +45,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Your self-awareness</strong> — Do you know what you did well and what you'd do differently?</li>
 </ol>
 
-<p>That third one matters more than most candidates realize. Hiring managers told us that <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">honest reflection builds more trust than polished storytelling</a>. The same principle applies in behavioral interviews.</p>
+<p>That third one matters more than most candidates realize. In our conversations with hiring managers on <em>The Product Pivot</em> podcast, one theme kept coming up: <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">honest reflection builds more trust than polished storytelling</a>. The same principle applies in behavioral interviews.</p>
 
 <h2>Build a Story Bank Before You Need One</h2>
 
@@ -67,9 +67,9 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How to Structure Every Answer</h2>
 
-<p>The most common answer framework is <strong>STAR</strong> (Situation, Task, Action, Result). It works, but it has a gap — it doesn't prompt you to share what you learned. A better variation for PM interviews is <strong>SPSIL</strong> (Situation, Problem, Solution, Impact, Lessons).</p>
+<p>The most common answer framework is <strong><a href="https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/" target="_blank" rel="noopener">STAR</a></strong> (Situation, Task, Action, Result). It works, but it has a gap — it doesn't prompt you to share what you learned. We use an adapted version we call <strong>SPSIL</strong> (Situation, Problem, Solution, Impact, Lessons) that adds the reflection step hiring managers consistently ask about.</p>
 
-<p>Here's how SPSIL works in practice:</p>
+<p>Let's walk through a hypothetical example to see each step in action:</p>
 
 <h3>Situation</h3>
 <p>Set the context in 2-3 sentences. Company, product, your role, and the timeframe. Don't over-explain — just enough for the interviewer to follow.</p>
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The 8 Questions You'll Almost Certainly Get</h2>
 
-<p>Based on what hiring managers and interview coaches report, these are the behavioral questions that come up most often in PM interviews:</p>
+<p>These are the behavioral questions that come up most often in PM interviews, based on patterns we've heard from hiring managers on <em>The Product Pivot</em> and what resources like <a href="https://www.lennysnewsletter.com/p/how-to-pass-any-first-round-interview" target="_blank" rel="noopener">Lenny's Newsletter</a> consistently highlight:</p>
 
 <ol>
 <li><strong>"Tell me about a time you led a cross-functional team."</strong> — They want to see influence without authority.</li>
@@ -124,13 +124,11 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Winging it</strong> — Behavioral interviews reward preparation, not improvisation. The candidates who sound "natural" are the ones who practiced their stories until the structure was automatic.</li>
 </ol>
 
-<h2>Your Portfolio Is Your Best Prep Tool</h2>
+<h2>Your Portfolio Doubles as Prep Material</h2>
 
-<p>If you've already built <a href="/blog/how-to-write-product-management-case-study">case studies using the SIGNAL framework</a>, you've done most of the work. Each case study is a pre-structured story with the situation, your decisions, the impact, and your learnings already written down.</p>
+<p>If you've already built <a href="/blog/how-to-write-product-management-case-study">case studies using the SIGNAL framework</a>, you have a head start. Each case study is a pre-structured story with the situation, your decisions, the impact, and your learnings already written down — the same building blocks you need for behavioral answers.</p>
 
 <p>Before your interview, review your case studies and practice telling each one out loud in under two minutes. The structure is already there — you just need to practice delivering it conversationally.</p>
-
-<p>If you haven't built your case studies yet, this is a good reason to start. <a href="/how-it-works">Prodfolio's builder walks you through SIGNAL step by step</a> — and the output doubles as both portfolio content and interview prep.</p>
 
 <h2>Start Preparing Today</h2>
 
@@ -138,15 +136,15 @@ export const blogPosts: BlogPost[] = [
 
 <p>That's the foundation. From there, expand to 8-10 stories that cover the seven categories above, and you'll walk into your behavioral interview with the kind of confidence that only comes from real preparation.</p>
 
-<p>Not sure which stories to highlight? Your <a href="/quiz">portfolio type</a> can help you figure out which experiences will resonate most with the roles you're targeting.</p>
+<p>Not sure where to start? Take our <a href="/quiz">PM portfolio quiz</a> to identify the strengths and experiences you should be leading with — it'll help you pick the right stories for your story bank, too.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>How many stories should I prepare for a PM behavioral interview?</h3>
 <p>Aim for 8-10 stories that span leadership, conflict, failure, data, collaboration, prioritization, and customer insight. Some stories will map to multiple question types, which is fine. The goal is enough range that you're never scrambling for an example.</p>
 
-<h3>Should I use STAR or SPSIL for my answers?</h3>
-<p>Either works — the key is consistency and including what you learned at the end. SPSIL has an edge for PM interviews because it explicitly includes a Lessons step, which is what interviewers value most. Use whichever framework you can deliver naturally.</p>
+<h3>Should I use STAR or add a Lessons step?</h3>
+<p>STAR is a solid foundation — the key improvement for PM interviews is adding a Lessons step at the end (what we call SPSIL). Interviewers consistently value self-reflection, and STAR doesn't prompt you to include it. Use whichever framework you can deliver naturally, but always end with what you learned.</p>
 
 <h3>How long should each behavioral answer be?</h3>
 <p>Keep answers under 2 minutes. If the interviewer wants more detail, they'll ask follow-up questions. A concise, structured answer that leaves room for conversation is better than a 5-minute monologue that covers everything but loses the interviewer's attention.</p>
@@ -1812,7 +1810,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Write a Product Management Case Study (With Examples)",
     excerpt: "Most PM case studies read like feature lists. Here's how to use the SIGNAL framework to write one that actually shows how you think — and why that matters to hiring managers.",
     date: "2026-03-01",
-    readTime: "9 min read",
+    readTime: "12 min read",
     category: "Portfolio Tips",
     tags: ["Case Studies", "PM Portfolio", "SIGNAL Framework", "Hiring", "Product Management"],
     content: `
@@ -1820,7 +1818,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>That's the hard part. Most PM case studies either read like a résumé bullet or turn into a wall of text no one finishes. The problem isn't your experience — it's the structure. A good case study shows <strong>how you think</strong>, not just what you shipped.</p>
 
-<p>This guide walks you through the SIGNAL framework — a six-part structure designed specifically for PM case studies — with real examples for each section.</p>
+<p>This guide walks you through the SIGNAL framework — a six-part structure we developed at Prodfolio specifically for PM case studies — with examples from different product contexts for each section.</p>
 
 <h2>Key Takeaways</h2>
 
@@ -1828,13 +1826,17 @@ export const blogPosts: BlogPost[] = [
 <li>A PM case study should demonstrate your <strong>thinking process</strong>, not just your results</li>
 <li>The <strong>SIGNAL framework</strong> (Situation, Insight, Goals, Navigation, Achievement, Learnings) maps to what hiring managers actually evaluate</li>
 <li>Include the messy middle — trade-offs, constraints, and things that didn't go as planned make your case study more credible</li>
-<li>Use first person ("I led") instead of hiding behind "we decided"</li>
+<li>Use first person ("I led") instead of hiding behind "we decided" — own your contributions clearly</li>
 <li>You don't need a perfect project — small wins and honest reflections are just as compelling</li>
 </ul>
 
 <h2>Why Most PM Case Studies Miss the Mark</h2>
 
-<p><strong>They focus on what shipped, not how you thought.</strong> Hiring managers can't get your decision-making process from a résumé. That's what a case study is for. (Want to know exactly what they're evaluating? Read <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">what hiring managers told us they look for</a>.)</p>
+<p>Most guides on PM case studies are actually about <a href="https://www.lennysnewsletter.com/p/preparing-for-the-product-management" target="_blank" rel="noopener">answering interview take-home assignments</a> — not writing portfolio pieces that show how you think. That distinction matters. A take-home has a prompt. A portfolio case study is <em>your</em> story, told on your terms.</p>
+
+<p>Here's where most portfolio case studies fall short:</p>
+
+<p><strong>They focus on what shipped, not how you thought.</strong> Hiring managers can't get your decision-making process from a résumé. That's what a case study is for. (Want to know exactly what they're evaluating? Read <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">what hiring managers look for in PM portfolios</a>.)</p>
 
 <p><strong>They skip the messy middle.</strong> The research dead ends, the stakeholder who disagreed, the scope cut you had to make — that's where your PM thinking lives.</p>
 
@@ -1842,7 +1844,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>The SIGNAL Framework</h2>
 
-<p>SIGNAL is a six-part structure designed specifically for PM case studies. Each section maps to what hiring managers actually evaluate. <a href="/how-it-works">Prodfolio builds this framework directly into its case study builder</a>, so you're guided through each step.</p>
+<p>We built SIGNAL because existing frameworks like STAR (Situation, Task, Action, Result) weren't designed for PM portfolios. STAR works for behavioral interview answers, but it skips the parts that matter most in a case study: the research that shaped your approach, the goals you set before building anything, and the honest reflection on what you'd do differently. As <a href="https://jackiebavaro.substack.com/p/how-to-become-a-product-manager" target="_blank" rel="noopener">Jackie Bavaro has written</a>, breaking into PM requires demonstrating product thinking — SIGNAL is designed to make that thinking visible.</p>
 
 <p>Here's the framework at a glance:</p>
 
@@ -1855,7 +1857,7 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Learnings</strong> — Reflect on what you'd do differently</li>
 </ol>
 
-<p>Let's break each one down with examples.</p>
+<p>Let's break each one down with examples from different product contexts.</p>
 
 <h3><span style="color: #6b4fbb; font-weight: 800;">S</span> &mdash; Situation</h3>
 <p><em>Set the stage. What was the challenge or opportunity? Why did it matter?</em></p>
