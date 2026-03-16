@@ -15,7 +15,7 @@ export default function TermsOfService() {
       "name": "Terms of Service",
       "description": "Terms of Service for Prodfolio. Learn about your rights and responsibilities when using our portfolio platform.",
       "url": "https://prodfolio.io/terms",
-      "dateModified": "2026-03-09",
+      "dateModified": "2026-03-15",
       "publisher": {
         "@type": "Organization",
         "name": "Prodfolio",
@@ -39,7 +39,7 @@ export default function TermsOfService() {
               Terms of Service
             </h1>
             <p className="text-lg text-white/80">
-              <strong>Last updated: March 9, 2026</strong>
+              <strong>Last updated: March 15, 2026</strong>
             </p>
             <p className="text-lg text-white/70 mt-4 max-w-2xl mx-auto">
               Welcome to Prodfolio. By using our service, you agree to these terms.
@@ -266,7 +266,8 @@ export default function TermsOfService() {
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
                 <li><strong>14-day free trial:</strong> Cancel anytime during the trial and you won't be charged</li>
                 <li><strong>All paid plans:</strong> Full refund within 30 days of your first charge (after the trial ends)</li>
-                <li><strong>After 30 days:</strong> No refunds for partial months, but you can cancel anytime</li>
+                <li><strong>After 30 days:</strong> No refunds for partial months or prior billing periods, but you can cancel anytime</li>
+                <li><strong>Unused time:</strong> Subscription fees are non-refundable for periods where the service was available, regardless of usage. You are responsible for canceling your subscription if you no longer wish to be billed</li>
                 <li><strong>Cancellations:</strong> You retain access until the end of your billing period</li>
                 <li>Email hello@prodfolio.io for refund requests</li>
               </ul>
