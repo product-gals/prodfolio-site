@@ -41,8 +41,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (!response.ok) {
       const errorData = await response.json();
-      console.error("Beehiiv API error:", errorData);
-      return res.status(response.status).json({ error: "Subscription failed" });
+      console.error("Beehiiv API error:", response.status, JSON.stringify(errorData));
+      return res.status(response.status).json({ error: "Subscription failed", details: errorData });
     }
 
     const data = await response.json();
