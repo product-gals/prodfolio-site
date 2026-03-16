@@ -1,55 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
-  <!-- Main pages -->
+
+  <!-- Main pages (Generated: 2026-03-13) -->
   <url>
     <loc>https://prodfolio.io/</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
-  
   <url>
-    <loc>https://prodfolio.io/about</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://prodfolio.io/features</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/how-it-works</loc>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
-  
   <url>
-    <loc>https://prodfolio.io/pricing</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://prodfolio.io/examples</loc>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
-  
   <url>
-    <loc>https://prodfolio.io/resources</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://prodfolio.io/pricing</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/about</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast</loc>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
-  
   <url>
-    <loc>https://prodfolio.io/partnerships</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://prodfolio.io/for-career-changers</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/for-hiring-managers</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/quiz</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/partners</loc>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
-  
+  <url>
+    <loc>https://prodfolio.io/partnerships</loc>
+    <lastmod>2026-03-13</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <url>
     <loc>https://prodfolio.io/terms</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
   <url>
     <loc>https://prodfolio.io/privacy</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-03-13</lastmod>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
-  
+
+  <!-- Podcast Episodes -->
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-pi-to-pm</loc>
+    <lastmod>2024-11-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-music-school-to-staff-pm</loc>
+    <lastmod>2024-12-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/meet-the-hosts</loc>
+    <lastmod>2024-12-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-product-marketing-to-pm</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/big-tech-myths</loc>
+    <lastmod>2025-01-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/is-product-management-evolving-or-disappearing</loc>
+    <lastmod>2025-01-29</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-newsrooms-to-roadmaps</loc>
+    <lastmod>2025-02-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/fractional-pm-unpacked</loc>
+    <lastmod>2025-02-26</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/season-two-kickoff</loc>
+    <lastmod>2025-03-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-8-rejections-to-google</loc>
+    <lastmod>2025-03-26</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/evolution-of-product-ops</loc>
+    <lastmod>2025-04-09</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/power-of-storytelling-in-hiring</loc>
+    <lastmod>2025-04-23</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/from-incubator-to-product-management</loc>
+    <lastmod>2025-05-07</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/power-of-saying-yes</loc>
+    <lastmod>2025-05-21</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/podcast/episodes/why-ai-should-be-boring</loc>
+    <lastmod>2025-06-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-prepare-for-pm-behavioral-interview</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/product-manager-resume-tips</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-break-into-product-management</loc>
+    <lastmod>2026-03-03</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/pm-salary-negotiation-tips</loc>
+    <lastmod>2026-03-03</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-use-metrics-in-pm-portfolio</loc>
+    <lastmod>2026-03-03</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-reframe-pm-portfolio-for-any-role</loc>
+    <lastmod>2026-03-02</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/ai-tools-for-product-managers</loc>
+    <lastmod>2026-03-02</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/pm-side-projects-that-get-you-hired</loc>
+    <lastmod>2026-03-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-write-pm-resume-bullets-with-impact</loc>
+    <lastmod>2026-03-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/product-manager-career-path-levels-explained</loc>
+    <lastmod>2026-03-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/pm-job-search-mistakes</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/what-hiring-managers-look-for-in-pm-portfolios</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-build-pm-portfolio-no-experience</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://prodfolio.io/blog/how-to-write-product-management-case-study</loc>
+    <lastmod>2026-03-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>

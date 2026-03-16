@@ -67,6 +67,23 @@
     --sidebar-border: 248 20% 92%;
     --sidebar-ring: 254 91% 75%;
     
+    /* Component-level glass tokens */
+    --glass-component-bg: rgba(255, 255, 255, 0.85);
+    --glass-component-border: rgba(158, 133, 249, 0.15);
+    --glass-component-shadow: 0 4px 24px -4px rgba(16, 13, 34, 0.08), 0 1px 3px rgba(158, 133, 249, 0.06);
+
+    /* Branded focus ring (replaces stock shadcn ring-offset pattern) */
+    --focus-ring: 0 0 0 2px hsl(0 0% 100%), 0 0 0 4px hsl(254 91% 75% / 0.4);
+
+    /* Input field depth tokens */
+    --input-bg: rgba(255, 255, 255, 0.9);
+    --input-border-focus: hsl(254 91% 75% / 0.5);
+    --input-shadow-focus: 0 0 0 3px hsl(254 91% 75% / 0.1), 0 2px 8px hsl(254 91% 75% / 0.08);
+
+    /* Toast elevation */
+    --toast-bg: rgba(255, 255, 255, 0.95);
+    --toast-shadow: 0 8px 32px rgba(16, 13, 34, 0.12), 0 2px 8px rgba(158, 133, 249, 0.1);
+
     /* Beta banner handling */
     --beta-banner-height: 48px;
   }
@@ -113,6 +130,20 @@
     --glass-border: rgba(158, 133, 249, 0.2);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
     
+    /* Component-level glass tokens */
+    --glass-component-bg: rgba(30, 27, 53, 0.85);
+    --glass-component-border: rgba(158, 133, 249, 0.2);
+    --glass-component-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(158, 133, 249, 0.1);
+
+    --focus-ring: 0 0 0 2px hsl(246 41% 9%), 0 0 0 4px hsl(254 91% 75% / 0.5);
+
+    --input-bg: rgba(30, 27, 53, 0.6);
+    --input-border-focus: hsl(254 91% 75% / 0.6);
+    --input-shadow-focus: 0 0 0 3px hsl(254 91% 75% / 0.15), 0 2px 8px hsl(254 91% 75% / 0.12);
+
+    --toast-bg: rgba(30, 27, 53, 0.95);
+    --toast-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(158, 133, 249, 0.15);
+
     --sidebar-background: 246 35% 11%;
     --sidebar-foreground: 248 15% 70%;
     --sidebar-primary: 254 91% 75%;
@@ -251,16 +282,66 @@
     box-shadow: 0 12px 40px rgba(158, 133, 249, 0.2);
   }
 
-  /* Continuous gradient background - Purple → Blue → Purple variations */
+  /* Primary dark gradient — used on ALL marketing pages for consistency.
+     Clean top-to-bottom arc: deep purple → dark purple-navy → near-navy base.
+     No bounce-back stops, no light lavender zone, no uninvited coral tint. */
   .gradient-mesh-bg {
-    background: linear-gradient(180deg, 
-      hsl(254 91% 75%) 0%,
-      hsl(248 31% 41%) 25%,
-      hsl(254 91% 75%) 50%,
-      hsl(248 100% 90%) 75%,
-      hsl(254 91% 75%) 100%
-    );
+    background:
+      radial-gradient(ellipse 60% 50% at 15% 20%, hsla(264, 88%, 76%, 0.08) 0%, transparent 65%),
+      radial-gradient(ellipse 50% 40% at 85% 35%, hsla(264, 88%, 76%, 0.05) 0%, transparent 60%),
+      linear-gradient(180deg,
+        hsl(266 74% 54%) 0%,
+        hsl(261 52% 27%) 28%,
+        hsl(256 43% 13%) 58%,
+        hsl(250 38% 9%)  100%
+      );
     min-height: 100vh;
+    position: relative;
+  }
+
+  .gradient-mesh-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 128px 128px;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .gradient-mesh-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(158, 133, 249, 0.35) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+    mask-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 15%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 15%);
+  }
+
+  /* CTA section — adds a soft ambient purple glow behind the card so the
+     card floats naturally out of the dark page background instead of
+     appearing as an abrupt flat box. */
+  .cta-glow-section {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .cta-glow-section::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(640px, 90vw);
+    height: 320px;
+    background: radial-gradient(ellipse, hsla(254, 91%, 75%, 0.22) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
   }
 
   /* Gradient text effect - Purple to lighter purple */
@@ -279,6 +360,78 @@
 
   .float-animation {
     animation: float 6s ease-in-out infinite;
+  }
+
+  /* Orb drift animations — GPU-only (transform), inherits prefers-reduced-motion */
+  @keyframes orb-drift-1 {
+    0%   { transform: translate(0px, 0px) scale(1); }
+    33%  { transform: translate(40px, -30px) scale(1.08); }
+    66%  { transform: translate(-20px, 20px) scale(0.95); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+
+  @keyframes orb-drift-2 {
+    0%   { transform: translate(0px, 0px) scale(1); }
+    40%  { transform: translate(-50px, 25px) scale(1.05); }
+    70%  { transform: translate(30px, -15px) scale(0.97); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+
+  @keyframes orb-drift-3 {
+    0%   { transform: translate(0px, 0px) scale(1); }
+    30%  { transform: translate(20px, 40px) scale(1.06); }
+    65%  { transform: translate(-35px, -20px) scale(0.93); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+
+  /* Hero animated orbs — scoped to Landing hero section only via JSX */
+  .hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  .hero-orb-1 {
+    top: -120px;
+    left: -100px;
+    width: 600px;
+    height: 500px;
+    background: radial-gradient(circle at 40% 40%,
+      hsla(254, 91%, 75%, 0.55) 0%,
+      hsla(254, 91%, 75%, 0.25) 40%,
+      transparent 70%
+    );
+    animation: orb-drift-1 18s ease-in-out infinite;
+  }
+
+  .hero-orb-2 {
+    top: -60px;
+    right: -80px;
+    width: 520px;
+    height: 420px;
+    background: radial-gradient(circle at 60% 35%,
+      hsla(6, 100%, 74%, 0.35) 0%,
+      hsla(254, 91%, 75%, 0.2) 45%,
+      transparent 70%
+    );
+    animation: orb-drift-2 22s ease-in-out infinite;
+    animation-delay: -7s;
+  }
+
+  .hero-orb-3 {
+    bottom: -80px;
+    left: 30%;
+    width: 450px;
+    height: 380px;
+    background: radial-gradient(circle at 50% 50%,
+      hsla(248, 100%, 90%, 0.1) 0%,
+      hsla(254, 91%, 75%, 0.05) 50%,
+      transparent 70%
+    );
+    animation: orb-drift-3 26s ease-in-out infinite;
+    animation-delay: -13s;
   }
 
   /* Glassmorphic pill */
@@ -350,6 +503,54 @@
     @apply border-t border-primary/20;
   }
 
+  /* Glass card tiers - consolidated design system.
+     Use .glass-card for content on the dark gradient.
+     Use .glass-card-solid ONLY for Pricing plan cards (purchase-decision white contrast).
+     DEPRECATED: .glass-card-subtle — confused middle ground, use .glass-card instead. */
+  .glass-card-subtle {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card-subtle:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(158, 133, 249, 0.15);
+  }
+
+  .glass-card-solid {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(158, 133, 249, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glass-card-solid:hover {
+    box-shadow: 0 12px 40px rgba(158, 133, 249, 0.15);
+  }
+
+  /* DEPRECATED for page-level use — causes inconsistent light/dark split across the site.
+     All marketing pages should use .gradient-mesh-bg.
+     Retained here only if needed for specific sub-section tints. */
+  .gradient-mesh-bg-light {
+    background: linear-gradient(180deg,
+      hsl(254 91% 75%) 0%,
+      hsl(252 70% 72%) 25%,
+      hsl(250 80% 82%) 50%,
+      hsl(248 100% 90%) 65%,
+      hsl(248 50% 55%) 82%,
+      hsl(242 32% 41%) 100%
+    );
+    min-height: 100vh;
+  }
+
   /* Scroll animations - Fast, purpose-driven (<300ms) */
   .animate-on-scroll {
     opacity: 0;
@@ -360,6 +561,15 @@
   .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Fallback: ensure content is visible if JS fails */
+  @media (scripting: none) {
+    .animate-on-scroll,
+    .stagger-children > * {
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 
   /* Stagger children animations */
@@ -386,6 +596,32 @@
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* High contrast support */
+  @media (prefers-contrast: more) {
+    :root {
+      --border: 246 41% 30%;
+      --muted-foreground: 248 10% 25%;
+    }
+
+    .glass-card,
+    [class*="backdrop-blur"] {
+      border-width: 2px;
+      border-color: hsl(0 0% 100% / 0.4);
+    }
+
+    .text-white\/60 {
+      color: hsl(0 0% 100% / 0.85);
+    }
+
+    .text-white\/70 {
+      color: hsl(0 0% 100% / 0.9);
+    }
+
+    .text-white\/80 {
+      color: hsl(0 0% 100% / 0.95);
     }
   }
 

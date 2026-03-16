@@ -1,13 +1,27 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 
 export default function TermsOfService() {
   useSEO({
     title: "Terms of Service | Prodfolio",
     description: "Terms of Service for Prodfolio. Learn about your rights and responsibilities when using our portfolio platform.",
-    canonical: "https://www.prodfolio.io/terms",
+    canonical: "https://prodfolio.io/terms",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service",
+      "description": "Terms of Service for Prodfolio. Learn about your rights and responsibilities when using our portfolio platform.",
+      "url": "https://prodfolio.io/terms",
+      "dateModified": "2026-03-15",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Prodfolio",
+        "url": "https://prodfolio.io"
+      }
+    }
   });
 
   useEffect(() => {
@@ -18,16 +32,16 @@ export default function TermsOfService() {
     <div className="min-h-screen gradient-mesh-bg">
       <Navbar />
       
-      <main className="py-20 px-4">
+      <main id="main-content" className="pt-28 pb-6 px-4">
         <article className="prodfolio-container max-w-4xl mx-auto">
           <header className="mb-12 text-center">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text-navy">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-white">
               Terms of Service
             </h1>
-            <p className="text-lg text-navy/80">
-              <strong>Last updated: November 16, 2025</strong>
+            <p className="text-lg text-white/80">
+              <strong>Last updated: March 15, 2026</strong>
             </p>
-            <p className="text-lg text-navy/90 mt-4 max-w-2xl mx-auto">
+            <p className="text-lg text-white/70 mt-4 max-w-2xl mx-auto">
               Welcome to Prodfolio. By using our service, you agree to these terms.
             </p>
           </header>
@@ -212,18 +226,26 @@ export default function TermsOfService() {
               
               <h3 className="text-2xl font-bold mb-3 text-navy">Pricing Plans</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li><strong>Free:</strong> Basic features with watermark</li>
-                <li><strong>Starter:</strong> $19/month - full features, no watermark</li>
-                <li><strong>Pro:</strong> $29/month - advanced features, priority support</li>
-                <li><strong>Founding Member:</strong> $348 one-time - two year access (limited availability)</li>
+                <li><strong>Free:</strong> $0/month — 1 portfolio, 3 AI case studies, 3 AI resume uploads, "Built with Prodfolio" footer</li>
+                <li><strong>Founding Member:</strong> $15/month (or $10.75/month billed annually at $129) — unlimited portfolios, unlimited AI generation, custom domain, analytics, no Prodfolio branding, priority support, portfolio review, direct Slack access to founders, monthly AMAs, and Founding Member badge (limited availability)</li>
               </ul>
               <p className="text-navy/90 mb-4">
                 Prices may change, but we'll notify existing subscribers before any increases.
               </p>
 
+              <h3 className="text-2xl font-bold mb-3 text-navy">14-Day Free Trial</h3>
+              <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
+                <li>Founding Member includes a <strong>14-day free trial</strong> so you can explore the full experience before being charged</li>
+                <li>Your trial begins when you sign up for Founding Member and provide payment information</li>
+                <li>You will not be charged during the 14-day trial period</li>
+                <li>If you cancel before the trial ends, you won't be charged at all</li>
+                <li>If you don't cancel, your subscription will automatically begin at the end of the trial period and you'll be billed at the plan rate</li>
+                <li>The free trial is available once per user — if you've previously used a trial or had a paid subscription, you may not be eligible for another trial</li>
+              </ul>
+
               <h3 className="text-2xl font-bold mb-3 text-navy">Billing</h3>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li>Processed securely through Stripe</li>
+                <li>Processed securely through Stripe (credit/debit cards, Apple Pay, Google Pay, and Link)</li>
                 <li>Billed monthly or annually (your choice)</li>
                 <li>Failed payments may result in service interruption</li>
                 <li>You're responsible for applicable taxes</li>
@@ -239,11 +261,13 @@ export default function TermsOfService() {
 
               <h3 className="text-2xl font-bold mb-3 text-navy">Refunds & Money-Back Guarantee</h3>
               <p className="text-navy/90 mb-4">
-                <strong>Try Prodfolio risk-free.</strong> If you're not satisfied within 30 days of your first purchase, we'll refund you, no questions asked.
+                <strong>Try Prodfolio risk-free.</strong> Start with a 14-day free trial on Founding Member. If you continue past the trial and still aren't satisfied within 30 days of your first charge, we'll refund you, no questions asked.
               </p>
               <ul className="space-y-2 text-navy/90 list-disc list-inside ml-4 mb-4">
-                <li><strong>All paid plans:</strong> Full refund within 30 days of initial purchase</li>
-                <li><strong>After 30 days:</strong> No refunds for partial months, but you can cancel anytime</li>
+                <li><strong>14-day free trial:</strong> Cancel anytime during the trial and you won't be charged</li>
+                <li><strong>All paid plans:</strong> Full refund within 30 days of your first charge (after the trial ends)</li>
+                <li><strong>After 30 days:</strong> No refunds for partial months or prior billing periods, but you can cancel anytime</li>
+                <li><strong>Unused time:</strong> Subscription fees are non-refundable for periods where the service was available, regardless of usage. You are responsible for canceling your subscription if you no longer wish to be billed</li>
                 <li><strong>Cancellations:</strong> You retain access until the end of your billing period</li>
                 <li>Email hello@prodfolio.io for refund requests</li>
               </ul>
@@ -406,12 +430,12 @@ export default function TermsOfService() {
                 Email: hello@prodfolio.io
               </address>
               <p className="text-navy/90">
-                We're here to help. 💙
+                We're here to help. 💜
               </p>
             </section>
 
             {/* Footer */}
-            <footer className="text-center pt-8 pb-4">
+            <footer className="text-center pt-2 pb-0">
               <p className="text-navy/70 text-sm">
                 <strong>Prodfolio™ is a trademark of Just Fractional LLC. All rights reserved.</strong>
               </p>
@@ -419,7 +443,22 @@ export default function TermsOfService() {
           </div>
         </article>
       </main>
-      
+
+      {/* CTA Section */}
+      <section className="pb-12 px-4 cta-glow-section">
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Ready to build yours?
+          </h2>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="https://app.prodfolio.io/sign-up">Get Started Free</a>
+          </Button>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

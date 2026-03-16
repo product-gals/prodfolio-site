@@ -1,33 +1,48 @@
 import { useSEO } from "@/hooks/useSEO";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const PrivacyPolicy = () => {
   useSEO({
     title: "Privacy Policy | Prodfolio",
     description: "Learn how Prodfolio collects, uses, and protects your data. We handle your information with care and never sell your data to third parties.",
+    canonical: "https://prodfolio.io/privacy",
     noindex: false,
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy",
+      "description": "Learn how Prodfolio collects, uses, and protects your data.",
+      "url": "https://prodfolio.io/privacy",
+      "dateModified": "2026-03-09",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Prodfolio",
+        "url": "https://prodfolio.io"
+      }
+    }
   });
 
   return (
     <div className="min-h-screen flex flex-col gradient-mesh-bg">
       <Navbar />
       
-      <main className="flex-1 py-20 px-4">
+      <main id="main-content" className="flex-1 pt-28 pb-6 px-4">
         <article className="prodfolio-container max-w-4xl mx-auto">
           <header className="mb-12 text-center">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text-navy">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-white">
               Privacy Policy
             </h1>
-            <p className="text-lg text-navy/80">
-              <strong>Last updated: November 16, 2025</strong>
+            <p className="text-lg text-white/80">
+              <strong>Last updated: March 9, 2026</strong>
             </p>
-            <p className="text-lg text-navy/90 mt-4 max-w-2xl mx-auto">
+            <p className="text-lg text-white/70 mt-4 max-w-2xl mx-auto">
               At Prodfolio, your privacy matters. We collect only the information we need to support your experience — and we handle it with care.
             </p>
           </header>
 
-          <div className="prose prose-lg max-w-none space-y-12">
+          <div className="space-y-8">
             {/* What We Collect */}
             <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
               <h2 className="text-3xl font-bold mb-4 text-navy">What We Collect</h2>
@@ -51,7 +66,7 @@ const PrivacyPolicy = () => {
                 <li>Send you product updates and tips (only if you opt in)</li>
                 <li>Improve our product</li>
                 <li>Provide customer support</li>
-                <li>Process payments (for paid plans)</li>
+                <li>Process payments and manage free trials (for paid plans)</li>
                 <li>Prevent fraud and abuse</li>
               </ul>
               <p className="text-navy/90 mt-4 font-semibold">
@@ -86,6 +101,7 @@ const PrivacyPolicy = () => {
                 <li><strong>Slack</strong> – internal alerts for new sign-ups (name, email, plan, and ID only)</li>
                 <li><strong>Zapier</strong> – workflow automation</li>
                 <li><strong>Notion</strong> – internal operations and user organization tracking</li>
+                <li><strong>FullStory</strong> – session replay and product analytics to improve user experience</li>
                 <li><strong>Simple Analytics</strong> – privacy-friendly website analytics (see below)</li>
               </ul>
               <p className="text-navy/90 mt-4">
@@ -129,7 +145,29 @@ const PrivacyPolicy = () => {
                 Because Simple Analytics respects your privacy by design, no cookie consent banner is required for analytics.
               </p>
               <p className="text-navy/90">
-                Learn more at <a href="https://simpleanalytics.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#FF8B7B] hover:underline">simpleanalytics.com/privacy-policy</a>
+                Learn more at <a href="https://simpleanalytics.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#FF8B7B] hover:underline font-bold">simpleanalytics.com/privacy-policy</a>
+              </p>
+            </section>
+
+            {/* FullStory (Product Analytics) */}
+            <section className="bg-white/30 backdrop-blur-sm rounded-2xl p-8 border border-white/40">
+              <h2 className="text-3xl font-bold mb-4 text-navy">FullStory (Product Analytics)</h2>
+              <p className="text-navy/90 mb-4">
+                We use FullStory to understand how users interact with the Prodfolio app so we can improve the experience and fix issues faster.
+              </p>
+              <p className="text-navy/90 mb-2"><strong>What FullStory collects:</strong></p>
+              <ul className="space-y-2 text-navy/90 mb-4">
+                <li>Session replays (clicks, scrolls, page navigation within the app)</li>
+                <li>Error logs and performance data</li>
+                <li>Device and browser information</li>
+              </ul>
+              <p className="text-navy/90 mb-2"><strong>What FullStory does NOT collect:</strong></p>
+              <ul className="space-y-2 text-navy/90 mb-4">
+                <li>Passwords or payment information (automatically excluded)</li>
+                <li>Data is not sold to third parties</li>
+              </ul>
+              <p className="text-navy/90">
+                You can opt out of FullStory tracking at <a href="https://www.fullstory.com/optout/" target="_blank" rel="noopener noreferrer" className="text-[#FF8B7B] hover:underline font-bold">fullstory.com/optout</a>
               </p>
             </section>
 
@@ -209,6 +247,9 @@ const PrivacyPolicy = () => {
                 <li>All your data is permanently deleted within 30 days</li>
               </ul>
               <p className="text-navy/90 mt-4">
+                <strong>Free trial data:</strong> If you cancel during your 14-day free trial, your payment information is not retained by Prodfolio (Stripe may retain minimal records per their policies). Your account and content follow the same deletion process described above.
+              </p>
+              <p className="text-navy/90 mt-4">
                 Some information may be retained longer if required by law:
               </p>
               <ul className="space-y-2 text-navy/90">
@@ -277,19 +318,34 @@ const PrivacyPolicy = () => {
                 Email: hello@prodfolio.io
               </address>
               <p className="text-navy/90 mt-4">
-                We actually read our emails and typically respond within 1-2 business days. 💙
+                We actually read our emails and typically respond within 1-2 business days. 💜
               </p>
             </section>
 
             {/* Footer */}
-            <footer className="text-center pt-8 pb-4">
+            <footer className="text-center pt-2 pb-0">
               <p className="text-navy/70 text-sm">
-                <strong>Prodfolio™ is a product of Just Fractional LLC. All rights reserved.</strong>
+                <strong>Prodfolio™ is a trademark of Just Fractional LLC. All rights reserved.</strong>
               </p>
             </footer>
           </div>
         </article>
       </main>
+
+      {/* CTA Section */}
+      <section className="pb-12 px-4 cta-glow-section">
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Ready to build yours?
+          </h2>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="https://app.prodfolio.io/sign-up">Get Started Free</a>
+          </Button>
+        </div>
+      </section>
 
       <Footer />
     </div>

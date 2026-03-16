@@ -1,0 +1,240 @@
+import { Button } from "@/components/ui/button";
+import { useSEO } from "@/hooks/useSEO";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Link } from "react-router-dom";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
+import { CheckCircle, X } from "lucide-react";
+
+const ForCareerChangers = () => {
+  const heroAnimation = useScrollAnimation();
+  const whyAnimation = useScrollAnimation();
+  const whatAnimation = useScrollAnimation();
+  const ctaAnimation = useScrollAnimation();
+
+  useSEO({
+    title: "PM Portfolio for Career Changers | Break Into Product Management | Prodfolio",
+    description: "Transitioning to product management? Build a portfolio that proves you think like a PM—even without the title. Show hiring managers your product mindset.",
+    canonical: "https://prodfolio.io/for-career-changers",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "PM Portfolio for Career Changers",
+      "description": "Resources and tools for professionals transitioning into product management roles.",
+      "url": "https://prodfolio.io/for-career-changers"
+    },
+    breadcrumbs: [
+      { name: "Home", url: "https://prodfolio.io" },
+      { name: "For Career Changers", url: "https://prodfolio.io/for-career-changers" },
+    ],
+  });
+
+  return (
+    <div className="min-h-screen gradient-mesh-bg" id="main-content" role="main">
+      <Navbar />
+
+      {/* Hero Section */}
+      <section
+        ref={heroAnimation.ref as React.RefObject<HTMLElement>}
+        className={`pt-28 pb-8 px-4 ${heroAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container text-center max-w-[1200px] mx-auto">
+          <p className="text-lg text-white/80 mb-4 font-medium">For Career Changers</p>
+          <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 text-white">
+            Your experience is more <span className="gradient-text">relevant than you think.</span>
+          </h1>
+          <p className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto mb-10">
+            Transitioning into product management? Your portfolio shows hiring managers what your resume can't: that you already have the mindset.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button
+              asChild
+              className="px-8 py-6 h-auto text-lg bg-white text-navy hover:bg-white/90 shadow-xl font-semibold rounded-xl transition-all hover:scale-105"
+            >
+              <a href="https://app.prodfolio.io/sign-up">Start Your Portfolio Free</a>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 font-medium rounded-xl"
+            >
+              <Link to="/quiz">What Kind of PM Are You?</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Why You Don't Need a PM Title */}
+      <section
+        ref={whyAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-12 px-4 ${whyAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white">
+              You don't need a PM title to build a PM portfolio
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <article className="glass-card p-6">
+              <span className="text-sm font-mono text-primary/60 font-bold mb-3 block">01</span>
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Side projects count</h3>
+              <p className="text-white/70 leading-relaxed">
+                Built an app? Launched a community project? Led a volunteer initiative? These demonstrate real product thinking.
+              </p>
+            </article>
+
+            <article className="glass-card p-6">
+              <span className="text-sm font-mono text-primary/60 font-bold mb-3 block">02</span>
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Reframe your experience</h3>
+              <p className="text-white/70 leading-relaxed">
+                Engineers solve problems. Marketers understand users. Designers ship experiences. You already have transferable PM skills.
+              </p>
+            </article>
+
+            <article className="glass-card p-6">
+              <span className="text-sm font-mono text-primary/60 font-bold mb-3 block">03</span>
+              <h3 className="text-xl font-heading font-bold text-white mb-3">Show the mindset</h3>
+              <p className="text-white/70 leading-relaxed">
+                PMs identify problems, prioritize solutions, and drive outcomes. Show how you've done this — in any role.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* What Career Changers Showcase */}
+      <section
+        ref={whatAnimation.ref as React.RefObject<HTMLElement>}
+        className={`py-12 px-4 ${whatAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="prodfolio-container max-w-[1200px] mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+                What career changers showcase
+              </h2>
+              <p className="text-lg text-white/80">
+                Your portfolio isn't about PM experience. It's about PM thinking.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <div className="glass-card p-6 flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Process over pedigree</h3>
+                  <p className="text-white/70">
+                    Show how you approached a problem, not just that you solved it. Walk through your thinking, the trade-offs you considered, and why you made specific decisions.
+                  </p>
+                </div>
+              </div>
+
+              <div className="glass-card p-6 flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Transferable skills from your current role</h3>
+                  <p className="text-white/70">
+                    Led cross-functional projects? Analyzed user data? Coordinated stakeholders? These are PM skills in action. Frame them that way.
+                  </p>
+                </div>
+              </div>
+
+              <div className="glass-card p-6 flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Product thinking from everyday decisions</h3>
+                  <p className="text-white/70">
+                    Proposed a process improvement? Identified an unmet customer need? Prioritized competing demands? These stories prove you think like a PM.
+                  </p>
+                </div>
+              </div>
+
+              <div className="glass-card p-6 flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-coral flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-2">Side projects and passion work</h3>
+                  <p className="text-white/70">
+                    Personal apps, volunteer tech projects, community initiatives: these demonstrate initiative and give you full ownership stories to tell.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Before/After Section */}
+      <section className="py-12 px-4">
+        <div className="prodfolio-container max-w-[1000px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+              From "I have no PM experience" to "here's my portfolio"
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="glass-card p-6">
+              <div className="text-coral font-heading font-bold text-sm mb-4 uppercase tracking-wide">Without a portfolio</div>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-3">
+                  <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                  <span>Resume gets lost in a stack of 200 applications</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                  <span>No way to prove product thinking without a PM title</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <X className="w-4 h-4 text-coral flex-shrink-0 mt-0.5" />
+                  <span>"Tell me about a product you built" becomes a struggle</span>
+                </li>
+              </ul>
+            </div>
+            <div className="glass-card p-6">
+              <div className="text-primary font-heading font-bold text-sm mb-4 uppercase tracking-wide">With your Prodfolio</div>
+              <ul className="space-y-3 text-white/70 text-sm">
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Shareable link in every application proves you can ship</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Structured case studies show PM thinking from any role</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                  <span>Walk through real examples with confidence in interviews</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section
+        ref={ctaAnimation.ref as React.RefObject<HTMLElement>}
+        className={`pt-6 pb-12 px-4 cta-glow-section ${ctaAnimation.isVisible ? "animate-fade-in" : "opacity-0"}`}
+      >
+        <div className="text-center">
+          <h2 className="text-2xl font-heading font-bold text-white mb-6">
+            Turn your experience into an opportunity
+          </h2>
+          <Button
+            asChild
+            className="px-8 py-5 h-auto text-base bg-white text-primary font-semibold hover:bg-white/90 hover:scale-105 transition-all shadow-xl rounded-xl"
+          >
+            <a href="https://app.prodfolio.io/sign-up">Get Started Free</a>
+          </Button>
+        </div>
+      </section>
+
+      <Footer />
+      <StickyCTA />
+    </div>
+  );
+};
+
+export default ForCareerChangers;
