@@ -23,14 +23,13 @@ const Footer = () => {
       });
 
       if (!response.ok) {
-        const errData = await response.json();
-        throw new Error(JSON.stringify(errData));
+        throw new Error("Subscription failed");
       }
 
       setSubmitted(true);
       setEmail("");
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } catch {
+      setError("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
