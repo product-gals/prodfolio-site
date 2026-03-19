@@ -82,14 +82,6 @@ const Pricing = () => {
           <p className="text-xl text-white/80 mb-4">
             For less than the cost of a coffee per week, stand out in every application.
           </p>
-          <div className="flex items-center justify-center gap-2 text-sm text-white/70">
-            <span className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-              ))}
-            </span>
-            <span className="font-medium text-white">Join 125+ PMs showcasing their work</span>
-          </div>
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+
 import { X } from "lucide-react";
 
 const StickyCTA = () => {
@@ -18,23 +18,25 @@ const StickyCTA = () => {
   if (!isVisible || isDismissed) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-40 md:hidden">
-      <div className="bg-[#100D22]/95 backdrop-blur-xl border-t border-white/15 px-4 py-3 flex items-center gap-3">
+    <div className="fixed bottom-0 inset-x-0 z-50 md:hidden">
+      <div className="bg-[#100D22]/95 backdrop-blur-xl border-t border-white/15 pl-3 pr-16 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex items-center gap-2">
+        <button
+          onClick={() => setIsDismissed(true)}
+          className="text-white/50 hover:text-white/80 transition-colors p-1 shrink-0"
+          aria-label="Dismiss"
+        >
+          <X className="w-4 h-4" />
+        </button>
         <Button asChild className="flex-1 bg-white text-navy hover:bg-white/90 font-semibold py-3 h-auto rounded-xl shadow-lg text-sm">
           <a href="https://app.prodfolio.io/sign-up">
             Start Free
           </a>
         </Button>
-        <Button asChild variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 py-3 h-auto rounded-xl text-sm">
-          <Link to="/quiz">Quiz</Link>
+        <Button asChild className="flex-1 border-white/30 bg-white/10 text-white hover:bg-white/20 py-3 h-auto rounded-xl text-sm" variant="outline">
+          <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
+            Live Session
+          </a>
         </Button>
-        <button
-          onClick={() => setIsDismissed(true)}
-          className="text-white/50 hover:text-white/80 transition-colors p-1"
-          aria-label="Dismiss"
-        >
-          <X className="w-4 h-4" />
-        </button>
       </div>
     </div>
   );

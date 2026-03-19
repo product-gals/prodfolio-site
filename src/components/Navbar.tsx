@@ -213,7 +213,13 @@ const Navbar = () => {
               </div>
 
               {/* Mobile menu button */}
-              <div className="md:hidden">
+              <div className="md:hidden flex items-center gap-3">
+                <Link
+                  to="/examples"
+                  className="text-sm font-semibold text-coral-light hover:text-white transition-colors"
+                >
+                  View Examples
+                </Link>
                 <button
                   onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                   className="text-white hover:text-white/80 transition-colors"
