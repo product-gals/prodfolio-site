@@ -175,9 +175,9 @@ const Landing = () => {
           
           {/* Overlapping cards */}
           <div className="max-w-6xl mx-auto relative">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-6 md:items-stretch">
+            <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-2 md:overflow-visible md:snap-none md:pb-0 md:items-stretch">
               {/* Card 1 */}
-              <article className="glass-card p-8 relative hover:z-10 flex flex-col h-full">
+              <article className="glass-card p-8 relative hover:z-10 flex flex-col h-full min-w-[320px] snap-center md:min-w-0">
                 <div className="absolute -top-3 left-6">
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center border border-white/40">
                     <Quote className="w-4 h-4 text-white" />
@@ -199,7 +199,7 @@ const Landing = () => {
               </article>
               
               {/* Card 2 */}
-              <article className="glass-card p-8 relative hover:z-10 flex flex-col h-full">
+              <article className="glass-card p-8 relative hover:z-10 flex flex-col h-full min-w-[320px] snap-center md:min-w-0">
                 <div className="absolute -top-3 left-6">
                   <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center border border-white/40">
                     <Quote className="w-4 h-4 text-white" />
@@ -220,78 +220,6 @@ const Landing = () => {
                 </div>
               </article>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Who Prodfolio is For - Audience Segmentation */}
-      <section ref={audienceAnimation.ref as React.RefObject<HTMLElement>} className={`py-10 ${audienceAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="prodfolio-container max-w-[1400px]">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">
-              Who Prodfolio is for
-            </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Whether you're leveling up, making a move, or breaking in - we've got you.
-            </p>
-            <p className="text-sm text-white/60 italic mt-3">
-              PMs using Prodfolio have landed roles at JP Morgan, Meta, and more
-            </p>
-          </div>
-
-          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-3 md:overflow-visible md:snap-none md:pb-0 max-w-5xl mx-auto">
-            {/* Product Managers */}
-            <article className="glass-card p-6 text-center hover:scale-[1.02] transition-transform flex flex-col min-w-[280px] snap-center md:min-w-0">
-              <h3 className="text-xl font-bold text-white mb-3">Product Managers</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-4">
-                You've shipped products, led teams, driven results. Document your impact and own your narrative for that next promotion or role.
-              </p>
-              <a href="/examples" className="inline-block mt-auto px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
-                See examples →
-              </a>
-            </article>
-
-            {/* Aspiring Product Managers */}
-            <article className="glass-card p-6 text-center hover:scale-[1.02] transition-transform flex flex-col min-w-[280px] snap-center md:min-w-0">
-              <h3 className="text-xl font-bold text-white mb-3">Aspiring Product Managers</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-4">
-                No PM title yet? Showcase your product thinking and prove you have the mindset hiring managers are looking for.
-              </p>
-              <Link to="/quiz" className="inline-block mt-auto px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
-                Find your starting point →
-              </Link>
-            </article>
-
-            {/* Product Leaders & Teams */}
-            <article className="glass-card p-6 text-center hover:scale-[1.02] transition-transform flex flex-col min-w-[280px] snap-center md:min-w-0">
-              <h3 className="text-xl font-bold text-white mb-3">Product Leaders & Teams</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-4">
-                Directors, PMMs, and designers - your work drives product success. Make your strategic impact visible.
-              </p>
-              <a href="/features" className="inline-block mt-auto px-5 py-2 bg-white/20 border border-white/30 text-white font-semibold rounded-lg hover:bg-white/30 transition-all">
-                See features →
-              </a>
-            </article>
-          </div>
-
-          {/* Hiring Manager Banner */}
-          <div className="max-w-3xl mx-auto mt-10">
-            <a
-              href="/for-hiring-managers"
-              className="block bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 hover:bg-white/15 transition-all group"
-            >
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex-1">
-                  <p className="text-white font-semibold text-lg">Hiring for product roles?</p>
-                  <p className="text-white/70 text-sm">See how Prodfolio helps you evaluate candidates beyond the resume.</p>
-                </div>
-                <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-all">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </a>
           </div>
         </div>
       </section>
@@ -489,7 +417,7 @@ const Landing = () => {
           </div>
           <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-2 md:overflow-visible md:snap-none md:pb-0 max-w-5xl mx-auto">
             {[
-              { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Olymbia B.", role: "CNBC" },
+              { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Olympia B.", role: "CNBC" },
               { before: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it.", highlight: "Prodfolio gets what product managers actually need.", name: "Lea", role: "Product Lead" },
               { before: "I've used Wix, Squarespace, and Behance — they were so time-consuming.", highlight: "Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
               { before: "The product is really intuitive with an amazing structure.", highlight: "As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
