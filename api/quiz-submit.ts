@@ -16,23 +16,24 @@ interface QuizSubmission {
 }
 
 async function appendToGoogleSheets(data: QuizSubmission) {
-  const rawKey = process.env.GOOGLE_PRIVATE_KEY;
-  console.log("DEBUG: service account email:", process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL);
-  console.log("DEBUG: key exists:", !!rawKey);
-  console.log("DEBUG: key length:", rawKey?.length);
-  console.log("DEBUG: key starts with:", rawKey?.substring(0, 40));
-  console.log("DEBUG: key ends with:", rawKey?.substring((rawKey?.length || 0) - 40));
-  console.log("DEBUG: key contains literal \\n:", rawKey?.includes("\\n"));
-  console.log("DEBUG: key contains real newline:", rawKey?.includes("\n"));
+  let privateKey = process.env.GOOGLE_PRIVATE_KEY || "";
+  // Handle all possible formats of the private key:
+  // 1. Literal \n strings (from JSON) -> replace with real newlines
+  privateKey = privateKey.replace(/\\n/g, "\n");
+  // 2. No newlines at all (Vercel strips them) -> reconstruct PEM format
+  if (!privateKey.includes("\n")) {
+    const header = "-----BEGIN PRIVATE KEY-----";
+    const footer = "-----END PRIVATE KEY-----";
+    const body = privateKey.replace(header, "").replace(footer, "").trim();
+    const wrapped = body.match(/.{1,64}/g)?.join("\n") || body;
+    privateKey = `${header}\n${wrapped}\n${footer}\n`;
+  }
 
-  const privateKey = rawKey?.replace(/\\n/g, "\n");
-
-  const auth = new google.auth.JWT(
-    process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    undefined,
-    privateKey,
-    ["https://www.googleapis.com/auth/spreadsheets"]
-  );
+  const auth = new google.auth.JWT({
+    email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    key: privateKey,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
 
   const sheets = google.sheets({ version: "v4", auth });
   const spreadsheetId = process.env.GOOGLE_SHEET_ID;
@@ -116,22 +117,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     await appendToGoogleSheets({ firstName, email, marketingOptIn, journeyStage, answers, multiAnswers, archetype });
     results.sheets = true;
-  } catch (error: any) {
-    const rawKey = process.env.GOOGLE_PRIVATE_KEY;
-    const debugInfo = {
-      serviceAccountEmail: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || "MISSING",
-      keyExists: !!rawKey,
-      keyLength: rawKey?.length || 0,
-      keyStartsWith: rawKey?.substring(0, 30) || "MISSING",
-      keyContainsLiteralNewline: rawKey?.includes("\\n") || false,
-      keyContainsRealNewline: rawKey?.includes("\n") || false,
-      sheetId: process.env.GOOGLE_SHEET_ID || "MISSING",
-      errorMessage: error?.message || String(error),
-    };
-    console.error("Google Sheets error - debug:", JSON.stringify(debugInfo));
+  } catch (error) {
     console.error("Google Sheets error:", error);
     results.errors.push("Failed to save to spreadsheet");
-    (results as any).debug = debugInfo;
   }
 
   // Conditionally subscribe to Beehiiv
