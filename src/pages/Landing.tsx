@@ -125,13 +125,9 @@ const Landing = () => {
                 </a>
               </Button>
             </div>
-            <div className="flex items-center justify-center gap-3 mt-4">
-              <img src={aaronTestimonial} alt="Aaron K., VP of Product" className="w-8 h-8 rounded-full object-cover flex-shrink-0" loading="lazy" />
-              <p className="text-sm text-white/80 italic max-w-md text-left">
-                "Portfolios reveal how PMs navigate complexity — how they think, influence without authority, and drive outcomes."
-                <span className="text-white/50 not-italic"> — Aaron K., VP of Product</span>
-              </p>
-            </div>
+            <p className="text-sm text-white/60 italic mt-4">
+              PMs using Prodfolio have landed roles at JP Morgan, Meta, and more
+            </p>
 
           </header>
 
