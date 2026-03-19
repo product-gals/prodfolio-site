@@ -239,9 +239,9 @@ const Landing = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-3 md:overflow-visible md:snap-none md:pb-0 max-w-5xl mx-auto">
             {/* Product Managers */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform flex flex-col">
+            <article className="glass-card p-6 text-center hover:scale-[1.02] transition-transform flex flex-col min-w-[280px] snap-center md:min-w-0">
               <h3 className="text-xl font-bold text-white mb-3">Product Managers</h3>
               <p className="text-white/70 text-sm leading-relaxed mb-4">
                 You've shipped products, led teams, driven results. Document your impact and own your narrative for that next promotion or role.
@@ -252,7 +252,7 @@ const Landing = () => {
             </article>
 
             {/* Aspiring Product Managers */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform flex flex-col">
+            <article className="glass-card p-6 text-center hover:scale-[1.02] transition-transform flex flex-col min-w-[280px] snap-center md:min-w-0">
               <h3 className="text-xl font-bold text-white mb-3">Aspiring Product Managers</h3>
               <p className="text-white/70 text-sm leading-relaxed mb-4">
                 No PM title yet? Showcase your product thinking and prove you have the mindset hiring managers are looking for.
@@ -263,7 +263,7 @@ const Landing = () => {
             </article>
 
             {/* Product Leaders & Teams */}
-            <article className="glass-card p-8 text-center hover:scale-[1.02] transition-transform flex flex-col">
+            <article className="glass-card p-6 text-center hover:scale-[1.02] transition-transform flex flex-col min-w-[280px] snap-center md:min-w-0">
               <h3 className="text-xl font-bold text-white mb-3">Product Leaders & Teams</h3>
               <p className="text-white/70 text-sm leading-relaxed mb-4">
                 Directors, PMMs, and designers - your work drives product success. Make your strategic impact visible.
@@ -309,8 +309,8 @@ const Landing = () => {
           </div>
 
           {/* Feature 01 - Import */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
-            <div className="order-2 lg:order-1">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-28">
+            <div className="order-1 lg:order-1">
               <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">01 — IMPORT</div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Import your experience in seconds
@@ -324,7 +324,7 @@ const Landing = () => {
                 </a>
               </Button>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-2 lg:order-2">
               {/* Import UI Mockup */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto hover-lift">
                 <div className="flex items-center gap-3 mb-4 pb-4 border-b border-white/15">
@@ -370,8 +370,8 @@ const Landing = () => {
           </div>
 
           {/* Feature 02 - Build */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20 lg:mb-28">
-            <div className="order-2">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 lg:mb-28">
+            <div className="order-1 lg:order-2">
               <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">02 — BUILD</div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 Structure your story with SIGNAL
@@ -385,7 +385,7 @@ const Landing = () => {
                 </a>
               </Button>
             </div>
-            <div className="order-1">
+            <div className="order-2 lg:order-1">
               {/* SIGNAL Framework UI Mockup */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:mr-auto hover-lift">
                 <div className="flex items-center justify-between mb-4 pb-4 border-b border-white/15">
@@ -429,8 +429,8 @@ const Landing = () => {
           </div>
 
           {/* Feature 03 - Share */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div className="order-1 lg:order-1">
               <div className="inline-block bg-primary/40 text-white font-heading font-bold text-sm tracking-wide mb-3 px-3 py-1.5 rounded-full">03 — SHARE</div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
                 One link. Unlimited impact.
@@ -444,7 +444,7 @@ const Landing = () => {
                 </a>
               </Button>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-2 lg:order-2">
               {/* Share UI Mockup */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-6 max-w-md mx-auto lg:ml-auto hover-lift">
                 <div className="flex items-center justify-between mb-6">
@@ -487,14 +487,14 @@ const Landing = () => {
               Hear it from PMs like you
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-2 md:overflow-visible md:snap-none md:pb-0 max-w-5xl mx-auto">
             {[
               { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Olymbia B.", role: "CNBC" },
               { before: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it.", highlight: "Prodfolio gets what product managers actually need.", name: "Lea", role: "Product Lead" },
               { before: "I've used Wix, Squarespace, and Behance — they were so time-consuming.", highlight: "Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
               { before: "The product is really intuitive with an amazing structure.", highlight: "As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
             ].map((t, i) => (
-              <blockquote key={i} className="glass-card p-5 flex flex-col">
+              <blockquote key={i} className="glass-card p-5 flex flex-col min-w-[300px] snap-center md:min-w-0">
                 <div className="flex gap-0.5 mb-3">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
