@@ -11,6 +11,8 @@ import meaganPhoto from "@/assets/meagan-glenn.jpeg";
 import santiPhoto from "@/assets/santiana-diaz.png";
 import snehaPhoto from "@/assets/sneha-example.jpeg";
 import olympiaPhoto from "@/assets/olympia-todisco-example.jpeg";
+import alexPhoto from "@/assets/alex photo.jpg";
+import demarioPhoto from "@/assets/demario photo.jpg";
 
 const Examples = () => {
   const heroAnimation = useScrollAnimation();
@@ -70,6 +72,24 @@ const Examples = () => {
       link: "https://app.prodfolio.io/p/olympia-bardis",
       stage: "Fintech",
       photo: olympiaPhoto
+    },
+    {
+      name: "Alex Tunney",
+      role: "Product Owner",
+      description: "A technical PM showing how to identify and remove operational bottlenecks with user-centered solutions.",
+      highlight: "See how to: design a case study around a side project, including navigating tradeoffs",
+      link: "https://app.prodfolio.io/p/alex",
+      stage: "B2B/Technical PM",
+      photo: alexPhoto
+    },
+    {
+      name: "DeMario Phipps-Smith",
+      role: "Product Manager",
+      description: "A creative PM with case studies spanning nonprofit, media, and consumer products.",
+      highlight: "See how to: create meaningful storytelling by adding a video and in depth case studies",
+      link: "https://app.prodfolio.io/p/demario-phipps-smith",
+      stage: "Consumer/Data/DTC",
+      photo: demarioPhoto
     }
   ];
 
