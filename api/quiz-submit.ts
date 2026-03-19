@@ -16,10 +16,21 @@ interface QuizSubmission {
 }
 
 async function appendToGoogleSheets(data: QuizSubmission) {
+  const rawKey = process.env.GOOGLE_PRIVATE_KEY;
+  console.log("DEBUG: service account email:", process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL);
+  console.log("DEBUG: key exists:", !!rawKey);
+  console.log("DEBUG: key length:", rawKey?.length);
+  console.log("DEBUG: key starts with:", rawKey?.substring(0, 40));
+  console.log("DEBUG: key ends with:", rawKey?.substring((rawKey?.length || 0) - 40));
+  console.log("DEBUG: key contains literal \\n:", rawKey?.includes("\\n"));
+  console.log("DEBUG: key contains real newline:", rawKey?.includes("\n"));
+
+  const privateKey = rawKey?.replace(/\\n/g, "\n");
+
   const auth = new google.auth.JWT(
     process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
     undefined,
-    process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+    privateKey,
     ["https://www.googleapis.com/auth/spreadsheets"]
   );
 
