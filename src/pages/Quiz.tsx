@@ -470,6 +470,10 @@ const Quiz = () => {
 
   const handleSingleAnswerChange = (option: string) => {
     setAnswers({ ...answers, [currentQuestion]: option });
+    // Auto-advance after a brief delay so the user sees their selection
+    setTimeout(() => {
+      handleNext();
+    }, 300);
   };
 
   const handleMultiAnswerChange = (option: string, checked: boolean) => {
