@@ -116,9 +116,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     await appendToGoogleSheets({ firstName, email, marketingOptIn, journeyStage, answers, multiAnswers, archetype });
     results.sheets = true;
-  } catch (error) {
+  } catch (error: any) {
+    const rawKey = process.env.GOOGLE_PRIVATE_KEY;
+    const debugInfo = {
+      serviceAccountEmail: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || "MISSING",
+      keyExists: !!rawKey,
+      keyLength: rawKey?.length || 0,
+      keyStartsWith: rawKey?.substring(0, 30) || "MISSING",
+      keyContainsLiteralNewline: rawKey?.includes("\\n") || false,
+      keyContainsRealNewline: rawKey?.includes("\n") || false,
+      sheetId: process.env.GOOGLE_SHEET_ID || "MISSING",
+      errorMessage: error?.message || String(error),
+    };
+    console.error("Google Sheets error - debug:", JSON.stringify(debugInfo));
     console.error("Google Sheets error:", error);
     results.errors.push("Failed to save to spreadsheet");
+    (results as any).debug = debugInfo;
   }
 
   // Conditionally subscribe to Beehiiv
