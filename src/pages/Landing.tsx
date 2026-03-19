@@ -40,7 +40,7 @@ const Landing = () => {
           "logo": "https://prodfolio.io/favicon.svg",
           "description": "Portfolio platform for product managers to showcase their work, thinking, and impact.",
           "foundingDate": "2025-02",
-          "slogan": "Show your work. Own your impact.",
+          "slogan": "You've shipped great products. Can you prove it?",
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Customer Support",
@@ -103,14 +103,14 @@ const Landing = () => {
 
         <div className="prodfolio-container max-w-[1400px] relative z-10">
           <header className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-6xl md:text-8xl font-heading font-bold leading-[1.1] tracking-tight mb-6 text-white">
-              Show your work.
+            <h1 className="text-5xl md:text-7xl font-heading font-bold leading-[1.1] tracking-tight mb-6 text-white">
+              You've shipped great products.
               <br />
-              <span className="gradient-text">Own your impact.</span>
+              <span className="gradient-text">Can you prove it?</span>
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 mb-8 max-w-xl mx-auto leading-relaxed">
-              Go from blank page to shareable portfolio in under an hour — no design skills needed.
+              Go from resume to published portfolio in under an hour.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4" aria-label="Primary call to action">
@@ -120,21 +120,18 @@ const Landing = () => {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="px-8 py-6 h-auto text-lg border-white/40 bg-white/10 text-white hover:bg-white/20 transition-all font-semibold">
-                <Link to="/quiz">
-                  What Kind of PM Are You?
-                </Link>
+                <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
+                  Join a Free Live Session
+                </a>
               </Button>
             </div>
-            <p className="text-sm text-white/70 flex items-center justify-center gap-1">
-              <span className="flex gap-0.5" aria-label="5 out of 5 stars">
-                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-                <Star className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-              </span>
-              Join 125+ product managers building their portfolios
-            </p>
+            <div className="flex items-center justify-center gap-3 mt-4">
+              <img src={aaronTestimonial} alt="Aaron K., VP of Product" className="w-8 h-8 rounded-full object-cover flex-shrink-0" loading="lazy" />
+              <p className="text-sm text-white/80 italic max-w-md text-left">
+                "Portfolios reveal how PMs navigate complexity — how they think, influence without authority, and drive outcomes."
+                <span className="text-white/50 not-italic"> — Aaron K., VP of Product</span>
+              </p>
+            </div>
 
           </header>
 
@@ -161,37 +158,6 @@ const Landing = () => {
                 <img src={screenshotMid} alt="Case studies and professional references" className="w-full h-auto block" loading="lazy" />
                 <img src={screenshotBottom} alt="Product philosophy and beyond work projects" className="w-full h-auto block" loading="lazy" />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Market Stats Bar - Opportunity-focused messaging */}
-      <section ref={statsAnimation.ref as React.RefObject<HTMLElement>} className={`pt-4 pb-12 -mt-4 ${statsAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="prodfolio-container max-w-[1400px]">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2">
-              Your work speaks louder than another application
-            </h2>
-            <p className="text-white/80 max-w-2xl mx-auto">
-              The PMs who stand out are the ones who show their thinking, not just list their titles.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">90%</div>
-              <div className="text-sm text-white/80">of PMs don't have portfolios</div>
-              <div className="text-xs text-white/70 mt-1">Cut through the noise</div>
-            </div>
-            <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">&lt;1 hour</div>
-              <div className="text-sm text-white/80">to build what sets you apart</div>
-              <div className="text-xs text-white/70 mt-1">Not weeks of prompting</div>
-            </div>
-            <div className="glass-pill text-center">
-              <div className="text-3xl font-bold text-white mb-1">+28%</div>
-              <div className="text-sm text-white/80">growth in Associate PM roles in the US this month</div>
-              <div className="text-xs text-white/70 mt-1">Now's the time to break in</div>
             </div>
           </div>
         </div>
@@ -267,6 +233,9 @@ const Landing = () => {
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
               Whether you're leveling up, making a move, or breaking in - we've got you.
+            </p>
+            <p className="text-sm text-white/60 italic mt-3">
+              PMs using Prodfolio have landed roles at JP Morgan, Meta, and more
             </p>
           </div>
 
@@ -520,8 +489,8 @@ const Landing = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
             {[
-              { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Senior PM", role: "SaaS Company" },
-              { before: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it.", highlight: "Prodfolio gets what product managers actually need.", name: "Product Lead", role: "Finance" },
+              { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Olymbia B.", role: "CNBC" },
+              { before: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it.", highlight: "Prodfolio gets what product managers actually need.", name: "Lea", role: "Product Lead" },
               { before: "I've used Wix, Squarespace, and Behance — they were so time-consuming.", highlight: "Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
               { before: "The product is really intuitive with an amazing structure.", highlight: "As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
             ].map((t, i) => (
@@ -541,61 +510,6 @@ const Landing = () => {
                 </footer>
               </blockquote>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Live Setup Sessions */}
-      <section ref={liveSessionAnimation.ref as React.RefObject<HTMLElement>} className={`py-12 ${liveSessionAnimation.isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-        <div className="prodfolio-container max-w-[1400px]">
-          <div className="max-w-3xl mx-auto">
-            <div className="glass-card p-8 md:p-10">
-              <div className="flex flex-col md:flex-row md:items-center gap-8">
-                {/* Left: heading + description */}
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-primary/30 rounded-full flex items-center justify-center shrink-0">
-                      <Users className="w-5 h-5 text-white" />
-                    </div>
-                    <h2 className="text-2xl md:text-3xl font-heading font-bold text-white">
-                      Build your portfolio live with us
-                    </h2>
-                  </div>
-                  <p className="text-white/80 text-lg leading-relaxed">
-                    Join a free 1-hour setup session. You'll upload your resume, generate an AI case study, customize your theme, and leave with a published portfolio you can share that same day.
-                  </p>
-                </div>
-                {/* Right: stats + CTA */}
-                <div className="flex flex-col gap-4 md:min-w-[260px]">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-5 h-5 text-primary shrink-0" />
-                    <div>
-                      <div className="text-sm font-semibold text-white">Tuesdays & Thursdays</div>
-                      <div className="text-xs text-white/60">1 hour, live on Zoom</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    <div>
-                      <div className="text-sm font-semibold text-white">100% free</div>
-                      <div className="text-xs text-white/60">No account required to book</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                    <div>
-                      <div className="text-sm font-semibold text-white">Leave with a live portfolio</div>
-                      <div className="text-xs text-white/60">Ready to share in 1 hour</div>
-                    </div>
-                  </div>
-                  <Button asChild size="lg" className="mt-2 px-8 py-5 h-auto text-base bg-white text-navy hover:bg-white/90 hover:scale-105 transition-all shadow-xl font-semibold rounded-xl w-full">
-                    <a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener noreferrer">
-                      Join a live session <span aria-hidden="true">➜</span>
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
