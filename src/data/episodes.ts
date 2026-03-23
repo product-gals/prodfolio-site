@@ -672,7 +672,7 @@ export const episodes: Episode[] = [
   {
     id: "16",
     slug: "season-three-kickoff",
-    title: "The Product Pivot | Season 3 Kickoff with Santi and Meagan",
+    title: "Season 3 Kickoff with Santi and Meagan",
     episodeNumber: "S3E1",
     guest: {
       name: "Santi & Meagan",
