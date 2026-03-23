@@ -19,6 +19,7 @@ import heidiPhoto from "@/assets/heidi-ram.jpeg";
 import nickPhoto from "@/assets/nick-photo.jpeg";
 import eddiePhoto from "@/assets/eddie-rosenfeld.jpeg";
 import aaronPhoto from "@/assets/aaron-kesler.png";
+import s3KickoffThumbnail from "@/assets/The Product Pivot. Season 3. Season 3 Kickoff.png";
 
 export interface Episode {
   id: string;
@@ -667,6 +668,40 @@ export const episodes: Episode[] = [
       { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" }
     ],
     keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
+  },
+  {
+    id: "16",
+    slug: "season-three-kickoff",
+    title: "The Product Pivot | Season 3 Kickoff with Santi and Meagan",
+    episodeNumber: "S3E1",
+    guest: {
+      name: "Santi & Meagan",
+      role: "Your Hosts",
+      company: "Prodfolio",
+      website: "https://prodfolio.io",
+      industry: "Product Management, SaaS",
+      bio: "Santi and Meagan are the co-hosts of The Product Pivot and co-founders of Prodfolio, a portfolio platform for product managers. In this Season 3 opener, they get honest about the past year — building Prodfolio, recording a full season in two weeks, and navigating life as PMs who build on the side.",
+      linkedin: "https://www.linkedin.com/company/the-product-pivot/"
+    },
+    description: "Meagan and Santi get honest about building Prodfolio, running discovery, co-founder dynamics, and why 'not the right time' is never really the reason.",
+    longDescription: "Season 3 of The Product Pivot starts with an episode that's a little different.\n\nHost Meagan Glenn sits down with co-founder and co-host Santi to talk openly about the past year of building Prodfolio — a portfolio platform for product managers — while navigating a second pregnancy, a toddler, gestational diabetes, a full-time job, and a podcast. This is the first time Santi is talking about it publicly.\n\nTogether they cover what discovery and beta testing looked like for Prodfolio, how they recorded an entire season in two weeks before Santi went on leave, the co-founder dynamic that kept them from burning out, and why they believe the PM skill set is one of the most transferable things you can develop.\n\nWhether you're a PM considering building something on the side, a founder trying to figure out how to keep momentum when life gets complicated, or just someone who wants an honest look at what it takes — this one's worth your time.",
+    youtubeId: "rzXENTGRFho",
+    buzzsproutId: "18893969",
+    topic: "career",
+    topics: ["Season Kickoff", "Hosts Update", "Season 3 Preview", "Career Reflections"],
+    duration: "56 min",
+    publishedAt: "2026-03-23",
+    takeaways: [
+      "You can build something meaningful while life is happening — finding your personal groove matters more than having perfect conditions",
+      "Low pressure produces more than high pressure — removing expectations of each other and staying in open communication actually gets more done",
+      "Never skip discovery — validate your idea through real conversations before you build anything",
+      "Watching beta users navigate the product in real time is the most valuable thing you can do, not surveys, not assumptions — observation",
+      "Everything applied to building Prodfolio — discovery, prioritization, retros, user research — came directly from product management. Building on the side sharpens your PM instincts in ways a job alone can't",
+      "There's an advantage to moving early if the market gap is real — don't rush to ship something broken, but don't overthink timing either"
+    ],
+    resourcesMentioned: [],
+    keywords: ["The Product Pivot", "product management podcast", "Prodfolio", "PM portfolio", "product discovery", "user research", "co-founder relationship", "side project as a PM", "women in product", "building a startup", "PM career advice", "Meagan Glenn", "Santi"],
+    thumbnail: s3KickoffThumbnail
   }
 ];
 
