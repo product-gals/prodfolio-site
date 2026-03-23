@@ -1,0 +1,146 @@
+[
+  {
+    "slug": "from-pi-to-pm",
+    "title": "From PI to PM | The Product Pivot Podcast",
+    "description": "How Rachel pivoted from private investigator to product manager by leveraging her subject matter expertise.",
+    "guestName": "Rachel Kronenfeld",
+    "episodeNumber": "S1E1",
+    "ogImage": "https://img.youtube.com/vi/qS4IxwD9dCo/hqdefault.jpg",
+    "publishedAt": "2024-11-15"
+  },
+  {
+    "slug": "from-music-school-to-staff-pm",
+    "title": "From Music School to Staff PM | The Product Pivot Podcast",
+    "description": "Brandon's unconventional journey from music school to Staff PM at Buffer, and how creativity shapes his approach to product.",
+    "guestName": "Brandon Lucas Green",
+    "episodeNumber": "S1E2",
+    "ogImage": "https://img.youtube.com/vi/5zn1aQwMo8E/hqdefault.jpg",
+    "publishedAt": "2024-12-01"
+  },
+  {
+    "slug": "meet-the-hosts",
+    "title": "Meet Your Hosts | The Product Pivot Podcast",
+    "description": "Get to know your hosts Santi and Meagan, their journeys into product, and how The Product Pivot podcast came to be.",
+    "guestName": "Santi & Meagan",
+    "episodeNumber": "S1E3",
+    "ogImage": "https://img.youtube.com/vi/YUNFlHuEQyg/hqdefault.jpg",
+    "publishedAt": "2024-12-15"
+  },
+  {
+    "slug": "from-product-marketing-to-pm",
+    "title": "From Marketing to Product Management | The Product Pivot Podcast",
+    "description": "How TJ leveraged his product marketing background and customer obsession to land his first PM role at Nectar.",
+    "guestName": "Tyler (TJ) Johnson",
+    "episodeNumber": "S1E4",
+    "ogImage": "https://img.youtube.com/vi/LDeP5TyASDc/hqdefault.jpg",
+    "publishedAt": "2025-01-01"
+  },
+  {
+    "slug": "big-tech-myths",
+    "title": "Big Tech Myths - A PM's Journey to Microsoft | The Product Pivot Podcast",
+    "description": "Varsh breaks myths about breaking into big tech and shares how she pivoted from solutions engineering to PM at Microsoft.",
+    "guestName": "Varshine Sridharan",
+    "episodeNumber": "S1E5",
+    "ogImage": "https://img.youtube.com/vi/RLgCLZ-9ICU/hqdefault.jpg",
+    "publishedAt": "2025-01-15"
+  },
+  {
+    "slug": "is-product-management-evolving-or-disappearing",
+    "title": "Is Product Management Evolving or Disappearing | The Product Pivot Podcast",
+    "description": "Brody shares his provocative take on the future of product management and why the role may not exist in 10 years as we know it today.",
+    "guestName": "Brody Clemmer",
+    "episodeNumber": "S1E6",
+    "ogImage": "https://img.youtube.com/vi/4ZLUXW06jbg/hqdefault.jpg",
+    "publishedAt": "2025-01-29"
+  },
+  {
+    "slug": "from-newsrooms-to-roadmaps",
+    "title": "From Newsrooms to Roadmaps: Olympia's Journey | The Product Pivot Podcast",
+    "description": "Olympia shares her journey from journalism school to building products for investors at CNBC, and why storytelling is a PM superpower.",
+    "guestName": "Olympia Bardis",
+    "episodeNumber": "S1E7",
+    "ogImage": "https://img.youtube.com/vi/pUYPr4m22g4/hqdefault.jpg",
+    "publishedAt": "2025-02-12"
+  },
+  {
+    "slug": "fractional-pm-unpacked",
+    "title": "Fractional PM Unpacked | The Product Pivot Podcast",
+    "description": "Trevor unpacks fractional product management, how he pivoted from marketing, and his mission to build Mississippi's tech ecosystem.",
+    "guestName": "Trevor Acy",
+    "episodeNumber": "S1E8",
+    "ogImage": "https://img.youtube.com/vi/EBVblJFDbUQ/hqdefault.jpg",
+    "publishedAt": "2025-02-26"
+  },
+  {
+    "slug": "season-two-kickoff",
+    "title": "Season Two Kickoff and More! | The Product Pivot Podcast",
+    "description": "Hosts Meagan and Santi recap Season 1, share updates, tease Season 2 guests, and announce their new project: Prodfolio.",
+    "guestName": "Santi & Meagan",
+    "episodeNumber": "S2E1",
+    "ogImage": "https://img.youtube.com/vi/MqNuW8qXzmU/hqdefault.jpg",
+    "publishedAt": "2025-03-12"
+  },
+  {
+    "slug": "from-8-rejections-to-google",
+    "title": "From 8 Rejections to Google | The Product Pivot Podcast",
+    "description": "Gabor shares his journey of 8 Google rejections, what changed between interview one and his final offer, and why being a good PM interviewee is a separate skill.",
+    "guestName": "Gabor Mayer",
+    "episodeNumber": "S2E2",
+    "ogImage": "https://img.youtube.com/vi/AEXiTi2yFkA/hqdefault.jpg",
+    "publishedAt": "2025-03-26"
+  },
+  {
+    "slug": "evolution-of-product-ops",
+    "title": "The Evolution of Product Ops: A Deep Dive with Graham Reed | The Product Pivot Podcast",
+    "description": "Graham dives deep into product operations - when to bring it in, the skills needed, and why it's the most welcoming community in product.",
+    "guestName": "Graham Reed",
+    "episodeNumber": "S2E3",
+    "ogImage": "https://img.youtube.com/vi/FHoWewjQ8uc/hqdefault.jpg",
+    "publishedAt": "2025-04-09"
+  },
+  {
+    "slug": "power-of-storytelling-in-hiring",
+    "title": "The Power of Storytelling in Hiring | The Product Pivot Podcast",
+    "description": "Heidi shares recruiter insights on storytelling, standing out in hiring, and why your narrative matters more than your frameworks.",
+    "guestName": "Heidi Ram",
+    "episodeNumber": "S2E4",
+    "ogImage": "https://img.youtube.com/vi/Zg4SOZexDUE/hqdefault.jpg",
+    "publishedAt": "2025-04-23"
+  },
+  {
+    "slug": "from-incubator-to-product-management",
+    "title": "From Incubator to Product Management: Nikhil's Journey | The Product Pivot Podcast",
+    "description": "Nick shares his journey from supporting startups at an incubator to becoming an AI PM, and why starting a side hustle teaches you PM fundamentals.",
+    "guestName": "Nikhil (Nick) Punjabi",
+    "episodeNumber": "S2E5",
+    "ogImage": "https://img.youtube.com/vi/UisomxfRnpk/hqdefault.jpg",
+    "publishedAt": "2025-05-07"
+  },
+  {
+    "slug": "power-of-saying-yes",
+    "title": "The Power of Saying Yes (and Figuring It Out Later) | The Product Pivot Podcast",
+    "description": "Eddie shares his unconventional journey from philosophy major to VP of Applied AI, and why attitude matters more than experience in startups.",
+    "guestName": "Eduardo (Eddie) Rosenfeld",
+    "episodeNumber": "S2E6",
+    "ogImage": "https://img.youtube.com/vi/G-OiJXM2fyA/hqdefault.jpg",
+    "publishedAt": "2025-05-21"
+  },
+  {
+    "slug": "why-ai-should-be-boring",
+    "title": "Why AI Should Be Boring - And That's a Good Thing | The Product Pivot Podcast",
+    "description": "Aaron explains why AI should become boring, how vibe coding changes everything, and why AI PM skills are just traditional PM skills focused on mundane problems.",
+    "guestName": "Aaron Kesler",
+    "episodeNumber": "S2E7",
+    "ogImage": "https://img.youtube.com/vi/Kw9ssA8sSsI/hqdefault.jpg",
+    "publishedAt": "2025-06-04"
+  },
+  {
+    "slug": "season-three-kickoff",
+    "title": "Season 3 Kickoff with Santi and Meagan | The Product Pivot Podcast",
+    "description": "Meagan and Santi get honest about building Prodfolio, running discovery, co-founder dynamics, and why 'not the right time' is never really the reason.",
+    "guestName": "Santi & Meagan",
+    "episodeNumber": "S3E1",
+    "ogImage": "https://prodfolio.io/og/season-three-kickoff.png",
+    "publishedAt": "2026-03-23"
+  }
+]
