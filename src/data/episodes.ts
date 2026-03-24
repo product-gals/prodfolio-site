@@ -556,12 +556,12 @@ export const episodes: Episode[] = [
       company: "Dash Social",
       website: "https://dashsocial.com",
       industry: "Social Media & AI",
-      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business, even a lemonade stand, is one of the best ways to learn product fundamentals.",
+      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at Innovacorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business, even a lemonade stand, is one of the best ways to learn product fundamentals.",
       photo: nickPhoto,
       linkedin: "https://www.linkedin.com/in/nikhil-punjabi/"
     },
     description: "Nick shares his journey from supporting startups at an incubator to becoming an AI PM, and why starting a side hustle teaches you PM fundamentals.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at InnovaCorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business, even a lemonade stand, teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at Innovacorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business, even a lemonade stand, teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
     youtubeId: "UisomxfRnpk",
     buzzsproutId: "17929207",
     spotifyUrl: "https://open.spotify.com/episode/61FxN7RF1pUs5wKaflOlYF",
@@ -581,7 +581,7 @@ export const episodes: Episode[] = [
       "Document your journey to PM publicly. It differentiates you from the competition"
     ],
     resourcesMentioned: [
-      { title: "InnovaCorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
+      { title: "Innovacorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
       { title: "Udemy PM Courses", url: "https://www.udemy.com" }
     ],
     keywords: ["incubator to PM", "startup ecosystem", "AI product manager", "side hustle", "customer discovery", "transferable skills", "portfolio", "storytelling", "done is better than perfect", "vanity metrics", "over-solutioning", "Dash Social", "Halifax"]
