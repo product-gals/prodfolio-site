@@ -595,7 +595,7 @@ const EpisodePage = () => {
             </div>
 
             <div className="text-center mt-8">
-              <Button asChild variant="outline" className="border-white/20 bg-background text-white hover:bg-white/10">
+              <Button asChild variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20">
                 <Link to="/podcast">View All Episodes</Link>
               </Button>
             </div>
