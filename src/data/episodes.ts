@@ -687,6 +687,8 @@ export const episodes: Episode[] = [
     longDescription: "Season 3 of The Product Pivot starts with an episode that's a little different.\n\nHost Meagan Glenn sits down with co-founder and co-host Santi to talk openly about the past year of building Prodfolio — a portfolio platform for product managers — while navigating a second pregnancy, a toddler, gestational diabetes, a full-time job, and a podcast. This is the first time Santi is talking about it publicly.\n\nTogether they cover what discovery and beta testing looked like for Prodfolio, how they recorded an entire season in two weeks before Santi went on leave, the co-founder dynamic that kept them from burning out, and why they believe the PM skill set is one of the most transferable things you can develop.\n\nWhether you're a PM considering building something on the side, a founder trying to figure out how to keep momentum when life gets complicated, or just someone who wants an honest look at what it takes — this one's worth your time.",
     youtubeId: "rzXENTGRFho",
     buzzsproutId: "18893969",
+    spotifyUrl: "https://open.spotify.com/episode/3MYxJRZPqJbXsHjjbDW7Y6",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-product-pivot-season-3-kickoff-with-santi-and-meagan/id1784108281?i=1000757046421",
     topic: "career",
     topics: ["Season Kickoff", "Hosts Update", "Season 3 Preview", "Career Reflections"],
     duration: "56 min",
