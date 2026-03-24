@@ -692,7 +692,7 @@ export const episodes: Episode[] = [
     topic: "career",
     topics: ["Season Kickoff", "Hosts Update", "Season 3 Preview", "Career Reflections"],
     duration: "56 min",
-    publishedAt: "2026-03-23",
+    publishedAt: "2026-03-24",
     takeaways: [
       "You can build something meaningful while life is happening — finding your personal groove matters more than having perfect conditions",
       "Low pressure produces more than high pressure — removing expectations of each other and staying in open communication actually gets more done",
