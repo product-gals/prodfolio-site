@@ -165,7 +165,8 @@ const EpisodePage = () => {
     );
   }
 
-  const formattedDate = new Date(episode.publishedAt).toLocaleDateString('en-US', {
+  const [year, month, day] = episode.publishedAt.split('-');
+  const formattedDate = new Date(Number(year), Number(month) - 1, Number(day)).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
