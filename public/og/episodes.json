@@ -141,6 +141,15 @@
     "guestName": "Santi & Meagan",
     "episodeNumber": "S3E1",
     "ogImage": "https://prodfolio.io/og/season-three-kickoff.png",
-    "publishedAt": "2026-03-23"
+    "publishedAt": "2026-03-24"
+  },
+  {
+    "slug": "youre-the-product-your-career-is-too",
+    "title": "You're the Product. Your Career Is Too. | The Product Pivot Podcast",
+    "description": "Heidi Ram returns with recruiter-tested advice on entering 'candidate mode,' fixing your PM resume, and treating your job search like a product problem.",
+    "guestName": "Heidi Ram",
+    "episodeNumber": "S3E2",
+    "ogImage": "https://prodfolio.io/og/youre-the-product-your-career-is-too.png",
+    "publishedAt": "2026-03-31"
   }
 ]

@@ -20,6 +20,7 @@ import nickPhoto from "@/assets/nick-photo.jpeg";
 import eddiePhoto from "@/assets/eddie-rosenfeld.jpeg";
 import aaronPhoto from "@/assets/aaron-kesler.png";
 import s3KickoffThumbnail from "@/assets/The Product Pivot. Season 3. Season 3 Kickoff.png";
+import heidiThumbnail from "@/assets/The Product Pivot. Season 3. Heidi Ram. Thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -704,6 +705,49 @@ export const episodes: Episode[] = [
     resourcesMentioned: [],
     keywords: ["The Product Pivot", "product management podcast", "Prodfolio", "PM portfolio", "product discovery", "user research", "co-founder relationship", "side project as a PM", "women in product", "building a startup", "PM career advice", "Meagan Glenn", "Santi"],
     thumbnail: s3KickoffThumbnail
+  },
+  {
+    id: "17",
+    slug: "youre-the-product-your-career-is-too",
+    title: "You're the Product. Your Career Is Too.",
+    episodeNumber: "S3E2",
+    guest: {
+      name: "Heidi Ram",
+      role: "Practice Lead",
+      company: "The Product Recruiter",
+      website: "https://theproductrecruiter.com",
+      industry: "Recruiting & Product Management",
+      bio: "Heidi Ram is a Practice Lead at The Product Recruiter and has spent 25 years placing product leaders across North America. She's seen every version of this market — the boom years, the layoffs, the slow rebuilds. In this episode, she introduces her concept of 'candidate mode,' profiles three resume personas PMs get wrong, and breaks down what hiring managers actually scan for.",
+      photo: heidiPhoto,
+      linkedin: "https://www.linkedin.com/in/heidiram/"
+    },
+    description: "Heidi Ram returns with recruiter-tested advice on entering 'candidate mode,' fixing your PM resume, and treating your job search like a product problem.",
+    longDescription: "We brought Heidi Ram back — and she came with receipts.\n\nHeidi is a Practice Lead at The Product Recruiter and has spent 25 years placing product leaders across North America. She's seen every version of this market: the boom years, the layoffs, the slow rebuilds. And right now, she's watching a lot of talented product people make the same avoidable mistakes.\n\nThis episode picks up where Part 1 left off — and it gets specific fast. Heidi introduces a concept she calls 'candidate mode,' and breaks down what it actually looks like when product people fail to enter it. She talks about the PM who's technically sharp but can't talk to a customer, the candidate who's been interviewing for months without ever doing real discovery on the roles they're pursuing, and the senior leader still hunting for a team to scale in a market that's gone flat.\n\nThen she goes deep on resumes. Heidi profiles three resume personas she sees constantly: Jargon Jerry (all buzzwords, no value narrative), JD Julie (reads like a job description, not a career story), and Template Tom (pretty columns, zero scanability). She walks through exactly what each one needs to fix — and why the how belongs in the interview, not the doc.\n\nIf you're job searching, sitting on a dusty resume, or just starting to feel the market shift beneath you, this one's going to hit.",
+    youtubeId: "UyHPS0tZvZs",
+    buzzsproutId: "18901784",
+    topic: "hiring",
+    topics: ["PM Resume", "Job Search", "Candidate Mode", "Recruiting", "Career Strategy", "Hiring Trends"],
+    duration: "46 min",
+    publishedAt: "2026-03-31",
+    takeaways: [
+      "Treat your job search like a product problem — do discovery on the roles you're pursuing before investing in interviews",
+      "Staying in 'passive mode' costs you the meeting before you even know you wanted it — enter candidate mode deliberately",
+      "The market has shifted — employers are making strategic singular hires with rapid ROI expectations, not scaling teams",
+      "Three resume personas Heidi sees constantly — and how each one undermines your chances before anyone reads past line one",
+      "The 'how' belongs in the interview, not the resume — your resume should tell the value story, not list your process",
+      "The path into product usually runs through your current employer — internal moves are still the most common entry point, and aspiring PMs often overlook them",
+      "Initiative is underrated — expressing willingness to grow is something employers genuinely value",
+      "AI skilling is becoming the differentiator",
+      "Product careers are uniquely elastic — IC, director, back to IC — in ways most roles aren't. Use that to your advantage"
+    ],
+    resourcesMentioned: [
+      { title: "The Skip Podcast", url: "https://open.spotify.com/show/4oT2rxMsRP64h9NXuA11DJ" },
+      { title: "Resume Coaching - The Product Recruiter", url: "https://www.theproductrecruiter.com/resume-coaching" },
+      { title: "AI PM Course by Miqdad Jaffer", url: "https://productmanagement.ai/" },
+      { title: "Google Agent Development Kit (ADK)", url: "https://google.github.io/adk-docs/" }
+    ],
+    keywords: ["Heidi Ram", "The Product Recruiter", "PM resume tips", "candidate mode", "product manager job search", "PM career advice", "resume mistakes", "hiring trends", "product management career", "AI product manager", "career pivot into product", "resume coaching"],
+    thumbnail: heidiThumbnail
   }
 ];
 
