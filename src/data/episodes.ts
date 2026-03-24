@@ -19,6 +19,7 @@ import heidiPhoto from "@/assets/heidi-ram.jpeg";
 import nickPhoto from "@/assets/nick-photo.jpeg";
 import eddiePhoto from "@/assets/eddie-rosenfeld.jpeg";
 import aaronPhoto from "@/assets/aaron-kesler.png";
+import s3KickoffThumbnail from "@/assets/The Product Pivot. Season 3. Season 3 Kickoff.png";
 
 export interface Episode {
   id: string;
@@ -555,12 +556,12 @@ export const episodes: Episode[] = [
       company: "Dash Social",
       website: "https://dashsocial.com",
       industry: "Social Media & AI",
-      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at InnovaCorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business, even a lemonade stand, is one of the best ways to learn product fundamentals.",
+      bio: "Nick Punjabi is an AI Product Manager at Dash Social with nearly 5.5 years in product management. His journey started at Innovacorp (now Invest Nova Scotia) where he worked on the programs team supporting early-stage tech companies and startup founders. While working full time, he completed a master's degree in tech entrepreneurship and innovation. Nick is passionate about customer discovery, AI adoption in product, and helping aspiring PMs understand that starting a business, even a lemonade stand, is one of the best ways to learn product fundamentals.",
       photo: nickPhoto,
       linkedin: "https://www.linkedin.com/in/nikhil-punjabi/"
     },
     description: "Nick shares his journey from supporting startups at an incubator to becoming an AI PM, and why starting a side hustle teaches you PM fundamentals.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at InnovaCorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business, even a lemonade stand, teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Nick Punjabi, AI Product Manager at Dash Social, to explore his unique path from working in a startup incubator to product management.\n\nNick shares how supporting founders at Innovacorp inspired him to pursue product, leading him to complete a master's in tech entrepreneurship while working full time. He breaks down why starting any business, even a lemonade stand, teaches you the fundamentals of product management better than most courses.\n\nThe conversation covers practical advice for career changers: map your transferable skills to PM competencies, build a portfolio that tells your story, document your journey publicly, and embrace AI as a tool to sharpen rather than fear. Nick also delivers a memorable lesson on the dangers of over-solutioning: don't build a plane when someone just wants Jerry's bicycle to get lemonade.",
     youtubeId: "UisomxfRnpk",
     buzzsproutId: "17929207",
     spotifyUrl: "https://open.spotify.com/episode/61FxN7RF1pUs5wKaflOlYF",
@@ -580,7 +581,7 @@ export const episodes: Episode[] = [
       "Document your journey to PM publicly. It differentiates you from the competition"
     ],
     resourcesMentioned: [
-      { title: "InnovaCorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
+      { title: "Innovacorp / Invest Nova Scotia", url: "https://www.investnovascotia.ca" },
       { title: "Udemy PM Courses", url: "https://www.udemy.com" }
     ],
     keywords: ["incubator to PM", "startup ecosystem", "AI product manager", "side hustle", "customer discovery", "transferable skills", "portfolio", "storytelling", "done is better than perfect", "vanity metrics", "over-solutioning", "Dash Social", "Halifax"]
@@ -667,6 +668,42 @@ export const episodes: Episode[] = [
       { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" }
     ],
     keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
+  },
+  {
+    id: "16",
+    slug: "season-three-kickoff",
+    title: "Season 3 Kickoff with Santi and Meagan",
+    episodeNumber: "S3E1",
+    guest: {
+      name: "Santi & Meagan",
+      role: "Your Hosts",
+      company: "Prodfolio",
+      website: "https://prodfolio.io",
+      industry: "Product Management, SaaS",
+      bio: "Santi and Meagan are the co-hosts of The Product Pivot and co-founders of Prodfolio, a portfolio platform for product managers. In this Season 3 opener, they get honest about the past year — building Prodfolio, recording a full season in two weeks, and navigating life as PMs who build on the side.",
+      linkedin: "https://www.linkedin.com/company/the-product-pivot/"
+    },
+    description: "Meagan and Santi get honest about building Prodfolio, running discovery, co-founder dynamics, and why 'not the right time' is never really the reason.",
+    longDescription: "Season 3 of The Product Pivot starts with an episode that's a little different.\n\nHost Meagan Glenn sits down with co-founder and co-host Santi to talk openly about the past year of building Prodfolio — a portfolio platform for product managers — while navigating a second pregnancy, a toddler, gestational diabetes, a full-time job, and a podcast. This is the first time Santi is talking about it publicly.\n\nTogether they cover what discovery and beta testing looked like for Prodfolio, how they recorded an entire season in two weeks before Santi went on leave, the co-founder dynamic that kept them from burning out, and why they believe the PM skill set is one of the most transferable things you can develop.\n\nWhether you're a PM considering building something on the side, a founder trying to figure out how to keep momentum when life gets complicated, or just someone who wants an honest look at what it takes — this one's worth your time.",
+    youtubeId: "rzXENTGRFho",
+    buzzsproutId: "18893969",
+    spotifyUrl: "https://open.spotify.com/episode/3MYxJRZPqJbXsHjjbDW7Y6",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-product-pivot-season-3-kickoff-with-santi-and-meagan/id1784108281?i=1000757046421",
+    topic: "career",
+    topics: ["Season Kickoff", "Hosts Update", "Season 3 Preview", "Career Reflections"],
+    duration: "56 min",
+    publishedAt: "2026-03-23",
+    takeaways: [
+      "You can build something meaningful while life is happening — finding your personal groove matters more than having perfect conditions",
+      "Low pressure produces more than high pressure — removing expectations of each other and staying in open communication actually gets more done",
+      "Never skip discovery — validate your idea through real conversations before you build anything",
+      "Watching beta users navigate the product in real time is the most valuable thing you can do, not surveys, not assumptions — observation",
+      "Everything applied to building Prodfolio — discovery, prioritization, retros, user research — came directly from product management. Building on the side sharpens your PM instincts in ways a job alone can't",
+      "There's an advantage to moving early if the market gap is real — don't rush to ship something broken, but don't overthink timing either"
+    ],
+    resourcesMentioned: [],
+    keywords: ["The Product Pivot", "product management podcast", "Prodfolio", "PM portfolio", "product discovery", "user research", "co-founder relationship", "side project as a PM", "women in product", "building a startup", "PM career advice", "Meagan Glenn", "Santi"],
+    thumbnail: s3KickoffThumbnail
   }
 ];
 

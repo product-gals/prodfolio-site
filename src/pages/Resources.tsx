@@ -16,7 +16,7 @@ const seasonFilters: { value: SeasonFilter; label: string; comingSoon?: boolean 
   { value: "all", label: "All Episodes" },
   { value: "s1", label: "Season 1" },
   { value: "s2", label: "Season 2" },
-  { value: "s3", label: "Season 3", comingSoon: true }
+  { value: "s3", label: "Season 3" }
 ];
 
 const Resources = () => {
@@ -50,13 +50,12 @@ const Resources = () => {
     if (!episodeNumber) return null;
     if (episodeNumber.startsWith("S1")) return "s1";
     if (episodeNumber.startsWith("S2")) return "s2";
+    if (episodeNumber.startsWith("S3")) return "s3";
     return null;
   };
 
   const filteredEpisodes = activeFilter === "all"
     ? episodes
-    : activeFilter === "s3"
-    ? [] // Season 3 coming soon
     : episodes.filter(ep => getSeasonFromEpisode(ep.episodeNumber) === activeFilter);
 
   return (
@@ -146,21 +145,6 @@ const Resources = () => {
                 <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-primary rounded-full animate-pulse delay-300" />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Season 3 Announcement */}
-      <section className="py-8 px-4">
-        <div className="prodfolio-container max-w-[800px] mx-auto">
-          <div className="bg-gradient-to-r from-coral to-primary rounded-2xl p-6 md:p-8 text-center">
-            <p className="text-white/90 text-sm font-medium uppercase tracking-wider mb-2">Coming March 2026</p>
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-3">
-              Season 3
-            </h2>
-            <p className="text-white/90 max-w-lg mx-auto">
-              Featuring topics on breaking into product, AI, the messy middle, and what makes a good resume.
-            </p>
           </div>
         </div>
       </section>
@@ -258,15 +242,7 @@ const Resources = () => {
             ))}
           </div>
 
-          {activeFilter === "s3" ? (
-            <div className="text-center py-16">
-              <div className="text-6xl mb-4">🎙️</div>
-              <h3 className="text-2xl font-heading font-bold text-white mb-3">Season 3 Coming March 2026</h3>
-              <p className="text-white/60 max-w-md mx-auto">
-                Featuring topics on breaking into product, AI, the messy middle, and what makes a good resume.
-              </p>
-            </div>
-          ) : filteredEpisodes.length === 0 ? (
+          {filteredEpisodes.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-white/60">No episodes found for this season yet. Check back soon!</p>
             </div>
