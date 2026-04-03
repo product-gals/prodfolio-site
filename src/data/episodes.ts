@@ -22,6 +22,7 @@ import aaronPhoto from "@/assets/aaron-kesler.png";
 import s3KickoffThumbnail from "@/assets/The Product Pivot. Season 3. Season 3 Kickoff.png";
 import heidiThumbnail from "@/assets/The Product Pivot. Season 3. Heidi Ram. Thumbnail.png";
 import christinaThumbnail from "@/assets/The Product Pivot. S3E3 Christina. Thumbnail.png";
+import christinaPhoto from "@/assets/christina pic.jpeg";
 
 export interface Episode {
   id: string;
@@ -760,34 +761,34 @@ export const episodes: Episode[] = [
     guest: {
       name: "Christina Aragon",
       role: "Associate Product Manager",
-      company: "Dedicaid",
-      website: "",
-      industry: "Fintech",
-      bio: "Christina Aragon is an Associate Product Manager at Dedicaid, a fintech company. She pivoted from software engineering through a BDR role before landing her first PM position. With a background in both engineering and sales, Christina brings a rare cross-functional perspective to product and isn't afraid to talk about imposter syndrome, gate-keeping in PM, and what it actually takes to break in early.",
-      linkedin: ""
+      company: "ThinkLP",
+      website: "https://www.thinklp.com/",
+      industry: "Loss Prevention, SaaS",
+      bio: "Christina Aragon is an Associate Product Manager at ThinkLP. She pivoted from software engineering through a BDR role before landing her first PM position. With a background in both engineering and sales, Christina brings a rare cross-functional perspective to product and isn't afraid to talk about imposter syndrome, gate-keeping in PM, and what it actually takes to break in early.",
+      photo: christinaPhoto,
+      linkedin: "https://www.linkedin.com/in/christina-aragon11/"
     },
     description: "Christina shares what it's actually like to be an associate PM in 2025, how she broke in through a non-linear path, and why the product community is both welcoming and gate-kept.",
-    longDescription: "The associate PM role is fizzling out, so what does it actually look like when you land one?\n\nChristina Aragon joins Meagan and Santi to talk about her path from civil engineering to software engineering to a BDR role, and finally into product. She gets honest about imposter syndrome, what it feels like to step into a room full of experienced PMs when you're just getting started, and how she uses her engineering and sales background to communicate across teams.\n\nThe conversation gets real about whether the product community is gate-kept, why entry-level PM roles still require years of experience, and what Christina's actually doing day-to-day as an associate PM at a fintech company. Plus, she shares networking tactics that actually worked for her and free resources for aspiring PMs.",
-    youtubeId: "",
-    buzzsproutId: "",
+    longDescription: "The associate PM role is fizzling out, so what does it actually look like when you land one?\n\nChristina Aragon joins Meagan and Santi to talk about her path from civil engineering to software engineering to a BDR role, and finally into product. She gets honest about imposter syndrome, what it feels like to step into a room full of experienced PMs when you're just getting started, and how she uses her engineering and sales background to communicate across teams.\n\nThe conversation gets real about whether the product community is gate-kept, why entry-level PM roles still require years of experience, and what it actually takes to get your foot in the door when nobody's handing you one.",
+    youtubeId: "B3fq-XvTELk",
+    buzzsproutId: "18957826",
+    spotifyUrl: "https://open.spotify.com/episode/2daevW5FzhIZxIFEqWiR6l",
     topic: "career",
     topics: ["Associate PM", "Breaking Into Product", "Imposter Syndrome", "Networking", "Gate-keeping in PM", "Cross-functional Communication"],
     duration: "48 min",
     publishedAt: "2026-04-07",
     takeaways: [
-      "The associate PM role is rare right now, but it's not gone. Christina landed one through persistence, networking, and a non-linear path",
-      "Having engineering and sales experience gives you a cross-functional empathy that most PMs have to learn on the job",
-      "Adapt your communication to the person, not the role. Some engineers want details, some want brevity. Same with sales",
+      "The associate PM role is disappearing from job boards, so how did Christina actually land one?",
+      "Having engineering and sales experience changes how you show up as a PM in ways most people don't expect",
+      "Christina communicates completely differently with engineers than she does with sales, and she explains exactly how she decides",
       "Imposter syndrome doesn't go away with seniority. Every PM has it, from associate to VP",
-      "The product community is welcoming once you're in, but breaking in is the hard part. Entry-level roles still ask for years of experience",
-      "Cold outreach works. Search alumni networks, LinkedIn, and Greek life connections. The worst anyone can say is no",
-      "Free resources exist if you dig. Coursera courses, Figma, Trello, and deconstructing products you use every day are all ways to build PM skills without paying for a course",
+      "The product community is welcoming once you're in, but breaking in is the hard part. Christina and the hosts get honest about why",
+      "Christina's cold outreach strategy is specific and repeatable, and it's how she got her foot in the door",
+      "You don't need to pay for a course to build PM skills. Christina shares the free resources that actually helped her",
       "Give engineers creative freedom and real customer context. The more bought in they are, the better the work"
     ],
     resourcesMentioned: [
-      { title: "Figma", url: "https://www.figma.com" },
-      { title: "Trello", url: "https://trello.com" },
-      { title: "Coursera", url: "https://www.coursera.org" }
+      { title: "Product Management Specialization (University of Alberta) - Coursera", url: "https://www.coursera.org/specializations/product-management" }
     ],
     keywords: ["Christina Aragon", "associate product manager", "APM role", "breaking into product management", "imposter syndrome PM", "fintech PM", "entry-level product manager", "PM networking tips", "gate-keeping product management", "BDR to PM", "software engineering to PM", "cross-functional communication", "aspiring PM", "product management career"],
     thumbnail: christinaThumbnail
