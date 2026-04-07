@@ -773,6 +773,7 @@ export const episodes: Episode[] = [
     youtubeId: "B3fq-XvTELk",
     buzzsproutId: "18957826",
     spotifyUrl: "https://open.spotify.com/episode/2daevW5FzhIZxIFEqWiR6l",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-product-pivot-from-bdr-to-associate-pm-christina/id1784108281?i=1000760037486",
     topic: "career",
     topics: ["Associate PM", "Breaking Into Product", "Imposter Syndrome", "Networking", "Gate-keeping in PM", "Cross-functional Communication"],
     duration: "48 min",
