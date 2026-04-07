@@ -11,6 +11,108 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-write-product-philosophy",
+    title: "How to Write a Product Philosophy (With Examples)",
+    excerpt: "Your product philosophy is the short statement that tells hiring managers how you actually think. Here's what to include, what to cut, and examples you can model.",
+    date: "2026-04-07",
+    readTime: "5 min read",
+    category: "Portfolio Tips",
+    tags: ["Product Philosophy", "Portfolio Tips", "PM Advice", "Personal Brand", "Product Management"],
+    content: `
+<p>Most PM portfolios look the same: a list of jobs, a few case studies, maybe some metrics. What's missing is the part that tells a hiring manager <em>how you actually think</em> — your product philosophy.</p>
+
+<p>A philosophy isn't a mission statement, a list of buzzwords, or a copy of your company's product principles. It's <strong>your personal</strong> take on the beliefs that guide the calls you make every day. Done well, it's the section hiring managers reread before deciding whether to call you back.</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+<li>A <strong>product philosophy</strong> is a short statement (300-500 words) that captures how you make product decisions and what you believe about building good products</li>
+<li>It should sound like <strong>you</strong> — not a textbook, not a job description, not a LinkedIn post</li>
+<li>The strongest philosophies cover four things: your <strong>core beliefs</strong>, how you balance <strong>users vs. business</strong>, your <strong>decision-making style</strong>, and what makes you <strong>different</strong></li>
+<li>Anchor each belief to a real experience — abstract principles without proof feel hollow</li>
+<li>Hiring managers use it to predict how you'll behave on their team — so be honest, not polished</li>
+</ul>
+
+<h2>What a Product Philosophy Actually Is</h2>
+
+<p>A product philosophy is the stuff you fall back on when the data is ambiguous, the stakeholders disagree, and you have to make a call anyway. It's the beliefs underneath your decisions — the part you usually don't say out loud.</p>
+
+<p>It's <em>not</em> a personal mission statement ("I empower teams to build delightful experiences"). It's not your resume in paragraph form. And it's not a list of frameworks you've used. It's how you think — the kind of thing a hiring manager reads once and knows whether you'd fit on their team.</p>
+
+<p>Marty Cagan at <a href="https://www.svpg.com/principles/" target="_blank" rel="noopener">Silicon Valley Product Group</a> writes that product principles "reflect the values and ethics of the organization" and help teams "make the right decisions when faced with difficult trade-offs." Your philosophy is the personal version of that — a public statement of what you actually believe about building products, written for a hiring manager instead of a team.</p>
+
+<h2>What to Include</h2>
+
+<p>Strong philosophies tend to cover four things. You don't need a section for each — just make sure the reader walks away knowing where you stand on all four.</p>
+
+<ol>
+<li><strong>Your core beliefs about product</strong> — What do you think great product work looks like? What do you reject? Be specific enough to disagree with.</li>
+<li><strong>How you balance users vs. business</strong> — Every PM faces this tension. How do you weigh it? What wins when they conflict?</li>
+<li><strong>Your decision-making style</strong> — Are you data-led, research-led, intuition-led, or some honest mix? When do you trust each?</li>
+<li><strong>What makes you different</strong> — One or two things that genuinely set you apart. Background, focus area, a strong opinion others don't share.</li>
+</ol>
+
+<h2>A Good Example</h2>
+
+<blockquote><strong>Example:</strong> "I believe most product failures are research failures dressed up as execution problems. Before I touch a roadmap, I want to know what users are actually trying to do — not what they say in a survey, but what they do when no one's watching. That bias toward observation is why I lean qualitative early and quantitative late.<br><br>When user needs and business goals conflict, I default to user value, but I won't pretend the trade-off doesn't exist. I'd rather have an uncomfortable conversation about revenue with my CEO than ship something I know erodes trust.<br><br>I'm slower to commit than most PMs and faster to kill ideas. The thing I'm proudest of in my career isn't a launch — it's the project I convinced my team to stop building after two weeks of discovery proved we had the wrong problem."</blockquote>
+
+<p>Notice what makes this work: it takes positions, it admits trade-offs, and every belief is anchored to behavior. You finish reading and you have a clear picture of how this person operates.</p>
+
+<h2>A Weak Example</h2>
+
+<blockquote><strong>Avoid:</strong> "I'm a passionate, data-driven product manager who believes in customer obsession and shipping delightful experiences. I love working cross-functionally to drive impact and embrace agile methodologies to deliver value at scale."</blockquote>
+
+<p>Every PM could write this. It says nothing. It commits to nothing. And a hiring manager learns nothing about how you'd actually behave on their team.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+
+<ol>
+<li><strong>Buzzword soup</strong> — "Customer-obsessed, data-driven, outcome-oriented" tells the reader nothing. Cut any phrase you've seen on ten other LinkedIn profiles.</li>
+<li><strong>No trade-offs</strong> — A philosophy without tension isn't a philosophy. As <a href="https://www.productteacher.com/articles/crafting-a-product-philosophy" target="_blank" rel="noopener">Product Teacher puts it</a>, "a product philosophy needs to hold a stance" — you need to be clear about <em>what you'd say no to</em>, not just what you say yes to. If you can't name something you're willing to give up for what you believe, you haven't said anything yet.</li>
+<li><strong>Abstract principles with no proof</strong> — "I believe in user empathy" means nothing without an example of when that belief cost you something or changed an outcome.</li>
+<li><strong>Sounding like a job description</strong> — Your philosophy should read like you talking, not a recruiter rewriting you. Read it out loud. If it doesn't sound like how you'd explain yourself in a coffee chat, rewrite it.</li>
+<li><strong>Going too long</strong> — Aim for 300-500 words. Anything longer and it stops being a philosophy and starts being an essay. Hiring managers are scanning, not studying.</li>
+</ol>
+
+<h2>How to Write Yours in 20 Minutes</h2>
+
+<p>Don't try to write it perfectly on the first pass. Use this prompt instead:</p>
+
+<ol>
+<li><strong>Answer four questions out loud</strong> — What do I believe about great product work? When users and business goals conflict, what do I default to? How do I make calls when the data's unclear? What's something I do differently from most PMs I know?</li>
+<li><strong>Write down what you said</strong>, exactly how you said it. Don't polish yet.</li>
+<li><strong>For each belief, add a sentence of evidence</strong> — a project, a decision, a moment. If you can't think of one, the belief probably isn't real.</li>
+<li><strong>Cut every buzzword</strong> — passionate, driven, obsessed, delightful, scale. All of them.</li>
+<li><strong>Read it out loud one more time</strong>. If it sounds like you, you're done.</li>
+</ol>
+
+<p>If you're stuck on what makes you unique, take our <a href="/quiz">PM portfolio quiz</a> — it surfaces the experiences and strengths you should be leading with, which are usually the same things your philosophy should be built around.</p>
+
+<h2>Where Your Philosophy Fits in Your Portfolio</h2>
+
+<p>In Prodfolio, your product philosophy lives near the top of your portfolio, right after your About section. That placement is intentional: it's the lens hiring managers read your case studies through. <a href="/blog/what-hiring-managers-look-for-in-pm-portfolios">Hiring managers we've spoken to on <em>The Product Pivot</em></a> consistently say the philosophy section is what they reread before making a decision — because it's the part of a portfolio that's hardest to fake.</p>
+
+<p>Once your philosophy is written, your <a href="/blog/how-to-write-product-management-case-study">case studies</a> become proof points for it. The two work together: the philosophy tells them how you think, and the case studies show them what happens when you do.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How long should a product philosophy be?</h3>
+<p>Aim for 300-500 words. Long enough to take real positions and back them up, short enough that a hiring manager can read it in under two minutes. Anything longer drifts into essay territory and loses the scannability that makes it useful.</p>
+
+<h3>What's the difference between a product philosophy and a personal mission statement?</h3>
+<p>A mission statement is aspirational ("I want to build products that change lives"). A philosophy is operational ("Here's how I actually decide what to build and why"). Hiring managers care about the second — they're trying to predict how you'll behave on their team, not what inspires you.</p>
+
+<h3>Do I need a product philosophy if I'm a junior PM or career changer?</h3>
+<p>Yes — arguably more so. Without years of case studies to point to, your philosophy is one of the strongest signals you can give a hiring manager about how you think. Anchor it to whatever experience you do have: a side project, a class, a previous role where you made product-adjacent decisions.</p>
+
+<h3>Can I use AI to write my product philosophy?</h3>
+<p>Use AI to draft, outline, or pressure-test your thinking — but the final version has to sound like you. Hiring managers can spot a generic AI-written philosophy in seconds, and it undercuts the entire point of the section, which is to show how you specifically think.</p>
+
+<h3>How often should I update my product philosophy?</h3>
+<p>Revisit it every 6-12 months, or any time a project genuinely changes how you think. If your philosophy is identical to the one you wrote three years ago, you've either stopped paying attention or you're lying to yourself — neither of which a hiring manager wants to read.</p>
+    `,
+  },
+  {
     slug: "how-to-prepare-for-pm-behavioral-interview",
     title: "How to Prepare for a PM Behavioral Interview",
     excerpt: "Behavioral interviews trip up even experienced PMs. Here's how to structure your answers, build a story bank, and avoid the mistakes that cost candidates offers.",
