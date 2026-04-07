@@ -755,7 +755,7 @@ export const episodes: Episode[] = [
   },
   {
     id: "18",
-    slug: "the-associate-pm-breaking-in-building-up",
+    slug: "from-bdr-to-product-manager",
     title: "From BDR to Product Manager: The Non-Linear Path Works",
     episodeNumber: "S3E3",
     guest: {
