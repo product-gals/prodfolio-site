@@ -107,6 +107,11 @@ const Footer = () => {
                   AI Info
                 </Link>
               </li>
+              <li>
+                <a href="https://help.prodfolio.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline transition-all">
+                  Help Center
+                </a>
+              </li>
             </ul>
           </div>
           
