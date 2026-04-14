@@ -411,14 +411,17 @@ const Landing = () => {
               Hear it from PMs like you
             </h2>
           </div>
-          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-2 md:overflow-visible md:snap-none md:pb-0 max-w-5xl mx-auto">
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent md:grid md:grid-cols-6 md:overflow-visible md:snap-none md:pb-0 max-w-6xl mx-auto">
             {[
+              { before: "The prompts helped me translate my experience into clear case studies without overthinking it.", highlight: "I went from a blank page to a clean, structured portfolio in under 2 hours.", name: "Jim", role: "Principal Product Manager" },
               { before: "Building a portfolio from scratch would have taken me weeks.", highlight: "Prodfolio understands what hiring managers in product management are looking for.", name: "Olympia B.", role: "CNBC" },
               { before: "I spent 8-12 hours building a portfolio in Notion and still felt too nervous to share it.", highlight: "Prodfolio gets what product managers actually need.", name: "Lea", role: "Product Lead" },
               { before: "I've used Wix, Squarespace, and Behance — they were so time-consuming.", highlight: "Prodfolio shows you exactly what to include in a case study.", name: "Amy W.", role: "Product Manager" },
               { before: "The product is really intuitive with an amazing structure.", highlight: "As a candidate, it helps me stand out in a sea of CVs.", name: "Evelyn", role: "Product Manager" },
-            ].map((t, i) => (
-              <blockquote key={i} className="glass-card p-5 flex flex-col min-w-[300px] snap-center md:min-w-0">
+            ].map((t, i, arr) => {
+              const isLast = i === arr.length - 1;
+              return (
+              <blockquote key={i} className={`glass-card p-5 flex flex-col min-w-[300px] snap-center md:min-w-0 md:col-span-3 ${isLast ? 'md:col-start-2' : ''}`}>
                 <div className="flex gap-0.5 mb-3">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
@@ -433,7 +436,8 @@ const Landing = () => {
                   <span className="text-white/50">{t.role}</span>
                 </footer>
               </blockquote>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
