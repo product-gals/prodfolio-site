@@ -13,6 +13,7 @@ import snehaPhoto from "@/assets/sneha-example.jpeg";
 import olympiaPhoto from "@/assets/olympia-todisco-example.jpeg";
 import alexPhoto from "@/assets/alex photo.jpg";
 import demarioPhoto from "@/assets/demario photo.jpg";
+import jimPhoto from "@/assets/jim rome.jpeg";
 
 const Examples = () => {
   const heroAnimation = useScrollAnimation();
@@ -90,6 +91,15 @@ const Examples = () => {
       link: "https://app.prodfolio.io/p/demario-phipps-smith",
       stage: "Consumer/Data/DTC",
       photo: demarioPhoto
+    },
+    {
+      name: "Jim Rome",
+      role: "Principal Product Manager",
+      description: "A principal PM with 15+ years across search, media, and mobile showing how to lead at scale across high-traffic consumer products.",
+      highlight: "See how to: translate your impact into memorable, metric-driven case studies",
+      link: "https://app.prodfolio.io/p/jim-rome/",
+      stage: "B2C & Enterprise Platforms",
+      photo: jimPhoto
     }
   ];
 
