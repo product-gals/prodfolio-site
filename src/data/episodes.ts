@@ -817,6 +817,7 @@ export const episodes: Episode[] = [
     youtubeId: "iGXXkrbKcCU",
     buzzsproutId: "19053064",
     spotifyUrl: "https://open.spotify.com/episode/3wX7VnwqrMctFJmUZGvxgj",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/product-manager-or-problem-manager-steve-johnson-product/id1784108281?i=1000762903393",
     topic: "career",
     topics: ["PM Role Evolution", "What Makes a Great PM", "Product Coaching", "AI and Product Management", "Business Mindset", "Pivoting to Product"],
     duration: "50 min",
@@ -833,7 +834,7 @@ export const episodes: Episode[] = [
     ],
     resourcesMentioned: [
       { title: "Product Growth Leaders", url: "https://www.productgrowthleaders.com/" },
-      { title: "The Product Manager's Desk Reference by Steve Johnson", url: "https://www.amazon.com/dp/B0GNWN9NC8" }
+      { title: "Customer Conversations: A Product Manager's Superpower by Steve Johnson", url: "https://www.amazon.com/dp/B0GNWN9NC8" }
     ],
     keywords: ["Steve Johnson", "Product Growth Leaders", "problem manager", "what makes a good product manager", "PM coaching", "product management training", "PM role evolution", "AI product management", "pivoting into product management", "business mindset PM", "product manager vs product owner", "friction in product management", "Pragmatic Marketing", "product management career", "breaking into product management"]
   }
