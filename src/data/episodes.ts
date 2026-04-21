@@ -23,6 +23,8 @@ import s3KickoffThumbnail from "@/assets/The Product Pivot. Season 3. Season 3 K
 import heidiThumbnail from "@/assets/The Product Pivot. Season 3. Heidi Ram. Thumbnail.png";
 import christinaThumbnail from "@/assets/The Product Pivot. S3E3 Christina. Thumbnail.png";
 import christinaPhoto from "@/assets/christina pic.jpeg";
+import stevePhoto from "@/assets/Steve Johnson.jpeg";
+import steveThumbnail from "@/assets/Steve Thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -793,6 +795,47 @@ export const episodes: Episode[] = [
     ],
     keywords: ["Christina Aragon", "associate product manager", "APM role", "breaking into product management", "imposter syndrome PM", "fintech PM", "entry-level product manager", "PM networking tips", "gate-keeping product management", "BDR to PM", "software engineering to PM", "cross-functional communication", "aspiring PM", "product management career"],
     thumbnail: christinaThumbnail
+  },
+  {
+    id: "28",
+    slug: "product-manager-or-problem-manager",
+    title: "Product Manager or Problem Manager?",
+    episodeNumber: "S3E4",
+    guest: {
+      name: "Steve Johnson",
+      role: "Founder & Principal Consultant",
+      company: "Product Growth Leaders",
+      website: "https://www.productgrowthleaders.com/",
+      industry: "Product Management Coaching & Training",
+      bio: "Steve Johnson has spent 30+ years coaching product management teams. After starting as a programmer and then working in sales engineering and sales, Steve stumbled into product management and went on to become a VP of Product. He spent 15 years at Pragmatic Marketing before founding Product Growth Leaders, where he flipped training on its head: less talking, more doing. Steve is known for his direct style, his focus on friction as the core of the PM role, and his provocative take that maybe we should be calling ourselves problem managers instead.",
+      photo: stevePhoto,
+      linkedin: "https://www.linkedin.com/in/sjohnson717/"
+    },
+    description: "After 30+ years coaching PM teams, Steve Johnson argues product managers should really be called problem managers — and explains why the best PMs never tell other people how to do their jobs.",
+    longDescription: "In this episode, Santi and Meagan sit down with Steve Johnson, founder of Product Growth Leaders and a 30-year veteran of product management coaching. Steve shares his unconventional path from programmer to sales engineer to PM, and what he's learned from training product teams across thousands of companies.\n\nSteve makes the case that the best PMs bring a business mindset, not a technology mindset, and that the most damaging habit in the field is telling other people how to do their jobs. He digs into how the PM role has swung between business and technical over the decades, what AI is actually changing (and what it isn't), why product community folklore around certifications and bootcamps doesn't match hiring reality, and why the title 'product manager' might be misleading us about what the job really is.\n\nAlong the way, Steve shares a story about turning a three-month implementation into three weeks by solving the right problem, why marketing is one of a PM's most underrated partners, and the one red flag that makes him walk away from any product — or job description.",
+    thumbnail: steveThumbnail,
+    youtubeId: "iGXXkrbKcCU",
+    buzzsproutId: "19053064",
+    spotifyUrl: "https://open.spotify.com/episode/3wX7VnwqrMctFJmUZGvxgj",
+    topic: "career",
+    topics: ["PM Role Evolution", "What Makes a Great PM", "Product Coaching", "AI and Product Management", "Business Mindset", "Pivoting to Product"],
+    duration: "50 min",
+    publishedAt: "2026-04-21",
+    takeaways: [
+      "Steve argues the title 'product manager' might be the wrong one entirely — and offers a replacement that changes how you approach the role",
+      "The number one trait that separates great PMs from everyone else, and it's not technical skill",
+      "Why the worst habit in product management is something most PMs do every single day without realizing it",
+      "A real story of cutting implementation time from three months to three weeks by reframing the problem instead of building the requested feature",
+      "What Steve thinks AI is actually going to change about product management over the next 18 months — and what it won't",
+      "Why hiring managers almost never care about PM certifications or bootcamps, and what they look for instead",
+      "The move most aspiring PMs get wrong when trying to break into the role, and the path Steve has seen actually work",
+      "Steve's personal red flag when evaluating any product, company, or job description"
+    ],
+    resourcesMentioned: [
+      { title: "Product Growth Leaders", url: "https://www.productgrowthleaders.com/" },
+      { title: "The Product Manager's Desk Reference by Steve Johnson", url: "https://www.amazon.com/dp/B0GNWN9NC8" }
+    ],
+    keywords: ["Steve Johnson", "Product Growth Leaders", "problem manager", "what makes a good product manager", "PM coaching", "product management training", "PM role evolution", "AI product management", "pivoting into product management", "business mindset PM", "product manager vs product owner", "friction in product management", "Pragmatic Marketing", "product management career", "breaking into product management"]
   }
 ];
 
