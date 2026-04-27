@@ -856,24 +856,21 @@ export const episodes: Episode[] = [
       linkedin: "https://www.linkedin.com/in/ri%C3%ABtte-verster-product-manager/"
     },
     description: "Liferaft Senior PM Riëtte Verster on stumbling into product management, why most AI features fail customers, and the shift coming for every app you build.",
-    longDescription: "In this episode, Santi and Meagan sit down with Riëtte Verster, Senior Product Manager at Liferaft. Riëtte's path into product is one of the most unusual we've heard on the show: she started in educational publishing at Pearson in South Africa, building reading curricula for early learners, and quietly did product management work for years before discovering the role had a name. The print-to-digital transition pulled her toward tech, a move to Canada pulled her into mobile gaming, and eventually she landed in B2B SaaS at the intersection of AI and high-skepticism users.\n\nFrom there, Riëtte makes a sharp case that most AI product work right now is solving the wrong problem. She's seen the pattern up close: customers get pushed by their boards to 'do AI,' teams ship something that demos well, leading indicators look great — and then nobody uses it. She walks through what actually separates AI features that earn revenue from ones that flatter a roadmap, why language models broke the old playbook for matching and retrieval, and the maintenance tax that shows up the moment you ship anything built on a foundation model.\n\nAlong the way: a moment in the conversation that genuinely surprised her about where apps are headed next, the personal red flag she's learned to spot in herself before it derails a project, and the imposter-syndrome trap she thinks every PM falls into — including the one she's actively unlearning right now.",
+    longDescription: "In this episode, Santi and Meagan sit down with Riëtte Verster, Senior Product Manager at Liferaft. Riëtte's path into product is one of the most unique we've heard on the show: she started in educational publishing at Pearson in South Africa, and quietly did product management for years before discovering the role had a name. The print-to-digital transition pulled her toward tech, a move to Canada pulled her into mobile gaming, and eventually she landed in B2B SaaS at the intersection of AI and high-skepticism users.\n\nFrom there, Riëtte makes a sharp case that most AI product work right now is solving the wrong problem. She's seen the pattern up close: customers get pushed by their boards to 'do AI,' teams ship something that demos well, leading indicators look great, but then nobody uses it. She walks through what actually separates AI features that earn revenue from ones that flatter a roadmap and the maintenance tax that shows up the moment you ship anything built on a foundation model.\n\nAlong the way: a moment in the conversation that genuinely surprised her about where apps are headed next, the personal red flag she's learned to spot in herself before it derails a project, and the imposter-syndrome trap she thinks every PM falls into.",
     thumbnail: rietteThumbnail,
     youtubeId: "aAzx6OqCJAo",
     buzzsproutId: "19085395",
     spotifyUrl: "https://open.spotify.com/episode/5eOnqFrs8FyccnI1kwIPkJ",
     topic: "ai",
-    topics: ["AI in Product Management", "Solving Real Problems", "Pivoting to Product", "PM Red Flags", "Customer-Centric AI", "Imposter Syndrome"],
+    topics: ["AI in Product Management", "Solving Real Problems", "Pivoting to Product", "Customer-Centric AI", "Imposter Syndrome"],
     duration: "39 min",
     publishedAt: "2026-04-28",
     takeaways: [
-      "The unlikely path from reviewing curriculum manuscripts at a South African publisher to leading AI product work at a North American threat intelligence company — and the moment Riëtte realized she'd been doing product management for years without knowing it",
-      "The PM red flag Riëtte calls '100km/h mode' — what it feels like from the inside, and the question she now forces herself to ask the moment she notices it",
-      "Why the early excitement and leading indicators on AI features are misleading executives right now, and the pattern that predicts whether revenue actually follows",
-      "What language models broke about the old product playbook for search, matching, and rules — and the new tax nobody put on their roadmap",
-      "The shift in who (or what) will be using your app in the next few years, and why most product teams aren't designing for it yet",
-      "Riëtte's two-part answer for PMs trying to keep up with AI — and why one half of it is the part most people skip",
-      "The imposter-syndrome trap that quietly burns out senior PMs, and the reframe Riëtte is using to escape it",
-      "A real example of customers in a high-trust, high-skepticism industry adopting AI — and the specific thing that makes them trust it or walk away"
+      "You can do product management for years without knowing it has a name. Subject matter expertise plus curiosity about digital transformation is a legitimate path in.",
+      "Most AI features fail because they solve a board-level mandate to 'do AI' instead of a real customer problem. Early excitement and leading indicators will mislead you.",
+      "Building on foundation models adds an ongoing maintenance tax to your roadmap. Every model update means your foundational assumptions need re-validation.",
+      "The next shift in product design could be building for AI agents as users, not just humans. Most teams aren't designing for it yet.",
+      "Senior PMs burn out trying to know everything. The job isn't to have every answer, it's to deeply understand your customers and trust the experts around you."
     ],
     resourcesMentioned: [
       { title: "Liferaft", url: "https://www.liferaftinc.com" }
