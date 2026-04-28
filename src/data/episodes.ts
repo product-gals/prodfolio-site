@@ -861,6 +861,7 @@ export const episodes: Episode[] = [
     youtubeId: "aAzx6OqCJAo",
     buzzsproutId: "19085395",
     spotifyUrl: "https://open.spotify.com/episode/5eOnqFrs8FyccnI1kwIPkJ",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/from-publisher-to-product-manager-an-accidental-pms/id1784108281?i=1000764135067",
     topic: "ai",
     topics: ["AI in Product Management", "Solving Real Problems", "Pivoting to Product", "Customer-Centric AI", "Imposter Syndrome"],
     duration: "39 min",
