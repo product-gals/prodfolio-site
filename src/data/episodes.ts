@@ -25,6 +25,8 @@ import christinaThumbnail from "@/assets/The Product Pivot. S3E3 Christina. Thum
 import christinaPhoto from "@/assets/christina pic.jpeg";
 import stevePhoto from "@/assets/Steve Johnson.jpeg";
 import steveThumbnail from "@/assets/Steve Thumbnail.png";
+import riettePhoto from "@/assets/Riette picture.jpeg";
+import rietteThumbnail from "@/assets/Riette Thumnail.png";
 
 export interface Episode {
   id: string;
@@ -837,6 +839,44 @@ export const episodes: Episode[] = [
       { title: "Customer Conversations: A Product Manager's Superpower by Steve Johnson", url: "https://www.amazon.com/dp/B0GNWN9NC8" }
     ],
     keywords: ["Steve Johnson", "Product Growth Leaders", "problem manager", "what makes a good product manager", "PM coaching", "product management training", "PM role evolution", "AI product management", "pivoting into product management", "business mindset PM", "product manager vs product owner", "friction in product management", "Pragmatic Marketing", "product management career", "breaking into product management"]
+  },
+  {
+    id: "29",
+    slug: "from-publisher-to-product-manager",
+    title: "From Publisher to Product Manager: An Accidental PM's Take on AI",
+    episodeNumber: "S3E5",
+    guest: {
+      name: "Riëtte Verster",
+      role: "Senior Product Manager",
+      company: "Liferaft",
+      website: "https://www.liferaftinc.com",
+      industry: "Threat Intelligence & Software",
+      bio: "Riëtte Verster is a Senior Product Manager at Liferaft, a threat intelligence platform serving analysts and investigators. She started her career in educational publishing at Pearson in South Africa, where she did product management work for years before realizing it had a name — building digital tools for early reading curricula and helping lead the print-to-digital transition. After moving to Canada, she pivoted into tech through mobile gaming and eventually into B2B SaaS. Today she works at the intersection of AI and high-skepticism users, where shipping a 'gimmick' gets caught fast and customer trust is non-negotiable.",
+      photo: riettePhoto,
+      linkedin: "https://www.linkedin.com/in/ri%C3%ABtte-verster-product-manager/"
+    },
+    description: "Liferaft Senior PM Riëtte Verster on stumbling into product management, why most AI features fail customers, and the shift coming for every app you build.",
+    longDescription: "In this episode, Santi and Meagan sit down with Riëtte Verster, Senior Product Manager at Liferaft. Riëtte's path into product is one of the most unique we've heard on the show: she started in educational publishing at Pearson in South Africa, and quietly did product management for years before discovering the role had a name. The print-to-digital transition pulled her toward tech, a move to Canada pulled her into mobile gaming, and eventually she landed in B2B SaaS at the intersection of AI and high-skepticism users.\n\nFrom there, Riëtte makes a sharp case that most AI product work right now is solving the wrong problem. She's seen the pattern up close: customers get pushed by their boards to 'do AI,' teams ship something that demos well, leading indicators look great, but then nobody uses it. She walks through what actually separates AI features that earn revenue from ones that flatter a roadmap and the maintenance tax that shows up the moment you ship anything built on a foundation model.\n\nAlong the way: a moment in the conversation that genuinely surprised her about where apps are headed next, the personal red flag she's learned to spot in herself before it derails a project, and the imposter-syndrome trap she thinks every PM falls into.",
+    thumbnail: rietteThumbnail,
+    youtubeId: "aAzx6OqCJAo",
+    buzzsproutId: "19085395",
+    spotifyUrl: "https://open.spotify.com/episode/5eOnqFrs8FyccnI1kwIPkJ",
+    appleUrl: "https://podcasts.apple.com/sk/podcast/from-publisher-to-product-manager-an-accidental-pms/id1784108281?i=1000764135067",
+    topic: "ai",
+    topics: ["AI in Product Management", "Solving Real Problems", "Pivoting to Product", "Customer-Centric AI", "Imposter Syndrome"],
+    duration: "39 min",
+    publishedAt: "2026-04-28",
+    takeaways: [
+      "You can do product management for years without knowing it has a name. Subject matter expertise plus curiosity about digital transformation is a legitimate path in.",
+      "Most AI features fail because they solve a board-level mandate to 'do AI' instead of a real customer problem. Early excitement and leading indicators will mislead you.",
+      "Building on foundation models adds an ongoing maintenance tax to your roadmap. Every model update means your foundational assumptions need re-validation.",
+      "The next shift in product design could be building for AI agents as users, not just humans. Most teams aren't designing for it yet.",
+      "Senior PMs burn out trying to know everything. The job isn't to have every answer, it's to deeply understand your customers and trust the experts around you."
+    ],
+    resourcesMentioned: [
+      { title: "Liferaft", url: "https://www.liferaftinc.com" }
+    ],
+    keywords: ["Riette Verster", "Riëtte Verster", "Liferaft", "AI product management", "ethical AI", "agentic apps", "PM red flags", "language models product", "threat intelligence", "pivoting into product management", "customer-centric AI", "AI gimmick", "senior product manager", "product management AI", "South Africa product manager", "PM imposter syndrome", "accidental product manager", "publishing to product management"]
   }
 ];
 
