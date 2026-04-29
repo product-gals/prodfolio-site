@@ -27,6 +27,8 @@ import stevePhoto from "@/assets/Steve Johnson.jpeg";
 import steveThumbnail from "@/assets/Steve Thumbnail.png";
 import riettePhoto from "@/assets/Riette picture.jpeg";
 import rietteThumbnail from "@/assets/Riette Thumnail.png";
+import kartikeyaPhoto from "@/assets/kartikeya photo.jpeg";
+import kartikeyaThumbnail from "@/assets/s3e6 Kartikeya.png";
 
 export interface Episode {
   id: string;
@@ -877,6 +879,46 @@ export const episodes: Episode[] = [
       { title: "Liferaft", url: "https://www.liferaftinc.com" }
     ],
     keywords: ["Riette Verster", "Riëtte Verster", "Liferaft", "AI product management", "ethical AI", "agentic apps", "PM red flags", "language models product", "threat intelligence", "pivoting into product management", "customer-centric AI", "AI gimmick", "senior product manager", "product management AI", "South Africa product manager", "PM imposter syndrome", "accidental product manager", "publishing to product management"]
+  },
+  {
+    id: "30",
+    slug: "breaking-into-product-without-the-title",
+    title: "Breaking Into Product Without the Title",
+    episodeNumber: "S3E6",
+    guest: {
+      name: "Kartikeya Shah",
+      role: "Project Manager II",
+      company: "Rozie AI",
+      website: "https://www.rozie.ai",
+      industry: "AI & Customer Experience",
+      bio: "Kartikeya Shah is a Project Manager II at Rozie AI, an AI-led customer experience platform. His path to product spans engineering, market research, business analytics, and an MBA from NC State, where a chance conversation with a career advisor introduced him to product innovation. After landing a project management role at Rozie AI, Kartikeya started doing product work directly under Aaron Kesler — managing his own product end to end while still officially in a PM-adjacent title. He's a case study in transferable skills, intentional networking, and not waiting for permission to do the job.",
+      photo: kartikeyaPhoto,
+      linkedin: "https://www.linkedin.com/in/kartikeyancsu/"
+    },
+    description: "Rozie AI's Kartikeya Shah on doing product work before getting the title, transferable skills from project management, and the networking strategy that built him a 350-person spreadsheet.",
+    longDescription: "In this episode, Santi and Meagan sit down with Kartikeya Shah, Project Manager II at Rozie AI, an AI-powered customer experience company. Kartikeya's path is one a lot of aspiring PMs will recognize: he wanted product, but the entry-level product roles all asked for three to five years of experience. So he took a project management job at a software company instead, mentored by Rozie AI's product leader Aaron Kesler, and started doing real product work — managing his own product end to end — within months of joining.\n\nKartikeya makes a clear case for not waiting for the title. He talks through the transferable skills that pulled him into product (customer research, data analytics, stakeholder management), the moment his manager handed him a product to run, and what he's learning that no certification or framework book taught him. He's honest about the cons too: the 'entry-level' job posting that secretly requires five years, the difficulty of saying no when you're wired to please, and the gap between the RICE framework on paper and what actually ships.\n\nAlong the way: the networking system that grew his contact spreadsheet to over 300 people, the two questions he asks every connection, and why he reached out to customer insights managers and marketing directors instead of just other PMs.",
+    thumbnail: kartikeyaThumbnail,
+    youtubeId: "l6YVddhecNk",
+    buzzsproutId: "",
+    spotifyUrl: "",
+    topic: "career",
+    topics: ["Pivoting to Product", "Project Management to Product", "Networking", "Mentorship", "Transferable Skills", "Breaking Into Product"],
+    duration: "46 min",
+    publishedAt: "2026-05-05",
+    takeaways: [
+      "Don't wait for the title to do the work. Volunteering for product responsibilities under a mentor can move you into the role faster than waiting for an entry-level posting that secretly requires five years of experience.",
+      "Almost every role has transferable skills to product management. Map your current responsibilities against PM skills, surface the overlap on your resume, and lead with it when you apply.",
+      "Frameworks like RICE and MoSCoW are useful to know but rarely the right tool in the moment. Live your reality and let the business goals and customer needs decide what gets built.",
+      "Networking compounds. Asking every connection two questions ('Can you connect me to two more people?' and 'Would you review my resume?') turns a handful of conversations into hundreds over time.",
+      "Don't only network with PMs. Customer insights managers, marketing directors, and data leaders sit one connection away from the product community and often open more doors than cold-messaging PMs ever will."
+    ],
+    resourcesMentioned: [
+      { title: "Why AI Should Be Boring with Aaron Kesler (Kartikeya's mentor)", url: "https://prodfolio.io/podcast/episodes/why-ai-should-be-boring" },
+      { title: "Cracking the PM Interview by Gayle Laakmann McDowell & Jackie Bavaro", url: "https://www.crackingthepminterview.com" },
+      { title: "The Design of Everyday Things by Don Norman", url: "https://www.nngroup.com/books/design-everyday-things-revised/" },
+      { title: "Decode and Conquer by Lewis C. Lin", url: "https://www.amazon.com/Decode-Conquer-Answers-Product-Management/dp/0615930417" }
+    ],
+    keywords: ["Kartikeya Shah", "Rozie AI", "Aaron Kesler", "breaking into product management", "project manager to product manager", "aspiring product manager", "PM networking", "transferable skills product management", "product management mentor", "entry level product manager", "pivoting to product", "MBA product management", "PM job search", "no title product work"]
   }
 ];
 
