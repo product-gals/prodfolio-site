@@ -900,7 +900,7 @@ export const episodes: Episode[] = [
     thumbnail: kartikeyaThumbnail,
     youtubeId: "l6YVddhecNk",
     buzzsproutId: "19097286",
-    spotifyUrl: "https://open.spotify.com/episode/6Xh8d6kIftDmf7EJZO3ghV",
+    spotifyUrl: "https://open.spotify.com/episode/3P9KL8KaBzK8vRcpm5K4Ci",
     appleUrl: "https://podcasts.apple.com/us/podcast/breaking-into-product-without-the-title-with/id1784108281?i=1000766246874",
     topic: "career",
     topics: ["Pivoting to Product", "Project Management to Product", "Networking", "Mentorship", "Transferable Skills", "Breaking Into Product"],
