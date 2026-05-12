@@ -29,6 +29,8 @@ import riettePhoto from "@/assets/Riette picture.jpeg";
 import rietteThumbnail from "@/assets/Riette Thumnail.png";
 import kartikeyaPhoto from "@/assets/kartikeya photo.jpeg";
 import kartikeyaThumbnail from "@/assets/s3e6 Kartikeya.png";
+import alyxPhoto from "@/assets/Alyx photo.jpeg";
+import alyxThumbnail from "@/assets/Alyx Thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -920,6 +922,47 @@ export const episodes: Episode[] = [
       { title: "Decode and Conquer by Lewis C. Lin", url: "https://www.amazon.com/Decode-Conquer-Answers-Product-Management/dp/0615930417" }
     ],
     keywords: ["Kartikeya Shah", "Rozie AI", "Aaron Kesler", "breaking into product management", "project manager to product manager", "aspiring product manager", "PM networking", "transferable skills product management", "product management mentor", "entry level product manager", "pivoting to product", "MBA product management", "PM job search", "no title product work"]
+  },
+  {
+    id: "31",
+    slug: "dark-side-of-product-management",
+    title: "The Dark Side of Product Management Nobody Posts About",
+    episodeNumber: "S3E7",
+    guest: {
+      name: "Alyx Priestley",
+      role: "Founder & Principal Consultant",
+      company: "Priestley Strategy Consulting",
+      website: "https://www.alyxpriestley.com/",
+      industry: "Product Strategy & Consulting",
+      bio: "Alyx Priestley is the Founder and Principal Consultant at Priestley Strategy Consulting, where she helps companies treat product as a real business function instead of a feature factory. Her path into product wasn't a typical one: she grew up around entrepreneurial parents, started her own creative agency, and stumbled into product through the lens of a founder who'd already learned what ruthless prioritization actually costs. Today she writes openly about the parts of product management most people don't post about, mentors PMs across industries, and is currently leading product on a sports tech brand in the golf space.",
+      photo: alyxPhoto,
+      linkedin: "https://www.linkedin.com/in/alyxpriestley/"
+    },
+    description: "Founder and consultant Alyx Priestley on the parts of product management nobody posts about: failure, burnout, imposter syndrome, and why product is a business function — not a feature factory.",
+    longDescription: "In this episode, Santi and Meagan sit down with Alyx Priestley, Founder of Priestley Strategy Consulting and one of the most direct voices in product. The conversation is about the things product managers don't say out loud: imposter syndrome that doesn't go away when you get senior, burnout that builds because the job is all-consuming by design, leaders who don't know how to communicate when things are going wrong, and the failures that get edited out of every LinkedIn highlight reel.\n\nAlyx makes a sharp case that most companies don't actually treat product as a business function — they treat it as a feature factory. She argues PMs should adopt the founder's mindset (not the mini-CEO mindset, which she has a pointed take on), get into the conversation about pricing and revenue per user, and stop hiding behind user stories that don't tie back to money. She's blunt about why: 'Not everything is about money, but everything's about money.'\n\nThe second half gets personal. Alyx talks about her own struggles handling things going wrong, the moment she realized leading through tough situations isn't about having the answers, and the most direct take on imposter syndrome you'll hear this season. ('You're not that special.' Listen for the context.) She also shares why she started writing publicly after years of staying quiet, and what changed her mind about going visible.",
+    thumbnail: alyxThumbnail,
+    youtubeId: "XWQw6Q84IC8",
+    buzzsproutId: "19157867",
+    spotifyUrl: "https://open.spotify.com/episode/3dTS5d3bZb33KG63MxJ3v0",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-dark-side-of-product-management-nobody-posts/id1784108281?i=1000767419921",
+    topic: "leadership",
+    topics: ["Product as a Business Function", "Leadership", "Imposter Syndrome", "Burnout", "Failing Forward", "Founder Mindset"],
+    duration: "63 min",
+    publishedAt: "2026-05-12",
+    takeaways: [
+      "The reframe Alyx uses for imposter syndrome — the bluntest you'll hear this season — and why she insists on saying it that way.",
+      "Why 'product as a business function' is currently a structural gap at most companies, and the specific question Alyx says PMs should start asking that nobody wants to answer.",
+      "The two mindsets every PM mixes up, and why one of them is actively dangerous to adopt.",
+      "The moment Alyx realized she was failing at handling things going wrong, and the unexpected shift that pulled her out.",
+      "The cost calculation Alyx uses every time she's stuck between two product decisions — a habit she learned running her own business, not from any PM book."
+    ],
+    resourcesMentioned: [
+      { title: "Alyx Priestley on Medium", url: "https://medium.com/@alyx.priestley" },
+      { title: "P&L for Product People — Product Economics", url: "https://www.producteconomics.uk/" },
+      { title: "Escaping the Build Trap by Melissa Perri", url: "https://www.amazon.com/Escaping-Build-Trap-Effective-Management/dp/149197379X" },
+      { title: "Failing Forward by John C. Maxwell", url: "https://www.amazon.com/Failing-Forward-Turning-Mistakes-Stepping/dp/0785288570" }
+    ],
+    keywords: ["Alyx Priestley", "Priestley Strategy Consulting", "dark side of product management", "product as a business function", "founder mindset product manager", "imposter syndrome product management", "PM burnout", "failing forward", "feature factory", "Melissa Perri", "Build Trap", "product leadership", "revenue per user", "product strategy consultant", "honest product management"]
   }
 ];
 
