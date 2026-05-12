@@ -950,14 +950,15 @@ export const episodes: Episode[] = [
     duration: "63 min",
     publishedAt: "2026-05-12",
     takeaways: [
-      "Product is a business function, not a feature factory. The day you start quantifying revenue per user instead of celebrating feature releases is the day product earns a seat at the table.",
-      "Adopt the founder's mindset, not the mini-CEO mindset. You don't have CEO authority, but you should make every decision as if the company's bank account is tethered to yours.",
-      "Imposter syndrome doesn't go away with seniority. The reframe that actually helps is realizing you're not that special. The universe didn't single you out, so do the work anyway.",
-      "Burnout is a signal you've made your job your purpose. The job is the mechanism. Find purpose in what the job lets you do, and protect time for things that have nothing to do with it.",
-      "Failure is data, not identity. Treat it the way scientists treat broken experiments and athletes treat missed lifts. The cost of not doing the thing is almost always higher than the cost of failing at it."
+      "The reframe Alyx uses for imposter syndrome — the bluntest you'll hear this season — and why she insists on saying it that way.",
+      "Why 'product as a business function' is currently a structural gap at most companies, and the specific question Alyx says PMs should start asking that nobody wants to answer.",
+      "The two mindsets every PM mixes up, and why one of them is actively dangerous to adopt.",
+      "The moment Alyx realized she was failing at handling things going wrong, and the unexpected shift that pulled her out.",
+      "The cost calculation Alyx uses every time she's stuck between two product decisions — a habit she learned running her own business, not from any PM book."
     ],
     resourcesMentioned: [
       { title: "Alyx Priestley on Medium", url: "https://medium.com/@alyx.priestley" },
+      { title: "P&L for Product People — Product Economics", url: "https://www.producteconomics.uk/" },
       { title: "Escaping the Build Trap by Melissa Perri", url: "https://www.amazon.com/Escaping-Build-Trap-Effective-Management/dp/149197379X" },
       { title: "Failing Forward by John C. Maxwell", url: "https://www.amazon.com/Failing-Forward-Turning-Mistakes-Stepping/dp/0785288570" }
     ],
