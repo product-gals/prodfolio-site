@@ -943,7 +943,7 @@ export const episodes: Episode[] = [
     thumbnail: alyxThumbnail,
     youtubeId: "XWQw6Q84IC8",
     buzzsproutId: "19157867",
-    spotifyUrl: "",
+    spotifyUrl: "https://open.spotify.com/episode/3dTS5d3bZb33KG63MxJ3v0",
     appleUrl: "https://podcasts.apple.com/us/podcast/the-dark-side-of-product-management-nobody-posts/id1784108281?i=1000767419921",
     topic: "leadership",
     topics: ["Product as a Business Function", "Leadership", "Imposter Syndrome", "Burnout", "Failing Forward", "Founder Mindset"],
