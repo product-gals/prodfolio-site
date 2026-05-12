@@ -944,10 +944,11 @@ export const episodes: Episode[] = [
     youtubeId: "XWQw6Q84IC8",
     buzzsproutId: "19157867",
     spotifyUrl: "",
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-dark-side-of-product-management-nobody-posts/id1784108281?i=1000767419921",
     topic: "leadership",
     topics: ["Product as a Business Function", "Leadership", "Imposter Syndrome", "Burnout", "Failing Forward", "Founder Mindset"],
-    duration: "",
-    publishedAt: "",
+    duration: "63 min",
+    publishedAt: "2026-05-12",
     takeaways: [
       "Product is a business function, not a feature factory. The day you start quantifying revenue per user instead of celebrating feature releases is the day product earns a seat at the table.",
       "Adopt the founder's mindset, not the mini-CEO mindset. You don't have CEO authority, but you should make every decision as if the company's bank account is tethered to yours.",
