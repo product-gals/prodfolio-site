@@ -962,6 +962,34 @@ export const episodes: Episode[] = [
       { title: "Escaping the Build Trap by Melissa Perri", url: "https://www.amazon.com/Escaping-Build-Trap-Effective-Management/dp/149197379X" }
     ],
     keywords: ["Alyx Priestley", "Priestley Strategy Consulting", "dark side of product management", "product as a business function", "founder mindset product manager", "imposter syndrome product management", "PM burnout", "failing forward", "feature factory", "Melissa Perri", "Build Trap", "product leadership", "revenue per user", "product strategy consultant", "honest product management"]
+  },
+  {
+    id: "32",
+    slug: "", // TODO
+    title: "", // TODO
+    episodeNumber: "S3E8",
+    guest: {
+      name: "Zach O'Neal",
+      role: "Director of Product Marketing",
+      company: "Luma",
+      website: "https://lumalabs.ai/",
+      industry: "", // TODO
+      bio: "Zach O'Neal is a 0-to-1 product marketing leader with 12+ years turning frontier tech into stories worth telling. He currently leads Product Marketing & Growth at Luma, where he built the founding PMM function for one of the most ambitious multimodal AI companies on the market — owning positioning, pricing, lifecycle, and a full-funnel growth engine across paid, influencer, and SEO/GEO. Before Luma, he was the founding marketing leader at a generative AI company shipping to Disney, Netflix, Sony, Amazon, and Warner Bros., and previously scaled product marketing across Disney+, Hulu, and ESPN+ for a combined 157M+ monthly users. He blends analytical rigor with creative instinct, and is at his best translating technical roadmaps into narratives that whole teams can ship behind.",
+      linkedin: "https://www.linkedin.com/in/zachoneal/"
+      // TODO: photo
+    },
+    description: "", // TODO
+    longDescription: "", // TODO
+    // TODO: thumbnail
+    youtubeId: "", // TODO
+    // TODO: buzzsproutId, spotifyUrl, appleUrl
+    topic: "career", // TODO: confirm
+    topics: [], // TODO
+    duration: "", // TODO
+    publishedAt: "", // TODO
+    takeaways: [], // TODO
+    resourcesMentioned: [], // TODO
+    keywords: [] // TODO
   }
 ];
 
