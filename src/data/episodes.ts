@@ -31,6 +31,8 @@ import kartikeyaPhoto from "@/assets/kartikeya photo.jpeg";
 import kartikeyaThumbnail from "@/assets/s3e6 Kartikeya.png";
 import alyxPhoto from "@/assets/Alyx photo.jpeg";
 import alyxThumbnail from "@/assets/Alyx Thumbnail.png";
+import zachPhoto from "@/assets/zach photo.jpeg";
+import zachThumbnail from "@/assets/Zach thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -962,6 +964,45 @@ export const episodes: Episode[] = [
       { title: "Escaping the Build Trap by Melissa Perri", url: "https://www.amazon.com/Escaping-Build-Trap-Effective-Management/dp/149197379X" }
     ],
     keywords: ["Alyx Priestley", "Priestley Strategy Consulting", "dark side of product management", "product as a business function", "founder mindset product manager", "imposter syndrome product management", "PM burnout", "failing forward", "feature factory", "Melissa Perri", "Build Trap", "product leadership", "revenue per user", "product strategy consultant", "honest product management"]
+  },
+  {
+    id: "32",
+    slug: "product-marketing-is-a-partnership-not-a-takeover",
+    title: "Product Marketing Is a Partnership, Not a Takeover",
+    episodeNumber: "S3E8",
+    guest: {
+      name: "Zach O'Neal",
+      role: "Director of Product Marketing",
+      company: "Luma",
+      website: "https://lumalabs.ai/",
+      industry: "Multimodal AI",
+      bio: "Zach O'Neal is a 0-to-1 product marketing leader with 12+ years turning frontier tech into stories worth telling. He currently leads Product Marketing & Growth at Luma, where he built the founding PMM function for one of the most ambitious multimodal AI companies on the market, owning positioning, pricing, lifecycle, and a full-funnel growth engine across paid, influencer, and SEO/GEO. Before Luma, he was the founding marketing leader at a generative AI company shipping to Disney, Netflix, Sony, Amazon, and Warner Bros., and previously scaled product marketing across Disney+, Hulu, and ESPN+ for a combined 157M+ monthly users. He blends analytical rigor with creative instinct, and is at his best translating technical roadmaps into narratives that whole teams can ship behind.",
+      photo: zachPhoto,
+      linkedin: "https://www.linkedin.com/in/zachoneal/"
+    },
+    description: "Luma's Zach O'Neal on why most product marketing teams are getting the job wrong from day one, the four years it took to fix it at Disney+, and the AI take most marketers don't want to hear.",
+    longDescription: "In this episode, Santi and Meagan sit down with Zach O'Neal, a 0-to-1 product marketing leader who currently runs Product Marketing & Growth at Luma and previously scaled subscriber experience PMM across Disney+, Hulu, and ESPN+. Zach makes the case that most product marketing teams are getting the job wrong from the very first day. They show up like a bull in a china shop, take credit for product's work, and treat the function as a takeover instead of the central nervous system that actually amplifies it. He breaks down the inbound vs. outbound split, the two phrases his PMMs aren't allowed to forget, and why getting this relationship right is the difference between a launch that sings and one nobody remembers a month later.\n\nThe conversation gets honest about how long it actually takes. Zach admits it took roughly four years at Disney+ for PM and PMM to find a stride, and that the early years were lost to hubris on his own side of the table. He walks through what changed: dropping the 'this is my lane' wall, running postmortems that don't turn into a blame game, and recognizing that engineering bandwidth is a marketing narrative problem, not just an ops one.\n\nThe second half covers how to pivot into product marketing without a creative background, how PMM scales from a global enterprise to a 200-person startup, and Zach's blunt take on AI that every marketer needs to hear. He closes with the Marvel and IMAX Enhanced launch on Disney+ as a real example of what happens when PMM and PM actually move together, and what gets left on the table when they don't.",
+    thumbnail: zachThumbnail,
+    youtubeId: "CoIR2yIRWbw",
+    buzzsproutId: "19195781",
+    spotifyUrl: "https://open.spotify.com/episode/1L9W4RNAKrdaSfwVtO7ABV",
+    appleUrl: "https://podcasts.apple.com/us/podcast/product-marketing-is-a-partnership-not-a/id1784108281?i=1000768580304",
+    topic: "leadership",
+    topics: ["Product Marketing", "PMM × PM Partnership", "Cross-Functional Collaboration", "AI in Marketing", "Storytelling & Positioning", "Marketing Leadership"],
+    duration: "56 min",
+    publishedAt: "2026-05-19",
+    takeaways: [
+      "Why most product marketing teams get the job wrong from day one, and the metaphor Zach uses to make every new PMM hire understand it.",
+      "The two phrases every PMM on Zach's team is required to learn, and what happens when someone shows up as a stoplight decision-maker instead.",
+      "How long it actually took for PM and PMM to find a stride at Disney+, and the specific shift that broke the standoff.",
+      "The skill Zach hires for in PMM that has nothing to do with copywriting or design, and why most candidates miss it entirely.",
+      "Zach's AI take that most marketers don't want to hear, and the one mistake he says is already writing people out of the room."
+    ],
+    resourcesMentioned: [
+      { title: "Product Marketing Alliance", url: "https://www.productmarketingalliance.com/" },
+      { title: "Luma AI", url: "https://lumalabs.ai/" }
+    ],
+    keywords: ["Zach O'Neal", "Luma", "Luma AI", "product marketing", "PMM", "product marketing vs product management", "PM PMM partnership", "Disney Plus product marketing", "Hulu", "ESPN Plus", "Product Marketing Alliance", "inbound product marketing", "outbound product marketing", "go-to-market", "multimodal AI", "generative AI", "AI in marketing", "Marvel IMAX Enhanced", "pivoting to product marketing", "central nervous system marketing", "yes and no but"]
   }
 ];
 
