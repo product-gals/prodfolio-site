@@ -985,7 +985,7 @@ export const episodes: Episode[] = [
     thumbnail: zachThumbnail,
     youtubeId: "CoIR2yIRWbw",
     buzzsproutId: "19195781",
-    spotifyUrl: "https://open.spotify.com/episode/3Uc1pGTr5qZULJBeWob1Qp",
+    spotifyUrl: "https://open.spotify.com/episode/1L9W4RNAKrdaSfwVtO7ABV",
     appleUrl: "https://podcasts.apple.com/us/podcast/product-marketing-is-a-partnership-not-a/id1784108281?i=1000768580304",
     topic: "leadership",
     topics: ["Product Marketing", "PMM × PM Partnership", "Cross-Functional Collaboration", "AI in Marketing", "Storytelling & Positioning", "Marketing Leadership"],
