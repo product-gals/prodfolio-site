@@ -992,11 +992,11 @@ export const episodes: Episode[] = [
     duration: "56 min",
     publishedAt: "2026-05-19",
     takeaways: [
-      "Why most product marketing teams get the job wrong from day one, and the metaphor Zach uses to make every new PMM hire understand it.",
-      "The two phrases every PMM on Zach's team is required to learn, and what happens when someone shows up as a stoplight decision-maker instead.",
-      "How long it actually took for PM and PMM to find a stride at Disney+, and the specific shift that broke the standoff.",
-      "The skill Zach hires for in PMM that has nothing to do with copywriting or design, and why most candidates miss it entirely.",
-      "Zach's AI take that most marketers don't want to hear, and the one mistake he says is already writing people out of the room."
+      "Why PMM takeover that kills the partnership, and the central nervous system reframe Zach uses to reset every new hire.",
+      "The 'yes and / no but' rule Zach drills into every PMM on his team, and why bad decision-makers don't last.",
+      "The four years Zach has from his own side of the table at Disney+, and the wall that had to come down before PM and PMM could finally hit a stride.",
+      "Why engineering bandwidth is a marketing narrative problem, not an ops one, and how PMM is supposed to have product's back when the sprint can't fit it.",
+      "Zach's blunt AI take that most marketers don't want to hear, and the habits that are writing people out of the room."
     ],
     resourcesMentioned: [
       { title: "Product Marketing Alliance", url: "https://www.productmarketingalliance.com/" },
