@@ -992,11 +992,11 @@ export const episodes: Episode[] = [
     duration: "56 min",
     publishedAt: "2026-05-19",
     takeaways: [
-      "Why PMM acting like a bull in a china shop is the takeover that kills the partnership, and the central nervous system reframe Zach uses to reset every new hire.",
-      "The 'yes and / no but' rule Zach drills into every PMM on his team, and why stoplight decision-makers don't last.",
-      "The four years of hubris Zach owns from his own side of the table at Disney+, and the wall that had to come down before PM and PMM could finally hit a stride.",
+      "The PMM takeover mindset that kills the partnership, and the central nervous system reframe Zach uses to reset every new hire.",
+      "The 'yes and / no but' rule Zach drills into every PMM on his team, and why bad decision-makers don't last.",
+      "The four years Zach has from his own side of the table at Disney+, and the wall that had to come down before PM and PMM could finally hit a stride.",
       "Why engineering bandwidth is a marketing narrative problem, not an ops one, and how PMM is supposed to have product's back when the sprint can't fit it.",
-      "Zach's blunt AI take that most marketers don't want to hear, and the lazy habit that's already writing people out of the room."
+      "Zach's blunt AI take that most marketers don't want to hear, and the habits that are writing people out of the room."
     ],
     resourcesMentioned: [
       { title: "Product Marketing Alliance", url: "https://www.productmarketingalliance.com/" }
