@@ -12,6 +12,28 @@
       "destination": "/api/og?slug=:slug"
     },
     {
+      "source": "/changelog/:slug",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?i).*(GPTBot|ChatGPT-User|OAI-SearchBot|PerplexityBot|Perplexity-User|ClaudeBot|Claude-Web|anthropic-ai|Google-Extended|CCBot|Bytespider|Amazonbot|Applebot-Extended|YouBot|meta-externalagent|meta-externalfetcher|Diffbot|DuckAssistBot|cohere-ai|facebookexternalhit|Facebot|linkedinbot|Twitterbot|Slackbot|WhatsApp|Discordbot|TelegramBot).*"
+        }
+      ],
+      "destination": "/api/changelog?slug=:slug"
+    },
+    {
+      "source": "/changelog",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?i).*(GPTBot|ChatGPT-User|OAI-SearchBot|PerplexityBot|Perplexity-User|ClaudeBot|Claude-Web|anthropic-ai|Google-Extended|CCBot|Bytespider|Amazonbot|Applebot-Extended|YouBot|meta-externalagent|meta-externalfetcher|Diffbot|DuckAssistBot|cohere-ai|facebookexternalhit|Facebot|linkedinbot|Twitterbot|Slackbot|WhatsApp|Discordbot|TelegramBot).*"
+        }
+      ],
+      "destination": "/api/changelog"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

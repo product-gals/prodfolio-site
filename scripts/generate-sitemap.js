@@ -24,6 +24,7 @@ const staticPages = [
   { path: '/pricing', priority: '0.9', changefreq: 'weekly' },
   { path: '/about', priority: '0.8', changefreq: 'monthly' },
   { path: '/blog', priority: '0.9', changefreq: 'weekly' },
+  { path: '/changelog', priority: '0.8', changefreq: 'weekly' },
   { path: '/podcast', priority: '0.7', changefreq: 'weekly' },
   { path: '/for-career-changers', priority: '0.8', changefreq: 'monthly' },
   { path: '/for-hiring-managers', priority: '0.7', changefreq: 'monthly' },
@@ -57,6 +58,29 @@ function getBlogPosts() {
   return posts;
 }
 
+// Extract changelog entry data from changelog.ts
+function getChangelogEntries() {
+  const changelogPath = path.join(__dirname, '../src/data/changelog.ts');
+  const content = fs.readFileSync(changelogPath, 'utf-8');
+
+  const entries = [];
+
+  const slugMatches = content.matchAll(/slug:\s*["']([^"']+)["']/g);
+  const dateMatches = content.matchAll(/date:\s*["']([^"']+)["']/g);
+
+  const slugs = [...slugMatches].map(m => m[1]);
+  const dates = [...dateMatches].map(m => m[1]);
+
+  for (let i = 0; i < slugs.length; i++) {
+    entries.push({
+      slug: slugs[i],
+      date: dates[i] || TODAY
+    });
+  }
+
+  return entries;
+}
+
 // Extract episode data from episodes.ts
 function getEpisodes() {
   const episodesPath = path.join(__dirname, '../src/data/episodes.ts');
@@ -85,6 +109,7 @@ function getEpisodes() {
 function generateSitemap() {
   const episodes = getEpisodes();
   const blogPosts = getBlogPosts();
+  const changelogEntries = getChangelogEntries();
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -135,6 +160,21 @@ function generateSitemap() {
 
   xml += `
 
+  <!-- Changelog Entries -->`;
+
+  // Add changelog entry pages
+  for (const entry of changelogEntries) {
+    xml += `
+  <url>
+    <loc>${SITE_URL}/changelog/${entry.slug}</loc>
+    <lastmod>${entry.date}</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>`;
+  }
+
+  xml += `
+
 </urlset>
 `;
 
@@ -149,4 +189,5 @@ fs.writeFileSync(outputPath, sitemap);
 console.log(`✓ Sitemap generated with ${staticPages.length} static pages`);
 console.log(`✓ Found ${getEpisodes().length} podcast episodes`);
 console.log(`✓ Found ${getBlogPosts().length} blog posts`);
+console.log(`✓ Found ${getChangelogEntries().length} changelog entries`);
 console.log(`✓ Written to: ${outputPath}`);

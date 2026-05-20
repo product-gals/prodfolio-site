@@ -151,5 +151,59 @@
     "episodeNumber": "S3E2",
     "ogImage": "https://prodfolio.io/og/youre-the-product-your-career-is-too.png",
     "publishedAt": "2026-03-31"
+  },
+  {
+    "slug": "from-bdr-to-product-manager",
+    "title": "From BDR to Product Manager: The Non-Linear Path Works | The Product Pivot Podcast",
+    "description": "Christina shares what it's actually like to be an associate PM in 2025, how she broke in through a non-linear path, and why the product community is both welcoming and gate-kept.",
+    "guestName": "Christina Aragon",
+    "episodeNumber": "S3E3",
+    "ogImage": "https://img.youtube.com/vi/B3fq-XvTELk/hqdefault.jpg",
+    "publishedAt": "2026-04-07"
+  },
+  {
+    "slug": "product-manager-or-problem-manager",
+    "title": "Product Manager or Problem Manager? | The Product Pivot Podcast",
+    "description": "After 30+ years coaching PM teams, Steve Johnson argues product managers should really be called problem managers — and explains why the best PMs never tell other people how to do their jobs.",
+    "guestName": "Steve Johnson",
+    "episodeNumber": "S3E4",
+    "ogImage": "https://img.youtube.com/vi/iGXXkrbKcCU/hqdefault.jpg",
+    "publishedAt": "2026-04-21"
+  },
+  {
+    "slug": "from-publisher-to-product-manager",
+    "title": "From Publisher to Product Manager: An Accidental PM's Take on AI | The Product Pivot Podcast",
+    "description": "Liferaft Senior PM Riëtte Verster on stumbling into product management, why most AI features fail customers, and the shift coming for every app you build.",
+    "guestName": "Riëtte Verster",
+    "episodeNumber": "S3E5",
+    "ogImage": "https://img.youtube.com/vi/aAzx6OqCJAo/hqdefault.jpg",
+    "publishedAt": "2026-04-28"
+  },
+  {
+    "slug": "breaking-into-product-without-the-title",
+    "title": "Breaking Into Product Without the Title | The Product Pivot Podcast",
+    "description": "Rozie AI's Kartikeya Shah on doing product work before getting the title, transferable skills from project management, and the networking strategy that built him a 350-person spreadsheet.",
+    "guestName": "Kartikeya Shah",
+    "episodeNumber": "S3E6",
+    "ogImage": "https://img.youtube.com/vi/l6YVddhecNk/hqdefault.jpg",
+    "publishedAt": "2026-05-05"
+  },
+  {
+    "slug": "dark-side-of-product-management",
+    "title": "The Dark Side of Product Management Nobody Posts About | The Product Pivot Podcast",
+    "description": "Founder and consultant Alyx Priestley on the parts of product management nobody posts about: failure, burnout, imposter syndrome, and why product is a business function — not a feature factory.",
+    "guestName": "Alyx Priestley",
+    "episodeNumber": "S3E7",
+    "ogImage": "https://img.youtube.com/vi/XWQw6Q84IC8/hqdefault.jpg",
+    "publishedAt": "2026-05-12"
+  },
+  {
+    "slug": "product-marketing-is-a-partnership-not-a-takeover",
+    "title": "Product Marketing Is a Partnership, Not a Takeover | The Product Pivot Podcast",
+    "description": "Luma's Zach O'Neal on why most product marketing teams are getting the job wrong from day one, the four years it took to fix it at Disney+, and the AI take most marketers don't want to hear.",
+    "guestName": "Zach O'Neal",
+    "episodeNumber": "S3E8",
+    "ogImage": "https://img.youtube.com/vi/CoIR2yIRWbw/hqdefault.jpg",
+    "publishedAt": "2026-05-19"
   }
 ]
