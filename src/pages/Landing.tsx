@@ -6,9 +6,9 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StickyCTA from "@/components/StickyCTA";
-import screenshotTop from "@/assets/screenshot-top-portfolio.png";
-import screenshotMid from "@/assets/screenshot-mid-portfolio.png";
-import screenshotBottom from "@/assets/screenshot-bottom-portfolio.png";
+import screenshotTop from "@/assets/new-top-portfolio-v2.png";
+import screenshotMid from "@/assets/new-mid-portfolio.png";
+import screenshotBottom from "@/assets/new-bottom-portfolio.png";
 import aaronTestimonial from "@/assets/aaron-testimonial.png";
 import heidiTestimonial from "@/assets/heidi-testimonial.png";
 const Landing = () => {
