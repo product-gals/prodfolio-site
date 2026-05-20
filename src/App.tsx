@@ -30,6 +30,8 @@ const Partners = lazy(() => import("./pages/Partners"));
 const AiInfo = lazy(() => import("./pages/AiInfo"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
+const Changelog = lazy(() => import("./pages/Changelog"));
+const ChangelogEntry = lazy(() => import("./pages/ChangelogEntry"));
 
 const queryClient = new QueryClient();
 
@@ -62,6 +64,8 @@ const App = () => {
               <Route path="/ai-info" element={<AiInfo />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/changelog" element={<Changelog />} />
+              <Route path="/changelog/:slug" element={<ChangelogEntry />} />
 
               {/* 404 for all other routes */}
               <Route path="*" element={<NotFound />} />
