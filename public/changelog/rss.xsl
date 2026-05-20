@@ -49,19 +49,7 @@
           .lede a:hover { color: #fff; }
           .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); border-radius: 16px; padding: 24px; margin: 24px 0; backdrop-filter: blur(6px); }
           .card h2 { margin: 0 0 14px; font-size: 18px; font-weight: 700; color: #fff; }
-          .ctas { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-          .cta {
-            display: flex; align-items: center; justify-content: center; gap: 8px;
-            padding: 14px 18px; border-radius: 12px; font-weight: 600; font-size: 14px;
-            text-decoration: none; transition: transform 0.15s ease, background 0.15s ease;
-            border: 1px solid transparent;
-          }
-          .cta:hover { transform: translateY(-1px); }
-          .cta-primary { background: hsl(254 91% 65%); color: #fff; }
-          .cta-primary:hover { background: hsl(254 91% 72%); }
-          .cta-secondary { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.18); }
-          .cta-secondary:hover { background: rgba(255,255,255,0.14); }
-          .url-row { display: flex; gap: 8px; margin-top: 14px; align-items: stretch; flex-wrap: wrap; }
+          .url-row { display: flex; gap: 8px; align-items: stretch; flex-wrap: wrap; }
           .url-row code {
             flex: 1 1 280px; min-width: 0; overflow-x: auto; white-space: nowrap;
             background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.10);
@@ -94,29 +82,16 @@
           <div class="pill">📡 RSS feed</div>
           <h1>The Prodfolio <span class="grad">Changelog</span>, in your reader</h1>
           <p class="lede">
-            You found our RSS feed — a raw stream of every Prodfolio release that any feed reader can subscribe to. Pick a reader below and you'll get every new entry the moment we ship it. No email, no algorithm, no missed updates.
+            You found our RSS feed — a raw stream of every Prodfolio release that any feed reader can subscribe to.
           </p>
 
           <div class="card">
-            <h2>Subscribe in one click</h2>
-            <div class="ctas">
-              <a class="cta cta-primary" href="https://feedly.com/i/subscription/feed/https%3A%2F%2Fprodfolio.io%2Fchangelog%2Frss.xml" target="_blank" rel="noopener">
-                Add to Feedly →
-              </a>
-              <a class="cta cta-secondary" href="https://www.inoreader.com/?add_feed=https%3A%2F%2Fprodfolio.io%2Fchangelog%2Frss.xml" target="_blank" rel="noopener">
-                Add to Inoreader →
-              </a>
-              <a class="cta cta-secondary" href="https://readwise.io/feed_document_added?url=https%3A%2F%2Fprodfolio.io%2Fchangelog%2Frss.xml" target="_blank" rel="noopener">
-                Add to Readwise Reader →
-              </a>
-            </div>
-
             <div class="url-row">
               <code id="feed-url">https://prodfolio.io/changelog/rss.xml</code>
               <button class="copy-btn" id="copy-btn" type="button">Copy URL</button>
             </div>
             <p class="help">
-              Using a different reader (NetNewsWire, Reeder, The Old Reader, Slack <code>/feed</code>)? Copy the URL and paste it into the "Add feed" or "Subscribe" field.
+              Copy the URL and paste it into the "Add feed" or "Subscribe" field, or use Slack's <code>/feed</code>.
             </p>
             <p class="help">
               New to RSS? Think of it as email-style updates for websites — your reader checks the feed on a schedule and shows you new posts. <a href="https://en.wikipedia.org/wiki/RSS" target="_blank" rel="noopener">Learn more</a>.
