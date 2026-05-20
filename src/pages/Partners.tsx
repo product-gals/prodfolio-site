@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Copy, Check, Tag, Linkedin, Globe } from "lucide-react";
+import { Copy, Check, Tag, Linkedin, Globe, Mail } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import aaronPhoto from "@/assets/aaron-kesler.png";
 import p2pLogo from "@/assets/p2p-logo.png";
+import pglLogo from "@/assets/pgl-logo.avif";
 
 interface Partner {
   id: string;
@@ -14,6 +15,7 @@ interface Partner {
   description: string;
   website: string;
   linkedin?: string;
+  email?: string;
   logo?: string;
   photo?: string;
   type: "individual" | "organization";
@@ -43,6 +45,16 @@ const partners: Partner[] = [
     promoCode: "PRODFOLIO20",
     promoDiscount: "20% off",
     promoDescription: "Exclusive discount for Prodfolio users",
+  },
+  {
+    id: "product-growth-leaders",
+    name: "Product Growth Leaders",
+    description: "Turns product chaos into product clarity with learning programs that build your team's skills, get stuff done, and deliver value to the market and your business — predictably.",
+    website: "https://www.productgrowthleaders.com",
+    linkedin: "https://linkedin.com/in/sjohnson717",
+    email: "steve@productgrowthleaders.com",
+    logo: pglLogo,
+    type: "organization",
   },
 ];
 
@@ -164,6 +176,15 @@ const Partners = () => {
                         >
                           <Linkedin className="w-3.5 h-3.5" />
                           LinkedIn
+                        </a>
+                      )}
+                      {partner.email && (
+                        <a
+                          href={`mailto:${partner.email}`}
+                          className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-3 py-1.5 rounded-lg transition-colors"
+                        >
+                          <Mail className="w-3.5 h-3.5" />
+                          Email
                         </a>
                       )}
                     </div>

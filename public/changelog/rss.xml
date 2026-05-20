@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/changelog/rss.xsl"?>
 <rss version="2.0"
      xmlns:content="http://purl.org/rss/1.0/modules/content/"
      xmlns:atom="http://www.w3.org/2005/Atom">
@@ -7,7 +8,7 @@
     <link>https://prodfolio.io/changelog</link>
     <description>Every Prodfolio release: new features, improvements, integrations, and fixes.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2026 21:04:59 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 01:42:39 GMT</lastBuildDate>
     <pubDate>Tue, 19 May 2026 12:00:00 GMT</pubDate>
     <generator>prodfolio-rss</generator>
     <atom:link href="https://prodfolio.io/changelog/rss.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +17,7 @@
       <link>https://prodfolio.io/changelog/sharper-portfolio-layout-case-study-redesign</link>
       <guid isPermaLink="true">https://prodfolio.io/changelog/sharper-portfolio-layout-case-study-redesign</guid>
       <pubDate>Tue, 19 May 2026 12:00:00 GMT</pubDate>
-      <description>Every portfolio just got a wider layout and a 2×2 case study grid. The reader was rebuilt around how hiring managers actually consume case studies. Plus drag-to-reorder, inline section editing, a full WCAG accessibility pass, and a long list of polish fixes — all on the new home of the Prodfolio changelog.</description>
+      <description>Every portfolio just got a wider layout and a 2×2 case study grid. The new view was rebuilt around how hiring managers actually consume case studies. Plus drag-to-reorder, inline section editing, and a full WCAG accessibility pass - all on the new home of the Prodfolio changelog.</description>
       <category>New</category>
       <category>Improved</category>
       <category>Fixed</category>
@@ -38,13 +39,14 @@
 <p><strong>What changed:</strong></p>
 
 <ul>
-<li><p>Wider Professional Timeline so your role titles stop clipping mid-line</p></li>
 <li><p>2×2 case study grid with pagination — recruiters see four projects at a glance instead of sliding through pairs</p></li>
 <li><p>Compact "Beyond Work" cards that scan faster without losing personality</p></li>
 <li><p>Cleaner transitions between sections — softer, less boxed-in</p></li>
 </ul>
 
-<p><strong>Why this matters:</strong> Recruiters spend an average of 6–8 seconds on a portfolio before deciding to dig deeper. More of your work, visible faster, on the first scroll.</p>
+<img src="/changelog/sharper-portfolio-layout-case-study-redesign/img-1.png" alt="New 2×2 case study grid layout" loading="lazy">
+
+<p><strong>Why this matters:</strong> Hiring managers skim before they read. More of your work, visible faster, on the first scroll.</p>
 
 <h3><strong>📖 Case studies that read like a story</strong></h3>
 
@@ -58,7 +60,9 @@
 <li><p>Full-width images for single visuals so screenshots actually breathe</p></li>
 </ul>
 
-<p><strong>Why this matters:</strong> Your strongest case study should feel like a great PRD — a clear arc, the punchline visible, an obvious next step. Now it does.</p>
+<img src="/changelog/sharper-portfolio-layout-case-study-redesign/img-2.png" alt="Case study reader with full-width images and reading progress" loading="lazy">
+
+<p><strong>Why this matters:</strong> Your strongest case study should feel like a great story — a clear arc, the punchline visible, an obvious next step. Now it does.</p>
 
 <hr>
 
@@ -67,8 +71,7 @@
 <h3><strong>🛠️ Builder upgrades you've been asking for</strong></h3>
 
 <ul>
-<li><p><strong>Drag to reorder Experience entries</strong> — finally, a fix for "I have two current roles and the order is wrong"</p></li>
-<li><p><strong>Inline editing for section titles and subtitles</strong> — click, type, done. No more "edit → save → reload" dance</p></li>
+<li><p><strong>Drag to reorder Experience entries</strong> - a fix for "I have two current roles and the order is wrong"</p></li>
 <li><p><strong>"Not sure what counts?" reassurance</strong> in the case study modal — internal tools, side projects, and coursework all count</p></li>
 <li><p><strong>Helper copy for product philosophy</strong> — with a link to the writing guide for anyone tackling it for the first time</p></li>
 <li><p><strong>Living document framing</strong> in the builder to relieve the "must be perfect before publishing" pressure</p></li>
@@ -79,7 +82,6 @@
 <ul>
 <li><p>YouTube Shorts now embed correctly in case studies</p></li>
 <li><p>Media uploads work on already-published portfolios (this was a top-reported bug — thank you for flagging)</p></li>
-<li><p>Stronger video embed security so nothing weird sneaks into your portfolio</p></li>
 </ul>
 
 <h3><strong>🧭 Help &amp; Support, finally in one spot</strong></h3>
@@ -90,6 +92,7 @@
 <li><p><strong>Help Center</strong> → <a href="https://help.prodfolio.io" target="_blank" rel="noopener">help.prodfolio.io</a> with how-tos and writing guides</p></li>
 <li><p><strong>Contact Support</strong> → email us directly</p></li>
 <li><p><strong>Share Feedback</strong> → tell us what to build next</p></li>
+<li><p><strong>Changelog</strong> → <a href="/changelog">prodfolio.io/changelog</a> with everything we've shipped</p></li>
 </ul>
 
 <h3><strong>♿ Accessibility, baked in</strong></h3>
@@ -98,7 +101,7 @@
 
 <hr>
 
-<h2>🐛 Polish &amp; bug fixes</h2>
+<h2>🐛 Bug fixes</h2>
 
 <ul>
 <li><p><strong>GitHub link now persists</strong> when you reopen the editor (it was saving but disappearing from the form — fixed)</p></li>
@@ -106,7 +109,6 @@
 <li><p><strong>Magic links from "Request Access"</strong> now deep-link to the specific case study you requested</p></li>
 <li><p><strong>OG meta tags</strong> now render correctly when portfolios are shared on Slack, LinkedIn, and other platforms</p></li>
 <li><p>Sidebar is always openable in the builder</p></li>
-<li><p>Dozens of smaller fixes around uploads, trials, and billing UI</p></li>
 </ul>
 
 <hr>
@@ -118,10 +120,10 @@
 <ul>
 <li><p>More recruiter-first signals surfaced on the portfolio (metrics, impact, outcomes)</p></li>
 <li><p>Continued builder simplification based on your walkthroughs</p></li>
-<li><p>More from the AI case study workflow</p></li>
+<li><p>Better tracking for ongoing work</p></li>
 </ul>
 
-<p>Have a strong opinion about what we should ship next? Reply to this email or hit the feedback widget — we read everything.</p>
+<p>Have a strong opinion about what we should ship next? Email us or use the feedback form.</p>
 
 <hr>
 
@@ -143,11 +145,13 @@
 
 <p>We're still on Reddit at <a href="https://www.reddit.com/r/Prodfolio" target="_blank" rel="noopener">r/Prodfolio</a> — share your portfolio, swap feedback, and connect with other PMs.</p>
 
+<p>We're also opening up our Slack to anyone currently using Prodfolio. We're in the beginning stages of what that will look like, but one of our largest pieces of feedback is that our users are looking for more peer to peer collaboration on building. So if you want to join, <a href="https://join.slack.com/t/prodfolio/shared_invite/zt-3yav2bel3-76izAxeMgslZZcdOmNy2sw" target="_blank" rel="noopener">click here</a>.</p>
+
 <h2>💜 See something broken? Want a feature?</h2>
 
-<p>Click the feedback widget in the bottom right of the app. We're actively prioritizing based on what comes through.</p>
+<p>Click Help &amp; Support on the sidebar within the app.</p>
 
-<blockquote class="callout"><p><strong>Office hours</strong> are still happening — bring a draft, bring questions, stay as long as you need.</p></blockquote>
+<blockquote class="callout"><p><a href="https://cal.com/prodfolio/portfolio-setup" target="_blank" rel="noopener"><strong>Weekly sessions</strong></a> are still happening to build your portfolio — bring a draft, bring questions, stay as long as you need.</p></blockquote>
 
 <p>Thanks for building with us.</p>
 

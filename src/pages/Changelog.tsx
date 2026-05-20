@@ -144,7 +144,7 @@ const Changelog = () => {
           <p className="text-sm text-white/40 mt-3 max-w-2xl mx-auto">
             Have a feature request? Submit it on our{" "}
             <a
-              href="https://prodfolio.featurebase.app/"
+              href="https://tally.so/r/XxJM8O"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-white/70"

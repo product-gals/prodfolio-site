@@ -136,7 +136,7 @@ export const changelogEntries: ChangelogEntry[] = [
 <li><p><strong>Full backfill.</strong> Every release from launch through April is here, with original dates and screenshots.</p></li>
 </ul>
 
-<p>Feature requests still live on our <a href="https://prodfolio.featurebase.app/" target="_blank" rel="noopener">feedback board</a> — we read every submission.</p>
+<p>Feature requests still live on our <a href="https://tally.so/r/XxJM8O" target="_blank" rel="noopener">feedback board</a> — we read every submission.</p>
 
 <h2>👥 Community</h2>
 

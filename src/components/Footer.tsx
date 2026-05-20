@@ -58,9 +58,14 @@ const Footer = () => {
                   How It Works
                 </Link>
               </li>
+              <li>
+                <Link to="/changelog" className="hover:text-white hover:underline transition-all">
+                  Changelog
+                </Link>
+              </li>
             </ul>
           </div>
-          
+
           {/* Resources */}
           <div>
             <h4 className="font-semibold mb-4 text-white">Resources</h4>
@@ -73,11 +78,6 @@ const Footer = () => {
               <li>
                 <Link to="/podcast" className="hover:text-white hover:underline transition-all">
                   Podcast
-                </Link>
-              </li>
-              <li>
-                <Link to="/changelog" className="hover:text-white hover:underline transition-all">
-                  Changelog
                 </Link>
               </li>
               <li>
