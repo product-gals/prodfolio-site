@@ -33,6 +33,7 @@ import alyxPhoto from "@/assets/Alyx photo.jpeg";
 import alyxThumbnail from "@/assets/Alyx Thumbnail.png";
 import zachPhoto from "@/assets/zach photo.jpeg";
 import zachThumbnail from "@/assets/Zach thumbnail.png";
+import aaronS3E9Thumbnail from "@/assets/aaron-thumbnail-s3e9.png";
 
 export interface Episode {
   id: string;
@@ -1002,6 +1003,48 @@ export const episodes: Episode[] = [
       { title: "Product Marketing Alliance", url: "https://www.productmarketingalliance.com/" }
     ],
     keywords: ["Zach O'Neal", "Luma", "Luma AI", "product marketing", "PMM", "product marketing vs product management", "PM PMM partnership", "Disney Plus product marketing", "Hulu", "ESPN Plus", "Product Marketing Alliance", "inbound product marketing", "outbound product marketing", "go-to-market", "multimodal AI", "generative AI", "AI in marketing", "Marvel IMAX Enhanced", "pivoting to product marketing", "central nervous system marketing", "yes and no but"]
+  },
+  {
+    id: "33",
+    slug: "from-ic-to-executive-what-actually-changes",
+    title: "From IC to Executive: What Actually Changes",
+    episodeNumber: "S3E9",
+    guest: {
+      name: "Aaron Kesler",
+      role: "Vice President of Product Management",
+      company: "Rozie AI",
+      website: "https://www.roziesynopsis.com/",
+      industry: "Product Management",
+      bio: "Aaron Kesler is Vice President of Product Management at Rozie AI, where he leads product on Rozie Synopsis — an AI platform that listens at live events and turns them into evergreen summaries, synopses, and reports. He has over a decade in product management across technical support, healthcare, and enterprise AI, including leading AI product at SnapLogic on two of the company's most successful launches. Aaron writes the Become an AI Product Manager newsletter on LinkedIn, created the FORGE framework for AI PMs, and authored a book for people pivoting into product management. He's also a returning Product Pivot guest — last on the show as he was just stepping into the Rozie role.",
+      photo: aaronPhoto,
+      linkedin: "https://www.linkedin.com/in/aaron-kesler/"
+    },
+    description: "Aaron Kesler returns as VP of Product at Rozie AI to talk about the one shift nobody warns you about going from IC to executive, the FORGE framework for AI PMs, and a $4.5M boring-AI story he tells onstage but rarely in print.",
+    longDescription: "In this episode, Santi and Meagan welcome Aaron Kesler back to the show — now Vice President of Product Management at Rozie AI, where he leads product on Rozie Synopsis, the company's AI platform for turning live events into evergreen reports. The last time Aaron was on, he'd just started at Rozie. This time he's running the team, and he doesn't sugarcoat what changed.\n\nAaron makes a sharp distinction most new executives learn the hard way: ICs spend their entire career figuring out what they can control. Executives have to give that up. He walks through what replaces it, what it costs, and the trap almost every first-time leader falls into — the one he names as his own biggest red flag.\n\nThe conversation widens into AI product stickiness — why ChatGPT, Claude, and Perplexity feel interchangeable, and what actually builds loyalty when switching costs are near zero. Aaron tells a $4.5M boring-AI story from a former customer that he closes his ProductCamp talks with, and breaks down the FORGE framework he built when he realized his own newsletter wasn't giving readers anything tangible to act on. Find, Organize, Rank, Generate, Evaluate — each letter mapped back to a PM fundamental most people already have, but don't know how to apply to AI.\n\nPlus: the AI-as-decision-partner thought experiment that gets darker the longer you think about it, why fundamentals beat AI shortcuts for new leaders, and Aaron's spicy take on product educators who are publishing into the ether.",
+    thumbnail: aaronS3E9Thumbnail,
+    youtubeId: "eKjE4uAni6s",
+    buzzsproutId: "19242757",
+    spotifyUrl: "",
+    appleUrl: "https://podcasts.apple.com/us/podcast/from-ic-to-executive-what-actually-changes-with-aaron/id1784108281?i=1000769673367",
+    topic: "leadership",
+    topics: ["Leadership", "IC to Executive", "AI Product Management", "Frameworks", "Continuous Discovery", "Product Stickiness"],
+    duration: "49 min",
+    publishedAt: "2026-05-26",
+    takeaways: [
+      "The IC-to-executive shift Aaron says nobody actually warned him about — and the one word that replaces 'control' the day you sit in the seat.",
+      "Why Aaron thinks AI is dangerous for first-time leaders specifically, and the fundamentals he says you have to build before the AI partner can help you.",
+      "The $4.5M boring-AI story Aaron closes his ProductCamp talks with — a 300-person field team, eight hours a week each, and a 'magical news feed' the end users never knew was AI.",
+      "The FORGE framework — Find, Organize, Rank, Generate, Evaluate — and how Aaron maps each letter back to a product fundamental every PM already has, so AI PM stops feeling like a different job.",
+      "Aaron's biggest red flag as a PM-turned-VP, plus the spicy take on product educators that he stopped just short of naming names on."
+    ],
+    resourcesMentioned: [
+      { title: "Introducing the FORGE Framework", url: "https://www.linkedin.com/pulse/introducing-forge-framework-mental-model-become-ai-product-kesler-z0sre/" },
+      { title: "Become an AI Product Manager (Aaron's newsletter)", url: "https://www.linkedin.com/newsletters/become-an-ai-product-manager-7287598826540916736/" },
+      { title: "Aaron Kesler's website", url: "https://www.kesler.io/" },
+      { title: "Continuous Discovery Habits by Teresa Torres", url: "https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products/dp/1736633309" },
+      { title: "Why AI Should Be Boring with Aaron Kesler (S2)", url: "https://prodfolio.io/podcast/episodes/why-ai-should-be-boring" }
+    ],
+    keywords: ["Aaron Kesler", "Rozie AI", "Rozie Synopsis", "VP of Product", "IC to executive", "first-time executive", "product leadership", "AI product management", "FORGE framework", "Forge framework AI PM", "Become an AI Product Manager", "AI PM", "continuous discovery", "Teresa Torres", "product stickiness", "ChatGPT vs Claude", "boring AI", "ProductCamp", "influence without authority", "delegation", "leadership transition", "AI product loyalty"]
   }
 ];
 
