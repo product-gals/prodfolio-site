@@ -1024,7 +1024,7 @@ export const episodes: Episode[] = [
     thumbnail: aaronS3E9Thumbnail,
     youtubeId: "eKjE4uAni6s",
     buzzsproutId: "19242757",
-    spotifyUrl: "",
+    spotifyUrl: "https://open.spotify.com/episode/1AZdbxHxRzkwyoKpqgeRD8",
     appleUrl: "https://podcasts.apple.com/us/podcast/from-ic-to-executive-what-actually-changes-with-aaron/id1784108281?i=1000769673367",
     topic: "leadership",
     topics: ["Leadership", "IC to Executive", "AI Product Management", "Frameworks", "Continuous Discovery", "Product Stickiness"],
