@@ -34,6 +34,7 @@ import alyxThumbnail from "@/assets/Alyx Thumbnail.png";
 import zachPhoto from "@/assets/zach photo.jpeg";
 import zachThumbnail from "@/assets/Zach thumbnail.png";
 import aaronS3E9Thumbnail from "@/assets/aaron-thumbnail-s3e9.png";
+import steveS3E10Thumbnail from "@/assets/Steve Thumnail Ep25.png";
 
 export interface Episode {
   id: string;
@@ -1045,6 +1046,49 @@ export const episodes: Episode[] = [
       { title: "Why AI Should Be Boring with Aaron Kesler (S2)", url: "https://prodfolio.io/podcast/episodes/why-ai-should-be-boring" }
     ],
     keywords: ["Aaron Kesler", "Rozie AI", "Rozie Synopsis", "VP of Product", "IC to executive", "first-time executive", "product leadership", "AI product management", "FORGE framework", "Forge framework AI PM", "Become an AI Product Manager", "AI PM", "continuous discovery", "Teresa Torres", "product stickiness", "ChatGPT vs Claude", "boring AI", "ProductCamp", "influence without authority", "delegation", "leadership transition", "AI product loyalty"]
+  },
+  {
+    id: "34",
+    slug: "most-pms-arent-doing-product-management",
+    title: "Most PMs Aren't Doing Product Management",
+    episodeNumber: "Episode 25",
+    guest: {
+      name: "Steve Johnson",
+      role: "Founder & Principal Consultant",
+      company: "Product Growth Leaders",
+      website: "https://www.productgrowthleaders.com/",
+      industry: "Product Management Coaching & Training",
+      bio: "Steve Johnson has spent 30+ years coaching product management teams. After starting as a programmer and then working in sales engineering and sales, Steve stumbled into product management and went on to become a VP of Product. He spent 15 years at Pragmatic Marketing before founding Product Growth Leaders, where he flipped training on its head: less talking, more doing. Steve is known for his direct style, his focus on friction as the core of the PM role, and his provocative take that maybe we should be calling ourselves problem managers instead. He's a returning Product Pivot guest, back to map out his QUARTZ framework for the full scope of product management.",
+      photo: stevePhoto,
+      linkedin: "https://www.linkedin.com/in/sjohnson717/"
+    },
+    description: "Steve Johnson returns to map the full scope of product management with his QUARTZ framework: why most PMs are doing design and dev instead of the job, and the one superpower AI can't take from them.",
+    longDescription: "Steve Johnson, founder of Product Growth Leaders, is back, and this time he's brought a framework. Steve walks Santi and Meagan through QUARTZ, his open model for the entire scope of product management, and makes the case that most PMs today have drifted out of the business role into design, development, and ticket-shepherding without realizing it.\n\nFrom there the conversation gets sharp: what AI and vibe coding are actually doing to the PM role, why customer conversations are the one thing that can't be automated away, and a clear-eyed take on the AI bubble: token economics, the layoffs, and what Steve thinks happens 18 months from now when the real cost of AI lands.\n\nAlong the way: why founders keep losing touch with their own market, the prototyping trap that quietly corrupts your design process, how to become the market expert at your company (even if it takes a little civil disobedience), and the one piece of his own advice Steve secretly ignores.",
+    youtubeId: "4hzVeaJR7uw",
+    spotifyUrl: "https://open.spotify.com/episode/4W5sYa2a7f3hGItCsYRqUi",
+    buzzsproutId: "19312719",
+    thumbnail: steveS3E10Thumbnail,
+    appleUrl: "https://podcasts.apple.com/us/podcast/the-pm-skill-ai-cant-replace-with-steve-johnson/id1784108281?i=1000771883923",
+    topic: "career",
+    topics: ["PM Role & Scope", "QUARTZ Framework", "AI and Product Management", "Customer Conversations", "Founder Lessons", "Product Strategy"],
+    duration: "72 min",
+    publishedAt: "2026-06-09",
+    takeaways: [
+      "The QUARTZ framework: Steve's model for the full scope of PM, and the parts almost everyone skips",
+      "Why most product managers are doing design and development instead of product management, and how to tell if you're one of them",
+      "The PM superpower Steve says AI can never replace",
+      "What actually happens to the PM role 18 months from now when AI's real costs hit",
+      "The prototyping trap that quietly corrupts your design process before it starts",
+      "How to become your company's market expert, even when no one gives you permission",
+      "The one piece of his own best-practice advice Steve admits he secretly ignores"
+    ],
+    resourcesMentioned: [
+      { title: "Product Growth Leaders", url: "https://www.productgrowthleaders.com/" },
+      { title: "The QUARTZ Open Framework", url: "https://www.productgrowthleaders.com/quartz" },
+      { title: "Customer Conversations: A Product Manager's Superpower by Steve Johnson", url: "https://www.amazon.com/Customer-Conversations-Product-Managers-Superpower-ebook/dp/B0GNWN9NC8" },
+      { title: "Turn Ideas Into Products by Steve Johnson", url: "https://www.amazon.com/Turn-Ideas-Into-Products-Framework-ebook/dp/B0CZMYLRW9" }
+    ],
+    keywords: ["Steve Johnson", "QUARTZ framework", "Product Growth Leaders", "scope of product management", "what is product management", "AI product management", "customer conversations", "PM role evolution", "vibe coding product managers", "AI bubble", "token costs AI", "product management business role", "persona definition", "breaking into product management", "Turn Ideas into Product"]
   }
 ];
 
@@ -1053,5 +1097,11 @@ export function getEpisodeBySlug(slug: string): Episode | undefined {
 }
 
 export function getRelatedEpisodes(currentSlug: string, limit: number = 2): Episode[] {
-  return episodes.filter(ep => ep.slug !== currentSlug).slice(0, limit);
+  const current = episodes.find(ep => ep.slug === currentSlug);
+  const others = episodes.filter(ep => ep.slug !== currentSlug);
+  if (!current) return others.slice(0, limit);
+  // Surface other episodes with the same guest first, then fill the rest.
+  const sameGuest = others.filter(ep => ep.guest.name === current.guest.name);
+  const rest = others.filter(ep => ep.guest.name !== current.guest.name);
+  return [...sameGuest, ...rest].slice(0, limit);
 }
