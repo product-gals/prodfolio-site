@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Play, Youtube, Headphones, Clock } from "lucide-react";
+import { Play, Youtube, Headphones, Clock, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useSEO } from "@/hooks/useSEO";
@@ -54,9 +54,15 @@ const Resources = () => {
     return null;
   };
 
+  // Newest first, by publish date.
+  const sortedEpisodes = [...episodes].sort((a, b) =>
+    (b.publishedAt || "").localeCompare(a.publishedAt || "")
+  );
+  const featuredEpisode = sortedEpisodes[0];
+
   const filteredEpisodes = activeFilter === "all"
-    ? episodes
-    : episodes.filter(ep => getSeasonFromEpisode(ep.episodeNumber) === activeFilter);
+    ? sortedEpisodes.filter(ep => ep.slug !== featuredEpisode?.slug)
+    : sortedEpisodes.filter(ep => getSeasonFromEpisode(ep.episodeNumber) === activeFilter);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] via-[#16213e] to-[#1a1a2e]">
@@ -149,6 +155,60 @@ const Resources = () => {
         </div>
       </section>
 
+      {/* Latest Episode Spotlight */}
+      {activeFilter === "all" && featuredEpisode && (
+        <section className="px-4 pt-4">
+          <div className="prodfolio-container max-w-[1200px] mx-auto">
+            <article className="grid md:grid-cols-2 md:items-center bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary/30 shadow-lg shadow-primary/10">
+              <Link to={`/podcast/episodes/${featuredEpisode.slug}`} className="block group p-4 md:p-6">
+                <div className="aspect-video relative bg-gradient-to-br from-primary/20 to-coral/20 overflow-hidden rounded-xl">
+                  <img
+                    src={featuredEpisode.thumbnail || `https://img.youtube.com/vi/${featuredEpisode.youtubeId}/hqdefault.jpg`}
+                    alt={`The Product Pivot podcast episode: ${featuredEpisode.title}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  {featuredEpisode.episodeNumber && (
+                    <div className="absolute top-3 left-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                      {featuredEpisode.episodeNumber}
+                    </div>
+                  )}
+                  <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                    {featuredEpisode.duration}
+                  </div>
+                </div>
+              </Link>
+              <div className="p-6 md:p-8 flex flex-col justify-center">
+                <span className="inline-flex items-center gap-1.5 self-start text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 px-3 py-1 rounded-full mb-3">
+                  <Star className="w-3.5 h-3.5 fill-coral" />
+                  Latest Episode
+                </span>
+                <Link to={`/podcast/episodes/${featuredEpisode.slug}`}>
+                  <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2 hover:text-primary transition-colors">
+                    {featuredEpisode.title}
+                  </h2>
+                </Link>
+                <p className="text-primary text-sm font-medium mb-1">
+                  with {featuredEpisode.guest.name}
+                </p>
+                <p className="text-white/50 text-xs mb-4">
+                  {featuredEpisode.guest.role}, {featuredEpisode.guest.company}
+                </p>
+                <p className="text-white/70 text-sm md:text-base line-clamp-3 mb-5">
+                  {featuredEpisode.description}
+                </p>
+                <Link
+                  to={`/podcast/episodes/${featuredEpisode.slug}`}
+                  className="inline-flex items-center gap-2 self-start bg-primary text-white px-5 py-2.5 rounded-full font-medium shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all"
+                >
+                  <Play className="w-4 h-4" />
+                  Listen Now
+                </Link>
+              </div>
+            </article>
+          </div>
+        </section>
+      )}
+
       {/* Season Filters */}
       <section className="py-8 px-4">
         <div className="prodfolio-container max-w-[1200px] mx-auto">
@@ -202,6 +262,11 @@ const Resources = () => {
                       loading="lazy"
                       decoding="async"
                     />
+                    {episode.episodeNumber && (
+                      <div className="absolute top-3 left-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                        {episode.episodeNumber}
+                      </div>
+                    )}
                     <div className="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">
                       {episode.duration}
                     </div>
