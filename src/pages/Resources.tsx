@@ -22,7 +22,7 @@ const seasonFilters: { value: SeasonFilter; label: string; comingSoon?: boolean 
 const Resources = () => {
   const [activeFilter, setActiveFilter] = useState<SeasonFilter>("all");
   const heroAnimation = useScrollAnimation();
-  const episodesAnimation = useScrollAnimation();
+  const episodesAnimation = useScrollAnimation(0);
 
   useSEO({
     title: "The Product Pivot Podcast | PM Career Stories & Insights | Prodfolio",
