@@ -35,6 +35,8 @@ import zachPhoto from "@/assets/zach photo.jpeg";
 import zachThumbnail from "@/assets/Zach thumbnail.png";
 import aaronS3E9Thumbnail from "@/assets/aaron-thumbnail-s3e9.png";
 import steveS3E10Thumbnail from "@/assets/Steve Thumnail Ep25.png";
+import andresPhoto from "@/assets/Andres photo.jpeg";
+import andresThumbnail from "@/assets/Andres Thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -1089,6 +1091,46 @@ export const episodes: Episode[] = [
       { title: "Turn Ideas Into Products by Steve Johnson", url: "https://www.amazon.com/Turn-Ideas-Into-Products-Framework-ebook/dp/B0CZMYLRW9" }
     ],
     keywords: ["Steve Johnson", "QUARTZ framework", "Product Growth Leaders", "scope of product management", "what is product management", "AI product management", "customer conversations", "PM role evolution", "vibe coding product managers", "AI bubble", "token costs AI", "product management business role", "persona definition", "breaking into product management", "Turn Ideas into Product"]
+  },
+  {
+    id: "35",
+    slug: "how-product-managers-actually-get-hired",
+    title: "How Product Managers Actually Get Hired",
+    episodeNumber: "Episode 26",
+    guest: {
+      name: "Andres Tenias",
+      role: "Senior Talent Acquisition Specialist",
+      company: "Lantern",
+      website: "https://lanternstudios.com/",
+      industry: "Recruitment & Talent Acquisition",
+      bio: "Andres Tenias has spent close to a decade in tech recruitment, fumbling into the field after a commerce degree and never looking back. He's recruited agency-side and worked as an account manager across enterprise and startups, owned his own software development studios, and even earned a software engineering diploma to get closer to the work he hires for. Now a Senior Talent Acquisition Specialist at Lantern, he focuses on data and AI talent and has screened and placed countless product owners and product managers along the way. He's known for a curiosity-driven, ask-a-thousand-questions approach to screening and for the kind of candid hiring advice that helps candidates actually get in the room.",
+      photo: andresPhoto,
+      linkedin: "https://www.linkedin.com/in/andresteniasgil"
+    },
+    description: "Recruiter Andres Tenias pulls back the curtain on how product managers actually get hired, from what makes a candidate stand out in a screen to the small moves most people skip that quietly cost them the job.",
+    longDescription: "Santi and Meagan sit down with Andres Tenias, a Senior Talent Acquisition Specialist at Lantern who's spent nearly a decade recruiting across tech, to talk about what really happens on the other side of a product manager job search.\n\nAndres breaks down what separates candidates who get hired from the ones who get passed over: how to talk about your projects so a recruiter actually understands your impact, why your LinkedIn often matters more than your portfolio for getting found, and how to work with the search tools recruiters use to surface talent. He gets into where product skills transfer outside of tech, what's changing as the PM role blends business thinking with building, and a reframe that keeps job-search rejection from quietly wrecking your confidence.\n\nIt's a candid, tactical look at hiring from someone who does it every day, full of the kind of advice that feels obvious in hindsight and is easy to miss in the moment.",
+    youtubeId: "WGETM3tpDVI",
+    spotifyUrl: "https://open.spotify.com/episode/0fWksxn9eeI9iQ92K1vG3y",
+    buzzsproutId: "19386337",
+    thumbnail: andresThumbnail,
+    appleUrl: "https://podcasts.apple.com/us/podcast/how-product-managers-actually-get-hired-with-andres/id1784108281?i=1000773899701",
+    topic: "hiring",
+    topics: ["Getting Hired", "PM Job Search", "Recruiting & Hiring", "LinkedIn & Findability", "Career Pivots", "Networking"],
+    duration: "65 min",
+    publishedAt: "2026-06-23",
+    takeaways: [
+      "What recruiters actually look for when they screen a product manager, and the signal that tells them you're ready to go to market",
+      "Why your LinkedIn can do more for your job search than your portfolio, and how to make yourself findable",
+      "How to talk about your projects so the impact lands, without the assumptions that lose six candidates out of ten",
+      "Where product skills transfer outside of tech, and how to reframe your experience so it actually resonates",
+      "The mindset shift that keeps job-search rejection from quietly wrecking your confidence",
+      "The simple post-interview follow-up most candidates skip that makes you stand out",
+      "A slightly sneaky way to figure out exactly who landed the role you wanted, and what to do with it"
+    ],
+    resourcesMentioned: [
+      { title: "Andres Tenias on LinkedIn", url: "https://www.linkedin.com/in/andresteniasgil" }
+    ],
+    keywords: ["Andres Tenias", "how product managers get hired", "product manager job search", "tech recruiter advice", "product manager hiring", "product owner recruiting", "LinkedIn for product managers", "how recruiters screen candidates", "product manager portfolio", "getting hired as a product manager", "product management career", "PM interview tips", "transferable product skills", "non-tech product roles", "job search rejection", "networking for product managers", "talent acquisition", "Lantern"]
   }
 ];
 

@@ -178,10 +178,17 @@ const Resources = () => {
                 </div>
               </Link>
               <div className="p-6 md:p-8 flex flex-col justify-center">
-                <span className="inline-flex items-center gap-1.5 self-start text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 px-3 py-1 rounded-full mb-3">
-                  <Star className="w-3.5 h-3.5 fill-coral" />
-                  Latest Episode
-                </span>
+                <div className="flex items-center gap-2 self-start mb-3">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 px-3 py-1 rounded-full">
+                    <Star className="w-3.5 h-3.5 fill-coral" />
+                    Latest Episode
+                  </span>
+                  {featuredEpisode.topics?.[0] && (
+                    <span className="text-[10px] text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded-full whitespace-nowrap">
+                      {featuredEpisode.topics[0]}
+                    </span>
+                  )}
+                </div>
                 <Link to={`/podcast/episodes/${featuredEpisode.slug}`}>
                   <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-2 hover:text-primary transition-colors">
                     {featuredEpisode.title}
