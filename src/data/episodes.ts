@@ -1109,6 +1109,7 @@ export const episodes: Episode[] = [
     description: "Recruiter Andres Tenias pulls back the curtain on how product managers actually get hired, from what makes a candidate stand out in a screen to the small moves most people skip that quietly cost them the job.",
     longDescription: "Santi and Meagan sit down with Andres Tenias, a Senior Talent Acquisition Specialist at Lantern who's spent nearly a decade recruiting across tech, to talk about what really happens on the other side of a product manager job search.\n\nAndres breaks down what separates candidates who get hired from the ones who get passed over: how to talk about your projects so a recruiter actually understands your impact, why your LinkedIn often matters more than your portfolio for getting found, and how to work with the search tools recruiters use to surface talent. He gets into where product skills transfer outside of tech, what's changing as the PM role blends business thinking with building, and a reframe that keeps job-search rejection from quietly wrecking your confidence.\n\nIt's a candid, tactical look at hiring from someone who does it every day, full of the kind of advice that feels obvious in hindsight and is easy to miss in the moment.",
     youtubeId: "WGETM3tpDVI",
+    spotifyUrl: "https://open.spotify.com/episode/0fWksxn9eeI9iQ92K1vG3y",
     buzzsproutId: "19386337",
     thumbnail: andresThumbnail,
     topic: "hiring",
