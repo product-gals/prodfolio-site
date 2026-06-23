@@ -1113,6 +1113,7 @@ export const episodes: Episode[] = [
     spotifyUrl: "https://open.spotify.com/episode/0fWksxn9eeI9iQ92K1vG3y",
     buzzsproutId: "19386337",
     thumbnail: andresThumbnail,
+    appleUrl: "https://podcasts.apple.com/us/podcast/how-product-managers-actually-get-hired-with-andres/id1784108281?i=1000773899701",
     topic: "hiring",
     topics: ["Getting Hired", "PM Job Search", "Recruiting & Hiring", "LinkedIn & Findability", "Career Pivots", "Networking"],
     duration: "65 min",
