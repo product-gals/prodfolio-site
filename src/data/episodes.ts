@@ -1101,6 +1101,7 @@ export const episodes: Episode[] = [
       name: "Andres Tenias",
       role: "Senior Talent Acquisition Specialist",
       company: "Lantern",
+      website: "https://lanternstudios.com/",
       industry: "Recruitment & Talent Acquisition",
       bio: "Andres Tenias has spent close to a decade in tech recruitment, fumbling into the field after a commerce degree and never looking back. He's recruited agency-side and worked as an account manager across enterprise and startups, owned his own software development studios, and even earned a software engineering diploma to get closer to the work he hires for. Now a Senior Talent Acquisition Specialist at Lantern, he focuses on data and AI talent and has screened and placed countless product owners and product managers along the way. He's known for a curiosity-driven, ask-a-thousand-questions approach to screening and for the kind of candid hiring advice that helps candidates actually get in the room.",
       photo: andresPhoto,
