@@ -37,6 +37,8 @@ import aaronS3E9Thumbnail from "@/assets/aaron-thumbnail-s3e9.png";
 import steveS3E10Thumbnail from "@/assets/Steve Thumnail Ep25.png";
 import andresPhoto from "@/assets/Andres photo.jpeg";
 import andresThumbnail from "@/assets/Andres Thumbnail.png";
+import davidPhoto from "@/assets/david photo.jpeg";
+import davidThumbnail from "@/assets/David Thumbnail.png";
 
 export interface Episode {
   id: string;
@@ -1131,6 +1133,47 @@ export const episodes: Episode[] = [
       { title: "Andres Tenias on LinkedIn", url: "https://www.linkedin.com/in/andresteniasgil" }
     ],
     keywords: ["Andres Tenias", "how product managers get hired", "product manager job search", "tech recruiter advice", "product manager hiring", "product owner recruiting", "LinkedIn for product managers", "how recruiters screen candidates", "product manager portfolio", "getting hired as a product manager", "product management career", "PM interview tips", "transferable product skills", "non-tech product roles", "job search rejection", "networking for product managers", "talent acquisition", "Lantern"]
+  },
+  {
+    id: "36",
+    slug: "building-your-way-into-product",
+    title: "Building Your Way Into Product",
+    episodeNumber: "Episode 27",
+    guest: {
+      name: "David Nduka",
+      role: "Founder & Product Manager",
+      company: "Navim AI + Kweeve",
+      website: "https://www.navim.ca",
+      industry: "Immigration Legal Tech + Fintech",
+      photo: davidPhoto,
+      bio: "David Nduka wears three hats: mechanical engineer for the Government of Canada by day, product manager for Ottawa fintech startup Kweeve, and founder of Navim AI, an immigration companion he built after his own work permit ordeal — six months of waiting only to learn he'd applied for the wrong permit, leaving him one week of status in Canada. Before Navim, he co-founded NXoCare, a digital health startup helping cancer patients organize their health information, which he prototyped entirely with no-code tools as a non-technical founder. Years of talking to users, sketching Figma mock-ups, and running usability tests taught him he'd been doing product work all along — he just didn't have the title yet.",
+      linkedin: "https://www.linkedin.com/in/dnduka/"
+    },
+    description: "Founder and engineer David Nduka on building his way into product management — from no-code prototypes for cancer patients to an AI immigration companion born from having one week of status left in Canada.",
+    longDescription: "Santi and Meagan sit down with David Nduka, a mechanical engineer for the Government of Canada who moonlights as a startup founder and product manager, to talk about what happens when you build your way into product instead of interviewing your way in.\n\nDavid shares how his first startup, NXoCare, taught him he'd been doing product work all along — user interviews, prototypes, usability tests — without ever holding the title, and how a six-month immigration mistake that left him one week of status in Canada became the pain point behind Navim AI. He gets tactical about how beginners can start building today, why distribution deserves attention from day zero instead of day one hundred, and how customer conversations handed him a six-month roadmap and a pivot toward B2B.\n\nThe conversation also covers protecting your weekends while building on the side, voice-first workflows that turn an hour of talking into a PRD, and whether the 'user obsessed' PMs of LinkedIn are actually talking to users.",
+    // TODO: add Spotify/Apple links once available.
+    youtubeId: "lG0eq0oNZjs",
+    buzzsproutId: "19458892",
+    thumbnail: davidThumbnail,
+    topic: "career",
+    topics: ["Pivoting to Product", "Building & Side Projects", "AI Tools & Vibe Coding", "Founder Lessons", "Distribution & Growth", "Customer Conversations"],
+    duration: "67 min",
+    publishedAt: "2026-07-07",
+    takeaways: [
+      "How you're probably already doing product work, long before anyone calls you a PM",
+      "Where to even start when you've got an idea but no product experience — plus the free thing David jokingly calls a university",
+      "Why acting on your ideas just seems to hand you more of them, and why David would tell you \"good luck\" if you ran off with one",
+      "How David figures out which ideas are worth chasing and which ones to jot down and quietly forget",
+      "The one thing David wishes he'd thought about from day one, before it snuck up on him",
+      "How a few honest conversations with users handed David a six-month roadmap — and nudged him toward B2B",
+      "How David keeps building on nights and weekends around a full-time job without running himself into the ground"
+    ],
+    resourcesMentioned: [
+      { title: "The Compass by Navim — immigration newsletter", url: "https://the-compass-by-navim.beehiiv.com/" },
+      { title: "David's YouTube Playlist", url: "https://www.youtube.com/playlist?list=PLqnn4Jd2OTiOUPYOboUa2N8b-vVIxASs9" },
+      { title: "V0 by Vercel", url: "https://v0.dev" }
+    ],
+    keywords: ["David Nduka", "Navim AI", "immigration legal tech", "building your way into product", "breaking into product management", "no-code product management", "Bubble no-code", "vibe coding", "V0 Vercel", "side projects while working full time", "accidental product manager", "pain point product ideas", "distribution from day zero", "B2C to B2B pivot", "customer conversations", "founder product manager", "NXoCare", "Kweeve", "voice-first AI workflow", "Wispr Flow", "user obsessed product managers"]
   }
 ];
 
