@@ -1151,7 +1151,8 @@ export const episodes: Episode[] = [
     },
     description: "Founder and engineer David Nduka on building his way into product management — from no-code prototypes for cancer patients to an AI immigration companion born from having one week of status left in Canada.",
     longDescription: "Santi and Meagan sit down with David Nduka, a mechanical engineer for the Government of Canada who moonlights as a startup founder and product manager, to talk about what happens when you build your way into product instead of interviewing your way in.\n\nDavid shares how his first startup, NXoCare, taught him he'd been doing product work all along — user interviews, prototypes, usability tests — without ever holding the title, and how a six-month immigration mistake that left him one week of status in Canada became the pain point behind Navim AI. He gets tactical about how beginners can start building today, why distribution deserves attention from day zero instead of day one hundred, and how customer conversations handed him a six-month roadmap and a pivot toward B2B.\n\nThe conversation also covers protecting your weekends while building on the side, voice-first workflows that turn an hour of talking into a PRD, and whether the 'user obsessed' PMs of LinkedIn are actually talking to users.",
-    // TODO: add Spotify/Apple links once available.
+    spotifyUrl: "https://open.spotify.com/episode/6L1tbe7G7a989u6K7BAcN7",
+    appleUrl: "https://podcasts.apple.com/us/podcast/building-your-way-into-product-with-david-nduka/id1784108281?i=1000775828315",
     youtubeId: "lG0eq0oNZjs",
     buzzsproutId: "19458892",
     thumbnail: davidThumbnail,
