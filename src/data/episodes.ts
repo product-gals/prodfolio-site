@@ -657,12 +657,12 @@ export const episodes: Episode[] = [
       company: "RozieAI",
       website: "https://rozie.ai",
       industry: "AI & Conference Tech",
-      bio: "Aaron Kesler is VP of Product at Rozie AI after 12 years in product management. His journey started founding a company in college, then working at Starbucks after quitting tech—where his regulars became his mentors and connected him to his next role. He moved through technical support, then took over as PM when the previous one left. He went on to Blue Cross and SnapLogic, where he led AI product management with two of the company's most successful launches. Aaron is also writing a book on Lean Pub about pivoting into product management.",
+      bio: "Aaron Kesler is VP of Product at RozieAI after 12 years in product management. His journey started founding a company in college, then working at Starbucks after quitting tech—where his regulars became his mentors and connected him to his next role. He moved through technical support, then took over as PM when the previous one left. He went on to Blue Cross and SnapLogic, where he led AI product management with two of the company's most successful launches. Aaron is also writing a book on Lean Pub about pivoting into product management.",
       linkedin: "https://www.linkedin.com/in/aaron-kesler/",
       photo: aaronPhoto
     },
     description: "Aaron explains why AI should become boring, how vibe coding changes everything, and why AI PM skills are just traditional PM skills focused on mundane problems.",
-    longDescription: "In this episode, hosts Santi and Meagan sit down with Aaron Kesler, VP of Product at Rozie AI, to discuss why the best AI is ultimately boring AI—and why that's exactly what we should want.\n\nAaron shares his unconventional journey from founding a startup in college to working at Starbucks (where his regulars became mentors who landed him his next role), eventually becoming an AI product leader. He breaks down why AI PM skills are really just traditional PM skills focused on automating mundane tasks, why companies building 'AI for AI's sake' will fail fast, and how vibe coding is about to disrupt everyone.\n\nThe conversation covers practical AI adoption advice: start with ChatGPT and just talk to it, focus on tasks you hate doing, and embrace experimentation. Aaron also shares insights from his upcoming book on pivoting into PM, including controversial advice: if you're doing the role, give yourself the title.",
+    longDescription: "In this episode, hosts Santi and Meagan sit down with Aaron Kesler, VP of Product at RozieAI, to discuss why the best AI is ultimately boring AI—and why that's exactly what we should want.\n\nAaron shares his unconventional journey from founding a startup in college to working at Starbucks (where his regulars became mentors who landed him his next role), eventually becoming an AI product leader. He breaks down why AI PM skills are really just traditional PM skills focused on automating mundane tasks, why companies building 'AI for AI's sake' will fail fast, and how vibe coding is about to disrupt everyone.\n\nThe conversation covers practical AI adoption advice: start with ChatGPT and just talk to it, focus on tasks you hate doing, and embrace experimentation. Aaron also shares insights from his upcoming book on pivoting into PM, including controversial advice: if you're doing the role, give yourself the title.",
     youtubeId: "Kw9ssA8sSsI",
     buzzsproutId: "18016313",
     spotifyUrl: "https://open.spotify.com/episode/2fDK57b1AvFTtpLJHEE2y3",
@@ -687,7 +687,7 @@ export const episodes: Episode[] = [
       { title: "ChatGPT", url: "https://chat.openai.com" },
       { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" }
     ],
-    keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "Rozie AI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
+    keywords: ["AI product management", "vibe coding", "boring AI", "automation", "ChatGPT", "RozieAI", "SnapLogic", "product management skills", "customer problems", "NPS", "experimentation", "Starbucks to PM"]
   },
   {
     id: "16",
@@ -899,15 +899,15 @@ export const episodes: Episode[] = [
     guest: {
       name: "Kartikeya Shah",
       role: "Project Manager II",
-      company: "Rozie AI",
+      company: "RozieAI",
       website: "https://www.rozie.ai",
       industry: "AI & Customer Experience",
-      bio: "Kartikeya Shah is a Project Manager II at Rozie AI, an AI-led customer experience platform. His path to product spans engineering, market research, business analytics, and an MBA from NC State, where a chance conversation with a career advisor introduced him to product innovation. After landing a project management role at Rozie AI, Kartikeya started doing product work directly under Aaron Kesler — managing his own product end to end while still officially in a PM-adjacent title. He's a case study in transferable skills, intentional networking, and not waiting for permission to do the job.",
+      bio: "Kartikeya Shah is a Project Manager II at RozieAI, an AI-led customer experience platform. His path to product spans engineering, market research, business analytics, and an MBA from NC State, where a chance conversation with a career advisor introduced him to product innovation. After landing a project management role at RozieAI, Kartikeya started doing product work directly under Aaron Kesler — managing his own product end to end while still officially in a PM-adjacent title. He's a case study in transferable skills, intentional networking, and not waiting for permission to do the job.",
       photo: kartikeyaPhoto,
       linkedin: "https://www.linkedin.com/in/kartikeyancsu/"
     },
-    description: "Rozie AI's Kartikeya Shah on doing product work before getting the title, transferable skills from project management, and the networking strategy that built him a 350-person spreadsheet.",
-    longDescription: "In this episode, Santi and Meagan sit down with Kartikeya Shah, Project Manager II at Rozie AI, an AI-powered customer experience company. Kartikeya's path is one a lot of aspiring PMs will recognize: he wanted product, but the entry-level product roles all asked for three to five years of experience. So he took a project management job at a software company instead, mentored by Rozie AI's product leader Aaron Kesler, and started doing real product work — managing his own product end to end — within months of joining.\n\nKartikeya makes a clear case for not waiting for the title. He talks through the transferable skills that pulled him into product (customer research, data analytics, stakeholder management), the moment his manager handed him a product to run, and what he's learning that no certification or framework book taught him. He's honest about the cons too: the 'entry-level' job posting that secretly requires five years, the difficulty of saying no when you're wired to please, and the gap between the RICE framework on paper and what actually ships.\n\nAlong the way: the networking system that grew his contact spreadsheet to over 300 people, the two questions he asks every connection, and why he reached out to customer insights managers and marketing directors instead of just other PMs.",
+    description: "RozieAI's Kartikeya Shah on doing product work before getting the title, transferable skills from project management, and the networking strategy that built him a 350-person spreadsheet.",
+    longDescription: "In this episode, Santi and Meagan sit down with Kartikeya Shah, Project Manager II at RozieAI, an AI-powered customer experience company. Kartikeya's path is one a lot of aspiring PMs will recognize: he wanted product, but the entry-level product roles all asked for three to five years of experience. So he took a project management job at a software company instead, mentored by RozieAI's product leader Aaron Kesler, and started doing real product work — managing his own product end to end — within months of joining.\n\nKartikeya makes a clear case for not waiting for the title. He talks through the transferable skills that pulled him into product (customer research, data analytics, stakeholder management), the moment his manager handed him a product to run, and what he's learning that no certification or framework book taught him. He's honest about the cons too: the 'entry-level' job posting that secretly requires five years, the difficulty of saying no when you're wired to please, and the gap between the RICE framework on paper and what actually ships.\n\nAlong the way: the networking system that grew his contact spreadsheet to over 300 people, the two questions he asks every connection, and why he reached out to customer insights managers and marketing directors instead of just other PMs.",
     thumbnail: kartikeyaThumbnail,
     youtubeId: "l6YVddhecNk",
     buzzsproutId: "19097286",
@@ -930,7 +930,7 @@ export const episodes: Episode[] = [
       { title: "The Design of Everyday Things by Don Norman", url: "https://www.nngroup.com/books/design-everyday-things-revised/" },
       { title: "Decode and Conquer by Lewis C. Lin", url: "https://www.amazon.com/Decode-Conquer-Answers-Product-Management/dp/0615930417" }
     ],
-    keywords: ["Kartikeya Shah", "Rozie AI", "Aaron Kesler", "breaking into product management", "project manager to product manager", "aspiring product manager", "PM networking", "transferable skills product management", "product management mentor", "entry level product manager", "pivoting to product", "MBA product management", "PM job search", "no title product work"]
+    keywords: ["Kartikeya Shah", "RozieAI", "Aaron Kesler", "breaking into product management", "project manager to product manager", "aspiring product manager", "PM networking", "transferable skills product management", "product management mentor", "entry level product manager", "pivoting to product", "MBA product management", "PM job search", "no title product work"]
   },
   {
     id: "31",
@@ -1018,15 +1018,15 @@ export const episodes: Episode[] = [
     guest: {
       name: "Aaron Kesler",
       role: "Vice President of Product Management",
-      company: "Rozie AI",
+      company: "RozieAI",
       website: "https://www.roziesynopsis.com/",
       industry: "Product Management",
-      bio: "Aaron Kesler is Vice President of Product Management at Rozie AI, where he leads product on Rozie Synopsis — an AI platform that listens at live events and turns them into evergreen summaries, synopses, and reports. He has over a decade in product management across technical support, healthcare, and enterprise AI, including leading AI product at SnapLogic on two of the company's most successful launches. Aaron writes the Become an AI Product Manager newsletter on LinkedIn, created the FORGE framework for AI PMs, and authored a book for people pivoting into product management. He's also a returning Product Pivot guest — last on the show as he was just stepping into the Rozie role.",
+      bio: "Aaron Kesler is Vice President of Product Management at RozieAI, where he leads product on Rozie Synopsis — an AI platform that listens at live events and turns them into evergreen summaries, synopses, and reports. He has over a decade in product management across technical support, healthcare, and enterprise AI, including leading AI product at SnapLogic on two of the company's most successful launches. Aaron writes the Become an AI Product Manager newsletter on LinkedIn, created the FORGE framework for AI PMs, and authored a book for people pivoting into product management. He's also a returning Product Pivot guest — last on the show as he was just stepping into the Rozie role.",
       photo: aaronPhoto,
       linkedin: "https://www.linkedin.com/in/aaron-kesler/"
     },
-    description: "Aaron Kesler returns as VP of Product at Rozie AI to talk about the one shift nobody warns you about going from IC to executive, the FORGE framework for AI PMs, and a $4.5M boring-AI story he tells onstage but rarely in print.",
-    longDescription: "In this episode, Santi and Meagan welcome Aaron Kesler back to the show — now Vice President of Product Management at Rozie AI, where he leads product on Rozie Synopsis, the company's AI platform for turning live events into evergreen reports. The last time Aaron was on, he'd just started at Rozie. This time he's running the team, and he doesn't sugarcoat what changed.\n\nAaron makes a sharp distinction most new executives learn the hard way: ICs spend their entire career figuring out what they can control. Executives have to give that up. He walks through what replaces it, what it costs, and the trap almost every first-time leader falls into — the one he names as his own biggest red flag.\n\nThe conversation widens into AI product stickiness — why ChatGPT, Claude, and Perplexity feel interchangeable, and what actually builds loyalty when switching costs are near zero. Aaron tells a $4.5M boring-AI story from a former customer that he closes his ProductCamp talks with, and breaks down the FORGE framework he built when he realized his own newsletter wasn't giving readers anything tangible to act on. Find, Organize, Rank, Generate, Evaluate — each letter mapped back to a PM fundamental most people already have, but don't know how to apply to AI.\n\nPlus: the AI-as-decision-partner thought experiment that gets darker the longer you think about it, why fundamentals beat AI shortcuts for new leaders, and Aaron's spicy take on product educators who are publishing into the ether.",
+    description: "Aaron Kesler returns as VP of Product at RozieAI to talk about the one shift nobody warns you about going from IC to executive, the FORGE framework for AI PMs, and a $4.5M boring-AI story he tells onstage but rarely in print.",
+    longDescription: "In this episode, Santi and Meagan welcome Aaron Kesler back to the show — now Vice President of Product Management at RozieAI, where he leads product on Rozie Synopsis, the company's AI platform for turning live events into evergreen reports. The last time Aaron was on, he'd just started at Rozie. This time he's running the team, and he doesn't sugarcoat what changed.\n\nAaron makes a sharp distinction most new executives learn the hard way: ICs spend their entire career figuring out what they can control. Executives have to give that up. He walks through what replaces it, what it costs, and the trap almost every first-time leader falls into — the one he names as his own biggest red flag.\n\nThe conversation widens into AI product stickiness — why ChatGPT, Claude, and Perplexity feel interchangeable, and what actually builds loyalty when switching costs are near zero. Aaron tells a $4.5M boring-AI story from a former customer that he closes his ProductCamp talks with, and breaks down the FORGE framework he built when he realized his own newsletter wasn't giving readers anything tangible to act on. Find, Organize, Rank, Generate, Evaluate — each letter mapped back to a PM fundamental most people already have, but don't know how to apply to AI.\n\nPlus: the AI-as-decision-partner thought experiment that gets darker the longer you think about it, why fundamentals beat AI shortcuts for new leaders, and Aaron's spicy take on product educators who are publishing into the ether.",
     thumbnail: aaronS3E9Thumbnail,
     youtubeId: "eKjE4uAni6s",
     buzzsproutId: "19242757",
@@ -1050,7 +1050,7 @@ export const episodes: Episode[] = [
       { title: "Continuous Discovery Habits by Teresa Torres", url: "https://www.amazon.com/Continuous-Discovery-Habits-Discover-Products/dp/1736633309" },
       { title: "Why AI Should Be Boring with Aaron Kesler (S2)", url: "https://prodfolio.io/podcast/episodes/why-ai-should-be-boring" }
     ],
-    keywords: ["Aaron Kesler", "Rozie AI", "Rozie Synopsis", "VP of Product", "IC to executive", "first-time executive", "product leadership", "AI product management", "FORGE framework", "Forge framework AI PM", "Become an AI Product Manager", "AI PM", "continuous discovery", "Teresa Torres", "product stickiness", "ChatGPT vs Claude", "boring AI", "ProductCamp", "influence without authority", "delegation", "leadership transition", "AI product loyalty"]
+    keywords: ["Aaron Kesler", "RozieAI", "Rozie Synopsis", "VP of Product", "IC to executive", "first-time executive", "product leadership", "AI product management", "FORGE framework", "Forge framework AI PM", "Become an AI Product Manager", "AI PM", "continuous discovery", "Teresa Torres", "product stickiness", "ChatGPT vs Claude", "boring AI", "ProductCamp", "influence without authority", "delegation", "leadership transition", "AI product loyalty"]
   },
   {
     id: "34",
@@ -1185,15 +1185,15 @@ export const episodes: Episode[] = [
     guest: {
       name: "Aaron Kesler",
       role: "Co-Founder & Head of Product",
-      company: "Rozie AI",
+      company: "RozieAI",
       website: "https://www.roziesynopsis.com/",
       industry: "Product Management",
-      bio: "Aaron Kesler is Co-Founder and Head of Product at Rozie AI, where he builds Rozie Synopsis — an AI platform that listens at live events and turns them into evergreen summaries, synopses, and reports for attendees, exhibitors, and organizers. He has over a decade in product management across technical support, healthcare, and enterprise AI, including leading AI product at SnapLogic on two of the company's most successful launches. Aaron writes the Become an AI Product Manager newsletter on LinkedIn, created the FORGE framework for AI PMs, and authored a book for people pivoting into product management. This is his third time on the show — and each visit has come with a new title, from stepping into Rozie, to VP of Product, to, now, officially co-founder.",
+      bio: "Aaron Kesler is Co-Founder and Head of Product at RozieAI, where he builds Rozie Synopsis — an AI platform that listens at live events and turns them into evergreen summaries, synopses, and reports for attendees, exhibitors, and organizers. He has over a decade in product management across technical support, healthcare, and enterprise AI, including leading AI product at SnapLogic on two of the company's most successful launches. Aaron writes the Become an AI Product Manager newsletter on LinkedIn, created the FORGE framework for AI PMs, and authored a book for people pivoting into product management. This is his third time on the show — and each visit has come with a new title, from stepping into Rozie, to VP of Product, to, now, officially co-founder.",
       photo: aaronPhoto,
       linkedin: "https://www.linkedin.com/in/aaron-kesler/"
     },
-    description: "Aaron Kesler returns — now officially co-founder at Rozie AI — to break down PM interviewing in the age of AI: why the whole bar is really just 'can you critically think,' why candidates keep skipping discovery, and the 'explain it to my non-technical mother' test he uses to cut through the AI buzzwords.",
-    longDescription: "Santi and Meagan welcome Aaron Kesler back for a third time — now officially co-founder and head of product at Rozie AI — to talk about what's actually happening inside PM interview loops right now. The catalyst was a LinkedIn thread on hiring PMs in the age of AI, and Aaron doesn't hold back: interviewing is brutal on both sides, loops have ballooned to eight interviews in a single day, and yet the thing he's screening for is almost embarrassingly simple.\n\nAaron sets the entire bar at one skill — can you critically think? — and explains why so many candidates still trip over it. 'I vibe coded a solution' is a weak answer; he wants the discovery before it and the evaluation after it. He unpacks the 'explain it to my non-technical mother' test (describe your AI product without saying 'AI,' 'agentic,' or 'RAG'), why five minutes on a company's website is a bare-minimum most candidates skip, and why the widespread 'the market is so bad, why bother' mindset is exactly backwards when the bar is this low.\n\nThe conversation widens into whether PMs need to be vibe coding in 2026 (tinkering yes, shipping to production no), the coming merge between product and engineering as building gets cheaper, and how curiosity — not a job title — is what Aaron is really hiring for. Plus the two things Aaron is personally building right now: a fully agentic ticket-to-code system for his engineering team, and a searchable web app that preserves his wife's handwritten family recipes.",
+    description: "Aaron Kesler returns — now officially co-founder at RozieAI — to break down what's actually happening inside PM interview loops right now: the one thing he screens for, the answer that loses him immediately, and the deceptively simple test he uses to cut through AI buzzwords.",
+    longDescription: "Santi and Meagan welcome Aaron Kesler back for a third time — now officially co-founder and head of product at RozieAI — to talk about what's actually happening inside PM interview loops right now. The catalyst was a LinkedIn thread on hiring PMs in the age of AI, and Aaron doesn't hold back: interviewing is brutal on both sides, loops have ballooned to eight interviews in a single day, and yet the thing he's screening for is almost embarrassingly simple.\n\nAaron sets the entire bar at one skill — can you critically think? — and explains why so many candidates still trip over it. 'I vibe coded a solution' is a weak answer; he wants the discovery before it and the evaluation after it. He unpacks the 'explain it to my non-technical mother' test (describe your AI product without saying 'AI,' 'agentic,' or 'RAG'), why five minutes on a company's website is a bare-minimum most candidates skip, and why the widespread 'the market is so bad, why bother' mindset is exactly backwards when the bar is this low.\n\nThe conversation widens into whether PMs need to be vibe coding in 2026 (tinkering yes, shipping to production no), the coming merge between product and engineering as building gets cheaper, and how curiosity — not a job title — is what Aaron is really hiring for. Plus the two things Aaron is personally building right now: a fully agentic ticket-to-code system for his engineering team, and a searchable web app that preserves his wife's handwritten family recipes.",
     youtubeId: "wVVFKKggViA",
     buzzsproutId: "19475740",
     // spotifyUrl: "", // TODO: add once live on Spotify
@@ -1204,24 +1204,20 @@ export const episodes: Episode[] = [
     duration: "77 min",
     publishedAt: "2026-07-21",
     takeaways: [
-      "The single skill Aaron sets the entire interview bar at — and why he calls it 'a crazy low bar' that most candidates still manage to trip over.",
-      "Why 'I vibe coded a solution' is a weak answer, and the before-and-after Aaron actually cares about instead.",
-      "The 'explain it to my non-technical mother' test — how to describe an AI product without ever saying 'AI,' 'agentic,' or 'RAG.'",
-      "What five minutes on a company's website before an interview signals, and why standing out right now is easier than everyone thinks.",
-      "Whether PMs really need to be vibe coding in 2026 — and where Aaron draws the line between tinkering, prototyping, and shipping code to production.",
-      "Aaron's take on the coming product-engineering merge: why the engineers who stick around will have to start thinking like product people.",
-      "The two things Aaron is personally building right now — a fully agentic ticket-to-code system for work, and a searchable app for his wife's handwritten family recipes."
+      "The single skill Aaron sets his entire interview bar at — and why he calls it a shockingly low bar that candidates still keep missing.",
+      "The answer about AI work that makes Aaron tune out almost immediately, and what he's actually listening for instead.",
+      "The deceptively simple test Aaron uses to find out if you really understand your own product — plus the words you're not allowed to say.",
+      "The bare-minimum prep step most candidates skip entirely, and why standing out right now is easier than everyone assumes.",
+      "Whether PMs really need to be vibe coding in 2026 — and the line Aaron says it should never cross.",
+      "Where Aaron thinks product and engineering are headed as building keeps getting cheaper, and what that means for the engineers who stick around.",
+      "The two things Aaron is building on his own time right now — one for work, and one that has nothing to do with it."
     ],
     resourcesMentioned: [
       { title: "Introducing the FORGE Framework", url: "https://www.linkedin.com/pulse/introducing-forge-framework-mental-model-become-ai-product-kesler-z0sre/" },
       { title: "Become an AI Product Manager (Aaron's newsletter)", url: "https://www.linkedin.com/newsletters/become-an-ai-product-manager-7287598826540916736/" },
-      { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" },
-      { title: "Rozie Synopsis", url: "https://www.roziesynopsis.com/" },
-      { title: "How Product Managers Actually Get Hired (the recruiter episode)", url: "https://prodfolio.io/podcast/episodes/how-product-managers-actually-get-hired" },
-      { title: "Why AI Should Be Boring with Aaron Kesler", url: "https://prodfolio.io/podcast/episodes/why-ai-should-be-boring" },
       { title: "Lovable", url: "https://lovable.dev" }
     ],
-    keywords: ["Aaron Kesler", "Rozie AI", "Rozie Synopsis", "PM interviewing", "PM interview questions", "product manager interview", "hiring PMs in the age of AI", "AI product management", "vibe coding", "critical thinking", "product discovery", "non-technical mother test", "explain it simply", "case study portfolio", "product trio", "product engineering merge", "shipping to production", "Lovable", "Cursor", "Claude Code", "Base44", "standing out in interviews", "PM job search", "curiosity hiring", "FORGE framework", "co-founder product manager"]
+    keywords: ["Aaron Kesler", "RozieAI", "Rozie Synopsis", "PM interviewing", "PM interview questions", "product manager interview", "hiring PMs in the age of AI", "AI product management", "vibe coding", "critical thinking", "product discovery", "non-technical mother test", "explain it simply", "case study portfolio", "product trio", "product engineering merge", "shipping to production", "Lovable", "Cursor", "Claude Code", "Base44", "standing out in interviews", "PM job search", "curiosity hiring", "FORGE framework", "co-founder product manager"]
   }
 ];
 
