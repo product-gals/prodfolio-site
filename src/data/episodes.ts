@@ -35,6 +35,7 @@ import zachPhoto from "@/assets/zach photo.jpeg";
 import zachThumbnail from "@/assets/Zach thumbnail.png";
 import aaronS3E9Thumbnail from "@/assets/aaron-thumbnail-s3e9.png";
 import steveS3E10Thumbnail from "@/assets/Steve Thumnail Ep25.png";
+import aaronEp28Thumbnail from "@/assets/Aaron episode 28 thumbnail.png";
 import andresPhoto from "@/assets/Andres photo.jpeg";
 import andresThumbnail from "@/assets/Andres Thumbnail.png";
 import davidPhoto from "@/assets/david photo.jpeg";
@@ -1175,6 +1176,52 @@ export const episodes: Episode[] = [
       { title: "V0 by Vercel", url: "https://v0.dev" }
     ],
     keywords: ["David Nduka", "Navim AI", "immigration legal tech", "building your way into product", "breaking into product management", "no-code product management", "Bubble no-code", "vibe coding", "V0 Vercel", "side projects while working full time", "accidental product manager", "pain point product ideas", "distribution from day zero", "B2C to B2B pivot", "customer conversations", "founder product manager", "NXoCare", "Kweeve", "voice-first AI workflow", "Wispr Flow", "user obsessed product managers"]
+  },
+  {
+    id: "37",
+    slug: "vibe-coding-wont-get-you-hired-as-a-pm",
+    title: "Vibe Coding Won't Get You Hired as a PM",
+    episodeNumber: "Episode 28",
+    guest: {
+      name: "Aaron Kesler",
+      role: "Co-Founder & Head of Product",
+      company: "Rozie AI",
+      website: "https://www.roziesynopsis.com/",
+      industry: "Product Management",
+      bio: "Aaron Kesler is Co-Founder and Head of Product at Rozie AI, where he builds Rozie Synopsis — an AI platform that listens at live events and turns them into evergreen summaries, synopses, and reports for attendees, exhibitors, and organizers. He has over a decade in product management across technical support, healthcare, and enterprise AI, including leading AI product at SnapLogic on two of the company's most successful launches. Aaron writes the Become an AI Product Manager newsletter on LinkedIn, created the FORGE framework for AI PMs, and authored a book for people pivoting into product management. This is his third time on the show — and each visit has come with a new title, from stepping into Rozie, to VP of Product, to, now, officially co-founder.",
+      photo: aaronPhoto,
+      linkedin: "https://www.linkedin.com/in/aaron-kesler/"
+    },
+    description: "Aaron Kesler returns — now officially co-founder at Rozie AI — to break down PM interviewing in the age of AI: why the whole bar is really just 'can you critically think,' why candidates keep skipping discovery, and the 'explain it to my non-technical mother' test he uses to cut through the AI buzzwords.",
+    longDescription: "Santi and Meagan welcome Aaron Kesler back for a third time — now officially co-founder and head of product at Rozie AI — to talk about what's actually happening inside PM interview loops right now. The catalyst was a LinkedIn thread on hiring PMs in the age of AI, and Aaron doesn't hold back: interviewing is brutal on both sides, loops have ballooned to eight interviews in a single day, and yet the thing he's screening for is almost embarrassingly simple.\n\nAaron sets the entire bar at one skill — can you critically think? — and explains why so many candidates still trip over it. 'I vibe coded a solution' is a weak answer; he wants the discovery before it and the evaluation after it. He unpacks the 'explain it to my non-technical mother' test (describe your AI product without saying 'AI,' 'agentic,' or 'RAG'), why five minutes on a company's website is a bare-minimum most candidates skip, and why the widespread 'the market is so bad, why bother' mindset is exactly backwards when the bar is this low.\n\nThe conversation widens into whether PMs need to be vibe coding in 2026 (tinkering yes, shipping to production no), the coming merge between product and engineering as building gets cheaper, and how curiosity — not a job title — is what Aaron is really hiring for. Plus the two things Aaron is personally building right now: a fully agentic ticket-to-code system for his engineering team, and a searchable web app that preserves his wife's handwritten family recipes.",
+    youtubeId: "wVVFKKggViA",
+    buzzsproutId: "19475740",
+    // spotifyUrl: "", // TODO: add once live on Spotify
+    appleUrl: "https://podcasts.apple.com/us/podcast/vibe-coding-wont-get-you-hired-as-a-pm-with-aaron-kesler/id1784108281?i=1000777735391",
+    thumbnail: aaronEp28Thumbnail,
+    topic: "hiring",
+    topics: ["PM Interviewing", "Hiring", "AI Product Management", "Vibe Coding", "Critical Thinking", "Discovery"],
+    duration: "77 min",
+    publishedAt: "2026-07-21",
+    takeaways: [
+      "The single skill Aaron sets the entire interview bar at — and why he calls it 'a crazy low bar' that most candidates still manage to trip over.",
+      "Why 'I vibe coded a solution' is a weak answer, and the before-and-after Aaron actually cares about instead.",
+      "The 'explain it to my non-technical mother' test — how to describe an AI product without ever saying 'AI,' 'agentic,' or 'RAG.'",
+      "What five minutes on a company's website before an interview signals, and why standing out right now is easier than everyone thinks.",
+      "Whether PMs really need to be vibe coding in 2026 — and where Aaron draws the line between tinkering, prototyping, and shipping code to production.",
+      "Aaron's take on the coming product-engineering merge: why the engineers who stick around will have to start thinking like product people.",
+      "The two things Aaron is personally building right now — a fully agentic ticket-to-code system for work, and a searchable app for his wife's handwritten family recipes."
+    ],
+    resourcesMentioned: [
+      { title: "Introducing the FORGE Framework", url: "https://www.linkedin.com/pulse/introducing-forge-framework-mental-model-become-ai-product-kesler-z0sre/" },
+      { title: "Become an AI Product Manager (Aaron's newsletter)", url: "https://www.linkedin.com/newsletters/become-an-ai-product-manager-7287598826540916736/" },
+      { title: "Aaron Kesler's Links", url: "https://kesler.io/links/" },
+      { title: "Rozie Synopsis", url: "https://www.roziesynopsis.com/" },
+      { title: "How Product Managers Actually Get Hired (the recruiter episode)", url: "https://prodfolio.io/podcast/episodes/how-product-managers-actually-get-hired" },
+      { title: "Why AI Should Be Boring with Aaron Kesler", url: "https://prodfolio.io/podcast/episodes/why-ai-should-be-boring" },
+      { title: "Lovable", url: "https://lovable.dev" }
+    ],
+    keywords: ["Aaron Kesler", "Rozie AI", "Rozie Synopsis", "PM interviewing", "PM interview questions", "product manager interview", "hiring PMs in the age of AI", "AI product management", "vibe coding", "critical thinking", "product discovery", "non-technical mother test", "explain it simply", "case study portfolio", "product trio", "product engineering merge", "shipping to production", "Lovable", "Cursor", "Claude Code", "Base44", "standing out in interviews", "PM job search", "curiosity hiring", "FORGE framework", "co-founder product manager"]
   }
 ];
 
